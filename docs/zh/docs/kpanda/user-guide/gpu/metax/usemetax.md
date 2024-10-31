@@ -56,7 +56,7 @@ Metax 提供了两个 helm-chart 包，一个是 metax-extensions，一个是 gp
     helm cm-push metax-gpu-extensions-0.7.10.tgz metax
     ```
 
-3. 在算丰 AI 算力平台平台上安装 metax-gpu-extensions
+3. 在算丰 AI 算力平台上安装 metax-gpu-extensions
   
     部署成功之后，可以在节点上查看到资源。
 

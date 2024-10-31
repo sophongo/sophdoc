@@ -1,6 +1,6 @@
 # 基于内置指标创建 HPA
 
-DaoCloud Enterprise 5.0 支持 Pod 资源基于指标进行弹性伸缩（Horizontal Pod Autoscaling, HPA）。
+算丰 AI 算力平台支持 Pod 资源基于指标进行弹性伸缩（Horizontal Pod Autoscaling, HPA）。
 用户可以通过设置 CPU 利用率、内存用量及自定义指标指标来动态调整 Pod 资源的副本数量。
 例如，为工作负载设置基于 CPU 利用率指标弹性伸缩策略后，当 Pod 的 CPU 利用率超过/低于您设置的指标阀值，工作负载控制器将会自动增加/较少 Pod 副本数。
 
