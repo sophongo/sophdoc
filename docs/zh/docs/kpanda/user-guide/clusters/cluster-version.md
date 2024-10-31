@@ -48,4 +48,4 @@ Kubernetes 社区支持 3 个版本范围，如 1.26、1.27、1.28。当社区�
   </tbody>
 </table>
 
-![版本支持机制](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/cluster-version.png)
+![版本支持机制](../../../images/cluster-version.png)

@@ -40,7 +40,7 @@ OIDC（OpenID Connect）是建立在 OAuth 2.0 基础上的一个身份层，是
 
 用户身份认证的交互流程为：
 
-![oidc](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/oidc01.png)
+![oidc](../../../images/oidc01.png)
 
 1. 使用浏览器发起单点登录 DCE 5.0 的请求。
 1. DCE 5.0 根据登录链接中携带的信息，查找 __全局管理__ -> __用户与访问控制__ -> __身份提供商__ 中对应的配置信息，

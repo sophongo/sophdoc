@@ -67,4 +67,4 @@
 
     将私钥内容复制后填至界面密钥输入框。
 
-    ![SSH 认证](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/createcluster-ssh01.png)
+    ![SSH 认证](../../../images/createcluster-ssh01.png)

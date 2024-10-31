@@ -13,21 +13,21 @@ hide:
 
 1. 使用 admin/folder admin 角色的用户登录 DCE 5.0，点击左侧导航栏底部的 __全局管理__ -> __工作空间与层级__ 。
 
-    ![全局管理](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/images/ws01.png)
+    ![全局管理](../../../images/ws01.png)
 
 3. 点击右上角的 __创建工作空间__ 按钮。
 
-    ![创建工作空间](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/ws02.png)
+    ![创建工作空间](../../../images/ws02.png)
 
 4. 填写工作空间名称、所属文件夹等信息后，点击 __确定__ ，完成创建工作空间。
 
-    ![确定](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/ws03.png)
+    ![确定](../../../images/ws03.png)
 
 !!! tip
 
     创建成功后工作空间名称将显示在左侧的树状结构中，以不同的图标表示文件夹和工作空间。
 
-    ![文件夹与工作空间](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/ws04.png)
+    ![文件夹与工作空间](../../../images/ws04.png)
 
 !!! note
 

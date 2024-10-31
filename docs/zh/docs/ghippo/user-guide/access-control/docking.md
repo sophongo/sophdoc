@@ -15,7 +15,7 @@ hide:
 
 1. 管理员进入 __用户与访问控制__ ，选择 __接入管理__ ，进入接入管理列表，点击右上方的 __创建 SSO 接入__ 。
 
-    ![创建 SSO 接入按钮](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/images/sso1.png)
+    ![创建 SSO 接入按钮](../../../images/sso1.png)
 
 2. 在 __创建 SSO 接入__ 页面填写客户端 ID。
 
@@ -32,4 +32,4 @@ hide:
         realm 名称为 ghippo。
 
 
-    ![接入管理详情](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/images/sso3.png)
+    ![接入管理详情](../../../images/sso3.png)

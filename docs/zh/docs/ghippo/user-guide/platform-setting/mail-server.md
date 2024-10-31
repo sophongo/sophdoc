@@ -12,11 +12,11 @@ DCE 5.0 会在用户忘记密码时，向用户发送电子邮件以验证电子
 
 1. 使用具有 __admin__ 角色的用户登录 DCE 5.0。点击左侧导航栏底部的 __全局管理__ 。
 
-    ![全局管理](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/ws01.png)
+    ![全局管理](../../../images/ws01_4.png)
 
 1. 点击 __平台设置__ ，选择 __邮件服务器设置__ 。
 
-    ![邮件服务器](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/mail01.png)
+    ![邮件服务器](../../../images/mail01.png)
 
     填写以下字段配置邮件服务器：
 
@@ -31,11 +31,11 @@ DCE 5.0 会在用户忘记密码时，向用户发送电子邮件以验证电子
 
 1. 配置完成后点击 __保存__ ，点击 __测试邮件服务器__ 。
 
-    ![测试](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/mail02.png)
+    ![测试](../../../images/mail02.png)
 
 1. 屏幕右上角出现成功发送邮件的提示，则表示邮件服务器被成功设置。
 
-    ![成功](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/mail03.png)
+    ![成功](../../../images/mail03.png)
 
 ## 常见问题
 

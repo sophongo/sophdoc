@@ -32,7 +32,7 @@
 
 1. 进入[镜像创建工作负载](../workloads/create-deployment.md)页面中，在 __容器配置__ 这一步中，选择 __环境变量__ 配置，点击 __添加环境变量__ 按钮。
 
-    ![添加环境变量](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/config05.png)
+    ![添加环境变量](../../../images/config05.png)
 
 2. 在环境变量类型处选择 __配置项导入__ 或 __配置项键值导入__ 。
 
