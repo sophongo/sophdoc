@@ -20,12 +20,8 @@ New users need to register to use the AI platform for the first time.
 
 3. The system will prompt that an email has been sent to your inbox.
 
-    ![to register](./images/regis03.PNG)
-
 4. Log into your email account, find the email, and click the link.
 
-    ![email](./images/regis04.PNG)
-
-5. Congratulations, you have successfully accessed the AI platform, and you can now begin your AI journey.
+5. Congratulations, you have successfully logged in the AI platform, and you can now begin your AI journey.
 
     ![verify](./images/regis05.PNG)
