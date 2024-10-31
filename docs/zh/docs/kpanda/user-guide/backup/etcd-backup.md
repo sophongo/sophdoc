@@ -10,7 +10,7 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
 
 - 创建[命名空间](../namespaces/createns.md)和[用户](../../../ghippo/user-guide/access-control/user.md)，并为用户授予 [NS Admin](../permissions/permission-brief.md#ns-admin) 或更高权限。详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
 
-- 准备一个 MinIO 实例。建议通过 DCE 5.0 的 MinIO 中间件进行创建，具体步骤可参考 [MinIO 对象存储](../../../middleware/minio/user-guide/create.md)。
+- 准备一个 MinIO 实例。建议通过算丰 AI 算力平台的 MinIO 中间件进行创建，具体步骤可参考 [MinIO 对象存储](../../../middleware/minio/user-guide/create.md)。
 
 ## 创建 etcd 备份
 
@@ -26,7 +26,6 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
     - etcd 地址：格式为 `https://${节点IP}:${端口号}`
  
         - 在标准 Kubernetes 集群中，etcd 的默认端口号为 __2379__
-        - 在 DCE 4.0 集群中，etcd 的默认端口号为 __12379__
         - 在公有云托管集群中，需要联系相关开发人员获取 etcd 的端口号。
           这是因为公有云集群的控制面组件由云服务提供商维护和管理，用户无法直接访问或查看这些组件，
           也无法通过常规命令（如 kubectl）无法获取到控制面的端口等信息。
@@ -54,46 +53,22 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
                 ```
 
     - CA 证书：可通过如下命令查看证书，然后将证书内容复制粘贴到对应位置：
-
-        === "标准的 Kubernetes 集群"
         
-            ```shell
-            cat /etc/kubernetes/ssl/etcd/ca.crt
-            ```
-
-        === "DCE 4.0 集群"
-        
-            ```shell
-            cat /etc/daocloud/dce/certs/ca.crt
-            ```
+        ```shell
+        cat /etc/kubernetes/ssl/etcd/ca.crt
+        ```
 
     - Cert 证书：可通过如下命令查看证书，然后将证书内容复制粘贴到对应位置：
 
-        === "标准的 Kubernetes 集群"
-
-            ```shell
-            cat /etc/kubernetes/ssl/apiserver-etcd-client.crt
-            ```
-
-        === "DCE 4.0 集群"
-
-            ```shell
-            cat /etc/daocloud/dce/certs/etcd/server.crt
-            ```
+        ```shell
+        cat /etc/kubernetes/ssl/apiserver-etcd-client.crt
+        ```
 
     - Key：可通过如下命令查看证书，然后将证书内容复制粘贴到对应位置：
 
-        === "标准的 Kubernetes 集群"
-
-            ```shell
-            cat /etc/kubernetes/ssl/apiserver-etcd-client.key
-            ```
-
-        === "DCE 4.0 集群"
-
-            ```shell
-            cat /etc/daocloud/dce/certs/etcd/server.key
-            ```
+        ```shell
+        cat /etc/kubernetes/ssl/apiserver-etcd-client.key
+        ```
 
         ![创建基本信息](../../../images/etcd-get01.png)
 

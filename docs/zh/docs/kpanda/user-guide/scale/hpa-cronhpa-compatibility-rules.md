@@ -29,7 +29,7 @@ CronHPA 全称为 Cron HorizontalPodAutoscaler，即 Pod 定时的水平自动�
 
 HPA 的定义将 Deployment 配置在 scaleTargetRef 字段下，然后 Deployment 通过自身定义查找 ReplicaSet，最后通过 ReplicaSet 调整真实的副本数目。
 
-DCE 5.0 将 CronHPA 中的 scaleTargetRef 设置为 HPA 对象，然后通过 HPA 对象来寻找真实的 scaleTargetRef，从而让 CronHPA 感知 HPA 的当前状态。
+算丰 AI 算力平台将 CronHPA 中的 scaleTargetRef 设置为 HPA 对象，然后通过 HPA 对象来寻找真实的 scaleTargetRef，从而让 CronHPA 感知 HPA 的当前状态。
 
 ![CronHPA 和 HPA 兼容方案](../../images/hpa-cronhpa-capability-rule-01.png)
 

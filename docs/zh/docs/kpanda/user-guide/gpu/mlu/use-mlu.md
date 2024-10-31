@@ -1,16 +1,16 @@
 # 使用寒武纪 GPU
 
-本文介绍如何在 DCE 5.0 中使用寒武纪 GPU。
+本文介绍如何在算丰 AI 算力平台中使用寒武纪 GPU。
 
 ## 前置条件
 
-- 已经[部署 DCE 5.0](https://docs.daocloud.io/install/index.html) 容器管理平台，且平台运行正常。
+- 已经[部署 算丰 AI 算力平台](https://docs.daocloud.io/install/index.html) 容器管理平台，且平台运行正常。
 - 容器管理模块[已接入 Kubernetes 集群](https://docs.daocloud.io/kpanda/user-guide/clusters/integrate-cluster.html)或者[已创建 Kubernetes 集群](https://docs.daocloud.io/kpanda/user-guide/clusters/create-cluster.html)，且能够访问集群的 UI 界面。
 - 当前集群已安装寒武纪固件、驱动以及DevicePlugin组件，安装详情请参考官方文档：
     - [驱动固件安装](https://www.cambricon.com/docs/sdk_1.15.0/driver_5.10.22/user_guide/index.html)
     - [DevicePlugin 安装](https://github.com/Cambricon/cambricon-k8s-device-plugin/blob/master/device-plugin/README.md)
     
-在安装 DevicePlugin 时请关闭 **--enable-device-type** 参数，否则 DCE5.0 将无法正确识别寒武纪 GPU。
+在安装 DevicePlugin 时请关闭 **--enable-device-type** 参数，否则算丰 AI 算力平台将无法正确识别寒武纪 GPU。
 
 ## 寒武纪 GPU 模式介绍
 
@@ -21,7 +21,7 @@
 - Dynamic smlu 模式：进一步对资源进行了细化，可以控制分配给容器的显存、算力的大小。
 - Mim 模式：可以将寒武纪 GPU 按照固定的规格切分成多张 GPU 进行使用。
 
-## DCE 5.0 使用寒武纪
+## 算丰 AI 算力平台使用寒武纪
 
 这里以 Dynamic smlu 模式为例：
 
