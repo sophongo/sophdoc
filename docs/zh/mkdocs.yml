@@ -81,6 +81,8 @@ plugins:
       lang:
         - zh
         - en
+  
+  - swagger-ui-tag # enable swagger-ui-tag plugin
 
 # Customization
 extra:

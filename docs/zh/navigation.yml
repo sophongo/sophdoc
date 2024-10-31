@@ -301,3 +301,11 @@ nav:
               - 沐曦 GPU 管理: kpanda/user-guide/gpu/metax/usemetax.md
               - 寒武纪 GPU 管理: kpanda/user-guide/gpu/metax/use-mlu.md
               - GPU 相关FAQ: kpanda/user-guide/gpu/FAQ.md
+  - 开发者手册:
+      - 访问密钥: openapi/index.md
+      - AI Lab: openapi/baize/index.md
+      - 云主机: openapi/virtnest/index.md
+      - 容器管理: openapi/kpanda/index.md
+      - 可观测: openapi/insight/index.md
+      - 全局管理: openapi/ghippo/index.md
+     
