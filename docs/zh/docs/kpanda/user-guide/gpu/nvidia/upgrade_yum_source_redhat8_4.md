@@ -1,8 +1,6 @@
 # 构建 Red Hat 8.4 离线 yum 源
 
-## 使用场景介绍
-
-DCE 5 预置了 CentOS 7.9，内核为 3.10.0-1160 的 GPU operator 离线包。其它 OS 类型的节点或内核需要用户手动构建离线 yum 源。
+算丰 AI 算力平台预置了 CentOS 7.9，内核为 3.10.0-1160 的 GPU operator 离线包。其它 OS 类型的节点或内核需要用户手动构建离线 yum 源。
 
 本文介绍如何基于全局服务集群任意节点构建 Red Hat 8.4 离线 yum 源包，并在安装 Gpu Operator 时，通过 `RepoConfig.ConfigMapName` 参数来使用。
 
@@ -13,7 +11,7 @@ DCE 5 预置了 CentOS 7.9，内核为 3.10.0-1160 的 GPU operator 离线包。
 3. 准备一个能够和待部署 GPU Operator 的集群网络能够联通的文件服务器，如 nginx 或 minio。
 4. 准备一个能够访问互联网、待部署 GPU Operator 的集群和文件服务器的节点，且节点上已经完成
    [Docker 的安装](../../../../install/community/kind/online.md#docker)。
-5.全局服务集群的节点必须为 Red Hat 8.4 4.18.0-305.el8.x86_64。
+5. 全局服务集群的节点必须为 Red Hat 8.4 4.18.0-305.el8.x86_64。
 
 ## 操作步骤
 
@@ -117,7 +115,7 @@ DCE 5 预置了 CentOS 7.9，内核为 3.10.0-1160 的 GPU operator 离线包。
 
 ### 将本地生成的 yum repo 上传至文件服务器
 
-本操作示例采用的是 DCE5 火种节点内置的 Minio 作为文件服务器，用户可基于自身情况选择文件服务器。Minio 相关信息如下：
+本操作示例采用的是算丰 AI 算力平台火种节点内置的 Minio 作为文件服务器，用户可基于自身情况选择文件服务器。Minio 相关信息如下：
 
 - 访问地址： `http://10.5.14.200:9000（一般为{火种节点 IP} + {9000 端口}）` 
 - 登录用户名：rootuser

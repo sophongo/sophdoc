@@ -6,19 +6,15 @@
     - 日志输出开关已打开
     - 日志采集开关已打开
 
-## DCE 5.0 安装完成时状态
+## 算丰 AI 算力平台安装完成时状态
 
-- 社区版安装管理集群过程中未操作 K8s 审计日志开关
-- 商业版管理集群的 K8s 审计日志开关默认开启
-    - 如需设置成默认关闭，可[修改安装器 clusterConfig.yaml](../../../install/commercial/cluster-config.md) 来配置（logPath 设置为空 ”“）
+- 管理集群的 K8s 审计日志开关默认开启
 - 管理集群的采集 K8s 审计日志开关默认关闭
     - 默认设置不支持配置
 
 ## 管理集群采集 K8s 审计日志开关
 
-### 商业版安装环境
-
-#### 确认是否开启了 K8s 审计日志
+### 确认是否开启了 K8s 审计日志
 
 执行以下命令查看 __/var/log/kubernetes/audit__ 目录下是否有审计日志生成。
 若有，则表示 K8s 审计日志成功开启。
@@ -29,7 +25,7 @@ ls /var/log/kubernetes/audit
 
 若未开启，请参考[生成 K8s 审计日志](open-k8s-audit.md)。
 
-#### 开启采集 K8s 审计日志流程
+### 开启采集 K8s 审计日志流程
 
 1. 添加 chartmuseum 到 helm repo 中
 
@@ -68,71 +64,12 @@ ls /var/log/kubernetes/audit
     kubectl delete pod ${fluent_pod} -n insight-system
     ```
 
-#### 关闭采集 K8s 审计日志
+### 关闭采集 K8s 审计日志
 
 其余步骤和开启采集 K8s 审计日志一致，仅需修改上一节中第 4 步：更新 helm value 配置。
 
 ```shell
 helm upgrade --install --create-namespace --version ${insight_version_code} --cleanup-on-fail insight-agent chartmuseum/insight-agent -n insight-system -f insight-agent-values-bak.yaml --set global.exporters.auditLog.kubeAudit.enabled=false
-```
-
-### 社区版在线安装环境
-
-!!! note
-
-    若在 Kind 集群中安装社区版 DCE5.0 社区版，需要在 Kind 容器内进行以下操作。
-
-#### 确认开启 K8s 审计日志
-
-执行以下命令查看 __/var/log/kubernetes/audit__ 目录下是否有审计日志生成，若有，则表示 K8s 审计日志成功开启。
-
-```shell
-ls /var/log/kubernetes/audit
-```
-
-若未开启，请参考[文档的开启关闭 K8s 审计日志](open-k8s-audit.md)。
-
-#### 开启采集 K8s 审计日志流程
-
-1. 保存当前 value
-
-    ```shell
-    helm get values insight-agent -n insight-system -o yaml > insight-agent-values-bak.yaml
-    ```
-
-2. 获取当前版本号 ${insight_version_code}，然后更新配置
-
-    ```shell
-    insight_version_code=`helm list -n insight-system |grep insight-agent | awk {'print $10'}`
-    ```
-
-3. 更新 helm value 配置
-
-    ```shell
-    helm upgrade --install --create-namespace --version ${insight_version_code} --cleanup-on-fail insight-agent insight-release/insight-agent -n insight-system -f insight-agent-values-bak.yaml --set global.exporters.auditLog.kubeAudit.enabled=true
-    ```
-
-    如果因为版本未找到而升级失败，请检查命令中使用的 helm repo 是否有这个版本。
-    若没有，请尝试更新 helm repo 后重试。
-
-    ```shell
-    helm repo update insight-release
-    ```
-
-4. 重启 insight-system 下的所有 fluentBit pod
-
-    ```shell
-    fluent_pod=`kubectl get pod -n insight-system | grep insight-agent-fluent-bit | awk {'print $1'} | xargs`
-    kubectl delete pod ${fluent_pod} -n insight-system
-    ```
-
-#### 关闭采集 K8s 审计日志
-
-其余步骤和开启采集 K8s 审计日志一致，仅需修改上一节中第 3 步：
-更新 helm value 配置
-
-```shell
-helm upgrade --install --create-namespace --version ${insight_version_code} --cleanup-on-fail insight-agent insight-release/insight-agent -n insight-system -f insight-agent-values-bak.yaml --set global.exporters.auditLog.kubeAudit.enabled=false
 ```
 
 ## 工作集群开关
@@ -149,7 +86,7 @@ helm upgrade --install --create-namespace --version ${insight_version_code} --cl
 
 将该按钮设置为启用状态，开启采集 K8s 审计日志功能。
 
-通过 DCE 5.0 创建工作集群时，确认该集群的 K8s 审计日志选择 ‘true'，这样创建出来的工作集群 K8s 审计日志是开启的。
+通过算丰 AI 算力平台创建工作集群时，确认该集群的 K8s 审计日志选择 ‘true'，这样创建出来的工作集群 K8s 审计日志是开启的。
 
 ![审计日志开启](../../../images/worker03.png)
 

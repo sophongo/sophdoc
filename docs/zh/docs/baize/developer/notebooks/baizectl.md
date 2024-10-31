@@ -1,12 +1,12 @@
 # baizectl 命令行工具使用指南
 
-`baizectl` 是在 DCE 5.0 AI Lab 模块中专门服务于模型开发者与数据科学家们使用的命令行工具。
+`baizectl` 是在 AI Lab 模块中专门服务于模型开发者与数据科学家们使用的命令行工具。
 它提供了一系列命令来帮助用户管理分布式训练作业、查看任务状态、管理数据集等操作，同时支持连接
-Kubernetes 工作集群和 DCE 5.0 工作空间，帮助用户更高效地使用和管理 Kubernetes 平台资源。
+Kubernetes 工作集群和算丰 AI 算力平台工作空间，帮助用户更高效地使用和管理 Kubernetes 平台资源。
 
 ## 安装
 
-目前，`baizectl` 已经集成在 DCE 5.0 AI Lab 中。
+目前，`baizectl` 已经集成在 AI Lab 中。
 你在创建 Notebook 后，即可在 Notebook 中直接使用 `baizectl`。
 
 ---
@@ -37,9 +37,9 @@ Flags:
   -h, --help               help for baizectl
       --mode string        Connection mode: auto, api, notebook (default "auto")
   -n, --namespace string   Namespace to use for the operation. If not set, the default Namespace will be used.
-  -s, --server string      DCE5 access base url
+  -s, --server string      算丰 AI 算力平台 access base url
       --skip-tls-verify    Skip TLS certificate verification
-      --token string       DCE5 access token
+      --token string       算丰 AI 算力平台 access token
   -w, --workspace int32    Workspace ID to use for the operation
 
 Use "baizectl [command] --help" for more information about a command.
@@ -69,14 +69,14 @@ baizectl [command] [flags]
 
 ### 常用选项
 
-- `--cluster string`：指定要操作的集群名称。
-- `-h, --help`：显示帮助信息。
-- `--mode string`：连接模式，可选值为 `auto`、`api`、`notebook`（默认值为 `auto`）。
-- `-n, --namespace string`：指定操作的命名空间。如果未设置，将使用默认命名空间。
-- `-s, --server string`：DCE5 访问基础 URL。
-- `--skip-tls-verify`：跳过 TLS 证书验证。
-- `--token string`：DCE5 访问令牌。
-- `-w, --workspace int32`：指定操作的工作区 ID。
+- `--cluster string`：指定要操作的集群名称
+- `-h, --help`：显示帮助信息
+- `--mode string`：连接模式，可选值为 `auto`、`api`、`notebook`（默认值为 `auto`）
+- `-n, --namespace string`：指定操作的命名空间。如果未设置，将使用默认命名空间
+- `-s, --server string`：算丰 AI 算力平台访问基础 URL
+- `--skip-tls-verify`：跳过 TLS 证书验证
+- `--token string`：算丰 AI 算力平台访问令牌
+- `-w, --workspace int32`：指定操作的工作区 ID
 
 ---
 
@@ -566,7 +566,7 @@ baizectl job submit --image release.daocloud.io/baize/baize-notebook:v0.5.0 \
 
 #### 查看依赖库（环境）
 
-环境 `runtime-env` 是 DCE 的特色环境管理能力，通过将模型开发、训练任务以及推理中所需的依赖库解耦，
+环境 `runtime-env` 是算丰 AI 算力平台的特色环境管理能力，通过将模型开发、训练任务以及推理中所需的依赖库解耦，
 提供了一种更加灵活的依赖库管理方式，无需重复构建复杂的 Docker 镜像，只需选择合适的环境即可。
 
 同时 `runtime-env` 支持热更新，动态升级，无需重新构建镜像，即可更新环境依赖库。
