@@ -1,7 +1,7 @@
 # Page Tree
 nav:
   - End User Manual:
-      - User Registration: dce/license0.md
+      - User Registration: index.md
       - Global Management:
           - Personal Center:
               - Security Settings: ghippo/user-guide/personal-center/security-setting.md
