@@ -23,7 +23,7 @@
 
     !!! note
     
-        MIG single 策略允许用户以与 GPU 整卡相同的方式（`nvidia.com/gpu`）请求和使用GPU资源，不同的是这些资源可以是 GPU 的一部分（MIG设备），而不是整个GPU。了解更多![GPU MIG 模式设计](https://docs.google.com/document/d/1bshSIcWNYRZGfywgwRHa07C0qRyOYKxWYxClbeJM-WM/edit#heading=h.jklusl667vn2)
+        MIG single 策略允许用户以与 GPU 整卡相同的方式（`nvidia.com/gpu`）请求和使用GPU资源，不同的是这些资源可以是 GPU 的一部分（MIG设备），而不是整个GPU。了解更多![GPU MIG 模式设计](../../../../../images/edit)
     
     ![usemig](../../images/usemig.png)
 
@@ -97,4 +97,4 @@ spec:
 
 进入容器后可以查看只使用了一个 MIG 设备。
 
-![mig03](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/gpu_mig03.png)
+![mig03](../../../../../images/gpu_mig03.png)

@@ -13,17 +13,17 @@ hide:
 
     若 __集群角色__ 中带有 __接入集群__ 的标签，则说明该集群不支持节点扩缩容。
 
-    ![进入集群列表页面](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/addnode01.png)
+    ![进入集群列表页面](../../../images/addnode01_1.png)
 
 2. 在左侧导航栏点击 __节点管理__ ，然后在页面右上角点击 __接入节点__ 。
 
-    ![节点管理](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/addnode02.png)
+    ![节点管理](../../../images/addnode02.png)
 
 3. 输入主机名称和节点 IP 并点击 __确定__ 。
 
     点击 __➕ 添加工作节点__ 可以继续接入更多节点。
 
-    ![节点管理](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/addnode03.png)
+    ![节点管理](../../../images/addnode03.png)
 
 !!! note
 

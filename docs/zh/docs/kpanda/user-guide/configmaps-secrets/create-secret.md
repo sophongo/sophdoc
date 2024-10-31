@@ -23,15 +23,15 @@
 
 1. 在 __集群列表__ 页面点击某个集群的名称，进入 __集群详情__ 。
 
-    ![集群详情](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy01.png)
+    ![集群详情](../../../images/deploy01_12.png)
 
 2. 在左侧导航栏，点击 __配置与密钥__ -> __密钥__ ，点击右上角 __创建密钥__ 按钮。
 
-    ![创建密钥](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/secret01.png)
+    ![创建密钥](../../../images/secret01_1.png)
 
 3. 在 __创建密钥__ 页面中填写配置信息，点击 __确定__ 。
 
-    ![创建密钥](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/secret02.png)
+    ![创建密钥](../../../images/secret02_1.png)
 
     填写配置时需要注意：
 
@@ -52,11 +52,11 @@
 
 1. 在 __集群列表__ 页面点击某个集群的名称，进入 __集群详情__ 。
 
-    ![集群详情](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy01.png)
+    ![集群详情](../../../images/deploy01_12.png)
 
 2. 在左侧导航栏，点击 __配置与密钥__ -> __密钥__ ，点击右上角 __YAML 创建__ 按钮。
 
-    ![YAML 创建](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/secret03.png)
+    ![YAML 创建](../../../images/secret03_1.png)
 
 3. 在 __YAML 创建__ 页面中填写 YAML 配置，点击 __确定__ 。
 

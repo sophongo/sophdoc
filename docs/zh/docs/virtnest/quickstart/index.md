@@ -25,7 +25,7 @@
 
 2. 在虚拟机列表页面，点击 __创建虚拟机__ -> 选择 __通过镜像创建__ 。
 
-    ![镜像创建](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/createvm02.png)
+    ![镜像创建](../../images/createvm02.png)
 
 3. 进入镜像创建页面，依次填写基本信息、镜像配置、存储与网络、登录设置后，在页面右下角点击 __确定__ 完成创建。
 
@@ -52,7 +52,7 @@
 
 根据下表填写镜像相关信息后，点击 __下一步__ 
 
-![使用镜像仓库](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/createvm05.png)
+![使用镜像仓库](../../images/createvm05.png)
 
 1. 镜像来源：支持三种类型的来源。
 
@@ -155,7 +155,7 @@
 - 用户名/密码：可以通过用户名和密码登录至虚拟机。
 - SSH：选择 SSH 登录方式时可为虚拟机绑定 SSH 密钥，用于日后登录虚拟机。
 
-![登录设置](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/createvm07.png)
+![登录设置](../../images/createvm07.png)
 
 ## YAML 创建
 
@@ -163,7 +163,7 @@
 
 进入虚拟机列表页，点击 __通过 YAML 创建__ 按钮。
 
-![yaml 创建](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/createvm08.png)
+![yaml 创建](../../images/createvm08.png)
 
 ??? note "点击查看创建虚拟机的 YAML 示例"
 

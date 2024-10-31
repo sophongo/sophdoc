@@ -18,7 +18,7 @@ hide:
 
 1. 进入 __集群列表__ 页面，点击右上角的 __接入集群__ 按钮。
 
-    ![接入集群](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/join001.png)
+    ![接入集群](../../../images/join001.png)
 
 2. 填写基本信息。
 
@@ -30,11 +30,11 @@ hide:
 
     > 如果不知道如何获取集群的 KubeConfig 文件，可以在输入框右上角点击 __如何获取 kubeConfig__ 查看对应步骤。
 
-    ![接入集群](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/join003.png)
+    ![接入集群](../../../images/join003.png)
 
 4. 确认所有参数填写正确，在页面右下角点击 __确定__ 。
 
-    ![接入集群](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/join002.png)
+    ![接入集群](../../../images/join002.png)
 
 !!! note
 

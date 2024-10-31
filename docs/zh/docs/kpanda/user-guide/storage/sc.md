@@ -20,7 +20,7 @@
 
     > 支持从本地导入 YAML 文件或将填写好的文件下载保存到本地。
 
-    ![yaml](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/sc02.png)
+    ![yaml](../../../images/sc02.png)
 
 ### 表单创建
 
