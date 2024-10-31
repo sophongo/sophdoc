@@ -33,10 +33,10 @@ NVIDIA 多实例 GPU（Multi-Instance GPU，简称 MIG）是 NVIDIA 在 H100，A
 
 这确保了单个用户的工作负载能够以可预测的吞吐量和延迟运行，并具有相同的二级缓存分配和 DRAM 带宽。
 MIG 可以划分可用的 GPU 计算资源（包括流多处理器或 SM 和 GPU 引擎，如复制引擎或解码器）进行分区，
-以便为不同的客户端（如虚拟机、容器或进程）提供定义的服务质量（QoS）和故障隔离）。
+以便为不同的客户端（如云主机、容器或进程）提供定义的服务质量（QoS）和故障隔离）。
 MIG 使多个 GPU 实例能够在单个物理 GPU 上并行运行。
 
-MIG 允许多个 vGPU（以及虚拟机）在单个 GPU 实例上并行运行，同时保留 vGPU 提供的隔离保证。
+MIG 允许多个 vGPU（以及云主机）在单个 GPU 实例上并行运行，同时保留 vGPU 提供的隔离保证。
 有关使用 vGPU 和 MIG 进行 GPU 分区的详细信息，请参阅
 [NVIDIA Multi-Instance GPU and NVIDIA Virtual Compute Server](https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/solutions/resources/documents1/TB-10226-001_v01.pdf)。
 

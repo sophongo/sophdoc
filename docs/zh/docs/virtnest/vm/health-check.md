@@ -1,8 +1,8 @@
 # 健康检查
 
-当配置虚拟机的存活（Liveness）和就绪（Readiness）探针时，与 Kubernetes 的配置过程相似。本文将介绍如何通过 YAML 为虚拟机配置健康检查参数。
+当配置云主机的存活（Liveness）和就绪（Readiness）探针时，与 Kubernetes 的配置过程相似。本文将介绍如何通过 YAML 为云主机配置健康检查参数。
 
-但是需要注意：需要在虚拟机创建成功并且处于关机状态下，修改 YAML 进行配置。
+但是需要注意：需要在云主机创建成功并且处于关机状态下，修改 YAML 进行配置。
 
 ## 配置 HTTP Liveness Probe
 

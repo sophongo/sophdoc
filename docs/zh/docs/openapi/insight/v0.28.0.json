@@ -8752,7 +8752,7 @@
         "GENERAL"
       ],
       "default": "LAYER_UNSPECIFIED",
-      "description": "- KUBERNETES: 直接部署在 Kubernetes 上\n - MESH: 服务网格层级\n - OS_LINUX: 虚拟机或操作系统层级\n - INFRA: 基础设施层级，\n - GENERAL: 通用层级，可能是传统应用上报的数据",
+      "description": "- KUBERNETES: 直接部署在 Kubernetes 上\n - MESH: 服务网格层级\n - OS_LINUX: 云主机或操作系统层级\n - INFRA: 基础设施层级，\n - GENERAL: 通用层级，可能是传统应用上报的数据",
       "title": "像 Skywalking 一样，表示当前所处的层级\n用于展示不同的视图模型，甚至可以展示不同层级之间的关系。"
     },
     "v1alpha1ListAlertsResponse": {

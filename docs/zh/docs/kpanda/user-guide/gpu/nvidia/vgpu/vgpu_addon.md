@@ -1,6 +1,6 @@
 # 安装 NVIDIA vGPU Addon
 
-如需将一张 NVIDIA 虚拟化成多个虚拟 GPU，并将其分配给不同的虚拟机或用户，您可以使用 NVIDIA 的 vGPU 能力。
+如需将一张 NVIDIA 虚拟化成多个虚拟 GPU，并将其分配给不同的云主机或用户，您可以使用 NVIDIA 的 vGPU 能力。
 本节介绍如何在 DCE 5.0 平台中安装 vGPU 插件，这是使用 NVIDIA vGPU 能力的前提。
 ## 前提条件
 
