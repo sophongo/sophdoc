@@ -1,15 +1,15 @@
 # 快照管理
 
-本文将介绍如何为虚拟机创建快照，并从快照中恢复的。
+本文将介绍如何为云主机创建快照，并从快照中恢复的。
 
-用户可以为虚拟机创建快照，保存虚拟机当下的状态，一个快照可以支持多次恢复，每次恢复时，
-虚拟机将被还原到快照创建时的状态。通常可以用于备份、恢复、回滚等场景。
+用户可以为云主机创建快照，保存云主机当下的状态，一个快照可以支持多次恢复，每次恢复时，
+云主机将被还原到快照创建时的状态。通常可以用于备份、恢复、回滚等场景。
 
 ## 前提条件
 
 使用快照功能之前，需要满足以下前提条件：
 
-- 只有非错误状态下的虚拟机才能使用快照功能。
+- 只有非错误状态下的云主机才能使用快照功能。
 - 安装 Snapshot CRDs、Snapshot Controller、CSI Driver。
   具体安装步骤可参考 [CSI Snapshotter](https://github.com/kubernetes-csi/external-snapshotter?tab=readme-ov-file#usage)。
 - 等待 snapshot-controller 组件准备就绪, 该组件会监控 VolumeSnapshot 和 VolumeSnapshotContent 相关事件，并触发相关操作。
@@ -19,21 +19,21 @@
 
 ## 创建快照
 
-1. 点击左侧导航栏上的 __容器管理__ ，然后点击 __虚拟机__ ，进入列表页面，点击列表右侧的 __┇__ ，可以对非错误状态下的虚拟机执行快照操作。
+1. 点击左侧导航栏上的 __容器管理__ ，然后点击 __云主机__ ，进入列表页面，点击列表右侧的 __┇__ ，可以对非错误状态下的云主机执行快照操作。
 
     ![创建快照](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/snapshot01.png)
 
-2. 弹出弹框，需要填写快照的名称和描述，创建快照大概需要几分钟的时间，在此期间无法对虚拟机做任何操作。
+2. 弹出弹框，需要填写快照的名称和描述，创建快照大概需要几分钟的时间，在此期间无法对云主机做任何操作。
 
     ![快照名称](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/snapshot02.png)
 
-3. 创建成功后可以在虚拟机详情内查看快照信息，支持编辑描述、从快照中恢复、删除等操作。
+3. 创建成功后可以在云主机详情内查看快照信息，支持编辑描述、从快照中恢复、删除等操作。
 
-    ![虚拟机详情](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/snapshot03.png)
+    ![云主机详情](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/snapshot03.png)
 
 ## 从快照中恢复
 
-1. 点击 __从快照恢复__ ，需要填写虚拟机恢复记录的名称，同时恢复操作可能需要一些时间来完成，具体取决于快照的大小和其他因素。恢复成功后，虚拟机将回到快照创建时的状态。
+1. 点击 __从快照恢复__ ，需要填写云主机恢复记录的名称，同时恢复操作可能需要一些时间来完成，具体取决于快照的大小和其他因素。恢复成功后，云主机将回到快照创建时的状态。
 
     ![快照恢复](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/snapshot04.png)
 

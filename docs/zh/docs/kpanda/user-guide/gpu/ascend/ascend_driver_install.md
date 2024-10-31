@@ -142,7 +142,7 @@ kubectl label node {nodename} masterselector=dls-master-node
 -  __DevicePlugin__ ：通过提供通用设备插件机制和标准的设备API接口，供Kubernetes使用设备。建议使用默认的镜像及版本。
 -  __NpuExporter__ ：基于Prometheus/Telegraf生态，该组件提供接口，帮助用户能够关注到昇腾系列AI处理器以及容器级分配状态。建议使用默认的镜像及版本。
 -   __ServiceMonitor__ ：默认不开启，开启后可前往可观测性模块查看 NPU 相关监控。如需开启，请确保 insight-agent 已安装并处于运行状态，否则将导致 ascend-mindxdl 安装失败。
--   __isVirtualMachine__ ：默认不开启，如果 NPU 节点为虚拟机场景，请开启 isVirtualMachine 参数。
+-   __isVirtualMachine__ ：默认不开启，如果 NPU 节点为云主机场景，请开启 isVirtualMachine 参数。
 
 安装成功后，对应命名空间下会出现两个组件，如下图：
 

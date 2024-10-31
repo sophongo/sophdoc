@@ -1,16 +1,16 @@
-# 虚拟机跨集群迁移
+# 云主机跨集群迁移
 
 本功能暂未做 UI 界面能力，请参考文档的操作步骤执行。
 
 ## 使用场景
 
-- 当原集群发生故障或性能下降导致该集群上的虚拟机无法访问时，将虚拟机迁移到其他的集群上。
-- 需要对集群进行计划内的维护或升级时，将虚拟机迁移到其他的集群上。
-- 当特定应用的性能需求变化，需要调整资源分配时，迁移虚拟机到其他的集群上以匹配更合适的资源配置。
+- 当原集群发生故障或性能下降导致该集群上的云主机无法访问时，将云主机迁移到其他的集群上。
+- 需要对集群进行计划内的维护或升级时，将云主机迁移到其他的集群上。
+- 当特定应用的性能需求变化，需要调整资源分配时，迁移云主机到其他的集群上以匹配更合适的资源配置。
 
 ## 前提条件
 
-实现虚拟机跨集群迁移之前，需要满足以下前提条件：
+实现云主机跨集群迁移之前，需要满足以下前提条件：
 
 - 集群网络互通：确保原有集群与目标迁移集群之间的网络是互通的
 - 相同存储类型：目标迁移集群需支持与原有集群相同的存储类型（例如，如果导出集群使用 rook-ceph-block 类型的 StorageClass，则导入集群也必须支持此类型）。
@@ -75,14 +75,14 @@ spec:
 
 1. 创建 VirtualMachineExport CR
 
-    - 如果 **虚拟机关机状态** 下进行迁移（冷迁移）：
+    - 如果 **云主机关机状态** 下进行迁移（冷迁移）：
 
         ```yaml
         apiVersion: v1
         kind: Secret
         metadata:
-          name: example-token # 导出虚拟机所用 token
-          namespace: default # 虚拟机所在命名空间
+          name: example-token # 导出云主机所用 token
+          namespace: default # 云主机所在命名空间
         stringData:
           token: 1234567890ab # 导出使用的 token,可修改
     
@@ -91,23 +91,23 @@ spec:
         kind: VirtualMachineExport
         metadata:
           name: example-export # 导出名称, 可自行修改
-          namespace: default # 虚拟机所在命名空间
+          namespace: default # 云主机所在命名空间
         spec:
           tokenSecretRef: example-token # 和上面创建的token名称保持一致
           source:
             apiGroup: "kubevirt.io"
             kind: VirtualMachine
-            name: testvm # 虚拟机名称
+            name: testvm # 云主机名称
         ```
 
-    - 如果要在 **虚拟机不关机** 的状态下，使用虚拟机快照进行迁移（热迁移）：
+    - 如果要在 **云主机不关机** 的状态下，使用云主机快照进行迁移（热迁移）：
 
         ```yaml
         apiVersion: v1
         kind: Secret
         metadata:
-          name: example-token # 导出虚拟机所用 token
-          namespace: default # 虚拟机所在命名空间
+          name: example-token # 导出云主机所用 token
+          namespace: default # 云主机所在命名空间
         stringData:
           token: 1234567890ab # 导出使用的 token ,可修改
     
@@ -116,13 +116,13 @@ spec:
         kind: VirtualMachineExport
         metadata:
           name: export-snapshot # 导出名称, 可自行修改
-          namespace: default # 虚拟机所在命名空间
+          namespace: default # 云主机所在命名空间
         spec:
           tokenSecretRef: export-token # 和上面创建的token名称保持一致
           source:
             apiGroup: "snapshot.kubevirt.io"
             kind: VirtualMachineSnapshot
-            name: export-snap-202407191524 # 对应的虚拟机快照名称
+            name: export-snap-202407191524 # 对应的云主机快照名称
         ```
 
 1. 检查 VirtualMachineExport 是否准备就绪：
@@ -135,9 +135,9 @@ spec:
     example-export   VirtualMachine   testvm       Ready
     ```
 
-1. 当 VirtualMachineExport 准备就绪后，导出虚拟机 YAML。
+1. 当 VirtualMachineExport 准备就绪后，导出云主机 YAML。
 
-    - 如果已安装 **virtctl** ，使用以下命令导出虚拟机的 YAML：
+    - 如果已安装 **virtctl** ，使用以下命令导出云主机的 YAML：
 
         ```sh
         # 自行将 example-export替换为创建的 VirtualMachineExport 名称
@@ -145,7 +145,7 @@ spec:
         virtctl vmexport download example-export --manifest --include-secret --output=manifest.yaml
         ```
 
-    - 如果没有安装 **virtctl** ，使用以下命令导出虚拟机 YAML：
+    - 如果没有安装 **virtctl** ，使用以下命令导出云主机 YAML：
 
         ```sh
         # 自行替换 example-export 替换为创建的 VirtualMachineExport 名称 和命名空间
@@ -158,11 +158,11 @@ spec:
         curl -H "Accept: application/yaml" -H "x-kubevirt-export-token: $token"  --insecure  $manifesturl >> manifest.yaml
         ```
 
-1. 导入虚拟机
+1. 导入云主机
 
     将导出的 `manifest.yaml` 复制到目标迁移集群并执行以下命令（如果命名空间不存在则需要提前创建）：
 
     ```sh
     kubectl apply -f manifest.yaml
     ```
-    创建成功后，重启虚拟机，虚拟机成功运行后，在原有集群内删除原虚拟机（虚拟机未启动成功时，请勿删除原虚拟机）。
+    创建成功后，重启云主机，云主机成功运行后，在原有集群内删除原云主机（云主机未启动成功时，请勿删除原云主机）。
