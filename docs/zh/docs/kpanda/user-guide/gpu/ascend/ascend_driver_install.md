@@ -24,7 +24,7 @@
    [910 驱动安装文档](https://www.hiascend.com/document/detail/zh/Atlas%20200I%20A2/23.0.RC3/EP/installationguide/Install_87.html)。
 2. 运行 __npu-smi info__ 命令，并且能够正常返回 NPU 信息，表示 NPU 驱动与固件已就绪。
 
-![昇腾信息](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/user-guide/gpu/images/npu-smi-info.png)
+![昇腾信息](../../../../images/npu-smi-info.png)
 
 ### 安装 Docker Runtime
 

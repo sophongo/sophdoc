@@ -30,7 +30,7 @@ hide:
         - 若选择多个集群进行同时巡检，系统将根据不同集群的巡检配置进行巡检。
         - 如未设置集群巡检配置，将使用系统默认配置。
 
-            ![start](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/inspect05.png)
+            ![start](../../../images/inspect05.png)
 
 === "单独巡检"
 

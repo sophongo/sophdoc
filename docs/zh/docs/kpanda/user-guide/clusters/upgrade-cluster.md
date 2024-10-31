@@ -27,15 +27,15 @@ Kubernetes 社区每个季度都会发布一次小版本，每个版本的维护
 
 1. 在集群列表中点击目标集群的名称。
 
-    ![升级集群](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/upgradeclsuter00.png)
+    ![升级集群](../../../images/upgradeclsuter00.png)
 
 2. 然后在左侧导航栏点击 __集群运维__ -> __集群升级__ ，在页面右上角点击 __版本升级__ 。
 
-    ![升级集群](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/upgradecluster01.png)
+    ![升级集群](../../../images/upgradecluster01.png)
 
 3. 选择可升级的版本，输入集群名称进行确认。
 
-      ![可升级版本](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/upgradecluster02.png)
+      ![可升级版本](../../../images/upgradecluster02.png)
 
     !!! note
 
@@ -52,8 +52,8 @@ Kubernetes 社区每个季度都会发布一次小版本，每个版本的维护
 
 4. 点击 __确定__ 后，可以看到集群的升级进度。
 
-    ![升级进度](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/upgradecluster03.png)
+    ![升级进度](../../../images/upgradecluster03.png)
 
 5. 集群升级预计需要 30 分钟，可以点击 __实时日志__ 按钮查看集群升级的详细日志。
 
-    ![实时日志](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/createcluster07.png)
+    ![实时日志](../../../images/createcluster07.png)

@@ -30,11 +30,11 @@
 
 1. 点击左侧导航栏上的 __容器管理__ ，然后点击 __云主机__ ，进入列表页面，点击列表右侧的 __┇__ 支持将配置转换为模板。只有运行中/关闭状态下的云主机支持转化。
 
-    ![点击转化为模板](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/tep04.png)
+    ![点击转化为模板](../../images/tep04.png)
 
 2. 填写新模板的名称，提示原始云主机将会保留并且可用。转换成功后，将会在模板列表新增一条数据。
 
-    ![转化模板](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/tep05.png)
+    ![转化模板](../../images/tep05.png)
 
 ### 模板详情
 

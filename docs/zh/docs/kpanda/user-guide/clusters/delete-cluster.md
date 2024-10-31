@@ -37,7 +37,7 @@ hide:
 
 3. 返回 __集群列表__ 页可以看到该集群的状态已经变成 __删除中__ 。卸载集群可能需要一段时间，请您耐心等候。
 
-    ![删除中状态](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/delete004.png)
+    ![删除中状态](../../../images/delete004.png)
 
 ## 解除接入集群
 

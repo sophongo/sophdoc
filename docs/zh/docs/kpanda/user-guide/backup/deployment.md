@@ -45,11 +45,11 @@
 
 5. 点击 __确定__ ，页面会自动返回应用备份计划列表。您可以找到新建的 __dao-2048__ 备份计划，在右侧点击 __┇__ ，选择 __立即执行__ 开始备份。
 
-    ![操作菜单](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/backupd20485.png)
+    ![操作菜单](../../../images/backupd20485.png)
 
 6. 此时集群的 __上一次执行状态__ 将转变为 __备份中__ 。等待备份完成后可以点击备份计划的名称，查看备份计划详情。
 
-    ![操作菜单](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/backupd20486.png)
+    ![操作菜单](../../../images/backupd20486.png)
 
 !!! note
 

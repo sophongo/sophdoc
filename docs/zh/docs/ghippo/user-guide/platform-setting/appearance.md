@@ -6,7 +6,7 @@
 
 1. 使用具有 __admin__ 角色的用户登录 DCE 5.0。点击左侧导航栏底部的 __全局管理__ -> __平台设置__ 。
 
-    ![全局管理](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/ws01.png)
+    ![全局管理](../../../images/ws01_5.png)
 
 2. 选择 __外观定制__ ,在 __登录页定制__ 页签中，修改登录页的图标和文字后，点击 __保存__ 。
 
@@ -14,15 +14,15 @@
 
 3. 退出登录，在登录页刷新后可看到配置后的效果
 
-    ![登录页](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/visual02.png)
+    ![登录页](../../../images/visual02.png)
 
 4. 点击 __顶部导航栏定制__ 页签，修改导航栏的图标和文字后，点击 __保存__ 。
 
-    ![顶部导航栏](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/visual06.png)
+    ![顶部导航栏](../../../images/visual06.png)
 
 5. 点击 __高级定制__ ，可以用 CSS 样式设置登录页、导航栏、底部版权及备案信息。
 
-    ![高级定制](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/images/appear05.png)
+    ![高级定制](../../../images/appear05.png)
 
 ## 高级定制
 

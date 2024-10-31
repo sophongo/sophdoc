@@ -18,7 +18,7 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
 
 1. 进入 __容器管理__ -> __备份恢复__ -> __etcd 备份__ ，点击 __备份策略__ 页签，然后在右侧点击 __创建备份策略__ 。
 
-    ![备份策略列表](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/etcd01.png)
+    ![备份策略列表](../../../images/etcd01.png)
 
 2. 参考以下说明填写 __基本信息__ 。填写完毕后点击 __下一步__ ，系统将自动校验 etcd 的联通性，校验通过之后可以进行下一步。
 
@@ -95,7 +95,7 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
             cat /etc/daocloud/dce/certs/etcd/server.key
             ```
 
-        ![创建基本信息](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/etcd-get01.png)
+        ![创建基本信息](../../../images/etcd-get01.png)
 
     !!! note
 
@@ -111,7 +111,7 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
     - 备份链长度：最多保留多少条备份数据。默认为 30 条。
     - 备份频率：支持小时、日、周、月级别和自定义方式。
 
-    ![定时备份](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/etcd04.png)
+    ![定时备份](../../../images/etcd04.png)
 
 4. 参考以下信息填写 __存储位置__ 。
 
@@ -121,7 +121,7 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
     - 用户名：MinIO 的登录用户名
     - 密码：MinIO 的登录密码
 
-    ![存储位置](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/etcd05.png)
+    ![存储位置](../../../images/etcd05.png)
 
 5. 点击 __确定__ 后页面自动跳转到备份策略列表，可以查看目前创建好的所有策略。
 
@@ -129,19 +129,19 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
     - 当备份方式为手动时，可以点击 __立即执行__ 进行备份。
     - 当备份方式为定时备份时，则会根据配置的时间进行备份。
 
-    ![成功创建](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/etcd07.png)
+    ![成功创建](../../../images/etcd07.png)
 
 ## 查看备份策略日志
 
 点击 __日志__ 可以查看日志内容，默认展示 100 行。若想查看更多日志信息或者下载日志，可在日志上方根据提示前往可观测性模块。
 
-![查看日志](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/etcd06.png)
+![查看日志](../../../images/etcd06.png)
 
 ## 查看备份策略详情
 
 进入 __容器管理__ -> __备份恢复__ -> __etcd 备份__ ，点击 __备份策略__ 页签，接着点击策略名称可以查看策略详情。
 
-![备份策略详情](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/etcd09.png)
+![备份策略详情](../../../images/etcd09.png)
 
 ## 查看备份点
 
@@ -150,4 +150,4 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
 
     每执行一次备份，对应生成一个备份点，可通过成功状态的备份点快速恢复应用。
 
-    ![备份点](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/etcd08.png)
+    ![备份点](../../../images/etcd08.png)

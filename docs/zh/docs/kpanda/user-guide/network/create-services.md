@@ -16,11 +16,11 @@
 
 1. 以 __NS Editor__ 用户成功登录后，点击左上角的 __集群列表__ 进入 __集群列表__ 页面。在集群列表中，点击一个集群名称。
 
-    ![集群列表](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/service01.png)
+    ![集群列表](../../../images/service01.png)
 
 2. 在左侧导航栏中，点击 __容器网络__ -> __服务__ 进入服务列表，点击右上角 __创建服务__ 按钮。
 
-    ![服务与路由](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/service02.png)
+    ![服务与路由](../../../images/service02.png)
 
     !!! tip
 

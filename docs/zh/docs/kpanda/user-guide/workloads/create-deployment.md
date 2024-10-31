@@ -24,17 +24,17 @@
 
 1. 点击左侧导航栏上的 __集群列表__ ，然后点击目标集群的名称，进入 __集群详情__ 页面。
 
-    ![集群详情](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy01.png)
+    ![集群详情](../../../images/deploy01_4.png)
 
 2. 在集群详情页面，点击左侧导航栏的 __工作负载__ -> __无状态负载__ ，然后点击页面右上角的 __镜像创建__ 按钮。
 
-    ![工作负载](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy02.png)
+    ![工作负载](../../../images/deploy02.png)
 
 3. 依次填写[基本信息](create-deployment.md#_3)、[容器配置](create-deployment.md#_4)、[服务配置](create-deployment.md#_5)、[高级配置](create-deployment.md#_6)后，在页面右下角点击 __确定__ 完成创建。
 
     系统将自动返回 __无状态负载__ 列表。点击列表右侧的 __┇__ ，可以对负载执行执行更新、删除、弹性扩缩、重启、版本回退等操作。如果负载状态出现异常，请查看具体异常信息，可参考[工作负载状态](../workloads/pod-config/workload-status.md)。
 
-    ![操作菜单](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy18.png)
+    ![操作菜单](../../../images/deploy18.png)
 
 ### 基本信息
 
@@ -43,7 +43,7 @@
 - 实例数：输入负载的 Pod 实例数量，默认创建 1 个 Pod 实例。
 - 描述：输入负载的描述信息，内容自定义。字符数不超过 512。
 
-    ![基本信息](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy04.png)
+    ![基本信息](../../../images/deploy04.png)
 
 ### 容器配置
 
@@ -89,31 +89,31 @@
 
     设置容器启动时、启动后、停止前需要执行的命令。详情可参考[容器生命周期配置](pod-config/lifecycle.md)。
     
-    ![生命周期](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy06.png)
+    ![生命周期](../../../images/deploy06_2.png)
 
 === "健康检查（选填）"
 
     用于判断容器和应用的健康状态，有助于提高应用的可用性。详情可参考[容器健康检查配置](pod-config/health-check.md)。
     
-    ![健康检查](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy07.png)
+    ![健康检查](../../../images/deploy07_2.png)
 
 === "环境变量（选填）"
 
     配置 Pod 内的容器参数，为 Pod 添加环境变量或传递配置等。详情可参考[容器环境变量配置](pod-config/env-variables.md)。
     
-    ![环境变量](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy08.png)
+    ![环境变量](../../../images/deploy08_2.png)
 
 === "数据存储（选填）"
 
     配置容器挂载数据卷和数据持久化的设置。详情可参考[容器数据存储配置](pod-config/env-variables.md)。
     
-    ![数据存储](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy09.png)
+    ![数据存储](../../../images/deploy09_2.png)
 
 === "安全设置（选填）"
 
     通过 Linux 内置的账号权限隔离机制来对容器进行安全隔离。您可以通过使用不同权限的账号 UID（数字身份标记）来限制容器的权限。例如，输入 __0__ 表示使用 root 账号的权限。
     
-    ![安全设置](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy10.png)
+    ![安全设置](../../../images/deploy10_2.png)
 
 ### 服务配置
 
@@ -121,11 +121,11 @@
 
 1. 点击 __创建服务__ 按钮。
 
-    ![服务配置](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy12.png)
+    ![服务配置](../../../images/deploy12.png)
 
 2. 参考[创建服务](../network/create-services.md)，配置服务参数。
 
-    ![创建服务](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy13.png)
+    ![创建服务](../../../images/deploy13_1.png)
 
 3. 点击 __确定__ ，点击 __下一步__ 。
 
@@ -151,7 +151,7 @@
     - Options：DNS 的配置选项，其中每个对象可以具有 name 属性（必需）和 value 属性（可选）。该字段中的内容将合并到基于 dnsPolicy 生成的域名解析文件的 options 字段中，dnsConfig 的 options 的某些选项如果与基于 dnsPolicy 生成的域名解析文件的选项冲突，则会被 dnsConfig 所覆盖。
     - 主机别名：为主机设置的别名。
 
-        ![DNS 配置](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy17.png)
+        ![DNS 配置](../../../images/deploy17_1.png)
 
 === "升级策略"
 
@@ -188,15 +188,15 @@
 
 1. 点击左侧导航栏上的 __集群列表__ ，然后点击目标集群的名称，进入 __集群详情__ 页面。
 
-    ![集群详情](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy01.png)
+    ![集群详情](../../../images/deploy01_4.png)
 
 2. 在集群详情页面，点击左侧导航栏的 __工作负载__ -> __无状态负载__ ，然后点击页面右上角的 __YAML 创建__ 按钮。
 
-    ![工作负载](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy02Yaml.png)
+    ![工作负载](../../../images/deploy02Yaml.png)
 
 3. 输入或粘贴事先准备好的 YAML 文件，点击 __确定__ 即可完成创建。
 
-    ![工作负载](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy03yaml.png)
+    ![工作负载](../../../images/deploy03yaml.png)
 
 ??? note "点击查看创建无状态负载的 YAML 示例"
 

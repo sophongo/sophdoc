@@ -29,7 +29,7 @@
 
 3. 在 __YAML 创建__ 页面中，填写 YAML 语句后，点击 __确定__ 。
 
-    ![填写 yaml](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/crd03.png)
+    ![填写 yaml](../../../images/crd03.png)
 
 4. 返回自定义资源列表页，即可查看刚刚创建的名为 `crontabs.stable.example.com` 的自定义资源。
 
@@ -86,7 +86,7 @@ spec:
 
 4. 在 __YAML 创建__ 页面中，填写 YAML 语句后，点击 __确定__ 。
 
-    ![填写 yaml](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/crd06.png)
+    ![填写 yaml](../../../images/crd06.png)
 
 5. 返回 `crontabs.stable.example.com` 的详情页面，即可查看刚刚创建的名为 __my-new-cron-object__ 的自定义资源。
 

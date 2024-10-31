@@ -3,7 +3,7 @@
 在 Kubernetes 集群中，[Ingress](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/#ingress-v1beta1-networking-k8s-io) 公开从集群外部到集群内服务的 HTTP 和 HTTPS 路由。
 流量路由由 Ingress 资源上定义的规则控制。下面是一个将所有流量都发送到同一 Service 的简单 Ingress 示例：
 
-![ingress-diagram](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/ingress.svg)
+![ingress-diagram](../../../images/ingress.svg)
 
 Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型的访问方式是 HTTP。Ingress 可以提供负载均衡、SSL 终结和基于名称的虚拟托管。
 
@@ -18,11 +18,11 @@ Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型�
 
 1. 以 __NS Editor__ 用户成功登录后，点击左上角的 __集群列表__ 进入 __集群列表__ 页面。在集群列表中，点击一个集群名称。
 
-    ![集群列表](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/ingress01.png)
+    ![集群列表](../../../images/ingress01.png)
 
 2. 在左侧导航栏中，点击 __容器网络__ -> __路由__ 进入服务列表，点击右上角 __创建路由__ 按钮。
 
-    ![服务与路由](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/ingress02.png)
+    ![服务与路由](../../../images/ingress02.png)
 
     !!! note
 
@@ -34,7 +34,7 @@ Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型�
 
 输入如下参数：
 
-![创建路由](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/ingress03.png)
+![创建路由](../../../images/ingress03.png)
   
 - __路由名称__ ：必填，输入新建路由的名称。
 - __命名空间__ ：必填，选择新建服务所在的命名空间。关于命名空间更多信息请参考命名空间概述。
@@ -74,7 +74,7 @@ Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型�
 ### 创建 HTTPS 协议路由
 
 输入如下参数：
-![创建路由](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/ingress04.png)
+![创建路由](../../../images/ingress04.png)
 
 !!! note
 
@@ -87,4 +87,4 @@ Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型�
 
 配置完所有参数后，点击 __确定__ 按钮，自动返回路由列表。在列表右侧，点击 __┇__ ，可以修改或删除所选路由。
 
-![路由列表](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/ingress05.png)
+![路由列表](../../../images/ingress05.png)

@@ -23,11 +23,11 @@
 
 1. 在 __集群列表__ 页面点击某个集群的名称，进入 __集群详情__ 。
 
-    ![集群详情](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy01.png)
+    ![集群详情](../../../images/deploy01_10.png)
 
 2. 在左侧导航栏，点击 __配置与密钥__ -> __配置项__ ，点击右上角 __创建配置项__ 按钮。
 
-    ![创建配置项](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/configmap01.png)
+    ![创建配置项](../../../images/configmap01.png)
 
 3. 在 __创建配置项__ 页面中填写配置信息，点击 __确定__ 。
 
@@ -35,21 +35,21 @@
 
         点击 __上传文件__ 可以从本地导入已有的文件，快速创建配置项。
 
-    ![创建配置项](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/configmap03.png)
+    ![创建配置项](../../../images/configmap03.png)
 
 4. 创建完成后在配置项右侧点击更多可以，可以编辑 YAML、更新、导出、删除等操作。
 
-    ![创建配置项](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/configmap04.png)
+    ![创建配置项](../../../images/configmap04.png)
 
 ## YAML 创建
 
 1. 在 __集群列表__ 页面点击某个集群的名称，进入 __集群详情__ 。
 
-    ![集群详情](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/deploy01.png)
+    ![集群详情](../../../images/deploy01_10.png)
 
 2. 在左侧导航栏，点击 __配置与密钥__ -> __配置项__ ，点击右上角 __YAML 创建__ 按钮。
 
-    ![创建配置项](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/configmap02.png)
+    ![创建配置项](../../../images/configmap02.png)
 
 3. 填写或粘贴事先准备好的配置文件，然后在弹框右下角点击 __确定__ 。
 
@@ -62,7 +62,7 @@
 
 4. 创建完成后在配置项右侧点击更多可以，可以编辑 YAML、更新、导出、删除等操作。
 
-    ![创建配置项](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/configmap04.png)
+    ![创建配置项](../../../images/configmap04.png)
 
 ## 配置项 YAML 示例
 
