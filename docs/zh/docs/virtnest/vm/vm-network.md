@@ -40,7 +40,7 @@
 
         ![网络模式](../images/createvm-net01.png)
 
-        - 选择 Bridge 模式时，需要有一些[前提条件](https://docs.daocloud.io/virtnest/vm/vm-network/#_2)
+        - 选择 Bridge 模式时，需要有一些[前提条件](#_2)
 
 3. 添加网卡
    

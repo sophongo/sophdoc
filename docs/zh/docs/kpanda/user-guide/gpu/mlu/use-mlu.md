@@ -4,8 +4,8 @@
 
 ## 前置条件
 
-- 已经[部署 算丰 AI 算力平台](https://docs.daocloud.io/install/index.html) 容器管理平台，且平台运行正常。
-- 容器管理模块[已接入 Kubernetes 集群](https://docs.daocloud.io/kpanda/user-guide/clusters/integrate-cluster.html)或者[已创建 Kubernetes 集群](https://docs.daocloud.io/kpanda/user-guide/clusters/create-cluster.html)，且能够访问集群的 UI 界面。
+- 已经部署 算丰 AI 算力平台 容器管理平台，且平台运行正常。
+- 容器管理模块[已接入 Kubernetes 集群](../../clusters/integrate-cluster.md)或者[已创建 Kubernetes 集群](../../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
 - 当前集群已安装寒武纪固件、驱动以及DevicePlugin组件，安装详情请参考官方文档：
     - [驱动固件安装](https://www.cambricon.com/docs/sdk_1.15.0/driver_5.10.22/user_guide/index.html)
     - [DevicePlugin 安装](https://github.com/Cambricon/cambricon-k8s-device-plugin/blob/master/device-plugin/README.md)

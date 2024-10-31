@@ -17,7 +17,7 @@
 ## 使用密钥访问 API
 
 在访问算丰 AI 算力平台openAPI 时，在请求中加上请求头 `Authorization:Bearer ${token}` 以标识访问者的身份，
-其中 `${token}` 是上一步中获取到的密钥，具体接口信息参见 [OpenAPI 接口文档](https://docs.daocloud.io/openapi/index.html)。
+其中 `${token}` 是上一步中获取到的密钥，具体接口信息参见 [OpenAPI 接口文档](../../../openapi/index.md)。
 
 **请求示例**
 
