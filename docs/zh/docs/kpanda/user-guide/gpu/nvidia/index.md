@@ -21,7 +21,7 @@ MIG 提供了更细粒度的 GPU 资源分配和管理，可以根据需求动�
 MIG 适用于多租户环境、容器化应用程序和批处理作业等场景。
 
 无论是在虚拟化环境中使用 vGPU，还是在物理 GPU 上使用 MIG，NVIDIA 为用户提供了更多的选择和优化 GPU 资源的方式。
-Daocloud 容器管理平台全面兼容了上述 NVIDIA 的能力特性，用户只需通过简单的界面操作，就能够获得全部 NVIDIA GPU 的计算能力，从而提高资源利用率并降低成本。
+算丰 AI 算力容器管理平台全面兼容了上述 NVIDIA 的能力特性，用户只需通过简单的界面操作，就能够获得全部 NVIDIA GPU 的计算能力，从而提高资源利用率并降低成本。
 
 - **Single 模式**，节点仅在其所有 GPU 上公开单一类型的 MIG 设备，节点上的所有 GPU 必须：
     - 属于同一个型号（例如 A100-SXM-40GB），只有同一型号 GPU 的 MIG Profile 才是一样的
@@ -38,7 +38,7 @@ Daocloud 容器管理平台全面兼容了上述 NVIDIA 的能力特性，用户
 
 ## 如何使用
 
-您可以参考以下链接，快速使用 Daocloud 关于 NVIDIA GPU 卡的管理能力。
+您可以参考以下链接，快速使用算丰 AI 算力平台关于 NVIDIA GPU 卡的管理能力。
 
 - **[NVIDIA GPU 整卡使用](full_gpu_userguide.md)**
 - **[NVIDIA vGPU 使用](vgpu/vgpu_user.md)**

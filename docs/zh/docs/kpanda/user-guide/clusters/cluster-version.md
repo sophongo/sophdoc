@@ -1,6 +1,6 @@
 # 集群版本支持范围
 
-在算丰 AI 算力平台平台中，[接入型集群](cluster-status.md)和[自建集群](cluster-status.md)采取不同的版本支持机制。
+在算丰 AI 算力平台中，[接入型集群](cluster-status.md)和[自建集群](cluster-status.md)采取不同的版本支持机制。
 
 本文主要介绍自建集群的版本支持机制。
 

@@ -7,7 +7,7 @@ hide:
 
 通过接入集群操作，能够对众多云服务平台集群和本地私有物理集群进行统一纳管，形成统一治理平台，有效避免了被厂商锁定风险，助力企业业务安全上云。
 
-容器管理模块支持接入多种主流的容器集群，例如 DaoCloud KubeSpray, DaoCloud ClusterAPI, DaoCloud Enterprise 4.0、Redhat Openshift, SUSE Rancher, VMware Tanzu, Amazon EKS, Aliyun ACK, Huawei CCE, Tencent TKE,标准 Kubernetes 集群。
+容器管理模块支持接入多种主流的容器集群，例如 Redhat Openshift, SUSE Rancher, VMware Tanzu, Amazon EKS, Aliyun ACK, Huawei CCE, Tencent TKE, 标准 Kubernetes 集群。
 
 ## 前提条件
 
