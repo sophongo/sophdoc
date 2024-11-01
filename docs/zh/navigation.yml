@@ -1,8 +1,9 @@
 # Page tree
 nav:
   - 终端用户手册:
+      - 什么是 AI 算力平台: index.md
       - 注册和分配资源:
-          - 用户注册: index.md
+          - 用户注册: user/register/index.md
           - 绑定工作空间: user/register/bindws.md
           - 为工作空间分配资源: user/register/wsres.md
       - 云主机:

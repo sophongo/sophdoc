@@ -5,7 +5,7 @@
 ## 前置条件
 
 - 已安装 AI 算力平台
-- [用户已成功注册](../../index.md)
+- [用户已成功注册](../register/index.md)
 - [为用户绑定了工作空间](../register/bindws.md)
 - [为工作空间分配了资源](../register/wsres.md)
 
