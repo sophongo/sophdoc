@@ -288,11 +288,39 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    使用云主机
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="usehost.html">
 <span class="md-ellipsis">
     使用云主机
   </span>
 </a>
+<nav aria-label="导航" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      导航
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      前置条件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      操作步骤
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -478,6 +506,26 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="导航" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      导航
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      前置条件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      操作步骤
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -485,6 +533,36 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="_1">使用云主机<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>创建并启动云主机之后，用户就可以开始使用云主机。</p>
+<h2 id="_2">前置条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<ul>
+<li>已安装 AI 算力平台</li>
+<li><a href="createhost.html">用户已创建并启动云主机</a></li>
+</ul>
+<h2 id="_3">操作步骤<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ol>
+<li>以管理员身份登录 AI 算力平台</li>
+<li>
+<p>导航到 <strong>容器管理</strong> -&gt; <strong>容器网络</strong> -&gt; <strong>服务</strong> ，点击服务的名称，进入服务详情页，在右上角点击 <strong>更新</strong></p>
+<p><img alt="service" src="../images/usehost01.png"/></p>
+</li>
+<li>
+<p>更改端口范围为 30900-30999，但不能冲突。</p>
+<p><img alt="port" src="../images/usehost02.png"/></p>
+</li>
+<li>
+<p>以终端用户登录 AI 算力平台，导航到对应的服务，查看访问端口。</p>
+<p><img alt="port" src="../images/usehost03.png"/></p>
+</li>
+<li>
+<p>在外网使用 SSH 客户端登录云主机</p>
+<p><img alt="ssh" src="../images/usehost04.png"/></p>
+</li>
+<li>
+<p>至此，你可以在云主机上执行各项操作。</p>
+</li>
+</ol>
+<p>下一步：云资源共享</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
