@@ -1,19 +1,14 @@
 # Page tree
 nav:
   - 终端用户手册:
-      - 用户注册: index.md
-      - 个人中心:
-          - 安全设置: ghippo/user-guide/personal-center/security-setting.md
-          - 访问密钥: ghippo/user-guide/personal-center/accesstoken.md
-          - SSH 公钥: ghippo/user-guide/personal-center/ssh-key.md
-          - 语言设置: ghippo/user-guide/personal-center/language.md
+      - 注册和分配资源:
+          - 用户注册: index.md
+          - 绑定工作空间: user/register/bindws.md
+          - 为工作空间分配资源: user/register/wsres.md
       - 云主机:
           - 快速入门:
-              - 创建云主机: virtnest/quickstart/index.md
-              - 更新云主机: virtnest/quickstart/update.md
-              - 连接云主机: virtnest/quickstart/access.md
-              - 通过 NodePort 访问云主机: virtnest/quickstart/nodeport.md
-              - 云主机详情: virtnest/quickstart/detail.md
+              - 创建云主机: user/host/createhost.md
+              - 使用云主机: user/host/usehost.md
           - 云主机管理:
               - 创建密钥: virtnest/vm/create-secret.md
               - 克隆云主机: virtnest/vm/clone.md
@@ -103,6 +98,11 @@ nav:
               - 队列管理:
                   - 创建队列: baize/oam/queue/create.md
                   - 删除队列: baize/oam/queue/delete.md
+      - 个人中心:
+          - 安全设置: ghippo/user-guide/personal-center/security-setting.md
+          - 访问密钥: ghippo/user-guide/personal-center/accesstoken.md
+          - SSH 公钥: ghippo/user-guide/personal-center/ssh-key.md
+          - 语言设置: ghippo/user-guide/personal-center/language.md
   - 管理员手册:
       - 全局管理:
           - 用户与访问控制:

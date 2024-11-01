@@ -29,3 +29,5 @@
 1. 恭喜，您成功进入了 AI 算力平台，现在可以开始您的 AI 之旅了。
 
     ![verify](images/regis05.PNG)
+
+下一步：[为用户绑定工作空间](./user/register/bindws.md)
