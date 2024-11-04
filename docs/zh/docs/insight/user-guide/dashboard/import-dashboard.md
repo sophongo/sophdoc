@@ -4,7 +4,7 @@
 
 ## 操作步骤
 
-1. 登录 DCE 5.0 平台，进入 __容器管理__ ，在集群列表中选择 __kpanda-global-cluster__ 。
+1. 登录 AI 算力平台 平台，进入 __容器管理__ ，在集群列表中选择 __kpanda-global-cluster__ 。
 
 2. 选择左侧导航栏的 __自定义资源__ ，在列表中查找 __grafanadashboards.integreatly.org__ 文件，进入详情。
 

@@ -4,7 +4,7 @@
 
 [有状态负载（StatefulSet）](https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/statefulset/)是 Kubernetes 中的一种常见资源，和[无状态负载（Deployment）](create-deployment.md)类似，主要用于管理 Pod 集合的部署和伸缩。二者的主要区别在于，Deployment 是无状态的，不保存数据，而 StatefulSet 是有状态的，主要用于管理有状态应用。此外，StatefulSet 中的 Pod 具有永久不变的 ID，便于在匹配存储卷时识别对应的 Pod。
 
-通过 [算丰 AI 算力平台](../../../dce/index.md) 的容器管理模块，可以基于相应的角色权限轻松管理多云多集群上的工作负载，包括对有状态工作负载的创建、更新、删除、弹性扩缩、重启、版本回退等全生命周期管理。
+通过算丰 AI 算力平台的容器管理模块，可以基于相应的角色权限轻松管理多云多集群上的工作负载，包括对有状态工作负载的创建、更新、删除、弹性扩缩、重启、版本回退等全生命周期管理。
 
 ## 前提条件
 
