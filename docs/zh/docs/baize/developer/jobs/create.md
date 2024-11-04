@@ -1,13 +1,10 @@
----
-hide:
-  - toc
----
-
 # 创建任务（Job）
 
 任务管理是指通过作业调度和管控组件来创建和管理任务生命周期的功能。
 
 AI Lab 采用 Kubernetes 的 Job 机制来调度各项 AI 推理、训练任务。
+
+## 通用步骤
 
 1. 在左侧导航栏中点击 **任务中心** -> **训练任务** ，点击右侧的 **创建** 按钮。
 
@@ -33,7 +30,10 @@ AI Lab 采用 Kubernetes 的 Job 机制来调度各项 AI 推理、训练任务�
     - 提交成功、提交失败
     - 任务成功、任务失败
 
-## 下一步
+## 创建特定任务
 
-- [查看任务负载](./view.md)
-- [删除任务](./delete.md)
+- [创建 Pytorch 任务](./pytorch.md)
+- [创建 TensorFlow 任务](./tensorflow.md)
+- [创建 MPI 任务](./mpi.md)
+- [创建 MXNet 任务](./mxnet.md)
+- [创建 PaddlePaddle 任务](./paddle.md)

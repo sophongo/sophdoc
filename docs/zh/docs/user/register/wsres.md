@@ -15,12 +15,12 @@
 
     ![点击按钮](../images/wsres01.png)
 
-1. 选择集群，设置合适的资源配额后，点击 **确定**
+1. 选择集群，设置合适的资源配额后，点击 **确定**  <a id="quota" />
 
-    ![配置](../images/wsres01.png)
+    ![配置](../images/wsres02.png)
 
 1. 返回共享资源页，为工作空间成功分配了资源，管理员可以通过右侧的 **┇** 随时修改。
 
-    ![成功](../images/wsres01.png)
+    ![成功](../images/wsres03.png)
 
 下一步：[创建云主机](../host/createhost.md)
