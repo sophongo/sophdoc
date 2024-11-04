@@ -575,6 +575,151 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+<span class="md-ellipsis">
+    云主机管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            云主机管理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/create-secret.html">
+<span class="md-ellipsis">
+    创建密钥
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/clone.html">
+<span class="md-ellipsis">
+    克隆云主机
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/snapshot.html">
+<span class="md-ellipsis">
+    快照管理
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/scheduled-snapshot.html">
+<span class="md-ellipsis">
+    定时快照
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/live-migration.html">
+<span class="md-ellipsis">
+    实时迁移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/migratiom.html">
+<span class="md-ellipsis">
+    集群内冷迁移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/cross-cluster-migrate.html">
+<span class="md-ellipsis">
+    云主机跨集群迁移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/monitor.html">
+<span class="md-ellipsis">
+    云主机监控
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/vm-network.html">
+<span class="md-ellipsis">
+    云主机网络
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/vm-sc.html">
+<span class="md-ellipsis">
+    云主机存储
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/auto-migrate.html">
+<span class="md-ellipsis">
+    云主机漂移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/health-check.html">
+<span class="md-ellipsis">
+    云主机健康检查
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_5" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../baize/oam/index.html">
+<span class="md-ellipsis">
+    AI Lab 运维管理
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+            AI Lab 运维管理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../baize/oam/resource.html">
+<span class="md-ellipsis">
+    资源管理
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../baize/oam/queue/create.html">
+<span class="md-ellipsis">
+    队列管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../baize/best-practice/deploy-nfs-in-worker.html">
+<span class="md-ellipsis">
+    最佳实践
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -780,7 +925,7 @@
 </tr>
 <tr>
 <td>端口配置</td>
-<td style="text-align: left;">【类型】必填<br/>【含义】为服务添加协议端口，需要先选择端口协议类型，目前支持 TCP、UDP 两种传输协议额关于协议更多信息请参考<a href="../../../dce/index.md">协议概述</a>。<br/><strong>端口名称</strong>：输入自定义的端口的名称。<br/><strong>服务端口（port）</strong>：Pod 对外提供服务的访问端口。<em>默认情况下，为了方便起见，服务端口被设置为与容器端口字段相同的值。</em><br/><strong>容器端口（targetport）</strong>：工作负载实际监听的容器端口。<br/><strong>节点端口（nodeport）</strong>：节点的端口，接收来自 ClusterIP 传输的流量。用来做外部流量访问的入口。</td>
+<td style="text-align: left;">【类型】必填<br/>【含义】为服务添加协议端口，需要先选择端口协议类型，目前支持 TCP、UDP 两种传输协议。<br/><strong>端口名称</strong>：输入自定义的端口的名称。<br/><strong>服务端口（port）</strong>：Pod 对外提供服务的访问端口。<em>默认情况下，为了方便起见，服务端口被设置为与容器端口字段相同的值。</em><br/><strong>容器端口（targetport）</strong>：工作负载实际监听的容器端口。<br/><strong>节点端口（nodeport）</strong>：节点的端口，接收来自 ClusterIP 传输的流量。用来做外部流量访问的入口。</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>

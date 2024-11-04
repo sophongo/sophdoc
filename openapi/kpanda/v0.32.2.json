@@ -33757,7 +33757,7 @@
           "additionalProperties": {
             "type": "boolean"
           },
-          "description": "DCEComponents is to show if DCE components exist in target cluster, e.g. kpanda-system namespace, insight-system namespace, and mspider mesh."
+          "description": "Components is to show if components exist in target cluster, e.g. kpanda-system namespace, insight-system namespace, and mspider mesh."
         }
       },
       "description": "ValidateClusterResponse returns the result of residuals existence."

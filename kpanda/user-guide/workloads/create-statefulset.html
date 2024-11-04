@@ -597,6 +597,151 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+<span class="md-ellipsis">
+    云主机管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            云主机管理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/create-secret.html">
+<span class="md-ellipsis">
+    创建密钥
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/clone.html">
+<span class="md-ellipsis">
+    克隆云主机
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/snapshot.html">
+<span class="md-ellipsis">
+    快照管理
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/scheduled-snapshot.html">
+<span class="md-ellipsis">
+    定时快照
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/live-migration.html">
+<span class="md-ellipsis">
+    实时迁移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/migratiom.html">
+<span class="md-ellipsis">
+    集群内冷迁移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/cross-cluster-migrate.html">
+<span class="md-ellipsis">
+    云主机跨集群迁移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/monitor.html">
+<span class="md-ellipsis">
+    云主机监控
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/vm-network.html">
+<span class="md-ellipsis">
+    云主机网络
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/vm-sc.html">
+<span class="md-ellipsis">
+    云主机存储
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/auto-migrate.html">
+<span class="md-ellipsis">
+    云主机漂移
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../virtnest/vm/health-check.html">
+<span class="md-ellipsis">
+    云主机健康检查
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_5" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../baize/oam/index.html">
+<span class="md-ellipsis">
+    AI Lab 运维管理
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+            AI Lab 运维管理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../baize/oam/resource.html">
+<span class="md-ellipsis">
+    资源管理
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../baize/oam/queue/create.html">
+<span class="md-ellipsis">
+    队列管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../baize/best-practice/deploy-nfs-in-worker.html">
+<span class="md-ellipsis">
+    最佳实践
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -685,7 +830,7 @@
 <h1 id="statefulset">创建有状态负载（StatefulSet）<a class="headerlink" href="#statefulset" title="Permanent link">¶</a></h1>
 <p>本文介绍如何通过镜像和 YAML 文件两种方式创建有状态负载（StatefulSet）。</p>
 <p><a href="https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/statefulset/">有状态负载（StatefulSet）</a>是 Kubernetes 中的一种常见资源，和<a href="create-deployment.html">无状态负载（Deployment）</a>类似，主要用于管理 Pod 集合的部署和伸缩。二者的主要区别在于，Deployment 是无状态的，不保存数据，而 StatefulSet 是有状态的，主要用于管理有状态应用。此外，StatefulSet 中的 Pod 具有永久不变的 ID，便于在匹配存储卷时识别对应的 Pod。</p>
-<p>通过 <a href="../../../dce/index.md">算丰 AI 算力平台</a> 的容器管理模块，可以基于相应的角色权限轻松管理多云多集群上的工作负载，包括对有状态工作负载的创建、更新、删除、弹性扩缩、重启、版本回退等全生命周期管理。</p>
+<p>通过算丰 AI 算力平台的容器管理模块，可以基于相应的角色权限轻松管理多云多集群上的工作负载，包括对有状态工作负载的创建、更新、删除、弹性扩缩、重启、版本回退等全生命周期管理。</p>
 <h2 id="_1">前提条件<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <p>在使用镜像创建有状态负载之前，需要满足以下前提条件：</p>
 <ul>

@@ -6,6 +6,41 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sophdoc.github.io/baize/best-practice/add-scheduler.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/baize/best-practice/change-notebook-image.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/baize/best-practice/checkpoint.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/baize/best-practice/deploy-nfs-in-worker.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/baize/best-practice/finetunel-llm.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/baize/best-practice/label-studio.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/baize/best-practice/train-with-deepspeed.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sophdoc.github.io/baize/developer/index.html</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
@@ -1256,6 +1291,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sophdoc.github.io/user/k8s/add-node.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/user/k8s/create-k8s.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/user/k8s/remove-node.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sophdoc.github.io/user/register/index.html</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
@@ -1267,6 +1317,31 @@
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/register/wsres.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/user/share/infer.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/user/share/job.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/user/share/notebook.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/user/share/quota.html</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/user/share/workload.html</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
