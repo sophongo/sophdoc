@@ -3,14 +3,14 @@
 INHERIT: navigation.yml
 
 # Project information
-site_name: Sophongo Enterprise
+site_name: 豐收二號檔案站
 site_url: https://sophdoc.github.io/
-site_author: sophongo
+site_author: Suanova
 site_description: >-
-  Sophongo document website.
+  Suanova documentation website.
 
 # copyright
-copyright: Copyright &copy; 2024 - Now
+copyright: Copyright &copy; 2016 - 2024 Suanova
 
 # Repository
 repo_name: sophongo/sophongo-docs
@@ -67,11 +67,11 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  # favicon: images/favicon.ico
-  # logo: images/daocloud.png
-  # icon:
-  #   logo: logo
-  #   repo: fontawesome/brands/github
+  favicon: images/favicon.ico
+  logo: images/sophon.png
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
 
 # Plugins
 plugins:

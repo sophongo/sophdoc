@@ -3,20 +3,19 @@
 INHERIT: navigation.yml
 
 # Project information
-site_name: DaoCloud Enterprise
-site_url: https://docs.daocloud.io/
-site_author: DaoCloud
+site_name: Suanova Documentation
+site_url: https://sophongo.github.io/sophdoc/
+site_author: Suanova
 site_description: >-
-  DaoCloud Enterprise 5.0 is the next-generation PaaS platform, created with many leading cloud-native technologies,
-  to easily promote and boost your digital business.
+  Suanova documentation website.
 
 # copyright
-copyright: Copyright &copy; 2016 - 2024 DaoCloud
+copyright: Copyright &copy; 2016 - 2024 Suanova
 
 # Repository
-repo_name: DaoCloud/DaoCloud-docs
+repo_name: sophongo/sophdoc
 
-repo_url: https://github.com/DaoCloud/DaoCloud-docs
+repo_url: https://github.com/sophongo/sophdoc
 edit_uri: edit/main/docs/en/docs/
 
 use_directory_urls: false # disable https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
@@ -82,7 +81,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: images/favicon.ico
-  logo: images/DaoCloud.png
+  logo: images/sophon.png
   icon:
     logo: logo
     repo: fontawesome/brands/github
@@ -187,8 +186,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: daocloud
-      repo: daocloud-docs
+      user: sophon
+      repo: sophondoc
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
