@@ -290,8 +290,8 @@ nav:
               - 部署 Label Studio: baize/best-practice/label-studio.md
   - 开发者手册:
       - OpenAPI 访问密钥: openapi/index.md
-      - 云主机: openapi/virtnest/index.md
-      - AI Lab: openapi/baize/index.md
-      - 容器管理: openapi/kpanda/index.md
-      - 可观测性: openapi/insight/index.md
-      - 全局管理: openapi/ghippo/index.md
+      - 云主机 OpenAPI 文档: openapi/virtnest/index.md
+      - AI Lab OpenAPI 文档: openapi/baize/index.md
+      - 容器管理 OpenAPI 文档: openapi/kpanda/index.md
+      - 可观测性 OpenAPI 文档: openapi/insight/index.md
+      - 全局管理 OpenAPI 文档: openapi/ghippo/index.md

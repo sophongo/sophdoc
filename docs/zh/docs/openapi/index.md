@@ -1,10 +1,18 @@
-# OpenAPI 访问密钥
+# OpenAPI 文档
 
-访问密钥（Access Key）可用于访问开放 API 和持续发布，用户可在个人中心参照以下步骤获取密钥并访问 API。
+这是面向开发者的一些 OpenAPI 文档。
 
-## 获取密钥
+- [云主机 OpenAPI 文档](./virtnest/index.md)
+- [AI Lab OpenAPI 文档](./baize/index.md)
+- [容器管理 OpenAPI 文档](./kpanda/index.md)
+- [可观测性 OpenAPI 文档](./insight/index.md)
+- [全局管理 OpenAPI 文档](./ghippo/index.md)
 
-登录 AI AI 算力平台，在右上角的下拉菜单中找到 __个人中心__ ，可以在 __访问密钥__ 页面管理账号的访问密钥。
+## 获取 OpenAPI 访问密钥
+
+访问密钥（Access Key）可用于访问 OpenAPI 和持续发布，用户可在个人中心参照以下步骤获取密钥并访问 API。
+
+登录 AI 算力平台，在右上角的下拉菜单中找到 __个人中心__ ，可以在 __访问密钥__ 页面管理账号的访问密钥。
 
 ![ak list](../images/platform02_1.png)
 
