@@ -81,7 +81,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: images/favicon.ico
-  logo: images/sophon.png
+  logo: images/suanova.png
   icon:
     logo: logo
     repo: fontawesome/brands/github
