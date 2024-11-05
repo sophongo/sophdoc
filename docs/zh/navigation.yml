@@ -11,7 +11,7 @@ nav:
           - 使用云主机: user/host/usehost.md
       - 共享云资源:
           - 配额管理: user/share/quota.md
-          - 创建AI负载使用GPU: user/share/workload.md
+          - 创建 AI 工作负载: user/share/workload.md
           - 使用 Notebook: user/share/notebook.md
           - 创建训练任务:
               - 创建训练任务: baize/developer/jobs/create.md
@@ -32,8 +32,8 @@ nav:
               - 创建 vLLM 推理服务: baize/developer/inference/vllm-inference.md
       - 云上 Kubernetes:
           - 创建云上 K8s 集群: user/k8s/create-k8s.md
-          - 移除 GPU 工作节点: user/k8s/remove-node.md
-          - 添加工作节点: user/k8s/add-node.md    
+          - 添加工作节点: user/k8s/add-node.md
+          - 移除 GPU 工作节点: user/k8s/remove-node.md  
       - 个人中心:
           - 安全设置: ghippo/user-guide/personal-center/security-setting.md
           - 访问密钥: ghippo/user-guide/personal-center/accesstoken.md
