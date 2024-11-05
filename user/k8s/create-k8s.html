@@ -9,7 +9,7 @@
 <meta content="sophongo" name="author"/>
 <link href="https://sophdoc.github.io/user/k8s/create-k8s.html" rel="canonical"/>
 <link href="../../baize/developer/inference/vllm-inference.html" rel="prev"/>
-<link href="remove-node.html" rel="next"/>
+<link href="add-node.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
 <title>创建云上 K8s 集群 - Sophongo Enterprise</title>
@@ -306,7 +306,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../share/workload.html">
 <span class="md-ellipsis">
-    创建AI负载使用GPU
+    创建 AI 工作负载
   </span>
 </a>
 </li>
@@ -395,16 +395,16 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="remove-node.html">
+<a class="md-nav__link" href="add-node.html">
 <span class="md-ellipsis">
-    移除 GPU 工作节点
+    添加工作节点
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="add-node.html">
+<a class="md-nav__link" href="remove-node.html">
 <span class="md-ellipsis">
-    添加工作节点
+    移除 GPU 工作节点
   </span>
 </a>
 </li>
@@ -513,13 +513,85 @@
 <h1 id="kubernetes">创建云上 Kubernetes 集群<a class="headerlink" href="#kubernetes" title="Permanent link">¶</a></h1>
 <p>部署 Kubernetes 集群是为了支持高效的 AI 算力调度和管理，实现弹性伸缩，提供高可用性，从而优化模型训练和推理过程。</p>
 <h2 id="_1">前置条件<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<ol>
+<ul>
 <li>已安装 AI 算力平台已</li>
 <li>有一个管理员权限的账号</li>
-<li>制备 1 台带 GPU 的物理机</li>
+<li>准备一台带 GPU 的物理机</li>
 <li>分配两段 IP 地址（Pod CIDR 18 位、SVC CIDR 18 位，不能与现有网段冲突）</li>
-</ol>
+</ul>
 <h2 id="_2">创建步骤<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<ol>
+<li>以 <strong>管理员身份</strong> 登录 AI 算力平台</li>
+<li>
+<p><a href="../host/createhost.html">创建并启动 3 台不带 GPU 的云主机</a>用作集群的 Master 节点</p>
+<ul>
+<li>配置资源，CPU 16 核，内存 32 GB，系统盘 200 GB（ReadWriteOnce）</li>
+<li>网络模式选择 <strong>Bridge（桥接）</strong></li>
+<li>设置 root 密码或添加 SSH 公钥，方便以 SSH 连接</li>
+<li>记录好 3 台主机的 IP</li>
+</ul>
+</li>
+<li>
+<p>导航至 <strong>容器管理</strong> -&gt; <strong>集群列表</strong> ，点击右侧的 <strong>创建集群</strong> 按钮</p>
+</li>
+<li>
+<p>按照向导，配置集群的各项参数</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><input id="__tabbed_1_5" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">基本信息</label><label for="__tabbed_1_2">节点配置</label><label for="__tabbed_1_3">网络配置</label><label for="__tabbed_1_4">Addon 配置</label><label for="__tabbed_1_5">高级配置</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="basic" src="../images/k8s01.png"/></p>
+</div>
+<div class="tabbed-block">
+<p>配置完节点信息后，点击 <strong>开始检查</strong> ，</p>
+<p><img alt="node" src="../images/k8s02.png"/>
+<img alt="node" src="../images/k8s03.png"/></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="network" src="../images/k8s04.png"/></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="addon" src="../images/k8s05.png"/></p>
+</div>
+<div class="tabbed-block">
+<p>每个节点默认可运行 110 个 Pod（容器组），如果节点配置比较高，可以调整到 200 或 300 个 Pod。</p>
+<p><img alt="basic" src="../images/k8s06.png"/></p>
+</div>
+</div>
+</input></input></input></input></input></div>
+</li>
+<li>
+<p>等待集群创建完成。</p>
+<p><img alt="done" src="../images/k8s08.png"/></p>
+</li>
+<li>
+<p>在集群列表中，找到刚创建的集群，点击集群名称，导航到 <strong>Helm 应用</strong> -&gt; <strong>Helm 模板</strong> ，在搜索框内搜索 metax-gpu-extensions，点击卡片</p>
+<p><img alt="cluster" src="../images/k8s09.png"/></p>
+<p><img alt="helm" src="../images/k8s10.png"/></p>
+</li>
+<li>
+<p>点击右侧的 <strong>安装</strong> 按钮，开始安装 GPU 插件</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">应用设置</label><label for="__tabbed_2_2">Kubernetes 编排确认</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>输入名称，选择命名空间，在 YAMl 中修改镜像地址：</p>
+<p><img alt="app settings" src="../images/k8s11.png"/></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="confirm" src="../images/k8s12.png"/></p>
+</div>
+</div>
+</input></input></div>
+</li>
+<li>
+<p>自动返回 Helm 应用列表，等待 metax-gpu-extensions 状态变为 <strong>已部署</strong></p>
+<p><img alt="deployed" src="../images/k8s13.png"/></p>
+</li>
+<li>
+<p>到此集群创建成功，可以去查看集群所包含的节点。你可以去<a href="../share/workload.html">创建 AI 工作负载并使用 GPU 了</a>。</p>
+<p><img alt="nodes" src="../images/k8s14.png"/></p>
+</li>
+</ol>
+<p>下一步：<a href="../share/workload.html">创建 AI 工作负载</a></p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
