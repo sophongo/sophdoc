@@ -34,6 +34,10 @@ nav:
           - 创建云上 K8s 集群: user/k8s/create-k8s.md
           - 添加工作节点: user/k8s/add-node.md
           - 移除 GPU 工作节点: user/k8s/remove-node.md  
+      - 运营计费:
+              - ghippo/user-guide/report-billing/index.md
+              - 报表管理: ghippo/user-guide/report-billing/report.md
+              - 计量计费: ghippo/user-guide/report-billing/billing.md
       - 个人中心:
           - 安全设置: ghippo/user-guide/personal-center/security-setting.md
           - 访问密钥: ghippo/user-guide/personal-center/accesstoken.md
@@ -75,11 +79,6 @@ nav:
                   - 容器管理审计项: ghippo/user-guide/audit/gproduct-audit/kpanda.md
                   - 云主机审计项: ghippo/user-guide/audit/gproduct-audit/virtnest.md
                   - 全局管理审计项: ghippo/user-guide/audit/gproduct-audit/ghippo.md
-          - 运营管理:
-              - ghippo/user-guide/report-billing/index.md
-              - 报表管理: ghippo/user-guide/report-billing/report.md
-              - 离线升级运营管理: ghippo/user-guide/report-billing/gmagpie-offline-install.md
-              - 计费计量: ghippo/user-guide/report-billing/billing.md
           - 平台设置:
               - 安全策略: ghippo/user-guide/platform-setting/security.md
               - 邮箱服务器设置: ghippo/user-guide/platform-setting/mail-server.md
@@ -154,17 +153,6 @@ nav:
               - 创建密钥: kpanda/user-guide/configmaps-secrets/create-secret.md
               - 使用密钥: kpanda/user-guide/configmaps-secrets/use-secret.md
               - Configmap/Secret热加载: kpanda/user-guide/configmaps-secrets/configmap-hot-loading.md
-          - 集群运维:
-              - 最近操作: kpanda/user-guide/clusterops/latest-operations.md
-              - 集群升级: kpanda/user-guide/clusters/upgrade-cluster.md
-              - 集群设置: kpanda/user-guide/clusterops/cluster-settings.md
-              - 集群动态资源超卖: kpanda/user-guide/clusterops/cluster-oversold.md
-          - 集群巡检:
-              - 介绍: kpanda/user-guide/inspect/index.md
-              - 创建巡检配置: kpanda/user-guide/inspect/config.md
-              - 执行巡检: kpanda/user-guide/inspect/inspect.md
-              - 查看巡检报告: kpanda/user-guide/inspect/report.md
-              - 离线升级集群巡检: kpanda/user-guide/inspect/offline-upgrade.md
           - 安全管理:
               - 安全扫描类型: kpanda/user-guide/security/index.md
               - 合规性扫描:
@@ -173,7 +161,6 @@ nav:
                   - 扫描报告: kpanda/user-guide/security/cis/report.md
               - 权限扫描: kpanda/user-guide/security/audit.md
               - 漏洞扫描: kpanda/user-guide/security/hunter.md
-              - 离线升级安全管理: kpanda/user-guide/security/offline-upgrade-dowl.md
               - 集成 Falco 安全工具:
                   - 介绍: security/falco.md
                   - 安装: security/falco-install.md
