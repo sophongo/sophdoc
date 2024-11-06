@@ -2,1457 +2,1457 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sophdoc.github.io/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/best-practice/add-scheduler.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/best-practice/change-notebook-image.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/best-practice/checkpoint.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/best-practice/deploy-nfs-in-worker.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/best-practice/finetunel-llm.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/best-practice/label-studio.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/best-practice/train-with-deepspeed.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/quick-start.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/dataset/create-use-delete.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/dataset/environments.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/inference/models.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/inference/triton-inference.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/inference/vllm-inference.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/create.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/delete.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/mpi.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/mxnet.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/paddle.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/pytorch.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/tensorboard.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/tensorflow.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/jobs/view.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/baizectl.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/baizess.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/create.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/delete.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/notebook-auto-close.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/notebook-with-envs.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/notebook-with-ssh.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/start-pause.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/developer/notebooks/view.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/oam/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/oam/resource.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/oam/queue/create.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/baize/oam/queue/delete.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/amamba.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/baize.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/kpanda.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/mcamel.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/mspider.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/skoala.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/password.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/custom-role.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/docking.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/global.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/group.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/iam.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/idprovider.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/ldap.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/oauth2.0.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/oidc.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/role.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/user.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/access-control/webhook.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/audit-log.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/open-audit.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/open-k8s-audit.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/source-ip.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/amamba.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/ghippo.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/insight.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/kairship.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/kangaroo.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/kpanda.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/mcamel.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/mspider.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/skoala.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/audit/gproduct-audit/virtnest.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/personal-center/accesstoken.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/personal-center/language.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/personal-center/security-setting.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/personal-center/ssh-key.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/platform-setting/about.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/platform-setting/appearance.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/platform-setting/mail-server.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/platform-setting/security.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/report-billing/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/report-billing/billing.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/report-billing/gmagpie-offline-install.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/report-billing/report.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/folder-permission.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/folders.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/quota.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/res-gp-and-shared-res.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/workspace.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/ws-folder.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/ws-permission.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/workspace/wsbind-permission.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/alert-policy.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/alert-template.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/inhibition.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/message.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/msg-template.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/silent.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/alert-center/sms-provider.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/collection-manag/agent-status.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/collection-manag/collection-manag.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/collection-manag/metric-collect.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/collection-manag/probe-module.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/collection-manag/service-monitor.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/dashboard/dashboard.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/dashboard/import-dashboard.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/dashboard/login-grafana.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/dashboard/overview.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/data-query/log.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/data-query/metric.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/infra/cluster.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/infra/container.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/infra/event.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/infra/namespace.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/infra/node.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/infra/probe.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/system-config/modify-config.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/system-config/system-component.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/system-config/system-config.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/trace/service.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/trace/topology.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/user-guide/trace/trace.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/backup/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/backup/deployment.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/backup/etcd-backup.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/backup/install-velero.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/backup/offline-upgrade.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusterops/cluster-oversold.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusterops/cluster-settings.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusterops/latest-operations.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/access-cluster.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/cluster-role.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/cluster-scheduler-plugin.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/cluster-status.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/cluster-version.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/create-cluster.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/delete-cluster.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/integrate-cluster.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/integrate-rancher-cluster.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/k8s-cert.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/runtime.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/clusters/upgrade-cluster.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/configmaps-secrets/configmap-hot-loading.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/configmaps-secrets/create-configmap.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/configmaps-secrets/create-secret.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/configmaps-secrets/use-configmap.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/configmaps-secrets/use-secret.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/custom-resources/create.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/FAQ.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/Iluvatar_usage.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/dynamic-regulation.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/gpu_matrix.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/gpu_scheduler_config.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/vgpu_quota.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/ascend/ascend_driver_install.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/ascend/ascend_usage.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/ascend/vnpu.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/metax/usemetax.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/mlu/use-mlu.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/full_gpu_userguide.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/install_nvidia_driver_of_operator.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/push_image_to_repo.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/rhel9.2_offline_install_driver.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/ubuntu22.04_offline_install_driver.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/upgrade_yum_source_centos7_9.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/upgrade_yum_source_redhat8_4.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/yum_source_redhat7_9.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/gpu-monitoring-alarm/gpu-alarm.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/gpu-monitoring-alarm/gpu-metrics.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/mig/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/mig/create_mig.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/mig/mig_command.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/mig/mig_usage.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/vgpu/hami.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/vgpu/vgpu_addon.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/nvidia/vgpu/vgpu_user.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/volcano/drf.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/volcano/numa.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/volcano/volcano-gang-scheduler.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/volcano/volcano_binpack.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/volcano/volcano_priority.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/gpu/volcano/volcano_user_guide.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/helm/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/helm/Import-addon.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/helm/helm-app.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/helm/helm-repo.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/helm/multi-archi-helm.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/helm/upload-helm.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/inspect/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/inspect/config.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/inspect/inspect.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/inspect/offline-upgrade.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/inspect/report.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/namespaces/createns.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/namespaces/exclusive.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/namespaces/podsecurity.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/network/create-ingress.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/network/create-services.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/network/network-policy.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/add-node.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/delete-node.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/labels-annotations.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/node-authentication.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/node-check.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/node-details.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/schedule.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/nodes/taints.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/olm/import-miniooperator.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/permissions/cluster-ns-auth.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/permissions/custom-kpanda-role.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/permissions/permission-brief.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/create-hpa.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/create-vpa.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/custom-hpa.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/hpa-cronhpa-compatibility-rules.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/install-cronhpa.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/install-metrics-server.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/install-vpa.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/knative/install.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/knative/knative.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/knative/playground.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/scale/knative/scene.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/audit.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/hunter.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/offline-upgrade-dowl.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/cis/config.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/cis/policy.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/cis/report.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/storage/pv.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/storage/pvc.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/storage/sc-share.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/storage/sc.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/create-cronjob.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/create-daemonset.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/create-deployment.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/create-job.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/create-statefulset.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/pod-config/env-variables.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/pod-config/health-check.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/pod-config/job-parameters.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/pod-config/lifecycle.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/pod-config/scheduling-policy.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/workloads/pod-config/workload-status.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/openapi/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/openapi/baize/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/openapi/ghippo/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/openapi/insight/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/openapi/kpanda/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/openapi/virtnest/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/security/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/security/falco-exporter.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/security/falco-install.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/security/falco.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/stylesheets/tags.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/host/createhost.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/host/usehost.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/k8s/add-node.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/k8s/create-k8s.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/k8s/remove-node.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/register/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/register/bindws.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/register/wsres.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/share/infer.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/share/job.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/share/notebook.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/share/quota.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/user/share/workload.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/gpu/vm-gpu.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/gpu/vm-vgpu.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/quickstart/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/quickstart/access.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/quickstart/detail.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/quickstart/nodeport.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/quickstart/update.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/template/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/template/tep.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/auto-migrate.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/clone.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/create-secret.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/cross-cluster-migrate.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/health-check.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/live-migration.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/migratiom.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/monitor.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/scheduled-snapshot.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/snapshot.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/vm-network.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm/vm-sc.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/virtnest/vm-image/index.html</loc>
-         <lastmod>2024-11-05</lastmod>
+         <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
