@@ -14,7 +14,7 @@ vGPU is a virtualization technology that allows one physical GPU to be partition
 
 MIG is a feature introduced by the NVIDIA Ampere architecture that allows one physical GPU to be divided into multiple physical GPU instances, each of which can be independently allocated to different users or workloads. Each MIG instance has its own compute resources, memory, and PCIe bandwidth, just like an independent virtual GPU. MIG provides finer-grained GPU resource allocation and management and allows dynamic adjustment of the number and size of instances based on demand. MIG is suitable for multi-tenant environments, containerized applications, batch jobs, and other scenarios.
 
-Whether using vGPU in a virtualized environment or MIG on a physical GPU, NVIDIA provides users with more choices and optimized ways to utilize GPU resources. The Daocloud container management platform fully supports the above NVIDIA capabilities. Users can easily access the full computational power of NVIDIA GPUs through simple UI operations, thereby improving resource utilization and reducing costs.
+Whether using vGPU in a virtualized environment or MIG on a physical GPU, NVIDIA provides users with more choices and optimized ways to utilize GPU resources. The Suanova container management platform fully supports the above NVIDIA capabilities. Users can easily access the full computational power of NVIDIA GPUs through simple UI operations, thereby improving resource utilization and reducing costs.
 
 - **Single Mode**: The node only exposes a single type of MIG device on all its GPUs. All GPUs on the node must:
     - Be of the same model (e.g., A100-SXM-40GB), with matching MIG profiles only for GPUs of the same model.
@@ -31,7 +31,7 @@ For detailed instructions on enabling these configurations, refer to [Offline In
 
 ## How to Use
 
-You can refer to the following links to quickly start using Daocloud's management capabilities for NVIDIA GPUs.
+You can refer to the following links to quickly start using Suanova's management capabilities for NVIDIA GPUs.
 
 - **[Using Full NVIDIA GPU](full_gpu_userguide.md)**
 - **[Using NVIDIA vGPU](vgpu/vgpu_user.md)**

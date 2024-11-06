@@ -1,6 +1,6 @@
 # Create HPA
 
-DaoCloud Enterprise 5.0 supports elastic scaling of Pod resources based on metrics (Horizontal Pod Autoscaling, HPA).
+Suanova AI platform supports elastic scaling of Pod resources based on metrics (Horizontal Pod Autoscaling, HPA).
 Users can dynamically adjust the number of copies of Pod resources by setting CPU utilization, memory usage, and custom metrics.
 For example, after setting an auto scaling policy based on the CPU utilization metric for the workload,
 when the CPU utilization of the Pod exceeds/belows the metric threshold you set, the workload controller

@@ -12,7 +12,7 @@ You can load the images using one of the following two methods. It is recommende
 
 #### Method 1: Syncing Images Using chart-syncer
 
-By using chart-syncer, you can upload the charts from the downloaded package along with their dependent image packages to the image repository and Helm repository used by the installer to deploy DCE.
+By using chart-syncer, you can upload the charts from the downloaded package along with their dependent image packages to the image repository and Helm repository used by the installer to deploy Suanova.
 
 First, find a node that can connect to both the image repository and the Helm repository (such as the spark node). On this node, create a __load-image.yaml__ configuration file and fill in the necessary information like the image repository and Helm repository configurations.
 

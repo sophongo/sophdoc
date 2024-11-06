@@ -5,7 +5,7 @@ hide:
 
 # GPU Support Matrix
 
-This page explains the matrix of supported GPUs and operating systems for DCE 5.0.
+This page explains the matrix of supported GPUs and operating systems for AI platform.
 
 ## NVIDIA GPU
 

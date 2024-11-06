@@ -1,8 +1,6 @@
-## Build CentOS 7.9 Offline Yum Source
+# Build CentOS 7.9 Offline Yum Source
 
-## Use Case Overview
-
-DCE 5 comes with a pre-installed GPU Operator offline package for CentOS 7.9 with kernel version 3.10.0-1160.
+The AI platform comes with a pre-installed GPU Operator offline package for CentOS 7.9 with kernel version 3.10.0-1160.
 or other OS types or kernel versions, users need to manually build an offline yum source.
 
 This guide explains how to build an offline yum source for CentOS 7.9 with a specific kernel version and use it when installing the GPU Operator by specifying the __RepoConfig.ConfigMapName__ parameter.
@@ -145,7 +143,7 @@ This step is used to upload the generated yum source from the previous step to a
 that can be accessed by the cluster where the GPU Operator will be deployed. The file server
 can be Nginx, MinIO, or any other file server that supports the HTTP protocol.
 
-In this example, we will use the built-in MinIO in DCE5 as the file server. The MinIO details are as follows:
+In this example, we will use the built-in MinIO as the file server. The MinIO details are as follows:
 
 - Access URL: `http://10.5.14.200:9000` (usually __{bootstrap-node IP} + {port-9000}__ )
 - Login username: rootuser

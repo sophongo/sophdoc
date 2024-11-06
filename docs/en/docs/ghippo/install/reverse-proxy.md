@@ -1,4 +1,4 @@
-# Customize DCE 5.0 Reverse Proxy Server Address
+# Customize AI platform Reverse Proxy Server Address
 
 The specific setup steps are as follows:
 
@@ -25,8 +25,8 @@ The specific setup steps are as follows:
 3. Set environment variables for easier use in the following steps.
 
     ```shell
-    # Your reverse proxy address, for example `export DCE_PROXY="https://demo-alpha.daocloud.io"` 
-    export DCE_PROXY="https://domain:port"
+    # Your reverse proxy address, for example `export Suanova_PROXY="https://demo-alpha.daocloud.io"` 
+    export Suanova_PROXY="https://domain:port"
 
     # Helm --set parameter backup file
     export GHIPPO_VALUES_BAK="ghippo-values-bak.yaml"
@@ -48,7 +48,7 @@ The specific setup steps are as follows:
         - If possible, you can use the __yq__ command:
 
             ```shell
-            yq -i ".global.reverseProxy = \"${DCE_PROXY}\"" ${GHIPPO_VALUES_BAK}
+            yq -i ".global.reverseProxy = \"${Suanova_PROXY}\"" ${GHIPPO_VALUES_BAK}
             ```
 
         - Or you can use the __vim__ command to edit and save:
@@ -60,7 +60,7 @@ The specific setup steps are as follows:
             ...
             global:
               ...
-              reverseProxy: ${DCE_PROXY} # Only need to modify this line
+              reverseProxy: ${Suanova_PROXY} # Only need to modify this line
             ```
 
 6. Run `helm upgrade` to apply the configuration.

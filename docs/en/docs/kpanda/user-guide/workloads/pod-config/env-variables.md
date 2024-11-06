@@ -2,7 +2,7 @@
 
 An environment variable refers to a variable set in the container running environment, which is used to add environment flags to Pods or transfer configurations, etc. It supports configuring environment variables for Pods in the form of key-value pairs.
 
-DCE container management adds a graphical interface to configure environment variables for Pods on the basis of native Kubernetes, and supports the following configuration methods:
+Suanova container management adds a graphical interface to configure environment variables for Pods on the basis of native Kubernetes, and supports the following configuration methods:
 
 - **Key-value pair** (Key/Value Pair): Use a custom key-value pair as the environment variable of the container
 

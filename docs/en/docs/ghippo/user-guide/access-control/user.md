@@ -1,7 +1,7 @@
 # User
 
 A user refers to a user created by the platform administrator Admin or the access control administrator IAM Owner on the __Global Management__ -> __Access Control__ -> __Users__ page, or a user connected through LDAP / OIDC .
-The username represents the account, and the user logs in to the DaoCloud Enterprise platform through the username and password.
+The username represents the account, and the user logs in to the Suanova Enterprise platform through the username and password.
 
 Having a user account is a prerequisite for users to access the platform. The newly created user does not have any permissions by default. For example, you need to assign corresponding role permissions to users, such as granting administrator permissions to submodules in __User List__ or __User Details__ .
 The sub-module administrator has the highest authority of the sub-module, and can create, manage, and delete all resources of the module.
