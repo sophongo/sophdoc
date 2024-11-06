@@ -872,7 +872,7 @@
 <ul>
 <li>已经部署 算丰 AI 算力平台 容器管理平台，且平台运行正常。</li>
 <li>容器管理模块<a href="../../../clusters/integrate-cluster.html">已接入 Kubernetes 集群</a>或者<a href="../../../clusters/create-cluster.html">已创建 Kubernetes 集群</a>，且能够访问集群的 UI 界面。</li>
-<li>已安装<a href="../install_nvidia_driver_of_operator.html">GPU Operator</a>。</li>
+<li>已安装 <a href="../install_nvidia_driver_of_operator.html">GPU Operator</a>。</li>
 <li>集群节点上具有<a href="../../gpu_matrix.html">对应型号的 GPU 卡</a></li>
 </ul>
 <h2 id="ui-mig-gpu">UI 界面使用 MIG GPU<a class="headerlink" href="#ui-mig-gpu" title="Permanent link">¶</a></h2>
@@ -884,12 +884,12 @@
 </li>
 <li>
 <p>通过镜像部署应用，可选择并使用 NVIDIA MIG 资源。</p>
-</li>
+<ul>
 <li>
 <p>MIG Single 模式示例（与整卡使用方式相同）：</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>MIG single 策略允许用户以与 GPU 整卡相同的方式（<code>nvidia.com/gpu</code>）请求和使用GPU资源，不同的是这些资源可以是 GPU 的一部分（MIG设备），而不是整个GPU。了解更多<img alt="GPU MIG 模式设计" src="../../../../../images/edit"/></p>
+<p>MIG single 策略允许用户以与 GPU 整卡相同的方式（<code>nvidia.com/gpu</code>）请求和使用GPU资源，不同的是这些资源可以是 GPU 的一部分（MIG设备），而不是整个GPU。了解更多 <a href="../../../../../images/edit">GPU MIG 模式设计</a></p>
 </div>
 <p><img alt="usemig" src="../../images/usemig.png"/></p>
 </li>
@@ -897,9 +897,11 @@
 <p>MIG Mixed 模式示例：</p>
 <p><img alt="mig02" src="../../images/pod-mig.png"/></p>
 </li>
+</ul>
+</li>
 </ol>
 <h2 id="yaml-mig">YAML 配置使用 MIG<a class="headerlink" href="#yaml-mig" title="Permanent link">¶</a></h2>
-<p><strong>MIG Single__ 模式：</strong></p>
+<p><strong>MIG Single 模式：</strong></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
