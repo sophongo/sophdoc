@@ -5,10 +5,6 @@
 - AI Lab v0.3.0 上线了模型推理服务，针对传统的深度学习模型，方便用户可以直接使用AI Lab 的推理服务，无需关心模型的部署和维护。
 - AI Lab v0.6.0 支持了完整版本的 vLLM 推理能力，支持诸多大语言模型，如 `LLama`、`Qwen`、`ChatGLM` 等。
 
-!!! note
-
-    推理能力的支持与 AI Lab 的版本有关，请查阅 [Release Notes](../../intro/release-notes.md) 了解最新版本并及时更新。
-
 您可以在 AI Lab 中使用经过算丰 AI 算力平台验证过的 GPU 类型；
 更多细节参阅 [GPU 支持矩阵](../../../kpanda/user-guide/gpu/gpu_matrix.md)。
 

@@ -16,13 +16,13 @@
 
 为工作负载配置垂直伸缩策略之前，需要满足以下前提条件：
 
-- 在[容器管理](../../intro/index.md)模块中[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
+- 在容器管理模块中[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
 
 - 创建一个[命名空间](../namespaces/createns.md)、[用户](../../../ghippo/user-guide/access-control/user.md)、[无状态工作负载](../workloads/create-deployment.md)或[有状态工作负载](../workloads/create-statefulset.md)。
 
 - 当前操作用户应具有 [NS Editor](../permissions/permission-brief.md#ns-editor) 或更高权限，详情可参考[命名空间授权](../namespaces/createns.md)。
 
-- 当前集群已经安装 [ __metrics-server__ ](install-metrics-server.md) 和 [ __VPA__ ](install-vpa.md) 插件。
+- 当前集群已经安装 [metrics-server](install-metrics-server.md) 和 [VPA](install-vpa.md) 插件。
 
 ## 操作步骤
 

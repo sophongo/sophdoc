@@ -12,10 +12,6 @@ hide:
 - Workspace Editor
 - Workspace Viewer
 
-!!! info
-
-    Starting from installer [v0.6.0](../../download/index.md) of AI platform, the global management module supports custom roles configuration for Service Mesh, meaning that in addition to using default system roles, custom roles can be defined and granted different permissions within Service Mesh.
-
 <!--
 Use `&check;`for permissions granted and `&cross;`for permissions not granted.
 -->

@@ -5,7 +5,7 @@ hide:
 
 # 容器管理权限说明
 
-[容器管理模块](../../kpanda/intro/index.md)使用以下角色：
+容器管理模块使用以下角色：
 
 - Admin / Kpanda Owner
 - [Cluster Admin](../../kpanda/user-guide/permissions/permission-brief.md#cluster-admin)

@@ -11,7 +11,6 @@
 - 容器管理模块已[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者已[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
 - 已完成一个[命名空间的创建](../namespaces/createns.md)，并为用户授予 [Cluster Admin](../permissions/permission-brief.md) ，
   详情可参考[集群授权](../permissions/cluster-ns-auth.md)。
-- 若为离线环境，则需完成 [Addon 离线包](../../../download/addon/history.md)导入，且在 Helm 模板界面可找到 cro-operator 模板。
 
 ## 开启集群超卖
 

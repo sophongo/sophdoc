@@ -44,5 +44,4 @@ No resources found in metallbs-system namespace.
 
 ## MetalLB 安装模式
 
-该模式下安装完成后，会默认获取审计日志源 IP，若需要了解更多，请参考
-[MetalLB 源 IP](../../../network/modules/metallb/source_ip.md)。
+该模式下安装完成后，会默认获取审计日志源 IP。
