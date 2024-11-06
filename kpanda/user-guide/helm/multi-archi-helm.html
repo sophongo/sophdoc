@@ -335,8 +335,7 @@
 本文将介绍如何将单架构 Helm 应用融合为多架构，以及多架构与多架构 Helm 应用的相互融合。</p>
 <h2 id="_1">导入<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <h3 id="_2">单架构导入<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
-<p>准备好待导入的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code> ，可从
-<a href="../../../download/addon/history.md">下载中心</a>下载。
+<p>准备好待导入的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code> 。
 把路径填写至 <strong>clusterConfig.yml</strong> 配置文件，例如：</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">addonPackage</span><span class="p">:</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s">"/home/addon-offline-full-package-v0.9.0-amd64.tar.gz"</span>
@@ -345,14 +344,13 @@
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>~/dce5-installer<span class="w"> </span>cluster-create<span class="w"> </span>-c<span class="w"> </span>/home/dce5/sample/clusterConfig.yaml<span class="w"> </span>-m<span class="w"> </span>/home/dce5/sample/manifest.yaml<span class="w"> </span>-d<span class="w"> </span>-j13
 </code></pre></div>
 <h3 id="_3">多架构融合<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
-<p>准备好待融合的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code> ，可从
-<a href="../../../download/addon/history.md">下载中心</a>下载。</p>
+<p>准备好待融合的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code>。</p>
 <p>以 addon-offline-full-package-v0.9.0-arm64.tar.gz 为例，执行导入命令：</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>~/dce5-installer<span class="w"> </span>import-addon<span class="w"> </span>-c<span class="w"> </span>/home/dce5/sample/clusterConfig.yaml<span class="w"> </span>--addon-path<span class="o">=</span>/home/addon-offline-full-package-v0.9.0-arm64.tar.gz
 </code></pre></div>
 <h2 id="_4">升级<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
 <h3 id="_5">单架构升级<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
-<p>准备好待导入的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code> ，可从<a href="../../../download/addon/history.md">下载中心</a>下载。</p>
+<p>准备好待导入的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code>。</p>
 <p>把路径填写至 clusterConfig.yml 配置文件，例如：</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">addonPackage</span><span class="p">:</span>
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s">"/home/addon-offline-full-package-v0.11.0-amd64.tar.gz"</span>
@@ -361,7 +359,7 @@
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>~/dce5-installer<span class="w"> </span>cluster-create<span class="w"> </span>-c<span class="w"> </span>/home/dce5/sample/clusterConfig.yaml<span class="w"> </span>-m<span class="w"> </span>/home/dce5/sample/manifest.yaml<span class="w"> </span>-d<span class="w"> </span>-j13
 </code></pre></div>
 <h3 id="_6">多架构融合<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
-<p>准备好待融合的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code> ，可从<a href="../../../download/addon/history.md">下载中心</a>下载。</p>
+<p>准备好待融合的离线包 <code>addon-offline-full-package-${version}-${arch}.tar.gz</code>。</p>
 <p>以 addon-offline-full-package-v0.11.0-arm64.tar.gz 为例，执行导入命令：</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>~/dce5-installer<span class="w"> </span>import-addon<span class="w"> </span>-c<span class="w"> </span>/home/dce5/sample/clusterConfig.yaml<span class="w"> </span>--addon-path<span class="o">=</span>/home/addon-offline-full-package-v0.11.0-arm64.tar.gz
 </code></pre></div>

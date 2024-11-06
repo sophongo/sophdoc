@@ -811,7 +811,7 @@
 <p>在使用镜像创建有状态负载之前，需要满足以下前提条件：</p>
 <ul>
 <li>
-<p>在<a href="../../intro/index.md">容器管理</a>模块中<a href="../clusters/integrate-cluster.html">接入 Kubernetes 集群</a>或者<a href="../clusters/create-cluster.html">创建 Kubernetes 集群</a>，且能够访问集群的 UI 界面。</p>
+<p>在容器管理模块中<a href="../clusters/integrate-cluster.html">接入 Kubernetes 集群</a>或者<a href="../clusters/create-cluster.html">创建 Kubernetes 集群</a>，且能够访问集群的 UI 界面。</p>
 </li>
 <li>
 <p>创建一个<a href="../namespaces/createns.html">命名空间</a>和<a href="../../../ghippo/user-guide/access-control/user.html">用户</a>。</p>
@@ -866,7 +866,7 @@
 <li>容器名称：最多包含 63 个字符，支持小写字母、数字及分隔符（“-”）。必须以小写字母或数字开头及结尾，例如 nginx-01。</li>
 <li>镜像：<ul>
 <li>容器镜像：从列表中选择一个合适的镜像。输入镜像名称时，默认从官方的 <a href="https://hub.docker.com/">DockerHub</a> 拉取镜像。
-  接入算丰 AI 算力平台的<a href="../../../kangaroo/intro/index.md">镜像仓库</a>模块后，可以点击右侧的 <strong>选择镜像</strong> 按钮来选择镜像。</li>
+  接入算丰 AI 算力平台的镜像仓库模块后，可以点击右侧的 <strong>选择镜像</strong> 按钮来选择镜像。</li>
 <li>镜像版本：从下拉列表选择一个合适的版本。</li>
 <li>镜像拉取策略：勾选 <strong>总是拉取镜像</strong> 后，负载每次重启/升级时都会从仓库重新拉取镜像。
   如果不勾选，则只拉取本地镜像，只有当镜像在本地不存在时才从镜像仓库重新拉取。
@@ -946,7 +946,7 @@
 <div class="tabbed-block">
 <ul>
 <li>
-<p>如在集群中部署了 <a href="../../../network/modules/spiderpool/index.md">SpiderPool</a> 和 <a href="../../../network/modules/multus-underlay/index.md">Multus</a> 组件，则可以在网络配置中配置容器网卡。详情参考<a href="../../../network/config/use-ippool/usage.md">工作负载使用 IP 池</a>。</p>
+<p>如在集群中部署了 SpiderPool 和 Multus 组件，则可以在网络配置中配置容器网卡。详情参考<a href="../../../network/config/use-ippool/usage.md">工作负载使用 IP 池</a>。</p>
 </li>
 <li>
 <p>DNS 配置：应用在某些场景下会出现冗余的 DNS 查询。Kubernetes 为应用提供了与 DNS 相关的配置选项，能够在某些场景下有效地减少冗余的 DNS 查询，提升业务并发量。</p>

@@ -186,32 +186,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sophdoc.github.io/ghippo/permissions/amamba.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/baize.html</loc>
          <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sophdoc.github.io/ghippo/permissions/kpanda.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/ghippo/permissions/mcamel.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/ghippo/permissions/mspider.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/ghippo/permissions/skoala.html</loc>
          <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -401,11 +381,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sophdoc.github.io/ghippo/user-guide/report-billing/gmagpie-offline-install.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sophdoc.github.io/ghippo/user-guide/report-billing/report.html</loc>
          <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
@@ -482,11 +457,6 @@
     </url>
     <url>
          <loc>https://sophdoc.github.io/insight/quickstart/install/knownissues.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/insight/quickstart/install/offline-install.html</loc>
          <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -747,11 +717,6 @@
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/backup/install-velero.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/kpanda/user-guide/backup/offline-upgrade.html</loc>
          <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1086,11 +1051,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sophdoc.github.io/kpanda/user-guide/inspect/offline-upgrade.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/inspect/report.html</loc>
          <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
@@ -1252,11 +1212,6 @@
     </url>
     <url>
          <loc>https://sophdoc.github.io/kpanda/user-guide/security/hunter.html</loc>
-         <lastmod>2024-11-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/kpanda/user-guide/security/offline-upgrade-dowl.html</loc>
          <lastmod>2024-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>

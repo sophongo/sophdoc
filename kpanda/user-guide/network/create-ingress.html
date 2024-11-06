@@ -762,7 +762,7 @@
 <ul>
 <li>容器管理模块<a href="../clusters/integrate-cluster.html">已接入 Kubernetes 集群</a>或者<a href="../clusters/create-cluster.html">已创建 Kubernetes</a>，且能够访问集群的 UI 界面。</li>
 <li>已完成一个<a href="../namespaces/createns.html">命名空间的创建</a>、<a href="../../../ghippo/user-guide/access-control/user.html">用户的创建</a>，并将用户授权为 <a href="../permissions/permission-brief.html#ns-editor">NS Editor</a> 角色 ，详情可参考<a href="../permissions/cluster-ns-auth.html">命名空间授权</a>。</li>
-<li>已经完成 <a href="../../../network/modules/ingress-nginx/install.md">Ingress 实例的创建</a>，已<a href="../workloads/create-deployment.html">部署应用工作负载</a>，并且已<a href="create-services.html">创建对应 Service</a></li>
+<li>已经完成 Ingress 实例的创建，已<a href="../workloads/create-deployment.html">部署应用工作负载</a>，并且已<a href="create-services.html">创建对应 Service</a></li>
 <li>单个实例中有多个容器时，请确保容器使用的端口不冲突，否则部署会失效。</li>
 </ul>
 <h2 id="_2">创建路由<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
@@ -799,7 +799,7 @@
 <li><strong>目标服务端口</strong> ：服务对外暴露的端口</li>
 </ul>
 </li>
-<li><strong>负载均衡器类型</strong> ：必填，<a href="../../../network/modules/ingress-nginx/scope.md">Ingress 实例的使用范围</a><ul>
+<li><strong>负载均衡器类型</strong> ：必填，Ingress 实例的使用范围<ul>
 <li><strong>平台级负载均衡器</strong> ：同一个集群内，共享同一个 Ingress 实例，其中 Pod 都可以接收到由该负载均衡分发的请求</li>
 <li><strong>租户级负载均衡器</strong> ：租户负载均衡器，Ingress 实例独属于当前命名空，或者独属于某一工作空间，
   并且设置的工作空间中包含当前命名空间，其中 Pod 都可以接收到由该负载均衡分发的请求</li>
@@ -807,7 +807,7 @@
 </li>
 <li><strong>Ingress Class</strong> ：选填，选择对应的 Ingress 实例，选择后将流量导入到指定的 Ingress 实例。<ul>
 <li>为 None 时使用默认的 DefaultClass，请在创建 Ingress 实例时设置 DefaultClass，
-  更多信息请参考 <a href="../../../network/modules/ingress-nginx/ingressclass.md">Ingress Class</a></li>
+  更多信息请参考 Ingress Class</li>
 <li>若选择其他实例（如 <strong>ngnix</strong> ），则会出现高级配置，可设置 <strong>会话保持</strong> 、 <strong>路径重写</strong> 、 <strong>重定向</strong> 和 <strong>流量分发</strong> 。</li>
 </ul>
 </li>

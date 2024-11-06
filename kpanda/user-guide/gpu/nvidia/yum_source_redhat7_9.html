@@ -953,12 +953,11 @@
 <p>本文介绍如何基于全局服务集群任意节点构建 Red Hat 7.9 离线 yum 源包，并在安装 Gpu Operator 时使用 <code>RepoConfig.ConfigMapName</code> 参数。</p>
 <h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <ol>
-<li>用户已经在平台上安装了 v0.12.0 及以上版本的 <a href="../../../../download/addon/history.md">addon 离线包</a></li>
 <li>待部署 GPU Operator 的集群节点 OS 必须为 Red Hat 7.9，且内核版本完全一致</li>
 <li>准备一个能够与待部署 GPU Operator 的集群网络联通的文件服务器，如 nginx 或 minio</li>
 <li>准备一个能够访问互联网、待部署 GPU Operator 的集群和文件服务器的节点，
-   且节点上已经完成 <a href="../../../../install/community/kind/online.md#docker">Docker 的安装</a>
-5.全局服务集群的节点必须为 Red Hat 7.9</li>
+   且节点上已经完成 <a href="../../../../install/community/kind/online.md#docker">Docker 的安装</a></li>
+<li>全局服务集群的节点必须为 Red Hat 7.9</li>
 </ol>
 <h2 id="_3">操作步骤<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <h3 id="1-yum">1. 构建相关内核版本的离线 Yum 源<a class="headerlink" href="#1-yum" title="Permanent link">¶</a></h3>
