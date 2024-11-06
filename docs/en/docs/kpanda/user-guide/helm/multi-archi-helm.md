@@ -11,7 +11,7 @@ In a multi-arch cluster, it is common to use Helm charts that support multiple a
 
 ### Import Single-arch
 
-Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`, which can be downloaded from the [Download Center](../../../download/addon/history.md).
+Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`.
 
 Specify the path in the __clusterConfig.yml__ configuration file, for example:
 
@@ -28,7 +28,7 @@ Then run the import command:
 
 ### Integrate Multi-arch
 
-Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`, which can be downloaded from the [Download Center](../../../download/addon/history.md).
+Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`.
 
 Take `addon-offline-full-package-v0.9.0-arm64.tar.gz` as an example and run the import command:
 
@@ -40,7 +40,7 @@ Take `addon-offline-full-package-v0.9.0-arm64.tar.gz` as an example and run the 
 
 ### Upgrade Single-arch
 
-Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`, which can be downloaded from the [Download Center](../../../download/addon/history.md).
+Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`.
 
 Specify the path in the __clusterConfig.yml__ configuration file, for example:
 
@@ -57,7 +57,7 @@ Then run the import command:
 
 ### Multi-arch Integration
 
-Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`, which can be downloaded from the [Download Center](../../../download/addon/history.md).
+Prepare the offline package `addon-offline-full-package-${version}-${arch}.tar.gz`.
 
 Take `addon-offline-full-package-v0.11.0-arm64.tar.gz` as an example and run the import command:
 

@@ -16,7 +16,7 @@ Demo 程序来自 [ChatGLM3](https://github.com/THUDM/ChatGLM3/blob/main/finetun
 
 !!! info
 
-    在开始体验之前，请检查 AI 算力平台以及 [AI Lab 部署](../intro/install.md)正确，GPU 队列资源初始化成功，且算力资源充足。
+    在开始体验之前，请检查 AI 算力平台以及 AI Lab 部署正确，GPU 队列资源初始化成功，且算力资源充足。
 
 ## 数据准备
 

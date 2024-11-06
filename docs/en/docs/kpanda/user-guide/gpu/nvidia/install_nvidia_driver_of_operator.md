@@ -18,9 +18,6 @@ and [Building Offline Yum Source for Red Hat 8.4](./upgrade_yum_source_redhat8_4
 - The kernel version of the cluster nodes where the gpu-operator is to be deployed must be
   completely consistent. The distribution and GPU card model of the nodes must fall within
   the scope specified in the [GPU Support Matrix](../gpu_matrix.md).
-- The user has already installed v0.20.0 or above of the
-  [addon offline package](../../../../download/addon/history.md) on the platform
-  (Addon has supported installing the gpu-operator since v0.12, but the gpu-operator only has built-in support for CentOS 7.9).
 - When installing the gpu-operator, select v23.9.0+2 or above.
 
 ## Steps

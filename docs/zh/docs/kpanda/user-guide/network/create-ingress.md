@@ -11,7 +11,7 @@ Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型�
 
 - 容器管理模块[已接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[已创建 Kubernetes](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
 - 已完成一个[命名空间的创建](../namespaces/createns.md)、[用户的创建](../../../ghippo/user-guide/access-control/user.md)，并将用户授权为 [NS Editor](../permissions/permission-brief.md#ns-editor) 角色 ，详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
-- 已经完成 [Ingress 实例的创建](../../../network/modules/ingress-nginx/install.md)，已[部署应用工作负载](../workloads/create-deployment.md)，并且已[创建对应 Service](create-services.md)
+- 已经完成 Ingress 实例的创建，已[部署应用工作负载](../workloads/create-deployment.md)，并且已[创建对应 Service](create-services.md)
 - 单个实例中有多个容器时，请确保容器使用的端口不冲突，否则部署会失效。
 
 ## 创建路由
@@ -46,13 +46,13 @@ Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型�
     - __路径__ ：指定服务访问的URL路径，默认为根路径
     - __目标服务__ ：进行路由的服务名称
     - __目标服务端口__ ：服务对外暴露的端口
-- __负载均衡器类型__ ：必填，[Ingress 实例的使用范围](../../../network/modules/ingress-nginx/scope.md)
+- __负载均衡器类型__ ：必填，Ingress 实例的使用范围
     - __平台级负载均衡器__ ：同一个集群内，共享同一个 Ingress 实例，其中 Pod 都可以接收到由该负载均衡分发的请求
     - __租户级负载均衡器__ ：租户负载均衡器，Ingress 实例独属于当前命名空，或者独属于某一工作空间，
       并且设置的工作空间中包含当前命名空间，其中 Pod 都可以接收到由该负载均衡分发的请求
 - __Ingress Class__ ：选填，选择对应的 Ingress 实例，选择后将流量导入到指定的 Ingress 实例。
     - 为 None 时使用默认的 DefaultClass，请在创建 Ingress 实例时设置 DefaultClass，
-      更多信息请参考 [Ingress Class](../../../network/modules/ingress-nginx/ingressclass.md)
+      更多信息请参考 Ingress Class
     - 若选择其他实例（如 __ngnix__ ），则会出现高级配置，可设置 __会话保持__ 、 __路径重写__ 、 __重定向__ 和 __流量分发__ 。
 - __会话保持__ ：选填，会话保持分为 三种类型： __L4 源地址哈希__ 、 __Cookie Key__ 、 __L7 Header Name__ ，开启后根据对应规则进行会话保持。
     - __L4 源地址哈希__ ：开启后默认在 Annotation 中加入如下标签：

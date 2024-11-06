@@ -15,9 +15,9 @@
 
 !!! tip
 
-    从 [Insight v0.22.0](../../intro/release-notes.md#v0220) 开始，不再需要手动安装 Instrumentation CR。
+    从 Insight v0.22.0 开始，不再需要手动安装 Instrumentation CR。
 
-在 insight-system 命名空间下安装，不同版本之间有一些细小的差别。
+在 `insight-system` 命名空间下安装，不同版本之间有一些细小的差别。
 
 === "Insight v0.21.x"
 
