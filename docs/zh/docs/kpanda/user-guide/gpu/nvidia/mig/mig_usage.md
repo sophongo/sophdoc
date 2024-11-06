@@ -6,7 +6,7 @@
 
 - 已经部署 算丰 AI 算力平台 容器管理平台，且平台运行正常。
 - 容器管理模块[已接入 Kubernetes 集群](../../../clusters/integrate-cluster.md)或者[已创建 Kubernetes 集群](../../../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
-- 已安装[GPU Operator](../install_nvidia_driver_of_operator.md)。
+- 已安装 [GPU Operator](../install_nvidia_driver_of_operator.md)。
 - 集群节点上具有[对应型号的 GPU 卡](../../gpu_matrix.md)
 
 ## UI 界面使用 MIG GPU
@@ -19,21 +19,21 @@
 
 2. 通过镜像部署应用，可选择并使用 NVIDIA MIG 资源。
 
-- MIG Single 模式示例（与整卡使用方式相同）：
+    - MIG Single 模式示例（与整卡使用方式相同）：
 
-    !!! note
-    
-        MIG single 策略允许用户以与 GPU 整卡相同的方式（`nvidia.com/gpu`）请求和使用GPU资源，不同的是这些资源可以是 GPU 的一部分（MIG设备），而不是整个GPU。了解更多![GPU MIG 模式设计](../../../../../images/edit)
-    
-    ![usemig](../../images/usemig.png)
+        !!! note
+        
+            MIG single 策略允许用户以与 GPU 整卡相同的方式（`nvidia.com/gpu`）请求和使用GPU资源，不同的是这些资源可以是 GPU 的一部分（MIG设备），而不是整个GPU。了解更多 [GPU MIG 模式设计](../../../../../images/edit)
+        
+        ![usemig](../../images/usemig.png)
 
-- MIG Mixed 模式示例：
+    - MIG Mixed 模式示例：
 
-    ![mig02](../../images/pod-mig.png)
+        ![mig02](../../images/pod-mig.png)
 
 ## YAML 配置使用 MIG
 
-**MIG Single__ 模式：**
+**MIG Single 模式：**
 
 ```yaml
 apiVersion: apps/v1

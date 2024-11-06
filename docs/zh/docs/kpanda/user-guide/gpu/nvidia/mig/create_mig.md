@@ -5,7 +5,7 @@
 - **Single 模式**，节点仅在其所有 GPU 上公开单一类型的 MIG 设备。
 - **Mixed 模式**，节点在其所有 GPU 上公开混合 MIG 设备类型。
 
-详情参考：[NVIDIA GPU 卡使用模式](../index.md)
+详情参考 [NVIDIA GPU 卡使用模式](../index.md)。
 
 ## 前提条件
 
@@ -116,8 +116,9 @@ custom-config:
 这里一共有两个配置：
 
 1. MIg 策略：Mixed 以及 Single 。
-2. 切分策略：这里的策略需要与 **default-mig-parted-config**（或者用户自定义的切分策略） 配置文件中的 key 保持一致。
+2. 切分策略：这里的策略需要与 **default-mig-parted-config**
+   （或者用户自定义的切分策略）配置文件中的 key 保持一致。
 
-点击确认按钮后，等待约一分钟左右刷新页面，MIG 模式切换成：
+点击 **确定** 按钮后，等待约一分钟左右刷新页面，MIG 模式切换成：
 
 ![切换 mig](../../images/node-mig.png)
