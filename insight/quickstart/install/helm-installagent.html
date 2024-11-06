@@ -7,12 +7,10 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Suanova documentation website." name="description"/>
 <meta content="Suanova" name="author"/>
-<link href="https://sophdoc.github.io/insight/user-guide/infra/namespace.html" rel="canonical"/>
-<link href="node.html" rel="prev"/>
-<link href="container.html" rel="next"/>
+<link href="https://sophdoc.github.io/insight/quickstart/install/helm-installagent.html" rel="canonical"/>
 <link href="../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
-<title>命名空间 - 豐收二號檔案站</title>
+<title>通过 Helm 部署 Insight Agent - 豐收二號檔案站</title>
 <link href="../../../assets/stylesheets/main.3cba04c6.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -26,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#helm-insight-agent">
           Skip to content
         </a>
 </div>
@@ -50,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              命名空间
+              通过 Helm 部署 Insight Agent
             
           </span>
 </div>
@@ -150,7 +148,7 @@
 
         </a>
 </li>
-<li class="md-tabs__item md-tabs__item--active">
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../../../ghippo/user-guide/access-control/iam.html">
           
   
@@ -206,491 +204,13 @@
 <span class="md-nav__icon md-icon"></span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../ghippo/user-guide/access-control/iam.html">
 <span class="md-ellipsis">
     管理员手册
   </span>
 <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_2">
-<span class="md-nav__icon md-icon"></span>
-            管理员手册
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
-<span class="md-ellipsis">
-    全局管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_1">
-<span class="md-nav__icon md-icon"></span>
-            全局管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/access-control/iam.html">
-<span class="md-ellipsis">
-    用户与访问控制
-  </span>
-<span class="md-nav__icon md-icon"></span>
 </a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/workspace/ws-folder.html">
-<span class="md-ellipsis">
-    工作空间与层级
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/audit/open-audit.html">
-<span class="md-ellipsis">
-    审计日志
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/platform-setting/security.html">
-<span class="md-ellipsis">
-    平台设置
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
-<span class="md-ellipsis">
-    容器管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_2">
-<span class="md-nav__icon md-icon"></span>
-            容器管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/clusters/create-cluster.html">
-<span class="md-ellipsis">
-    集群管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/namespaces/createns.html">
-<span class="md-ellipsis">
-    命名空间
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/nodes/node-check.html">
-<span class="md-ellipsis">
-    节点管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/workloads/create-deployment.html">
-<span class="md-ellipsis">
-    工作负载
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/scale/install-metrics-server.html">
-<span class="md-ellipsis">
-    弹性伸缩
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/network/create-services.html">
-<span class="md-ellipsis">
-    容器网络
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/storage/pvc.html">
-<span class="md-ellipsis">
-    容器存储
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/configmaps-secrets/create-configmap.html">
-<span class="md-ellipsis">
-    配置与密钥
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/security/index.html">
-<span class="md-ellipsis">
-    安全管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/permissions/permission-brief.html">
-<span class="md-ellipsis">
-    权限管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/gpu/index.html">
-<span class="md-ellipsis">
-    GPU 管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
-<span class="md-ellipsis">
-    可观测性
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_3">
-<span class="md-nav__icon md-icon"></span>
-            可观测性
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../dashboard/overview.html">
-<span class="md-ellipsis">
-    仪表盘
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
-<span class="md-ellipsis">
-    基础设施
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_3_2_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_3_2">
-<span class="md-nav__icon md-icon"></span>
-            基础设施
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="cluster.html">
-<span class="md-ellipsis">
-    集群
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="node.html">
-<span class="md-ellipsis">
-    节点
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    命名空间
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="namespace.html">
-<span class="md-ellipsis">
-    命名空间
-  </span>
-</a>
-<nav aria-label="导航" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      导航
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      前提条件
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      操作步骤
-    </span>
-</a>
-<nav aria-label="操作步骤" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      指标说明
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="container.html">
-<span class="md-ellipsis">
-    工作负载
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="event.html">
-<span class="md-ellipsis">
-    事件查询
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="probe.html">
-<span class="md-ellipsis">
-    拨测
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../data-query/metric.html">
-<span class="md-ellipsis">
-    指标
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../data-query/log.html">
-<span class="md-ellipsis">
-    日志
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../trace/topology.html">
-<span class="md-ellipsis">
-    链路追踪
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../alert-center/index.html">
-<span class="md-ellipsis">
-    告警
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../collection-manag/collection-manag.html">
-<span class="md-ellipsis">
-    数据采集
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../system-config/system-component.html">
-<span class="md-ellipsis">
-    系统配置
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
-<span class="md-ellipsis">
-    云主机管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_4">
-<span class="md-nav__icon md-icon"></span>
-            云主机管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/create-secret.html">
-<span class="md-ellipsis">
-    创建密钥
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/clone.html">
-<span class="md-ellipsis">
-    克隆云主机
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/snapshot.html">
-<span class="md-ellipsis">
-    快照管理
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/scheduled-snapshot.html">
-<span class="md-ellipsis">
-    定时快照
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/live-migration.html">
-<span class="md-ellipsis">
-    实时迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/migratiom.html">
-<span class="md-ellipsis">
-    集群内冷迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/cross-cluster-migrate.html">
-<span class="md-ellipsis">
-    云主机跨集群迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/monitor.html">
-<span class="md-ellipsis">
-    云主机监控
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/vm-network.html">
-<span class="md-ellipsis">
-    云主机网络
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/vm-sc.html">
-<span class="md-ellipsis">
-    云主机存储
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/auto-migrate.html">
-<span class="md-ellipsis">
-    云主机漂移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/health-check.html">
-<span class="md-ellipsis">
-    云主机健康检查
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_5" type="checkbox"/>
-<div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../baize/oam/index.html">
-<span class="md-ellipsis">
-    AI Lab 运维管理
-  </span>
-</a>
-<label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-expanded="false" aria-labelledby="__nav_2_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_5">
-<span class="md-nav__icon md-icon"></span>
-            AI Lab 运维管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../baize/oam/resource.html">
-<span class="md-ellipsis">
-    资源管理
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../baize/oam/queue/create.html">
-<span class="md-ellipsis">
-    队列管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../baize/best-practice/deploy-nfs-in-worker.html">
-<span class="md-ellipsis">
-    最佳实践
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../../../openapi/index.html">
@@ -705,7 +225,7 @@
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="导航" class="md-nav md-nav--secondary">
@@ -715,29 +235,36 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#insight-agent">
 <span class="md-ellipsis">
-      前提条件
+      安装 Insight Agent
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      操作步骤
-    </span>
-</a>
-<nav aria-label="操作步骤" class="md-nav">
+<nav aria-label="安装 Insight Agent" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      指标说明
+      如何获取连接地址
     </span>
 </a>
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insight-agent_3">
+<span class="md-ellipsis">
+      升级 Insight Agent
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insight-agent_4">
+<span class="md-ellipsis">
+      卸载 Insight Agent
+    </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -746,54 +273,125 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">命名空间监控<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>以命名空间为维度，快速查询命名空间内的资源消耗和变化趋势。</p>
-<h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>集群中已<a href="../../quickstart/install/install-agent.html">安装 insight-agent</a> 且应用处于 <strong>运行中</strong> 状态。</p>
-<h2 id="_3">操作步骤<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h1 id="helm-insight-agent">通过 Helm 部署 Insight Agent<a class="headerlink" href="#helm-insight-agent" title="Permanent link">¶</a></h1>
+<p>本文描述了在命令行中通过 Helm 命令安装 Insight Agent 社区版的操作步骤。</p>
+<h2 id="insight-agent">安装 Insight Agent<a class="headerlink" href="#insight-agent" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>进入 <strong>可观测性</strong> 产品模块。</p>
+<p>使用以下命令添加镜像仓库的地址</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>insight<span class="w"> </span>https://release.daocloud.io/chartrepo/insight
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>helm<span class="w"> </span>repo<span class="w"> </span>upgrade
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>helm<span class="w"> </span>search<span class="w"> </span>repo<span class="w">  </span>insight/insight-agent<span class="w"> </span>--versions
+</code></pre></div>
 </li>
 <li>
-<p>在左边导航栏选择 <strong>基础设施</strong> &gt; <strong>命名空间</strong> 。在该页面可查看以下信息：</p>
-<ol>
-<li><strong>切换命名空间</strong>：在顶部切换集群或命名空间；</li>
-<li><strong>资源概览</strong>：统计所选命名空间下的正常和全部工作负载的数量；</li>
-<li><strong>故障</strong>：统计所选命名空间下产生的告警数量；</li>
-<li><strong>事件</strong>：统计所选命名空间下 24 小时内 Warning 级别的事件数量；</li>
-<li><strong>资源消耗</strong>：统计所选命名空间下容器组的 CPU、内存使用量之和 及 CPU、内存配额情况。</li>
-</ol>
-<p><img alt="命名空间" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/insight/images/namespace00.png" width="1000"/></p>
+<p>安装 <strong>Insight Agent</strong> 需要确保全局服务集群中的 <strong>Insight Server</strong> 正常运行，执行以下安装命令安装 <strong>Insight Agent</strong> 社区版，该配置不启用 Tracing 功能：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>--create-namespace<span class="w"> </span>--cleanup-on-fail<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span>--version<span class="w"> </span><span class="si">${</span><span class="nv">version</span><span class="si">}</span><span class="w"> </span><span class="se">\ </span><span class="w">     </span><span class="c1"># 请指定部署版本</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span>insight-agent<span class="w">  </span>insight/insight-agent<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.logging.elasticsearch.host<span class="o">=</span><span class="m">10</span>.10.10.x<span class="w"> </span><span class="se">\ </span><span class="w">   </span><span class="c1"># 请替换“10.10.10.x" 为全局服务集群或外置的 Elasticsearch 的地址</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.logging.elasticsearch.port<span class="o">=</span><span class="m">32517</span><span class="w"> </span><span class="se">\ </span><span class="w">    </span><span class="c1"># 请替换“32517" 为全局服务集群或外置的 Elasticsearch 暴露的端口</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.logging.elasticsearch.user<span class="o">=</span>elastic<span class="w"> </span><span class="se">\ </span><span class="w">    </span><span class="c1"># 请替换“elastic" 为全局服务集群或外置的 Elasticsearch 的用户名</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.logging.elasticsearch.password<span class="o">=</span>dangerous<span class="w"> </span><span class="se">\ </span><span class="w"> </span><span class="c1"># 请替换“dangerous" 为全局服务集群或外置的 Elasticsearch 的密码</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.metric.host<span class="o">=</span><span class="si">${</span><span class="nv">vminsert_address</span><span class="si">}</span><span class="w"> </span><span class="se">\ </span><span class="w">   </span><span class="c1"># 请替换“10.10.10.x" 为全局服务集群中 vminsert 的地址</span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.metric.port<span class="o">=</span><span class="si">${</span><span class="nv">vminsert_port</span><span class="si">}</span><span class="w"> </span><span class="se">\ </span><span class="w">   </span><span class="c1"># 请替换“32517" 为全局服务集群中 vminsert 的地址</span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.auditLog.host<span class="o">=</span><span class="si">${</span><span class="nv">opentelemetry</span><span class="p">-collector address</span><span class="si">}</span><span class="w"> </span><span class="se">\ </span><span class="w">    </span><span class="c1"># 请替换“32517" 为全局服务集群中 opentelemetry-collector 的端口</span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span>--set<span class="w"> </span>global.exporters.auditLog.port<span class="o">=</span><span class="si">${</span><span class="nv">otel_col_auditlog_port</span><span class="si">}</span><span class="se">\ </span><span class="w">  </span><span class="c1"># 请替换“32517" 为全局服务集群中 opentelemetry-collector 容器端口为 8006 的 service 对外访问的地址</span>
+<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span>-n<span class="w"> </span>insight-system
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>可参考 <strong>如何获取连接地址</strong> 获取地址信息。</p>
+</div>
+</li>
+<li>
+<p>执行以下命令确认安装状态：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>helm<span class="w"> </span>list<span class="w"> </span>-A
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>insight-system
+</code></pre></div>
 </li>
 </ol>
-<h3 id="_4">指标说明<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
-<table>
-<thead>
-<tr>
-<th>指标名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CPU 使用量</td>
-<td>所选命名空间中容器组的 CPU 使用量之和</td>
-</tr>
-<tr>
-<td>内存使用量</td>
-<td>所选命名空间中容器组的内存使用量之和</td>
-</tr>
-<tr>
-<td>容器组 CPU 使用量</td>
-<td>命名空间中各容器组的 CPU 使用量</td>
-</tr>
-<tr>
-<td>容器组内存使用量</td>
-<td>命名空间中各容器组的内存使用量</td>
-</tr>
-</tbody>
-</table>
+<h3 id="_1">如何获取连接地址<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<h4 id="insight-agent_1">在全局服务集群安装 Insight Agent<a class="headerlink" href="#insight-agent_1" title="Permanent link">¶</a></h4>
+<p>如果 Agent 是安装在管理集群，推荐通过域名来访问集群：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">vminsert_host</span><span class="o">=</span><span class="s2">"vminsert-insight-victoria-metrics-k8s-stack.insight-system.svc.cluster.local"</span><span class="w"> </span><span class="c1"># 指标</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">es_host</span><span class="o">=</span><span class="s2">"insight-es-master.insight-system.svc.cluster.local"</span><span class="w"> </span><span class="c1"># 日志</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">otel_col_host</span><span class="o">=</span><span class="s2">"insight-opentelemetry-collector.insight-system.svc.cluster.local"</span><span class="w"> </span><span class="c1"># 链路</span>
+</code></pre></div>
+<h4 id="insight-agent_2">在工作集群安装 Insight Agent<a class="headerlink" href="#insight-agent_2" title="Permanent link">¶</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">全局服务集群使用默认的 LoadBalancer</label><label for="__tabbed_1_2">登录全局服务集群的控制台操作</label><label for="__tabbed_1_3">全局服务集群使用 Nodeport</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>全局服务集群使用默认的 LoadBalancer 方式暴露服务时，登录全局服务集群的控制台，执行以下命令：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">INSIGHT_SERVER_IP</span><span class="o">=</span><span class="k">$(</span>kubectl<span class="w"> </span>get<span class="w"> </span>service<span class="w"> </span>insight-server<span class="w"> </span>-n<span class="w"> </span>insight-system<span class="w"> </span>--output<span class="o">=</span><span class="nv">jsonpath</span><span class="o">={</span>.spec.clusterIP<span class="o">}</span><span class="k">)</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>curl<span class="w"> </span>--location<span class="w"> </span>--request<span class="w"> </span>POST<span class="w"> </span><span class="s1">'http://'</span><span class="s2">"</span><span class="si">${</span><span class="nv">INSIGHT_SERVER_IP</span><span class="si">}</span><span class="s2">"</span><span class="s1">'/apis/insight.io/v1alpha1/agentinstallparam'</span>
+</code></pre></div>
+<p>将获得如下的返回值：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="o">{</span><span class="s2">"global"</span>:<span class="o">{</span><span class="s2">"exporters"</span>:<span class="o">{</span><span class="s2">"logging"</span>:<span class="o">{</span><span class="s2">"output"</span>:<span class="s2">"elasticsearch"</span>,<span class="s2">"elasticsearch"</span>:<span class="o">{</span><span class="s2">"host"</span>:<span class="s2">"10.6.182.32"</span><span class="o">}</span>,<span class="s2">"kafka"</span>:<span class="o">{}</span>,<span class="s2">"host"</span>:<span class="s2">"10.6.182.32"</span><span class="o">}</span>,<span class="s2">"metric"</span>:<span class="o">{</span><span class="s2">"host"</span>:<span class="s2">"10.6.182.32"</span><span class="o">}</span>,<span class="s2">"auditLog"</span>:<span class="w">    </span><span class="o">{</span><span class="s2">"host"</span>:<span class="s2">"10.6.182.32"</span><span class="o">}}}</span>,<span class="s2">"opentelemetry-operator"</span>:<span class="o">{</span><span class="s2">"enabled"</span>:true<span class="o">}</span>,<span class="s2">"opentelemetry-collector"</span>:<span class="o">{</span><span class="s2">"enabled"</span>:true<span class="o">}}</span>
+</code></pre></div>
+<p>其中：</p>
+<ul>
+<li><strong>global.exporters.logging.elasticsearch.host</strong> 是日志服务地址【不需要再设置对应服务的端口，都会使用相应默认值】；</li>
+<li><strong>global.exporters.metric.host</strong> 是指标服务地址；</li>
+<li><strong>global.exporters.trace.host</strong> 是链路服务地址；</li>
+<li><strong>global.exporters.auditLog.host</strong> 是审计日志服务地址 (和链路使用的同一个服务不同端口)；</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>登录全局服务集群的控制台，执行以下命令：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>service<span class="w"> </span>-n<span class="w"> </span>insight-system<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>lb
+<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>kubectl<span class="w"> </span>get<span class="w"> </span>service<span class="w"> </span>-n<span class="w"> </span>mcamel-system<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>es
+</code></pre></div>
+<p>其中：</p>
+<ul>
+<li><strong>lb-vminsert-insight-victoria-metrics-k8s-stack</strong> 是指标服务的地址；</li>
+<li><strong>lb-insight-opentelemetry-collector</strong> 是链路服务的地址;</li>
+<li><strong>mcamel-common-es-cluster-masters-es-http</strong> 是日志服务的地址;</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>全局服务集群使用 Nodeport 方式暴露服务时，登录全局服务集群的控制台，执行以下命令：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>service<span class="w"> </span>-n<span class="w"> </span>insight-system
+<a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>kubectl<span class="w"> </span>get<span class="w"> </span>service<span class="w"> </span>-n<span class="w"> </span>mcamel-system
+</code></pre></div>
+<p>其中：</p>
+<ul>
+<li><strong>vminsert-insight-victoria-metrics-k8s-stack</strong> 是指标服务的地址；</li>
+<li><strong>insight-opentelemetry-collector</strong> 是链路服务的地址;</li>
+<li><strong>mcamel-common-es-cluster-masters-es-http</strong> 是日志服务的地址;</li>
+</ul>
+</div>
+</div>
+</input></input></input></div>
+<h2 id="insight-agent_3">升级 Insight Agent<a class="headerlink" href="#insight-agent_3" title="Permanent link">¶</a></h2>
+<ol>
+<li>
+<p>登录目标集群的控制台，执行以下命令备份 <code>--set</code> 参数。</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>helm<span class="w"> </span>get<span class="w"> </span>values<span class="w"> </span>insight-agent<span class="w"> </span>-n<span class="w"> </span>insight-system<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>&gt;<span class="w"> </span>insight-agent.yaml
+</code></pre></div>
+</li>
+<li>
+<p>执行以下命令更新仓库。</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>helm<span class="w"> </span>repo<span class="w"> </span>upgrade
+</code></pre></div>
+</li>
+<li>
+<p>执行以下命令进行升级。</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>helm<span class="w"> </span>upgrade<span class="w"> </span>insight-agent<span class="w"> </span>insight/insight-agent<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>-n<span class="w"> </span>insight-system<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a>-f<span class="w"> </span>./insight-agent.yaml<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-10-4" id="__codelineno-10-4" name="__codelineno-10-4"></a>--version<span class="w"> </span><span class="si">${</span><span class="nv">version</span><span class="si">}</span><span class="w">   </span><span class="c1"># 指定升级版本</span>
+</code></pre></div>
+</li>
+<li>
+<p>执行以下命令确认安装状态：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>insight-system
+</code></pre></div>
+</li>
+</ol>
+<h2 id="insight-agent_4">卸载 Insight Agent<a class="headerlink" href="#insight-agent_4" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>helm<span class="w"> </span>uninstall<span class="w"> </span>insight-agent<span class="w"> </span>-n<span class="w"> </span>insight-system<span class="w"> </span>--timeout<span class="w"> </span>10m
+</code></pre></div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

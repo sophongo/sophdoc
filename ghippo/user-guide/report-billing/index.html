@@ -490,26 +490,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="导航" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      导航
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      报表管理
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      计量计费
-    </span>
-</a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -517,12 +497,14 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="_1">运营管理<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>运营管理通过可视化的方式，为您展示平台上统计时间范围内集群、节点、命名空间、容器组、工作空间等维度的 CPU/内存/存储/GPU 的使用总量和使用率等信息。以及通过使用量、使用时间及单价等信息，自动计算出的平台消费信息。该模块默认开启所有报表统计，同时也支持平台管理员对单个报表进行手动开启或关闭，开启/关闭后将在最长 20 分钟内，平台开始/停止采集报表数据，往期已采集到的数据还将正常展示。运营管理数据最多可在平台上保留 365 天，超过保留时间的统计数据将被自动删除。您也可以通过 CSV 或 Excel 方式下载报表后进行进一步的统计和分析。</p>
-<p>你需要先<a href="gmagpie-offline-install.html">安装或升级运营管理模块</a>，然后就可以体验报表管理和计费计量。</p>
-<h2 id="_2">报表管理<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>报表管理通过 CPU 利用率、内存利用率、存储利用率、GPU 算力利用率、GPU 显存利用率 5 个维度，对集群、节点、容器组、工作空间、命名空间 5 种资源进行数据统计。同时联动审计和告警模块，支持对审计数据和告警数据进行统计管理。共计支持 7 种类型报表。</p>
-<h2 id="_3">计量计费<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p>计量计费针对平台上的集群、节点、容器组、命名空间和工作空间 5 种资源进行计费统计。根据不同资源中 CPU、内存、存储和 GPU 的使用量，以及用户手动配置的价格和货币单位自动计算出每种资源在统计时间的消费情况，根据所选时间跨度不同，可快速计算出该跨度内的实际消费情况，如月度、季度、年度等。</p>
+<p>运营管理通过可视化的方式，为您展示平台上统计时间范围内集群、节点、命名空间、容器组、工作空间等维度的 CPU/内存/存储/GPU 的使用总量和使用率等信息。
+以及通过使用量、使用时间及单价等信息，自动计算出的平台消费信息。该模块默认开启所有报表统计，同时也支持平台管理员对单个报表进行手动开启或关闭，
+开启/关闭后将在最长 20 分钟内，平台开始/停止采集报表数据，往期已采集到的数据还将正常展示。
+运营管理数据最多可在平台上保留 365 天，超过保留时间的统计数据将被自动删除。您也可以通过 CSV 或 Excel 方式下载报表后进行进一步的统计和分析。</p>
+<p><a href="report.html">报表管理</a>通过 CPU 利用率、内存利用率、存储利用率、GPU 算力利用率、GPU 显存利用率 5 个维度，对集群、节点、容器组、工作空间、命名空间 5 种资源进行数据统计。同时联动审计和告警模块，支持对审计数据和告警数据进行统计管理。共计支持 7 种类型报表。</p>
+<p><a href="billing.html">计量计费</a>针对平台上的集群、节点、容器组、命名空间和工作空间 5 种资源进行计费统计。
+根据不同资源中 CPU、内存、存储和 GPU 的使用量，以及用户手动配置的价格和货币单位自动计算出每种资源在统计时间的消费情况，
+根据所选时间跨度不同，可快速计算出该跨度内的实际消费情况，如月度、季度、年度等。</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

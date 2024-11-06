@@ -7,12 +7,10 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Suanova documentation website." name="description"/>
 <meta content="Suanova" name="author"/>
-<link href="https://sophdoc.github.io/insight/user-guide/infra/namespace.html" rel="canonical"/>
-<link href="node.html" rel="prev"/>
-<link href="container.html" rel="next"/>
+<link href="https://sophdoc.github.io/insight/quickstart/res-plan/vms-res-plan.html" rel="canonical"/>
 <link href="../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
-<title>命名空间 - 豐收二號檔案站</title>
+<title>vmstorage 磁盘容量规划 - 豐收二號檔案站</title>
 <link href="../../../assets/stylesheets/main.3cba04c6.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -26,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#vmstorage">
           Skip to content
         </a>
 </div>
@@ -50,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              命名空间
+              vmstorage 磁盘容量规划
             
           </span>
 </div>
@@ -150,7 +148,7 @@
 
         </a>
 </li>
-<li class="md-tabs__item md-tabs__item--active">
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../../../ghippo/user-guide/access-control/iam.html">
           
   
@@ -206,491 +204,13 @@
 <span class="md-nav__icon md-icon"></span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../ghippo/user-guide/access-control/iam.html">
 <span class="md-ellipsis">
     管理员手册
   </span>
 <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_2">
-<span class="md-nav__icon md-icon"></span>
-            管理员手册
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
-<span class="md-ellipsis">
-    全局管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_1">
-<span class="md-nav__icon md-icon"></span>
-            全局管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/access-control/iam.html">
-<span class="md-ellipsis">
-    用户与访问控制
-  </span>
-<span class="md-nav__icon md-icon"></span>
 </a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/workspace/ws-folder.html">
-<span class="md-ellipsis">
-    工作空间与层级
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/audit/open-audit.html">
-<span class="md-ellipsis">
-    审计日志
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../ghippo/user-guide/platform-setting/security.html">
-<span class="md-ellipsis">
-    平台设置
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
-<span class="md-ellipsis">
-    容器管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_2">
-<span class="md-nav__icon md-icon"></span>
-            容器管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/clusters/create-cluster.html">
-<span class="md-ellipsis">
-    集群管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/namespaces/createns.html">
-<span class="md-ellipsis">
-    命名空间
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/nodes/node-check.html">
-<span class="md-ellipsis">
-    节点管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/workloads/create-deployment.html">
-<span class="md-ellipsis">
-    工作负载
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/scale/install-metrics-server.html">
-<span class="md-ellipsis">
-    弹性伸缩
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/network/create-services.html">
-<span class="md-ellipsis">
-    容器网络
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/storage/pvc.html">
-<span class="md-ellipsis">
-    容器存储
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/configmaps-secrets/create-configmap.html">
-<span class="md-ellipsis">
-    配置与密钥
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/security/index.html">
-<span class="md-ellipsis">
-    安全管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/permissions/permission-brief.html">
-<span class="md-ellipsis">
-    权限管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../kpanda/user-guide/gpu/index.html">
-<span class="md-ellipsis">
-    GPU 管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
-<span class="md-ellipsis">
-    可观测性
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_3">
-<span class="md-nav__icon md-icon"></span>
-            可观测性
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../dashboard/overview.html">
-<span class="md-ellipsis">
-    仪表盘
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
-<span class="md-ellipsis">
-    基础设施
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_3_2_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_3_2">
-<span class="md-nav__icon md-icon"></span>
-            基础设施
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="cluster.html">
-<span class="md-ellipsis">
-    集群
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="node.html">
-<span class="md-ellipsis">
-    节点
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    命名空间
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="namespace.html">
-<span class="md-ellipsis">
-    命名空间
-  </span>
-</a>
-<nav aria-label="导航" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      导航
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      前提条件
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      操作步骤
-    </span>
-</a>
-<nav aria-label="操作步骤" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      指标说明
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="container.html">
-<span class="md-ellipsis">
-    工作负载
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="event.html">
-<span class="md-ellipsis">
-    事件查询
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="probe.html">
-<span class="md-ellipsis">
-    拨测
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../data-query/metric.html">
-<span class="md-ellipsis">
-    指标
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../data-query/log.html">
-<span class="md-ellipsis">
-    日志
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../trace/topology.html">
-<span class="md-ellipsis">
-    链路追踪
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../alert-center/index.html">
-<span class="md-ellipsis">
-    告警
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../collection-manag/collection-manag.html">
-<span class="md-ellipsis">
-    数据采集
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../system-config/system-component.html">
-<span class="md-ellipsis">
-    系统配置
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
-<span class="md-ellipsis">
-    云主机管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_4">
-<span class="md-nav__icon md-icon"></span>
-            云主机管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/create-secret.html">
-<span class="md-ellipsis">
-    创建密钥
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/clone.html">
-<span class="md-ellipsis">
-    克隆云主机
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/snapshot.html">
-<span class="md-ellipsis">
-    快照管理
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/scheduled-snapshot.html">
-<span class="md-ellipsis">
-    定时快照
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/live-migration.html">
-<span class="md-ellipsis">
-    实时迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/migratiom.html">
-<span class="md-ellipsis">
-    集群内冷迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/cross-cluster-migrate.html">
-<span class="md-ellipsis">
-    云主机跨集群迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/monitor.html">
-<span class="md-ellipsis">
-    云主机监控
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/vm-network.html">
-<span class="md-ellipsis">
-    云主机网络
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/vm-sc.html">
-<span class="md-ellipsis">
-    云主机存储
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/auto-migrate.html">
-<span class="md-ellipsis">
-    云主机漂移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../virtnest/vm/health-check.html">
-<span class="md-ellipsis">
-    云主机健康检查
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_5" type="checkbox"/>
-<div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../baize/oam/index.html">
-<span class="md-ellipsis">
-    AI Lab 运维管理
-  </span>
-</a>
-<label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-expanded="false" aria-labelledby="__nav_2_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_5">
-<span class="md-nav__icon md-icon"></span>
-            AI Lab 运维管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../baize/oam/resource.html">
-<span class="md-ellipsis">
-    资源管理
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../baize/oam/queue/create.html">
-<span class="md-ellipsis">
-    队列管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../baize/best-practice/deploy-nfs-in-worker.html">
-<span class="md-ellipsis">
-    最佳实践
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../../../openapi/index.html">
@@ -705,7 +225,7 @@
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="导航" class="md-nav md-nav--secondary">
@@ -715,24 +235,45 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      测试结果
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      前提条件
+      计算方法
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      操作步骤
+      参考容量
     </span>
 </a>
-<nav aria-label="操作步骤" class="md-nav">
+<nav aria-label="参考容量" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      指标说明
+      当未开启服务网格时
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      当开启服务网格时
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      举例说明
     </span>
 </a>
 </li>
@@ -746,54 +287,158 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">命名空间监控<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>以命名空间为维度，快速查询命名空间内的资源消耗和变化趋势。</p>
-<h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>集群中已<a href="../../quickstart/install/install-agent.html">安装 insight-agent</a> 且应用处于 <strong>运行中</strong> 状态。</p>
-<h2 id="_3">操作步骤<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h1 id="vmstorage">vmstorage 磁盘容量规划<a class="headerlink" href="#vmstorage" title="Permanent link">¶</a></h1>
+<p>vmstorage 是负责存储可观测性多集群指标。
+为保证 vmstorage 的稳定性，需要根据集群数量及集群规模调整 vmstorage 的磁盘容量。
+更多资料请参考：<a href="https://docs.victoriametrics.com/guides/understand-your-setup-size.html?highlight=datapoint#retention-perioddisk-space">vmstorage 保留期与磁盘空间</a>。</p>
+<h2 id="_1">测试结果<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>经过 14 天对不同规模的集群的 vmstorage 的磁盘观测，
+我们发现 vmstorage 的磁盘用量与其存储的指标量和单个数据点占用磁盘正相关。</p>
 <ol>
-<li>
-<p>进入 <strong>可观测性</strong> 产品模块。</p>
-</li>
-<li>
-<p>在左边导航栏选择 <strong>基础设施</strong> &gt; <strong>命名空间</strong> 。在该页面可查看以下信息：</p>
+<li>瞬时存储的指标量 <strong>increase(vm_rows{ type != "indexdb"}[30s])</strong> 以获取 30s 内增加的指标量</li>
+<li>单个数据点 (datapoint) 的占用磁盘： <strong>sum(vm_data_size_bytes{type!="indexdb"}) / sum(vm_rows{type != "indexdb"})</strong> </li>
+</ol>
+<h2 id="_2">计算方法<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p><strong>磁盘用量</strong> = 瞬时指标量 x 2 x 单个数据点的占用磁盘 x 60 x 24 x 存储时间 (天)</p>
+<p><strong>参数说明：</strong></p>
 <ol>
-<li><strong>切换命名空间</strong>：在顶部切换集群或命名空间；</li>
-<li><strong>资源概览</strong>：统计所选命名空间下的正常和全部工作负载的数量；</li>
-<li><strong>故障</strong>：统计所选命名空间下产生的告警数量；</li>
-<li><strong>事件</strong>：统计所选命名空间下 24 小时内 Warning 级别的事件数量；</li>
-<li><strong>资源消耗</strong>：统计所选命名空间下容器组的 CPU、内存使用量之和 及 CPU、内存配额情况。</li>
+<li>磁盘用量单位为 <strong>Byte</strong> 。</li>
+<li><strong>存储时长(天) x 60 x 24</strong> 将时间(天)换算成分钟以便计算磁盘用量。</li>
+<li>Insight Agent 中 Prometheus 默认采集时间为 30s ，故在 1 分钟内产生两倍的指标量。</li>
+<li>vmstorage 中默认存储时长为 1 个月，修改配置请参考<a href="../../user-guide/system-config/modify-config.html">修改系统配置</a>。</li>
 </ol>
-<p><img alt="命名空间" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/insight/images/namespace00.png" width="1000"/></p>
-</li>
-</ol>
-<h3 id="_4">指标说明<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>该公式为通用方案，建议在计算结果上预留冗余磁盘容量以保证 vmstorage 的正常运行。</p>
+</div>
+<h2 id="_3">参考容量<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>表格中数据是根据默认存储时间为一个月 (30 天)，单个数据点 (datapoint) 的占用磁盘取 0.9 计算所得结果。
+多集群场景下，Pod 数量表示多集群 Pod 数量的总和。</p>
+<h3 id="_4">当未开启服务网格时<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <table>
 <thead>
 <tr>
-<th>指标名</th>
-<th>说明</th>
+<th>集群规模 (Pod 数)</th>
+<th>指标量</th>
+<th>磁盘容量</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>CPU 使用量</td>
-<td>所选命名空间中容器组的 CPU 使用量之和</td>
+<td>100</td>
+<td>8w</td>
+<td>6 GiB</td>
 </tr>
 <tr>
-<td>内存使用量</td>
-<td>所选命名空间中容器组的内存使用量之和</td>
+<td>200</td>
+<td>16w</td>
+<td>12 GiB</td>
 </tr>
 <tr>
-<td>容器组 CPU 使用量</td>
-<td>命名空间中各容器组的 CPU 使用量</td>
+<td>300</td>
+<td>24w</td>
+<td>18 GiB</td>
 </tr>
 <tr>
-<td>容器组内存使用量</td>
-<td>命名空间中各容器组的内存使用量</td>
+<td>400</td>
+<td>32w</td>
+<td>24 GiB</td>
+</tr>
+<tr>
+<td>500</td>
+<td>40w</td>
+<td>30 GiB</td>
+</tr>
+<tr>
+<td>800</td>
+<td>64w</td>
+<td>48 GiB</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>80w</td>
+<td>60 GiB</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>160w</td>
+<td>120 GiB</td>
+</tr>
+<tr>
+<td>3000</td>
+<td>240w</td>
+<td>180 GiB</td>
 </tr>
 </tbody>
 </table>
+<h3 id="_5">当开启服务网格时<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>集群规模 (Pod 数)</th>
+<th>指标量</th>
+<th>磁盘容量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>15w</td>
+<td>12 GiB</td>
+</tr>
+<tr>
+<td>200</td>
+<td>31w</td>
+<td>24 GiB</td>
+</tr>
+<tr>
+<td>300</td>
+<td>46w</td>
+<td>36 GiB</td>
+</tr>
+<tr>
+<td>400</td>
+<td>62w</td>
+<td>48 GiB</td>
+</tr>
+<tr>
+<td>500</td>
+<td>78w</td>
+<td>60 GiB</td>
+</tr>
+<tr>
+<td>800</td>
+<td>125w</td>
+<td>94 GiB</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>156w</td>
+<td>120 GiB</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>312w</td>
+<td>235 GiB</td>
+</tr>
+<tr>
+<td>3000</td>
+<td>468w</td>
+<td>350 GiB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">举例说明<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>AI 算力中心 平台中有两个集群，其中全局服务集群(开启服务网格)中运行 500 个 Pod，工作集群(未开启服务网格)运行了 1000 个 Pod，预期指标存 30 天。</p>
+<ul>
+<li>全局服务集群中指标量为 800x500 + 768x500 = 784000</li>
+<li>工作集群指标量为 800x1000 = 800000</li>
+</ul>
+<p>则当前 vmstorage 磁盘用量应设置为 (784000+80000)x2x0.9x60x24x31 = 124384896000 byte = 116 GiB</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>集群中指标量与 Pod 数量的关系可参考<a href="prometheus-res.html">Prometheus 资源规划</a>。</p>
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

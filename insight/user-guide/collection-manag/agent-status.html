@@ -705,7 +705,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="insight-agent">insight-agent 组件状态说明<a class="headerlink" href="#insight-agent" title="Permanent link">¶</a></h1>
 <p>在 AI 算力平台中可观测性 Insight 作为多集群观测产品，为了实现多集群观测数据的统一采集，需要用户安装 Helm 应用 <strong>insight-agent</strong> 
-（默认安装在 insight-system 命名空间）。参阅<a href="../../quickstart/install/install-agent.md">如何安装 <strong>insight-agent</strong> </a>。</p>
+（默认安装在 insight-system 命名空间）。参阅<a href="../../quickstart/install/install-agent.html">如何安装 <strong>insight-agent</strong> </a>。</p>
 <h2 id="_1">状态说明<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <p>在 <strong>可观测性</strong> -&gt; <strong>采集管理</strong> 部分可查看各集群安装 <strong>insight-agent</strong> 的情况。</p>
 <ul>
@@ -730,13 +730,13 @@
 <ol>
 <li>
 <p><strong>insight-agent</strong> 中指标采集组件 Prometheus 的资源消耗与集群中运行的容器组数量存在正比关系，
-   请根据集群规模调整 Prometheus 的资源，请参考：<a href="../../quickstart/res-plan/prometheus-res.md">Prometheus 资源规划</a></p>
+   请根据集群规模调整 Prometheus 的资源，请参考：<a href="../../quickstart/res-plan/prometheus-res.html">Prometheus 资源规划</a></p>
 </li>
 <li>
 <p>由于全局服务集群中指标存储组件 vmstorage 的存储容量与各个集群容器组数量总和存在正比关系。</p>
 <ul>
-<li>请联系平台管理员根据集群规模调整 vmstorage 的磁盘容量，参阅 <a href="../../quickstart/res-plan/vms-res-plan.md">vmstorage 磁盘容量规划</a></li>
-<li>根据多集群规模调整 vmstorage 磁盘，参阅 <a href="../../quickstart/res-plan/modify-vms-disk.md">vmstorge 磁盘扩容</a></li>
+<li>请联系平台管理员根据集群规模调整 vmstorage 的磁盘容量，参阅 <a href="../../quickstart/res-plan/vms-res-plan.html">vmstorage 磁盘容量规划</a></li>
+<li>根据多集群规模调整 vmstorage 磁盘，参阅 <a href="../../quickstart/res-plan/modify-vms-disk.html">vmstorge 磁盘扩容</a></li>
 </ul>
 </li>
 </ol>
