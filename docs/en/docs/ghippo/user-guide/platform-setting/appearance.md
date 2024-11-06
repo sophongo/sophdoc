@@ -5,11 +5,11 @@ hide:
 
 # Customize Appearance
 
-In DCE 5.0, you have the option to customize the appearance of the login page, top navigation bar, bottom copyright and ICP registration to enhance your product recognition.
+In AI platform, you have the option to customize the appearance of the login page, top navigation bar, bottom copyright and ICP registration to enhance your product recognition.
 
 ## Customizing Login Page and Top Navigation Bar
 
-1. To get started, log in to DCE 5.0 as a user with the __admin__ role and navigate to __Global Management__ -> __Settings__ found at the bottom of the left navigation bar.
+1. To get started, log in to AI platform as a user with the __admin__ role and navigate to __Global Management__ -> __Settings__ found at the bottom of the left navigation bar.
 
     ![settings](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/ghippo/images/appear01.png)
 
@@ -71,7 +71,7 @@ To reset any advanced customizations, delete the contents of the black input box
 
 ```css
 <div class="footer-content">
-  <span class="footer-item">Copyright © 2022 Shanghai DaoCloud Network Technology Co., Ltd.</span>
+  <span class="footer-item">Copyright © 2024 Suanova</span>
   <a class="footer-item" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">沪 ICP 备 14048409 号 - 1</a>
   <a class="footer-item" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">沪 ICP 备 14048409 号 - 2</a>
 </div>

@@ -6,14 +6,14 @@ Date: 2024-08-05
 # baizectl CLI Usage Guide
 
 `baizectl` is a command line tool specifically designed for model developers and data scientists within
-the DCE 5.0 AI Lab module. It provides a series of commands to help users manage
+the AI Lab module. It provides a series of commands to help users manage
 distributed training jobs, check job statuses, manage datasets, and more. It also supports connecting
-to Kubernetes worker clusters and DCE 5.0 workspaces, aiding users in efficiently using and managing
+to Kubernetes worker clusters and AI platform workspaces, aiding users in efficiently using and managing
 Kubernetes platform resources.
 
 ## Installation
 
-Currently, `baizectl` is integrated within DCE 5.0 AI Lab. Once you create a Notebook, you can directly use `baizectl` within it.
+Currently, `baizectl` is integrated within AI Lab. Once you create a Notebook, you can directly use `baizectl` within it.
 
 ---
 
@@ -43,9 +43,9 @@ Flags:
   -h, --help               help for baizectl
       --mode string        Connection mode: auto, api, notebook (default "auto")
   -n, --namespace string   Namespace to use for the operation. If not set, the default Namespace will be used.
-  -s, --server string      DCE5 access base url
+  -s, --server string      access base url
       --skip-tls-verify    Skip TLS certificate verification
-      --token string       DCE5 access token
+      --token string       access token
   -w, --workspace int32    Workspace ID to use for the operation
 
 Use "baizectl [command] --help" for more information about a command.
@@ -81,9 +81,9 @@ Here, `[command]` refers to the specific operation command, such as `data` and `
 - `--mode string`: Connection mode, optional values are `auto`, `api`, `notebook` (default value is `auto`).
 - `-n, --namespace string`: Specify the namespace for the operation. If not set,
   the default namespace will be used.
-- `-s, --server string`: Base URL for accessing DCE5.
+- `-s, --server string`: Base URL
 - `--skip-tls-verify`: Skip TLS certificate verification.
-- `--token string`: Access token for DCE5.
+- `--token string`: Access token
 - `-w, --workspace int32`: Specify the workspace ID for the operation.
 
 ---
@@ -596,7 +596,7 @@ baizectl job submit --image release.daocloud.io/baize/baize-notebook:v0.5.0 \
 
 #### View Dependencies (Environment)
 
-The environment `runtime-env` is a unique environment management capability of DCE.
+The environment `runtime-env` is a unique environment management capability of Suanova.
 By decoupling the dependencies required for model development, training tasks, and inference,
 it offers a more flexible way to manage dependencies without the need to repeatedly
 build complex Docker images. You simply need to select the appropriate environment.

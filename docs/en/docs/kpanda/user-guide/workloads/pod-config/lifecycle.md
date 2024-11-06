@@ -15,7 +15,7 @@ Pods follow a predefined lifecycle, starting in the __Pending__ phase and enteri
 | __Failed__ <br /> | All containers in the Pod have terminated, and at least one container terminated due to failure. That is, the container exited with a non-zero status or was terminated by the system. |
 | __Unknown__ <br /> (Unknown) | The status of the Pod cannot be obtained for some reason, usually due to a communication failure with the host where the Pod resides. |
 
-When creating a workload in DCE container management, images are usually used to specify the running environment in the container. By default, when building an image, the __Entrypoint__ and __CMD__ fields can be used to define the commands and parameters to be executed when the container is running. If you need to change the commands and parameters of the container image before starting, after starting, and before stopping, you can override the default commands and parameters in the image by setting the lifecycle event commands and parameters of the container.
+When creating a workload in Suanova container management, images are usually used to specify the running environment in the container. By default, when building an image, the __Entrypoint__ and __CMD__ fields can be used to define the commands and parameters to be executed when the container is running. If you need to change the commands and parameters of the container image before starting, after starting, and before stopping, you can override the default commands and parameters in the image by setting the lifecycle event commands and parameters of the container.
 
 ## Lifecycle configuration
 
@@ -38,7 +38,7 @@ Configure the startup command according to the table below.
 
 ### Post-start commands
 
-DCE provides two processing types, command line script and HTTP request, to configure post-start commands. You can choose the configuration method that suits you according to the table below.
+Suanova provides two processing types, command line script and HTTP request, to configure post-start commands. You can choose the configuration method that suits you according to the table below.
 
 **Command line script configuration**
 
@@ -49,7 +49,7 @@ DCE provides two processing types, command line script and HTTP request, to conf
 
 ### stop pre-command
 
-DCE provides two processing types, command line script and HTTP request, to configure the pre-stop command. You can choose the configuration method that suits you according to the table below.
+Suanova provides two processing types, command line script and HTTP request, to configure the pre-stop command. You can choose the configuration method that suits you according to the table below.
 
 **HTTP request configuration**
 

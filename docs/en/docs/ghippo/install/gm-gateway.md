@@ -1,6 +1,6 @@
-# Use Guomi Gateway to proxy DCE 5.0
+# Use Guomi Gateway to proxy AI platform
 
-Follow the steps below to configure the Guomi Gateway for DCE 5.0.
+Follow the steps below to configure the Guomi Gateway for AI platform.
 
 ## Software Introduction
 
@@ -163,10 +163,10 @@ nginx -s reload
 
 ## Next Steps
 
-After successfully deploying the Guomi gateway, [customize the DCE 5.0 reverse proxy server address](reverse-proxy.md).
+After successfully deploying the Guomi gateway, [customize the AI platform reverse proxy server address](reverse-proxy.md).
 
 ## Verification
 
 You can deploy a web browser that supports Guomi certificates.
 For example, [Samarium Browser](https://github.com/guanzhi/SamariumBrowser),
-and then access the DCE5 UI interface through Tengine to verify if the Guomi certificate is effective.
+and then access the UI interface through Tengine to verify if the Guomi certificate is effective.

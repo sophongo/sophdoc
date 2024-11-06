@@ -21,7 +21,7 @@ Also see [etcd Backup and Restore Best Practices](../../best-practice/etcd-backu
   and granted [`NS Admin`](../permissions/permission-brief.md#ns-admin) or higher permissions to the user.
   For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 
-- Prepared a MinIO instance. It is recommended to create it through DCE 5.0's MinIO middleware.
+- Prepared a MinIO instance. It is recommended to create it through AI platform's MinIO middleware.
   For specific steps, refer to [MinIO Object Storage](../../../middleware/minio/user-guide/create.md).
 
 ## Create etcd backup
@@ -40,7 +40,7 @@ Follow the steps below to create an etcd backup.
     - Enter etcd, and the format is `https://${NodeIP}:${Port}`.
 
         - In a standard Kubernetes cluster, the default port for etcd is __2379__.
-        - In a DCE 4.0 cluster, the default port for etcd is __12379__.
+        - In a Suanova 4.0 cluster, the default port for etcd is __12379__.
         - In a public cloud managed cluster, you need to contact the relevant developers to obtain the etcd port number.
           This is because the control plane components of public cloud clusters are maintained and managed by 
           the cloud service provider. Users cannot directly access or view these components, nor can they obtain 
@@ -77,7 +77,7 @@ Follow the steps below to create an etcd backup.
             cat /etc/kubernetes/ssl/etcd/ca.crt
             ```
 
-        === "DCE 4.0 Cluster"
+        === "Suanova 4.0 Cluster"
 
             ```shell
             cat /etc/daocloud/dce/certs/ca.crt
@@ -91,7 +91,7 @@ Follow the steps below to create an etcd backup.
             cat /etc/kubernetes/ssl/apiserver-etcd-client.crt
             ```
 
-        === "DCE 4.0 Cluster"
+        === "Suanova 4.0 Cluster"
         
             ```shell
             cat /etc/daocloud/dce/certs/etcd/server.crt
@@ -105,7 +105,7 @@ Follow the steps below to create an etcd backup.
             cat /etc/kubernetes/ssl/apiserver-etcd-client.key
             ```
 
-        === "DCE 4.0 Cluster"
+        === "Suanova 4.0 Cluster"
 
             ```shell
             cat /etc/daocloud/dce/certs/etcd/server.key

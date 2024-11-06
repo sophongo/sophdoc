@@ -217,6 +217,6 @@ Perform the following steps on any local node where __kubelet__ is installed:
       user:
         token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImcxTjJwNkktWm5IbmRJU1RFRExvdWY1TGFWVUtGQ3VIejFtNlFQcUNFalEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2V
 
-### Step 3: Connect the cluster in the DCE Interface
+### Step 3: Connect the cluster in the Suanova Interface
 
 Using the kubeconfig file fetched earlier, refer to the [Integrate Cluster](./integrate-cluster.md) documentation to integrate the Rancher cluster to the global cluster.

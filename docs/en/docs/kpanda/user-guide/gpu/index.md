@@ -5,7 +5,7 @@ hide:
 
 # Overview of GPU Management
 
-This article introduces the capability of DaoCloud container management platform in unified operations and management of heterogeneous resources, with a focus on GPUs.
+This article introduces the capability of Suanova container management platform in unified operations and management of heterogeneous resources, with a focus on GPUs.
 
 ## Background
 
@@ -15,7 +15,7 @@ Meanwhile, due to the lack of experience and professional solutions in schedulin
 
 ## Introduction to GPU Capabilities
 
-The DaoCloud container management platform supports unified scheduling and operations management of GPUs, NPUs, and other heterogeneous resources, fully unleashing the computational power of GPU resources, and accelerating the development of enterprise AI and other emerging applications. The GPU management capabilities of DaoCloud are as follows:
+The Suanova container management platform supports unified scheduling and operations management of GPUs, NPUs, and other heterogeneous resources, fully unleashing the computational power of GPU resources, and accelerating the development of enterprise AI and other emerging applications. The GPU management capabilities of Suanova are as follows:
 
 - Support for unified management of heterogeneous computing resources from domestic and foreign manufacturers such as NVIDIA, Huawei Ascend, and Days.
 - Support for multi-card heterogeneous scheduling within the same cluster, with automatic recognition of GPUs in the cluster.

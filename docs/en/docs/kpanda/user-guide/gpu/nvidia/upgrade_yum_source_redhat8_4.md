@@ -1,8 +1,6 @@
 # Building Red Hat 8.4 Offline Yum Source
 
-## Scenario Introduction
-
-DCE 5 comes with pre-installed CentOS v7.9 and GPU Operator offline packages with kernel v3.10.0-1160. For other OS types or nodes with different kernels, users need to manually build the offline yum source.
+The AI platform comes with pre-installed CentOS v7.9 and GPU Operator offline packages with kernel v3.10.0-1160. For other OS types or nodes with different kernels, users need to manually build the offline yum source.
 
 This guide explains how to build an offline yum source package for Red Hat 8.4 based on any node in the Global cluster. It also demonstrates how to use it during the installation of the GPU Operator by specifying the __RepoConfig.ConfigMapName__ parameter.
 
@@ -110,7 +108,7 @@ You have now generated the offline yum source named __redhat-base-repo__ for ker
 
 ### Step 4: Upload the Local Yum Repository to the File Server
 
-In this example, we will use Minio, which is built-in as the file server in the DCE5 bootstrap node. However, you can choose any file server that suits your needs. Here are the details for Minio:
+In this example, we will use Minio, which is built-in as the file server in the bootstrap node. However, you can choose any file server that suits your needs. Here are the details for Minio:
 
 - Access URL: `http://10.5.14.200:9000` (usually the {bootstrap-node-IP} + {port-9000})
 - Login username: rootuser
