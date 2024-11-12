@@ -13,7 +13,7 @@ Tensorflow 是除了 Pytorch 另外一个非常活跃的开源的深度学习框
 
 在这里我们使用 `baize-notebook` 基础镜像 和 `关联环境` 的方式来作为任务基础运行环境。
 
-> 了解如何创建环境，请参考 [环境列表](../dataset/environments.md)。
+> 了解如何创建环境，请参考[环境列表](../dataset/environments.md)。
 
 ## 创建任务
 

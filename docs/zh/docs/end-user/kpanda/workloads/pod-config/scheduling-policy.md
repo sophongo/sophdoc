@@ -2,7 +2,7 @@
 
 在 Kubernetes 集群中，节点也有[标签](https://kubernetes.io/zh-cn/docs/concepts/overview/working-with-objects/labels/)。您可以[手动添加标签](https://kubernetes.io/zh-cn/docs/tasks/configure-pod-container/assign-pods-nodes/#add-a-label-to-a-node)。 Kubernetes 也会为集群中所有节点添加一些标准的标签。参见[常用的标签、注解和污点](https://kubernetes.io/zh-cn/docs/reference/labels-annotations-taints/)以了解常见的节点标签。通过为节点添加标签，您可以让 Pod 调度到特定节点或节点组上。您可以使用这个功能来确保特定的 Pod 只能运行在具有一定隔离性，安全性或监管属性的节点上。
 
- __nodeSelector__ 是节点选择约束的最简单推荐形式。您可以将 __nodeSelector__ 字段添加到 Pod 的规约中设置您希望目标节点所具有的[节点标签](https://kubernetes.io/zh-cn/docs/concepts/scheduling-eviction/assign-pod-node/#built-in-node-labels)。Kubernetes 只会将 Pod 调度到拥有指定每个标签的节点上。 __nodeSelector__ 提供了一种最简单的方法来将 Pod 约束到具有特定标签的节点上。亲和性和反亲和性扩展了您可以定义的约束类型。使用亲和性与反亲和性的一些好处有：
+__nodeSelector__ 是节点选择约束的最简单推荐形式。您可以将 __nodeSelector__ 字段添加到 Pod 的规约中设置您希望目标节点所具有的[节点标签](https://kubernetes.io/zh-cn/docs/concepts/scheduling-eviction/assign-pod-node/#built-in-node-labels)。Kubernetes 只会将 Pod 调度到拥有指定每个标签的节点上。 __nodeSelector__ 提供了一种最简单的方法来将 Pod 约束到具有特定标签的节点上。亲和性和反亲和性扩展了您可以定义的约束类型。使用亲和性与反亲和性的一些好处有：
 
 - 亲和性、反亲和性语言的表达能力更强。 __nodeSelector__ 只能选择拥有所有指定标签的节点。亲和性、反亲和性为您提供对选择逻辑的更强控制能力。
 

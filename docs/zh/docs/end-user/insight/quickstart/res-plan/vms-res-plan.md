@@ -2,7 +2,7 @@
 
 vmstorage 是负责存储可观测性多集群指标。
 为保证 vmstorage 的稳定性，需要根据集群数量及集群规模调整 vmstorage 的磁盘容量。
-更多资料请参考：[vmstorage 保留期与磁盘空间](https://docs.victoriametrics.com/guides/understand-your-setup-size.html?highlight=datapoint#retention-perioddisk-space)。
+更多资料请参考 [vmstorage 保留期与磁盘空间](https://docs.victoriametrics.com/guides/understand-your-setup-size.html?highlight=datapoint#retention-perioddisk-space)。
 
 ## 测试结果
 
@@ -71,4 +71,4 @@ AI 算力中心 平台中有两个集群，其中全局服务集群(开启服务
 
 !!! note
 
-    集群中指标量与 Pod 数量的关系可参考[Prometheus 资源规划](./prometheus-res.md)。
+    集群中指标量与 Pod 数量的关系可参考 [Prometheus 资源规划](./prometheus-res.md)。

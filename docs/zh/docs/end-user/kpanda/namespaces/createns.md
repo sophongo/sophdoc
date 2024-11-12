@@ -10,7 +10,7 @@
 
 !!! note
 
-    - 在创建命名空间之前，需要在容器管理模块[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)。
+    - 在创建命名空间之前，需要在容器管理模块[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者管理员已为用户创建了集群。
     - 集群初始化后通常会自动生成默认的命名空间 __default__ 。但对于生产集群而言，为便于管理，建议创建其他的命名空间，而非直接使用 __default__ 命名空间。
 
 ### 表单创建
