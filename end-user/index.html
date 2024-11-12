@@ -8,7 +8,7 @@
 <meta content="Suanova documentation website." name="description"/>
 <meta content="Suanova" name="author"/>
 <link href="https://sophdoc.github.io/end-user/index.html" rel="canonical"/>
-<link href="user/register/index.html" rel="next"/>
+<link href="register/index.html" rel="next"/>
 <link href="../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
 <title>什么是 AI 算力平台 - 豐收二號檔案站</title>
@@ -25,7 +25,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#ai">
+<a class="md-skip" href="#ai-">
           Skip to content
         </a>
 </div>
@@ -150,22 +150,12 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../index.html">
+<a class="md-tabs__link" href="../index.md">
           
   
     
   
   管理员操作手册
-
-        </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../ghippo/user-guide/access-control/iam.html">
-          
-  
-    
-  
-  平台功能手册
 
         </a>
 </li>
@@ -228,7 +218,7 @@
 <li class="md-nav__item md-nav__item--section md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_1_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="user/register/index.html">
+<a class="md-nav__link" href="register/index.html">
 <span class="md-ellipsis">
     用户注册
   </span>
@@ -258,14 +248,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="user/host/createhost.html">
+<a class="md-nav__link" href="host/createhost.html">
 <span class="md-ellipsis">
     创建云主机
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="user/host/usehost.html">
+<a class="md-nav__link" href="host/usehost.html">
 <span class="md-ellipsis">
     使用云主机
   </span>
@@ -289,14 +279,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="user/share/workload.html">
+<a class="md-nav__link" href="share/workload.html">
 <span class="md-ellipsis">
     创建 AI 工作负载
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="user/share/notebook.html">
+<a class="md-nav__link" href="share/notebook.html">
 <span class="md-ellipsis">
     使用 Notebook
   </span>
@@ -330,7 +320,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="k8s/create-k8s.md">
+<a class="md-nav__link" href="k8s/create-k8s.html">
 <span class="md-ellipsis">
     云上 Kubernetes
   </span>
@@ -385,17 +375,9 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../index.html">
+<a class="md-nav__link" href="../index.md">
 <span class="md-ellipsis">
     管理员操作手册
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../ghippo/user-guide/access-control/iam.html">
-<span class="md-ellipsis">
-    平台功能手册
   </span>
 <span class="md-nav__icon md-icon"></span>
 </a>
@@ -423,7 +405,7 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="ai">算丰 AI 算力平台<a class="headerlink" href="#ai" title="Permanent link">¶</a></h1>
+<h1 id="ai-">算丰 AI 算力平台 - 终端用户<a class="headerlink" href="#ai-" title="Permanent link">¶</a></h1>
 <p>这是算丰 AI 算力平台面向终端用户的使用文档。</p>
 <div class="grid cards">
 <ul>
@@ -432,7 +414,7 @@
 <hr/>
 <p>用户注册是使用 AI 算力平台的第一步。</p>
 <ul>
-<li><a href="user/register/index.html">用户注册</a></li>
+<li><a href="register/index.html">用户注册</a></li>
 <li><a href="./user/register/bindws.md">绑定工作空间</a></li>
 <li><a href="./user/register/wsres.md">为工作空间分配资源</a></li>
 </ul>
@@ -442,8 +424,8 @@
 <hr/>
 <p>云主机是部署在云端的虚拟机。</p>
 <ul>
-<li><a href="user/host/createhost.html">创建云主机</a></li>
-<li><a href="user/host/usehost.html">使用云主机</a></li>
+<li><a href="host/createhost.html">创建云主机</a></li>
+<li><a href="host/usehost.html">使用云主机</a></li>
 </ul>
 </li>
 <li>
@@ -452,7 +434,7 @@
 <p>共享云端资源构建 AI 负载，使用 Notebook 创建训练和推理任务。</p>
 <ul>
 <li><a href="./user/share/quota.md">配额管理</a></li>
-<li><a href="user/share/notebook.html">使用 Notebook</a></li>
+<li><a href="share/notebook.html">使用 Notebook</a></li>
 <li><a href="baize/developer/jobs/create.html">创建训练任务</a></li>
 <li><a href="./baize/developer/inference/models.md">创建推理服务</a></li>
 </ul>
@@ -462,9 +444,8 @@
 <hr/>
 <p>使用 K8s 集群高效调度算力资源。</p>
 <ul>
-<li><a href="user/k8s/create-k8s.html">创建云上 K8s 集群</a></li>
-<li><a href="user/k8s/add-node.html">添加工作节点</a></li>
-<li><a href="user/k8s/remove-node.html">移除 GPU 工作节点</a></li>
+<li><a href="k8s/add-node.html">添加工作节点</a></li>
+<li><a href="k8s/remove-node.html">移除 GPU 工作节点</a></li>
 </ul>
 </li>
 <li>
@@ -472,14 +453,14 @@
 <hr/>
 <p>在个人中心设置密码、密钥和语言。</p>
 <ul>
-<li><a href="ghippo/user-guide/personal-center/security-setting.html">安全设置</a></li>
-<li><a href="ghippo/user-guide/personal-center/accesstoken.html">访问密钥</a></li>
-<li><a href="ghippo/user-guide/personal-center/language.html">语言设置</a></li>
+<li><a href="./ghippo/personal-center/security-setting.md">安全设置</a></li>
+<li><a href="./ghippo/personal-center/accesstoken.md">访问密钥</a></li>
+<li><a href="./ghippo/personal-center/language.md">语言设置</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<p><img alt="home" src="user/images/home.png"/></p>
+<p><img alt="home" src="images/home.png"/></p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
