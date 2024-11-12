@@ -303,7 +303,7 @@
 <ul>
 <li>向用户机操作系统公开硬件辅助的虚拟化。</li>
 <li>在指定集群<a href="../install/index.md">安装 virtnest-agent</a>，操作系统内核版本需要在 3.15 以上。</li>
-<li>创建一个<a href="../../admin/kpanda/namespaces/createns.md">命名空间</a>../../ghippo/access-control/user.mdtrol/user.md)。</li>
+<li>创建一个<a href="../../admin/kpanda/namespaces/createns.md">命名空间</a>。</li>
 <li>提前准备好镜像，平台内置三种镜像 (如下文所示)，如需制作镜像，可参考开源项目<a href="https://github.com/Tedezed/kubevirt-images-generator/tree/master">制作镜像</a>。</li>
 <li>进行网络配置时，若选择使用 Passt 网络模式，则需要升级至 0.4.0 及以上版本。</li>
 </ul>
@@ -316,7 +316,6 @@
 </li>
 <li>
 <p>在云主机列表页面，点击 <strong>创建云主机</strong> -&gt; 选择 <strong>通过镜像创建</strong> 。</p>
-<p><img alt="镜像创建" src="../../images/createvm02.png"/></p>
 </li>
 <li>
 <p>进入镜像创建页面，依次填写基本信息、镜像配置、存储与网络、登录设置后，在页面右下角点击 <strong>确定</strong> 完成创建。</p>
@@ -339,7 +338,7 @@
 </ul>
 <h3 id="_5">镜像配置<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
 <p>根据下表填写镜像相关信息后，点击 <strong>下一步</strong> </p>
-<p><img alt="使用镜像仓库" src="../../images/createvm05.png"/></p>
+<p><img alt="使用镜像仓库" src="../images/createvm05.png"/></p>
 <ol>
 <li>
 <p>镜像来源：支持三种类型的来源。</p>
@@ -516,11 +515,11 @@
 <li>用户名/密码：可以通过用户名和密码登录至云主机。</li>
 <li>SSH：选择 SSH 登录方式时可为云主机绑定 SSH 密钥，用于日后登录云主机。</li>
 </ul>
-<p><img alt="登录设置" src="../../images/createvm07.png"/></p>
+<p><img alt="登录设置" src="../images/createvm07.png"/></p>
 <h2 id="yaml">YAML 创建<a class="headerlink" href="#yaml" title="Permanent link">¶</a></h2>
 <p>除了通过镜像方式外，还可以通过 YAML 文件更快速地创建创建云主机。</p>
 <p>进入云主机列表页，点击 <strong>通过 YAML 创建</strong> 按钮。</p>
-<p><img alt="yaml 创建" src="../../images/createvm08.png"/></p>
+<p><img alt="yaml 创建" src="../images/createvm08.png"/></p>
 <details class="note">
 <summary>点击查看创建云主机的 YAML 示例</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubevirt.io/v1</span>
