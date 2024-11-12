@@ -7,7 +7,7 @@ Insight 基于 [Prometheus Blackbox Exporter](https://github.com/prometheus/blac
 
 ## 前提条件
 
-目标集群中[已成功部署 insight-agent](../../quickstart/install/install-agent.md)，且处于 __运行中__ 状态。
+目标集群中[已成功部署 insight-agent](../quickstart/install/install-agent.md)，且处于 __运行中__ 状态。
 
 ## 查看拨测任务
 

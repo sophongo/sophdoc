@@ -7,7 +7,7 @@ Insight 基于 [Prometheus Blackbox Exporter](https://github.com/prometheus/blac
 
 ## 前提条件
 
-目标集群中[已成功部署 insight-agent](../../quickstart/install/install-agent.md)，且处于 __运行中__ 状态。
+目标集群中[已成功部署 insight-agent](../quickstart/install/install-agent.md)，且处于 __运行中__ 状态。
 
 ## 查看拨测任务
 
@@ -64,7 +64,7 @@ Insight 基于 [Prometheus Blackbox Exporter](https://github.com/prometheus/blac
 
 点击`拨测名称` 查看拨测任务中每个目标的监控状态，以图表方式显示针对网络状况的探测结果。
 
-![probe](../../images/probe03.png){ width=1000px}
+![probe](../images/probe03.png){ width=1000px}
 
 | 指标名称 | 描述 |
 | -- | -- |

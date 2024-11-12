@@ -21,7 +21,7 @@ hide:
 
     阈值设置必须大于 0，前面填写的阈值必须小于后面填写的。且填写的阈值必须在最大和最小的范围之间。
 
-    ![拓扑配置](../../images/map-setting.png)
+    ![拓扑配置](../images/map-setting.png)
 
 !!! note
 

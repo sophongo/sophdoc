@@ -6,8 +6,8 @@
 
 集群已安装 insight-agent，且所有的容器组处于 __运行中__ 状态。
 
-- 安装 insight-agent，请参考[在线安装 insight-agent](../../quickstart/install/install-agent.md)
-  或[离线升级 insight-agent](../../quickstart/install/offline-install.md)。
+- 安装 insight-agent，请参考[在线安装 insight-agent](../quickstart/install/install-agent.md)
+  或[离线升级 insight-agent](../quickstart/install/offline-install.md)。
 
 ## 操作步骤
 
@@ -40,7 +40,7 @@
     !!! note
 
         1. JVM 监控功能仅支持 Java 语言。
-        2. 开启 JVM 监控功能，请参考[开始监控 Java 应用](../../quickstart/otel/java/index.md)。
+        2. 开启 JVM 监控功能，请参考[开始监控 Java 应用](../quickstart/otel/java/index.md)。
 
 ## 指标参考说明
 
