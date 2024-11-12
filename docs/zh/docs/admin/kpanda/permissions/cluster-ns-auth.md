@@ -1,12 +1,12 @@
 # 集群和命名空间授权
 
-容器管理基于全局权限管理及全局用户/用户组管理实现授权，如需为用户授予容器管理的最高权限（可以创建、管理、删除所有集群），请参见[什么是用户与访问控制](../../../ghippo/access-control/iam.mdiam.md)。
+容器管理基于全局权限管理及全局用户/用户组管理实现授权，如需为用户授予容器管理的最高权限（可以创建、管理、删除所有集群），请参见[什么是用户与访问控制](../../ghippo/access-control/iam.md)。
 
 ## 前提条件
 
 给用户/用户组授权之前，请完成如下准备：
 
-- 已在全局管理中创建了待授权的用户/用户组，请参考[用户](../../../ghippo/access-control/user.mdser.md)。
+- 已在全局管理中创建了待授权的用户/用户组，请参考[用户](../../ghippo/access-control/user.md)。
 
 - 仅 [Kpanda Owner](../../../ghippo/access-control/global.mdbal.md) 及当前集群的 [Cluster Admin](permission-brief.md) 具备集群授权能力。详情可参考[权限说明](permission-brief.md)。
 

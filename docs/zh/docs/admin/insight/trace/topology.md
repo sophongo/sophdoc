@@ -5,9 +5,9 @@
 
 ## 前提条件
 
-1. 集群中已[安装 insight-agent](../../quickstart/install/install-agent.md) 且应用处于 __运行中__ 状态。
-2. 服务已通过 [Operator](../../quickstart/otel/operator.md) 或
-   [Opentelemetry SDK](../../quickstart/otel/golang/golang.md) 的方式接入链路。
+1. 集群中已[安装 insight-agent](../quickstart/install/install-agent.md) 且应用处于 __运行中__ 状态。
+2. 服务已通过 [Operator](../quickstart/otel/operator.md) 或
+   [Opentelemetry SDK](../quickstart/otel/golang/golang.md) 的方式接入链路。
 
 ## 操作步骤
 
@@ -25,9 +25,9 @@
 
     阈值设置必须大于 0，前面填写的阈值必须小于后面填写的。且填写的阈值必须在最大和最小的范围之间。
 
-    ![服务拓扑](../../images/servicemap01.png){ width="1000"}
+    ![服务拓扑](../images/servicemap01.png){ width="1000"}
 
-    ![服务拓扑](../../images/servicemap02.png){ width="1000"}
+    ![服务拓扑](../images/servicemap02.png){ width="1000"}
 
 ### 其他节点
 
@@ -42,12 +42,12 @@
 
 1. 当服务请求到 MySQL、PostgreSQL、Oracle Database 这三种数据库时，在拓扑图中可以看到请求的详细数据库类型。
 
-    ![数据库细节](../../images/service-map.png)
+    ![数据库细节](../images/service-map.png)
 
 #### 开启虚拟节点
 
 1. 更新 insight-server chart 的 values，找到下图所示参数，将 `false` 改为 `true`。
 
-    ![拓扑图](../../images/servicemap.png)
+    ![拓扑图](../images/servicemap.png)
 
 2. 在服务拓扑的显示设置中勾选 __虚拟服务__ 。

@@ -44,7 +44,7 @@ hide:
 
         2. 进入到对应项目，选择 __Helm Charts__ 页签，点击页面 __上传__ 按钮，完成 Helm Chart 上传。
 
-            ![上传 Helm Chart](../../images/upload-helm-01.png)
+            ![上传 Helm Chart](../images/upload-helm-01.png)
 
 3. 同步远端仓库数据
 
@@ -54,7 +54,7 @@ hide:
 
         进入 __Helm 应用__ -> __Helm 仓库__ ，点击仓库列表右侧的 __┇__ 按钮，选择 __同步仓库__ ，完成仓库数据同步。
 
-        ![上传 Helm Chart](../../images/upload-helm-02.png)
+        ![上传 Helm Chart](../images/upload-helm-02.png)
 
     === "自动同步"
     

@@ -12,7 +12,7 @@
 
 - 在容器管理模块中[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
 
-- 创建一个[命名空间](../namespaces/createns.md)和[用户](../../../ghippo/access-control/user.mdser.md)。
+- 创建一个[命名空间](../namespaces/createns.md)和[用户](../../ghippo/access-control/user.md)。
 
 - 当前操作用户应具有 [NS Editor](../permissions/permission-brief.md#ns-editor) 或更高权限，详情可参考[命名空间授权](../namespaces/createns.md)。
 
@@ -135,7 +135,7 @@
 
 === "网络配置"
 
-    - 如在集群中部署了 SpiderPool 和 Multus 组件，则可以在网络配置中配置容器网卡。详情参考[工作负载使用 IP 池](../../../network/config/use-ippool/usage.md)。
+    - 如在集群中部署了 SpiderPool 和 Multus 组件，则可以在网络配置中配置容器网卡。
     
     - DNS 配置：应用在某些场景下会出现冗余的 DNS 查询。Kubernetes 为应用提供了与 DNS 相关的配置选项，能够在某些场景下有效地减少冗余的 DNS 查询，提升业务并发量。
     

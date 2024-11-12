@@ -2,13 +2,13 @@
 
 etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发测试配置错误等场景中，可以通过 etcd 备份恢复集群数据。
 
-本文介绍如何为集群制作 etcd 备份。另请参阅 [etcd 备份还原最佳实践](../../best-practice/etcd-backup.md)。
+本文介绍如何为集群制作 etcd 备份。
 
 ## 前提条件
 
 - [接入](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
 
-- 创建[命名空间](../namespaces/createns.md)和[用户](../../../ghippo/access-control/user.mdser.md)，并为用户授予 [NS Admin](../permissions/permission-brief.md#ns-admin) 或更高权限。详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
+- 创建[命名空间](../namespaces/createns.md)和[用户](../../ghippo/access-control/user.md)，并为用户授予 [NS Admin](../permissions/permission-brief.md#ns-admin) 或更高权限。详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
 
 - 准备一个 MinIO 实例。
 

@@ -31,7 +31,7 @@ HPA 的定义将 Deployment 配置在 scaleTargetRef 字段下，然后 Deployme
 
 算丰 AI 算力平台将 CronHPA 中的 scaleTargetRef 设置为 HPA 对象，然后通过 HPA 对象来寻找真实的 scaleTargetRef，从而让 CronHPA 感知 HPA 的当前状态。
 
-![CronHPA 和 HPA 兼容方案](../../images/hpa-cronhpa-capability-rule-01.png)
+![CronHPA 和 HPA 兼容方案](../images/hpa-cronhpa-capability-rule-01.png)
 
 CronHPA 会通过调整 HPA 的方式感知 HPA。CronHPA 通过识别要达到的副本数与当前副本数两者间的较大值，
 判断是否需要扩缩容及修改 HPA 的上限；CronHPA 通过识别 CronHPA 要达到的副本数与 HPA 的配置间的较小值，判断是否需要修改 HPA 的下限。

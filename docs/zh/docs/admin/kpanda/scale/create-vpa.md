@@ -18,7 +18,7 @@
 
 - 在容器管理模块中[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
 
-- 创建一个[命名空间](../namespaces/createns.md)、[用户](../../../ghippo/access-control/user.mdser.md)、[无状态工作负载](../workloads/create-deployment.md)或[有状态工作负载](../workloads/create-statefulset.md)。
+- 创建一个[命名空间](../namespaces/createns.md)、[用户](../../ghippo/access-control/user.md)、[无状态工作负载](../workloads/create-deployment.md)或[有状态工作负载](../workloads/create-statefulset.md)。
 
 - 当前操作用户应具有 [NS Editor](../permissions/permission-brief.md#ns-editor) 或更高权限，详情可参考[命名空间授权](../namespaces/createns.md)。
 

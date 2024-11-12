@@ -11,7 +11,7 @@
 1. 待部署 GPU Operator 的集群节点 OS 必须为 Red Hat 7.9，且内核版本完全一致
 1. 准备一个能够与待部署 GPU Operator 的集群网络联通的文件服务器，如 nginx 或 minio
 1. 准备一个能够访问互联网、待部署 GPU Operator 的集群和文件服务器的节点，
-   且节点上已经完成 [Docker 的安装](../../../../install/community/kind/online.md#docker)
+   且节点上已经完成 Docker 的安装
 1. 全局服务集群的节点必须为 Red Hat 7.9
 
 ## 操作步骤

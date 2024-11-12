@@ -8,7 +8,7 @@ Notebook 通常指的是 Jupyter Notebook 或类似的交互式计算环境。
 
 - 已安装 AI 算力平台
 - [用户已成功注册](../register/index.md)
-- [管理员为用户分配了工作空间](../register/bindws.md)
+- 管理员为用户分配了工作空间
 - 已准备好数据集（代码、数据等）
 
 ## 创建和使用 Notebook 实例

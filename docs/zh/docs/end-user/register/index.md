@@ -12,20 +12,20 @@
 
 1. 打开 AI 算力平台首页 <https://ai.isuanova.com/>，点击 **注册**
 
-    ![home](../../../images/regis01.PNG)
+    ![home](../../images/regis01.PNG)
 
 1. 键入用户名、密码、邮箱后点击 **注册**
 
-    ![to register](../../../images/regis02.PNG)
+    ![to register](../../images/regis02.PNG)
 
 1. 系统提示发送了一封邮件到您的邮箱。
 
-    ![to register](../../../images/regis03.PNG)
+    ![to register](../../images/regis03.PNG)
 
 1. 登录自己的邮箱，找到邮件，点击链接。
 
-    ![email](../../../images/regis04.PNG)
+    ![email](../../images/regis04.PNG)
 
 1. 恭喜，您成功进入了 AI 算力平台，现在可以开始您的 AI 之旅了。
 
-    ![verify](../../../images/regis05.PNG)
+    ![verify](../../images/regis05.PNG)
