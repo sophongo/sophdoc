@@ -8,7 +8,7 @@
     Tensorboard 是 TensorFlow 提供的一个可视化工具，用于展示机器学习模型的训练过程和结果。
     它可以帮助开发者更直观地理解模型的训练动态，分析模型性能，调试模型问题等。
 
-![Tensorboard](../../images/tensorboard.png)
+![Tensorboard](../images/tensorboard.png)
 
 Tensorboard 在模型开发过程中的作用及优势：
 
@@ -26,7 +26,7 @@ Tensorboard 在模型开发过程中的作用及优势：
 1. **创建 Notebook**：在 AI Lab 平台上创建一个新的 Notebook。
 2. **启用 Tensorboard**：在创建 Notebook 的页面中，启用 **Tensorboard** 选项，并指定数据集和日志路径。
 
-    ![Tensorboard](../../images/tensorboard-03.png)
+    ![Tensorboard](../images/tensorboard-03.png)
 
 ### 在分布式任务创建及完成后启用 Tensorboard
 
@@ -34,7 +34,7 @@ Tensorboard 在模型开发过程中的作用及优势：
 2. **配置 Tensorboard**：在任务配置页面中，启用 **Tensorboard** 选项，并指定数据集和日志路径。
 3. **任务完成后查看 Tensorboard**：任务完成后，可以在任务详情页面中查看 Tensorboard 的链接，点击链接即可查看训练过程的可视化结果。
 
-    ![Tensorboard](../../images/tensorboard-02.png)
+    ![Tensorboard](../images/tensorboard-02.png)
 
 ### 在 Notebook 中直接引用 Tensorboard
 
@@ -117,6 +117,6 @@ with train_summary_writer.as_default():
 
 在 AI Lab 中，通过各种方式创建出来的 Tensorboard 会统一展示在任务分析的页面中，方便用户查看和管理。
 
-![Tensorboard](../../images/tensorboard-01.png)
+![Tensorboard](../images/tensorboard-01.png)
 
 用户可以在任务分析页面中查看 Tensorboard 的链接、状态、创建时间等信息，并通过链接直接访问 Tensorboard 的可视化结果。

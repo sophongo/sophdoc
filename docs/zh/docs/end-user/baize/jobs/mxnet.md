@@ -21,7 +21,7 @@ Apache MXNet 是一个高性能的深度学习框架，支持多种编程语言�
 
 ## 创建 MXNet 任务
 
-![mxnet](../../images/mxnet_job.png)
+![mxnet](../images/mxnet_job.png)
 
 ### MXNet 单机任务
 

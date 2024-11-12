@@ -12,13 +12,13 @@
 1. 使用[平台 Admin 角色](../access-control/role.md#_2)，
    在 **工作空间** -> **授权** 页面给小明授予 Workspace Admin 角色。
 
-    ![资源绑定](../../images/wsbind1.png)
+    ![资源绑定](../images/wsbind1.png)
 
 1. 然后在 **容器管理** -> **权限管理** 页面，通过 **添加授权** 将小明授权为 Cluster Admin。
 
-    ![集群授权1](../../images/wsbind2.png)
+    ![集群授权1](../images/wsbind2.png)
 
-    ![集群授权2](../../images/wsbind3.png)
+    ![集群授权2](../images/wsbind3.png)
 
 ## 绑定到工作空间
 
@@ -29,8 +29,8 @@
 
     小明能且只能在容器管理模块将集群或者该集群下的命名空间绑定到某个工作空间，无法在全局管理模块完成此操作。
 
-![cluster绑定](../../images/wsbind4.png)
+![cluster绑定](../images/wsbind4.png)
 
 绑定命名空间到工作空间也至少需要 Workspace Admin + Cluster Admin 权限。
 
-![ns绑定](../../images/wsbind5.png)
+![ns绑定](../images/wsbind5.png)
