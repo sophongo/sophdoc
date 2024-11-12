@@ -225,7 +225,7 @@
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="导航" class="md-nav md-nav--secondary">
@@ -238,11 +238,11 @@
 <h1 id="java">开始监控 Java 应用<a class="headerlink" href="#java" title="Permanent link">¶</a></h1>
 <ol>
 <li>
-<p>Java 应用链路接入与监控请参考 <a href="../operator.html">通过 Operator 实现应用程序无侵入增强</a> 文档，通过注解实现自动接入链路。</p>
+<p>Java 应用链路接入与监控请参考<a href="../operator.html">通过 Operator 实现应用程序无侵入增强</a> 文档，通过注解实现自动接入链路。</p>
 </li>
 <li>
 <p>Java 应用的 JVM 进行监控：已经暴露 JVM 指标和仍未暴露 JVM 指标的 Java 应用如何与可观测性 Insight 对接。</p>
-</li>
+<ul>
 <li>
 <p>如果您的 Java 应用未开始暴露 JVM 指标，您可以参考如下文档：</p>
 <ul>
@@ -254,6 +254,8 @@
 <p>如果您的 Java 应用已经暴露 JVM 指标，您可以参考如下文档：</p>
 <ul>
 <li><a href="jvm-monitor/legacy-jvm.html">已有 JVM 指标的 Java 应用对接可观测性</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>

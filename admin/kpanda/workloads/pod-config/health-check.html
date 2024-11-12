@@ -360,9 +360,9 @@
 <a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Custom-Header</span>
 <a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">          </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Awesome</span>
 <a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">      </span><span class="nt">initialDelaySeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w">  </span><span class="c1"># kubelet 在执行第一次探测前应该等待 3 秒</span>
-<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">      </span><span class="nt">periodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w">   </span><span class="c1">#kubelet 每隔 3 秒执行一次存活探测</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">      </span><span class="nt">periodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w">   </span><span class="c1"># kubelet 每隔 3 秒执行一次存活探测</span>
 </code></pre></div>
-<p>按照设定的规则，Kubelet 向容器内运行的服务（服务在监听 8080 端口）发送一个 HTTP GET 请求来执行探测。如果服务器上 <strong>/healthz</strong> 路径下的处理程序返回成功代码，则 kubelet 认为容器是健康存活的。 如果处理程序返回失败代码，则 kubelet 会杀死这个容器并将其重启。返回大于或等于 200 并且小于 400 的任何代码都标示成功，其它返回代码都标示失败。 容器存活期间的最开始 10 秒中， <strong>/healthz</strong> 处理程序返回 200 的状态码。 之后处理程序返回 500 的状态码。</p>
+<p>按照设定的规则，kubelet 向容器内运行的服务（服务在监听 8080 端口）发送一个 HTTP GET 请求来执行探测。如果服务器上 <strong>/healthz</strong> 路径下的处理程序返回成功代码，则 kubelet 认为容器是健康存活的。 如果处理程序返回失败代码，则 kubelet 会杀死这个容器并将其重启。返回大于或等于 200 并且小于 400 的任何代码都标示成功，其它返回代码都标示失败。 容器存活期间的最开始 10 秒中， <strong>/healthz</strong> 处理程序返回 200 的状态码。 之后处理程序返回 500 的状态码。</p>
 <h3 id="tcp">使用 TCP 端口检查<a class="headerlink" href="#tcp" title="Permanent link">¶</a></h3>
 <p><strong>TCP 端口参数说明：</strong></p>
 <table>

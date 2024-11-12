@@ -290,7 +290,7 @@
 <h1 id="vmstorage">vmstorage 磁盘容量规划<a class="headerlink" href="#vmstorage" title="Permanent link">¶</a></h1>
 <p>vmstorage 是负责存储可观测性多集群指标。
 为保证 vmstorage 的稳定性，需要根据集群数量及集群规模调整 vmstorage 的磁盘容量。
-更多资料请参考：<a href="https://docs.victoriametrics.com/guides/understand-your-setup-size.html?highlight=datapoint#retention-perioddisk-space">vmstorage 保留期与磁盘空间</a>。</p>
+更多资料请参考 <a href="https://docs.victoriametrics.com/guides/understand-your-setup-size.html?highlight=datapoint#retention-perioddisk-space">vmstorage 保留期与磁盘空间</a>。</p>
 <h2 id="_1">测试结果<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <p>经过 14 天对不同规模的集群的 vmstorage 的磁盘观测，
 我们发现 vmstorage 的磁盘用量与其存储的指标量和单个数据点占用磁盘正相关。</p>
@@ -437,7 +437,7 @@
 <p>则当前 vmstorage 磁盘用量应设置为 (784000+80000)x2x0.9x60x24x31 = 124384896000 byte = 116 GiB</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>集群中指标量与 Pod 数量的关系可参考<a href="prometheus-res.html">Prometheus 资源规划</a>。</p>
+<p>集群中指标量与 Pod 数量的关系可参考 <a href="prometheus-res.html">Prometheus 资源规划</a>。</p>
 </div>
 </article>
 </div>
