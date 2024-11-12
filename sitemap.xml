@@ -1516,51 +1516,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/create.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/delete.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/mpi.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/mxnet.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/paddle.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/pytorch.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/tensorboard.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/tensorflow.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/baize/developer/jobs/view.html</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sophdoc.github.io/end-user/baize/inference/models.html</loc>
          <lastmod>2024-11-12</lastmod>
          <changefreq>daily</changefreq>
@@ -1572,6 +1527,51 @@
     </url>
     <url>
          <loc>https://sophdoc.github.io/end-user/baize/inference/vllm-inference.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/create.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/delete.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/mpi.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/mxnet.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/paddle.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/pytorch.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/tensorboard.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/tensorflow.html</loc>
+         <lastmod>2024-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sophdoc.github.io/end-user/baize/jobs/view.html</loc>
          <lastmod>2024-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>

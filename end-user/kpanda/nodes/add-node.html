@@ -8,11 +8,9 @@
 <meta content="Suanova documentation website." name="description"/>
 <meta content="Suanova" name="author"/>
 <link href="https://sophdoc.github.io/end-user/kpanda/nodes/add-node.html" rel="canonical"/>
-<link href="node-authentication.html" rel="prev"/>
-<link href="delete-node.html" rel="next"/>
 <link href="../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
-<title>节点扩容 - 豐收二號檔案站</title>
+<title>集群节点扩容 - 豐收二號檔案站</title>
 <link href="../../../assets/stylesheets/main.3cba04c6.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -50,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              节点扩容
+              集群节点扩容
             
           </span>
 </div>
@@ -140,7 +138,7 @@
 <nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
 <div class="md-grid">
 <ul class="md-tabs__list">
-<li class="md-tabs__item md-tabs__item--active">
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../../index.html">
           
   
@@ -198,366 +196,13 @@
 </a>
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
-<div class="md-nav__link md-nav__container">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../../index.html">
 <span class="md-ellipsis">
     终端用户操作手册
   </span>
-</a>
-<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-expanded="true" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_1">
-<span class="md-nav__icon md-icon"></span>
-            终端用户操作手册
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../register/index.html">
-<span class="md-ellipsis">
-    用户注册
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="">
-<span class="md-ellipsis">
-    算力服务
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_1_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_1_3">
-<span class="md-nav__icon md-icon"></span>
-            算力服务
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../host/createhost.html">
-<span class="md-ellipsis">
-    云主机
-  </span>
 <span class="md-nav__icon md-icon"></span>
 </a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_1_3_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_3_2" id="__nav_1_3_2_label" tabindex="0">
-<span class="md-ellipsis">
-    容器管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_1_3_2_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_1_3_2">
-<span class="md-nav__icon md-icon"></span>
-            容器管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../clusters/integrate-cluster.html">
-<span class="md-ellipsis">
-    云上 K8s 集群
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_1_3_2_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_3_2_2" id="__nav_1_3_2_2_label" tabindex="0">
-<span class="md-ellipsis">
-    节点管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_1_3_2_2_label" class="md-nav" data-md-level="4">
-<label class="md-nav__title" for="__nav_1_3_2_2">
-<span class="md-nav__icon md-icon"></span>
-            节点管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="node-check.html">
-<span class="md-ellipsis">
-    节点可用性检查
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="node-authentication.html">
-<span class="md-ellipsis">
-    节点认证
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    节点扩容
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="add-node.html">
-<span class="md-ellipsis">
-    节点扩容
-  </span>
-</a>
-<nav aria-label="导航" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      导航
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      参考文档
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="delete-node.html">
-<span class="md-ellipsis">
-    节点缩容
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="taints.html">
-<span class="md-ellipsis">
-    污点管理
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="schedule.html">
-<span class="md-ellipsis">
-    节点调度
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="node-details.html">
-<span class="md-ellipsis">
-    节点详情
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="labels-annotations.html">
-<span class="md-ellipsis">
-    标签与注解
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../workloads/create-deployment.html">
-<span class="md-ellipsis">
-    工作负载
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../helm/index.html">
-<span class="md-ellipsis">
-    Helm 应用
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../olm/import-miniooperator.html">
-<span class="md-ellipsis">
-    Operator 应用
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../network/create-services.html">
-<span class="md-ellipsis">
-    容器网络
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../custom-resources/create.html">
-<span class="md-ellipsis">
-    自定义资源
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../storage/pvc.html">
-<span class="md-ellipsis">
-    容器存储
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../configmaps-secrets/create-configmap.html">
-<span class="md-ellipsis">
-    配置与密钥
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../namespaces/createns.html">
-<span class="md-ellipsis">
-    命名空间
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../clusterops/latest-operations.html">
-<span class="md-ellipsis">
-    集群运维
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../inspect/index.html">
-<span class="md-ellipsis">
-    集群巡检
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../backup/index.html">
-<span class="md-ellipsis">
-    备份恢复
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../security/index.html">
-<span class="md-ellipsis">
-    安全管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../permissions/permission-brief.html">
-<span class="md-ellipsis">
-    权限管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../share/workload.html">
-<span class="md-ellipsis">
-    算法开发
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_1_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="">
-<span class="md-ellipsis">
-    管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_1_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_1_4">
-<span class="md-nav__icon md-icon"></span>
-            管理
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../insight/dashboard/overview.html">
-<span class="md-ellipsis">
-    可观测性
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../ghippo/workspace/ws-folder.html">
-<span class="md-ellipsis">
-    全局管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_1_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="">
-<span class="md-ellipsis">
-    个人中心
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_1_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_1_5">
-<span class="md-nav__icon md-icon"></span>
-            个人中心
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ghippo/personal-center/security-setting.html">
-<span class="md-ellipsis">
-    安全设置
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ghippo/personal-center/accesstoken.html">
-<span class="md-ellipsis">
-    访问密钥
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ghippo/personal-center/ssh-key.html">
-<span class="md-ellipsis">
-    SSH 公钥
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ghippo/personal-center/language.html">
-<span class="md-ellipsis">
-    语言设置
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../../../admin/index.html">
