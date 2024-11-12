@@ -9,15 +9,15 @@ hide:
 
 1. 在训练任务列表右侧点击 **┇** ，在弹出菜单中选择 **删除** 。
 
-    ![删除](../../images/delete01.png)
+    ![删除](../images/delete01.png)
 
 1. 在弹窗中确认要删除的任务，输入任务名称后点击 **删除** 。
 
-    ![确认删除](../../images/delete02.png)
+    ![确认删除](../images/delete02.png)
 
 1. 屏幕提示删除成功，该任务从列表中消失。
 
-    ![已删除](../../images/delete03.png)
+    ![已删除](../images/delete03.png)
 
 !!! caution
 

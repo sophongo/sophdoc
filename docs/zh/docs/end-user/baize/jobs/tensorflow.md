@@ -19,7 +19,7 @@ Tensorflow 是除了 Pytorch 另外一个非常活跃的开源的深度学习框
 
 ### 示例 TFJob 单机任务
 
-![Tensorflow 单机任务](../../images/job06.png)
+![Tensorflow 单机任务](../images/job06.png)
 
 1. 登录 AI Lab 平台，点击左侧导航栏中的 **任务中心** ，进入 **训练任务** 页面。
 2. 点击右上角的 **创建** 按钮，进入任务创建页面。
@@ -83,7 +83,7 @@ print(f'Prediction for x=0.5: {prediction[0][0]}')
 
 #### 示例任务介绍
 
-![Tensorflow 单机任务](../../images/job07.png)
+![Tensorflow 单机任务](../images/job07.png)
 
 本次包含了三种角色：`Chief`、`Worker` 和 `Parameter Server (PS)`。
 

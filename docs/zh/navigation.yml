@@ -15,14 +15,10 @@ nav:
                   - 集群状态: end-user/kpanda/clusters/cluster-status.md
                   - 卸载/解除接入集群: end-user/kpanda/clusters/delete-cluster.md
               - 节点管理:
-                  - 节点可用性检查: end-user/kpanda/nodes/node-check.md
-                  - 节点认证: end-user/kpanda/nodes/node-authentication.md
-                  - 节点扩容: end-user/kpanda/nodes/add-node.md
-                  - 节点缩容: end-user/kpanda/nodes/delete-node.md
-                  - 污点管理: end-user/kpanda/nodes/taints.md
                   - 节点调度: end-user/kpanda/nodes/schedule.md
-                  - 节点详情: end-user/kpanda/nodes/node-details.md
                   - 标签与注解: end-user/kpanda/nodes/labels-annotations.md
+                  - 污点管理: end-user/kpanda/nodes/taints.md
+                  - 节点详情: end-user/kpanda/nodes/node-details.md
               - 工作负载:
                   - 创建 Deployment: end-user/kpanda/workloads/create-deployment.md
                   - 创建 StatefulSet: end-user/kpanda/workloads/create-statefulset.md
@@ -48,9 +44,9 @@ nav:
                   - 网络策略: end-user/kpanda/network/network-policy.md
               - 自定义资源: end-user/kpanda/custom-resources/create.md
               - 容器存储:
-                  - 数据卷声明: end-user/kpanda/storage/pvc.md
-                  - 数据卷: end-user/kpanda/storage/pv.md
-                  - 存储池: end-user/kpanda/storage/sc.md
+                  - 数据卷声明 PVC: end-user/kpanda/storage/pvc.md
+                  - 数据卷 PV: end-user/kpanda/storage/pv.md
+                  - 存储池 SC: end-user/kpanda/storage/sc.md
                   - 共享存储池: end-user/kpanda/storage/sc-share.md
               - 配置与密钥:
                   - 创建配置项: end-user/kpanda/configmaps-secrets/create-configmap.md
@@ -65,7 +61,6 @@ nav:
               - 集群运维:
                   - 最近操作: end-user/kpanda/clusterops/latest-operations.md
                   - 集群设置: end-user/kpanda/clusterops/cluster-settings.md
-                  - 集群动态资源超卖: end-user/kpanda/clusterops/cluster-oversold.md
               - 集群巡检:
                   - 介绍: end-user/kpanda/inspect/index.md
                   - 创建巡检配置: end-user/kpanda/inspect/config.md
@@ -75,7 +70,7 @@ nav:
                   - 介绍: end-user/kpanda/backup/index.md
                   - 安装 Velero 插件: end-user/kpanda/backup/install-velero.md
                   - 应用备份: end-user/kpanda/backup/deployment.md
-                  - etcd 备份: end-user/kpanda/backup/etcd-backup.md
+                  - ETCD 备份: end-user/kpanda/backup/etcd-backup.md
               - 安全管理:
                   - 安全扫描类型: end-user/kpanda/security/index.md
                   - 合规性扫描:
@@ -92,22 +87,22 @@ nav:
               - 创建 AI 工作负载: end-user/share/workload.md
               - 使用 Notebook: end-user/share/notebook.md
               - 创建训练任务:
-                  - 创建训练任务: end-user/baize/developer/jobs/create.md
-                  - 创建 Pytorch 任务: end-user/baize/developer/jobs/pytorch.md
-                  - 创建 Tensorflow 任务: end-user/baize/developer/jobs/tensorflow.md
-                  - 创建 MPI 任务: end-user/baize/developer/jobs/mpi.md
-                  - 创建 MXNet 任务: end-user/baize/developer/jobs/mxnet.md
-                  - 创建 PaddlePaddle 任务: end-user/baize/developer/jobs/paddle.md
-                  - 删除任务: end-user/baize/developer/jobs/delete.md
-                  - 查看任务负载: end-user/baize/developer/jobs/view.md
-                  - 任务分析: end-user/baize/developer/jobs/tensorboard.md
+                  - 创建训练任务: end-user/baize/jobs/create.md
+                  - 创建 Pytorch 任务: end-user/baize/jobs/pytorch.md
+                  - 创建 Tensorflow 任务: end-user/baize/jobs/tensorflow.md
+                  - 创建 MPI 任务: end-user/baize/jobs/mpi.md
+                  - 创建 MXNet 任务: end-user/baize/jobs/mxnet.md
+                  - 创建 PaddlePaddle 任务: end-user/baize/jobs/paddle.md
+                  - 删除任务: end-user/baize/jobs/delete.md
+                  - 查看任务负载: end-user/baize/jobs/view.md
+                  - 任务分析: end-user/baize/jobs/tensorboard.md
               - 数据管理:
-                  - 数据集列表: end-user/baize/developer/dataset/create-use-delete.md
-                  - 环境管理: end-user/baize/developer/dataset/environments.md
+                  - 数据集列表: end-user/baize/dataset/create-use-delete.md
+                  - 环境管理: end-user/baize/dataset/environments.md
               - 模型服务:
-                  - 模型支持情况: end-user/baize/developer/inference/models.md
-                  - 创建 Triton 推理服务: end-user/baize/developer/inference/triton-inference.md
-                  - 创建 vLLM 推理服务: end-user/baize/developer/inference/vllm-inference.md
+                  - 模型支持情况: end-user/baize/inference/models.md
+                  - 创建 Triton 推理服务: end-user/baize/inference/triton-inference.md
+                  - 创建 vLLM 推理服务: end-user/baize/inference/vllm-inference.md
       - 管理:
           - 可观测性:
               - 仪表盘:
