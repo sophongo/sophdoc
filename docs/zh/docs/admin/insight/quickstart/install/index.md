@@ -20,9 +20,3 @@ AI 算力中心 平台实现了对多云多集群的纳管，并支持创建集�
 
 - [在 DCE 4.0.x 安装 insight-agent](../other/install-agentindce.md)
 - [在 Openshift 4.x 安装 insight-agent](../other/install-agent-on-ocp.md)
-
-目前，采集组件 insight-agent 已对当前主流的 Kubernetes 版本完成了部分的功能测试，请参考：
-
-- [kubernetes 集群兼容性测试](../../compati-test/k8s-compatibility.md)
-- [Openshift 4.x 集群兼容性测试](../../compati-test/ocp-compatibility.md)
-- [Rancher 集群兼容性测试](../../compati-test/rancher-compatibility.md)

@@ -15,7 +15,7 @@ Helm 仓库是用来存储和发布 Chart 的存储库。Helm 应用模块支持
 
 - 容器管理模块[已接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[已创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面
 
-- 已完成一个[命名空间的创建](../namespaces/createns.md)、[用户的创建](../../../ghippo/access-control/user.mdser.md)，并为用户授予 [NS Admin](../permissions/permission-brief.md#ns-admin) 或更高权限 ，详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
+- 已完成一个[命名空间的创建](../namespaces/createns.md)、[用户的创建](../../ghippo/access-control/user.md)，并为用户授予 [NS Admin](../permissions/permission-brief.md#ns-admin) 或更高权限 ，详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
 
 - 如果使用私有仓库，当前操作用户应拥有对该私有仓库的读写权限。
 

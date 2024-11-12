@@ -11,7 +11,7 @@
 1. 用户已经在平台上安装了 v0.12.0 及以上版本的 addon 离线包。
 1. 准备一个能够和待部署 GPU Operator 的集群网络能够联通的文件服务器，如 nginx 或 minio。
 1. 准备一个能够访问互联网、待部署 GPU Operator 的集群和文件服务器的节点，
-   且节点上已经完成 [Docker 的安装](../../../../install/community/kind/online.md#docker)。
+   且节点上已经完成 Docker 的安装。
 
 ## 操作步骤
 

@@ -49,7 +49,7 @@
 2. 点击 __查看更多__ 后可带条件跳转到 __日志查询__ 的页面。
 3. 默认搜索全部日志，但可下拉根据链路的 TraceID 或链路调用过程中相关的容器日志进行过滤。
 
-    ![tracelog](../../images/tracelog.png)
+    ![tracelog](../images/tracelog.png)
 
     !!! note
 
