@@ -82,4 +82,4 @@ Notebook 通常指的是 Jupyter Notebook 或类似的交互式计算环境。
 
     ![ssh](../images/ssh05.png)
 
-下一步：[创建训练任务](../baize/developer/jobs/create.md)
+下一步：[创建训练任务](../../admin/baize/developer/jobs/create.md)

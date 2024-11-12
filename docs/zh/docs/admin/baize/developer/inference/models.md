@@ -6,7 +6,7 @@
 - AI Lab v0.6.0 支持了完整版本的 vLLM 推理能力，支持诸多大语言模型，如 `LLama`、`Qwen`、`ChatGLM` 等。
 
 您可以在 AI Lab 中使用经过算丰 AI 算力平台验证过的 GPU 类型；
-更多细节参阅 [GPU 支持矩阵](../../../admin/kpanda/gpu/gpu_matrix.md)。
+更多细节参阅 [GPU 支持矩阵](../../../kpanda/gpu/gpu_matrix.md)。
 
 ![点击创建](../../images/inference-interface.png)
 
