@@ -4,7 +4,7 @@
 
 ## 前提条件
 
-集群中已[安装 insight-agent](../../quickstart/install/install-agent.md) 且应用处于 __运行中__ 状态。
+集群中已[安装 insight-agent](../quickstart/install/install-agent.md) 且应用处于 __运行中__ 状态。
 
 ## 操作步骤
 
@@ -17,11 +17,11 @@
     - **资源消耗** ：所选集群的 CPU、内存、磁盘的实际使用量和总量；
     - **指标说明** ：所选集群的 CPU、内存、磁盘读写、网络接收发送的变化趋势。
 
-    ![集群监控](../../images/cluster.png){ width="1000"}
+    ![集群监控](../images/cluster.png){ width="1000"}
 
 3. 切换到 __资源水位线监控__ 页签，可查看当前集群的更多监控数据。
 
-    ![集群监控](../../images/cluster-1.png){ width="1000"}
+    ![集群监控](../images/cluster-1.png){ width="1000"}
 
 ## 参考指标说明
 
@@ -31,7 +31,3 @@
 | CPU 分配率 | 该指标是指集群中所有 Pod 的 CPU 请求量的总和与所有节点的 CPU 总量的比率。|
 | 内存使用率 | 该指标是指集群中所有 Pod 资源的实际内存用量与所有节点的内存总量的比率。|
 | 内存分配率 | 该指标是指集群中所有 Pod 的内存请求量的总和与所有节点的内存总量的比率。|
-
-!!! note
-
-    使用的具体指标可参考[可观测性参考指标说明](../../reference/used-metric-in-insight.md)。

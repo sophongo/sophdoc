@@ -32,7 +32,7 @@
 
 1. 在左侧导航栏中点击 __告警中心__ -> __通知配置__ -> __钉钉__，点击 __添加群机器人__，添加一个或多个群机器人。
 
-    ![钉钉](../../images/dingding.png)
+    ![钉钉](../images/dingding.png)
 
     有关钉钉群机器人的 URL，请参阅[钉钉官方文档：自定义机器人接入](https://open.dingtalk.com/document/robots/custom-robot-access)。
 
@@ -47,7 +47,7 @@
 
 1. 在左侧导航栏中点击 __告警中心__ -> __通知配置__ -> __飞书__，点击 __添加群机器人__，添加一个或多个群机器人。
 
-    ![飞书](../../images/notify-01.png)
+    ![飞书](../images/notify-01.png)
 
     !!! note
 
@@ -65,7 +65,7 @@
 
 2. 点击 __新建 Webhook__，添加一个或多个 Webhook。
 
-    ![alt text](../../images/webhook.png)
+    ![alt text](../images/webhook.png)
 
     `HTTP Headers`：非必填，设置请求头。可以添加多个 Headers。
 
@@ -85,7 +85,7 @@
 
     - 站内信通知允许添加多个用户。
 
-    ![message](../../images/notify-02.png)
+    ![message](../images/notify-02.png)
 
 2. 配置完成后自动返回 站内信通知列表，点击列表右侧的 __┇__，选择 __发送测试信息__。
 

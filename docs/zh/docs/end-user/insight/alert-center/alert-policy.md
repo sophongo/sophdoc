@@ -94,7 +94,7 @@
 
 1. 可点击 __模板导入__，选择平台管理员已创建好的告警模板批量导入告警规则。
 
-    ![告警模板](../../images/import-template.png){ width=1000px}
+    ![告警模板](../images/import-template.png){ width=1000px}
 
 1. 点击 __下一步__ 后配置通知。
 

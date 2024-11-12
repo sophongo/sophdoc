@@ -6,8 +6,8 @@
 
 集群已安装 insight-agent，且所有的容器组处于 __运行中__ 状态。
 
-- 安装 insight-agent，请参考[在线安装 insight-agent](../../quickstart/install/install-agent.md)
-  或[离线升级 insight-agent](../../quickstart/install/offline-install.md)。
+- 安装 insight-agent，请参考[在线安装 insight-agent](../quickstart/install/install-agent.md)
+  或[离线升级 insight-agent](../quickstart/install/offline-install.md)。
 
 ## 操作步骤
 
@@ -27,20 +27,20 @@
     2. 资源消耗：在该卡片可查看工作负载的 CPU、内存、网络的使用情况。
     3. 监控指标：可查看工作负载默认 1 小时的 CPU、内存、网络和磁盘的变化趋势。
 
-    ![容器监控](../../images/workload.png){ width="1000"}
+    ![容器监控](../images/workload.png){ width="1000"}
 
 5. 切换 Tab 到 __容器组列表__ ，可查看工作负载的各个容器组状态、所在节点、重启次数等信息。
 
-    ![容器监控](../../images/workload-1.png){ width="1000"}
+    ![容器监控](../images/workload-1.png){ width="1000"}
 
 6. 切换 Tab 到 __JVM 监控__ ，可查看各个容器组的 JVM 指标。
 
-    ![JVM 监控](../../images/workload-2.png)
+    ![JVM 监控](../images/workload-2.png)
 
     !!! note
 
         1. JVM 监控功能仅支持 Java 语言。
-        2. 开启 JVM 监控功能，请参考[开始监控 Java 应用](../../quickstart/otel/java/index.md)。
+        2. 开启 JVM 监控功能，请参考[开始监控 Java 应用](../quickstart/otel/java/index.md)。
 
 ## 指标参考说明
 
