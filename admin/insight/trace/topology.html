@@ -791,9 +791,9 @@
 查看服务在指定时间内的调用及其性能状况。拓扑图的节点之间的联系代表两个服务在查询时间范围内服务之间的存在调用关系。</p>
 <h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <ol>
-<li>集群中已<a href="../../quickstart/install/install-agent.md">安装 insight-agent</a> 且应用处于 <strong>运行中</strong> 状态。</li>
-<li>服务已通过 <a href="../../quickstart/otel/operator.md">Operator</a> 或
-   <a href="../../quickstart/otel/golang/golang.md">Opentelemetry SDK</a> 的方式接入链路。</li>
+<li>集群中已<a href="../quickstart/install/install-agent.html">安装 insight-agent</a> 且应用处于 <strong>运行中</strong> 状态。</li>
+<li>服务已通过 <a href="../quickstart/otel/operator.html">Operator</a> 或
+   <a href="../quickstart/otel/golang/golang.html">Opentelemetry SDK</a> 的方式接入链路。</li>
 </ol>
 <h2 id="_3">操作步骤<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <ol>
@@ -811,8 +811,8 @@
 <li>
 <p>点击右下角 <strong>图例</strong> ，可通过 <strong>临时配置</strong> 修改当前的拓扑图定义的渲染阈值，跳出或关闭该页面即会丢失该配置。</p>
 <p>阈值设置必须大于 0，前面填写的阈值必须小于后面填写的。且填写的阈值必须在最大和最小的范围之间。</p>
-<p><img alt="服务拓扑" src="../../images/servicemap01.png" width="1000"/></p>
-<p><img alt="服务拓扑" src="../../images/servicemap02.png" width="1000"/></p>
+<p><img alt="服务拓扑" src="../images/servicemap01.png" width="1000"/></p>
+<p><img alt="服务拓扑" src="../images/servicemap02.png" width="1000"/></p>
 </li>
 </ol>
 <h3 id="_4">其他节点<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
@@ -829,14 +829,14 @@
 </li>
 <li>
 <p>当服务请求到 MySQL、PostgreSQL、Oracle Database 这三种数据库时，在拓扑图中可以看到请求的详细数据库类型。</p>
-<p><img alt="数据库细节" src="../../images/service-map.png"/></p>
+<p><img alt="数据库细节" src="../images/service-map.png"/></p>
 </li>
 </ul>
 <h4 id="_5">开启虚拟节点<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
 <ol>
 <li>
 <p>更新 insight-server chart 的 values，找到下图所示参数，将 <code>false</code> 改为 <code>true</code>。</p>
-<p><img alt="拓扑图" src="../../images/servicemap.png"/></p>
+<p><img alt="拓扑图" src="../images/servicemap.png"/></p>
 </li>
 <li>
 <p>在服务拓扑的显示设置中勾选 <strong>虚拟服务</strong> 。</p>
