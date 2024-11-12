@@ -6,9 +6,9 @@ etcd 备份是以集群数据为核心的备份。在硬件设备损坏，开发
 
 ## 前提条件
 
-- [接入](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
+- [接入](../clusters/integrate-cluster.md)或者管理员已为用户创建了集群，且能够访问集群的 UI 界面。
 
-- 创建[命名空间](../namespaces/createns.md)和[用户](../../ghippo/access-control/user.md)，并为用户授予 [NS Admin](../permissions/permission-brief.md#ns-admin) 或更高权限。详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
+- 创建[命名空间](../namespaces/createns.md)和[用户](../../register/index.md)，并为用户授予 [NS Admin](../permissions/permission-brief.md#ns-admin) 或更高权限。详情可参考[命名空间授权](../permissions/cluster-ns-auth.md)。
 
 - 准备一个 MinIO 实例。
 

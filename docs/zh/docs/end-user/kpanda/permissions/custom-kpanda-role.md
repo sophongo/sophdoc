@@ -10,7 +10,7 @@
 
 - 适用于容器管理 v0.27.0 及以上版本。
 - [已接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[已创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
-- 已完成一个[命名空间的创建](../namespaces/createns.md)、[用户的创建](../../ghippo/access-control/user.md)，并为用户授予 [NS Viewer](./permission-brief.md#ns-viewer) ，详情可参考[命名空间授权](./cluster-ns-auth.md)。
+- 已完成一个[命名空间的创建](../namespaces/createns.md)、[用户的创建](../../register/index.md)，并为用户授予 [NS Viewer](./permission-brief.md#ns-viewer) ，详情可参考[命名空间授权](./cluster-ns-auth.md)。
 
 !!! note
 

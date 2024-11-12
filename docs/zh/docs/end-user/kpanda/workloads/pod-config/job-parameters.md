@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # 任务参数说明
 
 根据 __.spec.completions__ 和 __.spec.Parallelism__ 的设置，可以将任务（Job）划分为以下几种类型:
@@ -21,7 +26,7 @@
 
 ```yaml
 apiVersion: batch/v1
-kind: Job            #当前资源的类型
+kind: Job            # 当前资源的类型
 metadata:
   name: myjob
 spec:

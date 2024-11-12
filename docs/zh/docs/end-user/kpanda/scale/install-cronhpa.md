@@ -12,7 +12,7 @@
 
 安装 __kubernetes-cronhpa-controller__ 插件之前，需要满足以下前提条件：
 
-- 在容器管理模块中[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者[创建 Kubernetes 集群](../clusters/create-cluster.md)，且能够访问集群的 UI 界面。
+- 在容器管理模块中[接入 Kubernetes 集群](../clusters/integrate-cluster.md)或者管理员已为用户创建了集群，且能够访问集群的 UI 界面。
 
 - 创建一个[命名空间](../namespaces/createns.md)。
 
