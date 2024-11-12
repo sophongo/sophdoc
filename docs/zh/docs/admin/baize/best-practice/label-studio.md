@@ -1,9 +1,5 @@
 # 部署 Label Studio
 
-!!! note
-
-    参阅视频教程：[数据标注和数据集使用说明](../../videos/baize.md#_4)
-
 [Label Studio](https://labelstud.io/) 是一个开源的数据标注工具，用于各种机器学习和人工智能任务。
 以下是 Label Studio 的简要介绍：
 

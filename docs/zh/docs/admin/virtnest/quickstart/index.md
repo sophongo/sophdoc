@@ -11,7 +11,7 @@
 
 - 向用户机操作系统公开硬件辅助的虚拟化。
 - 在指定集群[安装 virtnest-agent](../install/index.md)，操作系统内核版本需要在 3.15 以上。
-- 创建一个[命名空间](../../admin/kpanda/namespaces/createns.md)../../ghippo/access-control/user.mdtrol/user.md)。
+- 创建一个[命名空间](../../admin/kpanda/namespaces/createns.md)。
 - 提前准备好镜像，平台内置三种镜像 (如下文所示)，如需制作镜像，可参考开源项目[制作镜像](https://github.com/Tedezed/kubevirt-images-generator/tree/master)。
 - 进行网络配置时，若选择使用 Passt 网络模式，则需要升级至 0.4.0 及以上版本。
 
@@ -24,8 +24,6 @@
     ![云主机](../images/createvm01.png)
 
 2. 在云主机列表页面，点击 __创建云主机__ -> 选择 __通过镜像创建__ 。
-
-    ![镜像创建](../../images/createvm02.png)
 
 3. 进入镜像创建页面，依次填写基本信息、镜像配置、存储与网络、登录设置后，在页面右下角点击 __确定__ 完成创建。
 
@@ -52,7 +50,7 @@
 
 根据下表填写镜像相关信息后，点击 __下一步__ 
 
-![使用镜像仓库](../../images/createvm05.png)
+![使用镜像仓库](../images/createvm05.png)
 
 1. 镜像来源：支持三种类型的来源。
 
@@ -155,7 +153,7 @@
 - 用户名/密码：可以通过用户名和密码登录至云主机。
 - SSH：选择 SSH 登录方式时可为云主机绑定 SSH 密钥，用于日后登录云主机。
 
-![登录设置](../../images/createvm07.png)
+![登录设置](../images/createvm07.png)
 
 ## YAML 创建
 
@@ -163,7 +161,7 @@
 
 进入云主机列表页，点击 __通过 YAML 创建__ 按钮。
 
-![yaml 创建](../../images/createvm08.png)
+![yaml 创建](../images/createvm08.png)
 
 ??? note "点击查看创建云主机的 YAML 示例"
 
