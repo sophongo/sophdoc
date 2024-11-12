@@ -29,12 +29,12 @@ nav:
               - 创建 vLLM 推理服务: end-user/baize/developer/inference/vllm-inference.md
       - 云上 Kubernetes: end-user/k8s/create-k8s.md
       - 个人中心:
-          - 安全设置: end-user/ghippo/user-guide/personal-center/security-setting.md
-          - 访问密钥: end-user/ghippo/user-guide/personal-center/accesstoken.md
-          - SSH 公钥: end-user/ghippo/user-guide/personal-center/ssh-key.md
-          - 语言设置: end-user/ghippo/user-guide/personal-center/language.md
+          - 安全设置: end-user/ghippo/personal-center/security-setting.md
+          - 访问密钥: end-user/ghippo/personal-center/accesstoken.md
+          - SSH 公钥: end-user/ghippo/personal-center/ssh-key.md
+          - 语言设置: end-user/ghippo/personal-center/language.md
   - 管理员操作手册:
-      - 什么是 AI 算力平台: index.md
+      - 什么是 AI 算力平台: admin/index.md
       - 用户注册:
           - 用户注册: admin/register/index.md
           - 绑定工作空间: admin/register/bindws.md
