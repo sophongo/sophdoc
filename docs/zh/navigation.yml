@@ -1,52 +1,51 @@
 # Page tree
 nav:
   - 终端用户操作手册:
-      - 什么是 AI 算力平台: end-user-manual/index.md
+      - 什么是 AI 算力平台: end-user/index.md
       - 用户注册:
-          - 用户注册: end-user-manual/user/register/index.md
+          - 用户注册: end-user/user/register/index.md
       - 独享云主机:
-          - 创建云主机: end-user-manual/user/host/createhost.md
-          - 使用云主机: end-user-manual/user/host/usehost.md
+          - 创建云主机: end-user/user/host/createhost.md
+          - 使用云主机: end-user/user/host/usehost.md
       - 共享云资源:
-          - 创建 AI 工作负载: end-user-manual/user/share/workload.md
-          - 使用 Notebook: end-user-manual/user/share/notebook.md
+          - 创建 AI 工作负载: end-user/user/share/workload.md
+          - 使用 Notebook: end-user/user/share/notebook.md
           - 创建训练任务:
-              - 创建训练任务: end-user-manual/baize/developer/jobs/create.md
-              - 创建 Pytorch 任务: end-user-manual/baize/developer/jobs/pytorch.md
-              - 创建 Tensorflow 任务: end-user-manual/baize/developer/jobs/tensorflow.md
-              - 创建 MPI 任务: end-user-manual/baize/developer/jobs/mpi.md
-              - 创建 MXNet 任务: end-user-manual/baize/developer/jobs/mxnet.md
-              - 创建 PaddlePaddle 任务: end-user-manual/baize/developer/jobs/paddle.md
-              - 删除任务: end-user-manual/baize/developer/jobs/delete.md
-              - 查看任务负载: end-user-manual/baize/developer/jobs/view.md
-              - 任务分析: end-user-manual/baize/developer/jobs/tensorboard.md
+              - 创建训练任务: end-user/baize/developer/jobs/create.md
+              - 创建 Pytorch 任务: end-user/baize/developer/jobs/pytorch.md
+              - 创建 Tensorflow 任务: end-user/baize/developer/jobs/tensorflow.md
+              - 创建 MPI 任务: end-user/baize/developer/jobs/mpi.md
+              - 创建 MXNet 任务: end-user/baize/developer/jobs/mxnet.md
+              - 创建 PaddlePaddle 任务: end-user/baize/developer/jobs/paddle.md
+              - 删除任务: end-user/baize/developer/jobs/delete.md
+              - 查看任务负载: end-user/baize/developer/jobs/view.md
+              - 任务分析: end-user/baize/developer/jobs/tensorboard.md
           - 数据管理:
-              - 数据集列表: end-user-manual/baize/developer/dataset/create-use-delete.md
-              - 环境管理: end-user-manual/baize/developer/dataset/environments.md
+              - 数据集列表: end-user/baize/developer/dataset/create-use-delete.md
+              - 环境管理: end-user/baize/developer/dataset/environments.md
           - 推理服务:
-              - 模型支持情况: end-user-manual/baize/developer/inference/models.md
-              - 创建 Triton 推理服务: end-user-manual/baize/developer/inference/triton-inference.md
-              - 创建 vLLM 推理服务: end-user-manual/baize/developer/inference/vllm-inference.md
-      # - 云上 Kubernetes:
-          # - 使用云上 K8S 集群: end-user-manual/k8s
+              - 模型支持情况: end-user/baize/developer/inference/models.md
+              - 创建 Triton 推理服务: end-user/baize/developer/inference/triton-inference.md
+              - 创建 vLLM 推理服务: end-user/baize/developer/inference/vllm-inference.md
+      - 云上 Kubernetes: end-user/k8s/create-k8s.md
       - 个人中心:
-          - 安全设置: end-user-manual/ghippo/user-guide/personal-center/security-setting.md
-          - 访问密钥: end-user-manual/ghippo/user-guide/personal-center/accesstoken.md
-          - SSH 公钥: end-user-manual/ghippo/user-guide/personal-center/ssh-key.md
-          - 语言设置: end-user-manual/ghippo/user-guide/personal-center/language.md
+          - 安全设置: end-user/ghippo/user-guide/personal-center/security-setting.md
+          - 访问密钥: end-user/ghippo/user-guide/personal-center/accesstoken.md
+          - SSH 公钥: end-user/ghippo/user-guide/personal-center/ssh-key.md
+          - 语言设置: end-user/ghippo/user-guide/personal-center/language.md
   - 管理员操作手册:
       - 什么是 AI 算力平台: index.md
       - 用户注册:
-          - 用户注册: user/register/index.md
-          - 绑定工作空间: user/register/bindws.md
-          - 为工作空间分配资源: user/register/wsres.md
+          - 用户注册: admin/register/index.md
+          - 绑定工作空间: admin/register/bindws.md
+          - 为工作空间分配资源: admin/register/wsres.md
       - 独享云主机:
-          - 创建云主机: user/host/createhost.md
-          - 使用云主机: user/host/usehost.md
+          - 创建云主机: admin/host/createhost.md
+          - 使用云主机: admin/host/usehost.md
       - 共享云资源:
-          - 配额管理: user/share/quota.md
-          - 创建 AI 工作负载: user/share/workload.md
-          - 使用 Notebook: user/share/notebook.md
+          - 配额管理: admin/share/quota.md
+          - 创建 AI 工作负载: admin/share/workload.md
+          - 使用 Notebook: admin/share/notebook.md
           - 创建训练任务:
               - 创建训练任务: baize/developer/jobs/create.md
               - 创建 Pytorch 任务: baize/developer/jobs/pytorch.md
@@ -65,9 +64,9 @@ nav:
               - 创建 Triton 推理服务: baize/developer/inference/triton-inference.md
               - 创建 vLLM 推理服务: baize/developer/inference/vllm-inference.md
       - 云上 Kubernetes:
-          - 创建云上 K8s 集群: user/k8s/create-k8s.md
-          - 添加工作节点: user/k8s/add-node.md
-          - 移除 GPU 工作节点: user/k8s/remove-node.md  
+          - 创建云上 K8s 集群: admin/k8s/create-k8s.md
+          - 添加工作节点: admin/k8s/add-node.md
+          - 移除 GPU 工作节点: admin/k8s/remove-node.md  
       - 运营计费:
               - ghippo/user-guide/report-billing/index.md
               - 报表管理: ghippo/user-guide/report-billing/report.md
