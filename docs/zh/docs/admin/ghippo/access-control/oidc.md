@@ -10,15 +10,15 @@ OIDC（OpenID Connect）是建立在 OAuth 2.0 基础上的一个身份层，是
 
 1. 使用具有 __admin__ 角色的用户登录 AI 算力平台。点击左侧导航栏底部的 __全局管理__ -> __用户与访问控制__ 。
 
-    ![全局管理](../../images/access.png)
+    ![全局管理](../images/access.png)
 
 2. 在左侧导航栏选择 __身份提供商__ ，点击 __OIDC__ 页签 -> **创建身份提供商** 按钮。
 
-    ![点击创建按钮](../../images/oidc-button.png)
+    ![点击创建按钮](../images/oidc-button.png)
 
 3. 填写表单字段，建立与身份提供商的信任关系后，点击 __确定__ 。
 
-    ![填写表单](../../images/oidc02.png)
+    ![填写表单](../images/oidc02.png)
 
     | 字段       | 描述                                                         |
     | ---------- | ------------------------------------------------------------ |
@@ -33,7 +33,7 @@ OIDC（OpenID Connect）是建立在 OAuth 2.0 基础上的一个身份层，是
 
     1. 当用户通过企业用户管理系统完成第一次登录算丰 AI 算力平台后，用户信息才会被同步至算丰 AI 算力平台的 __用户与访问控制__ -> __用户列表__ 。
     1. 初次登录的用户不会被赋予任何默认权限，需要有管理员给其赋权（管理员可以是平台管理员、子模块管理员或资源管理员）。
-    1. 有关实际操作教程，请参阅 [OIDC 操作演示视频](../../../videos/ghippo.md#oidc)，也可参考
+    1. 参考
        [Azure OpenID Connect (OIDC) 接入流程](https://learn.microsoft.com/zh-cn/azure/active-directory/develop/v2-protocols-oidc)。
 
 ## 用户身份认证交互流程

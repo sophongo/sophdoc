@@ -30,7 +30,7 @@ hide:
 
     - insight-agent 默认部署在集群的 insight-system 命名空间下。
     - 建议安装最新版本的 insight-agent。
-      - 系统默认已填写数据上报的组件的地址，仍请您检查无误后再点击 __确定__  进行安装。 如需修改数据上报地址，请参考：[获取数据上报地址](../install/gethosturl.md)。
+      - 系统默认已填写数据上报的组件的地址，仍请您检查无误后再点击 __确定__ 进行安装。 如需修改数据上报地址，请参考：[获取数据上报地址](../install/gethosturl.md)。
 
     ![填写表单](https://docs.daocloud.io/daocloud-docs-images/docs/insight/images/insight-agent04.png)
 
@@ -41,4 +41,3 @@ hide:
 !!! note
 
     - 点击最右侧的 __┇__ ，您可以在弹出菜单中执行更多操作，如 __更新__ 、 __查看 YAML__ 和 __删除__ 。
-    - 对于实际的安装演示，观看 [insight-agent 安装视频演示](../../../videos/insight.md#insight-agent)。
