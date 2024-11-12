@@ -8,11 +8,9 @@
 <meta content="Suanova documentation website." name="description"/>
 <meta content="Suanova" name="author"/>
 <link href="https://sophdoc.github.io/end-user/k8s/create-k8s.html" rel="canonical"/>
-<link href="../baize/developer/jobs/tensorboard.html" rel="prev"/>
-<link href="../ghippo/personal-center/security-setting.html" rel="next"/>
 <link href="../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
-<title>云上 Kubernetes - 豐收二號檔案站</title>
+<title>创建云上 Kubernetes 集群 - 豐收二號檔案站</title>
 <link href="../../assets/stylesheets/main.3cba04c6.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -50,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              云上 Kubernetes
+              创建云上 Kubernetes 集群
             
           </span>
 </div>
@@ -140,7 +138,7 @@
 <nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
 <div class="md-grid">
 <ul class="md-tabs__list">
-<li class="md-tabs__item md-tabs__item--active">
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../index.html">
           
   
@@ -198,211 +196,13 @@
 </a>
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
-<div class="md-nav__link md-nav__container">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../index.html">
 <span class="md-ellipsis">
     终端用户操作手册
   </span>
-</a>
-<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-expanded="true" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_1">
-<span class="md-nav__icon md-icon"></span>
-            终端用户操作手册
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_1_2" type="checkbox"/>
-<div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../register/index.html">
-<span class="md-ellipsis">
-    用户注册
-  </span>
-</a>
-</div>
-<nav aria-expanded="false" aria-labelledby="__nav_1_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_1_2">
-<span class="md-nav__icon md-icon"></span>
-            用户注册
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="">
-<span class="md-ellipsis">
-    独享云主机
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_1_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_1_3">
-<span class="md-nav__icon md-icon"></span>
-            独享云主机
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../host/createhost.html">
-<span class="md-ellipsis">
-    创建云主机
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../host/usehost.html">
-<span class="md-ellipsis">
-    使用云主机
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_1_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="">
-<span class="md-ellipsis">
-    共享云资源
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_1_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_1_4">
-<span class="md-nav__icon md-icon"></span>
-            共享云资源
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../share/workload.html">
-<span class="md-ellipsis">
-    创建 AI 工作负载
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../share/notebook.html">
-<span class="md-ellipsis">
-    使用 Notebook
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../baize/developer/jobs/create.html">
-<span class="md-ellipsis">
-    创建训练任务
-  </span>
 <span class="md-nav__icon md-icon"></span>
 </a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../baize/developer/dataset/create-use-delete.md">
-<span class="md-ellipsis">
-    数据管理
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../baize/developer/inference/models.md">
-<span class="md-ellipsis">
-    推理服务
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    云上 Kubernetes
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="create-k8s.html">
-<span class="md-ellipsis">
-    云上 Kubernetes
-  </span>
-</a>
-<nav aria-label="导航" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      导航
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      前置条件
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      创建步骤
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_1_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="">
-<span class="md-ellipsis">
-    个人中心
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_1_6_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_1_6">
-<span class="md-nav__icon md-icon"></span>
-            个人中心
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../ghippo/personal-center/security-setting.html">
-<span class="md-ellipsis">
-    安全设置
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../ghippo/personal-center/accesstoken.html">
-<span class="md-ellipsis">
-    访问密钥
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../ghippo/personal-center/ssh-key.html">
-<span class="md-ellipsis">
-    SSH 公钥
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../ghippo/personal-center/language.html">
-<span class="md-ellipsis">
-    语言设置
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../../admin/index.html">
@@ -515,7 +315,7 @@
 </li>
 <li>
 <p>点击右侧的 <strong>安装</strong> 按钮，开始安装 GPU 插件</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">应用设置</label><label for="__tabbed_2_2">Kubernetes 编排确认</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"/><div class="tabbed-labels"><label for="__tabbed_2_1">应用设置</label><label for="__tabbed_2_2">Kubernetes 编排确认</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>输入名称，选择命名空间，在 YAMl 中修改镜像地址：</p>
@@ -525,7 +325,7 @@
 <p><img alt="confirm" src="../images/k8s12.png"/></p>
 </div>
 </div>
-</input></input></div>
+</input></div>
 </li>
 <li>
 <p>自动返回 Helm 应用列表，等待 metax-gpu-extensions 状态变为 <strong>已部署</strong></p>
