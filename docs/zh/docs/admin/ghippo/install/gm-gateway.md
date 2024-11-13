@@ -1,6 +1,6 @@
-# 使用国密网关代理 DCE 5.0
+# 使用国密网关代理 AI 算力中心
 
-参照以下步骤为 DCE 5.0 配置国密网关。
+参照以下步骤为 AI 算力中心配置国密网关。
 
 ## 软件介绍
 
@@ -161,10 +161,10 @@ nginx -s reload
 
 ## 下一步
 
-国密网关部署成功之后，[自定义 DCE 5.0 反向代理服务器地址](reverse-proxy.md)。
+国密网关部署成功之后，[自定义 AI 算力中心反向代理服务器地址](reverse-proxy.md)。
 
 ## 验证
 
 您可以部署一个支持国密证书的 Web 浏览器。
 例如 [Samarium Browser](https://github.com/guanzhi/SamariumBrowser)，
-然后通过 Tengine 访问 DCE5 UI 界面，验证国密证书是否生效。
+然后通过 Tengine 访问 AI 算力中心 UI 界面，验证国密证书是否生效。

@@ -4,7 +4,7 @@
 
 ![创建 notebook 界面](../images/notebook-images.png)
 
-DaoCloud 提供了一个默认的 Notebook 镜像，包含了所需的任何开发工具和资料。
+算丰提供了一个默认的 Notebook 镜像，包含了所需的任何开发工具和资料。
 
 ```markdown
 baize/baize-notebook
@@ -20,7 +20,7 @@ baize/baize-notebook
 | conda(mamba) | 23.3.1   |                                                              |
 | jupyterlab   | 3.6.6    | JupyterLab 镜像，提供完整的 Notebook 开发体验                |
 | codeserver   | v4.89.1  | 主流 Code 开发工具，方便用户使用熟悉的工具进行开发体验       |
-| *baizectl    | v0.5.0   | DaoCloud 内置 CLI 任务管理工具                               |
+| *baizectl    | v0.5.0   | 算丰内置 CLI 任务管理工具                               |
 | *SSH         | -        | 支持本地 SSH 直接访问到 Notebook 容器内                      |
 | *kubectl     | v1.27    | Kubernetes CLI，可以使用 kubectl 在 Notebook 内 管理容器资源 |
 

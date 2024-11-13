@@ -1,6 +1,6 @@
 # 离线升级全局管理模块
 
-本页说明[下载全局管理模块](../../download/modules/ghippo.md)后，应该如何安装或升级。
+本页说明[下载全局管理模块](https://docs.daocloud.io/download/)后，应该如何安装或升级。
 
 !!! info
 
