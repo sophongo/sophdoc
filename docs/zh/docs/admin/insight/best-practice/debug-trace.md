@@ -59,7 +59,7 @@ class sdk,workload,otel,jaeger,es cluster
 
     !!! note
 
-        __全局服务集群__ 的 __opentelemetry collector__ 还负责发送所有工作集群的[全局管理模块](../../ghippo/intro/index.md)的[审计日志](../../ghippo/user-guide/audit/audit-log.md)以及 Kubernetes 审计日志（默认不采集）到全局管理模块的 __audit server__ 组件。
+        __全局服务集群__ 的 __opentelemetry collector__ 还负责发送所有工作集群的[全局管理模块](../../ghippo/intro/index.md)的[审计日志](../../ghippo/audit/audit-log.md)以及 Kubernetes 审计日志（默认不采集）到全局管理模块的 __audit server__ 组件。
 
 3. **global jaeger collector**
 

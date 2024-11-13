@@ -75,4 +75,4 @@ MINIO_USER=rootuser MINIO_PASS=rootpass123 ./import_iso.sh http://127.0.0.1:9000
 
 ## 前往 UI 界面创建集群
 
-参考文档[创建工作集群](../user-guide/clusters/create-cluster.md)，创建 RedHat 9.2 集群。
+参考文档[创建工作集群](../clusters/create-cluster.md)，创建 RedHat 9.2 集群。

@@ -31,11 +31,11 @@ class preparews,preparecs,share, cluster;
 class judge plain
 class modifyns,createns k8s
 
-click preparews "https://docs.daocloud.io/ghippo/user-guide/workspace/cluster-for-multiws/#_2"
-click preparecs "https://docs.daocloud.io/ghippo/user-guide/workspace/cluster-for-multiws/#_3"
-click share "https://docs.daocloud.io/ghippo/user-guide/workspace/cluster-for-multiws/#_4"
-click createns "https://docs.daocloud.io/amamba/user-guide/namespace/namespace/#_3"
-click modifyns "https://docs.daocloud.io/amamba/user-guide/namespace/namespace/#_4"
+click preparews "https://docs.daocloud.io/ghippo/workspace/cluster-for-multiws/#_2"
+click preparecs "https://docs.daocloud.io/ghippo/workspace/cluster-for-multiws/#_3"
+click share "https://docs.daocloud.io/ghippo/workspace/cluster-for-multiws/#_4"
+click createns "https://docs.daocloud.io/amamba/namespace/namespace/#_3"
+click modifyns "https://docs.daocloud.io/amamba/namespace/namespace/#_4"
 ```
 
 ## 准备一个工作空间
@@ -65,7 +65,7 @@ click modifyns "https://docs.daocloud.io/amamba/user-guide/namespace/namespace/#
 
     ![容器管理](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/clusterlist01.png)
 
-1. 点击 __创建集群__ [创建一个集群](../../kpanda/user-guide/clusters/create-cluster.md)，或点击 __接入集群__ [接入一个集群](../../kpanda/user-guide/clusters/integrate-cluster.md)。
+1. 点击 __创建集群__ [创建一个集群](../../kpanda/clusters/create-cluster.md)，或点击 __接入集群__ [接入一个集群](../../kpanda/clusters/integrate-cluster.md)。
 
 ## 在工作空间添加集群
 
@@ -79,4 +79,4 @@ click modifyns "https://docs.daocloud.io/amamba/user-guide/namespace/namespace/#
 
     ![新增资源](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/addcluster02.png)
 
-下一步：将集群资源分配给多个工作空间后，用户可以前往 __应用工作台__ 在这些工作空间下[创建命名空间并部署应用](../../amamba/user-guide/namespace/namespace.md)。
+下一步：将集群资源分配给多个工作空间后，用户可以前往 __应用工作台__ 在这些工作空间下[创建命名空间并部署应用](../../amamba/namespace/namespace.md)。

@@ -42,11 +42,11 @@ classDef cluster fill:#fff,stroke:#bbb,stroke-width:1px,color:#326ce5;
 class preparews,preparens,createns,nstows,wsperm cluster;
 class judge plain
 
-click preparews "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_3"
-click preparens "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_4"
-click nstows "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_5"
-click wsperm "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_6"
-click createns "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_4"
+click preparews "https://docs.daocloud.io/ghippo/workspace/ws-to-ns/#_3"
+click preparens "https://docs.daocloud.io/ghippo/workspace/ws-to-ns/#_4"
+click nstows "https://docs.daocloud.io/ghippo/workspace/ws-to-ns/#_5"
+click wsperm "https://docs.daocloud.io/ghippo/workspace/ws-to-ns/#_6"
+click createns "https://docs.daocloud.io/ghippo/workspace/ws-to-ns/#_4"
 ```
 
 !!! tip
@@ -96,7 +96,7 @@ click createns "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_
 
     !!! info
 
-        工作空间主要用于划分资源组并为用户（用户组）授予对该资源的不同访问权限。有关工作空间的详细说明，可参考[工作空间与层级](../user-guide/workspace/workspace.md)。
+        工作空间主要用于划分资源组并为用户（用户组）授予对该资源的不同访问权限。有关工作空间的详细说明，可参考[工作空间与层级](../workspace/workspace.md)。
 
     ![填写](https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/ns02.png)
 
