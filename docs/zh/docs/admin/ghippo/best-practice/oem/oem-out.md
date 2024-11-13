@@ -47,7 +47,7 @@ OEM OUT 是指将 AI 算力中心作为子模块接入其他产品，出现在�
     ```
 
 1. 假设 nginx 入口地址为 10.6.165.50，按[自定义 AI 算力中心反向代理服务器地址](../../install/reverse-proxy.md)把
-   DCE_PROXY 反代设为 `http://10.6.165.50/dce5`。确保能够通过 `http://10.6.165.50/dce5`访问 AI 算力中心。
+   AI_PROXY 反代设为 `http://10.6.165.50/dce5`。确保能够通过 `http://10.6.165.50/dce5`访问 AI 算力中心。
    客户系统也需要进行反代设置，需要根据不同平台的情况进行处理。
   
     ![反向代理](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/best-practice/oem/images/agent.png)

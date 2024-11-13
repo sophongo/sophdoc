@@ -26,7 +26,7 @@ LDAP 协议的身份提供商功能，而不必在算丰 AI 算力平台中为�
 
     ![ldap](../images/ldap01.png)
 
-    | 字段 | 描述 | 
+    | 字段 | 描述 |
     | --- | ---- |
     | 类型（Vendor）                      | 支持 LDAP (Lightweight Directory Access Protocol) 和 AD (Active Directory) | 
     | 身份提供商名称（UI display name）   | 用于区分不同的身份提供商   | 
