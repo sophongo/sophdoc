@@ -64,7 +64,7 @@ Insight 基于 [Prometheus Blackbox Exporter](https://github.com/prometheus/blac
 
 点击`拨测名称` 查看拨测任务中每个目标的监控状态，以图表方式显示针对网络状况的探测结果。
 
-![probe](../../images/probe03.png){ width=1000px}
+![probe](../images/probe03.png){ width=1000px}
 
 | 指标名称 | 描述 |
 | -- | -- |
