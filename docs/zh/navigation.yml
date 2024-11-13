@@ -188,7 +188,7 @@ nav:
                   - 创建 Windows 云主机: admin/virtnest/best-practice/vm-windows.md
           - 容器管理:
               - 集群管理:
-                  - 创建云上 K8s 集群: admin/k8s/create-k8s.md
+                  - 创建集群: admin/kpanda/clusters/create-cluster.md
                   - 接入集群: admin/kpanda/clusters/integrate-cluster.md
                   - 访问集群: admin/kpanda/clusters/access-cluster.md
                   - 升级集群: admin/kpanda/clusters/upgrade-cluster.md
@@ -201,7 +201,7 @@ nav:
                   - 集群中部署第二调度器: admin/kpanda/clusters/cluster-scheduler-plugin.md
                   - 集群证书更新: admin/kpanda/clusters/k8s-cert.md
               - 节点管理:
-                  - 节点可用性检查: adminkpanda/user-guide/nodes/node-check.md
+                  - 节点可用性检查: admin/kpanda/nodes/node-check.md
                   - 节点认证: admin/kpanda/nodes/node-authentication.md
                   - 节点扩容: admin/kpanda/nodes/add-node.md
                   - 节点缩容: admin/kpanda/nodes/delete-node.md
@@ -351,8 +351,7 @@ nav:
           - 算法开发:
               - 运维管理:
                   - 介绍: admin/baize/oam/index.md
-                  - 资源管理:
-                      - GPU 列表: admin/baize/oam/resource.md
+                  - 资源管理: admin/baize/oam/resource.md
                   - 队列管理:
                       - 创建队列: admin/baize/oam/queue/create.md
                       - 删除队列: admin/baize/oam/queue/delete.md
@@ -467,23 +466,23 @@ nav:
                   - 国密网关: admin/ghippo/install/gm-gateway.md
                   - 登录: admin/ghippo/install/login.md
               - 用户与访问控制:
-                  - 什么是用户与访问控制: adminghippo/user-guide/access-control/iam.md
+                  - 什么是用户与访问控制: admin/ghippo/access-control/iam.md
                   - 用户: admin/ghippo/access-control/user.md
                   - 用户组: admin/ghippo/access-control/group.md
                   - 角色:
-                      - admin/ghippo/user-guide/access-control/role.md
+                      - admin/ghippo/access-control/role.md
                       - 系统角色: admin/ghippo/access-control/global.md
                       - 自定义角色: admin/ghippo/access-control/custom-role.md
                   - 身份提供商:
-                      - admin/ghippo/user-guide/access-control/idprovider.md
+                      - admin/ghippo/access-control/idprovider.md
                       - LDAP: admin/ghippo/access-control/ldap.md
                       - OIDC: admin/ghippo/access-control/oidc.md
                       - OAuth 2.0 之企业微信: admin/ghippo/access-control/oauth2.0.md
                   - 接入管理:
-                      - admin/ghippo/user-guide/access-control/docking.md
+                      - admin/ghippo/access-control/docking.md
                       - Webhook: admin/ghippo/access-control/webhook.md
               - 工作空间与层级:
-                  - admin/ghippo/user-guide/workspace/ws-folder.md
+                  - admin/ghippo/workspace/ws-folder.md
                   - 绑定工作空间: admin/register/bindws.md
                   - 为工作空间分配资源: admin/register/wsres.md
                   - 创建和删除工作空间: admin/ghippo/workspace/workspace.md
@@ -510,7 +509,7 @@ nav:
                       - 中间件审计项: admin/ghippo/audit/gproduct-audit/mcamel.md
                       - 全局管理审计项: admin/ghippo/audit/gproduct-audit/ghippo.md
               - 运营管理:
-                  - admin/ghippo/user-guide/report-billing/index.md
+                  - admin/ghippo/report-billing/index.md
                   - 报表管理: admin/ghippo/report-billing/report.md
                   - 离线升级运营管理: admin/ghippo/report-billing/gmagpie-offline-install.md
                   - 计费计量: admin/ghippo/report-billing/billing.md
