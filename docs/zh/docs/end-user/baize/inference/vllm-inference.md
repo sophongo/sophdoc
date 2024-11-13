@@ -21,11 +21,11 @@ vLLM 是一个快速且易于使用的用于推理和服务的库，vLLM 旨在�
 
     本文推理服务的创建使用 ChatGLM3 模型。
 
-    ![模型选择](../../images/vllm-infer-0.png)
+    ![模型选择](../images/vllm-infer-0.png)
 
 2. 配置推理服务的资源，并调整推理服务运行的参数。
 
-    ![数据选择](../../images/vllm-infer-1.png)
+    ![数据选择](../images/vllm-infer-1.png)
 
     | 参数名 | 描述 |
     | -- | -- |
@@ -46,4 +46,4 @@ vLLM 是一个快速且易于使用的用于推理和服务的库，vLLM 旨在�
 
 拷贝详情中的 `curl` 命令，并在终端中执行命令发送一条模型推理请求，预期输出：
 
-![推理接口](../../images/vllm-infer-2.png)
+![推理接口](../images/vllm-infer-2.png)
