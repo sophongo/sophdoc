@@ -701,11 +701,11 @@
 </code></pre></div>
 <h2 id="_2">创建推理服务<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <p>目前已经支持表单创建，可以界面字段提示，进行服务创建。</p>
-<p><img alt="点击创建" src="../../images/triton-infer-0.png"/></p>
+<p><img alt="点击创建" src="../images/triton-infer-0.png"/></p>
 <h3 id="_3">配置模型路径<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <p>模型路径 <code>model-repo/mnist-cnn/1/model.pt</code> 需要和数据集中的模型目录格式一致。</p>
 <h2 id="_4">模型配置<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<p><img alt="点击创建" src="../../images/triton-infer-1.png"/></p>
+<p><img alt="点击创建" src="../images/triton-infer-1.png"/></p>
 <h3 id="_5">配置输入和输出参数<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -714,31 +714,13 @@
 <h3 id="_6">配置环境<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
 <p>可以导入 <a href="../dataset/environments.html">环境管理</a> 中创建的环境作为推理时的运行环境。</p>
 <h2 id="_7">高级配置<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
-<p><img alt="点击创建" src="../../images/triton-infer-2.png"/></p>
+<p><img alt="点击创建" src="../images/triton-infer-2.png"/></p>
 <h3 id="_8">配置认证策略<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
 <p>支持 <code>API key</code> 的请求方式认证，用户可以自定义增加认证参数。</p>
 <h3 id="_9">亲和性调度<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
 <p>支持 根据 GPU 资源等节点配置实现自动化的亲和性调度，同时也方便用户自定义调度策略。</p>
 <h2 id="_10">访问<a class="headerlink" href="#_10" title="Permanent link">¶</a></h2>
-<p><img alt="点击创建" src="../../images/triton-infer-3.png"/></p>
-<!-- 模型推理服务默认提供了多种访问方式，以便客户端可以通过不同的协议与推理服务进行交互。您可以通过以下方式访问服务：
-
-1. **HTTP/REST API**
-
-   - Triton 提供了一个基于 REST 的 API，允许客户端通过 HTTP POST 请求进行模型推理。
-   - 客户端可以发送 JSON 格式的请求体，其中包含输入数据和相关的元数据。
-
-2. **gRPC API**
-
-   - Triton 还提供了 gRPC 接口，它是一种高性能、开源、通用的 RPC 框架。
-   - gRPC 支持流式处理，可以更有效地处理大量数据。
-
-3. **C++ 和 Python 客户端库**
-
-   - Triton 为 C++ 和 Python 提供了客户端库，使得在这些语言中编写客户端代码更加方便。
-   - 客户端库封装了 HTTP/REST 和 gRPC 的细节，提供了简单的函数调用来执行推理。
-
-每种访问方式都有其特定的用例和优势。例如，HTTP/REST API 通常用于简单和跨语言的场景，而 gRPC 则适用于需要高性能和低延迟的应用。C++ 和 Python 客户端库提供了更丰富的功能和更好的性能，适合在这些语言环境中进行深度集成。 -->
+<p><img alt="点击创建" src="../images/triton-infer-3.png"/></p>
 <h3 id="api">API 访问<a class="headerlink" href="#api" title="Permanent link">¶</a></h3>
 <ul>
 <li>Triton 提供了一个基于 REST 的 API，允许客户端通过 HTTP POST 请求进行模型推理。</li>
@@ -781,49 +763,7 @@
 <li><code>"datatype"</code> 要与模型配置中的输入参数的 <code>Data Type</code> 一致。</li>
 <li><code>"data"</code> 替换为实际的推理数据。</li>
 </ul>
-<!-- #### gRPC 访问
-
-1. **生成客户端代码** ：使用 Triton 提供的模型定义文件（通常是 `.pbtxt` 文件），生成 gRPC 客户端代码。
-
-2. **创建 gRPC 客户端实例** ：使用生成的代码创建 gRPC 客户端。
-
-3. **发送 gRPC 请求** ：构造 gRPC 请求，包含模型输入数据。
-
-4. **接收响应** ：等待服务器处理并接收响应。
-
-##### 示例 gRPC 访问代码
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">triton_client.grpc</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span> <span class="nn">triton_client.utils</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 初始化 gRPC 客户端</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">triton_client</span> <span class="o">=</span> <span class="n">InferenceServerClient</span><span class="p">(</span><span class="s1">&#39;localhost:8001&#39;</span><span class="p">)</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;failed to create gRPC client: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># 构造输入数据</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">model_name</span> <span class="o">=</span> <span class="s1">&#39;chatglm2-6b&#39;</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">input_data</span> <span class="o">=</span> <span class="o">...</span>  <span class="c1"># 你的模型输入数据</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c1"># 创建输入和输出</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">inputs</span> <span class="o">=</span> <span class="p">[</span><span class="n">InferenceServerClient</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="s1">&#39;input_names&#39;</span><span class="p">,</span> <span class="n">input_data</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s2">&quot;TYPE&quot;</span><span class="p">)]</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">outputs</span> <span class="o">=</span> <span class="p">[</span><span class="n">InferenceServerClient</span><span class="o">.</span><span class="n">Output</span><span class="p">(</span><span class="s1">&#39;output_names&#39;</span><span class="p">)]</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="c1"># 发送推理请求</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="n">results</span> <span class="o">=</span> <span class="n">triton_client</span><span class="o">.</span><span class="n">infer</span><span class="p">(</span><span class="n">model_name</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="p">)</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="c1"># 获取推理结果</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="n">output_data</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">as_numpy</span><span class="p">(</span><span class="s1">&#39;output_names&#39;</span><span class="p">)</span>
-</code></pre></div>
-
-- `localhost:8001` 是 Triton 默认的 gRPC 端口，如果配置不同，请相应更改。
-- `input_data` 是你的模型输入数据，需要根据模型要求进行预处理。
-- `TYPE` 是模型输入的数据类型，如 `FP32`、`INT32` 等。 -->
 <p>请注意，上述示例代码需要根据你的具体模型和环境进行调整，输入数据的格式和内容也需要符合模型的要求。</p>
-<!-- ### Web UI 访问（敬请期待）
-
-> Web UI 访问正在开发中，敬请期待。-->
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

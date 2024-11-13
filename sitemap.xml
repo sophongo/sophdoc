@@ -291,11 +291,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/amamba.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/ghippo.html</loc>
          <lastmod>2024-11-13</lastmod>
          <changefreq>daily</changefreq>
@@ -306,32 +301,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/kairship.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/kangaroo.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/kpanda.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/mcamel.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/mspider.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/admin/ghippo/audit/gproduct-audit/skoala.html</loc>
          <lastmod>2024-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
