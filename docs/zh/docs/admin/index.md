@@ -23,7 +23,7 @@ hide:
 
     ---
 
-    云主机是部署在云端的虚拟机。
+    云主机是部署在云端的云主机。
 
     - [创建云主机](host/createhost.md)
     - [使用云主机](host/usehost.md)
