@@ -1,6 +1,7 @@
 # Page tree
 nav:
-  - 终端用户操作手册:
+  - 首页: index.md
+  - 终端用户手册:
       - 什么是 AI 算力平台: end-user/index.md
       - 用户注册: end-user/register/index.md
       - 算力服务:
@@ -147,7 +148,7 @@ nav:
           - 访问密钥: end-user/ghippo/personal-center/accesstoken.md
           - SSH 公钥: end-user/ghippo/personal-center/ssh-key.md
           - 语言设置: end-user/ghippo/personal-center/language.md
-  - 管理员操作手册:
+  - 管理员手册:
       - 什么是 AI 算力平台: admin/index.md
       - 算力服务:
           - 云主机:
