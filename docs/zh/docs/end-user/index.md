@@ -70,5 +70,3 @@ hide:
     - [语言设置](./ghippo/personal-center/language.md)
 
 </div>
-
-![home](images/home.png)
