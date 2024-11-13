@@ -8,9 +8,11 @@
 <meta content="Suanova documentation website." name="description"/>
 <meta content="Suanova" name="author"/>
 <link href="https://sophdoc.github.io/admin/insight/quickstart/otel/send_tracing_to_insight.html" rel="canonical"/>
+<link href="operator.html" rel="prev"/>
+<link href="../../best-practice/tail-based-sampling.html" rel="next"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
-<title>向 Insight 发送链路数据 - 豐收二號檔案站</title>
+<title>向Insight发送链路数据 - 豐收二號檔案站</title>
 <link href="../../../../assets/stylesheets/main.3cba04c6.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -48,7 +50,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              向 Insight 发送链路数据
+              向Insight发送链路数据
             
           </span>
 </div>
@@ -148,7 +150,7 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
+<li class="md-tabs__item md-tabs__item--active">
 <a class="md-tabs__link" href="../../../index.html">
           
   
@@ -204,13 +206,330 @@
 <span class="md-nav__icon md-icon"></span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../../../index.html">
 <span class="md-ellipsis">
     管理员操作手册
   </span>
+</a>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            管理员操作手册
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+<span class="md-ellipsis">
+    算力服务
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            算力服务
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../virtnest/install/index.html">
+<span class="md-ellipsis">
+    云主机
+  </span>
 <span class="md-nav__icon md-icon"></span>
 </a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../kpanda/clusters/create-cluster.html">
+<span class="md-ellipsis">
+    容器管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../baize/oam/index.html">
+<span class="md-ellipsis">
+    算法开发
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+<span class="md-ellipsis">
+    管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            管理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    可观测性
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_1">
+<span class="md-nav__icon md-icon"></span>
+            可观测性
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../res-plan/index.html">
+<span class="md-ellipsis">
+    快速入门
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2" id="__nav_2_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    开始观测
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_3_1_2_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_2_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            开始观测
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3_1_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2_1" id="__nav_2_3_1_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    OpenTelemetry 观测
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_3_1_2_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_3_1_2_1">
+<span class="md-nav__icon md-icon"></span>
+            OpenTelemetry 观测
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="otel.html">
+<span class="md-ellipsis">
+    使用OTel赋予应用可观测
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="operator.html">
+<span class="md-ellipsis">
+    Operator无侵入增强应用
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    向Insight发送链路数据
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="send_tracing_to_insight.html">
+<span class="md-ellipsis">
+    向Insight发送链路数据
+  </span>
+</a>
+<nav aria-label="导航" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      导航
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#otel-agentsdk-insight-agent-opentelemtry-collector">
+<span class="md-ellipsis">
+      客户应用通过 OTel Agent/SDK 上报链路给 Insight Agent Opentelemtry Collector
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#opentelemtry-collector-insight-agent-opentelemtry-collector">
+<span class="md-ellipsis">
+      通过 Opentelemtry Collector 将链路转发给 Insight Agent Opentelemtry Collector
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      参考
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../best-practice/tail-based-sampling.html">
+<span class="md-ellipsis">
+    链路数据尾部采样方案
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="java/index.html">
+<span class="md-ellipsis">
+    Java 应用观测
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="golang/golang.html">
+<span class="md-ellipsis">
+    通过 OTel SDK 增强 Go 应用
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../best-practice/sw-to-otel.html">
+<span class="md-ellipsis">
+    使用OTel接收SkyWalking链路数据
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../dashboard/overview.html">
+<span class="md-ellipsis">
+    仪表盘
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../infra/cluster.html">
+<span class="md-ellipsis">
+    基础设施
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../data-query/metric.html">
+<span class="md-ellipsis">
+    指标
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../data-query/log.html">
+<span class="md-ellipsis">
+    日志
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../trace/topology.html">
+<span class="md-ellipsis">
+    链路追踪
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../alert-center/index.html">
+<span class="md-ellipsis">
+    告警
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../collection-manag/collection-manag.html">
+<span class="md-ellipsis">
+    数据采集
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../system-config/system-component.html">
+<span class="md-ellipsis">
+    系统配置
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../best-practice/integration_deepflow.html">
+<span class="md-ellipsis">
+    网络监控之集成 DeepFlow
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../reference/used-metric-in-insight.html">
+<span class="md-ellipsis">
+    参考文档
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../compati-test/k8s-compatibility.html">
+<span class="md-ellipsis">
+    兼容性测试
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../faq/traceclockskew.html">
+<span class="md-ellipsis">
+    常见问题
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../ghippo/install/offline-install.html">
+<span class="md-ellipsis">
+    全局管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../../../../openapi/index.html">
