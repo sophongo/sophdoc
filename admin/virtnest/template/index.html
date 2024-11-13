@@ -458,42 +458,42 @@
 <ol>
 <li>
 <p>点击左侧导航栏上的 <strong>容器管理</strong> ，然后点击 <strong>云主机</strong> ，进入 <strong>云主机管理</strong> 页面。在云主机列表页面，点击创建云主机-选择模板创建云主机。</p>
-<p><img alt="云主机模板创建" src="../images/create-tep01.png"/></p>
+<p><img alt="云主机模板创建" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep01.png"/></p>
 </li>
 <li>
 <p>进入镜像创建页面，依次填写基本信息、模板配置、存储与网络、登录设置后，在页面右下角点击 <strong>确定</strong> 完成创建。</p>
 <p>系统将自动返回云主机列表。点击列表右侧的 <strong>┇</strong> ，可以对云主机执行关机/开启、重启、克隆、更新、创建快照、配置转换为模板、控制台访问（VNC）、删除等操作。
 克隆和快照能力依赖于存储池的选择。</p>
-<p><img alt="云主机操作" src="../images/create-tep02.png"/></p>
+<p><img alt="云主机操作" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep02.png"/></p>
 </li>
 </ol>
 <h3 id="_3">基本信息<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <p>在创建云主机页面中，根据下表输入信息后，点击 <strong>下一步</strong> 。</p>
-<p><img alt="云主机基础信息" src="../images/create-tep03.png"/></p>
+<p><img alt="云主机基础信息" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep03.png"/></p>
 <ul>
 <li>名称：最多包含 63 个字符，只能包含小写字母、数字及分隔符（“-”），且必须以小写字母或数字开头及结尾。
   同一命名空间内名称不得重复，而且名称在云主机创建好之后不可更改。</li>
 <li>别名：允许任何字符，最长60个字符。</li>
 <li>集群：选择将新建的云主机部署在哪个集群内。</li>
 <li>命名空间：选择将新建的云主机部署在哪个命名空间。
-  找不到所需的命名空间时可以根据页面提示去<a href="../../admin/kpanda/namespaces/createns.md">创建新的命名空间</a>。</li>
+  找不到所需的命名空间时可以根据页面提示去<a href="../../kpanda/namespaces/createns.html">创建新的命名空间</a>。</li>
 </ul>
 <h3 id="_4">模板配置<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <p>出现模板列表，按需选择内置模板/自定义模板。</p>
 <ul>
 <li>
 <p>选择内置模板：平台内置了2个标准模板，不允许编辑和删除。选择内置模板后，镜像来源、操作系统、镜像地址等将使用模板内的信息，无法修改；资源配额也将使用模板内的信息，允许修改。</p>
-<p><img alt="内置模板" src="../images/create-tep04.png"/></p>
-<p><img alt="内置模板" src="../images/create-tep05.png"/></p>
+<p><img alt="内置模板" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep04.png"/></p>
+<p><img alt="内置模板" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep05.png"/></p>
 </li>
 <li>
 <p>选择自定义模板：由云主机配置转化而来的模板，支持编辑和删除。使用自定义模板则根据具体情况支持修改镜像来源等信息。</p>
-<p><img alt="使用镜像仓库" src="../images/create-tep06.png"/></p>
-<p><img alt="使用镜像仓库" src="../images/create-tep07.png"/></p>
+<p><img alt="使用镜像仓库" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep06.png"/></p>
+<p><img alt="使用镜像仓库" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep07.png"/></p>
 </li>
 </ul>
 <h3 id="_5">存储与网络配置<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
-<p><img alt="存储与网络配置" src="../images/create-tep08.png"/></p>
+<p><img alt="存储与网络配置" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/create-tep08.png"/></p>
 <ul>
 <li>
 <p>存储：系统默认创建一个 VirtIO 类型的 rootfs 系统盘，用于存放操作系统和数据。
@@ -522,7 +522,7 @@
 <li>用户名/密码：可以通过用户名和密码登录至云主机。</li>
 <li>SSH：选择 SSH 登录方式时可为云主机绑定 SSH 密钥，用于日后登录云主机。</li>
 </ul>
-<p><img alt="登录设置" src="../images/createvm08_1.png"/></p>
+<p><img alt="登录设置" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/virtnest/images/createvm08_1.png"/></p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

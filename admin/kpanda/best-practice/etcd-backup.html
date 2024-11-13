@@ -519,13 +519,6 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="dce4-5-migration.html">
-<span class="md-ellipsis">
-    DCE 4.0到5.0有限场景迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="kubean-low-version.html">
 <span class="md-ellipsis">
     部署/升级Kubean兼容版本
@@ -694,7 +687,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
-<li>DCE 5.0 ETCD 备份还原仅限于针对同一集群（节点数和 IP 地址没有变化）进行备份与还原。
+<li>AI 算力中心ETCD 备份还原仅限于针对同一集群（节点数和 IP 地址没有变化）进行备份与还原。
   例如，备份了 A 集群 的 etcd 数据后，只能将备份数据还原到 A 集群中，不能还原到 B 集群。</li>
 <li>对于跨集群的备份与还原，建议使用<a href="../user-guide/backup/deployment.md">应用备份还原</a>功能。</li>
 <li>首先创建备份策略，备份当前状态，建议参考<a href="../user-guide/backup/etcd-backup.md">ETCD 备份</a>功能。</li>
@@ -756,12 +749,12 @@
 <h3 id="_3">检查备份数据<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <p>还原之前需要检查下列事项：</p>
 <ul>
-<li>是否已经在 DCE 5.0 中成功备份了数据</li>
+<li>是否已经在 AI 算力中心中成功备份了数据</li>
 <li>检查 S3 存储中备份数据是否存在</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>DCE 5.0 的备份是全量数据备份，还原时将还原最后一次备份的全量数据。</p>
+<p>AI 算力中心的备份是全量数据备份，还原时将还原最后一次备份的全量数据。</p>
 </div>
 <p><img alt="minio" src="https://docs.daocloud.io/daocloud-docs-images/docs/kpanda/images/bp01.png"/></p>
 <h3 id="_4">关闭集群<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>

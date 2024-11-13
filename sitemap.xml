@@ -876,11 +876,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sophdoc.github.io/admin/insight/quickstart/other/install-agentindce.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sophdoc.github.io/admin/insight/quickstart/res-plan/index.html</loc>
          <lastmod>2024-11-13</lastmod>
          <changefreq>daily</changefreq>
@@ -1012,11 +1007,6 @@
     </url>
     <url>
          <loc>https://sophdoc.github.io/admin/kpanda/best-practice/create-ubuntu-on-centos-platform.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/admin/kpanda/best-practice/dce4-5-migration.html</loc>
          <lastmod>2024-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2227,11 +2217,6 @@
     </url>
     <url>
          <loc>https://sophdoc.github.io/end-user/insight/quickstart/other/install-agent-on-ocp.html</loc>
-         <lastmod>2024-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sophdoc.github.io/end-user/insight/quickstart/other/install-agentindce.html</loc>
          <lastmod>2024-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>

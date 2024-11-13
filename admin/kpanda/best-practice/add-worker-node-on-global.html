@@ -470,9 +470,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#kind-dce-50">
+<a class="md-nav__link" href="#kind-ai">
 <span class="md-ellipsis">
-      将 kind 集群接入 DCE 5.0 集群列表
+      将 kind 集群接入 AI 算力中心集群列表
     </span>
 </a>
 </li>
@@ -511,13 +511,6 @@
 <a class="md-nav__link" href="use-otherlinux-create-custer.html">
 <span class="md-ellipsis">
     非主流操作系统上创建集群
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="dce4-5-migration.html">
-<span class="md-ellipsis">
-    DCE 4.0到5.0有限场景迁移
   </span>
 </a>
 </li>
@@ -654,9 +647,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#kind-dce-50">
+<a class="md-nav__link" href="#kind-ai">
 <span class="md-ellipsis">
-      将 kind 集群接入 DCE 5.0 集群列表
+      将 kind 集群接入 AI 算力中心集群列表
     </span>
 </a>
 </li>
@@ -683,14 +676,14 @@
 <article class="md-content__inner md-typeset">
 <h1 id="_1">为全局服务集群的工作节点扩容<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
 <p>本文将介绍离线模式下，如何手动为全局服务集群的工作节点进行扩容。
-默认情况下，不建议在部署 DCE 5.0 后对<a href="../user-guide/clusters/cluster-role.md#_2">全局服务集群</a>进行扩容，请在部署 DCE 5.0 前做好资源规划。</p>
+默认情况下，不建议在部署 AI 算力中心后对<a href="../user-guide/clusters/cluster-role.md#_2">全局服务集群</a>进行扩容，请在部署 AI 算力中心前做好资源规划。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>全局服务集群的控制节点不支持扩容。</p>
 </div>
 <h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <ul>
-<li>已经通过<a href="../../install/commercial/deploy-arch.md">火种节点</a>完成 DCE 5.0 平台的部署，并且火种节点上的 kind 集群运行正常。</li>
+<li>已经通过<a href="../../install/commercial/deploy-arch.md">火种节点</a>完成 AI 算力中心平台的部署，并且火种节点上的 kind 集群运行正常。</li>
 <li>必须使用平台 Admin 权限的用户登录。</li>
 </ul>
 <h2 id="kind-kubeconfig">获取火种节点上 kind 集群的 kubeconfig<a class="headerlink" href="#kind-kubeconfig" title="Permanent link">¶</a></h2>
@@ -822,10 +815,10 @@
 </code></pre></div>
 </li>
 </ol>
-<h2 id="kind-dce-50">将 kind 集群接入 DCE 5.0 集群列表<a class="headerlink" href="#kind-dce-50" title="Permanent link">¶</a></h2>
+<h2 id="kind-ai">将 kind 集群接入 AI 算力中心集群列表<a class="headerlink" href="#kind-ai" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>登录 DCE 5.0，进入容器管理，在集群列表页右侧点击 <strong>接入集群</strong> 按钮，进入接入集群页面。</p>
+<p>登录 AI 算力中心，进入容器管理，在集群列表页右侧点击 <strong>接入集群</strong> 按钮，进入接入集群页面。</p>
 </li>
 <li>
 <p>在接入配置处，填入并编辑刚刚复制的 kind 集群的 kubeconfig 配置。</p>
@@ -859,7 +852,7 @@
 <h2 id="_3">为全局服务集群添加标签<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>登录 DCE 5.0，进入容器管理，找到 <strong>kapnda-glabal-cluster</strong> 集群，在右侧操作列表找到 <strong>基础配置</strong> 菜单项并进入基础配置界面。</p>
+<p>登录 AI 算力中心，进入容器管理，找到 <strong>kapnda-glabal-cluster</strong> 集群，在右侧操作列表找到 <strong>基础配置</strong> 菜单项并进入基础配置界面。</p>
 </li>
 <li>
 <p>在基础配置页面，为全局服务集群添加的标签 <code>kpanda.io/managed-by=my-cluster</code>：</p>

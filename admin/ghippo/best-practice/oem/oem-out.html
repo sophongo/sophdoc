@@ -12,7 +12,7 @@
 <link href="custom-idp.html" rel="next"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.30" name="generator"/>
-<title>OEM OUT(DCE 5.0 集成到客户系统) - 豐收二號檔案站</title>
+<title>OEM OUT - 豐收二號檔案站</title>
 <link href="../../../../assets/stylesheets/main.3cba04c6.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#dce-50oem-out">
+<a class="md-skip" href="#ai-oem-out">
           Skip to content
         </a>
 </div>
@@ -50,7 +50,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              OEM OUT(DCE 5.0 集成到客户系统)
+              OEM OUT
             
           </span>
 </div>
@@ -438,7 +438,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="oem-in.html">
 <span class="md-ellipsis">
-    OEM IN(客户系统集成到 DCE 5.0)
+    OEM IN
   </span>
 </a>
 </li>
@@ -446,13 +446,13 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    OEM OUT(DCE 5.0 集成到客户系统)
+    OEM OUT
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="oem-out.html">
 <span class="md-ellipsis">
-    OEM OUT(DCE 5.0 集成到客户系统)
+    OEM OUT
   </span>
 </a>
 <nav aria-label="导航" class="md-nav md-nav--secondary">
@@ -509,7 +509,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="custom-idp.html">
 <span class="md-ellipsis">
-    定制 DCE 5.0 对接 IdP
+    定制对接 IdP
   </span>
 </a>
 </li>
@@ -622,9 +622,9 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="dce-50oem-out">如何将DCE 5.0集成到客户系统（OEM OUT）<a class="headerlink" href="#dce-50oem-out" title="Permanent link">¶</a></h1>
-<p>OEM OUT 是指将 DCE 5.0 作为子模块接入其他产品，出现在其他产品的菜单中。
-用户登录其他产品后可直接跳转至 DCE 5.0 无需二次登录。实现 OEM OUT 共分为 5 步，分别是：</p>
+<h1 id="ai-oem-out">如何将AI 算力中心集成到客户系统（OEM OUT）<a class="headerlink" href="#ai-oem-out" title="Permanent link">¶</a></h1>
+<p>OEM OUT 是指将 AI 算力中心作为子模块接入其他产品，出现在其他产品的菜单中。
+用户登录其他产品后可直接跳转至 AI 算力中心无需二次登录。实现 OEM OUT 共分为 5 步，分别是：</p>
 <ul>
 <li><a href="#_1">统一域名</a></li>
 <li><a href="#_2">打通用户体系</a></li>
@@ -632,15 +632,14 @@
 <li><a href="#_4">定制外观</a></li>
 <li><a href="#_5">打通权限体系(可选)</a></li>
 </ul>
-<p>具体操作演示请参见 <a href="../../../videos/use-cases.md#dce-50-oem-out">OEM OUT 最佳实践视频教程</a>。</p>
 <h2 id="_1">统一域名<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>部署 DCE 5.0（假设部署完的访问地址为 <code>https://10.6.8.2:30343/</code>）</p>
+<p>部署 AI 算力中心（假设部署完的访问地址为 <code>https://10.6.8.2:30343/</code>）</p>
 </li>
 <li>
-<p>客户系统和 DCE 5.0 前可以放一个 nginx 反代来实现同域访问，
-   <strong>/</strong> 路由到客户系统， <strong>/dce5 (subpath)</strong> 路由到 DCE 5.0 系统， <strong>vi /etc/nginx/conf.d/default.conf</strong> 示例如下：</p>
+<p>客户系统和 AI 算力中心前可以放一个 nginx 反代来实现同域访问，
+   <strong>/</strong> 路由到客户系统， <strong>/dce5 (subpath)</strong> 路由到 AI 算力中心系统， <strong>vi /etc/nginx/conf.d/default.conf</strong> 示例如下：</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w">       </span><span class="mi">80</span><span class="p">;</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w">  </span><span class="s">localhost</span><span class="p">;</span>
@@ -671,21 +670,21 @@
 </code></pre></div>
 </li>
 <li>
-<p>假设 nginx 入口地址为 10.6.165.50，按<a href="../../install/reverse-proxy.html">自定义 DCE 5.0 反向代理服务器地址</a>把
-   DCE_PROXY 反代设为 <code>http://10.6.165.50/dce5</code>。确保能够通过 <code>http://10.6.165.50/dce5</code>访问 DCE 5.0。
+<p>假设 nginx 入口地址为 10.6.165.50，按<a href="../../install/reverse-proxy.html">自定义 AI 算力中心反向代理服务器地址</a>把
+   DCE_PROXY 反代设为 <code>http://10.6.165.50/dce5</code>。确保能够通过 <code>http://10.6.165.50/dce5</code>访问 AI 算力中心。
    客户系统也需要进行反代设置，需要根据不同平台的情况进行处理。</p>
 <p><img alt="反向代理" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/best-practice/oem/images/agent.png"/></p>
 </li>
 </ol>
 <h2 id="_2">打通用户体系<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>将客户系统与 DCE 5.0 平台通过 OIDC/OAUTH 等协议对接，使用户登录客户系统后进入 DCE 5.0 时无需再次登录。
+<p>将客户系统与 AI 算力中心平台通过 OIDC/OAUTH 等协议对接，使用户登录客户系统后进入 AI 算力中心时无需再次登录。
 在拿到客户系统的 OIDC 信息后填入 <strong>全局管理</strong> -&gt; <strong>用户与访问控制</strong> -&gt; <strong>身份提供商</strong> 中。</p>
 <p><img alt="身份提供商" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/best-practice/oem/images/idp.png"/></p>
-<p>对接完成后，DCE 5.0 登录页面将出现 OIDC（自定义）选项，首次从客户系统进入 DCE 5.0 时选择通过 OIDC 登录，
-后续将直接进入 DCE 5.0 无需再次选择。</p>
+<p>对接完成后，AI 算力中心登录页面将出现 OIDC（自定义）选项，首次从客户系统进入 AI 算力中心时选择通过 OIDC 登录，
+后续将直接进入 AI 算力中心无需再次选择。</p>
 <p><img alt="登录页" src="https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/best-practice/oem/images/login.png"/></p>
 <h2 id="_3">对接导航栏<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p>对接导航栏是指 DCE 5.0 出现在客户系统的菜单中，用户点击相应的菜单名称能够直接进入 DCE 5.0。
+<p>对接导航栏是指 AI 算力中心出现在客户系统的菜单中，用户点击相应的菜单名称能够直接进入 AI 算力中心。
 因此对接导航栏依赖于客户系统，不同平台需要按照具体情况进行处理。</p>
 <h2 id="_4">定制外观<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
 <p>通过 <strong>全局管理</strong> -&gt; <strong>平台设置</strong> -&gt; <strong>外观定制</strong> 可以自定义平台背景颜色、logo、名称等，

@@ -549,13 +549,6 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="dce4-5-migration.html">
-<span class="md-ellipsis">
-    DCE 4.0到5.0有限场景迁移
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="kubean-low-version.html">
 <span class="md-ellipsis">
     部署/升级Kubean兼容版本
@@ -709,17 +702,17 @@
 <p>本文介绍如何为 AMD 架构，操作系统为 CentOS 7.9 的工作集群添加 ARM 架构，操作系统为 Kylin v10 sp2 的工作节点</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>本文仅针对离线模式下，使用 DCE 5.0 平台所创建的工作集群进行异构节点的添加，不包括接入的集群。</p>
+<p>本文仅针对离线模式下，使用 AI 算力中心平台所创建的工作集群进行异构节点的添加，不包括接入的集群。</p>
 </div>
 <h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <ul>
-<li>已经部署好一个 DCE 5.0 全模式，并且火种节点还存活，部署参考文档<a href="../../install/commercial/start-install.md">离线安装 DCE 5.0 商业版</a></li>
-<li>已经通过 DCE 5.0 平台创建好一个 AMD 架构，操作系统为 CentOS 7.9 的工作集群，创建参考文档<a href="../user-guide/clusters/create-cluster.md">创建工作集群</a></li>
+<li>已经部署好一个 AI 算力中心全模式，并且火种节点还存活，部署参考文档<a href="../../install/commercial/start-install.md">离线安装 AI 算力中心商业版</a></li>
+<li>已经通过 AI 算力中心平台创建好一个 AMD 架构，操作系统为 CentOS 7.9 的工作集群，创建参考文档<a href="../user-guide/clusters/create-cluster.md">创建工作集群</a></li>
 </ul>
 <h2 id="_3">操作步骤<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <h3 id="_4">下载并导入离线包<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <p>以 ARM 架构、操作系统 Kylin v10 sp2 为例。</p>
-<p>请确保已经登录到火种节点！并且之前部署 DCE 5.0 时使用的 clusterConfig.yaml 文件还在。</p>
+<p>请确保已经登录到火种节点！并且之前部署 AI 算力中心时使用的 clusterConfig.yaml 文件还在。</p>
 <h4 id="_5">离线镜像包<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -801,7 +794,7 @@
 <p class="admonition-title">Note</p>
 <p>参数说明：</p>
 <ul>
-<li><strong>-c clusterConfig.yaml</strong> 指定之前部署 DCE5.0 时使用的 clusterConfig.yaml 文件</li>
+<li><strong>-c clusterConfig.yaml</strong> 指定之前部署 AI 算力中心.0 时使用的 clusterConfig.yaml 文件</li>
 <li><strong>--offline-path</strong> 指定下载的离线镜像包文件地址</li>
 <li><strong>--iso-path</strong> 指定下载的 ISO 操作系统镜像文件地址</li>
 <li><strong>--os-pkgs-path</strong> 指定下载的 osPackage 离线包文件地址</li>
@@ -811,10 +804,10 @@
 <h3 id="_7">添加异构工作节点<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>如果您安装的 DCE 5.0 版本高于（包含）<a href="../../dce/dce-rn/20230731.md">DCE5.0-20230731</a>，
+<p>如果您安装的 AI 算力中心版本高于（包含）<a href="../../dce/dce-rn/20230731.md">AI 算力中心.0-20230731</a>，
 完成以上步骤后，您可以直接在界面中接入节点；反之，您需要继续执行以下步骤来接入异构节点。</p>
 </div>
-<p>请确保已经登录到 DCE 5.0 <a href="../user-guide/clusters/cluster-role.md#_3">管理集群</a>的管理节点上。</p>
+<p>请确保已经登录到 AI 算力中心<a href="../user-guide/clusters/cluster-role.md#_3">管理集群</a>的管理节点上。</p>
 <h4 id="_8">修改主机清单文件<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
 <p>主机清单文件示例：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">新增节点前</label><label for="__tabbed_1_2">新增节点后</label></div>

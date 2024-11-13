@@ -565,7 +565,7 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="vmware-windows">如何从 VMWare 导入传统 Windows 云主机到云原生云主机平台<a class="headerlink" href="#vmware-windows" title="Permanent link">¶</a></h1>
-<p>本文将详细介绍如何通过命令行将外部平台 VMware 上的云主机导入到 DCE 5.0 的云主机中。</p>
+<p>本文将详细介绍如何通过命令行将外部平台 VMware 上的云主机导入到 AI 算力中心的云主机中。</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>本文档外部虚拟平台是 VMware vSphere Client，后续简写为 vSphere。
@@ -581,7 +581,7 @@
 <li>获取 vSphere 云主机信息</li>
 </ul>
 <h3 id="windows_1">检查 Windows 的引导类型<a class="headerlink" href="#windows_1" title="Permanent link">¶</a></h3>
-<p>将外部平台的云主机导入到 DCE 5.0 的虚拟化平台中时，需要根据云主机的启动类型（BIOS 或 UEFI）进行相应的配置，以确保云主机能够正确启动和运行。</p>
+<p>将外部平台的云主机导入到 AI 算力中心的虚拟化平台中时，需要根据云主机的启动类型（BIOS 或 UEFI）进行相应的配置，以确保云主机能够正确启动和运行。</p>
 <p>可以通过"系统信息"检查 Windows 是 BIOS 还是 UEFI 引导。如果是 UEFI 则需要在 YAML 文件中添加相关信息。</p>
 <p><img alt="系统信息" src="../images/window-uefi.png"/></p>
 <h2 id="_2">导入过程<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
