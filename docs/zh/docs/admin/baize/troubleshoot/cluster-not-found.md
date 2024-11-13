@@ -25,8 +25,8 @@ AI Lab 有一些基础组件需要在每个工作集群内进行安装，如果�
 
 !!! note
 
-    此地址快速跳转 `https://<dce_host>/kpanda/clusters/<cluster_name>/helm/charts/addon/baize-agent`。
-    注意将 `<dce_host>` 替换为实际的 AI 算力中心控制台地址，`<cluster_name>` 替换为实际的集群名称。
+    此地址快速跳转 `https://<ai_host>/kpanda/clusters/<cluster_name>/helm/charts/addon/baize-agent`。
+    注意将 `<ai_host>` 替换为实际的 AI 算力中心控制台地址，`<cluster_name>` 替换为实际的集群名称。
 
 ### 安装 `baize-agent` 时未配置集群名称
 

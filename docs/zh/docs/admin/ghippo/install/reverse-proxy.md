@@ -24,8 +24,8 @@
 3.  设置环境变量，方便在下文中使用。
 
     ```shell
-    # 您的反向代理地址，例如 `export DCE_PROXY="https://demo-alpha.daocloud.io"` 
-    export DCE_PROXY="https://domain:port"
+    # 您的反向代理地址，例如 `export AI_PROXY="https://demo-alpha.daocloud.io"` 
+    export AI_PROXY="https://domain:port"
 
     # helm --set 参数备份文件
     export GHIPPO_VALUES_BAK="ghippo-values-bak.yaml"
@@ -47,7 +47,7 @@
         - 如果可以，您可以使用 __yq__ 命令：
 
             ```shell
-            yq -i ".global.reverseProxy = \"${DCE_PROXY}\"" ${GHIPPO_VALUES_BAK}
+            yq -i ".global.reverseProxy = \"${AI_PROXY}\"" ${GHIPPO_VALUES_BAK}
             ```
 
         - 或者您可以使用 __vim__ 命令编辑并保存：
@@ -59,7 +59,7 @@
             ...
             global:
               ...
-              reverseProxy: ${DCE_PROXY} # 只需要修改这一行
+              reverseProxy: ${AI_PROXY} # 只需要修改这一行
             ```
 
 6.  执行 `helm upgrade` 使配置生效。
