@@ -469,8 +469,8 @@
 </li>
 <li>
 <p>设置环境变量，方便在下文中使用。</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># 您的反向代理地址，例如 `export DCE_PROXY="https://demo-alpha.daocloud.io"` </span>
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">DCE_PROXY</span><span class="o">=</span><span class="s2">"https://domain:port"</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># 您的反向代理地址，例如 `export AI_PROXY="https://demo-alpha.daocloud.io"` </span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">AI_PROXY</span><span class="o">=</span><span class="s2">"https://domain:port"</span>
 <a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>
 <a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="c1"># helm --set 参数备份文件</span>
 <a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GHIPPO_VALUES_BAK</span><span class="o">=</span><span class="s2">"ghippo-values-bak.yaml"</span>
@@ -491,7 +491,7 @@
 <ul>
 <li>
 <p>如果可以，您可以使用 <strong>yq</strong> 命令：</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>yq<span class="w"> </span>-i<span class="w"> </span><span class="s2">".global.reverseProxy = \"</span><span class="si">${</span><span class="nv">DCE_PROXY</span><span class="si">}</span><span class="s2">\""</span><span class="w"> </span><span class="si">${</span><span class="nv">GHIPPO_VALUES_BAK</span><span class="si">}</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>yq<span class="w"> </span>-i<span class="w"> </span><span class="s2">".global.reverseProxy = \"</span><span class="si">${</span><span class="nv">AI_PROXY</span><span class="si">}</span><span class="s2">\""</span><span class="w"> </span><span class="si">${</span><span class="nv">GHIPPO_VALUES_BAK</span><span class="si">}</span>
 </code></pre></div>
 </li>
 <li>
@@ -502,7 +502,7 @@
 <a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>...
 <a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>global:
 <a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">  </span>...
-<a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">  </span>reverseProxy:<span class="w"> </span><span class="si">${</span><span class="nv">DCE_PROXY</span><span class="si">}</span><span class="w"> </span><span class="c1"># 只需要修改这一行</span>
+<a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">  </span>reverseProxy:<span class="w"> </span><span class="si">${</span><span class="nv">AI_PROXY</span><span class="si">}</span><span class="w"> </span><span class="c1"># 只需要修改这一行</span>
 </code></pre></div>
 </li>
 </ul>
