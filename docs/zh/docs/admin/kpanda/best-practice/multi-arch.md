@@ -4,12 +4,12 @@
 
 !!! note
 
-    本文仅针对离线模式下，使用 DCE 5.0 平台所创建的工作集群进行异构节点的添加，不包括接入的集群。
+    本文仅针对离线模式下，使用 AI 算力中心平台所创建的工作集群进行异构节点的添加，不包括接入的集群。
 
 ## 前提条件
 
-- 已经部署好一个 DCE 5.0 全模式，并且火种节点还存活，部署参考文档[离线安装 DCE 5.0 商业版](../../install/commercial/start-install.md)
-- 已经通过 DCE 5.0 平台创建好一个 AMD 架构，操作系统为 CentOS 7.9 的工作集群，创建参考文档[创建工作集群](../user-guide/clusters/create-cluster.md)
+- 已经部署好一个 AI 算力中心全模式，并且火种节点还存活，部署参考文档[离线安装 AI 算力中心商业版](../../install/commercial/start-install.md)
+- 已经通过 AI 算力中心平台创建好一个 AMD 架构，操作系统为 CentOS 7.9 的工作集群，创建参考文档[创建工作集群](../user-guide/clusters/create-cluster.md)
 
 ## 操作步骤
 
@@ -17,7 +17,7 @@
 
 以 ARM 架构、操作系统 Kylin v10 sp2 为例。
 
-请确保已经登录到火种节点！并且之前部署 DCE 5.0 时使用的 clusterConfig.yaml 文件还在。
+请确保已经登录到火种节点！并且之前部署 AI 算力中心时使用的 clusterConfig.yaml 文件还在。
 
 #### 离线镜像包
 
@@ -25,8 +25,8 @@
 
     可以在[下载中心](https://docs.daocloud.io/download/dce5/)下载最新版本。请确保在容器管理 v0.31 及以上版本使用该能力，对应安装器 v0.21.0 及以上版本
 
-| CPU 架构 | 版本      | 下载地址                                                                                           |
-| :------ |:--------|:-----------------------------------------------------------------------------------------------|
+| CPU 架构 | 版本 | 下载地址 |
+| :------ |:-----|:-------|
 | AMD64 | v0.21.0 | <https://qiniu-download-public.daocloud.io/DaoCloud_Enterprise/dce5/offline-v0.21.0-amd64.tar> |
 | ARM64 | v0.21.0 | <https://qiniu-download-public.daocloud.io/DaoCloud_Enterprise/dce5/offline-v0.21.0-arm64.tar> |
 
@@ -74,7 +74,7 @@ tar -xvf offline-v0.21.0-arm64.tar
 
     参数说明：
 
-    - __-c clusterConfig.yaml__ 指定之前部署 DCE5.0 时使用的 clusterConfig.yaml 文件
+    - __-c clusterConfig.yaml__ 指定之前部署 AI 算力中心.0 时使用的 clusterConfig.yaml 文件
     - __--offline-path__ 指定下载的离线镜像包文件地址
     - __--iso-path__ 指定下载的 ISO 操作系统镜像文件地址
     - __--os-pkgs-path__ 指定下载的 osPackage 离线包文件地址
@@ -85,10 +85,10 @@ tar -xvf offline-v0.21.0-arm64.tar
 
 !!! note
 
-    如果您安装的 DCE 5.0 版本高于（包含）[DCE5.0-20230731](../../dce/dce-rn/20230731.md)，
+    如果您安装的 AI 算力中心版本高于（包含）[AI 算力中心.0-20230731](../../dce/dce-rn/20230731.md)，
     完成以上步骤后，您可以直接在界面中接入节点；反之，您需要继续执行以下步骤来接入异构节点。
 
-请确保已经登录到 DCE 5.0 [管理集群](../user-guide/clusters/cluster-role.md#_3)的管理节点上。
+请确保已经登录到 AI 算力中心[管理集群](../user-guide/clusters/cluster-role.md#_3)的管理节点上。
 
 #### 修改主机清单文件
 

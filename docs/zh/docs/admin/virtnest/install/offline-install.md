@@ -1,6 +1,6 @@
 # 离线升级
 
-本页说明从[下载中心](../../download/index.md)下载云主机模块后，应该如何安装或升级。
+本页说明从[下载中心](https://docs.daocloud.io/download/)下载云主机模块后，应该如何安装或升级。
 
 !!! info
 

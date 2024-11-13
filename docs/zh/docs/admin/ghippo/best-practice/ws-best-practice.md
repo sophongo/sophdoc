@@ -45,7 +45,7 @@
     | 部门管理员 A | Workspace Admin                                         | 集群 01    | CPU 50 核  |
     | 部门管理员 B | Workspace Admin                                         | 集群 01   | CPU 100 核 |
 
-## 工作空间对 DCE 各模块的作用
+## 工作空间对 AI 算力中心各模块的作用
 
 1. 模块名称：[应用工作台](../../amamba/intro/index.md)、[微服务引擎](../../skoala/intro/index.md)、[中间件](../../middleware/index.md)、[镜像仓库](../../kangaroo/intro/index.md)、[云边协同](../../kant/intro/index.md)
 
