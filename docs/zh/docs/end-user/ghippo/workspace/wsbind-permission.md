@@ -1,7 +1,7 @@
 # 资源绑定权限说明
 
 假如用户小明（“小明”代表任何有资源绑定需求的用户）已经具备了
-[Workspace Admin 角色](../access-control/role.md#_4)或已通过[自定义角色](../access-control/custom-role.md)授权，
+Workspace Admin 角色或已通过自定义角色授权，
 同时自定义角色中包含[工作空间的“资源绑定”权限](./ws-permission.md#_3)，希望将某个集群或者某个命名空间绑定到其所在的工作空间中。
 
 要将集群/命名空间资源绑定到工作空间，不仅需要该[工作空间的“资源绑定”权限](./ws-permission.md#_3)，还需要
@@ -9,7 +9,7 @@
 
 ## 给小明授权
 
-1. 使用[平台 Admin 角色](../access-control/role.md#_2)，
+1. 使用平台 Admin 角色，
    在 **工作空间** -> **授权** 页面给小明授予 Workspace Admin 角色。
 
     ![资源绑定](../images/wsbind1.png)

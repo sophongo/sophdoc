@@ -27,15 +27,15 @@
     2. 资源消耗：在该卡片可查看工作负载的 CPU、内存、网络的使用情况。
     3. 监控指标：可查看工作负载默认 1 小时的 CPU、内存、网络和磁盘的变化趋势。
 
-    ![容器监控](../../images/workload.png){ width="1000"}
+    ![容器监控](../images/workload.png){ width="1000"}
 
 5. 切换 Tab 到 __容器组列表__ ，可查看工作负载的各个容器组状态、所在节点、重启次数等信息。
 
-    ![容器监控](../../images/workload-1.png){ width="1000"}
+    ![容器监控](../images/workload-1.png){ width="1000"}
 
 6. 切换 Tab 到 __JVM 监控__ ，可查看各个容器组的 JVM 指标。
 
-    ![JVM 监控](../../images/workload-2.png)
+    ![JVM 监控](../images/workload-2.png)
 
     !!! note
 
