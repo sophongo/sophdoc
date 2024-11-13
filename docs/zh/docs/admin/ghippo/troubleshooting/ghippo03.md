@@ -61,6 +61,7 @@ lscpu | grep sse4_2
 ```
 
 ### 解决方法
+
 需要升级你的云主机或物理机 CPU 以支持 x86-64-v2 及以上，确保x86 CPU 指令集支持 sse4.2，如何升级需要你咨询云主机平台提供商或着物理机提供商。
 
 详见：https://github.com/keycloak/keycloak/issues/17290

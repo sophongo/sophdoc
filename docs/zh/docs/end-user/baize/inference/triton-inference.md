@@ -38,7 +38,7 @@ Triton 是由 NVIDIA 开发的一个开源推理服务器，旨在简化机器�
 
 目前已经支持表单创建，可以界面字段提示，进行服务创建。
 
-![点击创建](../../images/triton-infer-0.png)
+![点击创建](../images/triton-infer-0.png)
 
 ### 配置模型路径
 
@@ -46,7 +46,7 @@ Triton 是由 NVIDIA 开发的一个开源推理服务器，旨在简化机器�
 
 ## 模型配置
 
-![点击创建](../../images/triton-infer-1.png)
+![点击创建](../images/triton-infer-1.png)
 
 ### 配置输入和输出参数
 
@@ -60,7 +60,7 @@ Triton 是由 NVIDIA 开发的一个开源推理服务器，旨在简化机器�
 
 ## 高级配置
 
-![点击创建](../../images/triton-infer-2.png)
+![点击创建](../images/triton-infer-2.png)
 
 ### 配置认证策略
 
@@ -72,26 +72,7 @@ Triton 是由 NVIDIA 开发的一个开源推理服务器，旨在简化机器�
 
 ## 访问
 
-![点击创建](../../images/triton-infer-3.png)
-
-<!-- 模型推理服务默认提供了多种访问方式，以便客户端可以通过不同的协议与推理服务进行交互。您可以通过以下方式访问服务：
-
-1. **HTTP/REST API**
-
-   - Triton 提供了一个基于 REST 的 API，允许客户端通过 HTTP POST 请求进行模型推理。
-   - 客户端可以发送 JSON 格式的请求体，其中包含输入数据和相关的元数据。
-
-2. **gRPC API**
-
-   - Triton 还提供了 gRPC 接口，它是一种高性能、开源、通用的 RPC 框架。
-   - gRPC 支持流式处理，可以更有效地处理大量数据。
-
-3. **C++ 和 Python 客户端库**
-
-   - Triton 为 C++ 和 Python 提供了客户端库，使得在这些语言中编写客户端代码更加方便。
-   - 客户端库封装了 HTTP/REST 和 gRPC 的细节，提供了简单的函数调用来执行推理。
-
-每种访问方式都有其特定的用例和优势。例如，HTTP/REST API 通常用于简单和跨语言的场景，而 gRPC 则适用于需要高性能和低延迟的应用。C++ 和 Python 客户端库提供了更丰富的功能和更好的性能，适合在这些语言环境中进行深度集成。 -->
+![点击创建](../images/triton-infer-3.png)
 
 ### API 访问
 
@@ -133,49 +114,4 @@ Triton 是由 NVIDIA 开发的一个开源推理服务器，旨在简化机器�
 - `"datatype"` 要与模型配置中的输入参数的 `Data Type` 一致。
 - `"data"` 替换为实际的推理数据。
 
-<!-- #### gRPC 访问
-
-1. **生成客户端代码** ：使用 Triton 提供的模型定义文件（通常是 `.pbtxt` 文件），生成 gRPC 客户端代码。
-
-2. **创建 gRPC 客户端实例** ：使用生成的代码创建 gRPC 客户端。
-
-3. **发送 gRPC 请求** ：构造 gRPC 请求，包含模型输入数据。
-
-4. **接收响应** ：等待服务器处理并接收响应。
-
-##### 示例 gRPC 访问代码
-
-```python
-from triton_client.grpc import *
-from triton_client.utils import *
-
-# 初始化 gRPC 客户端
-try:
-    triton_client = InferenceServerClient('localhost:8001')
-except Exception as e:
-    logging.error("failed to create gRPC client: " + str(e))
-
-# 构造输入数据
-model_name = 'chatglm2-6b'
-input_data = ...  # 你的模型输入数据
-
-# 创建输入和输出
-inputs = [InferenceServerClient.Input('input_names', input_data.shape, "TYPE")]
-outputs = [InferenceServerClient.Output('output_names')]
-
-# 发送推理请求
-results = triton_client.infer(model_name, inputs, outputs)
-
-# 获取推理结果
-output_data = results.as_numpy('output_names')
-```
-
-- `localhost:8001` 是 Triton 默认的 gRPC 端口，如果配置不同，请相应更改。
-- `input_data` 是你的模型输入数据，需要根据模型要求进行预处理。
-- `TYPE` 是模型输入的数据类型，如 `FP32`、`INT32` 等。 -->
-
 请注意，上述示例代码需要根据你的具体模型和环境进行调整，输入数据的格式和内容也需要符合模型的要求。
-
-<!-- ### Web UI 访问（敬请期待）
-
-> Web UI 访问正在开发中，敬请期待。-->
