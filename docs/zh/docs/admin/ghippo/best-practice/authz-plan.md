@@ -19,11 +19,11 @@ graph TB
     ws-to-ns --> authu[5. 给用户授权 Workspace Editor]
     authu --> complete([结束])
     
-click user "https://docs.daocloud.io/ghippo/access-control/user/"
-click ns "https://docs.daocloud.io/kpanda/namespaces/createns/"
-click ws "https://docs.daocloud.io/ghippo/workspace/workspace/"
-click ws-to-ns "https://docs.daocloud.io/ghippo/workspace/ws-to-ns/"
-click authu "https://docs.daocloud.io/ghippo/workspace/ws-permission/"
+click user "https://docs.daocloud.io/ghippo/user-guide/access-control/user/"
+click ns "https://docs.daocloud.io/kpanda/user-guide/namespaces/createns/"
+click ws "https://docs.daocloud.io/ghippo/user-guide/workspace/workspace/"
+click ws-to-ns "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/"
+click authu "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-permission/"
 
  classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
  classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
