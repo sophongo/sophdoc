@@ -586,7 +586,7 @@
 </ul>
 <h2 id="vmexport-feature-gate">开启 VMExport Feature Gate<a class="headerlink" href="#vmexport-feature-gate" title="Permanent link">¶</a></h2>
 <p>激活 VMExport Feature Gate，在原有集群内执行如下命令，
-可参考<a href="https://kubevirt.io/user-guide/cluster_admin/activating_feature_gates/#how-to-activate-a-feature-gate">How to activate a feature gate</a></p>
+可参考<a href="https://kubevirt.io/cluster_admin/activating_feature_gates/#how-to-activate-a-feature-gate">How to activate a feature gate</a></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>kubectl<span class="w"> </span>edit<span class="w"> </span>kubevirt<span class="w"> </span>kubevirt<span class="w"> </span>-n<span class="w"> </span>virtnest-system
 </code></pre></div>
 <p>这条命令将修改 <code>featureGates</code> ，增加 <code>VMExport</code> 。</p>

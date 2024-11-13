@@ -540,7 +540,7 @@
 <ol>
 <li>创建 Windows 云主机之前，需要先参考<a href="../install/install-dependency.html">安装云主机模块的依赖和前提</a>确定您的环境已经准备就绪。</li>
 <li>创建过程建议参考官方文档：<a href="https://kubevirt.io/2022/KubeVirt-installing_Microsoft_Windows_11_from_an_iso.html">安装 windows 的文档</a>、
-   <a href="https://kubevirt.io/user-guide/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install">安装 Windows 相关驱动程序</a>。</li>
+   <a href="https://kubevirt.io/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install">安装 Windows 相关驱动程序</a>。</li>
 <li>Windows 云主机建议使用 VNC 的访问方式。</li>
 </ol>
 <h2 id="iso">导入 ISO 镜像<a class="headerlink" href="#iso" title="Permanent link">¶</a></h2>
@@ -582,8 +582,8 @@
 <li>
 <p>推荐使用 Virtio 驱动 + Docker 镜像的方式</p>
 <ul>
-<li>如果你需要使用存储能力-挂载磁盘，请安装 <a href="https://kubevirt.io/user-guide/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install">viostor 驱动程序</a></li>
-<li>如果你需要使用网络能力，请安装 <a href="https://kubevirt.io/user-guide/virtual_machines/windows_virtio_drivers/#how-to-install-after-windows-install">NetKVM 驱动程序</a></li>
+<li>如果你需要使用存储能力-挂载磁盘，请安装 <a href="https://kubevirt.io/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install">viostor 驱动程序</a></li>
+<li>如果你需要使用网络能力，请安装 <a href="https://kubevirt.io/virtual_machines/windows_virtio_drivers/#how-to-install-after-windows-install">NetKVM 驱动程序</a></li>
 </ul>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubevirt.io/v1</span>
 <a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VirtualMachine</span>
