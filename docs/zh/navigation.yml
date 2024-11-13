@@ -262,13 +262,11 @@ nav:
                   - 创建巡检配置: admin/kpanda/inspect/config.md
                   - 执行巡检: admin/kpanda/inspect/inspect.md
                   - 查看巡检报告: admin/kpanda/inspect/report.md
-                  - 离线升级集群巡检: admin/kpanda/inspect/offline-upgrade.md
               - 备份恢复:
                   - 介绍: admin/kpanda/backup/index.md
                   - 安装 Velero 插件: admin/kpanda/backup/install-velero.md
                   - 应用备份: admin/kpanda/backup/deployment.md
                   - etcd 备份: admin/kpanda/backup/etcd-backup.md
-                  - 离线升级备份恢复: admin/kpanda/backup/offline-upgrade.md
               - 安全管理:
                   - 安全扫描类型: admin/kpanda/security/index.md
                   - 合规性扫描:
@@ -277,7 +275,6 @@ nav:
                       - 扫描报告: admin/kpanda/security/cis/report.md
                   - 权限扫描: admin/kpanda/security/audit.md
                   - 漏洞扫描: admin/kpanda/security/hunter.md
-                  - 离线升级安全管理: admin/kpanda/security/offline-upgrade-dowl.md
                   - 集成 Falco 安全工具:
                       - 介绍: admin/security/falco.md
                       - 安装: admin/security/falco-install.md
@@ -327,7 +324,7 @@ nav:
                       - 启用昇腾 VNPU: admin/kpanda/gpu/ascend/vnpu.md
                   - 天数 GPU 管理: admin/kpanda/gpu/Iluvatar_usage.md
                   - 沐曦 GPU 管理: admin/kpanda/gpu/metax/usemetax.md
-                  - 寒武纪 GPU 管理: admin/kpanda/gpu/metax/use-mlu.md
+                  - 寒武纪 GPU 管理: admin/kpanda/gpu/mlu/use-mlu.md
                   - GPU 相关FAQ: admin/kpanda/gpu/FAQ.md
               - 最佳实践:
                   - 对 etcd 进行备份还原: admin/kpanda/best-practice/etcd-backup.md
@@ -379,7 +376,6 @@ nav:
                   - 安装与升级:
                       - admin/insight/quickstart/install/index.md
                       - 在线安装 insight-agent: admin/insight/quickstart/install/install-agent.md
-                      - 离线升级 insight-agent: admin/insight/quickstart/install/offline-install.md
                       - 获取全局服务集群的数据存储地址: admin/insight/quickstart/install/gethosturl.md
                       - 升级注意事项: admin/insight/quickstart/install/upgrade-note.md
                       - 已知问题: admin/insight/quickstart/install/knownissues.md
@@ -504,7 +500,6 @@ nav:
               - 运营管理:
                   - admin/ghippo/report-billing/index.md
                   - 报表管理: admin/ghippo/report-billing/report.md
-                  - 离线升级运营管理: admin/ghippo/report-billing/gmagpie-offline-install.md
                   - 计费计量: admin/ghippo/report-billing/billing.md
               - 平台设置:
                   - 安全策略: admin/ghippo/platform-setting/security.md

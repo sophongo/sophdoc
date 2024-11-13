@@ -30,4 +30,4 @@
 
 ## 前往 UI 界面创建集群
 
-参考文档[创建工作集群](../user-guide/clusters/create-cluster.md)，创建 Ubuntu 集群。
+参考文档[创建工作集群](../clusters/create-cluster.md)，创建 Ubuntu 集群。

@@ -6,7 +6,7 @@
 
 1. 创建 Windows 云主机之前，需要先参考[安装云主机模块的依赖和前提](../install/install-dependency.md)确定您的环境已经准备就绪。
 2. 创建过程建议参考官方文档：[安装 windows 的文档](https://kubevirt.io/2022/KubeVirt-installing_Microsoft_Windows_11_from_an_iso.html)、
-   [安装 Windows 相关驱动程序](https://kubevirt.io/user-guide/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install)。
+   [安装 Windows 相关驱动程序](https://kubevirt.io/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install)。
 3. Windows 云主机建议使用 VNC 的访问方式。
 
 ## 导入 ISO 镜像
@@ -53,8 +53,8 @@
 
 1. 推荐使用 Virtio 驱动 + Docker 镜像的方式
 
-    - 如果你需要使用存储能力-挂载磁盘，请安装 [viostor 驱动程序](https://kubevirt.io/user-guide/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install)
-    - 如果你需要使用网络能力，请安装 [NetKVM 驱动程序](https://kubevirt.io/user-guide/virtual_machines/windows_virtio_drivers/#how-to-install-after-windows-install)
+    - 如果你需要使用存储能力-挂载磁盘，请安装 [viostor 驱动程序](https://kubevirt.io/virtual_machines/windows_virtio_drivers/#how-to-install-during-windows-install)
+    - 如果你需要使用网络能力，请安装 [NetKVM 驱动程序](https://kubevirt.io/virtual_machines/windows_virtio_drivers/#how-to-install-after-windows-install)
 
     ```yaml
     apiVersion: kubevirt.io/v1

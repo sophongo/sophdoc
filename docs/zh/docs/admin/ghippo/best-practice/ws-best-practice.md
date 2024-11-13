@@ -15,7 +15,7 @@
 
     最佳实践：普通用户想要使用应用工作台、微服务引擎、服务网格、中间件模块功能，或者需要拥有容器管理、服务网格中部分资源的使用权限时，需要管理员授予该工作空间的使用权限（Workspace Admin、Workspace Edit、Workspace View）。
     这里的管理员可以是 Admin 角色、该工作空间的 Workspace Admin 角色或该工作空间上层的 Folder Admin 角色。
-    查看 [Folder 与 Workspace 的关系](../user-guide/workspace/ws-folder.md)。
+    查看 [Folder 与 Workspace 的关系](../workspace/ws-folder.md)。
 
 2. 资源组：资源组支持 Cluster、Cluster-Namespace (跨集群)、Mesh、Mesh-Namespace、Kairship、Kairship-Namespace 六种资源类型。
     一个资源只能绑定一个资源组，资源被绑定到资源组后，工作空间的所有者将拥有该资源的所有管理权限，相当于该资源的所有者，因此不受资源配额的限制。

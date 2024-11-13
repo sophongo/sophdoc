@@ -14,7 +14,7 @@
 
 1. 在联网节点构建离线包
 2. 将离线包导入火种节点
-3. 更新[全局服务集群](../user-guide/clusters/cluster-role.md#_2)的 Kubernetes 版本清单
+3. 更新[全局服务集群](../clusters/cluster-role.md#_2)的 Kubernetes 版本清单
 4. 使用平台 UI 创建工作集群或升级工作集群的 kubernetes 版本
 
 !!! note
@@ -154,6 +154,6 @@ kubectl apply -f data/kubeanofflineversion.cr.patch.yaml
 
 登录 AI 算力中心的 UI 管理界面，您可以继续执行以下操作：
 
-1. 参照[创建集群的文档](../user-guide/clusters/create-cluster.md)进行工作集群创建，此时可以选择 Kubernetes 增量版本。
+1. 参照[创建集群的文档](../clusters/create-cluster.md)进行工作集群创建，此时可以选择 Kubernetes 增量版本。
 
-2. 参照[升级集群的文档](../user-guide/clusters/upgrade-cluster.md)对自建的工作集群进行升级。
+2. 参照[升级集群的文档](../clusters/upgrade-cluster.md)对自建的工作集群进行升级。

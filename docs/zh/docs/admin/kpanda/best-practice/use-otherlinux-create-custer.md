@@ -54,4 +54,4 @@ export HOST_IPS='172.30.41.168' # 当前离线节点的 IP
 
 ## 下一步
 
-参考文档[创建工作集群](../user-guide/clusters/create-cluster.md)，在 UI 界面上创建 openAnolis 集群。
+参考文档[创建工作集群](../clusters/create-cluster.md)，在 UI 界面上创建 openAnolis 集群。
