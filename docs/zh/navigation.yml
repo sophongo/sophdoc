@@ -135,13 +135,13 @@ nav:
               - 采集管理:
                   - 采集管理: end-user/insight/collection-manag/collection-manag.md
                   - 服务监控: end-user/insight/collection-manag/service-monitor.md
-                  - 采集组件insight-agent状态: end-user/insight/collection-manag/agent-status.md          
+                  - 采集组件insight-agent状态: end-user/insight/collection-manag/agent-status.md
           - 全局管理:
               - 工作空间与层级:
                   - end-user/ghippo/workspace/ws-folder.md
                   - 资源配额: end-user/ghippo/workspace/quota.md
                   - 资源组与共享资源的区别: end-user/ghippo/workspace/res-gp-and-shared-res.md
-                  - 资源绑定权限说明: end-user/ghippo/workspace/wsbind-permission.md          
+                  - 资源绑定权限说明: end-user/ghippo/workspace/wsbind-permission.md
       - 个人中心:
           - 安全设置: end-user/ghippo/personal-center/security-setting.md
           - 访问密钥: end-user/ghippo/personal-center/accesstoken.md
@@ -151,7 +151,7 @@ nav:
       - 什么是 AI 算力平台: admin/index.md
       - 算力服务:
           - 云主机:
-              - 安装:   
+              - 安装:
                   - 安装云主机: admin/virtnest/install/index.md
                   - 安装依赖及前提条件: admin/virtnest/install/install-dependency.md
                   - 离线升级: admin/virtnest/install/offline-install.md
@@ -208,9 +208,9 @@ nav:
                   - 污点管理: admin/kpanda/nodes/taints.md
                   - 节点调度: admin/kpanda/nodes/schedule.md
                   - 节点详情: admin/kpanda/nodes/node-details.md
-                  - 标签与注解: admin/kpanda/nodes/labels-annotations.md                                
+                  - 标签与注解: admin/kpanda/nodes/labels-annotations.md
                   - 添加工作节点: admin/k8s/add-node.md
-                  - 移除 GPU 工作节点: admin/k8s/remove-node.md 
+                  - 移除 GPU 工作节点: admin/k8s/remove-node.md
               - 命名空间:
                   - 创建命名空间: admin/kpanda/namespaces/createns.md
                   - 命名空间独享节点: admin/kpanda/namespaces/exclusive.md
@@ -329,7 +329,7 @@ nav:
                   - 沐曦 GPU 管理: admin/kpanda/gpu/metax/usemetax.md
                   - 寒武纪 GPU 管理: admin/kpanda/gpu/metax/use-mlu.md
                   - GPU 相关FAQ: admin/kpanda/gpu/FAQ.md
-             - 最佳实践:
+              - 最佳实践:
                   - 对 etcd 进行备份还原: admin/kpanda/best-practice/etcd-backup.md
                   - 跨集群备份恢复MySQL: admin/kpanda/best-practice/backup-mysql-on-nfs.md
                   - 工作集群相关实践:
@@ -542,7 +542,7 @@ nav:
                   - ingressgateway 无法启动: admin/ghippo/troubleshooting/ghippo01.md
                   - 登录报错 401 或 403: admin/ghippo/troubleshooting/ghippo02.md
                   - keycloak 无法启动: admin/ghippo/troubleshooting/ghippo03.md
-                  - 单独升级全局管理时失败: admin/ghippo/troubleshooting/ghippo04.md  
+                  - 单独升级全局管理时失败: admin/ghippo/troubleshooting/ghippo04.md
   - 开发者手册:
       - OpenAPI 访问密钥: openapi/index.md
       - 云主机 OpenAPI 文档: openapi/virtnest/index.md
