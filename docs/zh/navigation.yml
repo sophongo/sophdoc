@@ -277,6 +277,7 @@ nav:
                       - 扫描报告: admin/kpanda/security/cis/report.md
                   - 权限扫描: admin/kpanda/security/audit.md
                   - 漏洞扫描: admin/kpanda/security/hunter.md
+                  - 离线升级安全管理: admin/kpanda/security/offline-upgrade-dowl.md
                   - 集成 Falco 安全工具:
                       - 介绍: admin/security/falco.md
                       - 安装: admin/security/falco-install.md
@@ -498,15 +499,9 @@ nav:
                   - 下载和导出审计日志: admin/ghippo/audit/audit-log.md
                   - 获取审计日志源IP: admin/ghippo/audit/source-ip.md
                   - 审计项汇总:
-                      - 应用工作台审计项: admin/ghippo/audit/gproduct-audit/amamba.md
                       - 容器管理审计项: admin/ghippo/audit/gproduct-audit/kpanda.md
-                      - 多云编排审计项: admin/ghippo/audit/gproduct-audit/kairship.md
-                      - 镜像仓库审计项: admin/ghippo/audit/gproduct-audit/kangaroo.md
-                      - 虚拟机审计项: admin/ghippo/audit/gproduct-audit/virtnest.md
+                      - 云主机审计项: admin/ghippo/audit/gproduct-audit/virtnest.md
                       - 可观测性审计项: admin/ghippo/audit/gproduct-audit/insight.md
-                      - 微服务审计项: admin/ghippo/audit/gproduct-audit/skoala.md
-                      - 服务网格审计项: admin/ghippo/audit/gproduct-audit/mspider.md
-                      - 中间件审计项: admin/ghippo/audit/gproduct-audit/mcamel.md
                       - 全局管理审计项: admin/ghippo/audit/gproduct-audit/ghippo.md
               - 运营管理:
                   - admin/ghippo/report-billing/index.md
