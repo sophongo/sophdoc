@@ -17,7 +17,7 @@ Before creating a virtual machine, make sure you meet the following prerequisite
 
 - Expose hardware-assisted virtualization to the user operating system.
 - [Install virtnest-agent](../install/index.md) on the specified cluster; the operating system kernel version must be 3.15 or higher.
-- Create a [namespace](../../kpanda/user-guide/namespaces/createns.md) and [user](../../ghippo/user-guide/access-control/user.md).
+- Create a [namespace](../../kpanda/namespaces/createns.md) and [user](../../ghippo/access-control/user.md).
 - Prepare the image in advance. The platform comes with three built-in images (as shown below). If you need to 
   create your own image, refer to [creating from an image with KubeVirt](https://github.com/Tedezed/kubevirt-images-generator/tree/master).
 - When configuring the network, if you choose to use the Passt network mode, you need to upgrade to Version 0.4.0 or higher.

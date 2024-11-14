@@ -566,4 +566,4 @@ spec:
 
 ## Trace query
 
-How to query the connected services, refer to [Trace Query](../../user-guide/trace/trace.md).
+How to query the connected services, refer to [Trace Query](../../trace/trace.md).

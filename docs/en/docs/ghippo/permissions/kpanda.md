@@ -8,15 +8,15 @@ hide:
 The container management module uses the following roles:
 
 - Admin / Kpanda Owner
-- [Cluster Admin](../../kpanda/user-guide/permissions/permission-brief.md#cluster-admin)
-- [NS Admin](../../kpanda/user-guide/permissions/permission-brief.md#ns-admin)
-- [NS Editor](../../kpanda/user-guide/permissions/permission-brief.md#ns-editor)
-- [NS Viewer](../../kpanda/user-guide/permissions/permission-brief.md#ns-viewer)
+- [Cluster Admin](../../kpanda/permissions/permission-brief.md#cluster-admin)
+- [NS Admin](../../kpanda/permissions/permission-brief.md#ns-admin)
+- [NS Editor](../../kpanda/permissions/permission-brief.md#ns-editor)
+- [NS Viewer](../../kpanda/permissions/permission-brief.md#ns-viewer)
 
 !!! note
 
-    - For more information about permissions, please refer to the [Container Management Permission System Description](../../kpanda/user-guide/permissions/permission-brief.md).
-    - For creating, managing, and deleting roles, please refer to [Role and Permission Management](../user-guide/access-control/role.md).
+    - For more information about permissions, please refer to the [Container Management Permission System Description](../../kpanda/permissions/permission-brief.md).
+    - For creating, managing, and deleting roles, please refer to [Role and Permission Management](../access-control/role.md).
     - The permissions of __Cluster Admin__ , __NS Admin__ , __NS Editor__ , __NS Viewer__ only take effect within the current cluster or namespace.
 
 The permissions granted to each role are as follows:

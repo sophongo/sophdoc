@@ -69,4 +69,4 @@ Use `&check;`for permissions granted and `&cross;`for permissions not granted.
 
 !!! note
 
-    For a complete introduction to role and access management, please refer to [Role and Access Management](../user-guide/access-control/role.md).
+    For a complete introduction to role and access management, please refer to [Role and Access Management](../access-control/role.md).

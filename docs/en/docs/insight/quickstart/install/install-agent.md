@@ -10,7 +10,7 @@ insight-agent is a plugin for collecting insight data, supporting unified observ
 
 ## Prerequisites
 
-Please confirm that your cluster has successfully connected to the __container management__ platform. You can refer to [Integrate Clusters](../../../kpanda/user-guide/clusters/integrate-cluster.md) for details.
+Please confirm that your cluster has successfully connected to the __container management__ platform. You can refer to [Integrate Clusters](../../../kpanda/clusters/integrate-cluster.md) for details.
 
 ## Steps
 

@@ -7,7 +7,7 @@ DATE: 2024-07-24
 
 Insight is a product for unified observation of multiple clusters. To achieve unified storage and
 querying of observation data from multiple clusters, sub-clusters need to report the collected observation data to the
-[global service cluster](../../../kpanda/user-guide/clusters/cluster-role.md#global-service-cluster)
+[global service cluster](../../../kpanda/clusters/cluster-role.md#global-service-cluster)
 for unified storage. This document provides the required address of the storage component when
 installing the collection component insight-agent.
 
@@ -25,7 +25,7 @@ export otel_col_host="insight-opentelemetry-collector.insight-system.svc.cluster
 
 ### Get Address via Interface Provided by Insight Server
 
-1. The [management cluster](../../../kpanda/user-guide/clusters/cluster-role.md#management-clusters)
+1. The [management cluster](../../../kpanda/clusters/cluster-role.md#management-clusters)
    uses the default LoadBalancer mode for exposure.
 
     Log in to the console of the global service cluster and run the following command:

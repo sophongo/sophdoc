@@ -41,7 +41,7 @@ On the Create VMs page, enter the information according to the table below and c
 - Alias: Can include any characters, up to 60 characters in length.
 - Cluster: Select the cluster where the new virtual machine will be deployed.
 - Namespace: Select the namespace where the new virtual machine will be deployed.
-  If the desired namespace is not found, you can follow the instructions on the page to [create a new namespace](../../kpanda/user-guide/namespaces/createns.md).
+  If the desired namespace is not found, you can follow the instructions on the page to [create a new namespace](../../kpanda/namespaces/createns.md).
 
 ### Template Config
 
