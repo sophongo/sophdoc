@@ -9,7 +9,8 @@ RUN pip install --no-cache-dir \
     mkdocs-material \
     mkdocs-minify-plugin \
     pymdown-extensions \
-    mkdocs-swagger-ui-tag
+    mkdocs-swagger-ui-tag \
+    mkdocs-static-i18n
 
 # 复制项目文件
 COPY docs/zh/ /docs

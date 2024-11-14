@@ -24,6 +24,7 @@ strict: false # enable strict mode, https://www.mkdocs.org/user-guide/configurat
 # Configuration
 theme:
   name: material
+  language: zh
 
   features:
     - content.code.annotate
@@ -75,27 +76,28 @@ theme:
 
 # Plugins
 plugins:
-  - search:
-      jieba_dict: dict.txt.small
-      jieba_dict_user: dict.txt.daocloud
-      lang:
-        - zh
-        - en
+  search:
+    jieba_dict: dict.txt.small
+    jieba_dict_user: dict.txt.daocloud
+    lang:
+      zh
+      en
   
-  - swagger-ui-tag # enable swagger-ui-tag plugin
+  swagger-ui-tag: # enable swagger-ui-tag plugin
 
 # Customization
 extra:
 #   homepage: /
 
   # switch language
-  alternate:
-    - link: /
-      name: 简体中文
-      lang: zh
-    - link: /en/
-      name: English
-      lang: en
+#  alternate:
+#    - link: /
+#      name: 简体中文
+#      lang: zh
+#    - link: /en/
+#      name: English
+#      lang: en
+
   generator: false
 
   status:
