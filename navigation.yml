@@ -560,5 +560,5 @@ plugins:
               name: English
               build: true
               nav_translations:
-                  # 首页: Home
-                  # 用户注册: User Register
+                   首页: Home
+                   用户注册: User Register

@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir \
     mkdocs-static-i18n
 
 # 复制项目文件
-COPY docs/zh/ /docs
+COPY . /docs
 
 # 构建静态文件
 RUN mkdocs build -f mkdocs.yml
