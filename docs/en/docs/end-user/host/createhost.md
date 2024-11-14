@@ -11,14 +11,14 @@ Once the user completes registration and is assigned a workspace, namespace, and
 
 ## Steps to Operate
 
-1. User logs into the AI platform.
-2. Click **Create Cloud Host** -> **Create from Template**.
+1. User logs into the AI platform and go to the CloudHost module from left navigation bar
+2. Click **Create VMs** -> **Create with Template**.
 
     ![create](../images/host01.png)
 
 3. After defining the configurations for the cloud host, click **Next**.
 
-    === "Basic Configuration"
+    === "Basic Information"
 
         ![basic](../images/host02.png)
 
@@ -35,7 +35,5 @@ Once the user completes registration and is assigned a workspace, namespace, and
     ![pass](../images/host06.png)
 
 5. Return to the host list and wait for the status to change to **Running**. Then, you can start the host using the **┇** button on the right.
-
-    ![pass](../images/host07.png)
 
 Next step: [Using the Cloud Host](./usehost.md)
