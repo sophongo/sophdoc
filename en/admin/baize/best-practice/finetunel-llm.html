@@ -1,0 +1,1125 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Suanova documentation website." name="description"/>
+<meta content="Suanova" name="author"/>
+<link href="https://sophdoc.github.io/en/admin/baize/best-practice/finetunel-llm.html" rel="canonical"/>
+<link href="checkpoint.html" rel="prev"/>
+<link href="train-with-deepspeed.html" rel="next"/>
+<link href="../../../../images/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.44" name="generator"/>
+<title>使用 Baize 微调 ChatGLM3 - 豐收二號檔案站</title>
+<link href="../../../../assets/stylesheets/main.0253249f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../../stylesheets/custom.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#fine-tune-the-chatglm3-model-by-using-ai-lab">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="豐收二號檔案站" class="md-header__button md-logo" data-md-component="logo" href="../../../index.html" title="豐收二號檔案站">
+<img alt="logo" src="../../../../images/suanova.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            豐收二號檔案站
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              使用 Baize 微调 ChatGLM3
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<div class="md-header__option">
+<div class="md-select">
+<button aria-label="Select language" class="md-header__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+</button>
+<div class="md-select__inner">
+<ul class="md-select__list">
+<li class="md-select__item">
+<a class="md-select__link" href="../../../../admin/baize/best-practice/finetunel-llm.html" hreflang="zh">
+              中文
+            </a>
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="finetunel-llm.html" hreflang="en">
+              English
+            </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/sophongo/sophdoc" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    sophongo/sophongo-docs
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../index.html">
+        
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../end-user/index.html">
+          
+  
+    
+  
+  终端用户手册
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../index.html">
+          
+  
+    
+  
+  管理员手册
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../openapi/index.html">
+          
+  
+    
+  
+  开发者手册
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="豐收二號檔案站" class="md-nav__button md-logo" data-md-component="logo" href="../../../index.html" title="豐收二號檔案站">
+<img alt="logo" src="../../../../images/suanova.png"/>
+</a>
+    豐收二號檔案站
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/sophongo/sophdoc" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    sophongo/sophongo-docs
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../index.html">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../end-user/index.html">
+<span class="md-ellipsis">
+    终端用户手册
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../index.html">
+<span class="md-ellipsis">
+    管理员手册
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            管理员手册
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+<span class="md-ellipsis">
+    算力服务
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            算力服务
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../virtnest/install/index.html">
+<span class="md-ellipsis">
+    云主机
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../kpanda/clusters/create-cluster.html">
+<span class="md-ellipsis">
+    容器管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    算法开发
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+            算法开发
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../oam/index.html">
+<span class="md-ellipsis">
+    运维管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_2_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_3_2" id="__nav_3_2_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    最佳实践
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_2_3_2_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_2_3_2">
+<span class="md-nav__icon md-icon"></span>
+            最佳实践
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="deploy-nfs-in-worker.html">
+<span class="md-ellipsis">
+    部署 NFS 做数据集预热
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="change-notebook-image.html">
+<span class="md-ellipsis">
+    更新 Notebook 内置镜像
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="checkpoint.html">
+<span class="md-ellipsis">
+    Checkpoint 机制及使用介绍
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    使用 Baize 微调 ChatGLM3
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="finetunel-llm.html">
+<span class="md-ellipsis">
+    使用 Baize 微调 ChatGLM3
+  </span>
+</a>
+<nav aria-label="导航" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      导航
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#environment-requirements">
+<span class="md-ellipsis">
+      Environment Requirements
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prepare-data">
+<span class="md-ellipsis">
+      Prepare Data
+    </span>
+</a>
+<nav aria-label="Prepare Data" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-and-model-files">
+<span class="md-ellipsis">
+      Code and Model Files
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advertisegen-dataset">
+<span class="md-ellipsis">
+      AdvertiseGen Dataset
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fine-tune-output-data">
+<span class="md-ellipsis">
+      Fine-tune Output Data
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-environment">
+<span class="md-ellipsis">
+      Set up Environment
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use-notebook-as-ide">
+<span class="md-ellipsis">
+      Use Notebook as IDE
+    </span>
+</a>
+<nav aria-label="Use Notebook as IDE" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-jupyterlab-notebook">
+<span class="md-ellipsis">
+      Create JupyterLab Notebook
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fine-tune-chatglm3">
+<span class="md-ellipsis">
+      Fine-tune ChatGLM3
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preprocess-data">
+<span class="md-ellipsis">
+      Preprocess Data
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#local-lora-fine-tuning-test">
+<span class="md-ellipsis">
+      Local LoRA Fine-tuning Test
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#submit-fine-tuning-tasks">
+<span class="md-ellipsis">
+      Submit Fine-tuning Tasks
+    </span>
+</a>
+<nav aria-label="Submit Fine-tuning Tasks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#submit-fine-tuning-tasks-via-ui">
+<span class="md-ellipsis">
+      Submit Fine-tuning Tasks via UI
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-task-status">
+<span class="md-ellipsis">
+      Check Task Status
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#submit-tasks-via-baizectl">
+<span class="md-ellipsis">
+      Submit Tasks via baizectl
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-inference">
+<span class="md-ellipsis">
+      Model Inference
+    </span>
+</a>
+<nav aria-label="Model Inference" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-model-runtime">
+<span class="md-ellipsis">
+      Configure Model Runtime
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-the-model-service">
+<span class="md-ellipsis">
+      Test the Model Service
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wrap-up">
+<span class="md-ellipsis">
+      Wrap up
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="train-with-deepspeed.html">
+<span class="md-ellipsis">
+    提交 DeepSpeed 训练任务
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="add-scheduler.html">
+<span class="md-ellipsis">
+    训练任务增加调度器选项
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="label-studio.html">
+<span class="md-ellipsis">
+    部署 Label Studio
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../troubleshoot/index.html">
+<span class="md-ellipsis">
+    故障排查
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+<span class="md-ellipsis">
+    管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            管理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../insight/quickstart/res-plan/index.html">
+<span class="md-ellipsis">
+    可观测性
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../ghippo/install/offline-install.html">
+<span class="md-ellipsis">
+    全局管理
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../openapi/index.html">
+<span class="md-ellipsis">
+    开发者手册
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      导航
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#environment-requirements">
+<span class="md-ellipsis">
+      Environment Requirements
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prepare-data">
+<span class="md-ellipsis">
+      Prepare Data
+    </span>
+</a>
+<nav aria-label="Prepare Data" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-and-model-files">
+<span class="md-ellipsis">
+      Code and Model Files
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advertisegen-dataset">
+<span class="md-ellipsis">
+      AdvertiseGen Dataset
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fine-tune-output-data">
+<span class="md-ellipsis">
+      Fine-tune Output Data
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-environment">
+<span class="md-ellipsis">
+      Set up Environment
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use-notebook-as-ide">
+<span class="md-ellipsis">
+      Use Notebook as IDE
+    </span>
+</a>
+<nav aria-label="Use Notebook as IDE" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-jupyterlab-notebook">
+<span class="md-ellipsis">
+      Create JupyterLab Notebook
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fine-tune-chatglm3">
+<span class="md-ellipsis">
+      Fine-tune ChatGLM3
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preprocess-data">
+<span class="md-ellipsis">
+      Preprocess Data
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#local-lora-fine-tuning-test">
+<span class="md-ellipsis">
+      Local LoRA Fine-tuning Test
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#submit-fine-tuning-tasks">
+<span class="md-ellipsis">
+      Submit Fine-tuning Tasks
+    </span>
+</a>
+<nav aria-label="Submit Fine-tuning Tasks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#submit-fine-tuning-tasks-via-ui">
+<span class="md-ellipsis">
+      Submit Fine-tuning Tasks via UI
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-task-status">
+<span class="md-ellipsis">
+      Check Task Status
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#submit-tasks-via-baizectl">
+<span class="md-ellipsis">
+      Submit Tasks via baizectl
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-inference">
+<span class="md-ellipsis">
+      Model Inference
+    </span>
+</a>
+<nav aria-label="Model Inference" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-model-runtime">
+<span class="md-ellipsis">
+      Configure Model Runtime
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-the-model-service">
+<span class="md-ellipsis">
+      Test the Model Service
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wrap-up">
+<span class="md-ellipsis">
+      Wrap up
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="fine-tune-the-chatglm3-model-by-using-ai-lab">Fine-tune the ChatGLM3 Model by Using AI Lab<a class="headerlink" href="#fine-tune-the-chatglm3-model-by-using-ai-lab" title="Permanent link">¶</a></h1>
+<p>This page uses the <code>ChatGLM3</code> model as an example to demonstrate how to use LoRA (Low-Rank Adaptation)
+to fine-tune the ChatGLM3 model within the AI Lab environment. The demo program is from the
+<a href="https://github.com/THUDM/ChatGLM3/blob/main/finetune_demo/lora_finetune.ipynb">ChatGLM3</a> official example.</p>
+<p>The general process of fine-tuning is as follows:</p>
+<!-- add image later -->
+<h2 id="environment-requirements">Environment Requirements<a class="headerlink" href="#environment-requirements" title="Permanent link">¶</a></h2>
+<ul>
+<li>GPU with at least 20GB memory, recommended RTX4090 or NVIDIA A/H series</li>
+<li>At least 200GB of available disk space</li>
+<li>At least 8-core CPU, recommended 16-core</li>
+<li>64GB RAM, recommended 128GB</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Before starting, ensure AI platform and <a href="../intro/install.md">AI Lab</a> are correctly installed,
+GPU queue resources are successfully initialized, and computing resources are sufficient.</p>
+</div>
+<h2 id="prepare-data">Prepare Data<a class="headerlink" href="#prepare-data" title="Permanent link">¶</a></h2>
+<p>Utilize the dataset management feature provided by AI Lab to quickly preheat
+and persist the data required for fine-tuning large models, reducing GPU resource occupation
+due to data preparation, and improving resource utilization efficiency.</p>
+<!-- add image later -->
+<p>Create the required data resources on the dataset list page. These resources include
+the ChatGLM3 code and data files, all of which can be managed uniformly through the dataset list.</p>
+<h3 id="code-and-model-files">Code and Model Files<a class="headerlink" href="#code-and-model-files" title="Permanent link">¶</a></h3>
+<p><a href="https://github.com/THUDM/ChatGLM3">ChatGLM3</a> is a dialogue pre-training model jointly
+released by <a href="https://www.zhipuai.cn/en/">zhipuai.cn</a> and Tsinghua University KEG Lab.</p>
+<p>First, pull the ChatGLM3 code repository and download the pre-training model for subsequent fine-tuning tasks.</p>
+<!-- add image later -->
+<p>AI Lab will automatically preheat the data in the background to ensure
+quick data access for subsequent tasks.</p>
+<h3 id="advertisegen-dataset">AdvertiseGen Dataset<a class="headerlink" href="#advertisegen-dataset" title="Permanent link">¶</a></h3>
+<p>Domestic data can be directly obtained from
+<a href="https://cloud.tsinghua.edu.cn/f/b3f119a008264b1cabd1/?dl=1">Tsinghua Cloud</a>
+using the <code>HTTP</code> data source method.</p>
+<p>After creation, wait for the dataset to be preheated, which is usually
+quick and depends on your network conditions.</p>
+<h3 id="fine-tune-output-data">Fine-tune Output Data<a class="headerlink" href="#fine-tune-output-data" title="Permanent link">¶</a></h3>
+<p>You also need to prepare an empty dataset to store the model files output after
+the fine-tuning task is completed. Here, create an empty dataset, using <code>PVC</code> as an example.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Ensure to use a storage type that supports <code>ReadWriteMany</code> to allow quick access to resources for subsequent tasks.</p>
+</div>
+<h2 id="set-up-environment">Set up Environment<a class="headerlink" href="#set-up-environment" title="Permanent link">¶</a></h2>
+<p>For model developers, preparing the Python environment dependencies required for model development is crucial.
+Traditionally, environment dependencies are either packaged directly into the development tool's image or
+installed in the local environment, which can lead to inconsistency in environment dependencies and
+difficulties in managing and updating dependencies.</p>
+<p>AI Lab provides environment management capabilities, decoupling Python environment
+dependency package management from development tools and task images, solving dependency management
+chaos and environment inconsistency issues.</p>
+<p>Here, use the environment management feature provided by AI Lab to
+create the environment required for ChatGLM3 fine-tuning for subsequent use.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ol>
+<li>The ChatGLM repository contains a <code>requirements.txt</code> file that includes
+   the environment dependencies required for ChatGLM3 fine-tuning.</li>
+<li>This fine-tuning does not use the <code>deepspeed</code> and <code>mpi4py</code> packages.
+   It is recommended to comment them out in the <code>requirements.txt</code> file to avoid compilation failures.</li>
+</ol>
+</div>
+<!-- add image later -->
+<p>In the environment management list, you can quickly create a Python environment and complete
+the environment creation through a simple form configuration; a Python 3.11.x environment is required here.</p>
+<!-- add image later -->
+<p>Since CUDA is required for this experiment, GPU resources need to be configured here
+to preheat the necessary resource dependencies.</p>
+<p>Creating the environment involves downloading a series of Python dependencies, and download speeds
+may vary based on your location. Using a domestic mirror for acceleration can speed up the download.</p>
+<h2 id="use-notebook-as-ide">Use Notebook as IDE<a class="headerlink" href="#use-notebook-as-ide" title="Permanent link">¶</a></h2>
+<p>AI Lab provides Notebook as an IDE feature, allowing users to write, run, and view
+code results directly in the browser. This is very suitable for development in data analysis,
+machine learning, and deep learning fields.</p>
+<p>You can use the JupyterLab Notebook provided by AI Lab for the ChatGLM3 fine-tuning task.</p>
+<h3 id="create-jupyterlab-notebook">Create JupyterLab Notebook<a class="headerlink" href="#create-jupyterlab-notebook" title="Permanent link">¶</a></h3>
+<!-- add image later -->
+<p>In the Notebook list, you can create a Notebook according to the page operation guide. Note that you need to configure the corresponding Notebook resource parameters according to the resource requirements mentioned earlier to avoid resource issues affecting the fine-tuning process.</p>
+<!-- add image later -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When creating a Notebook, you can directly mount the preloaded model code dataset and environment,
+greatly saving data preparation time.</p>
+</div>
+<h4 id="mount-dataset-and-code">Mount Dataset and Code<a class="headerlink" href="#mount-dataset-and-code" title="Permanent link">¶</a></h4>
+<p>Note: The ChatGLM3 code files are mounted to the <code>/home/jovyan/ChatGLM3</code> directory, and you also need to
+mount the <code>AdvertiseGen</code> dataset to the <code>/home/jovyan/ChatGLM3/finetune_demo/data/AdvertiseGen</code> directory
+to allow the fine-tuning task to access the data.</p>
+<!-- add image later -->
+<h4 id="mount-pvc-to-model-output-folder">Mount PVC to Model Output Folder<a class="headerlink" href="#mount-pvc-to-model-output-folder" title="Permanent link">¶</a></h4>
+<p>The model output location used this time is the <code>/home/jovyan/ChatGLM3/finetune_demo/output</code> directory.
+You can mount the previously created <code>PVC</code> dataset to this directory, so the trained model can be saved
+to the dataset for subsequent inference tasks.</p>
+<p>After creation, you can see the Notebook interface where you can write, run, and view code results directly in the Notebook.</p>
+<!-- add image later -->
+<h3 id="fine-tune-chatglm3">Fine-tune ChatGLM3<a class="headerlink" href="#fine-tune-chatglm3" title="Permanent link">¶</a></h3>
+<p>Once in the Notebook, you can find the previously mounted dataset and code in the <code>File Browser</code>
+option in the Notebook sidebar. Locate the ChatGLM3 folder.</p>
+<p>You will find the fine-tuning code for ChatGLM3 in the <code>finetune_demo</code> folder.
+Open the <code>lora_finetune.ipynb</code> file, which contains the fine-tuning code for ChatGLM3.</p>
+<!-- add image later -->
+<p>First, follow the instructions in the <code>README.md</code> file to understand the entire fine-tuning process.
+It is recommended to read it thoroughly to ensure that the basic environment dependencies and
+data preparation work are completed.</p>
+<!-- add image later -->
+<p>Open the terminal and use <code>conda</code> to switch to the preheated environment,
+ensuring consistency with the JupyterLab Kernel for subsequent code execution.</p>
+<!-- add image later -->
+<h3 id="preprocess-data">Preprocess Data<a class="headerlink" href="#preprocess-data" title="Permanent link">¶</a></h3>
+<p>First, preprocess the <code>AdvertiseGen</code> dataset, standardizing the data to meet the
+<code>Lora</code> pre-training format requirements. Save the processed data to the <code>AdvertiseGen_fix</code> folder.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">json</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">def</span> <span class="nf">_resolve_path</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Path</span><span class="p">:</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="k">return</span> <span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">expanduser</span><span class="p">()</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">def</span> <span class="nf">_mkdir</span><span class="p">(</span><span class="n">dir_name</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">]):</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="n">dir_name</span> <span class="o">=</span> <span class="n">_resolve_path</span><span class="p">(</span><span class="n">dir_name</span><span class="p">)</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">dir_name</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>        <span class="n">dir_name</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="k">def</span> <span class="nf">convert_adgen</span><span class="p">(</span><span class="n">data_dir</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span> <span class="n">save_dir</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">]):</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>    <span class="k">def</span> <span class="nf">_convert</span><span class="p">(</span><span class="n">in_file</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="n">Path</span><span class="p">):</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>        <span class="n">_mkdir</span><span class="p">(</span><span class="n">out_file</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">in_file</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">fin</span><span class="p">:</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a>            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="s1">'wt'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">fout</span><span class="p">:</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a>                <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fin</span><span class="p">:</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a>                    <span class="n">dct</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a>                    <span class="n">sample</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'conversations'</span><span class="p">:</span> <span class="p">[{</span><span class="s1">'role'</span><span class="p">:</span> <span class="s1">'user'</span><span class="p">,</span> <span class="s1">'content'</span><span class="p">:</span> <span class="n">dct</span><span class="p">[</span><span class="s1">'content'</span><span class="p">]},</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a>                                                <span class="p">{</span><span class="s1">'role'</span><span class="p">:</span> <span class="s1">'assistant'</span><span class="p">,</span> <span class="s1">'content'</span><span class="p">:</span> <span class="n">dct</span><span class="p">[</span><span class="s1">'summary'</span><span class="p">]}]}</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a>                    <span class="n">fout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">sample</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="n">data_dir</span> <span class="o">=</span> <span class="n">_resolve_path</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="n">save_dir</span> <span class="o">=</span> <span class="n">_resolve_path</span><span class="p">(</span><span class="n">save_dir</span><span class="p">)</span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a>
+<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a>    <span class="n">train_file</span> <span class="o">=</span> <span class="n">data_dir</span> <span class="o">/</span> <span class="s1">'train.json'</span>
+<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a>    <span class="k">if</span> <span class="n">train_file</span> <span class="n">is_file</span><span class="p">():</span>
+<a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a>        <span class="n">out_file</span> <span class="o">=</span> <span class="n">save_dir</span> <span class="o">/</span> <span class="n">train_file</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
+<a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a>        <span class="n">_convert</span><span class="p">(</span><span class="n">train_file</span><span class="p">,</span> <span class="n">out_file</span><span class="p">)</span>
+<a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a>
+<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="n">dev_file</span> <span class="o">=</span> <span class="n">data_dir</span> <span class="o">/</span> <span class="s1">'dev.json'</span>
+<a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="k">if</span> <span class="n">dev_file</span><span class="o">.</span><span class="n">is_file</span><span class="p">():</span>
+<a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a>        <span class="n">out_file</span> <span class="o">=</span> <span class="n">save_dir</span> <span class="o">/</span> <span class="n">dev_file</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
+<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a>        <span class="n">_convert</span><span class="p">(</span><span class="n">dev_file</span><span class="p">,</span> <span class="n">out_file</span><span class="p">)</span>
+<a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a>
+<a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="n">convert_adgen</span><span class="p">(</span><span class="s1">'data/AdvertiseGen'</span><span class="p">,</span> <span class="s1">'data/AdvertiseGen_fix'</span><span class="p">)</span>
+</code></pre></div>
+<p>To save debugging time, you can reduce the number of entries in
+<code>/home/jovyan/ChatGLM3/finetune_demo/data/AdvertiseGen_fix/dev.json</code> to 50.
+The data is in JSON format, making it easy to process.</p>
+<!-- add image later -->
+<h3 id="local-lora-fine-tuning-test">Local LoRA Fine-tuning Test<a class="headerlink" href="#local-lora-fine-tuning-test" title="Permanent link">¶</a></h3>
+<p>After preprocessing the data, you can proceed with the fine-tuning test.
+Configure the fine-tuning parameters in the <code>/home/jovyan/ChatGLM3/finetune_demo/configs/lora.yaml</code> file.
+Key parameters to focus on include:</p>
+<!-- add image later -->
+<p>Open a new terminal window and use the following command for local fine-tuning testing.
+Ensure that the parameter configurations and paths are correct:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>!CUDA_VISIBLE_DEVICES<span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="nv">NCCL_P2P_DISABLE</span><span class="o">=</span><span class="s2">"1"</span><span class="w"> </span><span class="nv">NCCL_IB_DISABLE</span><span class="o">=</span><span class="s2">"1"</span><span class="w"> </span>python<span class="w"> </span>finetune_hf.py<span class="w"> </span>data/AdvertiseGen_fix<span class="w"> </span>./chatglm3-6b<span class="w"> </span>configs/lora.yaml
+</code></pre></div>
+<p>In this command:</p>
+<ul>
+<li><code>finetune_hf.py</code> is the fine-tuning script in the ChatGLM3 code</li>
+<li><code>data/AdvertiseGen_fix</code> is your preprocessed dataset</li>
+<li><code>./chatglm3-6b</code> is your pre-trained model path</li>
+<li><code>configs/lora.yaml</code> is the fine-tuning configuration file</li>
+</ul>
+<!-- add image later -->
+<p>During fine-tuning, you can use the <code>nvidia-smi</code> command to check GPU memory usage:</p>
+<!-- add image later -->
+<p>After fine-tuning is complete, an <code>output</code> directory will be generated in the <code>finetune_demo</code> directory,
+containing the fine-tuned model files. This way, the fine-tuned model files are saved to the
+previously created <code>PVC</code> dataset.</p>
+<h2 id="submit-fine-tuning-tasks">Submit Fine-tuning Tasks<a class="headerlink" href="#submit-fine-tuning-tasks" title="Permanent link">¶</a></h2>
+<p>After completing the local fine-tuning test and ensuring that your code and data are correct,
+you can submit the fine-tuning task to the AI Lab for large-scale training and fine-tuning tasks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is the recommended model development and fine-tuning process:
+first, conduct local fine-tuning tests to ensure that the code and data are correct.</p>
+</div>
+<h3 id="submit-fine-tuning-tasks-via-ui">Submit Fine-tuning Tasks via UI<a class="headerlink" href="#submit-fine-tuning-tasks-via-ui" title="Permanent link">¶</a></h3>
+<!-- add image later -->
+<p>Use <code>Pytorch</code> to create a fine-tuning task. Select the resources of the cluster you need to use
+based on your actual situation. Ensure to meet the resource requirements mentioned earlier.</p>
+<!-- add image later -->
+<ul>
+<li>Image: You can directly use the model image provided by baizectl.</li>
+<li>
+<p>Startup command: Based on your experience using LoRA fine-tuning in the Notebook,
+  the code files and data are in the <code>/home/jovyan/ChatGLM3/finetune_demo</code> directory,
+  so you can directly use this path:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">"cd /home/jovyan/ChatGLM3/finetune_demo &amp;&amp; CUDA_VISIBLE_DEVICES=0 NCCL_P2P_DISABLE="</span><span class="m">1</span><span class="s2">" NCCL_IB_DISABLE="</span><span class="m">1</span><span class="s2">" python finetune_hf.py data/AdvertiseGen_fix ./chatglm3-6b configs/lora.yaml"</span>
+</code></pre></div>
+</li>
+<li>
+<p>Mount environment: This way, the preloaded environment dependencies can be used not only
+  in the Notebook but also in the tasks.</p>
+</li>
+<li>Dataset: Use the preheated dataset<ul>
+<li>Set the model output path to the previously created PVC dataset</li>
+<li>Mount the <code>AdvertiseGen</code> dataset to the <code>/home/jovyan/ChatGLM3/finetune_demo/data/AdvertiseGen</code> directory</li>
+</ul>
+</li>
+<li>Configure sufficient GPU resources to ensure the fine-tuning task runs smoothly</li>
+</ul>
+<!-- add image later -->
+<h3 id="check-task-status">Check Task Status<a class="headerlink" href="#check-task-status" title="Permanent link">¶</a></h3>
+<p>After successfully submitting the task, you can view the training progress of the task
+in real-time in the task list. You can see the task status, resource usage, logs, and other information.</p>
+<blockquote>
+<p>View task logs</p>
+</blockquote>
+<!-- add image later -->
+<p>After the task is completed, you can view the fine-tuned model files in the
+data output dataset for subsequent inference tasks.</p>
+<h3 id="submit-tasks-via-baizectl">Submit Tasks via <code>baizectl</code><a class="headerlink" href="#submit-tasks-via-baizectl" title="Permanent link">¶</a></h3>
+<p>AI Lab's Notebook supports using the <code>baizectl</code> command-line tool without authentication.
+If you prefer using CLI, you can directly use the <code>baizectl</code> command-line tool to submit tasks.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>baizectl<span class="w"> </span>job<span class="w"> </span>submit<span class="w"> </span>--name<span class="w"> </span>finetunel-chatglm3<span class="w"> </span>-t<span class="w"> </span>PYTORCH<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span>--image<span class="w"> </span>release.daocloud.io/baize/baize-notebook:v0.5.0<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span>--priority<span class="w"> </span>baize-high-priority<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">    </span>--resources<span class="w"> </span><span class="nv">cpu</span><span class="o">=</span><span class="m">8</span>,memory<span class="o">=</span>16Gi,nvidia.com/gpu<span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">    </span>--workers<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">    </span>--queue<span class="w"> </span>default<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span>--working-dir<span class="w"> </span>/home/jovyan/ChatGLM3<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">    </span>--datasets<span class="w"> </span>AdvertiseGen:/home/jovyan/ChatGLM3/finetune_demo/data/AdvertiseGen<span class="w">  </span><span class="se">\</span>
+<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">    </span>--datasets<span class="w"> </span>output:/home/jovyan/ChatGLM3/finetune_demo/output<span class="w">  </span><span class="se">\</span>
+<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span>--labels<span class="w"> </span><span class="nv">job_type</span><span class="o">=</span>pytorch<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">    </span>--restart-policy<span class="w"> </span>on-failure<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">    </span>--<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">"cd /home/jovyan/ChatGLM3/finetune_demo &amp;&amp; CUDA_VISIBLE_DEVICES=0 NCCL_P2P_DISABLE="</span><span class="m">1</span><span class="s2">" NCCL_IB_DISABLE="</span><span class="m">1</span><span class="s2">" python finetune_hf.py data/AdvertiseGen_fix ./chatglm3-6b configs/lora.yaml"</span>
+</code></pre></div>
+<p>For more information on using <code>baizectl</code>, refer to the
+<a href="../developer/notebooks/baizectl.html">baizectl Usage Documentation</a>.</p>
+<h2 id="model-inference">Model Inference<a class="headerlink" href="#model-inference" title="Permanent link">¶</a></h2>
+<p>After completing the fine-tuning task, you can use the fine-tuned model for inference tasks.
+Here, you can use the inference service provided by AI Lab to create an
+inference service with the output model.</p>
+<!-- add image later -->
+<p>In the inference service list, you can create a new inference service.
+When selecting the model, choose the previously output dataset and configure the model path.</p>
+<!-- add image later -->
+<p>Regarding model resource requirements and GPU resource requirements for inference services,
+configure them based on the model size and inference concurrency. Refer to
+the resource configuration of the previous fine-tuning tasks.</p>
+<h3 id="configure-model-runtime">Configure Model Runtime<a class="headerlink" href="#configure-model-runtime" title="Permanent link">¶</a></h3>
+<p>Configuring the model runtime is crucial. Currently, AI Lab supports
+<code>vLLM</code> as the model inference service runtime, which can be directly selected.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>vLLM supports a wide range of large language models. Visit <a href="https://docs.vllm.ai">vLLM</a>
+for more information. These models can be easily used within AI Lab.</p>
+</div>
+<!-- add image later -->
+<p>After creation, you can see the created inference service in the inference service list.
+The model service list allows you to get the model's access address directly.</p>
+<h3 id="test-the-model-service">Test the Model Service<a class="headerlink" href="#test-the-model-service" title="Permanent link">¶</a></h3>
+<p>Try using the <code>curl</code> command in the terminal to test the model service. Here,
+you can see the returned results, enabling you to use the model service for inference tasks.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://10.20.100.210:31118/v2/models/chatglm3-6b/generate<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"text_input": "hello", "stream": false, "sampling_parameters": "{\"temperature\": 0.7, \"top_p\": 0.95, \'</span>max_tokens<span class="se">\"</span>:<span class="w"> </span><span class="m">1024</span>｝<span class="s2">"｝'</span>
+</code></pre></div>
+<!-- add image later -->
+<h2 id="wrap-up">Wrap up<a class="headerlink" href="#wrap-up" title="Permanent link">¶</a></h2>
+<p>This page used <code>ChatGLM3</code> as an example to quickly introduce and get you started with
+the <strong>AI Lab</strong> for model fine-tuning, using <code>LoRA</code> to fine-tune the ChatGLM3 model.</p>
+<p>AI Lab provides a wealth of features to help model developers quickly conduct
+model development, fine-tuning, and inference tasks. It also offers rich OpenAPI interfaces,
+facilitating integration with third-party application ecosystems.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2016 - 2024 Suanova
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.instant", "navigation.prune", "navigation.sections", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.highlight", "search.suggest", "search.share", "toc.follow", "navigation.path"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+<script src="../../../../stylesheets/zoom_image.js"></script>
+<script>document$.subscribe(() => {
+            window.update_swagger_ui_iframe_height = function (id) {
+                var iFrameID = document.getElementById(id);
+                if (iFrameID) {
+                    full_height = (iFrameID.contentWindow.document.body.scrollHeight + 80) + "px";
+                    iFrameID.height = full_height;
+                    iFrameID.style.height = full_height;
+                }
+            }
+        
+            let iframe_id_list = []
+            var iframes = document.getElementsByClassName("swagger-ui-iframe");
+            for (var i = 0; i < iframes.length; i++) { 
+                iframe_id_list.push(iframes[i].getAttribute("id"))
+            }
+        
+            let ticking = true;
+            
+            document.addEventListener('scroll', function(e) {
+                if (!ticking) {
+                    window.requestAnimationFrame(()=> {
+                        let half_vh = window.innerHeight/2;
+                        for(var i = 0; i < iframe_id_list.length; i++) {
+                            let element = document.getElementById(iframe_id_list[i])
+                            if(element==null){
+                                return
+                            }
+                            let diff = element.getBoundingClientRect().top
+                            if(element.contentWindow.update_top_val){
+                                element.contentWindow.update_top_val(half_vh - diff)
+                            }
+                        }
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        
+            const dark_scheme_name = "slate"
+            
+            window.scheme = document.body.getAttribute("data-md-color-scheme")
+            const options = {
+                attributeFilter: ['data-md-color-scheme'],
+            };
+            function color_scheme_callback(mutations) {
+                for (let mutation of mutations) {
+                    if (mutation.attributeName === "data-md-color-scheme") {
+                        scheme = document.body.getAttribute("data-md-color-scheme")
+                        var iframe_list = document.getElementsByClassName("swagger-ui-iframe")
+                        for(var i = 0; i < iframe_list.length; i++) {
+                            var ele = iframe_list.item(i);
+                            if (ele) {
+                                if (scheme === dark_scheme_name) {
+                                    ele.contentWindow.enable_dark_mode();
+                                } else {
+                                    ele.contentWindow.disable_dark_mode();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            observer = new MutationObserver(color_scheme_callback);
+            observer.observe(document.body, options);
+            })</script></body>
+</html>
