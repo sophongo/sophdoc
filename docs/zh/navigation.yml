@@ -544,3 +544,21 @@ nav:
       - 容器管理 OpenAPI 文档: openapi/kpanda/index.md
       - 可观测性 OpenAPI 文档: openapi/insight/index.md
       - 全局管理 OpenAPI 文档: openapi/ghippo/index.md
+
+# i18n
+plugins:
+    i18n:
+        docs_structure: folder
+        reconfigure_material: true
+        reconfigure_search: true
+        languages:
+            - locale: zh
+              name: 中文
+              default: true
+              build: true
+            - locale: en
+              name: English
+              build: true
+              nav_translations:
+                  # 首页: Home
+                  # 用户注册: User Register
