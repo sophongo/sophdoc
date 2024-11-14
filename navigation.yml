@@ -357,7 +357,7 @@ nav:
                   - 部署 NFS 做数据集预热: admin/baize/best-practice/deploy-nfs-in-worker.md
                   - 更新 Notebook 内置镜像: admin/baize/best-practice/change-notebook-image.md
                   - Checkpoint 机制及使用介绍: admin/baize/best-practice/checkpoint.md
-                  - 使用 Baize 微调 ChatGLM3: admin/baize/best-practice/finetunel-llm.md
+                  - 使用 AI Lab 微调 ChatGLM3: admin/baize/best-practice/finetunel-llm.md
                   - 提交 DeepSpeed 训练任务: admin/baize/best-practice/train-with-deepspeed.md
                   - 训练任务增加调度器选项: admin/baize/best-practice/add-scheduler.md
                   - 部署 Label Studio: admin/baize/best-practice/label-studio.md
@@ -575,10 +575,10 @@ plugins:
                 集群角色: Cluster Roles
                 集群状态: Cluster Status
                 卸载/解除接入集群: Uninstall/Detach Cluster
-                节点管理: Node Management
+                节点管理: Nodes
                 节点调度: Node Scheduling
                 标签与注解: Labels and Annotations
-                污点管理: Taints Management
+                污点管理: Taints
                 节点详情: Node Details
                 工作负载: Workloads
                 创建 Deployment: Create Deployment
@@ -586,7 +586,7 @@ plugins:
                 创建 DaemonSet: Create DaemonSet
                 创建 CronJob: Create CronJob
                 创建 Job: Create Job
-                工作负载参数配置: Workload Parameter Configuration
+                工作负载参数配置: Workload Parameters
                 工作负载状态: Workload Status
                 Job 参数: Job Parameters
                 生命周期: Lifecycle
@@ -609,22 +609,22 @@ plugins:
                 数据卷 PV: Persistent Volume
                 存储池 SC: Storage Class
                 共享存储池: Shared Storage Pool
-                配置与密钥: Configurations and Secrets
+                配置与密钥: ConfigMaps and Secrets
                 创建配置项: Create ConfigMap
                 使用配置项: Use ConfigMap
                 创建密钥: Create Secret
                 使用密钥: Use Secret
-                Configmap/Secret热加载: ConfigMap/Secret Preloading
+                Configmap/Secret热加载: Preloading ConfigMap/Secret
                 命名空间: Namespaces
                 创建命名空间: Create Namespace
-                命名空间独享节点: Namespace Exclusive Nodes
+                命名空间独享节点: Nodes Exclusive to a Namespace
                 容器组安全策略: Pod Security Policies
                 集群运维: Cluster Operations
                 最近操作: Recent Operations
                 集群设置: Cluster Settings
                 集群巡检: Cluster Inspection
                 介绍: Introduction
-                创建巡检配置: Create Inspection Configuration
+                创建巡检配置: Configure Inspection
                 执行巡检: Execute Inspection
                 查看巡检报告: View Inspection Report
                 备份恢复: Backup and Recovery
@@ -637,7 +637,7 @@ plugins:
                 权限扫描: Permission Scanning
                 漏洞扫描: Vulnerability Scanning
                 权限管理: Permission Management
-                权限体系介绍: Introduction to Permission System
+                权限体系介绍: Introduction to Permission
                 集群和命名空间授权: Cluster and Namespace Authorization
                 增加容器管理内置权限点: Add Built-in Permission
                 算法开发: AI Lab
@@ -680,9 +680,9 @@ plugins:
                 告警抑制: Alert Inhibition
                 采集管理: Collection Management
                 服务监控: Service Monitoring
-                采集组件insight-agent状态: Collection Component Insight-Agent Status
+                采集组件insight-agent状态: insight-agent Status
                 全局管理: Global Management
-                工作空间与层级: Workspace and Hierarchy
+                工作空间与层级: Workspace and Folder
                 资源配额: Resource Quota
                 资源组与共享资源的区别: Resource Group and Shared Resource
                 资源绑定权限说明: Resource Binding Permissions
@@ -694,37 +694,37 @@ plugins:
                 管理员手册: Administrator Manual
                 什么是 AI 算力平台: What is AI Platform
                 安装: Installation
-                安装云主机: Install Cloud Host
+                安装云主机: Install VM
                 安装依赖及前提条件: Install Dependencies and Prerequisites
                 离线升级: Offline Upgrade
                 安装 virtnest-agent: Install virtnest-agent
                 快速入门: Quick Start
-                更新云主机: Update Cloud Host
-                连接云主机: Access Cloud Host
-                通过 NodePort 访问云主机: Access Cloud Host via NodePort
-                云主机详情: Cloud Host Details
-                云主机管理: Cloud Host Management
+                更新云主机: Update VM
+                连接云主机: Connect VM
+                通过 NodePort 访问云主机: Access VM via NodePort
+                云主机详情: VM Details
+                云主机管理: VM Management
                 创建密钥: Create sceret
-                克隆云主机: Clone Cloud Host
+                克隆云主机: Clone VM
                 快照管理: Snapshot Management
                 定时快照: Scheduled Snapshots
                 实时迁移: Live Migration
-                云主机跨集群迁移: Cross-cluster Migration of Cloud Host
-                云主机监控: Cloud Host Monitoring
-                云主机网络: Cloud Host Network
-                云主机存储: Cloud Host Storage
-                云主机漂移: Cloud Host Drift
-                云主机健康检查: Cloud Host Health Check
-                云主机 GPU: Cloud Host GPU
-                云主机 vGPU: Cloud Host vGPU
-                云主机模板: Cloud Host Templates
-                通过模板创建云主机: Create Cloud Host via Template
-                云主机镜像: Cloud Host Images
+                云主机跨集群迁移: Cross-cluster Migration of VM
+                云主机监控: VM Monitoring
+                云主机网络: VM Network
+                云主机存储: VM Storage
+                云主机漂移: VM Drift
+                云主机健康检查: VM Health Check
+                云主机 GPU: VM GPU
+                云主机 vGPU: VM vGPU
+                云主机模板: VM Templates
+                通过模板创建云主机: Create VM with Template
+                云主机镜像: VM Images
                 最佳实践: Best Practices
-                从 VMware 导入传统 Linux 云主机: Import Traditional Linux Cloud Host from VMware
-                从 VMware 导入传统 Windows 云主机: Import Traditional Windows Cloud Host from VMware
-                创建 Windows 云主机: Create Windows Cloud Host
-                集群管理: Cluster Management
+                从 VMware 导入传统 Linux 云主机: Import Traditional Linux VM from VMware
+                从 VMware 导入传统 Windows 云主机: Import Traditional Windows VM from VMware
+                创建 Windows 云主机: Create Windows VM
+                集群管理: Manage Clusters
                 创建集群: Create Cluster
                 升级集群: Upgrade Cluster
                 节点可用性检查: Node Availability Check
@@ -733,7 +733,7 @@ plugins:
                 节点缩容: Node Shrinkage
                 添加工作节点: Add Worker Node
                 移除 GPU 工作节点: Remove GPU Worker Node
-                弹性伸缩: Elastic Scaling
+                弹性伸缩: Autoscaling
                 安装 metrics-server 插件: Install Metrics Server Plugin
                 安装 kubernetes-cronhpa-controller: Install Kubernetes CronHPA Controller
                 安装 VPA 插件: Install VPA Plugin
@@ -747,7 +747,7 @@ plugins:
                 Kantive 场景: Knative Scenarios
                 Knative 实践: Knative Practices
                 多架构 Helm 应用: Multi-architecture Helm Apps
-                自定义Helm应用导入Addon: Import Custom Helm Application Addon
+                自定义Helm应用导入Addon: Import Custom Helm App Addon
                 NVIDIA GPU 管理: NVIDIA GPU Management
                 NVIDIA GPU模式说明: Explanation of NVIDIA GPU Modes
                 GPU Operator: GPU Operator
@@ -764,21 +764,21 @@ plugins:
                 构建 vGPU 显存超配镜像: Build vGPU Memory Overprovisioning Image
                 NVIDIA MIG 模式: NVIDIA MIG Mode
                 NVIDIA MIG 概述: Overview of NVIDIA MIG
-                开启 MIG 功能: Enable MIG Function
+                开启 MIG 功能: Enable MIG
                 使用 NVIDIA MIG: Use NVIDIA MIG
                 MIG 相关命令: MIG Related Commands
                 GPU 配额管理: GPU Quota Management
                 GPU 动态调节: GPU Dynamic Regulation
-                GPU 监控告警: GPU Monitoring Alerts
-                GPU 监控指标: GPU Monitoring Metrics
-                GPU 告警规则: GPU Alarm Rules
+                GPU 监控告警: GPU Alerts
+                GPU 监控指标: GPU Metrics
+                GPU 告警规则: GPU Alert Policies
                 使用 Volcano: Use Volcano
                 安装 Volcano: Install Volcano
                 使用Volcano Gang Scheduler: Use Volcano Gang Scheduler
                 使用 Volcano 优先级抢占策略: Use Volcano Priority Preemption Policy
                 使用 Volcano Binpack 策略: Use Volcano Binpack Policy
                 使用 Volcano DRF 策略: Use Volcano DRF Policy
-                使用 Volcano NUMA 亲和性调度: Use Volcano NUMA Affinity Scheduling
+                使用 Volcano NUMA 亲和性调度: Scheduling with Volcano NUMA Affinity
                 GPU 调度配置: GPU Scheduling Configuration
                 昇腾 NPU 管理: Ascend NPU Management
                 昇腾 NPU 组件安装: Install Ascend NPU Components
@@ -803,8 +803,8 @@ plugins:
                 部署/升级Kubean兼容版本: Deploy/Upgrade Kubean Compatible Version
                 限制Docker单容器磁盘空间: Limit Disk Space for Single Docker Container
                 边缘集群部署和管理实践: Edge Cluster Deployment and Management Practices
-                在离线混部: Offline Co-location
-                在离线混部概述: Overview of Offline Co-location
+                在离线混部: Online and Offline Deployment
+                在离线混部概述: Overview
                 koordinator 安装: Install Koordinator
                 运维管理: Operations Management
                 资源管理: Resource Management
@@ -815,7 +815,7 @@ plugins:
                 部署 NFS 做数据集预热: Deploy NFS for Dataset Warm-up
                 更新 Notebook 内置镜像: Update Notebook Built-in Image
                 Checkpoint 机制及使用介绍: Checkpoint Mechanism and Usage Introduction
-                使用 Baize 微调 ChatGLM3: Fine-tune ChatGLM3 with Baize
+                使用 AI Lab 微调 ChatGLM3: Fine-tune ChatGLM3 with AI Lab
                 提交 DeepSpeed 训练任务: Submit DeepSpeed Training Job
                 训练任务增加调度器选项: Add Scheduler Options to Training Jobs
                 部署 Label Studio: Deploy Label Studio
@@ -826,8 +826,8 @@ plugins:
                 队列初始化失败: Queue Initialization Failed
                 开发者手册: Developer Manual
                 OpenAPI 访问密钥: OpenAPI Access Key
-                云主机 OpenAPI 文档: Cloud Host OpenAPI Documentation
-                AI Lab OpenAPI 文档: AI Lab OpenAPI Documentation
-                容器管理 OpenAPI 文档: Container Management OpenAPI Documentation
-                可观测性 OpenAPI 文档: Insight OpenAPI Documentation
-                全局管理 OpenAPI 文档: Global Management OpenAPI Documentation
+                云主机 OpenAPI 文档: Cloud Host OpenAPI Docs
+                AI Lab OpenAPI 文档: AI Lab OpenAPI Docs
+                容器管理 OpenAPI 文档: Container Management OpenAPI Docs
+                可观测性 OpenAPI 文档: Insight OpenAPI Docs
+                全局管理 OpenAPI 文档: Global Management OpenAPI Docs
