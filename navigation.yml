@@ -560,5 +560,274 @@ plugins:
               name: English
               build: true
               nav_translations:
-                   首页: Home
-                   用户注册: User Register
+                首页: Home
+                终端用户手册: User Manual
+                什么是 AI 算力平台: What is AI Platform
+                用户注册: User Registration
+                算力服务: Computing Services
+                云主机: Cloud Host
+                创建云主机: Create Cloud Host
+                使用云主机: Use Cloud Host
+                容器管理: Container Management
+                云上 K8s 集群: Cloud K8s Cluster
+                接入集群: Integrate Cluster
+                访问集群: Access Cluster
+                集群角色: Cluster Roles
+                集群状态: Cluster Status
+                卸载/解除接入集群: Uninstall/Detach Cluster
+                节点管理: Node Management
+                节点调度: Node Scheduling
+                标签与注解: Labels and Annotations
+                污点管理: Taints Management
+                节点详情: Node Details
+                工作负载: Workloads
+                创建 Deployment: Create Deployment
+                创建 StatefulSet: Create StatefulSet
+                创建 DaemonSet: Create DaemonSet
+                创建 CronJob: Create CronJob
+                创建 Job: Create Job
+                工作负载参数配置: Workload Parameter Configuration
+                工作负载状态: Workload Status
+                Job 参数: Job Parameters
+                生命周期: Lifecycle
+                环境变量: Environment Variables
+                健康检查: Health Check
+                集群调度: Cluster Scheduling
+                Helm 应用: Helm Apps
+                Helm 模板: Helm Charts
+                上传 Helm 模板: Upload Helm Chart
+                管理 Helm 应用: Manage Helm Apps
+                管理 Helm 仓库: Manage Helm Repositories
+                Operator 应用: Operator Applications
+                容器网络: Container Networking
+                创建服务: Create Services
+                创建路由: Create Ingress
+                网络策略: Network Policies
+                自定义资源: Custom Resources
+                容器存储: Container Storage
+                数据卷声明 PVC: Persistent Volume Claim
+                数据卷 PV: Persistent Volume
+                存储池 SC: Storage Class
+                共享存储池: Shared Storage Pool
+                配置与密钥: Configurations and Secrets
+                创建配置项: Create ConfigMap
+                使用配置项: Use ConfigMap
+                创建密钥: Create Secret
+                使用密钥: Use Secret
+                Configmap/Secret热加载: ConfigMap/Secret Preloading
+                命名空间: Namespaces
+                创建命名空间: Create Namespace
+                命名空间独享节点: Namespace Exclusive Nodes
+                容器组安全策略: Pod Security Policies
+                集群运维: Cluster Operations
+                最近操作: Recent Operations
+                集群设置: Cluster Settings
+                集群巡检: Cluster Inspection
+                介绍: Introduction
+                创建巡检配置: Create Inspection Configuration
+                执行巡检: Execute Inspection
+                查看巡检报告: View Inspection Report
+                备份恢复: Backup and Recovery
+                安全管理: Security Management
+                安全扫描类型: Security Scan Types
+                合规性扫描: Compliance Scanning
+                扫描配置: Scan Configuration
+                扫描策略: Scan Policy
+                扫描报告: Scan Report
+                权限扫描: Permission Scanning
+                漏洞扫描: Vulnerability Scanning
+                权限管理: Permission Management
+                权限体系介绍: Introduction to Permission System
+                集群和命名空间授权: Cluster and Namespace Authorization
+                增加容器管理内置权限点: Add Built-in Permission
+                算法开发: AI Lab
+                创建 AI 工作负载: Create AI Workload
+                使用 Notebook: Use Notebook
+                创建训练任务: Create Training Job
+                删除任务: Delete Job
+                查看任务负载: View Job Workload
+                任务分析: Job Analysis
+                数据管理: Data Management
+                数据集列表: Datasets
+                环境管理: Environments
+                模型服务: Model Services
+                模型支持情况: Supported Models
+                创建 Triton 推理服务: Create Triton Inference
+                创建 vLLM 推理服务: Create vLLM Inference
+                管理: Management
+                可观测性: Insight
+                仪表盘: Dashboard
+                概览: Overview
+                以管理员登录 Grafana: Log in to Grafana as Admin
+                导入自定义仪表盘: Import Custom Dashboard
+                基础设施: Infrastructure
+                集群: Cluster
+                节点: Node
+                事件查询: Event Query
+                拨测: Probe
+                指标: Metrics
+                日志: Logs
+                链路追踪: Trace
+                服务拓扑: Service Topology
+                服务: Service
+                告警: Alerts
+                告警策略: Alert Policy
+                告警模板: Alert Template
+                通知配置: Notification Configuration
+                配置通知服务器: Configure Notification Server
+                消息模板: Message Template
+                告警静默: Alert Silence
+                告警抑制: Alert Inhibition
+                采集管理: Collection Management
+                服务监控: Service Monitoring
+                采集组件insight-agent状态: Collection Component Insight-Agent Status
+                全局管理: Global Management
+                工作空间与层级: Workspace and Hierarchy
+                资源配额: Resource Quota
+                资源组与共享资源的区别: Resource Group and Shared Resource
+                资源绑定权限说明: Resource Binding Permissions
+                个人中心: Personal Center
+                安全设置: Security Settings
+                访问密钥: Access Key
+                SSH 公钥: SSH Public Key
+                语言设置: Language Settings
+                管理员手册: Administrator Manual
+                什么是 AI 算力平台: What is AI Platform
+                安装: Installation
+                安装云主机: Install Cloud Host
+                安装依赖及前提条件: Install Dependencies and Prerequisites
+                离线升级: Offline Upgrade
+                安装 virtnest-agent: Install virtnest-agent
+                快速入门: Quick Start
+                更新云主机: Update Cloud Host
+                连接云主机: Access Cloud Host
+                通过 NodePort 访问云主机: Access Cloud Host via NodePort
+                云主机详情: Cloud Host Details
+                云主机管理: Cloud Host Management
+                创建密钥: Create sceret
+                克隆云主机: Clone Cloud Host
+                快照管理: Snapshot Management
+                定时快照: Scheduled Snapshots
+                实时迁移: Live Migration
+                云主机跨集群迁移: Cross-cluster Migration of Cloud Host
+                云主机监控: Cloud Host Monitoring
+                云主机网络: Cloud Host Network
+                云主机存储: Cloud Host Storage
+                云主机漂移: Cloud Host Drift
+                云主机健康检查: Cloud Host Health Check
+                云主机 GPU: Cloud Host GPU
+                云主机 vGPU: Cloud Host vGPU
+                云主机模板: Cloud Host Templates
+                通过模板创建云主机: Create Cloud Host via Template
+                云主机镜像: Cloud Host Images
+                最佳实践: Best Practices
+                从 VMware 导入传统 Linux 云主机: Import Traditional Linux Cloud Host from VMware
+                从 VMware 导入传统 Windows 云主机: Import Traditional Windows Cloud Host from VMware
+                创建 Windows 云主机: Create Windows Cloud Host
+                集群管理: Cluster Management
+                创建集群: Create Cluster
+                升级集群: Upgrade Cluster
+                节点可用性检查: Node Availability Check
+                节点认证: Node Authentication
+                节点扩容: Node Expansion
+                节点缩容: Node Shrinkage
+                添加工作节点: Add Worker Node
+                移除 GPU 工作节点: Remove GPU Worker Node
+                弹性伸缩: Elastic Scaling
+                安装 metrics-server 插件: Install Metrics Server Plugin
+                安装 kubernetes-cronhpa-controller: Install Kubernetes CronHPA Controller
+                安装 VPA 插件: Install VPA Plugin
+                基于内置指标创建 HPA: Create HPA Based on Built-in Metrics
+                基于自定义指标创建 HPA: Create HPA Based on Custom Metrics
+                创建 VPA 策略: Create VPA Policy
+                HPA和CronHPA兼容规则: HPA and CronHPA Compatibility Rules
+                其他方案: Other Solutions
+                Knative 介绍: Introduction to Knative
+                安装 Knative: Install Knative
+                Kantive 场景: Knative Scenarios
+                Knative 实践: Knative Practices
+                多架构 Helm 应用: Multi-architecture Helm Apps
+                自定义Helm应用导入Addon: Import Custom Helm Application Addon
+                NVIDIA GPU 管理: NVIDIA GPU Management
+                NVIDIA GPU模式说明: Explanation of NVIDIA GPU Modes
+                GPU Operator: GPU Operator
+                离线安装GPU Operator: Offline Install GPU Operator
+                上传Red Hat GPU Operator离线镜像: Upload Red Hat GPU Operator Offline Image
+                构建Red Hat 8.4离线yum源: Build Red Hat 8.4 Offline Yum Source
+                构建Red Hat 7.9离线yum源: Build Red Hat 7.9 Offline Yum Source
+                构建Red Hat 9.2离线yum源: Build Red Hat 9.2 Offline Yum Source
+                Ubuntu22.04 离线安装GPU驱动: Offline Install GPU Driver for Ubuntu 22.04
+                NVIDIA GPU整卡模式: NVIDIA Full GPU Mode
+                NVIDIA vGPU模式: NVIDIA vGPU Mode
+                安装 vGPU Addon: Install vGPU Addon
+                使用 NVIDIA vGPU: Use NVIDIA vGPU
+                构建 vGPU 显存超配镜像: Build vGPU Memory Overprovisioning Image
+                NVIDIA MIG 模式: NVIDIA MIG Mode
+                NVIDIA MIG 概述: Overview of NVIDIA MIG
+                开启 MIG 功能: Enable MIG Function
+                使用 NVIDIA MIG: Use NVIDIA MIG
+                MIG 相关命令: MIG Related Commands
+                GPU 配额管理: GPU Quota Management
+                GPU 动态调节: GPU Dynamic Regulation
+                GPU 监控告警: GPU Monitoring Alerts
+                GPU 监控指标: GPU Monitoring Metrics
+                GPU 告警规则: GPU Alarm Rules
+                使用 Volcano: Use Volcano
+                安装 Volcano: Install Volcano
+                使用Volcano Gang Scheduler: Use Volcano Gang Scheduler
+                使用 Volcano 优先级抢占策略: Use Volcano Priority Preemption Policy
+                使用 Volcano Binpack 策略: Use Volcano Binpack Policy
+                使用 Volcano DRF 策略: Use Volcano DRF Policy
+                使用 Volcano NUMA 亲和性调度: Use Volcano NUMA Affinity Scheduling
+                GPU 调度配置: GPU Scheduling Configuration
+                昇腾 NPU 管理: Ascend NPU Management
+                昇腾 NPU 组件安装: Install Ascend NPU Components
+                使用昇腾 NPU: Use Ascend NPU
+                启用昇腾 VNPU: Enable Ascend VNPU
+                天数 GPU 管理: Iluvatar GPUs
+                沐曦 GPU 管理: MetaX GPUs
+                寒武纪 GPU 管理: Cambrian MLU GPUs
+                GPU 相关FAQ: GPU Related FAQ
+                对 etcd 进行备份还原: Backup and Restore etcd
+                跨集群备份恢复MySQL: Cross-cluster Backup and Recovery for MySQL
+                工作集群相关实践: Practices Related to Worker Clusters
+                加固自建工作集群: Harden Self-built Worker Cluster
+                离线部署/升级工作集群: Offline Deployment/Upgrade of Worker Cluster
+                工作集群添加异构节点: Add Heterogeneous Nodes to Worker Cluster
+                工作集群的控制节点扩容: Expand Control Nodes of Worker Cluster
+                替换工作集群首个控制节点: Replace First Control Node of Worker Cluster
+                全局集群工作节点扩容: Global Cluster Worker Node Expansion
+                CentOS上创建Ubuntu工作集群: Create Ubuntu Worker Cluster on CentOS
+                CentOS上创建Red Hat工作集群: Create Red Hat Worker Cluster on CentOS
+                非主流操作系统上创建集群: Create Cluster on Non-mainstream Operating Systems
+                部署/升级Kubean兼容版本: Deploy/Upgrade Kubean Compatible Version
+                限制Docker单容器磁盘空间: Limit Disk Space for Single Docker Container
+                边缘集群部署和管理实践: Edge Cluster Deployment and Management Practices
+                在离线混部: Offline Co-location
+                在离线混部概述: Overview of Offline Co-location
+                koordinator 安装: Install Koordinator
+                运维管理: Operations Management
+                资源管理: Resource Management
+                队列管理: Queue Management
+                创建队列: Create Queue
+                删除队列: Delete Queue
+                最佳实践: Best Practices
+                部署 NFS 做数据集预热: Deploy NFS for Dataset Warm-up
+                更新 Notebook 内置镜像: Update Notebook Built-in Image
+                Checkpoint 机制及使用介绍: Checkpoint Mechanism and Usage Introduction
+                使用 Baize 微调 ChatGLM3: Fine-tune ChatGLM3 with Baize
+                提交 DeepSpeed 训练任务: Submit DeepSpeed Training Job
+                训练任务增加调度器选项: Add Scheduler Options to Training Jobs
+                部署 Label Studio: Deploy Label Studio
+                故障排查: Troubleshooting
+                故障排查索引: Troubleshooting Index
+                集群下拉列表中找不到集群: Cluster Not Found in Dropdown List
+                Notebook 不受队列配额控制: Notebook Not Controlled by Queue Quota
+                队列初始化失败: Queue Initialization Failed
+                开发者手册: Developer Manual
+                OpenAPI 访问密钥: OpenAPI Access Key
+                云主机 OpenAPI 文档: Cloud Host OpenAPI Documentation
+                AI Lab OpenAPI 文档: AI Lab OpenAPI Documentation
+                容器管理 OpenAPI 文档: Container Management OpenAPI Documentation
+                可观测性 OpenAPI 文档: Insight OpenAPI Documentation
+                全局管理 OpenAPI 文档: Global Management OpenAPI Documentation
