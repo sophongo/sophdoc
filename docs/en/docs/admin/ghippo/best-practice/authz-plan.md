@@ -1,6 +1,6 @@
 # Ordinary user authorization plan
 
-Ordinary users refer to those who can use most of DCE's product modules and features (except management features), have certain operation rights to resources within the scope of authority, and can independently use resources to deploy applications.
+Ordinary users refer to those who can use most product modules and features (except management features), have certain operation rights to resources within the scope of authority, and can independently use resources to deploy applications.
 
 The authorization and resource planning process for such users is shown in the following figure.
 
@@ -14,11 +14,11 @@ graph TB
     ws-to-ns --> authu[5. Authorize a user with Workspace Editor]
     authu --> complete([End])
     
-click user "https://docs.daocloud.io/en/ghippo/user-guide/access-control/user/"
-click ns "https://docs.daocloud.io/en/kpanda/user-guide/namespaces/createns/"
-click ws "https://docs.daocloud.io/en/ghippo/user-guide/workspace/workspace/"
-click ws-to-ns "https://docs.daocloud.io/en/ghippo/user-guide/workspace/ws-to-ns-across-clus/"
-click authu "https://docs.daocloud.io/en/ghippo/user-guide/workspace/wspermission/"
+click user "https://docs.daocloud.io/en/ghippo/access-control/user/"
+click ns "https://docs.daocloud.io/en/kpanda/namespaces/createns/"
+click ws "https://docs.daocloud.io/en/ghippo/workspace/workspace/"
+click ws-to-ns "https://docs.daocloud.io/en/ghippo/workspace/ws-to-ns-across-clus/"
+click authu "https://docs.daocloud.io/en/ghippo/workspace/wspermission/"
 
  classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
  classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;

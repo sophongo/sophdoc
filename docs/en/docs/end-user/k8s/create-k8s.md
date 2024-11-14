@@ -1,80 +1,81 @@
-# 创建云上 Kubernetes 集群
+# Creating a Kubernetes Cluster in the Cloud
 
-部署 Kubernetes 集群是为了支持高效的 AI 算力调度和管理，实现弹性伸缩，提供高可用性，从而优化模型训练和推理过程。
+Deploying a Kubernetes cluster is aimed at supporting efficient AI computing resource scheduling and management, achieving elastic scaling, providing high availability, and optimizing the model training and inference processes.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台已
-- 有一个管理员权限的账号
-- 准备一台带 GPU 的物理机
-- 分配两段 IP 地址（Pod CIDR 18 位、SVC CIDR 18 位，不能与现有网段冲突）
+- The AI platform is installed
+- An administrator account is available
+- A physical machine with a GPU is prepared
+- Two segments of IP addresses are allocated (Pod CIDR 18 bits, SVC CIDR 18 bits, must not conflict with existing networks)
 
-## 创建步骤
+## Steps to Create
 
-1. 以 **管理员身份** 登录 AI 算力平台
-1. [创建并启动 3 台不带 GPU 的云主机](../host/createhost.md)用作集群的 Master 节点
+1. Log into the AI platform as an **administrator**.
+2. [Create and launch 3 cloud hosts without GPU](../host/createhost.md) to serve as Master nodes for the cluster.
 
-    - 配置资源，CPU 16 核，内存 32 GB，系统盘 200 GB（ReadWriteOnce）
-    - 网络模式选择 **Bridge（桥接）**
-    - 设置 root 密码或添加 SSH 公钥，方便以 SSH 连接
-    - 记录好 3 台主机的 IP
+    - Configure resources: 16 CPU cores, 32 GB RAM, 200 GB system disk (ReadWriteOnce)
+    - Select **Bridge** network mode
+    - Set the root password or add an SSH public key for SSH connection
+    - Record the IPs of the 3 hosts
 
-1. 导航至 **容器管理** -> **集群列表** ，点击右侧的 **创建集群** 按钮
-1. 按照向导，配置集群的各项参数
+3. Navigate to **Container Management** -> **Clusters**, and click the **Create Cluster** button on the right.
+4. Follow the wizard to configure various parameters of the cluster.
 
-    === "基本信息"
+    === "Basic Information"
 
         ![basic](../images/k8s01.png)
 
-    === "节点配置"
+    === "Node Configuration"
 
-        配置完节点信息后，点击 **开始检查** ，
+        After configuring the node information, click **Start Check**.
 
         ![node](../images/k8s02.png)
+
         ![node](../images/k8s03.png)
 
-    === "网络配置"
+    === "Network Configuration"
 
         ![network](../images/k8s04.png)
 
-    === "Addon 配置"
+    === "Addon Configuration"
 
         ![addon](../images/k8s05.png)
 
-    === "高级配置"
+    === "Advanced Configuration"
 
-        每个节点默认可运行 110 个 Pod（容器组），如果节点配置比较高，可以调整到 200 或 300 个 Pod。
+        Each node can run 110 Pods (container groups) by default. If the node configuration is higher, it can be adjusted to 200 or 300 Pods.
 
         ![basic](../images/k8s06.png)
 
-1. 等待集群创建完成。
+5. Wait for the cluster creation to complete.
 
     ![done](../images/k8s08.png)
 
-1. 在集群列表中，找到刚创建的集群，点击集群名称，导航到 **Helm 应用** -> **Helm 模板** ，在搜索框内搜索 metax-gpu-extensions，点击卡片
+6. In the cluster list, find the newly created cluster, click on the cluster name, navigate to **Helm Apps** -> **Helm Charts**, and search for metax-gpu-extensions in the search box, then click the card.
 
     ![cluster](../images/k8s09.png)
 
     ![helm](../images/k8s10.png)
 
-1. 点击右侧的 **安装** 按钮，开始安装 GPU 插件
+7. Click the **Install** button on the right to start installing the GPU plugin.
 
-    === "应用设置"
+    === "Application Settings"
 
-        输入名称，选择命名空间，在 YAMl 中修改镜像地址：
+        Enter a name, select a namespace, and modify the image address in the YAML:
 
         ![app settings](../images/k8s11.png)
 
-    === "Kubernetes 编排确认"
+    === "Kubernetes Orchestration Confirmation"
 
         ![confirm](../images/k8s12.png)
 
-1. 自动返回 Helm 应用列表，等待 metax-gpu-extensions 状态变为 **已部署**
+8. Automatically return to the Helm application list and wait for the status of metax-gpu-extensions to change to **Deployed**.
 
     ![deployed](../images/k8s13.png)
 
-1. 到此集群创建成功，可以去查看集群所包含的节点。你可以去[创建 AI 工作负载并使用 GPU 了](../share/workload.md)。
+9. At this point, the cluster has been successfully created. You can check the nodes included in the cluster. You can now [create AI workloads and use GPUs](../share/workload.md).
 
     ![nodes](../images/k8s14.png)
 
-下一步：[创建 AI 工作负载](../share/workload.md)
+Next step: [Create AI Workloads](../share/workload.md)

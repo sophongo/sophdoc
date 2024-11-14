@@ -7,7 +7,7 @@ date: 2024-06-11
 
 After installing the __insight-agent__ in the cluster, __Fluent Bit__ in __insight-agent__ will collect logs in the cluster by default, including Kubernetes event logs, node logs, and container logs. __Fluent Bit__ has already configured various log collection plugins, related filter plugins, and log output plugins. The working status of these plugins determines whether log collection is normal. Below is a dashboard for __Fluent Bit__ that monitors the working conditions of each __Fluent Bit__ in the cluster and the collection, processing, and export of plugin logs.
 
-1. Use DCE 5.0 platform, enter __Insight__ , and select the __Dashboard__ in the left navigation bar.
+1. Use AI platform platform, enter __Insight__ , and select the __Dashboard__ in the left navigation bar.
 
     ![nav](./images/insight01.png)
 
@@ -56,5 +56,5 @@ Here are some plugins for __Fluent Bit__ .
 | Output Plugin | Plugin Description |
 | ------------- | ------------------ |
 | es.kube.kubeevent.syslog | Write Kubernetes audit logs, event logs, and syslog logs to [ElasticSearch cluster](../../middleware/elasticsearch/intro/index.md) |
-| forward.audit_log | Send Kubernetes audit logs and [global management audit logs](../../ghippo/user-guide/audit/audit-log.md) to __Global Management__ |
+| forward.audit_log | Send Kubernetes audit logs and [global management audit logs](../../ghippo/audit/audit-log.md) to __Global Management__ |
 | es.skoala | Write [request logs](../../skoala/gateway/logs/reqlog.md) and [instance logs](../../skoala/gateway/logs/inslog.md) of microservice gateway to ElasticSearch cluster  |

@@ -1,85 +1,83 @@
-# 使用 Notebook
+# Using Notebook
 
-Notebook 通常指的是 Jupyter Notebook 或类似的交互式计算环境。
-这是一种非常流行的工具，广泛用于数据科学、机器学习和深度学习等领域。
-本页说明如何在算丰 AI 算力平台中使用 Notebook。
+Notebook usually refers to Jupyter Notebook or similar interactive computing environments. It is a very popular tool widely used in fields such as data science, machine learning, and deep learning. This page explains how to use Notebook in the AI platform.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- [用户已成功注册](../register/index.md)
-- 管理员为用户分配了工作空间
-- 已准备好数据集（代码、数据等）
+- The AI platform is installed
+- [User has successfully registered](../register/index.md)
+- The administrator has assigned a workspace to the user
+- Datasets (code, data, etc.) are prepared
 
-## 创建和使用 Notebook 实例
+## Creating and Using Notebook Instances
 
-1. 以 **管理员身份** 登录 AI 算力平台
-1. 导航至 **AI Lab** -> **运维管理** -> **队列管理** ，点击右侧的 **创建** 按钮
+1. Log into the AI platform as an **Administrator**.
+2. Navigate to **AI Lab** -> **Operator** -> **Queue Management**, and click the **Create** button on the right.
 
     ![create queue](../images/notebook01.png)
 
-1. 键入名称，选择集群、工作空间和配额后，点击 **确定**
+3. Enter a name, select the cluster, workspace, and quota, then click **OK**.
 
     ![ok](../images/notebook02.png)
 
-1. 以 **用户身份** 登录 AI 算力平台，导航至 **AI Lab** -> **Notebook** ，点击右侧的 **创建** 按钮
+4. Log into the AI platform as a **User**, navigate to **AI Lab** -> **Notebook**, and click the **Create** button on the right.
 
     ![create notebook](../images/notebook03.png)
 
-1. 配置各项参数后点击 **确定**
+5. After configuring the various parameters, click **OK**.
 
-    === "基本信息"
+    === "Basic Information"
 
-        键入名称，选择集群、命名空间，选择刚创建的队列，点击 **一键初始化**
+        Enter a name, select the cluster, namespace, choose the queue just created, and click **One-Click Initialization**.
 
         ![basic](../images/notebook04.png)
 
-    === "资源配置"
+    === "Resource Configuration"
 
-        选择 Notebook 类型，配置内存、CPU，开启 GPU，创建和配置 PVC：
+        Select the Notebook type, configure memory, CPU, enable GPU, create and configure PVC:
 
         ![resource](../images/notebook05.png)
 
-    === "高级配置"
+    === "Advanced Configuration"
 
-        开启 SSH 外网访问：
+        Enable SSH external network access:
 
         ![advanced](../images/notebook06.png)
 
-1. 自动跳转到 Notebook 实例列表，点击实例名称
+6. You will be automatically redirected to the Notebook instance list, click on the instance name.
 
     ![click name](../images/notebook07.png)
 
-1. 进入 Notebook 实例详情页，点击右上角的 **打开** 按钮
+7. Enter the Notebook instance detail page and click the **Open** button in the upper right corner.
 
     ![open](../images/notebook08.png)
 
-1. 进入了 Notebook 开发环境，比如在 `/home/jovyan` 目录挂载了持久卷，可以通过 git 克隆代码，通过 SSH 连接后上传数据等。
+8. You have entered the Notebook development environment, where a persistent volume is mounted in the `/home/jovyan` directory. You can clone code through git, upload data after connecting via SSH, etc.
 
     ![notebook](../images/notebook09.png)
 
-## 通过 SSH 访问 Notebook 实例
+## Accessing Notebook Instances via SSH
 
-1. 在自己的电脑上生成 SSH 密钥对
+1. Generate an SSH key pair on your own computer.
 
-    在自己电脑上打开命令行，比如在 Windows 上打开 git bash，输入 `ssh-keygen.exe -t rsa`，然后一路回车。
+    Open the command line on your computer, for example, open git bash on Windows, enter `ssh-keygen.exe -t rsa`, and press enter through the prompts.
 
     ![generate](../images/ssh01.png)
 
-1. 通过 `cat ~/.ssh/id_rsa.pub` 等命令查看并复制公钥
+2. Use commands like `cat ~/.ssh/id_rsa.pub` to view and copy the public key.
 
     ![copy key](../images/ssh02.png)
 
-1. 以用户身份登录 AI 算力平台，在右上角点击 **个人中心** -> **SSH 公钥** -> **导入 SSH 公钥**
+3. Log into the AI platform as a user, click on **Personal Center** -> **SSH Public Key** -> **Import SSH Public Key** in the upper right corner.
 
     ![import](../images/ssh03.png)
 
-1. 进入 Notebook 实例的详情页，复制 SSH 的链接
+4. Enter the detail page of the Notebook instance and copy the SSH link.
 
     ![copy link](../images/ssh04.png)
 
-1. 在客户端使用 SSH 访问 Notebook 实例
+5. Use SSH to access the Notebook instance from the client.
 
     ![ssh](../images/ssh05.png)
 
-下一步：[创建训练任务](../../admin/baize/developer/jobs/create.md)
+Next step: [Create Training Job](../../admin/baize/developer/jobs/create.md)

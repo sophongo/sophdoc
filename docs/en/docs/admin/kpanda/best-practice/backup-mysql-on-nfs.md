@@ -1,11 +1,11 @@
 # Cross-Cluster Backup and Recovery of MySQL Application and Data
 
-This demonstration will show how to use the application backup feature in DCE 5.0 to
+This demonstration will show how to use the application backup feature in AI platform to
 perform cross-cluster backup migration for a stateful application.
 
 !!! note
 
-    The current operator should have admin privileges on the DCE 5.0 platform.
+    The current operator should have admin privileges on the AI platform platform.
 
 ## Prepare the Demonstration Environment
 
@@ -528,7 +528,7 @@ perform cross-cluster backup migration for a stateful application.
 
     The velero plugin needs to be installed on **both the source and target clusters**.
 
-Refer to the [Install Velero Plugin](../user-guide/backup/install-velero.md) documentation and the MinIO configuration below to install the velero plugin on the __main-cluster__ and __recovery-cluster__ .
+Refer to the [Install Velero Plugin](../backup/install-velero.md) documentation and the MinIO configuration below to install the velero plugin on the __main-cluster__ and __recovery-cluster__ .
 
 | MinIO Server Address     | Bucket      | Username | Password  |
 | ------------------------| ----------- | ---------| ----------|
@@ -548,7 +548,7 @@ Refer to the [Install Velero Plugin](../user-guide/backup/install-velero.md) doc
     kubectl label pvc mydata backup=mysql #为 mysql 的 pvc 添加标签
     ```
 
-2. Refer to the steps described in [Application Backup](../user-guide/backup/deployment.md#application-backup) and the parameters below to create an application backup.
+2. Refer to the steps described in [Application Backup](../backup/deployment.md#application-backup) and the parameters below to create an application backup.
 
    - Name: __backup-mysql__ (can be customized)
    - Source Cluster: __main-cluster__ 
@@ -565,7 +565,7 @@ Refer to the [Install Velero Plugin](../user-guide/backup/install-velero.md) doc
 
 ## Cross-Cluster Recovery of MySQL Application and Data
 
-1. Log in to the DCE 5.0 platform and select __Container Management__ -> __Backup & Restore__ -> __Application Backup__ from the left navigation menu.
+1. Log in to the AI platform platform and select __Container Management__ -> __Backup & Restore__ -> __Application Backup__ from the left navigation menu.
 
    ![img](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/mysql06.png)
 

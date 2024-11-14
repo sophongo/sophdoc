@@ -34,9 +34,9 @@ graph TD
  class login,user,auth,group,role,id cluster;
 
 click login "https://docs.daocloud.io/en/ghippo/install/login.html"
-click user "https://docs.daocloud.io/en/ghippo/user-guide/access-control/user.html"
-click auth "https://docs.daocloud.io/en/ghippo/user-guide/access-control/role.html"
-click group "https://docs.daocloud.io/en/ghippo/user-guide/access-control/group.html"
-click role "https://docs.daocloud.io/en/ghippo/user-guide/access-control/custom-role.html"
-click id "https://docs.daocloud.io/en/ghippo/user-guide/access-control/idprovider.html"
+click user "https://docs.daocloud.io/en/ghippo/access-control/user.html"
+click auth "https://docs.daocloud.io/en/ghippo/access-control/role.html"
+click group "https://docs.daocloud.io/en/ghippo/access-control/group.html"
+click role "https://docs.daocloud.io/en/ghippo/access-control/custom-role.html"
+click id "https://docs.daocloud.io/en/ghippo/access-control/idprovider.html"
 ```

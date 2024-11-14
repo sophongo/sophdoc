@@ -1,51 +1,50 @@
-# 创建 AI 负载使用 GPU 资源
+# Creating AI Workloads Using GPU Resources
 
-管理员为工作空间分配资源配额后，用户就可以创建 AI 工作负载来使用 GPU 算力资源。
+After the administrator allocates resource quotas for the workspace, users can create AI workloads to utilize GPU computing resources.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- [用户已成功注册](../register/index.md)
-- [管理员为用户分配了工作空间](../register/bindws.md)
-- [为工作空间设置了资源配额](./quota.md)
-- [已经创建了一个集群](../k8s/create-k8s.md)
+- The AI platform is installed
+- [User has successfully registered](../register/index.md)
+- [Administrator has assigned a workspace to the user](../register/bindws.md)
+- [Resource quotas have been set for the workspace](./quota.md)
+- [A cluster has been created](../k8s/create-k8s.md)
 
-## 创建 AI 负载步骤
+## Steps to Create AI Workloads
 
-1. 以用户身份登录 AI 算力平台
-1. 导航至 **容器管理** ，选择一个命名空间，点击 **工作负载** -> **无状态负载** ，
-   点击右侧的 **镜像创建** 按钮
+1. Log in to the AI platform as a **User**.
+2. Navigate to **Container Management**, select a namespace, then click **Workloads** -> **Deployments**, and then click the **Create from Image** button on the right.
 
     ![button](../images/workload01.png)
 
-1. 配置各项参数后点击 **确定**
+3. After configuring the parameters, click **OK**.
 
-    === "基本信息"
+    === "Basic Information"
 
-        选择自己的命名空间。
+        Select your own namespace.
 
         ![basic](../images/workload02.png)
 
-    === "容器配置"
+    === "Container Configuration"
 
-        设置镜像，配置 CPU、内存、GPU 等资源，设置启动命令。
+        Set the image, configure resources such as CPU, memory, and GPU, and set the startup command.
 
         ![container](../images/workload03.png)
 
-    === "其他"
+    === "Others"
 
-        服务配置和高级配置可以使用默认配置。
+        Service configuration and advanced settings can use default configurations.
 
-1. 自动返回无状态负载列表，点击负载名称
+4. Automatically return to the stateless workload list and click on the workload name.
 
     ![click name](../images/workload04.png)
 
-1. 进入详情页，可以看到 GPU 配额
+5. Enter the details page to view the GPU quota.
 
     ![check gpu](../images/workload05.png)
 
-1. 你还可以进入控制台，运行 `mx-smi` 命令查看 GPU 资源
+6. You can also enter the console and run the `mx-smi` command to check the GPU resources.
 
     ![check gpu](../images/workload06.png)
 
-下一步：[使用 Notebook](./notebook.md)
+Next step: [Using Notebook](./notebook.md)

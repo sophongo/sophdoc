@@ -1,38 +1,38 @@
-# 为用户绑定工作空间
+# Binding a Workspace for the User
 
-用户成功注册之后，需要为其绑定一个工作空间。
+After a user successfully registers, a workspace needs to be bound to them.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- [用户已成功注册](index.md)
-- 有一个可用的管理员账号
+- AI platform installed
+- [User has successfully registered](index.md)
+- An available administrator account
 
-## 操作步骤
+## Steps to Follow
 
-1. 以管理员身份登录 AI 算力平台
-1. 导航切换至 **全局管理** -> **工作空间与层级** ，点击 **创建工作空间**
+1. Log in to the AI platform as an administrator.
+2. Navigate to **Global Management** -> **Workspace and Folder**, and click **Create Workspace**.
 
     ![workspace](../images/bindws01.png)
 
-1. 输入名称，选择文件夹后点击 **确定** ，创建一个工作空间
+3. Enter the workspace name, select a folder, and click **OK** to create a workspace.
 
     ![create ws](../images/bindws02.png)
 
-1. 给工作空间绑定资源
+4. Bind resources to the workspace.
 
     ![bind resource](../images/bindws07.png)
 
-    可以在这个界面上点击 **创建集群-命名空间** 来创建一个命名空间。
+    On this interface, you can click **Create Namespace** to create a namespace.
 
-1. 添加授权：将用户分配至工作空间
+5. Add authorization: Assign the user to the workspace.
 
-    ![授权1](../images/bindws08.png)
-    ![授权2](../images/bindws09.png)
+    ![authorization1](../images/bindws08.png)
+    ![authorization2](../images/bindws09.png)
 
-1. 用户登录 AI 算力平台，查看是否具有工作空间及命名空间的权限。
-   管理员可以通过右侧的 **┇** 执行更多操作。
+6. The user logs in to the AI platform to check if they have permissions for the workspace and namespace. 
+   The administrator can perform more actions through the **┇** on the right side.
 
-    ![确认](../images/bindws11.png)
+    ![confirmation](../images/bindws11.png)
 
-下一步：[为工作空间分配资源](./wsres.md)
+Next step: [Allocate Resources for the Workspace](./wsres.md)

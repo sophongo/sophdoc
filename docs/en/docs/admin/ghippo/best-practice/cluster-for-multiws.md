@@ -11,7 +11,7 @@ This method has a drawback: if the business volume of the enterprise is large,
 manually allocating resources requires a significant amount of work,
 and flexibly adjusting resource quotas can also be challenging.
 
-To address this, DCE introduces the concept of workspaces. By sharing resources,
+To address this, the AI platform introduces the concept of workspaces. By sharing resources,
 workspaces can provide higher-dimensional resource quota capabilities,
 allowing workspaces (tenants) to self-create Kubernetes namespaces under resource quotas.
 
@@ -41,9 +41,9 @@ class preparews,preparecs,share, cluster;
 class judge plain
 class modifyns,createns k8s
 
-click preparews "https://docs.daocloud.io/en/ghippo/user-guide/workspace/cluster-for-multiws/#prepare-a-workspace"
-click preparecs "https://docs.daocloud.io/en/ghippo/user-guide/workspace/cluster-for-multiws/#prepare-a-cluster"
-click share "https://docs.daocloud.io/en/ghippo/user-guide/workspace/cluster-for-multiws/#add-a-cluster-to-the-workspace"
+click preparews "https://docs.daocloud.io/en/ghippo/workspace/cluster-for-multiws/#prepare-a-workspace"
+click preparecs "https://docs.daocloud.io/en/ghippo/workspace/cluster-for-multiws/#prepare-a-cluster"
+click share "https://docs.daocloud.io/en/ghippo/workspace/cluster-for-multiws/#add-a-cluster-to-the-workspace"
 click createns "https://docs.daocloud.io/en/amamba/user-guide/namespace/namespace/#create-a-namespace"
 click modifyns "https://docs.daocloud.io/en/amamba/user-guide/namespace/namespace/#namespace-quotas"
 ```
@@ -54,7 +54,7 @@ Workspaces are designed to meet multi-tenant usage scenarios, forming isolated r
 cluster namespaces, meshes, mesh namespaces, multicloud, multicloud namespaces, and other resources. Workspaces
 can be mapped to various concepts such as projects, tenants, enterprises, and suppliers.
 
-1. Log in to DCE 5.0 with a user having the admin/folder admin role and click __Global Management__ at the bottom of the left navigation bar.
+1. Log in to AI platform with a user having the admin/folder admin role and click __Global Management__ at the bottom of the left navigation bar.
 
     ![Global Management](../images/ws01.png)
 
@@ -76,7 +76,7 @@ Follow these steps to prepare a cluster.
 
     ![Container Management](../images/clusterlist01.png)
 
-1. Click __Create Cluster__ to [create a cluster](../../kpanda/user-guide/clusters/create-cluster.md) or click __Integrate Cluster__ to [integrate a cluster](../../kpanda/user-guide/clusters/integrate-cluster.md).
+1. Click __Create Cluster__ to [create a cluster](../../kpanda/clusters/create-cluster.md) or click __Integrate Cluster__ to [integrate a cluster](../../kpanda/clusters/integrate-cluster.md).
 
 ## Add Cluster to Workspace
 

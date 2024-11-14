@@ -41,8 +41,8 @@ find `baize-agent` and install it.
 
 !!! note
 
-    Quickly jump to this address: `https://<dce_host>/kpanda/clusters/<cluster_name>/helm/charts/addon/baize-agent`.
-    Note to replace `<dce_host>` with the actual DCE console address, and `<cluster_name>` with the actual cluster name.
+    Quickly jump to this address: `https://<host>/kpanda/clusters/<cluster_name>/helm/charts/addon/baize-agent`.
+    Note to replace `<host>` with the actual console address, and `<cluster_name>` with the actual cluster name.
 
 ### Cluster name not configured in the process of installing `baize-agent`
 
@@ -58,6 +58,6 @@ to be unable to retrieve cluster information. Check if the platform's Insight se
 are running and configured correctly.
 
 - Check if the insight-server component is running properly in the
-  [Global Service Cluster](../../kpanda/user-guide/clusters/cluster-role.md#global-service-cluster).
+  [Global Service Cluster](../../kpanda/clusters/cluster-role.md#global-service-cluster).
 - Check if the insight-agent component is running properly in the
-  [worker cluster](../../kpanda/user-guide/clusters/cluster-role.md#worker-cluster).
+  [worker cluster](../../kpanda/clusters/cluster-role.md#worker-cluster).

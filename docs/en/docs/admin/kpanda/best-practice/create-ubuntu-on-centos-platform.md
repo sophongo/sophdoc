@@ -9,19 +9,19 @@ This page explains how to create an Ubuntu worker cluster on an existing CentOS.
 
 !!! note
 
-    This page is specifically for the offline mode, using the DCE 5.0 platform to create a worker cluster,
+    This page is specifically for the offline mode, using the AI platform platform to create a worker cluster,
     where both the CentOS platform and the worker cluster to be created are based on AMD architecture. 
     Heterogeneous (mixed AMD and ARM) deployments are not supported during cluster creation; however,
     after the cluster is created, you can manage a mixed deployment by adding heterogeneous nodes.
 
 ## Prerequisite
 
-- A fully deployed DCE 5.0 system, with the bootstrap node still active. For deployment reference, see the documentation [Offline Install DCE 5.0 Enterprise](../../install/commercial/start-install.md).
+- A fully deployed AI platform system, with the bootstrap node still active. For deployment reference, see the documentation [Offline Install AI platform Enterprise](../../install/commercial/start-install.md).
 
 ## Download and Import Ubuntu Offline Packages
 
 Please ensure you are logged into the bootstrap node! Also, make sure that the
-clusterConfig.yaml file used during the DCE 5.0 deployment is still available.
+clusterConfig.yaml file used during the AI platform deployment is still available.
 
 ### Download Ubuntu Offline Packages
 
@@ -39,5 +39,5 @@ to import offline resources into MinIO on the bootstrap node.
 
 ## Create Cluster on UI
 
-Refer to the documentation [Creating a Worker Cluster](../user-guide/clusters/create-cluster.md)
+Refer to the documentation [Creating a Worker Cluster](../clusters/create-cluster.md)
 to create the Ubuntu cluster.
