@@ -1,12 +1,12 @@
 # System Messages
 
 System messages are used to notify all users, similar to system announcements, and will be displayed
-at the top bar of the DCE 5.0 UI at specific times.
+at the top bar of the AI platform UI at specific times.
 
 ## Configure System Messages
 
 You can create a system message by applying the YAML for the system message in the
-[Cluster Roles](../../kpanda/user-guide/clusters/cluster-role.md). The display time of the message is determined by
+[Cluster Roles](../../kpanda/clusters/cluster-role.md). The display time of the message is determined by
 the time fields in the YAML. System messages will only be displayed within the time range configured
 by the start and end fields.
 

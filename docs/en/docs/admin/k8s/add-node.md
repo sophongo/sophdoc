@@ -1,43 +1,43 @@
-# 添加工作节点
+# Adding Worker Nodes
 
-如果节点不够用了，可以添加更多节点到集群中。
+If there are not enough nodes, you can add more nodes to the cluster.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- 有一个管理员帐号
-- [已创建带 GPU 节点的集群](./create-k8s.md)
-- [准备一台云主机](../host/createhost.md)
+- AI platform is installed
+- An administrator account is available
+- [A cluster with GPU nodes has been created](./create-k8s.md)
+- [A cloud host has been prepared](../host/createhost.md)
 
-## 添加步骤
+## Steps to Add Nodes
 
-1. 以 **管理员身份** 登录 AI 算力平台
-1. 导航至 **容器管理** -> **集群列表** ，点击目标集群的名称
+1. Log in to the AI platform as an **administrator**.
+2. Navigate to **Container Management** -> **Clusters**, and click on the name of the target cluster.
 
     ![clusters](../images/remove01.png)
 
-1. 进入集群概览页，点击 **节点管理** ，点击右侧的 **接入节点** 按钮
+3. On the cluster overview page, click **Node Management**, and then click the **Add Node** button on the right side.
 
     ![add](../images/add01.png)
 
-1. 按照向导，填写各项参数后点击 **确定**
+4. Follow the wizard, fill in the required parameters, and then click **OK**.
 
-    === "基本信息"
+    === "Basic Information"
 
         ![basic](../images/add02.png)
 
-    === "参数配置"
+    === "Parameter Configuration"
 
         ![arguments](../images/add03.png)
 
-1. 在弹窗中点击 **确定**
+5. Click **OK** in the popup window.
 
     ![ok](../images/add04.png)
 
-1. 返回节点列表，新接入的节点状态为 **接入中** ，等待几分钟后状态变为 **健康** 则表示接入成功。
+6. Return to the node list. The status of the newly added node will be **Pending**. After a few minutes, if the status changes to **Running**, it indicates that the node has been successfully added.
 
     ![success](../images/add05.png)
 
 !!! tip
 
-    对于刚接入成功的节点，可能还要等 2-3 分钟才能识别出 GPU。
+    For nodes that have just been successfully added, it may take an additional 2-3 minutes for the GPU to be recognized.

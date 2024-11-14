@@ -21,10 +21,10 @@ machine learning and artificial intelligence jobs. Here is a brief introduction 
 Label Studio offers a powerful data labeling solution for data scientists and
 machine learning engineers due to its flexibility and rich features.
 
-## Deploy to DCE 5.0
+## Deploy to AI platform
 
 To use Label Studio in AI Lab, it needs to be deployed to the
-[Global Service Cluster](../../kpanda/user-guide/clusters/cluster-role.md#global-service-cluster).
+[Global Service Cluster](../../kpanda/clusters/cluster-role.md#global-service-cluster).
 You can quickly deploy it using Helm.
 
 !!! note
@@ -57,7 +57,7 @@ You can quickly deploy it using Helm.
       image:
         repository: heartexlabs/label-studio   # Configure proxy address here if docker.io is inaccessible
       extraEnvironmentVars:
-        LABEL_STUDIO_HOST: https://{DCE_Access_Address}/label-studio    # Use the DCE 5.0 login address, refer to the current webpage URL
+        LABEL_STUDIO_HOST: https://{Access_Address}/label-studio    # Use the AI platform login address, refer to the current webpage URL
         LABEL_STUDIO_USERNAME: {User_Email}    # Must be an email, replace with your own
         LABEL_STUDIO_PASSWORD: {User_Password}
     app:
@@ -84,7 +84,7 @@ global:
   image:
     repository: heartexlabs/label-studio   # Configure proxy address here if docker.io is inaccessible
   extraEnvironmentVars:
-    LABEL_STUDIO_HOST: https://{DCE_Access_Address}/label-studio    # Use the DCE 5.0 login address, refer to the current webpage URL
+    LABEL_STUDIO_HOST: https://{Access_Address}/label-studio    # Use the AI platform login address, refer to the current webpage URL
     LABEL_STUDIO_USERNAME: {User_Email}    # Must be an email, replace with your own
     LABEL_STUDIO_PASSWORD: {User_Password}
 app:
@@ -105,7 +105,7 @@ externalPostgresql:
 
 ## Add GProduct to Navigation Bar
 
-To add Label Studio to the DCE 5.0 navigation bar, you can refer to the method in
+To add Label Studio to the AI platform navigation bar, you can refer to the method in
 [Global Management OEM IN](../../ghippo/best-practice/oem/oem-in.md).
 The following example shows how to add it to the secondary navigation of AI Lab.
 
@@ -178,7 +178,7 @@ spec:
       name: label-studio
       order: 1
       target: blank    # Control new blank page
-      url: https://{DCE_Access_Address}/label-studio    # url to access
+      url: https://{Access_Address}/label-studio    # url to access
       visible: true
     # End adding
   name: AI Lab

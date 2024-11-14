@@ -15,7 +15,7 @@ A workspace consists of three features: authorization, resource groups, and shar
 
     Best practice: When ordinary users want to use Workbench, microservice engine, service mesh, and middleware module features, or need to have permission to use container management and some resources in the service mesh, the administrator needs to grant the workspace permissions (Workspace Admin, Workspace Edit, Workspace View).
     The administrator here can be the Admin role, the Workspace Admin role of the workspace, or the Folder Admin role above the workspace.
-    See [Relationship between Folder and Workspace](../user-guide/workspace/ws-folder.md).
+    See [Relationship between Folder and Workspace](../workspace/ws-folder.md).
 
 2. Resource group: Resource group and shared resource are two resource management modes of the workspace.
 
@@ -48,27 +48,17 @@ A workspace consists of three features: authorization, resource groups, and shar
     | Department Administrator B | Workspace Admin | CPU 100 cores | CPU 100 cores |
     | Other Members of the Department | Namesapce Admin<br />Namesapce Edit<br />Namesapce View | Assign as Needed | Assign as Needed |
 
-## The effect of the workspace on the DCE module
+## The effect of the workspace on the AI platfrom
 
-1. Module name: [Workbench](../../amamba/intro/index.md), [Microservice Engine](../../skoala/intro/index.md), [Service Mesh](../../mspider/intro/index.md), [Middleware](../../middleware/index.md)
+Module name: [Container Management](../../kpanda/intro/index.md)
 
-    The premise of entering the above modules is to have the permission of a certain workspace, so you must have the Admin role or have certain role permissions of a certain workspace before using the module features.
+Due to the particularity of functional modules, resources created in the container management module will not be automatically bound to a certain workspace.
 
-    - The roles of the workspace are automatically applied to the resources contained in the workspace. For example, if you have the Workspace Admin role of workspace A, then you are the Admin role for all resources in this workspace;
-    - If you are a Workspace Edit, you are the Edit role for all resources in the workspace;
-    - If you are Workspace View, you are View role for all resources in the workspace.
+If you need to perform unified authorization management on people and resources through workspaces, you can manually bind the required resources to a certain workspace, to apply the roles of users in this workspace to resources (resources here can be cross- clustered).
 
-    In addition, the resources you create in these modules will also be automatically bound to the corresponding workspace without any additional operations.
+In addition, there is a slight difference between container management and service mesh in terms of resource binding entry. The workspace provides the binding entry of Cluster and Cluster-Namespace resources in container management, but has not opened the Mesh and Mesh-Namespace for service mesh. Bindings for Namespace resources.
 
-2. Module name: [Container Management](../../kpanda/intro/index.md), [Service Mesh](../../mspider/intro/index.md)
-
-    Due to the particularity of functional modules, resources created in the container management module will not be automatically bound to a certain workspace.
-
-    If you need to perform unified authorization management on people and resources through workspaces, you can manually bind the required resources to a certain workspace, to apply the roles of users in this workspace to resources (resources here can be cross- clustered).
-
-    In addition, there is a slight difference between container management and service mesh in terms of resource binding entry. The workspace provides the binding entry of Cluster and Cluster-Namespace resources in container management, but has not opened the Mesh and Mesh-Namespace for service mesh. Bindings for Namespace resources.
-
-    For Mesh and Mesh-Namespace resources, you can manually bind them in the resource list of the service mesh.
+For Mesh and Mesh-Namespace resources, you can manually bind them in the resource list of the service mesh.
 
 ## Use Cases of Workspace
 

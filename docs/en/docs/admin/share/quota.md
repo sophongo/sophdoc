@@ -1,26 +1,26 @@
-# 配额管理
+# Quota Management
 
-用户被绑定到工作空间后，即可为工作空间分配资源，管理资源配额。
+Once a user is bound to a workspace, resources can be allocated to the workspace, and resource quotas can be managed.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- 有一个可用的管理员账号
+- The AI platform is installed
+- There is an available administrator account
 
-## 创建和管理配额
+## Creating and Managing Quotas
 
-1. 以 **管理员身份** 登录 AI 算力平台
-1. [创建工作空间和命名空间，并绑定用户](../register/bindws.md)
-1. [为工作空间分配资源配额](../register/wsres.md#quota)
+1. Log in to the AI platform as an **Administrator**.
+2. [Create a workspace and namespace, and bind users](../register/bindws.md).
+3. [Allocate resource quotas to the workspace](../register/wsres.md#quota).
 
     ![quota to ws](../images/quota01.png)
 
-1. 管理命名空间 `test-ns-1` 的资源配额，其数值不能超过工作空间的配额。
+4. Manage the resource quotas for the namespace `test-ns-1`, ensuring that the values do not exceed the workspace's quota.
 
     ![quota to ns](../images/quota02.png)
 
-1. 以 **用户身份** 登录 AI 算力平台，查看其是否被分配了 `test-ns-1` 命名空间。
+5. Log in to the AI platform as a **User** to check if they have been assigned the `test-ns-1` namespace.
 
     ![check ns](../images/quota03.png)
 
-下一步：[创建 AI 负载使用 GPU 资源](./workload.md)
+Next step: [Create AI Workloads Using GPUs](./workload.md)

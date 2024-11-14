@@ -1,33 +1,33 @@
-# 用户注册
+# User Registration
 
-新用户首次使用 AI 算力平台需要进行注册。
+New users need to register to use the AI platform for the first time.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- 已开启邮箱注册功能
-- 有一个可用的邮箱
+- The AI platform is installed
+- Email registration feature is enabled
+- An available email address
 
-## 邮箱注册步骤
+## Email Registration Steps
 
-1. 打开 AI 算力平台首页 <https://ai.isuanova.com/>，点击 **注册**
+1. Open the AI platform homepage at <https://ai.isuanova.com/> and click **Register**.
 
     ![home](../../images/regis01.PNG)
 
-1. 键入用户名、密码、邮箱后点击 **注册**
+2. Enter your username, password, and email, then click **Register**.
 
     ![to register](../../images/regis02.PNG)
 
-1. 系统提示发送了一封邮件到您的邮箱。
+3. The system will prompt that an email has been sent to your inbox.
 
     ![to register](../../images/regis03.PNG)
 
-1. 登录自己的邮箱，找到邮件，点击链接。
+4. Log in to your email, find the email, and click the link.
 
     ![email](../../images/regis04.PNG)
 
-1. 恭喜，您成功进入了 AI 算力平台，现在可以开始您的 AI 之旅了。
+5. Congratulations, you have successfully accessed the AI platform, and you can now begin your AI journey.
 
     ![verify](../../images/regis05.PNG)
 
-下一步：[为用户绑定工作空间](bindws.md)
+Next step: [Bind a Workspace for the User](bindws.md)

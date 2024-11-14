@@ -1,51 +1,50 @@
-# 创建 AI 负载使用 GPU 资源
+# Creating AI Workloads Using GPU Resources
 
-管理员为工作空间分配资源配额后，用户就可以创建 AI 工作负载来使用 GPU 算力资源。
+After the administrator allocates resource quotas for the workspace, users can create AI workloads to utilize GPU computing resources.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- [用户已成功注册](../register/index.md)
-- 管理员为用户分配了工作空间
-- 管理员为工作空间设置了资源配额
-- 管理员已经为用户分配了一个集群
+- The AI platform is installed
+- [User has successfully registered](../register/index.md)
+- The administrator has assigned a workspace to the user
+- The administrator has set resource quotas for the workspace
+- The administrator has assigned a cluster to the user
 
-## 创建 AI 负载步骤
+## Steps to Create AI Workloads
 
-1. 以用户身份登录 AI 算力平台
-1. 导航至 **容器管理** ，选择一个命名空间，点击 **工作负载** -> **无状态负载** ，
-   点击右侧的 **镜像创建** 按钮
+1. Log into the AI platform as a user.
+2. Navigate to **Container Management**, select a namespace, click on **Workloads** -> **Deployments** , and then click the **Create Image** button on the right.
 
     ![button](../images/workload01.png)
 
-1. 配置各项参数后点击 **确定**
+3. After configuring various parameters, click **OK**.
 
-    === "基本信息"
+    === "Basic Information"
 
-        选择自己的命名空间。
+        Select your namespace.
 
         ![basic](../images/workload02.png)
 
-    === "容器配置"
+    === "Container Configuration"
 
-        设置镜像，配置 CPU、内存、GPU 等资源，设置启动命令。
+        Set the image, configure CPU, memory, GPU, and other resources, and set the startup command.
 
         ![container](../images/workload03.png)
 
-    === "其他"
+    === "Other"
 
-        服务配置和高级配置可以使用默认配置。
+        Service configuration and advanced configuration can use the default settings.
 
-1. 自动返回无状态负载列表，点击负载名称
+4. You will be automatically redirected to the stateless workload list; click on the workload name.
 
     ![click name](../images/workload04.png)
 
-1. 进入详情页，可以看到 GPU 配额
+5. Enter the detail page where you can see the GPU quota.
 
     ![check gpu](../images/workload05.png)
 
-1. 你还可以进入控制台，运行 `mx-smi` 命令查看 GPU 资源
+6. You can also access the console and run the `nvidia-smi` command to view GPU resources.
 
     ![check gpu](../images/workload06.png)
 
-下一步：[使用 Notebook](./notebook.md)
+Next step: [Using Notebook](./notebook.md)

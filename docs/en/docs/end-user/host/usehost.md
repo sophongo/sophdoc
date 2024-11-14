@@ -1,31 +1,31 @@
-# 使用云主机
+# Using the Cloud Host
 
-创建并启动云主机之后，用户就可以开始使用云主机。
+After creating and starting the cloud host, the user can begin using the cloud host.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- [用户已创建并启动云主机](./createhost.md)
+- The AI platform is installed
+- [User has created and started the cloud host](./createhost.md)
 
-## 操作步骤
+## Steps to Operate
 
-1. 以管理员身份登录 AI 算力平台
-1. 导航到 **容器管理** -> **容器网络** -> **服务** ，点击服务的名称，进入服务详情页，在右上角点击 **更新**
+1. Log into the AI platform as an administrator.
+2. Navigate to **Container Management** -> **Container Network** -> **Services**, click on the service name to enter the service details page, and click **Update** in the upper right corner.
 
     ![service](../images/usehost01.png)
 
-1. 更改端口范围为 30900-30999，但不能冲突。
+3. Change the port range to 30900-30999, ensuring there are no conflicts.
 
     ![port](../images/usehost02.png)
 
-1. 以终端用户登录 AI 算力平台，导航到对应的服务，查看访问端口。
+4. Log into the AI platform as an end user, navigate to the corresponding service, and check the access ports.
 
     ![port](../images/usehost03.png)
 
-1. 在外网使用 SSH 客户端登录云主机
+5. Use an SSH client to log into the cloud host from the external network.
 
     ![ssh](../images/usehost04.png)
 
-1. 至此，你可以在云主机上执行各项操作。
+6. At this point, you can perform various operations on the cloud host.
 
-下一步：[使用 Notebook](../share/notebook.md)
+Next step: [Using Notebook](../share/notebook.md)

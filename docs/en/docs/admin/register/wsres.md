@@ -1,26 +1,26 @@
-# 为工作空间分配资源
+# Allocate Resources to the Workspace
 
-将[用户绑定到工作空间](./bindws.md)后，需要给工作空间分配合适的资源。
+After [binding a user to a workspace](./bindws.md), it is necessary to allocate appropriate resources to the workspace.
 
-## 前置条件
+## Prerequisites
 
-- 已安装 AI 算力平台
-- 有一个可用的管理员账号
-- 工作空间已创建且绑定了命名空间
+- The AI platform is installed
+- An available administrator account
+- The workspace has been created and bound to a namespace
 
-## 操作步骤
+## Steps
 
-1. 以管理员身份登录 AI 算力平台
-1. 导航到 **全局管理** -> **工作空间与层级**，找到要添加资源的工作空间，点击 **新增共享资源**
+1. Log in to the AI platform as an administrator.
+2. Navigate to **Global Management** -> **Workspace and Folder**, find the workspace to which you want to add resources, and click **Add Shared Resources**.
 
-    ![点击按钮](../images/wsres01.png)
+    ![Click Button](../images/wsres01.png)
 
-1. 选择集群，设置合适的资源配额后，点击 **确定**  <a id="quota" />
+3. Select the cluster, set the appropriate resource quota, and then click **OK**  <a id="quota" />
 
-    ![配置](../images/wsres02.png)
+    ![Configuration](../images/wsres02.png)
 
-1. 返回共享资源页，为工作空间成功分配了资源，管理员可以通过右侧的 **┇** 随时修改。
+4. Return to the shared resources page. Resources have been successfully allocated to the workspace, and the administrator can modify them at any time using the **┇** on the right side.
 
-    ![成功](../images/wsres03.png)
+    ![Success](../images/wsres03.png)
 
-下一步：[创建云主机](../host/createhost.md)
+Next step: [Create a Cloud Host](../host/createhost.md)

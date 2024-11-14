@@ -91,7 +91,7 @@ sample only a small percentage of traces, and then later in the telemetry pipeli
 make more sophisticated sampling decisions before exporting to a backend. This is often done in the
 interest of protecting the telemetry pipeline from being overloaded.
 
-**DCE5 Insight currently recommends using tail sampling and prioritizes support for tail sampling.**
+**Insight currently recommends using tail sampling and prioritizes support for tail sampling.**
 
 The tail sampling processor samples traces based on a defined set of strategies. However, all spans of a trace
 must be received by the same collector instance to make effective sampling decisions.

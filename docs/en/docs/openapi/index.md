@@ -13,7 +13,7 @@ This is some OpenAPI documentation aimed at developers.
 Access Keys can be used to access the OpenAPI and for continuous publishing.
 You can follow the steps below to obtain their keys and access the API in their personal center.
 
-Log in to the AI computing platform, find __Personal Center__ in the dropdown menu at
+Log in to the AI platform, find __Personal Center__ in the dropdown menu at
 the top right corner, and manage your account's access keys on the __Access Keys__ page.
 
 ![ak list](../images/platform02_1.png)
@@ -26,7 +26,7 @@ the top right corner, and manage your account's access keys on the __Access Keys
 
 ## Using the Key to Access the API
 
-When accessing the AI computing platform's OpenAPI, include the request header `Authorization:Bearer ${token}`
+When accessing the AI platform's OpenAPI, include the request header `Authorization:Bearer ${token}`
 in the request to identify the visitor's identity, where `${token}` is the key obtained in the previous step.
 
 **Request Example**
