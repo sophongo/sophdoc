@@ -1,0 +1,125 @@
+---
+MTPE: windsonsea
+date: 2024-05-22
+hide:
+  - toc
+---
+
+# Microservice Audit Items
+
+| Events | Resource Type | Notes |
+| --- | --- | --- |
+| Create-Gateway | Gateway | |
+| Update-Gateway | Gateway | |
+| ListClusterGateway-Gateway | Gateway | |
+| Delete-Gateway | Gateway | |
+| UpdateAPIStatus-GatewayAPI | GatewayAPI | |
+| DebugGatewayAPI-GatewayAPI | GatewayAPI | |
+| CreateGatewayAPI-GatewayAPI | GatewayAPI | |
+| ImportAPICheck-GatewayAPI | GatewayAPI | |
+| ImportAPI-GatewayAPI | GatewayAPI | |
+| UpdateGatewayAPIAdvancedPolicy-GatewayAPI | GatewayAPI | |
+| UpdateGatewayAPI-GatewayAPI | GatewayAPI | |
+| BatchOperationAPI-GatewayAPI | GatewayAPI | |
+| DeleteAPI-GatewayAPI | GatewayAPI | |
+| CreateService-GatewayService | GatewayService | |
+| UpdateServicePolicy-GatewayService | GatewayService | |
+| UpdateService-GatewayService | GatewayService | |
+| DeleteService-GatewayService | GatewayService | |
+| CreateLane-Lane | Lane | |
+| CreateLaneDrainageRule-Lane | Lane | |
+| ActionLane-Lane | Lane | |
+| UpdateLaneDrainageRuleStatus-Lane | Lane | |
+| UpdateLaneDrainageRule-Lane | Lane | |
+| DeleteLane-Lane | Lane | |
+| DeleteLaneDrainageRule-Lane | Lane | |
+| AddLaneService-Lane | Lane | |
+| DeleteLaneService-Lane | Lane | |
+| CreateServiceIstioPlugin-Mesh | Mesh | |
+| CreateTimeout-Mesh | Mesh | |
+| CreateFault-Mesh | Mesh | |
+| CreateOutlierDetection-Mesh | Mesh | |
+| CreateConnectionPool-Mesh | Mesh | |
+| CreateRetry-Mesh | Mesh | |
+| CreateRewrite-Mesh | Mesh | |
+| SortServiceIstioPlugin-Mesh | Mesh | |
+| UpdateServiceIstioPlugin-Mesh | Mesh | |
+| UpdateTimeout-Mesh | Mesh | |
+| UpdateLb-Mesh | Mesh | |
+| UpdateFault-Mesh | Mesh | |
+| UpdateOutlierDetection-Mesh | Mesh | |
+| UpdateConnectionPool-Mesh | Mesh | |
+| UpdateRetry-Mesh | Mesh | |
+| UpdateRewrite-Mesh | Mesh | |
+| ExportService-Mesh | Mesh | |
+| DeleteServiceIstioPlugin-Mesh | Mesh | |
+| DeleteTimeout-Mesh | Mesh | |
+| DeleteFault-Mesh | Mesh | |
+| DeleteOutlierDetection-Mesh | Mesh | |
+| DeleteConnectionPool-Mesh | Mesh | |
+| DeleteRetry-Mesh | Mesh | |
+| DeleteRewrite-Mesh | Mesh | |
+| CreateServiceIstioPluginRLSRules-Mesh | Mesh | |
+| UpdateServiceIstioPluginRLSRules-Mesh | Mesh | |
+| DeleteServiceIstioPluginRLSRules-Mesh | Mesh | |
+| RemoveService-Mesh | Mesh | |
+| QueryServiceInstance-Nacos | Nacos | |
+| CreateConfig-Nacos | Nacos | |
+| CreateServiceAPI-Nacos | Nacos | |
+| CreateNamespace-Nacos | Nacos | |
+| Create-Nacos | Nacos | |
+| UpdateService-Nacos | Nacos | |
+| UpdateConfig-Nacos | Nacos | |
+| UpdateServiceAPI-Nacos | Nacos | |
+| UpdateServiceInstance-Nacos | Nacos | |
+| UpdateNamespace-Nacos | Nacos | |
+| Update-Nacos | Nacos | |
+| RollbackConfig-Nacos | Nacos | |
+| DeleteConfig-Nacos | Nacos | |
+| DeleteBetaConfig-Nacos | Nacos | |
+| DeleteNamespace-Nacos | Nacos | |
+| Delete-Nacos | Nacos | |
+| GetServiceInsight-Nacos | Nacos | |
+| GetServiceInstanceInsight-Nacos | Nacos | |
+| UpdateUserPassword-Nacos | Nacos | |
+| Update-Plugin | Plugin | |
+| CreateServiceAPI-Registry | Registry | |
+| Create-Registry | Registry | |
+| UpdateServiceAPI-Registry | Registry | |
+| UpdateInstance-Registry | Registry | |
+| Update-Registry | Registry | |
+| GetServiceInsight-Registry | Registry | |
+| GetInstanceInsight-Registry | Registry | |
+| Ping-Registry | Registry | |
+| Delete-Registry | Registry | |
+| CreateOrUpdateTokenServer-Sentinel | Sentinel | |
+| CreateFlowRule-Sentinel | Sentinel | |
+| CreateParamFlowRule-Sentinel | Sentinel | |
+| CreateDegradeRule-Sentinel | Sentinel | |
+| CreateAuthorityRule-Sentinel | Sentinel | |
+| CreateSystemRule-Sentinel | Sentinel | |
+| UpdateFlowRule-Sentinel | Sentinel | |
+| UpdateParamFlowRule-Sentinel | Sentinel | |
+| UpdateDegradeRule-Sentinel | Sentinel | |
+| UpdateAuthorityRule-Sentinel | Sentinel | |
+| UpdateSystemRule-Sentinel | Sentinel | |
+| DeleteClusterFlow-Sentinel | Sentinel | |
+| DeleteFlowRule-Sentinel | Sentinel | |
+| DeleteParamFlowRule-Sentinel | Sentinel | |
+| DeleteDegradeRule-Sentinel | Sentinel | |
+| DeleteAuthorityRule-Sentinel | Sentinel | |
+| DeleteSystemRule-Sentinel | Sentinel | |
+| DeleteInsGovern-Sentinel | Sentinel | |
+| CreatePlugin-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| UpdatePluginStatus-SkoalaPlugin | SkoalaPlugin | |
+| UpdatePlugin-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| DeletePlugin-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| CreatePluginTemplate-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| CreatePlugin-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| UpdatePluginTemplate-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| UpdatePlugin-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| DeletePluginTemplate-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| DeletePlugin-SkoalaPluginTemplate | SkoalaPluginTemplate | |
+| CreateVirtualhost-Virtualhost | Virtualhost | |
+| UpdateVirtualhost-Virtualhost | Virtualhost | |
+| 删除域名：DeleteVirtualhost-Virtualhost | Virtualhost | |
