@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "容器管理",
+    "title": "Container Management",
     "version": "v0.32.2"
   },
   "tags": [
