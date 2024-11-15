@@ -125,7 +125,6 @@ nav:
                   - 服务: end-user/insight/trace/service.md
                   - 链路查询: end-user/insight/trace/trace.md
               - 告警:
-                  - end-user/insight/alert-center/index.md
                   - 告警策略: end-user/insight/alert-center/alert-policy.md
                   - 告警模板: end-user/insight/alert-center/alert-template.md
                   - 通知配置: end-user/insight/alert-center/message.md
@@ -139,7 +138,7 @@ nav:
                   - 采集组件insight-agent状态: end-user/insight/collection-manag/agent-status.md
           - 全局管理:
               - 工作空间与层级:
-                  - end-user/ghippo/workspace/ws-folder.md
+                  - 工作空间与层级: end-user/ghippo/workspace/ws-folder.md
                   - 资源配额: end-user/ghippo/workspace/quota.md
                   - 资源组与共享资源的区别: end-user/ghippo/workspace/res-gp-and-shared-res.md
                   - 资源绑定权限说明: end-user/ghippo/workspace/wsbind-permission.md
@@ -370,12 +369,10 @@ nav:
           - 可观测性:
               - 快速入门:
                   - 部署资源规划:
-                      - admin/insight/quickstart/res-plan/index.md
                       - Prometheus 资源规划: admin/insight/quickstart/res-plan/prometheus-res.md
                       - vmstorage 磁盘规划: admin/insight/quickstart/res-plan/vms-res-plan.md
                       - 调整 vmstorage 磁盘: admin/insight/quickstart/res-plan/modify-vms-disk.md
                   - 安装与升级:
-                      - admin/insight/quickstart/install/index.md
                       - 在线安装 insight-agent: admin/insight/quickstart/install/install-agent.md
                       - 获取全局服务集群的数据存储地址: admin/insight/quickstart/install/gethosturl.md
                       - 升级注意事项: admin/insight/quickstart/install/upgrade-note.md
@@ -391,7 +388,6 @@ nav:
                       - 向Insight发送链路数据: admin/insight/quickstart/otel/send_tracing_to_insight.md
                       - 链路数据尾部采样方案: admin/insight/best-practice/tail-based-sampling.md
                   - Java 应用观测:
-                      - admin/insight/quickstart/otel/java/index.md
                       - 使用JMX Exporter暴露JVM监控指标: admin/insight/quickstart/otel/java/jvm-monitor/jmx-exporter.md
                       - 使用OTel Java Agent暴露JVM监控指标: admin/insight/quickstart/otel/java/jvm-monitor/otel-java-agent.md
                       - 已有JVM指标的Java应用对接可观测性: admin/insight/quickstart/otel/java/jvm-monitor/legacy-jvm.md
@@ -416,7 +412,6 @@ nav:
                   - 服务: admin/insight/trace/service.md
                   - 调用链: admin/insight/trace/trace.md
               - 告警:
-                  - admin/insight/alert-center/index.md
                   - 告警策略: admin/insight/alert-center/alert-policy.md
                   - 告警模板: admin/insight/alert-center/alert-template.md
                   - 通知配置: admin/insight/alert-center/message.md
@@ -464,19 +459,19 @@ nav:
                   - 用户: admin/ghippo/access-control/user.md
                   - 用户组: admin/ghippo/access-control/group.md
                   - 角色:
-                      - admin/ghippo/access-control/role.md
+                      - 角色: admin/ghippo/access-control/role.md
                       - 系统角色: admin/ghippo/access-control/global.md
                       - 自定义角色: admin/ghippo/access-control/custom-role.md
                   - 身份提供商:
-                      - admin/ghippo/access-control/idprovider.md
+                      - 身份提供商: admin/ghippo/access-control/idprovider.md
                       - LDAP: admin/ghippo/access-control/ldap.md
                       - OIDC: admin/ghippo/access-control/oidc.md
                       - OAuth 2.0 之企业微信: admin/ghippo/access-control/oauth2.0.md
                   - 接入管理:
-                      - admin/ghippo/access-control/docking.md
+                      - 接入管理: admin/ghippo/access-control/docking.md
                       - Webhook: admin/ghippo/access-control/webhook.md
               - 工作空间与层级:
-                  - admin/ghippo/workspace/ws-folder.md
+                  - 工作空间与层级: admin/ghippo/workspace/ws-folder.md
                   - 绑定工作空间: admin/register/bindws.md
                   - 为工作空间分配资源: admin/register/wsres.md
                   - 创建和删除工作空间: admin/ghippo/workspace/workspace.md
@@ -497,7 +492,7 @@ nav:
                       - 可观测性审计项: admin/ghippo/audit/gproduct-audit/insight.md
                       - 全局管理审计项: admin/ghippo/audit/gproduct-audit/ghippo.md
               - 运营管理:
-                  - admin/ghippo/report-billing/index.md
+                  - 运营管理: admin/ghippo/report-billing/index.md
                   - 报表管理: admin/ghippo/report-billing/report.md
                   - 计费计量: admin/ghippo/report-billing/billing.md
               - 平台设置:
@@ -519,7 +514,7 @@ nav:
                   - 普通用户授权规划: admin/ghippo/best-practice/authz-plan.md
                   - 超大型企业的架构管理: admin/ghippo/best-practice/super-group.md
                   - GProduct 对接全局管理:
-                      - admin/ghippo/best-practice/gproduct/intro.md
+                      - GProduct 对接全局管理: admin/ghippo/best-practice/gproduct/intro.md
                       - 接入导航栏: admin/ghippo/best-practice/gproduct/nav.md
                       - 接入路由和登录认证: admin/ghippo/best-practice/gproduct/route-auth.md
                   - 集成与被集成(OEM IN/OUT):

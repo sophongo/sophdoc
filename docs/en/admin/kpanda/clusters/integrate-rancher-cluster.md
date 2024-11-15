@@ -147,7 +147,7 @@ Perform the following steps on any local node where __kubelet__ is installed:
 1. Configure kubelet token.
 
     ```bash
-    kubectl config set-credentials rancher-rke --token= __rancher-rke-secret__ 里面的 token 信息
+    kubectl config set-credentials rancher-rke --token= __rancher-rke-secret__ # token 信息
     ```
 
     For example,

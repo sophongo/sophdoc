@@ -16,9 +16,9 @@ You can follow the steps below to obtain their keys and access the API in their 
 Log in to the AI platform, find __Personal Center__ in the dropdown menu at
 the top right corner, and manage your account's access keys on the __Access Keys__ page.
 
-![ak list](../images/platform02_1.png)
+![ak list](../admin/ghippo/images/platform02.png)
 
-![created a key](../images/platform03_1.png)
+![created a key](../admin/ghippo/images/platform03.png)
 
 !!! info
 
