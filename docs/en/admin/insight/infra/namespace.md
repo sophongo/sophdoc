@@ -9,7 +9,7 @@ With namespaces as the dimension, you can quickly query resource consumption and
 
 ## Prerequisites
 
-- Insight Agent is [installed](../../quickstart/install/install-agent.md) in the cluster and the applications are in the __Running__ state.
+- Insight Agent is [installed](../quickstart/install/install-agent.md) in the cluster and the applications are in the __Running__ state.
 
 ## Steps
 

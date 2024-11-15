@@ -4,11 +4,11 @@ Metric query supports querying the index data of each container resource, and yo
 
 ## Prerequisites
 
-- The cluster has [insight-agent installed](../../quickstart/install/install-agent.md) and the application is in __running__ state.
+- The cluster has [insight-agent installed](../quickstart/install/install-agent.md) and the application is in __running__ state.
 
 ## Common query
 
-1. In the left navigation bar, click __Data Query__ -> __metric Query__ .
+1. In the left navigation bar, click __Data Query__ -> __Metrics__ .
 
 2. After selecting query conditions such as cluster, type, node, and metric name, click __Search__ ,
    and the corresponding metric chart and data details will be displayed on the right side of the screen.

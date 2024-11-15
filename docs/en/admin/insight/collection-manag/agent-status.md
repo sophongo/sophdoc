@@ -3,7 +3,7 @@
 In AI platform, Insight acts as a multi-cluster observability product.
 To achieve unified data collection across multiple clusters, users need to install
 the Helm application __insight-agent__ (installed by default in the __insight-system__ namespace).
-Refer to [How to Install __insight-agent__ ](../../quickstart/install/install-agent.md).
+Refer to [How to Install __insight-agent__ ](../quickstart/install/install-agent.md).
 
 ## Status Explanation
 
@@ -38,12 +38,12 @@ You can troubleshoot using the following steps:
 1. The resource consumption of the Prometheus metric collection component in __insight-agent__ 
    is directly proportional to the number of Pods running in the cluster.
    Please adjust the resources for Prometheus according to the cluster size.
-   Refer to [Prometheus Resource Planning](../../quickstart/res-plan/prometheus-res.md).
+   Refer to [Prometheus Resource Planning](../quickstart/res-plan/prometheus-res.md).
 
 2. The storage capacity of the vmstorage metric storage component in the global service cluster
    is directly proportional to the total number of Pods in the clusters.
 
     - Please contact the platform administrator to adjust the disk capacity of vmstorage
-      based on the cluster size. Refer to [vmstorage Disk Capacity Planning](../../quickstart/res-plan/vms-res-plan.md).
+      based on the cluster size. Refer to [vmstorage Disk Capacity Planning](../quickstart/res-plan/vms-res-plan.md).
     - Adjust vmstorage disk based on multi-cluster scale.
-      Refer to [vmstorge Disk Expansion](../../quickstart/res-plan/modify-vms-disk.md).
+      Refer to [vmstorge Disk Expansion](../quickstart/res-plan/modify-vms-disk.md).

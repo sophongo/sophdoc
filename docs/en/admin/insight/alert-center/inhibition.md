@@ -21,7 +21,7 @@ There are mainly the following conditions:
 
 1. In the left navigation bar, select **Alert** -> **Noise Reduction**, and click **Inhibition** at the top.
 
-    ![Inhibition](../../images/inhibition01.png){ width=1000px}
+    ![Inhibition](../images/inhibition01.png){ width=1000px}
 
 2. Click **Create Inhibition**, and set the name and rules for the inhibition.
 
@@ -31,7 +31,7 @@ There are mainly the following conditions:
         by defining a set of rules to identify and ignore certain alerts through [Rule Details](#view-rule-details) 
         and [Alert Details](#view-alert-details).
 
-    ![Create Inhibition](../../images/inhibition02.png){ width=1000px}
+    ![Create Inhibition](../images/inhibition02.png){ width=1000px}
 
     | Parameter | Description |
     | ---- | ---- |
@@ -49,7 +49,7 @@ There are mainly the following conditions:
 
 In the left navigation bar, select **Alert** -> **Alert Policy**, and click the policy name to view the rule details.
 
-  ![Rule details](../../image/inhibition.png)
+  ![Rule details](../images/inhibition.png)
 
     !!! note
 
@@ -59,7 +59,7 @@ In the left navigation bar, select **Alert** -> **Alert Policy**, and click the 
 
 In the left navigation bar, select **Alert** -> **Alerts**, and click the policy name to view details.
 
-  ![Alert details](../../image/inhibition-01.png)
+  ![Alert details](../images/inhibition-01.png)
 
     !!! note
 
@@ -69,11 +69,11 @@ In the left navigation bar, select **Alert** -> **Alerts**, and click the policy
 
 Click **┇** next to the target rule, then click **Edit** to enter the editing page for the inhibition rule.
 
-![Edit Rules](../../images/inhibition03.png){ width=1000px}
+![Edit Rules](../images/inhibition03.png){ width=1000px}
 
 ## Delete Inhibition Rule
 
 Click **┇** next to the target rule, then click **Delete**. Enter the name of the inhibition rule in the input box 
 to confirm deletion.
 
-![Delete Rules](../../images/inhibition04.png){ width=1000px}
+![Delete Rules](../images/inhibition04.png){ width=1000px}

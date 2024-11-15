@@ -9,13 +9,13 @@ The node health status is determined based on the error rate and request latency
 | Color | Status | Rules |
 | ----- | ------ | ----- |
 | Gray  | Healthy | Error rate equals 0% and request latency is less than 100ms |
-| Orange | Warning | Error rate (0, 5%] or request latency (100ms, 200ms] |
-| Red | Abnormal | Error rate (5%, 100%] or request latency (200ms, +Infinity) |
+| Orange | Warning | Error rate (0, 5%) or request latency (100ms, 200ms) |
+| Red | Abnormal | Error rate (5%, 100%) or request latency (200ms, +Infinity) |
 
 ## Connection Status Explanation
 
 | Color | Status | Rules |
 | ----- | ------ | ----- |
 | Green | Healthy | Error rate equals 0% and request latency is less than 100ms |
-| Orange | Warning | Error rate (0, 5%] or request latency (100ms, 200ms] |
-| Red | Abnormal | Error rate (5%, 100%] or request latency (200ms, +Infinity) |
+| Orange | Warning | Error rate (0, 5%) or request latency (100ms, 200ms) |
+| Red | Abnormal | Error rate (5%, 100%) or request latency (200ms, +Infinity) |
