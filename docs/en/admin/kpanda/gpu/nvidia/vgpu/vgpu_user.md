@@ -55,9 +55,9 @@ spec:
             limits:
               nvidia.com/gpucores: '20'   # Request 20% of GPU cores for each card
               nvidia.com/gpumem: '200'   # Request 200MB of GPU memory for each card
-              nvidia.com/vgpu: '1'   # Request 1 GPU card
+              nvidia.com/vgpu: '1'   # Request 1 GPU
           imagePullPolicy: Always
       restartPolicy: Always
 ```
 
-This YAML configuration requests the application to use vGPU resources. It specifies that each card should utilize 20% of GPU cores, 200MB of GPU memory, and requests 1 GPU card.
+This YAML configuration requests the application to use vGPU resources. It specifies that each card should utilize 20% of GPU cores, 200MB of GPU memory, and requests 1 GPU.

@@ -39,7 +39,7 @@ and scheduled automatic backups using CronJobs.
     all resources under a namespace or filtering resources by specific labels.
 
     Application backup also supports cross-cluster backup of stateful applications.
-    For detailed steps, refer to the [Backup and Restore MySQL Applications and Data Across Clusters](../../best-practice/backup-mysql-on-nfs.md) guide.
+    For detailed steps, refer to the [Backup and Restore MySQL Applications and Data Across Clusters](../best-practice/backup-mysql-on-nfs.md) guide.
 
 - etcd Backup
 
@@ -49,4 +49,4 @@ and scheduled automatic backups using CronJobs.
 
     It's worth noting that currently, restoring etcd backup data is only supported within the same
     cluster (the original cluster). To learn more about related best practices, refer to the
-    [ETCD Backup and Restore](../../best-practice/etcd-backup.md) guide.
+    [ETCD Backup and Restore](../best-practice/etcd-backup.md) guide.

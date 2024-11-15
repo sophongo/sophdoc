@@ -8,7 +8,7 @@ Date: 2024-06-05
 etcd backup is based on cluster data as the core backup. In cases such as hardware device damage, development and test configuration errors, etc., the backup cluster data can be restored through etcd backup.
 
 This section will introduce how to realize the etcd backup for clusters.
-Also see [etcd Backup and Restore Best Practices](../../best-practice/etcd-backup.md).
+Also see [etcd Backup and Restore Best Practices](../best-practice/etcd-backup.md).
 
 ## Prerequisites
 
@@ -22,7 +22,6 @@ Also see [etcd Backup and Restore Best Practices](../../best-practice/etcd-backu
   For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 
 - Prepared a MinIO instance. It is recommended to create it through AI platform's MinIO middleware.
-  For specific steps, refer to [MinIO Object Storage](../../../middleware/minio/user-guide/create.md).
 
 ## Create etcd backup
 

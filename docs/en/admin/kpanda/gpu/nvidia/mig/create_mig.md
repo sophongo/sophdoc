@@ -10,7 +10,7 @@ This section describes how to enable NVIDIA MIG features. NVIDIA currently provi
 - **Single mode** : Nodes expose a single type of MIG device on all their GPUs.
 - **Mixed mode** : Nodes expose a mixture of MIG device types on all their GPUs.
 
-For more details, refer to the [NVIDIA GPU Card Usage Modes](../index.md).
+For more details, refer to the [NVIDIA GPU Usage Modes](../index.md).
 
 ## Prerequisites
 

@@ -83,11 +83,11 @@ Container setting is divided into six parts: basic information, life cycle, heal
       for CPU/memory resources. Configure resources for the container as needed to avoid resource waste and system failures 
       caused by container resource overages. Default values are shown in the figure.
     - GPU Configuration: Configure GPU usage for the container, supporting only positive integers. 
-      The GPU quota setting supports configuring the container to exclusively use an entire GPU card or part of a vGPU.
-      For example, for a GPU card with 8 cores, entering the number __8__ means the container exclusively uses the entire card, 
+      The GPU quota setting supports configuring the container to exclusively use an entire GPU or part of a vGPU.
+      For example, for a GPU with 8 cores, entering the number __8__ means the container exclusively uses the entire card, 
       and entering the number __1__ means configuring 1 core of the vGPU for the container.
     
-    > Before setting the GPU, the administrator needs to pre-install the GPU card and driver plugin on the cluster node 
+    > Before setting the GPU, the administrator needs to pre-install the GPU and driver plugin on the cluster node 
       and enable the GPU feature in the [Cluster Settings](../clusterops/cluster-settings.md).
 
 === "Lifecycle (optional)"

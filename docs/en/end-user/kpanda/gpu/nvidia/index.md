@@ -1,4 +1,4 @@
-# NVIDIA GPU Card Usage Modes
+# NVIDIA GPU Usage Modes
 
 NVIDIA, as a well-known graphics computing provider, offers various software and hardware solutions to enhance computational power. Among them, NVIDIA provides the following three solutions for GPU usage:
 

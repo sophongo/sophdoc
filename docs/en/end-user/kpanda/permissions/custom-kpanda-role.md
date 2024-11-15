@@ -22,7 +22,7 @@ Before adding RBAC rules to system roles, the following prerequisites must be me
 - Container management v0.27.0 and above.
 - [Integrated Kubernetes cluster](../clusters/integrate-cluster.md) or
   [created Kubernetes cluster](../clusters/create-cluster.md), and able to access the cluster's UI interface.
-- Completed creation of a [namespace](../namespaces/createns.md) and [user account](../../../ghippo/access-control/user.md),
+- Completed creation of a [namespace](../namespaces/createns.md) and [user account](../../ghippo/access-control/user.md),
   and the granting of [NS Viewer](./permission-brief.md#ns-viewer).
   For details, refer to [namespace authorization](./cluster-ns-auth.md).
 

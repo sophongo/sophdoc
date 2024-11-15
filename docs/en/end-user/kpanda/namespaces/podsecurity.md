@@ -17,7 +17,7 @@ This section will introduce how to configure Pod security policies for namespace
 
 - The container management module has [integrated a Kubernetes cluster](../clusters/integrate-cluster.md) or [created a Kubernetes cluster](../clusters/create-cluster.md). The cluster version needs to be v1.22 or above, and you should be able to access the cluster's UI interface.
 
-- A [namespace has been created](../namespaces/createns.md), a [user has been created](../../../ghippo/access-control/user.md), and the user has been granted [NS Admin](../permissions/permission-brief.md) or higher permissions. For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
+- A [namespace has been created](../namespaces/createns.md), a [user has been created](../../ghippo/access-control/user.md), and the user has been granted [NS Admin](../permissions/permission-brief.md) or higher permissions. For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 
 ## Configure Pod Security Policies for Namespace
 

@@ -13,7 +13,7 @@ This section describes how to use Iluvatar virtual GPU on AI platform.
 
 ### Configuration via User Interface
 
-1. Check if the GPU card in the cluster has been detected. Click __Clusters__ -> __Cluster Settings__ -> __Addon Plugins__ , and check if the proper GPU type has been automatically enabled and detected.
+1. Check if the GPU in the cluster has been detected. Click __Clusters__ -> __Cluster Settings__ -> __Addon Plugins__ , and check if the proper GPU type has been automatically enabled and detected.
    Currently, the cluster will automatically enable __GPU__ and set the GPU type as __Iluvatar__ .
 
    

@@ -22,7 +22,7 @@ In general, NVIDIA MIG is suitable for scenarios that require finer-grained allo
 
 ## Overview of MIG
 
-NVIDIA Multi-Instance GPU (MIG) is a new feature introduced by NVIDIA on H100, A100, and A30 series GPUs. Its purpose is to divide a physical GPU into multiple GPU instances to provide finer-grained resource sharing and isolation. MIG can split a GPU into up to seven GPU instances, allowing a single physical GPU card to provide separate GPU resources to multiple users, maximizing GPU utilization.
+NVIDIA Multi-Instance GPU (MIG) is a new feature introduced by NVIDIA on H100, A100, and A30 series GPUs. Its purpose is to divide a physical GPU into multiple GPU instances to provide finer-grained resource sharing and isolation. MIG can split a GPU into up to seven GPU instances, allowing a single physical GPU to provide separate GPU resources to multiple users, maximizing GPU utilization.
 
 This feature enables multiple applications or users to share GPU resources simultaneously, improving the utilization of computational resources and increasing system scalability.
 
@@ -34,7 +34,7 @@ MIG allows multiple vGPUs (and virtual machines) to run in parallel on a single 
 
 ## MIG Architecture
 
-The following diagram provides an overview of MIG, illustrating how it virtualizes one physical GPU card into seven GPU instances that can be used by multiple users.
+The following diagram provides an overview of MIG, illustrating how it virtualizes one physical GPU into seven GPU instances that can be used by multiple users.
 
 
 
