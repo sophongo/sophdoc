@@ -543,9 +543,9 @@ Refer to the [Install Velero Plugin](../backup/install-velero.md) documentation 
 1. Add a unique label, __backup=mysql__ , to the MySQL application and PVC data. This will facilitate resource selection during backup.
 
     ```
-    kubectl label deploy mysql-deploy backup=mysql #为 __mysql-deploy__ 负载添加标签
-    kubectl label pod mysql-deploy-5d6f94cb5c-gkrks backup=mysql #为 mysql pod 添加标签
-    kubectl label pvc mydata backup=mysql #为 mysql 的 pvc 添加标签
+    kubectl label deploy mysql-deploy backup=mysql # Add label to mysql-deploy
+    kubectl label pod mysql-deploy-5d6f94cb5c-gkrks backup=mysql # Add label to mysql pod
+    kubectl label pvc mydata backup=mysql # Add label to mysql pvc
     ```
 
 2. Refer to the steps described in [Application Backup](../backup/deployment.md#application-backup) and the parameters below to create an application backup.
@@ -585,9 +585,9 @@ Refer to the [Install Velero Plugin](../backup/install-velero.md) documentation 
 
 4. Refresh the backup plan list and wait for the backup plan execution to complete.
 
-## 验证数据是否成功恢复
+## Check if the data is restored successfully
 
-1. 登录 __recovery-cluster__ 集群的控制节点，查看 __mysql-deploy__ 负载是否已经成功备份到当前集群。
+1. Log in to the control plane of __recovery-cluster__ , check if __mysql-deploy__ is successfully backed up in the current cluster.
 
     ```bash
     kubectl get pod
@@ -606,7 +606,7 @@ Refer to the [Install Velero Plugin](../backup/install-velero.md) documentation 
     kubectl exec deploy/mysql-deploy -- mysql -uroot -pdangerous -e "SELECT * FROM test.users;"
     ```
 
-    Expected output如下：
+    Expected output is as follows：
     ```
     [root@g-master1 ~]# kubectl exec deploy/mysql-deploy -- mysql -uroot -pdangerous -e "SELECT * FROM test.users;"
     mysql: [Warning] Using a password on the command line interface can be insecure.
