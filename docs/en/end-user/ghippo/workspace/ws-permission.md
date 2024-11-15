@@ -44,7 +44,6 @@ Generally applicable to the following two use cases:
 | - | Using Shared Resources [^1] | &check; | &cross; | &cross; |
 
 [^1]:
-     Authorized users can go to modules such as workbench, microservice engine, middleware, multicloud orchestration, and service mesh to use resources in the workspace.
      For the operation scope of the roles of Workspace Admin, Workspace Editor, and Workspace Viewer in each module, please refer to the permission description:
 
      - [Container Management Permissions](../../../kpanda/permissions/permission-brief.md)

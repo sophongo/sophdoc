@@ -33,5 +33,3 @@ Follow the steps below to create a folder:
     To edit or delete a specific folder, select it and Click __┇__ on the right side.
 
     - If there are resources bound to the resource group or shared resources within the folder, the folder cannot be deleted. All resources need to be unbound before deleting.
-
-    - If there are registry resources accessed by the microservice engine module within the folder, the folder cannot be deleted. All access to the registry needs to be removed before deleting the folder.

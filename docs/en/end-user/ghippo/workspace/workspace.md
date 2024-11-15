@@ -36,7 +36,3 @@ Follow the steps below to create a workspace:
     To edit or delete a specific workspace or folder, select it and click __...__ on the right side.
 
     - If resource groups and shared resources have resources under the workspace, the workspace cannot be deleted. All resources need to be unbound before deletion of the workspace.
-
-    - If Microservices Engine has Integrated Registry under the workspace, the workspace cannot be deleted. Integrated Registry needs to be removed before deletion of the workspace.
-
-    - If Container Registry has Registry Space or Integrated Registry under the workspace, the workspace cannot be deleted. Registry Space needs to be removed, and Integrated Registry needs to be deleted before deletion of the workspace.
