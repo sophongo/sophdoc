@@ -267,7 +267,7 @@ Everywhere you pass http.Handler to ServeMux you will wrap the handler function.
 + mux.Handle("/path", otelhttp.NewHandler(http.HandlerFunc(f), "description of path"))
 ```
 
-In this way, you can ensure that each feature wrapped with othttp will automatically collect its metadata and start the corresponding trace.
+In this way, you can ensure that each feature wrapped with othttp will automatically collect its metadata and start the proper trace.
 
 ## database enhancements
 

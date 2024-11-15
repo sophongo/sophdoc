@@ -281,7 +281,7 @@ The following YAML file contains various probers such as HTTP, TCP, SMTP, ICMP, 
             timeout: 5s
             dns:
               query_name: "www.prometheus.io"                 # domain name to resolve
-              query_type: "A"              # type corresponding to this domain
+              query_type: "A"              # type proper to this domain
               valid_rcodes:
               - NOERROR
               validate_answer_rrs:

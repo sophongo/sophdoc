@@ -15,7 +15,7 @@ For more details, refer to the [NVIDIA GPU Card Usage Modes](../index.md).
 ## Prerequisites
 
 - Check the system requirements for the GPU driver installation on the target node: [GPU Support Matrix](../../gpu_matrix.md)
-- Ensure that the cluster nodes have GPUs of the corresponding models
+- Ensure that the cluster nodes have GPUs of the proper models
   ([NVIDIA H100](https://www.nvidia.com/en-us/data-center/h100/),
   [A100](https://www.nvidia.com/en-us/data-center/a100/),
   and [A30](https://www.nvidia.com/en-us/data-center/products/a30-gpu/) Tensor Core GPUs).

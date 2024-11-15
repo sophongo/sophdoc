@@ -35,7 +35,7 @@ This is the user documentation for the Suanova AI Platform aimed at end users.
     - [K8s Clusters on Cloud](./kpanda/clusters/integrate-cluster.md)
     - [Node Management](./kpanda/nodes/labels-annotations.md)
     - [Workloads](./kpanda/workloads/create-deployment.md)
-    - [Helm Applications and Templates](./kpanda/helm/README.md)
+    - [Helm Apps and Templates](./kpanda/helm/README.md)
 
 - :simple-smart:{ .lg .middle } __AI Lab__
 

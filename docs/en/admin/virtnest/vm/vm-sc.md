@@ -154,7 +154,7 @@ Before using virtual machine storage functionality, different storage needs to b
 
 2. Data Disk: The data disk is a storage device in the virtual machine used to store user data, application data, or other files unrelated to the operating system. Compared to the system disk, the data disk is optional and can be dynamically added or removed as needed. The capacity of the data disk can also be flexibly configured according to requirements.
 
-    Block storage is used by default. If you need to use cloning and snapshot functions, make sure that your storage pool has created the corresponding VolumeSnapshotClass, as shown in the example below. If you need to use real-time migration, make sure that your storage supports and has selected the ReadWriteMany access mode.
+    Block storage is used by default. If you need to use cloning and snapshot functions, make sure that your storage pool has created the proper VolumeSnapshotClass, as shown in the example below. If you need to use real-time migration, make sure that your storage supports and has selected the ReadWriteMany access mode.
 
     In most cases, such VolumeSnapshotClass is not automatically created during the installation process, so you need to manually create VolumeSnapshotClass.
     Here is an example of creating a VolumeSnapshotClass in HwameiStor:

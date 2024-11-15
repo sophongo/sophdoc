@@ -18,7 +18,7 @@ Before using the cloning feature, the following prerequisites must be met (which
 
 ## Cloning a Cloud Host
 
-1. Click on __Container Management__ in the left navigation bar, then click on __Cloud Hosts__ to enter the list page. Click on the __┇__ on the right side of the list to perform snapshot operations on cloud hosts that are not in an error state.
+1. Click__Container Management__ in the left navigation bar, then click__Cloud Hosts__ to enter the list page. Clickthe __┇__ on the right side of the list to perform snapshot operations on cloud hosts that are not in an error state.
 
 
 2. A popup will appear, requiring you to fill in the name and description for the new cloud host being cloned. The cloning operation may take some time, depending on the size of the cloud host and storage performance.

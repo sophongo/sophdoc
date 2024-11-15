@@ -13,14 +13,11 @@ Once a user is bound to a workspace, resources can be allocated to the workspace
 2. [Create a workspace and namespace, and bind users](../register/bindws.md).
 3. [Allocate resource quotas to the workspace](../register/wsres.md#quota).
 
-    ![quota to ws](../images/quota01.png)
 
 4. Manage the resource quotas for the namespace `test-ns-1`, ensuring that the values do not exceed the workspace's quota.
 
-    ![quota to ns](../images/quota02.png)
 
 5. Log in to the AI platform as a **User** to check if they have been assigned the `test-ns-1` namespace.
 
-    ![check ns](../images/quota03.png)
 
 Next step: [Create AI Workloads Using GPUs](./workload.md)

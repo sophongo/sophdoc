@@ -178,7 +178,7 @@ You only need to restore the data of one node, and the etcd data of other nodes 
     mv /tmp/etcd.yaml /etc/kubernetes/manifests/etcd.yaml
     ```
 
-    Then wait for the etcd service to finish starting, and check the status of etcd. The default directory of etcd-related certificates is: __/etc/kubernetes/ssl__ . If the cluster certificate is stored in another location, specify the corresponding path.
+    Then wait for the etcd service to finish starting, and check the status of etcd. The default directory of etcd-related certificates is: __/etc/kubernetes/ssl__ . If the cluster certificate is stored in another location, specify the proper path.
 
     - Check the etcd cluster list:
 

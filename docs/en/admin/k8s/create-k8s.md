@@ -69,7 +69,7 @@ Deploying a Kubernetes cluster is aimed at supporting efficient AI computing res
 
         ![confirm](../images/k8s12.png)
 
-8. You will automatically return to the Helm application list. Wait for the status of `metax-gpu-extensions` to change to **Deployed**.
+8. You will automatically return to the Helm App list. Wait for the status of `metax-gpu-extensions` to change to **Deployed**.
 
     ![deployed](../images/k8s13.png)
 

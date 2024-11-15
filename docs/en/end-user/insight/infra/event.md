@@ -12,7 +12,7 @@ You can also customize the sampling interval from 1 minute to 5 hours.
 
 The event status distribution chart provides a visual representation of the intensity and dispersion of events.
 This helps in evaluating and preparing for subsequent cluster operations and maintenance tasks.
-If events are densely concentrated during specific time periods, you may need to allocate more resources or take corresponding measures to ensure cluster stability and high availability.
+If events are densely concentrated during specific time periods, you may need to allocate more resources or take proper measures to ensure cluster stability and high availability.
 On the other hand, if events are dispersed, you can effectively schedule other maintenance tasks such as system optimization, upgrades, or handling other tasks during this period.
 
 By considering the event status distribution chart and the selected time range, you can better plan and manage your cluster operations and maintenance work, ensuring system stability and reliability.

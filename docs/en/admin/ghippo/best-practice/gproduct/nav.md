@@ -49,7 +49,7 @@ Refer to the following steps to dock the GProduct:
     AI platform frontend uses [qiankun](https://qiankun.umijs.org) to connect the sub-applications UI.
     See [getting started](https://qiankun.umijs.org/guide/getting-started).
 
-    After registering the GProductNavigator CR, the corresponding registration information will be generated for the front-end parent application. For example, `kpanda` will generate the following registration information:
+    After registering the GProductNavigator CR, the proper registration information will be generated for the front-end parent application. For example, `kpanda` will generate the following registration information:
 
     ```go
     {
@@ -61,7 +61,7 @@ Refer to the following steps to dock the GProduct:
     },
     ```
 
-    The corresponding relation between the above registration and the qiankun sub-application fields is:
+    The proper relation between the above registration and the qiankun sub-application fields is:
 
     ```yaml
     {

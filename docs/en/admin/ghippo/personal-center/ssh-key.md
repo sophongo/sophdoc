@@ -55,7 +55,7 @@ there is no available SSH key locally and a new SSH key needs to be generated. P
     Enter file in which to save the key (/home/user/.ssh/id_ed25519):
     ```
    
-    The default key generation path is `/home/user/.ssh/id_ed25519`, and the corresponding public key is `/home/user/.ssh/id_ed25519.pub`.
+    The default key generation path is `/home/user/.ssh/id_ed25519`, and the proper public key is `/home/user/.ssh/id_ed25519.pub`.
 
 4. Set a passphrase for the key.
 

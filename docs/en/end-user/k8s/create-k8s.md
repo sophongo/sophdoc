@@ -34,7 +34,7 @@ Deploying a Kubernetes cluster is aimed at supporting efficient AI computing res
 
 
 
-8. Automatically return to the Helm application list and wait for the status of metax-gpu-extensions to change to **Deployed**.
+8. Automatically return to the Helm App list and wait for the status of metax-gpu-extensions to change to **Deployed**.
 
 
 9. At this point, the cluster has been successfully created. You can check the nodes included in the cluster. You can now [create AI workloads and use GPUs](../share/workload.md).

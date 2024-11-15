@@ -55,7 +55,7 @@ This article explains how to upload Helm charts. See the steps below.
     
         By default, the cluster does not enable **Helm Repository Auto-Refresh**, so you need to perform a manual sync operation. The general steps are:
 
-        Go to **Helm Applications** -> **Helm Repositories**, click the **┇** button on the right side of the repository list, and select **Sync Repository** to complete the repository data synchronization.
+        Go to **Helm Apps** -> **Helm Repositories**, click the **┇** button on the right side of the repository list, and select **Sync Repository** to complete the repository data synchronization.
 
         ![Upload Helm Chart](../../images/upload-helm-02.png)
 

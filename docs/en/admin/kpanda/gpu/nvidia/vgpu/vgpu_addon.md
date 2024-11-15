@@ -5,7 +5,7 @@ This section explains how to install the vGPU plugin in the AI platform platform
 
 ## Prerequisites
 
-- Refer to the [GPU Support Matrix](../../gpu_matrix.md) to confirm that the nodes in the cluster have GPUs of the corresponding models.
+- Refer to the [GPU Support Matrix](../../gpu_matrix.md) to confirm that the nodes in the cluster have GPUs of the proper models.
 - The current cluster has deployed NVIDIA drivers through the Operator. For specific instructions, refer to [Offline Installation of GPU Operator](../install_nvidia_driver_of_operator.md).
 
 ## Procedure

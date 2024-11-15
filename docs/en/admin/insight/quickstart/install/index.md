@@ -20,7 +20,7 @@ this guide specifically provides instructions on enabling observability for inte
 
 As a unified observability platform for multiple clusters, Insight's resource consumption of certain components 
 is closely related to the data of cluster creation and the number of integrated clusters.
-When installing insight-agent, it is necessary to adjust the resources of the corresponding components based on the cluster size.
+When installing insight-agent, it is necessary to adjust the resources of the proper components based on the cluster size.
 
 1. Adjust the CPU and memory resources of the __Prometheus__ collection component in insight-agent
    according to the size of the cluster created or integrated. Please refer to

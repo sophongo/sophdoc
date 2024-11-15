@@ -20,7 +20,7 @@ after a period of inactivity. This helps free up resources when a notebook is no
 
 Currently, configuration changes must be made manually, but more convenient options will be available in the future.
 
-To modify the deployment parameters of `baize-agent` in your worker cluster, update the Helm application.
+To modify the deployment parameters of `baize-agent` in your worker cluster, update the Helm App.
 
 ### Modify on UI
 

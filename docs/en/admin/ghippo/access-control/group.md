@@ -4,7 +4,7 @@ A group is a collection of users. By joining a group, a user can inherit the rol
 
 ## Use cases
 
-When a user's permission changes, it only needs to be moved to the corresponding group without affecting other users.
+When a user's permission changes, it only needs to be moved to the proper group without affecting other users.
 
 When the permissions of a group change, you only need to modify the role permissions of the group to apply to all users in the group.
 

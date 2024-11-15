@@ -155,5 +155,5 @@ Go to __Container Management__ -> __Backup Recovery__ -> __etcd Backup__ , click
 1. Go to __Container Management__ -> __Backup Recovery__ -> __etcd Backup__, and click the __Recovery Point__ tab.
 2. After selecting the target cluster, you can view all the backup information under that cluster.
 
-    Each time a backup is executed, a corresponding recovery point is generated, which can be used to quickly restore
+    Each time a backup is executed, a proper recovery point is generated, which can be used to quickly restore
     the application from a successful recovery point.

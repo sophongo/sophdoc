@@ -22,11 +22,11 @@ Node affinity is conceptually similar to __nodeSelector__ , which allows you to 
 
 - **Must be satisfied: ( __requiredDuringSchedulingIgnoredDuringExecution__ )** The scheduler can only run scheduling when the rules are satisfied. This functionality is similar to __nodeSelector__ , but with a more expressive syntax. You can define multiple hard constraint rules, but only one of them must be satisfied.
 
-- **Satisfy as much as possible: ( __preferredDuringSchedulingIgnoredDuringExecution__ )** The scheduler will try to find nodes that meet the corresponding rules. If no matching node is found, the scheduler will still schedule the Pod. You can also set weights for soft constraint rules. During specific scheduling, if there are multiple nodes that meet the conditions, the node with the highest weight will be scheduled first. At the same time, you can also define multiple hard constraint rules, but only one of them needs to be satisfied.
+- **Satisfy as much as possible: ( __preferredDuringSchedulingIgnoredDuringExecution__ )** The scheduler will try to find nodes that meet the proper rules. If no matching node is found, the scheduler will still schedule the Pod. You can also set weights for soft constraint rules. During specific scheduling, if there are multiple nodes that meet the conditions, the node with the highest weight will be scheduled first. At the same time, you can also define multiple hard constraint rules, but only one of them needs to be satisfied.
 
 #### Tag name
 
-The label corresponding to the node can use the default label or user-defined label.
+The label proper to the node can use the default label or user-defined label.
 
 #### Operators
 
@@ -46,13 +46,13 @@ It can only be added in the "as far as possible" policy, which can be understood
 Similar to node affinity, there are two types of workload affinity:
 
 - **Must be satisfied: (requiredDuringSchedulingIgnoredDuringExecution)** The scheduler can only run scheduling when the rules are satisfied. This functionality is similar to __nodeSelector__ , but with a more expressive syntax. You can define multiple hard constraint rules, but only one of them must be satisfied.
-- **Satisfy as much as possible: (preferredDuringSchedulingIgnoredDuringExecution)** The scheduler will try to find nodes that meet the corresponding rules. If no matching node is found, the scheduler will still schedule the Pod. You can also set weights for soft constraint rules. During specific scheduling, if there are multiple nodes that meet the conditions, the node with the highest weight will be scheduled first. At the same time, you can also define multiple hard constraint rules, but only one of them needs to be satisfied.
+- **Satisfy as much as possible: (preferredDuringSchedulingIgnoredDuringExecution)** The scheduler will try to find nodes that meet the proper rules. If no matching node is found, the scheduler will still schedule the Pod. You can also set weights for soft constraint rules. During specific scheduling, if there are multiple nodes that meet the conditions, the node with the highest weight will be scheduled first. At the same time, you can also define multiple hard constraint rules, but only one of them needs to be satisfied.
 
 The affinity of the workload is mainly used to determine which Pods of the workload can be deployed in the same topology domain. For example, services that communicate with each other can be deployed in the same topology domain (such as the same availability zone) by applying affinity scheduling to reduce the network delay between them.
 
 #### Tag name
 
-The label corresponding to the node can use the default label or user-defined label.
+The label proper to the node can use the default label or user-defined label.
 
 #### Namespaces
 
@@ -74,13 +74,13 @@ Specify the scope of influence during scheduling. If you specify kubernetes.io/C
 Similar to node affinity, there are two types of anti-affinity for workloads:
 
 - **Must be satisfied: (requiredDuringSchedulingIgnoredDuringExecution)** The scheduler can only run scheduling when the rules are satisfied. This functionality is similar to __nodeSelector__ , but with a more expressive syntax. You can define multiple hard constraint rules, but only one of them must be satisfied.
-- **Satisfy as much as possible: (preferredDuringSchedulingIgnoredDuringExecution)** The scheduler will try to find nodes that meet the corresponding rules. If no matching node is found, the scheduler will still schedule the Pod. You can also set weights for soft constraint rules. During specific scheduling, if there are multiple nodes that meet the conditions, the node with the highest weight will be scheduled first. At the same time, you can also define multiple hard constraint rules, but only one of them needs to be satisfied.
+- **Satisfy as much as possible: (preferredDuringSchedulingIgnoredDuringExecution)** The scheduler will try to find nodes that meet the proper rules. If no matching node is found, the scheduler will still schedule the Pod. You can also set weights for soft constraint rules. During specific scheduling, if there are multiple nodes that meet the conditions, the node with the highest weight will be scheduled first. At the same time, you can also define multiple hard constraint rules, but only one of them needs to be satisfied.
 
 The anti-affinity of the workload is mainly used to determine which Pods of the workload cannot be deployed in the same topology domain. For example, the same Pod of a load is distributed to different topological domains (such as different hosts) to improve the stability of the workload itself.
 
 #### Tag name
 
-The label corresponding to the node can use the default label or user-defined label.
+The label proper to the node can use the default label or user-defined label.
 
 #### Namespaces
 

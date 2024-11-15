@@ -167,7 +167,7 @@ In this case, the LoadBalancer resources mentioned above will not be created by 
 - common-es (logging service)
 - insight-opentelemetry-collector (tracing service)
 
-After obtaining the corresponding port information for the services in the above two scenarios, make the following settings:
+After obtaining the proper port information for the services in the above two scenarios, make the following settings:
 
 ```shell
 --set global.exporters.logging.host=  # (1)!

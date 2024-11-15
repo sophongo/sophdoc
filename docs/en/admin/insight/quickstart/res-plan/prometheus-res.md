@@ -61,4 +61,4 @@ The following resource planning is recommended by Prometheus in the scenario of 
         a certain amount of memory will be occupied, and resources surge ratio is recommended to be set to 2.
     3. The data in the table are recommended values, applicable to general situations.
         If the environment has precise resource requirements, it is recommended to check the resource usage of
-        the corresponding Prometheus after the cluster has been running for a period of time for precise configuration.
+        the proper Prometheus after the cluster has been running for a period of time for precise configuration.

@@ -42,7 +42,7 @@ Follow these steps to build the vGPU Manager image and push it to the container 
     git clone https://gitlab.com/nvidia/container-images/driver cd driver
     ```
 
-3. Switch to the vgpu-manager directory corresponding to your operating system.
+3. Switch to the vgpu-manager directory proper to your operating system.
 
     ```bash
     cd vgpu-manager/<your-os>

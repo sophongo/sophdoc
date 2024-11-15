@@ -9,7 +9,7 @@ This page describes how to create deployments through images and YAML files.
 
 [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) is a common resource in Kubernetes, mainly [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) provide declarative updates, support elastic scaling, rolling upgrades, and version rollbacks features. Declare the desired Pod state in the Deployment, and the Deployment Controller will modify the current state through the ReplicaSet to make it reach the pre-declared desired state. Deployment is stateless and does not support data persistence. It is suitable for deploying stateless applications that do not need to save data and can be restarted and rolled back at any time.
 
-Through the container management module of AI platform, workloads on multicloud and multiclusters can be easily managed based on corresponding role permissions, including the creation of deployments, Full life cycle management such as update, deletion, elastic scaling, restart, and version rollback.
+Through the container management module of AI platform, workloads on multicloud and multiclusters can be easily managed based on proper role permissions, including the creation of deployments, Full life cycle management such as update, deletion, elastic scaling, restart, and version rollback.
 
 ## Prerequisites
 

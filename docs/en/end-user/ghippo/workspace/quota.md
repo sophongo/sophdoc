@@ -105,7 +105,7 @@ The two methods of unbinding have the same effect.
     - If no resource quotas are set in the shared cluster, unbinding the namespace ns01 will not affect the
       resource quotas, regardless of whether resource quotas were set for the namespace.
     - If resource quotas (__CPU Request = 100 cores__) are set in the shared cluster and the namespace ns01
-      has its own resource quotas, unbinding will release the corresponding resource quota.
+      has its own resource quotas, unbinding will release the proper resource quota.
 
 - Unbind the namespace ns01 from workspace ws01 in Global Management.
 
@@ -114,4 +114,4 @@ The two methods of unbinding have the same effect.
     - If no resource quotas are set in the shared cluster, unbinding the namespace ns01 will not affect the
       resource quotas, regardless of whether resource quotas were set for the namespace.
     - If resource quotas (__CPU Request = 100 cores__) are set in the shared cluster and the namespace ns01
-      has its own resource quotas, unbinding will release the corresponding resource quota.
+      has its own resource quotas, unbinding will release the proper resource quota.

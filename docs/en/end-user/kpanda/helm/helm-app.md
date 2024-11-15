@@ -62,7 +62,7 @@ Follow the steps below to update the Helm app.
 
      
 
-4. After modifying the corresponding arguments. You can click the __Change__ button under the argument configuration to compare the files before and after the modification. After confirming that there is no error, click the __OK__ button at the bottom to complete the update of the Helm app.
+4. After modifying the proper arguments. You can click the __Change__ button under the argument configuration to compare the files before and after the modification. After confirming that there is no error, click the __OK__ button at the bottom to complete the update of the Helm app.
 
      
 

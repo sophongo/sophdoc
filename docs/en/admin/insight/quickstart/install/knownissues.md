@@ -26,7 +26,7 @@ it checks whether `MutationConfiguration` exists and reuses the CA cert bound in
 MutationConfiguration. However, since `helm uninstall` has uninstalled `MutationConfiguration`,
 it results in a null value.
 
-Therefore, please manually delete the corresponding `secret` using one of the following methods:
+Therefore, please manually delete the proper `secret` using one of the following methods:
 
 - **Delete via command line**: Log in to the console of the target cluster and run the following command:
 
@@ -57,7 +57,7 @@ Manually restart Fluent Bit in the cluster.
 
 1. In this version, there is a defect in **PodMonitor/insight-kubernetes-pod**: it will incorrectly
    create Jobs to collect metrics for all containers in Pods that are marked with
-   `insight.opentelemetry.io/metric-scrape=true`, instead of only the containers corresponding
+   `insight.opentelemetry.io/metric-scrape=true`, instead of only the containers proper
    to `insight.opentelemetry.io/metric-port`.
 
 2. After PodMonitor is declared, **PrometheusOperator** will pre-configure some service discovery configurations.

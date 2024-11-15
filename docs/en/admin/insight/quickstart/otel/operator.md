@@ -15,7 +15,7 @@ and make sure the following three items are ready:
 
 - Enable trace functionality for insight-agent
 - Check if the address and port for trace data are correctly filled
-- Ensure that the Pods corresponding to deployment/insight-agent-opentelemetry-operator and
+- Ensure that the Pods proper to deployment/insight-agent-opentelemetry-operator and
   deployment/insight-agent-opentelemetry-collector are ready
 
 ## Install Instrumentation CR
@@ -329,7 +329,7 @@ different pod annotations need to be added. Each service can add one of two type
 
 - Automatic probe injection and environment variable injection annotations
 
-    There are currently 4 such annotations, corresponding to 4 different programming languages: java, nodejs, 
+    There are currently 4 such annotations, proper to 4 different programming languages: java, nodejs, 
     python, dotnet. After using it, automatic probes and otel default environment variables will be 
     injected into the first container under spec.pod:
 

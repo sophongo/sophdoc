@@ -60,7 +60,7 @@ If using rook-ceph as storage, it needs to be configured in ReadWriteOnce mode:
 
     Replace `<vm name>` and `<pv name>` with your virtual machine name and persistent volume name.
 
-2. Then delete the corresponding VolumeAttachment with the following command:
+2. Then delete the proper VolumeAttachment with the following command:
 
     ```sh
     kubectl delete VolumeAttachment <vm>

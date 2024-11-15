@@ -22,7 +22,7 @@ You can grant these external user identities permission to use AI platform resou
 
     ![Oauth2.0](../images/oauth2.png)
 
-## Corresponding fields in WeCom
+## proper fields in WeCom
 
 !!! note
 

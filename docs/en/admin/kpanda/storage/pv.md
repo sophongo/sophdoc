@@ -8,7 +8,7 @@ Currently, there are two ways to create data volumes: YAML and form. These two w
 
 - There are fewer steps and more efficient creation through YAML, but the threshold requirement is high, and you need to be familiar with the YAML file configuration of the data volume.
 
-- It is more intuitive and easier to create through the form, just fill in the corresponding values ​​according to the prompts, but the steps are more cumbersome.
+- It is more intuitive and easier to create through the form, just fill in the proper values ​​according to the prompts, but the steps are more cumbersome.
 
 ### YAML creation
 

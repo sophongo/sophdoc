@@ -78,7 +78,7 @@ If the storage volume expansion fails, you can refer to the following method to 
 
     ![Delete vmstorage](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/insight/quickstart/images/vmdisk14.png)
 
-6. Wait for a moment until the volume claim is bound to the cloned data volume, then run the following command to import the exported data from step 3 into the corresponding container, and then start the previously paused __vmstorage__ .
+6. Wait for a moment until the volume claim is bound to the cloned data volume, then run the following command to import the exported data from step 3 into the proper container, and then start the previously paused __vmstorage__ .
 
     ```bash
     kubectl cp -n insight-system ./vm-data vmstorage-insight-victoria-metrics-k8s-stack-1:vm-data

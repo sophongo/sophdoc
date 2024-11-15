@@ -28,7 +28,7 @@ This article will demonstrate how to deploy a K8s cluster with a lower version.
 
 - Go to [kubean](https://github.com/kubean-io/kubean) to view the released
   [artifacts](https://kubean-io.github.io/kubean/en/releases/artifacts/), and choose the specific artifact
-  version based on the actual situation. The currently supported artifact versions and their corresponding
+  version based on the actual situation. The currently supported artifact versions and their proper
   cluster version ranges are as follows:
 
     | Artifact Version | Cluster Range | AI platform Support |
@@ -89,7 +89,7 @@ skopeo copy ${SKOPEO_PARAMS} docker-archive:spray-job-2.21.tar docker://${REGIST
 
     1. The image spray-job can use the accelerator address here, and the image address is determined based on the selected artifact version
 
-3. Import the offline images and binary packages for the corresponding K8s version.
+3. Import the offline images and binary packages for the proper K8s version.
 
     ```bash
     # Import the binaries from the data directory to the minio in the bootstrap node
@@ -109,10 +109,10 @@ skopeo copy ${SKOPEO_PARAMS} docker-archive:spray-job-2.21.tar docker://${REGIST
     cd ./data
     kubectl apply -f data/localartifactset.cr.yaml
 
-    # Download the manifest resources corresponding to release-2.21
+    # Download the manifest resources proper to release-2.21
     wget https://raw.githubusercontent.com/kubean-io/kubean-manifest/main/manifests/manifest-2.21-d6f688f.yml
     
-    # Deploy the manifest resources corresponding to release-2.21
+    # Deploy the manifest resources proper to release-2.21
     kubectl apply -f manifest-2.21-d6f688f.yml
     ```
 
