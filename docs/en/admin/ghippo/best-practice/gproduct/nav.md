@@ -39,7 +39,7 @@ Refer to the following steps to dock the GProduct:
         url: /kpanda/backup
     ```
 
-    1. Only support one of overview, workbench, container, microservice, data service, and management
+    1. Only support one of overview, container, and management
     2. The larger the number, the higher it is ranked
 
     The configuration for the global management navigation bar __category__ is stored in a ConfigMap and cannot be added through registration at present. Please contact the global management team to add it.

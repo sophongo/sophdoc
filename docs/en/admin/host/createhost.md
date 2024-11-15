@@ -30,7 +30,7 @@ After the user completes registration and is assigned a workspace, namespace, an
 
         ![storage](../images/host05.png)
 
-4. After configuring the root password or SSH key, click **Confirm**
+4. After configuring the root password or SSH key, click **OK**
 
     ![pass](../images/host06.png)
 

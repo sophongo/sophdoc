@@ -13,7 +13,7 @@ A workspace consists of three features: authorization, resource groups, and shar
 
 1. Authorization: Grant users/groups different roles in the workspace, and apply the roles to the resources in the workspace.
 
-    Best practice: When ordinary users want to use Workbench, microservice engine, service mesh, and middleware module features, or need to have permission to use container management and some resources in the service mesh, the administrator needs to grant the workspace permissions (Workspace Admin, Workspace Edit, Workspace View).
+    Best practice: When users want to use container management, the administrator needs to grant the workspace permissions (Workspace Admin, Workspace Edit, Workspace View).
     The administrator here can be the Admin role, the Workspace Admin role of the workspace, or the Folder Admin role above the workspace.
     See [Relationship between Folder and Workspace](../workspace/ws-folder.md).
 

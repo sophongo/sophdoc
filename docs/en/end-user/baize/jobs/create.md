@@ -28,7 +28,7 @@ training jobs.
     ![Resource config](../images/job03.png)
 
 4. Optionally add labels, annotations, runtime env variables, and other job parameters. Select a scheduling policy 
-   and click **Confirm**.
+   and click **OK**.
 
     ![Advanced settings](../images/job04.png)
 

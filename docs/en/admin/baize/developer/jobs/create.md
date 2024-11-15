@@ -10,7 +10,7 @@ hide:
 Job management refers to the functionality of creating and managing job lifecycles through job scheduling 
 and control components.
 
-AI platform Smart Computing Capability adopts Kubernetes' Job mechanism to schedule various AI inference and 
+AI platform adopts Kubernetes' Job mechanism to schedule various AI inference and 
 training jobs.
 
 1. Click **Job Center** -> **Jobs** in the left navigation bar to enter the job list. Click the **Create** button 
@@ -28,7 +28,7 @@ training jobs.
     ![Resource config](../../images/job03.png)
 
 4. Optionally add labels, annotations, runtime env variables, and other job parameters. Select a scheduling policy 
-   and click **Confirm**.
+   and click **OK**.
 
     ![Advanced settings](../../images/job04.png)
 

@@ -819,11 +819,11 @@ plugins:
                 队列初始化失败: Queue Initialization Failed
                 开发者手册: Developer Manual
                 OpenAPI 访问密钥: OpenAPI Access Key
-                云主机 OpenAPI 文档: Cloud Host OpenAPI Docs
-                AI Lab OpenAPI 文档: AI Lab OpenAPI Docs
-                容器管理 OpenAPI 文档: Container Management OpenAPI Docs
-                可观测性 OpenAPI 文档: Insight OpenAPI Docs
-                全局管理 OpenAPI 文档: Global Management OpenAPI Docs
+                云主机 OpenAPI 文档: Cloud Host OpenAPI
+                AI Lab OpenAPI 文档: AI Lab OpenAPI
+                容器管理 OpenAPI 文档: Container Management OpenAPI
+                可观测性 OpenAPI 文档: Insight OpenAPI
+                全局管理 OpenAPI 文档: Global Management OpenAPI
                 安装 Velero 插件: Install Velero Plugin
                 应用备份: Backup Apps
                 ETCD 备份: ETCD Backup

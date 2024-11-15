@@ -42,7 +42,7 @@ spec:
   - name: queue-proxy
 ```
 
-![knative-request-flow](../../../images/knative-request-flow.png)
+![knative-request-flow](../../images/knative-request-flow.png)
 
 Request Flow:
 
