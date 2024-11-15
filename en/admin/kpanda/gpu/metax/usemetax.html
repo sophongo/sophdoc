@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#gpu">
+<a class="md-skip" href="#metax-gpu-component-installation-and-usage">
           Skip to content
         </a>
 </div>
@@ -463,26 +463,26 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#component-introduction">
 <span class="md-ellipsis">
-      组件介绍
+      Component Introduction
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#operation-steps">
 <span class="md-ellipsis">
-      操作步骤
+      Operation Steps
     </span>
 </a>
-<nav aria-label="操作步骤" class="md-nav">
+<nav aria-label="Operation Steps" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#gpu-extensions">
@@ -502,9 +502,9 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gpu_1">
+<a class="md-nav__link" href="#using-gpu">
 <span class="md-ellipsis">
-      使用 GPU
+      Using GPU
     </span>
 </a>
 </li>
@@ -609,26 +609,26 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#component-introduction">
 <span class="md-ellipsis">
-      组件介绍
+      Component Introduction
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#operation-steps">
 <span class="md-ellipsis">
-      操作步骤
+      Operation Steps
     </span>
 </a>
-<nav aria-label="操作步骤" class="md-nav">
+<nav aria-label="Operation Steps" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#gpu-extensions">
@@ -648,9 +648,9 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gpu_1">
+<a class="md-nav__link" href="#using-gpu">
 <span class="md-ellipsis">
-      使用 GPU
+      Using GPU
     </span>
 </a>
 </li>
@@ -661,91 +661,85 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="gpu">沐曦 GPU 组件安装与使用<a class="headerlink" href="#gpu" title="Permanent link">¶</a></h1>
-<p>本章节提供沐曦 gpu-extensions、gpu-operator 等组件的安装指导和沐曦 GPU 整卡和 vGPU 两种模式的使用方法。</p>
-<h2 id="_1">前提条件<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h1 id="metax-gpu-component-installation-and-usage">MetaX GPU Component Installation and Usage<a class="headerlink" href="#metax-gpu-component-installation-and-usage" title="Permanent link">¶</a></h1>
+<p>This chapter provides installation guidance for MetaX's gpu-extensions, gpu-operator, and other components, as well as usage methods for both the full GPU card and vGPU modes.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ol>
-<li>已在<a href="https://sw-download.metax-tech.com/software-list">沐曦软件中心</a>下载并安装所需的 tar 包，
-   本文以 metax-gpu-k8s-package.0.7.10.tar.gz 为例。</li>
-<li>准备 Kubernetes 基础环境</li>
+<li>The required tar package has been downloaded and installed from the <a href="https://sw-download.metax-tech.com/software-list">MetaX Software Center</a>. This article uses metax-gpu-k8s-package.0.7.10.tar.gz as an example.</li>
+<li>Prepare the basic Kubernetes environment.</li>
 </ol>
-<h2 id="_2">组件介绍<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>Metax 提供了两个 helm-chart 包，一个是 metax-extensions，一个是 gpu-operator，根据使用场景可选择安装不同的组件。</p>
+<h2 id="component-introduction">Component Introduction<a class="headerlink" href="#component-introduction" title="Permanent link">¶</a></h2>
+<p>Metax provides two helm-chart packages: metax-extensions and gpu-operator. Depending on the usage scenario, different components can be selected for installation.</p>
 <ol>
-<li>Metax-extensions：包含 gpu-device 和 gpu-label 两个组件。在使用 Metax-extensions 方案时，用户的应用容器镜像需要基于 MXMACA® 基础镜像构建。且 Metax-extensions 仅适用于 GPU 整卡使用场景。</li>
-<li>gpu-operator：包含 gpu-device、gpu-label、driver-manager、container-runtime、operator-controller 这些组件。
-   使用 gpu-operator 方案时，用户可选择制作不包含 MXMACA® SDK 的应用容器镜像。gpu-operator 适用于 GPU 整卡和 vGPU 场景。</li>
+<li>Metax-extensions: Includes two components, gpu-device and gpu-label. When using the Metax-extensions solution, the user's application container image needs to be built based on the MXMACA® base image. Moreover, Metax-extensions is only suitable for scenarios using the full GPU card.</li>
+<li>gpu-operator: Includes components such as gpu-device, gpu-label, driver-manager, container-runtime, and operator-controller. When using the gpu-operator solution, users can choose to create application container images that do not include the MXMACA® SDK. The gpu-operator is suitable for both full GPU card and vGPU scenarios.</li>
 </ol>
-<h2 id="_3">操作步骤<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h2 id="operation-steps">Operation Steps<a class="headerlink" href="#operation-steps" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>从 <code>/home/metax/metax-docs/k8s/metax-gpu-k8s-package.0.7.10.tar.gz</code> 文件中解压出</p>
+<p>Extract the following from the <code>/home/metax/metax-docs/k8s/metax-gpu-k8s-package.0.7.10.tar.gz</code> file:</p>
 <ul>
-<li>deploy-gpu-extensions.yaml # 部署yaml </li>
-<li>metax-gpu-extensions-0.7.10.tgz、metax-operator-0.7.10.tgz # helm chart文件</li>
-<li>metax-k8s-images.0.7.10.run # 离线镜像</li>
+<li>deploy-gpu-extensions.yaml # Deployment YAML </li>
+<li>metax-gpu-extensions-0.7.10.tgz, metax-operator-0.7.10.tgz # Helm chart files</li>
+<li>metax-k8s-images.0.7.10.run # Offline image</li>
 </ul>
 </li>
 <li>
-<p>查看系统是否安装驱动</p>
+<p>Check if the system has the driver installed:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>$<span class="w"> </span>lsmod<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>metax<span class="w"> </span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>metax<span class="w"> </span><span class="m">1605632</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>ttm<span class="w"> </span><span class="m">86016</span><span class="w"> </span><span class="m">3</span><span class="w"> </span>drm_vram_helper,metax,drm_ttm_helper<span class="w"> </span>
 <a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>drm<span class="w"> </span><span class="m">618496</span><span class="w"> </span><span class="m">7</span><span class="w"> </span>drm_kms_helper,drm_vram_helper,ast,metax,drm_ttm_helper,ttm
 </code></pre></div>
 <ul>
-<li>如没有内容显示，就表示没有安装过软件包。如有内容显示，则表示安装过软件包。</li>
-<li>使用 metax-opeartor 时，不推荐在工作节点预安装 MXMACA 内核态驱动，若已安装也无需卸载。</li>
+<li>If no content is displayed, it indicates that the software package has not been installed. If content is displayed, it indicates that the software package has been installed.</li>
+<li>When using metax-operator, it is not recommended to pre-install the MXMACA kernel driver on worker nodes; if it has already been installed, there is no need to uninstall it.</li>
 </ul>
 </li>
 <li>
-<p>安装驱动</p>
+<p>Install the driver.</p>
 </li>
 </ol>
 <h3 id="gpu-extensions">gpu-extensions<a class="headerlink" href="#gpu-extensions" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>推送镜像</p>
+<p>Push the image:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>tar<span class="w"> </span>-xf<span class="w"> </span>metax-gpu-k8s-package.0.7.10.tar.gz
 <a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>./metax-k8s-images.0.7.10.run<span class="w"> </span>push<span class="w"> </span><span class="o">{</span>registry<span class="o">}</span>/metax
 </code></pre></div>
 </li>
 <li>
-<p>推送 Helm Chart</p>
+<p>Push the Helm Chart:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>helm<span class="w"> </span>plugin<span class="w"> </span>install<span class="w"> </span>https://github.com/chartmuseum/helm-push
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w">  </span>--username<span class="w"> </span>rootuser<span class="w"> </span>--password<span class="w"> </span>rootpass123<span class="w">  </span>metax<span class="w"> </span>http://172.16.16.5:8081
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>--username<span class="w"> </span>rootuser<span class="w"> </span>--password<span class="w"> </span>rootpass123<span class="w">  </span>metax<span class="w"> </span>http://172.16.16.5:8081
 <a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>helm<span class="w"> </span>cm-push<span class="w"> </span>metax-operator-0.7.10.tgz<span class="w"> </span>metax
 <a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>helm<span class="w"> </span>cm-push<span class="w"> </span>metax-gpu-extensions-0.7.10.tgz<span class="w"> </span>metax
 </code></pre></div>
 </li>
 <li>
-<p>在算丰 AI 算力平台上安装 metax-gpu-extensions</p>
-<p>部署成功之后，可以在节点上查看到资源。</p>
-<p><img alt="查看资源" src="../../../../../admin/kpanda/gpu/images/metax-node.png"/></p>
+<p>Install metax-gpu-extensions on the AI computing platform. </p>
+<p>After successful deployment, resources can be viewed on the node.</p>
 </li>
 <li>
-<p>修改成功之后就可以在节点上看到带有 <code>Metax GPU</code> 的标签</p>
-<p><img alt="metax节点标签" src="../../../../../admin/kpanda/gpu/images/metax-node1.png"/></p>
+<p>After successful modification, you can see the label with <code>Metax GPU</code> on the node.</p>
 </li>
 </ol>
 <h3 id="gpu-operator">gpu-operator<a class="headerlink" href="#gpu-operator" title="Permanent link">¶</a></h3>
-<p>安装 <code>gpu-opeartor</code> 时的已知问题：</p>
+<p>Known issues when installing <code>gpu-operator</code>:</p>
 <ol>
 <li>
-<p><code>metax-operator</code>、<code>gpu-label</code>、<code>gpu-device</code> 、<code>container-runtime</code> 这几个组件镜像要带有 <code>amd64</code> 后缀。</p>
+<p>The images for the components <code>metax-operator</code>, <code>gpu-label</code>, <code>gpu-device</code>, and <code>container-runtime</code> must have the <code>amd64</code> suffix.</p>
 </li>
 <li>
-<p><code>metax-maca</code> 组件的镜像不在 <code>metax-k8s-images.0.7.13.run</code> 包里面，需要单独下载 <code>maca-mxc500-2.23.0.23-ubuntu20.04-x86_64.tar.xz</code> 这类镜像，<code>load</code> 之后重新修改 <code>metax-maca</code> 组件的镜像。</p>
+<p>The image for the <code>metax-maca</code> component is not included in the <code>metax-k8s-images.0.7.13.run</code> package and needs to be separately downloaded, such as <code>maca-mxc500-2.23.0.23-ubuntu20.04-x86_64.tar.xz</code>. After loading it, the image for the <code>metax-maca</code> component needs to be modified again.</p>
 </li>
 <li>
-<p><code>metax-driver</code> 组件的镜像需要从 <code>https://pub-docstore.metax-tech.com:7001</code> 这个网站下载 <code>k8s-driver-image.2.23.0.25.run</code> 文件，然后执行 <code>k8s-driver-image.2.23.0.25.run push {registry}/metax</code> 命令把镜像推送到镜像仓库。推送之后修改 <code>metax-driver</code> 组件的镜像地址。</p>
+<p>The image for the <code>metax-driver</code> component needs to be downloaded from <code>https://pub-docstore.metax-tech.com:7001</code> as the <code>k8s-driver-image.2.23.0.25.run</code> file, and then execute the command <code>k8s-driver-image.2.23.0.25.run push {registry}/metax</code> to push the image to the image repository. After pushing, modify the image address for the <code>metax-driver</code> component.</p>
 </li>
 </ol>
-<h2 id="gpu_1">使用 GPU<a class="headerlink" href="#gpu_1" title="Permanent link">¶</a></h2>
-<p>安装后可在工作负载中<a href="../../workloads/create-deployment.html#_5">使用沐曦 GPU</a>。注意启用 GPU 后，需选择GPU类型为 Metax GPU</p>
-<p><img alt="使用 GPU" src="../../../../../admin/kpanda/gpu/images/metax-use.png"/></p>
-<p>进入容器，执行 mx-smi 可查看 GPU 的使用情况.</p>
-<p><img alt="使用 GPU" src="../../../../../admin/kpanda/gpu/images/metax-use2.png"/></p>
+<h2 id="using-gpu">Using GPU<a class="headerlink" href="#using-gpu" title="Permanent link">¶</a></h2>
+<p>After installation, you can <a href="../../workloads/create-deployment.html#_5">use MetaX GPU in workloads</a>. Note that after enabling the GPU, you need to select the GPU type as Metax GPU.</p>
+<p>Enter the container and execute <code>mx-smi</code> to view the GPU usage.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

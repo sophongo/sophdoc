@@ -609,10 +609,10 @@
 <p>Before backing up a deployment, the following prerequisites must be met:</p>
 <ul>
 <li>
-<p><a href="../clusters/integrate-cluster.html">Integrate a Kubernetes cluster</a> or <a href="../clusters/create-cluster.html">create a Kubernetes cluster</a> in the <a href="../../intro/index.md">Container Management</a> module, and be able to access the UI interface of the cluster.</p>
+<p><a href="../clusters/integrate-cluster.html">Integrate a Kubernetes cluster</a> or <a href="../clusters/create-cluster.html">create a Kubernetes cluster</a> in the Container Management module, and be able to access the UI interface of the cluster.</p>
 </li>
 <li>
-<p>Create a <a href="../namespaces/createns.html">Namespace</a> and a <a href="../../../ghippo/access-control/user.md">User</a>.</p>
+<p>Create a <a href="../namespaces/createns.html">Namespace</a> and a <a href="../../ghippo/access-control/user.md">user</a>.</p>
 </li>
 <li>
 <p>The current operating user should have <a href="../permissions/permission-brief.html#ns-editor">NS Editor</a> or higher permissions, for details, refer to <a href="../namespaces/createns.html">Namespace Authorization</a>.</p>
@@ -629,11 +629,11 @@
 <ol>
 <li>
 <p>Enter the Container Management module, click <strong>Backup Recovery</strong> -&gt; <strong>Application Backup</strong> on the left navigation bar, and enter the <strong>Application Backup</strong> list page.</p>
-<p><img alt="Cluster List" src="../../images/backupd20481.png"/></p>
+<p><img alt="Clusters" src="../images/backupd20481.png"/></p>
 </li>
 <li>
 <p>On the <strong>Application Backup</strong> list page, select the cluster where the velero and <strong>dao-2048</strong> applications have been installed. Click <strong>Backup Plan</strong> in the upper right corner to create a new backup cluster.</p>
-<p><img alt="Application Backup" src="../../images/backupd20482.png"/></p>
+<p><img alt="Application Backup" src="../images/backupd20482.png"/></p>
 </li>
 <li>
 <p>Refer to the instructions below to fill in the backup configuration.</p>
@@ -644,7 +644,7 @@
 <li>Namespace: The namespaces that need to be backed up, multiple selections are supported.</li>
 <li>Advanced Configuration: Back up specific resources in the namespace based on resource labels, such as an application, or do not back up specific resources in the namespace based on resource labels during backup.</li>
 </ul>
-<p><img alt="Backup Resource" src="../../images/backupd20483.png"/></p>
+<p><img alt="Backup Resource" src="../images/backupd20483.png"/></p>
 </li>
 <li>
 <p>Refer to the instructions below to set the backup execution frequency, and then click <strong>Next</strong> .</p>
@@ -657,17 +657,17 @@
 <li>Direct Replication: directly copy the data in the data volume (PV) for backup;</li>
 <li>Use CSI snapshots: Use CSI snapshots to back up data volumes (PVs). Requires a CSI snapshot type available for backup in the cluster.</li>
 </ul>
-<p><img alt="Backup Policy" src="../../images/backupd20484.png"/></p>
+<p><img alt="Backup Policy" src="../images/backupd20484.png"/></p>
 </li>
 </ul>
 </li>
 <li>
 <p>Click <strong>OK</strong> , the page will automatically return to the application backup plan list, find the newly created <strong>dao-2048</strong> backup plan, and perform the <strong>Immediate Execution</strong> operation.</p>
-<p><img alt="Immediate Execution" src="../../images/backupd20485.png"/></p>
+<p><img alt="Immediate Execution" src="../images/backupd20485.png"/></p>
 </li>
 <li>
 <p>At this point, the <strong>Last Execution State</strong> of the cluster will change to <strong>in progress</strong> . After the backup is complete, you can click the name of the backup plan to view the details of the backup plan.</p>
-<p><img alt="Backup Details" src="../../images/backupd20486.png"/></p>
+<p><img alt="Backup Details" src="../images/backupd20486.png"/></p>
 </li>
 </ol>
 </article>

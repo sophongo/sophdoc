@@ -641,25 +641,11 @@
 </li>
 </ol>
 <h2 id="ai">工作空间对 AI 算力中心各模块的作用<a class="headerlink" href="#ai" title="Permanent link">¶</a></h2>
-<ol>
-<li>
-<p>模块名称：<a href="../../amamba/intro/index.md">应用工作台</a>、<a href="../../skoala/intro/index.md">微服务引擎</a>、<a href="../../middleware/index.md">中间件</a>、<a href="../../kangaroo/intro/index.md">镜像仓库</a>、<a href="../../kant/intro/index.md">云边协同</a></p>
-<p>进入上述几个模块的前提是拥有某个工作空间的权限，因此在使用模块功能前必须具有 Admin 角色或者拥有某个工作空间的一定角色权限。</p>
-<ul>
-<li>工作空间的角色会自动应用到工作空间包含的资源上。比如当您拥有工作空间 A 的 Workspace Admin 角色，那么对于该工作空间中的所有资源您都是 Admin 角色；</li>
-<li>如果您是 Workspace Edit，那么对于工作空间中的所有资源您都是 Edit 角色；</li>
-<li>如果您是 Workspace View，那么对于工作空间中的所有资源您都是 View 角色。</li>
-</ul>
-<p>另外，您在这些模块创建的资源也将自动被绑定到对应的工作空间中，而不需要其他额外的操作。</p>
-</li>
-<li>
-<p>模块名称：<a href="../../kpanda/intro/index.md">容器管理</a>、<a href="../../mspider/intro/index.md">服务网格</a>、<a href="../../kairship/intro/index.md">多云编排</a></p>
+<p>模块名称：容器管理</p>
 <p>由于功能模块的特殊性，在容器管理模块创建的资源不会自动被绑定到某个工作空间。</p>
 <p>如果您需要通过工作空间对人和资源进行统一授权管理，可以手动将需要的资源绑定到某个工作空间中，从而将用户在该工作空间的角色应用到资源上（这里的资源是可以跨集群的）。</p>
 <p>另外，在资源的绑定入口上容器管理与服务网格稍有差异，工作空间提供了容器管理中的 Cluster 、 Cluster-Namesapce 和服务网格中的 Mesh、Mesh-Namespace 资源的绑定入口，但尚未开放对服务网格的 kairship 和 Kairship-Namespace 资源的绑定。</p>
 <p>对于 kairship 和 Kairship-Namespace 资源，可以在服务网格的资源列表进行手动绑定。</p>
-</li>
-</ol>
 <h2 id="_3">工作空间的使用场景<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <ul>
 <li>映射为不同的部门、项目、组织等概念，同时可以将工作空间中 Workspace Admin、Workspace Edit 和 Workspace View 角色对应到部门、项目、组织中的不同角色</li>

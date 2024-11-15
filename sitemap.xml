@@ -6716,6 +6716,18 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/virtnest/vm/vm-gpu.html"/>
     </url>
     <url>
+        <loc>https://sophdoc.github.io/en/docs/admin/ghippo/best-practice/cluster-for-multiws.html</loc>
+        <lastmod>2024-11-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/docs/admin/ghippo/best-practice/cluster-for-multiws.html"/>
+    </url>
+    <url>
+        <loc>https://sophdoc.github.io/en/docs/end-user/register/index.html</loc>
+        <lastmod>2024-11-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/docs/end-user/register/index.html"/>
+    </url>
+    <url>
         <loc>https://sophdoc.github.io/en/end-user/index.html</loc>
         <lastmod>2024-11-15</lastmod>
         <changefreq>daily</changefreq>

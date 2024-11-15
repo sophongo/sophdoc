@@ -319,10 +319,10 @@
 <p>Before using image to create deployments, the following prerequisites need to be met:</p>
 <ul>
 <li>
-<p>In the <a href="../../intro/index.md">Container Management</a> module <a href="../clusters/integrate-cluster.html">Access Kubernetes Cluster</a> or <a href="../clusters/create-cluster.html">Create Kubernetes Cluster</a>, and can access the cluster UI interface.</p>
+<p>In the Container Management module <a href="../clusters/integrate-cluster.html">Integrate Kubernetes Cluster</a> or <a href="../clusters/create-cluster.html">Create Kubernetes Cluster</a>, and can access the cluster UI interface.</p>
 </li>
 <li>
-<p>Create a <a href="../namespaces/createns.html">namespace</a> and a <a href="../../../ghippo/access-control/user.md">user</a>.</p>
+<p>Create a <a href="../namespaces/createns.html">namespace</a> and a <a href="../../ghippo/access-control/user.html">user</a>.</p>
 </li>
 <li>
 <p>The current operating user should have <a href="../permissions/permission-brief.html#ns-editor">NS Editor</a> or higher permissions, for details, refer to <a href="../namespaces/createns.html">Namespace Authorization</a>.</p>
@@ -375,9 +375,7 @@ After filling in the configuration according to the following requirements, clic
   It must start and end with a lowercase letter or number, for example, nginx-01.</li>
 <li>Image:<ul>
 <li>Image: Select an appropriate image from the list. When entering the image name, the default is to pull the image 
- from the official <a href="https://hub.docker.com/">DockerHub</a>.
-  After integrating the <a href="../../../kangaroo/intro/index.md">Image Repository</a> module of AI platform, 
-  you can click the <strong>Choose an image</strong> button on the right to choose an image.</li>
+ from the official <a href="https://hub.docker.com/">DockerHub</a>.</li>
 <li>Image Version: Select an appropriate version from the dropdown list.</li>
 <li>Image Pull Policy: By checking <strong>Always pull the image</strong>, the image will be pulled from the repository each time 
   the workload restarts/upgrades.

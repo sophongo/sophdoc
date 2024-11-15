@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#gpu">
+<a class="md-skip" href="#using-cambricon-gpu">
           Skip to content
         </a>
 </div>
@@ -470,30 +470,30 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前置条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gpu_1">
+<a class="md-nav__link" href="#introduction-to-cambricon-gpu-modes">
 <span class="md-ellipsis">
-      寒武纪 GPU 模式介绍
+      Introduction to Cambricon GPU Modes
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#ai">
+<a class="md-nav__link" href="#using-cambricon-in-suanfeng-ai-computing-platform">
 <span class="md-ellipsis">
-      算丰 AI 算力平台使用寒武纪
+      Using Cambricon in SuanFeng AI Computing Platform
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#yaml">
+<a class="md-nav__link" href="#using-yaml-configuration">
 <span class="md-ellipsis">
-      使用 YAML 配置
+      Using YAML Configuration
     </span>
 </a>
 </li>
@@ -591,30 +591,30 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前置条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gpu_1">
+<a class="md-nav__link" href="#introduction-to-cambricon-gpu-modes">
 <span class="md-ellipsis">
-      寒武纪 GPU 模式介绍
+      Introduction to Cambricon GPU Modes
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#ai">
+<a class="md-nav__link" href="#using-cambricon-in-suanfeng-ai-computing-platform">
 <span class="md-ellipsis">
-      算丰 AI 算力平台使用寒武纪
+      Using Cambricon in SuanFeng AI Computing Platform
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#yaml">
+<a class="md-nav__link" href="#using-yaml-configuration">
 <span class="md-ellipsis">
-      使用 YAML 配置
+      Using YAML Configuration
     </span>
 </a>
 </li>
@@ -625,49 +625,46 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="gpu">使用寒武纪 GPU<a class="headerlink" href="#gpu" title="Permanent link">¶</a></h1>
-<p>本文介绍如何在算丰 AI 算力平台中使用寒武纪 GPU。</p>
-<h2 id="_1">前置条件<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h1 id="using-cambricon-gpu">Using Cambricon GPU<a class="headerlink" href="#using-cambricon-gpu" title="Permanent link">¶</a></h1>
+<p>This article introduces how to use Cambricon GPU in the SuanFeng AI computing platform.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ul>
-<li>已经部署 算丰 AI 算力平台 容器管理平台，且平台运行正常。</li>
-<li>容器管理模块<a href="../../clusters/integrate-cluster.html">已接入 Kubernetes 集群</a>或者<a href="../../clusters/create-cluster.html">已创建 Kubernetes 集群</a>，且能够访问集群的 UI 界面。</li>
-<li>当前集群已安装寒武纪固件、驱动以及DevicePlugin组件，安装详情请参考官方文档：<ul>
-<li><a href="https://www.cambricon.com/docs/sdk_1.15.0/driver_5.10.22/user_guide/index.html">驱动固件安装</a></li>
-<li><a href="https://github.com/Cambricon/cambricon-k8s-device-plugin/blob/master/device-plugin/README.md">DevicePlugin 安装</a></li>
+<li>The SuanFeng AI computing platform's container management platform has been deployed and is running normally.</li>
+<li>The container management module has either <a href="../../clusters/integrate-cluster.html">integrated with a Kubernetes cluster</a> or <a href="../../clusters/create-cluster.html">created a Kubernetes cluster</a>, and is able to access the cluster's UI interface.</li>
+<li>The current cluster has installed the Cambricon firmware, drivers, and DevicePlugin components. For installation details, please refer to the official documentation:<ul>
+<li><a href="https://www.cambricon.com/docs/sdk_1.15.0/driver_5.10.22/user_guide/index.html">Driver Firmware Installation</a></li>
+<li><a href="https://github.com/Cambricon/cambricon-k8s-device-plugin/blob/master/device-plugin/README.md">DevicePlugin Installation</a></li>
 </ul>
 </li>
 </ul>
-<p>在安装 DevicePlugin 时请关闭 <strong>--enable-device-type</strong> 参数，否则算丰 AI 算力平台将无法正确识别寒武纪 GPU。</p>
-<h2 id="gpu_1">寒武纪 GPU 模式介绍<a class="headerlink" href="#gpu_1" title="Permanent link">¶</a></h2>
-<p>寒武纪 GPU 有以下几种模式：</p>
+<p>When installing DevicePlugin, please disable the <strong>--enable-device-type</strong> parameter; otherwise, the SuanFeng AI computing platform will not be able to correctly recognize the Cambricon GPU.</p>
+<h2 id="introduction-to-cambricon-gpu-modes">Introduction to Cambricon GPU Modes<a class="headerlink" href="#introduction-to-cambricon-gpu-modes" title="Permanent link">¶</a></h2>
+<p>Cambricon GPUs have the following modes:</p>
 <ul>
-<li>整卡模式：将寒武纪GPU以整卡的方式注册到集群当中进行使用。</li>
-<li>Share 模式：可以将一张寒武纪GPU共享给多个 Pod 进行使用，可以通过 virtualization-num 参数进行设置可共享容器的数量。</li>
-<li>Dynamic smlu 模式：进一步对资源进行了细化，可以控制分配给容器的显存、算力的大小。</li>
-<li>Mim 模式：可以将寒武纪 GPU 按照固定的规格切分成多张 GPU 进行使用。</li>
+<li>Full Card Mode: Register the Cambricon GPU as a whole card for use in the cluster.</li>
+<li>Share Mode: Allows one Cambricon GPU to be shared among multiple Pods, with the number of shareable containers set by the <code>virtualization-num</code> parameter.</li>
+<li>Dynamic SMLU Mode: Further refines resource allocation, allowing control over the size of memory and computing power allocated to containers.</li>
+<li>MIM Mode: Allows the Cambricon GPU to be divided into multiple GPUs of fixed specifications for use.</li>
 </ul>
-<h2 id="ai">算丰 AI 算力平台使用寒武纪<a class="headerlink" href="#ai" title="Permanent link">¶</a></h2>
-<p>这里以 Dynamic smlu 模式为例：</p>
+<h2 id="using-cambricon-in-suanfeng-ai-computing-platform">Using Cambricon in SuanFeng AI Computing Platform<a class="headerlink" href="#using-cambricon-in-suanfeng-ai-computing-platform" title="Permanent link">¶</a></h2>
+<p>Here, we take the Dynamic SMLU mode as an example:</p>
 <ol>
 <li>
-<p>在正确安装 DevicePlugin 等组件后，点击对应 <strong>集群</strong> -&gt; <strong>集群运维</strong>-&gt; <strong>集群设置</strong> -&gt; <strong>Addon 插件</strong> ，查看是否已自动启用并自动检测对应 GPU 类型。</p>
-<p><img alt="mlu类型" src="../../../../../admin/kpanda/gpu/images/mlu1.PNG"/></p>
+<p>After correctly installing the DevicePlugin and other components, click the corresponding <strong>Cluster</strong> -&gt; <strong>Cluster Maintenance</strong> -&gt; <strong>Cluster Settings</strong> -&gt; <strong>Addon Plugins</strong> to check whether the corresponding GPU type has been automatically enabled and detected.</p>
 </li>
 <li>
-<p>点击节点管理页面，查看节点是否已经正确识别到对应的GPU类型。</p>
-<p><img alt="节点列表" src="../../../../../admin/kpanda/gpu/images/mlu2.png"/></p>
+<p>Click the node management page to check if the nodes have correctly recognized the corresponding GPU type.</p>
 </li>
 <li>
-<p>部署工作负载。点击对应 <strong>集群</strong> -&gt; <strong>工作负载</strong> ，通过镜像方式部署工作负载，选择类型（MLU VGPU）之后，需要配置 App 使用的 GPU 资源：</p>
+<p>Deploy workloads. Click the corresponding <strong>Cluster</strong> -&gt; <strong>Workloads</strong>, and deploy workloads using images. After selecting the type (MLU VGPU), you need to configure the GPU resources used by the App:</p>
 <ul>
-<li>GPU 算力（cambricon.com/mlu.smlu.vcore）：表示当前 Pod 需要使用核心的百分比数量。 </li>
-<li>GPU 显存（cambricon.com/mlu.smlu.vmemory）：表示当前Pod需要使用显存的大小，单位是MB。</li>
+<li>GPU Computing Power (cambricon.com/mlu.smlu.vcore): Indicates the percentage of cores the current Pod needs to use. </li>
+<li>GPU Memory (cambricon.com/mlu.smlu.vmemory): Indicates the size of memory the current Pod needs to use, in MB.</li>
 </ul>
-<p><img alt="使用mlu" src="../../../../../admin/kpanda/gpu/images/mlu3.png"/></p>
 </li>
 </ol>
-<h2 id="yaml">使用 YAML 配置<a class="headerlink" href="#yaml" title="Permanent link">¶</a></h2>
-<p>参考 YAML 文件如下：</p>
+<h2 id="using-yaml-configuration">Using YAML Configuration<a class="headerlink" href="#using-yaml-configuration" title="Permanent link">¶</a></h2>
+<p>Refer to the following YAML file:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span><span class="w">  </span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span><span class="w">  </span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span><span class="w">  </span>

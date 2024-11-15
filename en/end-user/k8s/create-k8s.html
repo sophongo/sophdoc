@@ -298,59 +298,21 @@
 </li>
 <li>
 <p>Follow the wizard to configure various parameters of the cluster.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><input id="__tabbed_1_5" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Basic Information</label><label for="__tabbed_1_2">Node Configuration</label><label for="__tabbed_1_3">Network Configuration</label><label for="__tabbed_1_4">Addon Configuration</label><label for="__tabbed_1_5">Advanced Configuration</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><img alt="basic" src="../images/k8s01.png"/></p>
-</div>
-<div class="tabbed-block">
-<p>After configuring the node information, click <strong>Start Check</strong>.</p>
-<p><img alt="node" src="../images/k8s02.png"/></p>
-<p><img alt="node" src="../images/k8s03.png"/></p>
-</div>
-<div class="tabbed-block">
-<p><img alt="network" src="../images/k8s04.png"/></p>
-</div>
-<div class="tabbed-block">
-<p><img alt="addon" src="../images/k8s05.png"/></p>
-</div>
-<div class="tabbed-block">
-<p>Each node can run 110 Pods (container groups) by default. If the node configuration is higher, it can be adjusted to 200 or 300 Pods.</p>
-<p><img alt="basic" src="../images/k8s06.png"/></p>
-</div>
-</div>
-</input></input></input></input></input></div>
 </li>
 <li>
 <p>Wait for the cluster creation to complete.</p>
-<p><img alt="done" src="../images/k8s08.png"/></p>
 </li>
 <li>
-<p>In the cluster list, find the newly created cluster, click on the cluster name, navigate to <strong>Helm Apps</strong> -&gt; <strong>Helm Charts</strong>, and search for metax-gpu-extensions in the search box, then click the card.</p>
-<p><img alt="cluster" src="../images/k8s09.png"/></p>
-<p><img alt="helm" src="../images/k8s10.png"/></p>
+<p>In the cluster list, find the newly created cluster, click the cluster name, navigate to <strong>Helm Apps</strong> -&gt; <strong>Helm Charts</strong>, and search for metax-gpu-extensions in the search box, then click the card.</p>
 </li>
 <li>
 <p>Click the <strong>Install</strong> button on the right to start installing the GPU plugin.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"/><div class="tabbed-labels"><label for="__tabbed_2_1">Application Settings</label><label for="__tabbed_2_2">Kubernetes Orchestration Confirmation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Enter a name, select a namespace, and modify the image address in the YAML:</p>
-<p><img alt="app settings" src="../images/k8s11.png"/></p>
-</div>
-<div class="tabbed-block">
-<p><img alt="confirm" src="../images/k8s12.png"/></p>
-</div>
-</div>
-</input></div>
 </li>
 <li>
 <p>Automatically return to the Helm application list and wait for the status of metax-gpu-extensions to change to <strong>Deployed</strong>.</p>
-<p><img alt="deployed" src="../images/k8s13.png"/></p>
 </li>
 <li>
 <p>At this point, the cluster has been successfully created. You can check the nodes included in the cluster. You can now <a href="../share/workload.html">create AI workloads and use GPUs</a>.</p>
-<p><img alt="nodes" src="../images/k8s14.png"/></p>
 </li>
 </ol>
 <p>Next step: <a href="../share/workload.html">Create AI Workloads</a></p>

@@ -342,12 +342,12 @@ for reference.</li>
   for example: set the <code>permitWaitingTimeoutSeconds</code> parameter for coscheduling.
   See <a href="https://github.com/kubernetes-sigs/scheduler-plugins/blob/master/manifests/coscheduling/scheduler-config.yaml">K8s Official Plugin Configuration</a> for reference.</li>
 </ul>
-<!-- <img alt="Add scheduler-plugins parameter" src="../../images/cluster-scheduler-plugin-01.png" /> -->
+<!-- <img alt="Add scheduler-plugins parameter" src="../images/cluster-scheduler-plugin-01.png" /> -->
 </li>
 <li>
 <p>After successful cluster creation, the system will automatically install the scheduler-plugins and
    controller component loads. You can check the workload status in the proper cluster's deployment.</p>
-<!-- <img alt="Check plugin load status" src="../../images/cluster-scheduler-plugin-02.png" /> -->
+<!-- <img alt="Check plugin load status" src="../images/cluster-scheduler-plugin-02.png" /> -->
 </li>
 </ol>
 <h2 id="using-scheduler-plugins">Using scheduler-plugins<a class="headerlink" href="#using-scheduler-plugins" title="Permanent link">¶</a></h2>
@@ -360,7 +360,7 @@ for reference.</li>
   kubean, and currently cannot be modified.</li>
 <li><code>scheduler.kubeScheduler.enabled: false</code>: Do not install kube-scheduler and use vgpu-scheduler as a separate extender.</li>
 </ul>
-<!-- <img alt="Install vgpu plugin" src="../../images/cluster-scheduler-plugin-03.png" /> -->
+<!-- <img alt="Install vgpu plugin" src="../images/cluster-scheduler-plugin-03.png" /> -->
 </li>
 <li>
 <p>Extend vgpu-scheduler on scheduler-plugins.</p>
