@@ -17,7 +17,7 @@ The container management module supports interface-based management of custom re
   [created Kubernetes](../clusters/create-cluster.md), and you can access the cluster UI interface.
 
 - Created a [namespace](../namespaces/createns.md),
-  [user](../../../ghippo/access-control/user.md),
+  [user](../../ghippo/access-control/user.md),
   and authorized the user as [`Cluster Admin`](../permissions/permission-brief.md#cluster-admin)
   For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 

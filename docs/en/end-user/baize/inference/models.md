@@ -12,12 +12,11 @@ Here, you can see information about the supported models.
 !!! note
 
     The support for inference capabilities is related to the version of AI Lab.
-    Refer to the [Release Notes](../../intro/release-notes.md) to understand the latest version and update timely.
 
 You can use GPU types that have been verified by AI platform in AI Lab.
-For more details, refer to the [GPU Support Matrix](../../../kpanda/gpu/gpu_matrix.md).
+For more details, refer to the [GPU Support Matrix](../../kpanda/gpu/gpu_matrix.md).
 
-![Click to Create](../../images/inference-interface.png)
+![Click to Create](../images/inference-interface.png)
 
 ## Triton Inference Server
 

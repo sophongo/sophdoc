@@ -47,8 +47,4 @@ Generally applicable to the following two use cases:
      Authorized users can go to modules such as workbench, microservice engine, middleware, multicloud orchestration, and service mesh to use resources in the workspace.
      For the operation scope of the roles of Workspace Admin, Workspace Editor, and Workspace Viewer in each module, please refer to the permission description:
 
-     - [Workbench Permissions](../../permissions/amamba.md)
-     - [Service Mesh Permissions](../../permissions/mspider.md)
-     - [Middleware permissions](../../permissions/mcamel.md)
-     - [Microservice Engine Permissions](../../permissions/skoala.md)
      - [Container Management Permissions](../../../kpanda/permissions/permission-brief.md)

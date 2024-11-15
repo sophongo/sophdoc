@@ -16,15 +16,15 @@ preloading, dataset management, and other functionalities.
 1. In the left navigation bar, click **Data Management** -> **Dataset List**, and then click the **Create** button 
    on the right.
 
-    ![Click Create](../../images/dataset01.png)
+    ![Click Create](../images/dataset01.png)
 
 2. Select the worker cluster and namespace to which the dataset belongs, then click **Next**.
 
-    ![Fill in Parameters](../../images/dataset02.png)
+    ![Fill in Parameters](../images/dataset02.png)
 
 3. Configure the data source type for the target data, then click **OK**.
 
-    ![Task Resource Configuration](../../images/dataset03.png)
+    ![Task Resource Configuration](../images/dataset03.png)
 
     Currently supported data sources include:
 
@@ -37,7 +37,7 @@ preloading, dataset management, and other functionalities.
 4. Upon successful creation, the dataset will be returned to the dataset list.
    You can perform more actions by clicking **┇** on the right.
 
-    ![Dataset List](../../images/dataset04.png)
+    ![Dataset List](../images/dataset04.png)
 
 !!! info
 
@@ -54,7 +54,7 @@ In creating a Notebook, you can directly use the dataset; the usage is as follow
 - Use the dataset as training data mount
 - Use the dataset as code mount
 
-![Dataset List](../../images/dataset05.png)
+![Dataset List](../images/dataset05.png)
 
 ### Use in Training obs
 
@@ -62,13 +62,13 @@ In creating a Notebook, you can directly use the dataset; the usage is as follow
 - Use the dataset to specify job input
 - Use the dataset to specify TensorBoard output
 
-![jobs](../../images/dataset06.png)
+![jobs](../images/dataset06.png)
 
 ### Use in Inference Services
 
 - Use the dataset to mount a model
 
-![Inference Service](../../images/dataset07.png)
+![Inference Service](../images/dataset07.png)
 
 ## Delete a Dataset
 
@@ -76,11 +76,11 @@ If you find a dataset to be redundant, expired, or no longer needed, you can del
 
 1. Click the **┇** on the right side of the dataset list, then choose **Delete** from the dropdown menu.
 
-    ![Delete](../../images/ds-delete01.png)
+    ![Delete](../images/ds-delete01.png)
 
 2. In the pop-up window, confirm the dataset you want to delete, enter the dataset name, and then click **Delete**.
 
-    ![Confirm](../../images/ds-delete02.png)
+    ![Confirm](../images/ds-delete02.png)
 
 3. A confirmation message will appear indicating successful deletion, and the dataset will disappear from the list.
 

@@ -13,9 +13,9 @@ After the administrator allocates resource quotas for the workspace, users can c
 ## Steps to Create AI Workloads
 
 1. Log into the AI platform as a user.
-2. Navigate to **Container Management**, select a namespace, click on **Workloads** -> **Deployments** , and then click the **Create Image** button on the right.
+2. Navigate to **Container Management**, select a namespace, click **Workloads** -> **Deployments** , and then click the **Create Image** button on the right.
 
-    ![button](../images/workload01.png)
+
 
 3. After configuring various parameters, click **OK**.
 
@@ -23,25 +23,25 @@ After the administrator allocates resource quotas for the workspace, users can c
 
         Select your namespace.
 
-        ![basic](../images/workload02.png)
+       
 
     === "Container Configuration"
 
         Set the image, configure CPU, memory, GPU, and other resources, and set the startup command.
 
-        ![container](../images/workload03.png)
+       
 
     === "Other"
 
         Service configuration and advanced configuration can use the default settings.
 
-4. You will be automatically redirected to the stateless workload list; click on the workload name.
+4. You will be automatically redirected to the stateless workload list; click the workload name.
 
-    ![click name](../images/workload04.png)
+   
 
 5. Enter the detail page where you can see the GPU quota.
 
-    ![check gpu](../images/workload05.png)
+   
 
 6. You can also access the console and run the `nvidia-smi` command to view GPU resources.
 

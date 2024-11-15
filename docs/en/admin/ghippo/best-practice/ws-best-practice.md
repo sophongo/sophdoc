@@ -50,7 +50,7 @@ A workspace consists of three features: authorization, resource groups, and shar
 
 ## The effect of the workspace on the AI platfrom
 
-Module name: [Container Management](../../kpanda/intro/index.md)
+Module name: Container Management
 
 Due to the particularity of functional modules, resources created in the container management module will not be automatically bound to a certain workspace.
 

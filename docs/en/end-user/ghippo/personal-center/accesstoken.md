@@ -11,9 +11,9 @@ The access key can be used to access the openAPI and continuous delivery. Users 
 
 Log in to AI platform, find __Personal Center__ in the drop-down menu in the upper right corner, and you can manage the access key of the account on the __Access Keys__ page.
 
-![key list](../../images/platform02.png)
+![key list](../images/platform02.png)
 
-![created a key](../../images/platform03.png)
+![created a key](../images/platform03.png)
 
 !!! info
 
@@ -22,7 +22,7 @@ Log in to AI platform, find __Personal Center__ in the drop-down menu in the upp
 
 ## Use the key to access API
 
-When accessing AI platform openAPI, add the header `Authorization:Bearer ${token}` to the request to identify the visitor, where `${token}` is the key obtained in the previous step. For the specific API, see [OpenAPI Documentation](https://docs.daocloud.io/openapi/).
+When accessing AI platform openAPI, add the header `Authorization:Bearer ${token}` to the request to identify the visitor, where `${token}` is the key obtained in the previous step. For the specific API, see [OpenAPI Documentation](../../../openapi/index.md).
 
 **Request Example**
 

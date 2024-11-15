@@ -4,7 +4,7 @@ This section describes how to use vGPU capabilities on the AI platform platform.
 
 ## Prerequisites
 
-The corresponding GPU driver (NVIDIA GPU, NVIDIA MIG, Days, Ascend) has been deployed on the current cluster either through an Operator or manually.
+The corresponding GPU driver (NVIDIA GPU, NVIDIA MIG, Iluvatar, Ascend) has been deployed on the current cluster either through an Operator or manually.
 
 ## Procedure
 
@@ -14,7 +14,7 @@ Follow these steps to manage GPU quotas in AI platform:
 
     
 
-2. The currently supported card types for quota management in a namespace are: NVIDIA vGPU, NVIDIA MIG, Days, and Ascend.
+2. The currently supported card types for quota management in a namespace are: NVIDIA vGPU, NVIDIA MIG, Iluvatar, and Ascend.
 
    - **NVIDIA vGPU Quota Management**: Configure the specific quota that can be used. This will create a ResourcesQuota CR.
 

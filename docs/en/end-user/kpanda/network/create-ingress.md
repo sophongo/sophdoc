@@ -23,11 +23,11 @@ Ingress is an API object that manages external access to services in the cluster
 
 1. After successfully logging in as the __NS Editor__ user, click __Clusters__ in the upper left corner to enter the __Clusters__ page. In the list of clusters, click a cluster name.
 
-    ![Clusters](../../images/ingress01.png)
+    ![Clusters](../images/ingress01.png)
 
 2. In the left navigation bar, click __Container Network__ -> __Ingress__ to enter the service list, and click the __Create Ingress__ button in the upper right corner.
 
-    ![Ingress](../../images/ingress02.png)
+    ![Ingress](../images/ingress02.png)
 
     !!! note
 
@@ -72,4 +72,4 @@ Ingress is an API object that manages external access to services in the cluster
 
 After configuring all the parameters, click the __OK__ button to return to the ingress list automatically. On the right side of the list, click __┇__ to modify or delete the selected ingress.
 
-![Ingress List](../../images/ingress03.png)
+![Ingress List](../images/ingress03.png)

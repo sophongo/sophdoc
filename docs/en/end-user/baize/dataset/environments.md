@@ -29,7 +29,7 @@ The main components of the environment management are:
 - **Namespace** : Select the namespace to limit the scope of operations.
 - **Environment List** : Displays all environments and their statuses under the current cluster and namespace.
 
-![Environment Management](../../images/conda01.png)
+![Environment Management](../images/conda01.png)
 
 ### Explanation of Environment List Fields
 
@@ -42,7 +42,7 @@ The main components of the environment management are:
 On the **Environment Management** interface, click the **Create** button at the top right
 to enter the environment creation process.
 
-![Environment Management](../../images/conda02.png)
+![Environment Management](../images/conda02.png)
 
 Fill in the following basic information:
 
@@ -60,7 +60,7 @@ Fill in the following basic information:
 
 In the environment configuration step, users need to configure the Python version and dependency management tool.
 
-![Environment Management](../../images/conda03.png)
+![Environment Management](../images/conda03.png)
 
 ### Environment Settings
 

@@ -23,7 +23,7 @@ multiple shared clusters simultaneously.
 
 ## Resource Groups and Shared Resources
 
-Cluster resources in both shared resources and resource groups are derived from [Container Management](../../../kpanda/intro/index.md). However, different effects will occur when binding a cluster to a workspace or sharing it with a workspace.
+Cluster resources in both shared resources and resource groups are derived from Container Management. However, different effects will occur when binding a cluster to a workspace or sharing it with a workspace.
 
 1. Binding Resources
 

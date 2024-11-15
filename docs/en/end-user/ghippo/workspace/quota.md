@@ -23,7 +23,7 @@ multiple shared clusters simultaneously.
 
 ## Resource Groups and Shared Resources
 
-Cluster resources in both shared resources and resource groups are derived from [Container Management](../../../kpanda/intro/index.md). However, different effects will occur when binding a cluster to a workspace or sharing it with a workspace.
+Cluster resources in both shared resources and resource groups are derived from Container Management. However, different effects will occur when binding a cluster to a workspace or sharing it with a workspace.
 
 1. Binding Resources
 
@@ -41,9 +41,7 @@ Cluster resources in both shared resources and resource groups are derived from 
 
 2. Adding Shared Resources
 
-    Users/User groups in the workspace will have usage permissions for the cluster resources, which can be
-
-    used when [creating namespaces](../../../amamba/user-guide/namespace/namespace.md).
+    Users/User groups in the workspace will have usage permissions for the cluster resources.
 
     ![Shared Resources](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/ghippo/images/quota02.png)
 

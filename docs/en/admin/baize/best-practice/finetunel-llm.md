@@ -17,7 +17,7 @@ The general process of fine-tuning is as follows:
 
 !!! info
 
-    Before starting, ensure AI platform and [AI Lab](../intro/install.md) are correctly installed,
+    Before starting, ensure AI platform and AI Lab are correctly installed,
     GPU queue resources are successfully initialized, and computing resources are sufficient.
 
 ## Prepare Data

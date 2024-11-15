@@ -11,9 +11,9 @@ This article explains how to backup applications in AI platform. The demo applic
 
 Before backing up a deployment, the following prerequisites must be met:
 
-- [Integrate a Kubernetes cluster](../clusters/integrate-cluster.md) or [create a Kubernetes cluster](../clusters/create-cluster.md) in the [Container Management](../../intro/index.md) module, and be able to access the UI interface of the cluster.
+- [Integrate a Kubernetes cluster](../clusters/integrate-cluster.md) or [create a Kubernetes cluster](../clusters/create-cluster.md) in the Container Management module, and be able to access the UI interface of the cluster.
 
-- Create a [Namespace](../namespaces/createns.md) and a [User](../../../ghippo/access-control/user.md).
+- Create a [Namespace](../namespaces/createns.md) and a [user](../../ghippo/access-control/user.md).
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 
@@ -27,7 +27,7 @@ Follow the steps below to backup the deployment __dao-2048__ .
 
 1. Enter the Container Management module, click __Backup Recovery__ -> __Application Backup__ on the left navigation bar, and enter the __Application Backup__ list page.
 
-    ![Cluster List](../../images/backupd20481.png)
+    ![Clusters](../../images/backupd20481.png)
 
 2. On the __Application Backup__ list page, select the cluster where the velero and __dao-2048__ applications have been installed. Click __Backup Plan__ in the upper right corner to create a new backup cluster.
 

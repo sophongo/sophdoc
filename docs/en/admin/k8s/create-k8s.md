@@ -51,7 +51,7 @@ Deploying a Kubernetes cluster is aimed at supporting efficient AI computing res
 
     ![done](../images/k8s08.png)
 
-6. In the cluster list, find the newly created cluster, click on the cluster name, navigate to **Helm Apps** -> **Helm Charts**, and search for `metax-gpu-extensions` in the search box, then click the card.
+6. In the cluster list, find the newly created cluster, click the cluster name, navigate to **Helm Apps** -> **Helm Charts**, and search for `metax-gpu-extensions` in the search box, then click the card.
 
     ![cluster](../images/k8s09.png)
 

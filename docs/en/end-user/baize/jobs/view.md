@@ -9,20 +9,20 @@ Once a job is created, it will be displayed in the job list.
 
 1. In the job list, click the **┇** on the right side of a job and select **Job Workload Details** .
 
-    ![Click Menu Item](../../images/view-wl01.png)
+    ![Click Menu Item](../images/view-wl01.png)
 
 2. A pop-up window will appear asking you to choose which Pod to view. Click **Enter** .
 
-    ![Pop-up Enter](../../images/view-wl02.png)
+    ![Pop-up Enter](../images/view-wl02.png)
 
 3. You will be redirected to the container management interface, where you can view the container’s working status, labels and annotations, and any events that have occurred.
 
-    ![View Details](../../images/view-wl03.png)
+    ![View Details](../images/view-wl03.png)
 
 4. You can also view detailed logs of the current Pod for the recent period.
    By default, 100 lines of logs are displayed. To view more detailed logs or to download logs, click the blue **Insight** text at the top.
 
-    ![Logs](../../images/view-wl04.png)
+    ![Logs](../images/view-wl04.png)
 
 5. Additionally, you can use the **...** in the upper right corner to view the current Pod's YAML, and to upload or download files.
    Below is an example of a Pod's YAML.

@@ -55,12 +55,12 @@ of scheduler-plugins as an example to introduce how to install and use scheduler
       for example: set the `permitWaitingTimeoutSeconds` parameter for coscheduling.
       See [K8s Official Plugin Configuration](https://github.com/kubernetes-sigs/scheduler-plugins/blob/master/manifests/coscheduling/scheduler-config.yaml) for reference.
 
-    <!-- ![Add scheduler-plugins parameter](../../images/cluster-scheduler-plugin-01.png) -->
+    <!-- ![Add scheduler-plugins parameter](../images/cluster-scheduler-plugin-01.png) -->
 
 2. After successful cluster creation, the system will automatically install the scheduler-plugins and
    controller component loads. You can check the workload status in the proper cluster's deployment.
 
-    <!-- ![Check plugin load status](../../images/cluster-scheduler-plugin-02.png) -->
+    <!-- ![Check plugin load status](../images/cluster-scheduler-plugin-02.png) -->
 
 ## Using scheduler-plugins
 
@@ -72,7 +72,7 @@ Here is an example of how to use scheduler-plugins by demonstrating a scenario w
       kubean, and currently cannot be modified.
     - `scheduler.kubeScheduler.enabled: false`: Do not install kube-scheduler and use vgpu-scheduler as a separate extender.
 
-    <!-- ![Install vgpu plugin](../../images/cluster-scheduler-plugin-03.png) -->
+    <!-- ![Install vgpu plugin](../images/cluster-scheduler-plugin-03.png) -->
 
 1. Extend vgpu-scheduler on scheduler-plugins.
 

@@ -17,7 +17,7 @@ Meanwhile, due to the lack of experience and professional solutions in schedulin
 
 The Suanova container management platform supports unified scheduling and operations management of GPUs, NPUs, and other heterogeneous resources, fully unleashing the computational power of GPU resources, and accelerating the development of enterprise AI and other emerging applications. The GPU management capabilities of Suanova are as follows:
 
-- Support for unified management of heterogeneous computing resources from domestic and foreign manufacturers such as NVIDIA, Huawei Ascend, and Days.
+- Support for unified management of heterogeneous computing resources from domestic and foreign manufacturers such as NVIDIA, Huawei Ascend, and Iluvatar.
 - Support for multi-card heterogeneous scheduling within the same cluster, with automatic recognition of GPUs in the cluster.
 - Support for native management solutions for NVIDIA GPUs, vGPUs, and MIG, with cloud native capabilities.
 - Support for partitioning a single physical card for use by different tenants, and allocate GPU resources to tenants and containers based on computing power and memory quotas.

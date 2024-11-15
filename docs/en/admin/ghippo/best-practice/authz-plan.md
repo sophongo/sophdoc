@@ -26,7 +26,3 @@ click authu "https://docs.daocloud.io/en/ghippo/workspace/wspermission/"
  class user,ns,ws,ws-to-ns,authu cluster;
  class start,complete plain;
 ```
-
-After authorization, the permissions of ordinary users in each module are:
-
-- [Observability](../../insight/intro/permission.md)

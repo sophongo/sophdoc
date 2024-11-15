@@ -10,7 +10,7 @@ After creating and starting the cloud host, users can begin using it.
 ## Steps to Follow
 
 1. Log in to the AI platform as an administrator.
-2. Navigate to **Container Management** -> **Container Network** -> **Services**, click on the service name to enter the service details page, and click **Update** at the top right corner.
+2. Navigate to **Container Management** -> **Container Network** -> **Services**, click the service name to enter the service details page, and click **Update** at the top right corner.
 
     ![service](../images/usehost01.png)
 

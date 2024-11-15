@@ -5,7 +5,7 @@ Date: 2024-06-06
 
 # Access Clusters
 
-Clusters integrated or created using the AI platform [Container Management](../../intro/index.md) platform can be accessed not only through the UI interface but also in two other ways for access control:
+Clusters integrated or created using the AI platform Container Management platform can be accessed not only through the UI interface but also in two other ways for access control:
 
 - Access online via CloudShell
 - Access via kubectl after downloading the cluster certificate
@@ -40,7 +40,7 @@ If everything is in place, follow these steps to access a cloud cluster from you
 
 2. Set the Kubeconfig period and click __Download__ .
 
-    ![Download certificates](../../images/access-download-cert.png)
+    ![Download certificates](../images/access-download-cert.png)
 
 3. Open the downloaded certificate and copy its content to the __config__ file of the local node.
 

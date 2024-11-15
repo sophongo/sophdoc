@@ -10,8 +10,7 @@ Suanova AI platform categorizes clusters based on different functionalities to h
 ## Global Service Cluster
 
 This cluster is used to run AI platform components such as
-[Container Management](../../intro/index.md), [Global Management](../../../ghippo/intro/index.md),
-[Insight](../../../insight/intro/index.md), [Container Registry](../../../kangaroo/intro/index.md).
+Container Management, Global Management, Insight.
 It generally does not carry business workloads.
 
 | Supported Features | Description |
@@ -45,7 +44,7 @@ This cluster is used to manage worker clusters and generally does not carry busi
 
 ## Worker Cluster
 
-This is a cluster created using [Container Management](../../intro/index.md) and is mainly used to
+This is a cluster created using Container Management and is mainly used to
 carry business workloads. This cluster is managed by the management cluster.
 
 | Supported Features | Description |

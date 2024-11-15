@@ -44,7 +44,7 @@ Notebook typically refers to Jupyter Notebook or similar interactive computing e
 
         ![advanced](../images/notebook06.png)
 
-6. You will be automatically redirected to the Notebook instance list; click on the instance name.
+6. You will be automatically redirected to the Notebook instance list; click the instance name.
 
     ![click name](../images/notebook07.png)
 
@@ -68,7 +68,7 @@ Notebook typically refers to Jupyter Notebook or similar interactive computing e
 
     ![copy key](../images/ssh02.png)
 
-3. Log in to the AI platform as a user, click on **Personal Center** in the upper right corner -> **SSH Public Key** -> **Import SSH Public Key**.
+3. Log in to the AI platform as a user, click **Personal Center** in the upper right corner -> **SSH Public Key** -> **Import SSH Public Key**.
 
     ![import](../images/ssh03.png)
 
