@@ -7,12 +7,12 @@ Date: 2024-10-25
 
 !!! note
 
-    This document is specifically designed for deploying or upgrading the Kubernetes version of worker clusters created on the AI platform platform in offline mode. It does not cover the deployment or upgrade of other Kubernetes components.
+    This document is specifically designed for deploying or upgrading the Kubernetes version of worker clusters created on the AI platform in offline mode. It does not cover the deployment or upgrade of other Kubernetes components.
 
 This guide is applicable to the following offline scenarios:
 
-- You can follow the operational guidelines to deploy the recommended Kubernetes version in a non-GUI environment created by the AI platform platform.
-- You can upgrade the Kubernetes version of worker clusters created using the AI platform platform by generating incremental offline packages.
+- You can follow the operational guidelines to deploy the recommended Kubernetes version in a non-GUI environment created by the AI platform.
+- You can upgrade the Kubernetes version of worker clusters created using the AI platform by generating incremental offline packages.
 
 The overall approach is as follows:
 

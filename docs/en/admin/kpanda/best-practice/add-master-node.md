@@ -8,7 +8,7 @@ This article provides a step-by-step guide on how to manually scale the control 
 
 ## Prerequisites
 
-- A worker cluster has been created using the AI platform platform. You can refer to the documentation on [Creating a Worker Cluster](../clusters/create-cluster.md).
+- A worker cluster has been created using the AI platform. You can refer to the documentation on [Creating a Worker Cluster](../clusters/create-cluster.md).
 - The managed cluster associated with the worker cluster exists in the current platform and is running normally.
 
 !!! note

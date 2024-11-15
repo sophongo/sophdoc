@@ -5,7 +5,7 @@ This guide explains how to upload an offline image to the bootstrap repository u
 ## Prerequisites
 
 1. The bootstrap node and its components are running properly.
-2. Prepare a node that has internet access and can access the bootstrap node. Docker should also be installed on this node. You can refer to [Installing Docker](../../../../install/community/kind/online.md) for installation instructions.
+2. Prepare a node that has internet access and can access the bootstrap node. Docker should also be installed on this node.
 
 ## Procedure
 

@@ -11,7 +11,6 @@ This guide explains how to build an offline yum source for CentOS 7.9 with a spe
 1. Prepare a file server that is accessible from the cluster network, such as Nginx or MinIO.
 1. Prepare a node that has internet access, can access the cluster where the GPU Operator will
    be deployed, and can access the file server. Docker should also be installed on this node.
-   You can refer to [Installing Docker](../../../../install/community/kind/online.md#install-docker) for installation instructions.
 
 ## Procedure
 

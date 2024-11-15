@@ -3,7 +3,7 @@
 A role corresponds to a set of permissions that determine the actions that can be
 performed on resources. Granting a user a role means granting all the permissions included in that role.
 
-AI platform platform provides three levels of roles, which effectively solve your permission-related issues:
+AI platform provides three levels of roles, which effectively solve your permission-related issues:
 
 - [Platform Roles](#platform-roles)
 - [Workspace Roles](#workspace-roles)

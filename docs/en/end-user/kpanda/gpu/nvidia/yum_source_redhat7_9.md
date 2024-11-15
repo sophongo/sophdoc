@@ -17,7 +17,7 @@ This page explains how to build an offline yum repository for Red Hat 7.9 based 
 1. The cluster nodes where the GPU Operator is to be deployed must be Red Hat 7.9 with the exact same kernel version.
 1. Prepare a file server that can be connected to the cluster network where the GPU Operator is to be deployed, such as nginx or minio.
 1. Prepare a node that can access the internet, the cluster where the GPU Operator is to be deployed,
-   and the file server. [Docker installation](../../../../install/community/kind/online.md#install-docker) must be completed on this node.
+   and the file server.
 1. The nodes in the global service cluster must be Red Hat 7.9.
 
 ## Steps

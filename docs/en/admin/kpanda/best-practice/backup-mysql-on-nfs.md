@@ -5,7 +5,7 @@ perform cross-cluster backup migration for a stateful application.
 
 !!! note
 
-    The current operator should have admin privileges on the AI platform platform.
+    The current operator should have admin privileges on the AI platform.
 
 ## Prepare the Demonstration Environment
 
@@ -565,7 +565,7 @@ Refer to the [Install Velero Plugin](../backup/install-velero.md) documentation 
 
 ## Cross-Cluster Recovery of MySQL Application and Data
 
-1. Log in to the AI platform platform and select __Container Management__ -> __Backup & Restore__ -> __Application Backup__ from the left navigation menu.
+1. Log in to the AI platform and select __Container Management__ -> __Backup & Restore__ -> __Application Backup__ from the left navigation menu.
 
    ![img](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/images/mysql06.png)
 

@@ -4,7 +4,7 @@ By using Grafana CRD, you can incorporate the management and deployment of dashb
 
 ## Steps
 
-1. Log in to the AI platform platform and go to __Container Management__ . Select the __kpanda-global-cluster__ from the cluster list.
+1. Log in to the AI platform and go to __Container Management__ . Select the __kpanda-global-cluster__ from the cluster list.
 
 2. Choose __Custom Resources__ from the left navigation bar. Look for the __grafanadashboards.integreatly.org__ 
    file in the list and click it to view the details.

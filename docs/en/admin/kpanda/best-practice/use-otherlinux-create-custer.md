@@ -1,6 +1,6 @@
 # Creating a Cluster on Non-Supported Operating Systems
 
-This document outlines how to create a worker cluster on an **unsupported OS** in offline mode. For the range of OS supported by AI platform, refer to [AI platform Supported Operating Systems](../../install/commercial/deploy-requirements.md).
+This document outlines how to create a worker cluster on an **unsupported OS** in offline mode. 
 
 The main process for creating a worker cluster on an unsupported OS in offline mode is illustrated in the diagram below:
 
@@ -10,7 +10,7 @@ Next, we will use the openAnolis operating system as an example to demonstrate h
 
 ## Prerequisites
 
-- AI platform Full Mode has been deployed following the documentation: [Offline Installation of AI platform Enterprise](../../install/commercial/start-install.md).
+- AI platform Full Mode has been deployed.
 - At least one node with the same architecture and version that can connect to the internet.
 
 ## Procedure

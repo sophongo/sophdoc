@@ -12,7 +12,7 @@ An integrated cluster can only be integrated from third-party vendors (see [Inte
 
 This page explains how to create a Worker Cluster. By default, when creating a new Worker Cluster, the operating system type and CPU architecture of the worker nodes should be consistent with the Global Service Cluster. If you want to create a cluster with a different operating system or architecture than the Global Management Cluster, refer to [Creating an Ubuntu Worker Cluster on a CentOS Management Platform](../best-practice/create-ubuntu-on-centos-platform.md) for instructions.
 
-It is recommended to use the [supported operating systems in AI platform](../../../install/commercial/deploy-requirements.md) to create the cluster. If your local nodes are not within the supported range, you can refer to [Creating a Cluster on Non-Mainstream Operating Systems](../best-practice/use-otherlinux-create-custer.md) for instructions.
+It is recommended to use the supported operating systems in AI platform to create the cluster. If your local nodes are not within the supported range, you can refer to [Creating a Cluster on Non-Mainstream Operating Systems](../best-practice/use-otherlinux-create-custer.md) for instructions.
 
 ## Prerequisites
 
