@@ -319,7 +319,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../install/offline-install.html">
+<a class="md-nav__link" href="../install/reverse-proxy.html">
 <span class="md-ellipsis">
     Install, Login, and Upgrade
   </span>
@@ -512,16 +512,16 @@
 <p>The access key can be used to access the openAPI and continuous delivery. Users can obtain the key and access the API by referring to the following steps in the personal center.</p>
 <h2 id="get-key">Get key<a class="headerlink" href="#get-key" title="Permanent link">¶</a></h2>
 <p>Log in to AI platform, find <strong>Personal Center</strong> in the drop-down menu in the upper right corner, and you can manage the access key of the account on the <strong>Access Keys</strong> page.</p>
-<p><img alt="key list" src="../../images/platform02.png"/></p>
-<p><img alt="created a key" src="../../images/platform03.png"/></p>
+<p><img alt="key list" src="../images/platform02.png"/></p>
+<p><img alt="created a key" src="../images/platform03.png"/></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Access key is displayed only once. If you forget your access key,
 you will need to create a new key.</p>
 </div>
 <h2 id="use-the-key-to-access-api">Use the key to access API<a class="headerlink" href="#use-the-key-to-access-api" title="Permanent link">¶</a></h2>
-<p>When accessing AI platform openAPI, add the header <code>Authorization:Bearer ${token}</code> to the request to identify the visitor, where <code>${token}</code> is the key obtained in the previous step. For the specific API, see <a href="https://docs.daocloud.io/openapi/">OpenAPI Documentation</a>.</p>
-<p><strong>Request Example</strong></p>
+<p>When accessing AI platform openAPI, add the header <code>Authorization:Bearer ${token}</code> to the request to identify the visitor, where <code>${token}</code> is the key obtained in the previous step.
+<strong>Request Example</strong></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>-H<span class="w"> </span><span class="s1">'Authorization:Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkRKVjlBTHRBLXZ4MmtQUC1TQnVGS0dCSWc1cnBfdkxiQVVqM2U3RVByWnMiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2NjE0MTU5NjksImlhdCI6MTY2MDgxMTE2OSwiaXNzIjoiZ2hpcHBvLmlvIiwic3ViIjoiZjdjOGIxZjUtMTc2MS00NjYwLTg2MWQtOWI3MmI0MzJmNGViIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4iLCJncm91cHMiOltdfQ.RsUcrAYkQQ7C6BxMOrdD3qbBRUt0VVxynIGeq4wyIgye6R8Ma4cjxG5CbU1WyiHKpvIKJDJbeFQHro2euQyVde3ygA672ozkwLTnx3Tu-_mB1BubvWCBsDdUjIhCQfT39rk6EQozMjb-1X1sbLwzkfzKMls-oxkjagI_RFrYlTVPwT3Oaw-qOyulRSw7Dxd7jb0vINPq84vmlQIsI3UuTZSNO5BCgHpubcWwBss-Aon_DmYA-Et_-QtmPBA3k8E2hzDSzc7eqK0I68P25r9rwQ3DeKwD1dbRyndqWORRnz8TLEXSiCFXdZT2oiMrcJtO188Ph4eLGut1-4PzKhwgrQ'</span><span class="w"> </span>https://demo-dev.daocloud.io/apis/ghippo.io/v1alpha1/users?page<span class="o">=</span><span class="m">1</span><span class="p">&amp;</span><span class="nv">pageSize</span><span class="o">=</span><span class="m">10</span><span class="w"> </span>-k
 </code></pre></div>
 <p><strong>Request result</strong></p>

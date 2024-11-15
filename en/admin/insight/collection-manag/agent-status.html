@@ -482,7 +482,7 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../ghippo/install/offline-install.html">
+<a class="md-nav__link" href="../../ghippo/install/reverse-proxy.html">
 <span class="md-ellipsis">
     Global Management
   </span>
@@ -542,7 +542,7 @@
 <p>In AI platform, Insight acts as a multi-cluster observability product.
 To achieve unified data collection across multiple clusters, users need to install
 the Helm application <strong>insight-agent</strong> (installed by default in the <strong>insight-system</strong> namespace).
-Refer to <a href="../../quickstart/install/install-agent.md">How to Install <strong>insight-agent</strong> </a>.</p>
+Refer to <a href="../quickstart/install/install-agent.html">How to Install <strong>insight-agent</strong> </a>.</p>
 <h2 id="status-explanation">Status Explanation<a class="headerlink" href="#status-explanation" title="Permanent link">¶</a></h2>
 <p>In the "Observability" -&gt; "Collection Management" section, you can view the installation status
 of <strong>insight-agent</strong> in each cluster.</p>
@@ -575,16 +575,16 @@ of <strong>insight-agent</strong> in each cluster.</p>
 <p>The resource consumption of the Prometheus metric collection component in <strong>insight-agent</strong> 
    is directly proportional to the number of Pods running in the cluster.
    Please adjust the resources for Prometheus according to the cluster size.
-   Refer to <a href="../../quickstart/res-plan/prometheus-res.md">Prometheus Resource Planning</a>.</p>
+   Refer to <a href="../quickstart/res-plan/prometheus-res.html">Prometheus Resource Planning</a>.</p>
 </li>
 <li>
 <p>The storage capacity of the vmstorage metric storage component in the global service cluster
    is directly proportional to the total number of Pods in the clusters.</p>
 <ul>
 <li>Please contact the platform administrator to adjust the disk capacity of vmstorage
-  based on the cluster size. Refer to <a href="../../quickstart/res-plan/vms-res-plan.md">vmstorage Disk Capacity Planning</a>.</li>
+  based on the cluster size. Refer to <a href="../quickstart/res-plan/vms-res-plan.html">vmstorage Disk Capacity Planning</a>.</li>
 <li>Adjust vmstorage disk based on multi-cluster scale.
-  Refer to <a href="../../quickstart/res-plan/modify-vms-disk.md">vmstorge Disk Expansion</a>.</li>
+  Refer to <a href="../quickstart/res-plan/modify-vms-disk.html">vmstorge Disk Expansion</a>.</li>
 </ul>
 </li>
 </ol>
