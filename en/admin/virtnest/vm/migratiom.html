@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#cold-migration-within-the-cluster">
           Skip to content
         </a>
 </div>
@@ -358,16 +358,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#cold-migration">
 <span class="md-ellipsis">
-      冷迁移
+      Cold Migration
     </span>
 </a>
 </li>
@@ -524,16 +524,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#cold-migration">
 <span class="md-ellipsis">
-      冷迁移
+      Cold Migration
     </span>
 </a>
 </li>
@@ -544,35 +544,28 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">集群内冷迁移<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>本文将介绍在关机状态下如何将云主机在同一集群内从一个节点移动到另一个节点。</p>
-<p>冷迁移的主要特点是，云主机在迁移过程中会处于离线状态，这可能会对业务连续性产生影响。因此，
-在实施冷迁移时需要仔细规划迁移时间窗口，并考虑业务需求和系统可用性。通常，冷迁移适用于对停机时间要求不是非常严格的场景。</p>
-<h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>使用冷迁移之前，需要满足以下前提条件：</p>
+<h1 id="cold-migration-within-the-cluster">Cold Migration within the Cluster<a class="headerlink" href="#cold-migration-within-the-cluster" title="Permanent link">¶</a></h1>
+<p>This article will introduce how to move a cloud host from one node to another within the same cluster while it is powered off.</p>
+<p>The main feature of cold migration is that the cloud host will be offline during the migration process, which may impact business continuity. Therefore, careful planning of the migration time window is necessary, taking into account business needs and system availability. Typically, cold migration is suitable for scenarios where downtime requirements are not very strict.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
+<p>Before using cold migration, the following prerequisites must be met:</p>
 <ul>
-<li>云主机必须处于关机状态才能进行冷迁移。</li>
+<li>The cloud host must be powered off to perform cold migration.</li>
 </ul>
-<h2 id="_3">冷迁移<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h2 id="cold-migration">Cold Migration<a class="headerlink" href="#cold-migration" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>点击左侧导航栏上的 <strong>容器管理</strong> ，然后点击 <strong>云主机</strong> ，进入列表页面，点击列表右侧的 <strong>┇</strong> ，
-   可以对关机状态下的云主机进行迁移动作。云主机在关机状态下时无法查看所在节点，需要提前规划或者开机查询。</p>
-<p><img alt="迁移前" src="../../../../admin/virtnest/images/cold01.png"/></p>
-<p><img alt="关机后迁移" src="../../../../admin/virtnest/images/cold02.png"/></p>
+<p>Click on <strong>Container Management</strong> in the left navigation bar, then click on <strong>Cloud Hosts</strong> to enter the list page. Click on the <strong>┇</strong> on the right side of the list to initiate the migration action for the cloud host that is in a powered-off state. The current node of the cloud host cannot be viewed while it is powered off, so prior planning or checking while powered on is required.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>如果您在原始节点的存储池中使用了 local-path，跨节点迁移时可能出现问题，请谨慎选择。</p>
+<p>If you have used local-path in the storage pool of the original node, there may be issues during cross-node migration. Please choose carefully.</p>
 </div>
 </li>
 <li>
-<p>点击迁移后，提示在迁移期间，可以选择指定节点迁移，也可以随机迁移，若需要修改存储池，
-   需要确保目标节点内有可用存储池。同时需要目标节点资源充足，迁移过程耗费时间较长，请耐心等待。</p>
-<p><img alt="迁移提示" src="../../../../admin/virtnest/images/cold03.png"/></p>
+<p>After clicking migrate, a prompt will appear allowing you to choose to migrate to a specific node or randomly. If you need to change the storage pool, ensure that there is an available storage pool in the target node. Also, ensure that the target node has sufficient resources. The migration process may take a significant amount of time, so please be patient.</p>
 </li>
 <li>
-<p>迁移需要一段时间，请耐心等待，成功后需要重启查看是否迁移成功。本示例已经开机查看迁移效果。</p>
-<p><img alt="迁移结果" src="../../../../admin/virtnest/images/cold04.png"/></p>
+<p>The migration will take some time, so please be patient. After it is successful, you need to restart the cloud host to check if the migration was successful. This example has already powered on the cloud host to check the migration effect.</p>
 </li>
 </ol>
 </article>

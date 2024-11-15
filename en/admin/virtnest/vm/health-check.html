@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#health-check">
           Skip to content
         </a>
 </div>
@@ -400,23 +400,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#http-liveness-probe">
+<a class="md-nav__link" href="#configuring-http-liveness-probe">
 <span class="md-ellipsis">
-      配置 HTTP Liveness Probe
+      Configuring HTTP Liveness Probe
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#tcp-liveness-probe">
+<a class="md-nav__link" href="#configuring-tcp-liveness-probe">
 <span class="md-ellipsis">
-      配置 TCP Liveness Probe
+      Configuring TCP Liveness Probe
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#readiness-probes">
+<a class="md-nav__link" href="#configuring-readiness-probes">
 <span class="md-ellipsis">
-      配置 Readiness Probes
+      Configuring Readiness Probes
     </span>
 </a>
 </li>
@@ -531,23 +531,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#http-liveness-probe">
+<a class="md-nav__link" href="#configuring-http-liveness-probe">
 <span class="md-ellipsis">
-      配置 HTTP Liveness Probe
+      Configuring HTTP Liveness Probe
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#tcp-liveness-probe">
+<a class="md-nav__link" href="#configuring-tcp-liveness-probe">
 <span class="md-ellipsis">
-      配置 TCP Liveness Probe
+      Configuring TCP Liveness Probe
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#readiness-probes">
+<a class="md-nav__link" href="#configuring-readiness-probes">
 <span class="md-ellipsis">
-      配置 Readiness Probes
+      Configuring Readiness Probes
     </span>
 </a>
 </li>
@@ -558,16 +558,16 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">健康检查<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>当配置云主机的存活（Liveness）和就绪（Readiness）探针时，与 Kubernetes 的配置过程相似。本文将介绍如何通过 YAML 为云主机配置健康检查参数。</p>
-<p>但是需要注意：需要在云主机创建成功并且处于关机状态下，修改 YAML 进行配置。</p>
-<h2 id="http-liveness-probe">配置 HTTP Liveness Probe<a class="headerlink" href="#http-liveness-probe" title="Permanent link">¶</a></h2>
+<h1 id="health-check">Health Check<a class="headerlink" href="#health-check" title="Permanent link">¶</a></h1>
+<p>When configuring the liveness and readiness probes for a cloud host, the process is similar to that of Kubernetes configuration. This article will introduce how to configure health check parameters for a cloud host using YAML.</p>
+<p>However, it is important to note that the configuration must be done when the cloud host has been successfully created and is in a powered-off state.</p>
+<h2 id="configuring-http-liveness-probe">Configuring HTTP Liveness Probe<a class="headerlink" href="#configuring-http-liveness-probe" title="Permanent link">¶</a></h2>
 <ol>
-<li>在 spec.template.spec 中配置 livenessProbe.httpGet。</li>
+<li>Configure <code>livenessProbe.httpGet</code> in <code>spec.template.spec</code>.</li>
 <li>
-<p>修改 cloudInitNoCloud 以启动一个 HTTP 服务器。</p>
+<p>Modify <code>cloudInitNoCloud</code> to start an HTTP server.</p>
 <details class="note">
-<summary>点击查看 YAML 示例配置</summary>
+<summary>Click to view YAML example</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubevirt.io/v1</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VirtualMachine</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
@@ -667,30 +667,30 @@
 </details>
 </li>
 <li>
-<p>根据操作系统（如 Ubuntu/Debian 或 CentOS），userData 的配置可能有所不同。主要区别：</p>
+<p>The configuration of <code>userData</code> may vary depending on the operating system (such as Ubuntu/Debian or CentOS). The main differences are:</p>
 <ul>
 <li>
-<p>包管理器：</p>
-<p>Ubuntu/Debian 使用 apt-get 作为包管理器。
-CentOS 使用 yum 作为包管理器。</p>
+<p>Package manager:</p>
+<p>Ubuntu/Debian uses <code>apt-get</code> as the package manager.
+CentOS uses <code>yum</code> as the package manager.</p>
 </li>
 <li>
-<p>SSH 服务重启命令：  </p>
-<p>Ubuntu/Debian 使用 systemctl restart ssh.service。
-CentOS 使用 systemctl restart sshd.service（注意 CentOS 7 及之前版本使用 service sshd restart）。</p>
+<p>SSH service restart command:</p>
+<p>Ubuntu/Debian uses <code>systemctl restart ssh.service</code>.
+CentOS uses <code>systemctl restart sshd.service</code> (note that for CentOS 7 and earlier versions, it uses <code>service sshd restart</code>).</p>
 </li>
 <li>
-<p>安装的软件包：</p>
-<p>Ubuntu/Debian 安装 ncat。
-CentOS 安装 nmap-ncat（因为 ncat 在 CentOS 的默认仓库中可能不可用）。</p>
+<p>Installed packages:</p>
+<p>Ubuntu/Debian installs <code>ncat</code>.
+CentOS installs <code>nmap-ncat</code> (because <code>ncat</code> may not be available in the default repository for CentOS).</p>
 </li>
 </ul>
 </li>
 </ol>
-<h2 id="tcp-liveness-probe">配置 TCP Liveness Probe<a class="headerlink" href="#tcp-liveness-probe" title="Permanent link">¶</a></h2>
-<p>在 spec.template.spec 中配置 livenessProbe.tcpSocket。</p>
+<h2 id="configuring-tcp-liveness-probe">Configuring TCP Liveness Probe<a class="headerlink" href="#configuring-tcp-liveness-probe" title="Permanent link">¶</a></h2>
+<p>Configure <code>livenessProbe.tcpSocket</code> in <code>spec.template.spec</code>.</p>
 <details class="note">
-<summary>点击查看 YAML 示例配置</summary>
+<summary>Click to view YAML example configuration</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubevirt.io/v1</span>
 <a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VirtualMachine</span>
 <a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nt">metadata</span><span class="p">:</span>
@@ -788,10 +788,10 @@ CentOS 安装 nmap-ncat（因为 ncat 在 CentOS 的默认仓库中可能不可�
 <a href="#__codelineno-1-95" id="__codelineno-1-95" name="__codelineno-1-95"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cloudinitdisk</span>
 </code></pre></div>
 </details>
-<h2 id="readiness-probes">配置 Readiness Probes<a class="headerlink" href="#readiness-probes" title="Permanent link">¶</a></h2>
-<p>在 spec.template.spec 中配置 readiness。</p>
+<h2 id="configuring-readiness-probes">Configuring Readiness Probes<a class="headerlink" href="#configuring-readiness-probes" title="Permanent link">¶</a></h2>
+<p>Configure <code>readiness</code> in <code>spec.template.spec</code>.</p>
 <details class="note">
-<summary>点击查看 YAML 示例配置</summary>
+<summary>Click to view YAML example configuration</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubevirt.io/v1</span>
 <a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VirtualMachine</span>
 <a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nt">metadata</span><span class="p">:</span>

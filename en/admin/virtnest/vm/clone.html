@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#cloning-a-cloud-host">
           Skip to content
         </a>
 </div>
@@ -330,16 +330,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#cloning-a-cloud-host_1">
 <span class="md-ellipsis">
-      克隆云主机
+      Cloning a Cloud Host
     </span>
 </a>
 </li>
@@ -524,16 +524,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#cloning-a-cloud-host_1">
 <span class="md-ellipsis">
-      克隆云主机
+      Cloning a Cloud Host
     </span>
 </a>
 </li>
@@ -544,38 +544,35 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">克隆云主机<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>本文将介绍如何克隆一台新的云主机。</p>
-<p>用户可以克隆一台新的云主机，克隆后的云主机将具有与原始云主机相同的操作系统和系统配置，能够实现快速部署和扩展，快速创建相似配置的新云主机，而无需从头开始安装。</p>
-<h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>使用克隆功能之前，需要满足以下前提条件（和快照功能的前提条件一致）：</p>
+<h1 id="cloning-a-cloud-host">Cloning a Cloud Host<a class="headerlink" href="#cloning-a-cloud-host" title="Permanent link">¶</a></h1>
+<p>This article will introduce how to clone a new cloud host.</p>
+<p>Users can clone a new cloud host, which will have the same operating system and system configuration as the original cloud host. This enables quick deployment and scaling, allowing for the rapid creation of new cloud hosts with similar configurations without the need to install from scratch.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
+<p>Before using the cloning feature, the following prerequisites must be met (which are the same as those for the snapshot feature):</p>
 <ul>
-<li>只有非错误状态下的云主机才能使用克隆功能。</li>
-<li>安装 Snapshot CRDs、Snapshot Controller、CSI Driver。
-  具体安装步骤可参考 <a href="https://github.com/kubernetes-csi/external-snapshotter?tab=readme-ov-file#usage">CSI Snapshotter</a>。</li>
-<li>等待 snapshot-controller 组件准备就绪, 该组件会监控 VolumeSnapshot 和 VolumeSnapshotContent 相关事件，并触发相关操作。</li>
-<li>等待 CSI Driver 准备就绪, 确保 csi-snapshotter sidecar 跑在 CSI Driver 里，csi-snapshotter sidecar 会监控 VolumeSnapshotContent 相关事件，并触发相关操作。<ul>
-<li>如存储是 Rook-Ceph，可参考 <a href="https://rook.io/docs/rook/latest-release/Storage-Configuration/Ceph-CSI/ceph-csi-snapshot/">ceph-csi-snapshot</a></li>
-<li>如存储是 HwameiStor，可参考 <a href="https://hwameistor.io/cn/docs/volumes/volume_snapshot">huameistor-snapshot</a></li>
+<li>Only cloud hosts that are not in an error state can use the cloning feature.</li>
+<li>Install Snapshot CRDs, Snapshot Controller, and CSI Driver.
+  For specific installation steps, refer to <a href="https://github.com/kubernetes-csi/external-snapshotter?tab=readme-ov-file#usage">CSI Snapshotter</a>.</li>
+<li>Wait for the snapshot-controller component to be ready. This component will monitor events related to VolumeSnapshot and VolumeSnapshotContent and trigger related operations.</li>
+<li>Wait for the CSI Driver to be ready, ensuring that the csi-snapshotter sidecar is running in the CSI Driver. The csi-snapshotter sidecar will monitor events related to VolumeSnapshotContent and trigger related operations.<ul>
+<li>If the storage is Rook-Ceph, refer to <a href="https://rook.io/docs/rook/latest-release/Storage-Configuration/Ceph-CSI/ceph-csi-snapshot/">ceph-csi-snapshot</a></li>
+<li>If the storage is HwameiStor, refer to <a href="https://hwameistor.io/cn/docs/volumes/volume_snapshot">huameistor-snapshot</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="_3">克隆云主机<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h2 id="cloning-a-cloud-host_1">Cloning a Cloud Host<a class="headerlink" href="#cloning-a-cloud-host_1" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>点击左侧导航栏上的 <strong>容器管理</strong> ，然后点击 <strong>云主机</strong> ，进入列表页面，点击列表右侧的 <strong>┇</strong> ，可以对非错误状态下的云主机执行快照操作。</p>
-<p><img alt="克隆云主机" src="../../../../admin/virtnest/images/clone01.png"/></p>
+<p>Click on <strong>Container Management</strong> in the left navigation bar, then click on <strong>Cloud Hosts</strong> to enter the list page. Click on the <strong>┇</strong> on the right side of the list to perform snapshot operations on cloud hosts that are not in an error state.</p>
 </li>
 <li>
-<p>弹出弹框，需要填写克隆新的云主机的名称和描述，克隆操作可能需要一些时间，具体取决于云主机的大小和存储性能。</p>
-<p><img alt="克隆过程" src="../../../../admin/virtnest/images/clone02.png"/></p>
+<p>A popup will appear, requiring you to fill in the name and description for the new cloud host being cloned. The cloning operation may take some time, depending on the size of the cloud host and storage performance.</p>
 </li>
 <li>
-<p>克隆成功后可以在云主机列表内查看到新的云主机，新创建出来的云主机处于关机状态，若需要开机需要手动操作。</p>
-<p><img alt="新的云主机" src="../../../../admin/virtnest/images/clone03.png"/></p>
+<p>After a successful clone, you can view the new cloud host in the cloud host list. The newly created cloud host will be in a powered-off state and will need to be manually powered on if required.</p>
 </li>
 <li>
-<p>克隆前建议对原有云主机进行快照，如果克隆过程中遇到问题，请检查先决条件是否满足，并尝试重新执行克隆操作。</p>
+<p>It is recommended to take a snapshot of the original cloud host before cloning. If you encounter issues during the cloning process, please check whether the prerequisites are met and try to execute the cloning operation again.</p>
 </li>
 </ol>
 </article>
