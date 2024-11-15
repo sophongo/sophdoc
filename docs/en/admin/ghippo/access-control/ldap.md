@@ -23,12 +23,12 @@ In Global Management, the operation steps are as follows:
 
 1. Click __Identity Provider__ on the left nav bar, click __Create an Identity Provider__ button.
 
-    ![id provider](../../images/ldap00.png)
+    ![id provider](../images/ldap00.png)
 
 1. In the __LDAP__ tab, fill in the following fields and click __Save__ to establish a trust relationship
    with the identity provider and a user mapping relationship.
 
-    ![ldap](../../images/ldap01.png)
+    ![ldap](../images/ldap01.png)
 
     | Field | Description |
     | ----- | ----------- |

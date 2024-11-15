@@ -15,12 +15,12 @@ You can grant these external user identities permission to use AI platform resou
 1. Log in to AI platform with a user who has the **admin** role. Click
    **Global Management** -> **Access Control** at the bottom of the left navigation bar.
 
-    ![Users and Access Control](../../images/access.png)
+    ![Users and Access Control](../images/access.png)
 
 2. Select **Identity Providers** on the left navigation bar, and click the **OAuth 2.0** tab.
    Fill in the form fields and establish a trust relationship with WeCom, then click **Save**.
 
-    ![Oauth2.0](../../images/oauth2.png)
+    ![Oauth2.0](../images/oauth2.png)
 
 ## Corresponding fields in WeCom
 
@@ -37,8 +37,8 @@ You can grant these external user identities permission to use AI platform resou
 
 WeCom ID:
 
-![Oauth2.0](../../images/mybusiness.png)
+![Oauth2.0](../images/mybusiness.png)
 
 Agent ID and ClientSecret:
 
-![agent](../../images/selfapplication.png)
+![agent](../images/selfapplication.png)

@@ -455,7 +455,6 @@ nav:
                   - 容器日志黑名单: admin/insight/faq/ignore-pod-log-collect.md
           - 全局管理:
               - 安装、登录和升级:
-                  - 离线升级全局管理: admin/ghippo/install/offline-install.md
                   - 自定义反向代理服务器地址: admin/ghippo/install/reverse-proxy.md
                   - 开启Folder/WS的隔离模式: admin/ghippo/install/user-isolation.md
                   - 国密网关: admin/ghippo/install/gm-gateway.md

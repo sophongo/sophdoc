@@ -84,7 +84,7 @@ helm upgrade --install --create-namespace --version ${insight_version_code} --cl
 
 !!! note
 
-   If installing AI Community in a Kind cluster, perform the following steps inside the Kind container.
+    If installing AI Community in a Kind cluster, perform the following steps inside the Kind container.
 
 #### Confirm Enabling Kubernetes Audit Logs
 
