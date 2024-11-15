@@ -158,7 +158,7 @@ This document uses the [AscentCL Image Classification Application](https://gitee
 
 ## UI Usage
 
-1. Confirm whether the cluster has detected the GPU card. Click __Clusters__ -> __Cluster Settings__ -> __Addon Plugins__ ,
+1. Confirm whether the cluster has detected the GPU. Click __Clusters__ -> __Cluster Settings__ -> __Addon Plugins__ ,
    and check whether the proper GPU type is automatically enabled and detected.
    Currently, the cluster will automatically enable __GPU__ and set the __GPU__ type to __Ascend__ .
 

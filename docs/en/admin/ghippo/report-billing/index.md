@@ -24,7 +24,7 @@ You need to [install or upgrade the Operations Management module](./gmagpie-offl
 ## Report Management
 
 Report Management provides data statistics for cluster, node, pods, workspace, and namespace across
-five dimensions: CPU Utilization, Memory Utilization, Storage Utilization, GPU Computing Power Utilization,
+five dimensions: CPU Utilization, Memory Utilization, Storage Utilization, GPU Utilization,
 and GPU Memory Utilization. It also integrates with the audit and alert modules to support the statistical
 management of audit and alert data, supporting a total of seven types of reports.
 

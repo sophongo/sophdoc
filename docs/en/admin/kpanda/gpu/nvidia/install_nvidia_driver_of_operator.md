@@ -16,7 +16,7 @@ and [Building Offline Yum Source for Red Hat 8.4](./upgrade_yum_source_redhat8_4
 ## Prerequisites
 
 - The kernel version of the cluster nodes where the gpu-operator is to be deployed must be
-  completely consistent. The distribution and GPU card model of the nodes must fall within
+  completely consistent. The distribution and GPU model of the nodes must fall within
   the scope specified in the [GPU Support Matrix](../gpu_matrix.md).
 - When installing the gpu-operator, select v23.9.0+2 or above.
 

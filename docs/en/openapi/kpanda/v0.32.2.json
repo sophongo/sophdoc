@@ -26468,18 +26468,18 @@
       "properties": {
         "type": {
           "type": "string",
-          "title": "type is gpu card type"
+          "title": "type is GPU type"
         },
         "alias": {
           "type": "string",
-          "title": "alias is gpu card alias"
+          "title": "alias is GPU alias"
         },
         "resource": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/v1alpha1GPUResourceSetting"
           },
-          "title": "gpu card resource setting"
+          "title": "GPU resource setting"
         },
         "resourceTemplate": {
           "$ref": "#/definitions/v1alpha1GPUResourceSetting",

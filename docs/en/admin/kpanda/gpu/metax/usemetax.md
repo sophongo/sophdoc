@@ -1,6 +1,6 @@
 # MetaX GPU Component Installation and Usage
 
-This chapter provides installation guidance for MetaX's gpu-extensions, gpu-operator, and other components, as well as usage methods for both the full GPU card and vGPU modes.
+This chapter provides installation guidance for MetaX's gpu-extensions, gpu-operator, and other components, as well as usage methods for both the full GPU and vGPU modes.
 
 ## Prerequisites
 
@@ -11,8 +11,8 @@ This chapter provides installation guidance for MetaX's gpu-extensions, gpu-oper
 
 Metax provides two helm-chart packages: metax-extensions and gpu-operator. Depending on the usage scenario, different components can be selected for installation.
 
-1. Metax-extensions: Includes two components, gpu-device and gpu-label. When using the Metax-extensions solution, the user's application container image needs to be built based on the MXMACA® base image. Moreover, Metax-extensions is only suitable for scenarios using the full GPU card.
-2. gpu-operator: Includes components such as gpu-device, gpu-label, driver-manager, container-runtime, and operator-controller. When using the gpu-operator solution, users can choose to create application container images that do not include the MXMACA® SDK. The gpu-operator is suitable for both full GPU card and vGPU scenarios.
+1. Metax-extensions: Includes two components, gpu-device and gpu-label. When using the Metax-extensions solution, the user's application container image needs to be built based on the MXMACA® base image. Moreover, Metax-extensions is only suitable for scenarios using the full GPU.
+2. gpu-operator: Includes components such as gpu-device, gpu-label, driver-manager, container-runtime, and operator-controller. When using the gpu-operator solution, users can choose to create application container images that do not include the MXMACA® SDK. The gpu-operator is suitable for both full GPU and vGPU scenarios.
 
 ## Operation Steps
 

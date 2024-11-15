@@ -1,16 +1,16 @@
 # Using Cambricon GPU
 
-This article introduces how to use Cambricon GPU in the SuanFeng AI computing platform.
+This article introduces how to use Cambricon GPU in the Suanova AI computing platform.
 
 ## Prerequisites
 
-- The SuanFeng AI computing platform's container management platform has been deployed and is running normally.
+- The Suanova AI computing platform's container management platform has been deployed and is running normally.
 - The container management module has either [integrated with a Kubernetes cluster](../../clusters/integrate-cluster.md) or [created a Kubernetes cluster](../../clusters/create-cluster.md), and is able to access the cluster's UI interface.
 - The current cluster has installed the Cambricon firmware, drivers, and DevicePlugin components. For installation details, please refer to the official documentation:
     - [Driver Firmware Installation](https://www.cambricon.com/docs/sdk_1.15.0/driver_5.10.22/user_guide/index.html)
     - [DevicePlugin Installation](https://github.com/Cambricon/cambricon-k8s-device-plugin/blob/master/device-plugin/README.md)
     
-When installing DevicePlugin, please disable the **--enable-device-type** parameter; otherwise, the SuanFeng AI computing platform will not be able to correctly recognize the Cambricon GPU.
+When installing DevicePlugin, please disable the **--enable-device-type** parameter; otherwise, the Suanova AI computing platform will not be able to correctly recognize the Cambricon GPU.
 
 ## Introduction to Cambricon GPU Modes
 
@@ -21,7 +21,7 @@ Cambricon GPUs have the following modes:
 - Dynamic SMLU Mode: Further refines resource allocation, allowing control over the size of memory and computing power allocated to containers.
 - MIM Mode: Allows the Cambricon GPU to be divided into multiple GPUs of fixed specifications for use.
 
-## Using Cambricon in SuanFeng AI Computing Platform
+## Using Cambricon in Suanova AI Computing Platform
 
 Here, we take the Dynamic SMLU mode as an example:
 
