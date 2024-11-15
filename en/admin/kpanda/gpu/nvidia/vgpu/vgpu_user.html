@@ -796,11 +796,11 @@
 <a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">            </span><span class="nt">limits</span><span class="p">:</span>
 <a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">              </span><span class="nt">nvidia.com/gpucores</span><span class="p">:</span><span class="w"> </span><span class="s">'20'</span><span class="w">   </span><span class="c1"># Request 20% of GPU cores for each card</span>
 <a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">              </span><span class="nt">nvidia.com/gpumem</span><span class="p">:</span><span class="w"> </span><span class="s">'200'</span><span class="w">   </span><span class="c1"># Request 200MB of GPU memory for each card</span>
-<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">              </span><span class="nt">nvidia.com/vgpu</span><span class="p">:</span><span class="w"> </span><span class="s">'1'</span><span class="w">   </span><span class="c1"># Request 1 GPU card</span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">              </span><span class="nt">nvidia.com/vgpu</span><span class="p">:</span><span class="w"> </span><span class="s">'1'</span><span class="w">   </span><span class="c1"># Request 1 GPU</span>
 <a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">          </span><span class="nt">imagePullPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Always</span>
 <a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">      </span><span class="nt">restartPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Always</span>
 </code></pre></div>
-<p>This YAML configuration requests the application to use vGPU resources. It specifies that each card should utilize 20% of GPU cores, 200MB of GPU memory, and requests 1 GPU card.</p>
+<p>This YAML configuration requests the application to use vGPU resources. It specifies that each card should utilize 20% of GPU cores, 200MB of GPU memory, and requests 1 GPU.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

@@ -484,9 +484,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#using-cambricon-in-suanfeng-ai-computing-platform">
+<a class="md-nav__link" href="#using-cambricon-in-suanova-ai-computing-platform">
 <span class="md-ellipsis">
-      Using Cambricon in SuanFeng AI Computing Platform
+      Using Cambricon in Suanova AI Computing Platform
     </span>
 </a>
 </li>
@@ -605,9 +605,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#using-cambricon-in-suanfeng-ai-computing-platform">
+<a class="md-nav__link" href="#using-cambricon-in-suanova-ai-computing-platform">
 <span class="md-ellipsis">
-      Using Cambricon in SuanFeng AI Computing Platform
+      Using Cambricon in Suanova AI Computing Platform
     </span>
 </a>
 </li>
@@ -626,10 +626,10 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="using-cambricon-gpu">Using Cambricon GPU<a class="headerlink" href="#using-cambricon-gpu" title="Permanent link">¶</a></h1>
-<p>This article introduces how to use Cambricon GPU in the SuanFeng AI computing platform.</p>
+<p>This article introduces how to use Cambricon GPU in the Suanova AI computing platform.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ul>
-<li>The SuanFeng AI computing platform's container management platform has been deployed and is running normally.</li>
+<li>The Suanova AI computing platform's container management platform has been deployed and is running normally.</li>
 <li>The container management module has either <a href="../../clusters/integrate-cluster.html">integrated with a Kubernetes cluster</a> or <a href="../../clusters/create-cluster.html">created a Kubernetes cluster</a>, and is able to access the cluster's UI interface.</li>
 <li>The current cluster has installed the Cambricon firmware, drivers, and DevicePlugin components. For installation details, please refer to the official documentation:<ul>
 <li><a href="https://www.cambricon.com/docs/sdk_1.15.0/driver_5.10.22/user_guide/index.html">Driver Firmware Installation</a></li>
@@ -637,7 +637,7 @@
 </ul>
 </li>
 </ul>
-<p>When installing DevicePlugin, please disable the <strong>--enable-device-type</strong> parameter; otherwise, the SuanFeng AI computing platform will not be able to correctly recognize the Cambricon GPU.</p>
+<p>When installing DevicePlugin, please disable the <strong>--enable-device-type</strong> parameter; otherwise, the Suanova AI computing platform will not be able to correctly recognize the Cambricon GPU.</p>
 <h2 id="introduction-to-cambricon-gpu-modes">Introduction to Cambricon GPU Modes<a class="headerlink" href="#introduction-to-cambricon-gpu-modes" title="Permanent link">¶</a></h2>
 <p>Cambricon GPUs have the following modes:</p>
 <ul>
@@ -646,7 +646,7 @@
 <li>Dynamic SMLU Mode: Further refines resource allocation, allowing control over the size of memory and computing power allocated to containers.</li>
 <li>MIM Mode: Allows the Cambricon GPU to be divided into multiple GPUs of fixed specifications for use.</li>
 </ul>
-<h2 id="using-cambricon-in-suanfeng-ai-computing-platform">Using Cambricon in SuanFeng AI Computing Platform<a class="headerlink" href="#using-cambricon-in-suanfeng-ai-computing-platform" title="Permanent link">¶</a></h2>
+<h2 id="using-cambricon-in-suanova-ai-computing-platform">Using Cambricon in Suanova AI Computing Platform<a class="headerlink" href="#using-cambricon-in-suanova-ai-computing-platform" title="Permanent link">¶</a></h2>
 <p>Here, we take the Dynamic SMLU mode as an example:</p>
 <ol>
 <li>

@@ -5213,18 +5213,18 @@
       "properties": {
         "alias": {
           "type": "string",
-          "title": "alias is gpu card alias"
+          "title": "alias is GPU alias"
         },
         "resource": {
           "type": "array",
-          "title": "gpu card resource setting",
+          "title": "GPU resource setting",
           "items": {
             "$ref": "#/definitions/v1alpha1GPUResourceSetting"
           }
         },
         "type": {
           "type": "string",
-          "title": "type is gpu card type"
+          "title": "type is GPU type"
         }
       }
     },

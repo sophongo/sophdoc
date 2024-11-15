@@ -390,12 +390,12 @@ After filling in the configuration according to the following requirements, clic
   for CPU/memory resources. Configure resources for the container as needed to avoid resource waste and system failures 
   caused by container resource overages. Default values are shown in the figure.</li>
 <li>GPU Configuration: Configure GPU usage for the container, supporting only positive integers. 
-  The GPU quota setting supports configuring the container to exclusively use an entire GPU card or part of a vGPU.
-  For example, for a GPU card with 8 cores, entering the number <strong>8</strong> means the container exclusively uses the entire card, 
+  The GPU quota setting supports configuring the container to exclusively use an entire GPU or part of a vGPU.
+  For example, for a GPU with 8 cores, entering the number <strong>8</strong> means the container exclusively uses the entire card, 
   and entering the number <strong>1</strong> means configuring 1 core of the vGPU for the container.</li>
 </ul>
 <blockquote>
-<p>Before setting the GPU, the administrator needs to pre-install the GPU card and driver plugin on the cluster node 
+<p>Before setting the GPU, the administrator needs to pre-install the GPU and driver plugin on the cluster node 
   and enable the GPU feature in the <a href="../clusterops/cluster-settings.html">Cluster Settings</a>.</p>
 </blockquote>
 </div>

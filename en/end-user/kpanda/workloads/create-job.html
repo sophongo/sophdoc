@@ -745,10 +745,10 @@
 <li>Image Pull Policy: After checking <strong>Always pull image</strong> , the image will be pulled from the registry every time the workload restarts/upgrades. If it is not checked, only the local image will be pulled, and only when the image does not exist locally, it will be re-pulled from the container registry. For more details, refer to <a href="https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy">Image Pull Policy</a>.</li>
 <li>Privileged container: By default, the container cannot access any device on the host. After enabling the privileged container, the container can access all devices on the host and enjoy all the permissions of the running process on the host.</li>
 <li>CPU/Memory Quota: Requested value (minimum resource to be used) and limit value (maximum resource allowed to be used) of CPU/Memory resource. Please configure resources for containers as needed to avoid resource waste and system failures caused by excessive container resources. The default value is shown in the figure.</li>
-<li>GPU Exclusive: Configure the GPU usage for the container, only positive integers are supported. The GPU quota setting supports setting exclusive use of the entire GPU card or part of the vGPU for the container. For example, for an 8-core GPU card, enter the number <strong>8</strong> to let the container exclusively use the entire length of the card, and enter the number <strong>1</strong> to configure a 1-core vGPU for the container.</li>
+<li>GPU Exclusive: Configure the GPU usage for the container, only positive integers are supported. The GPU quota setting supports setting exclusive use of the entire GPU or part of the vGPU for the container. For example, for an 8-core GPU, enter the number <strong>8</strong> to let the container exclusively use the entire length of the card, and enter the number <strong>1</strong> to configure a 1-core vGPU for the container.</li>
 </ul>
 <blockquote>
-<p>Before setting exclusive GPU, the administrator needs to install the GPU card and driver plug-in on the cluster nodes in advance, and enable the GPU feature in <a href="../clusterops/cluster-settings.html">Cluster Settings</a>.</p>
+<p>Before setting exclusive GPU, the administrator needs to install the GPU and driver plug-in on the cluster nodes in advance, and enable the GPU feature in <a href="../clusterops/cluster-settings.html">Cluster Settings</a>.</p>
 </blockquote>
 </div>
 <div class="tabbed-block">
