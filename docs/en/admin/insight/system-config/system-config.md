@@ -3,11 +3,11 @@ hide:
    - toc
 ---
 
-# System Configuration
+# System Settings
 
- __System Configuration__ displays the default storage time of metrics, logs, traces and the default Apdex threshold.
+__System Settings__ displays the default storage time of metrics, logs, traces and the default Apdex threshold.
 
-1. Click the right navigation bar and select __System Configuration__ .
+1. Click the right navigation bar and select __System Settings__ .
 
      
 
@@ -19,4 +19,4 @@ hide:
 
 !!! note
 
-     To modify other configurations, please click to view [How to modify the system configuration? ](modify-config.md)
+     To modify other settings, please click to view [How to modify the system settings? ](modify-config.md)

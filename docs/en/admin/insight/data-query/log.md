@@ -8,7 +8,7 @@ use the source information and contextual raw data of the logs to assist in trou
 
 ## Prerequisites
 
-The cluster has [insight-agent installed](../../quickstart/install/install-agent.md)
+The cluster has [insight-agent installed](../quickstart/install/install-agent.md)
 and the application is in __running__ state.
 
 ## Query log
