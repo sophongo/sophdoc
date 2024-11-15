@@ -274,7 +274,7 @@ Through Webhook, notify AnyProduct of each authorization change (if required, it
 
 ### Use Other Capabilities of AI platform in AnyProduct (Optional)
 
-The method is to call the AI platform [OpenAPI](https://docs.daocloud.io/openapi/index.html).
+The method is to call the AI platform [OpenAPI](../../../../openapi/index.md).
 
 ## References
 

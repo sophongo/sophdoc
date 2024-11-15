@@ -19,4 +19,4 @@ AI platform offers robust security measures, including password policies and acc
 
 To configure the password and access control policies, navigate to global management, then click **Settings** -> **Security Policy** in the left navigation bar.
 
-![Security Policy](../../images/security-policy.png)
+![Security Policy](../images/security-policy.png)

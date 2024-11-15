@@ -52,6 +52,6 @@ Currently, the following reports are supported:
 
 1. Log in to AI platform as a user with the __admin__ role. Click __Global Management__ -> __Operations Management__ at the bottom of the left navigation bar.
 
-    ![Report Management](../../images/gmagpiereport.png)
+    ![Report Management](../images/gmagpiereport.png)
 
 2. After entering the **Operations Management** , switch to different menus to view billing reports for clusters, nodes, and pods.

@@ -68,6 +68,7 @@ lscpu | grep sse4_2
 ```
 
 ### Solution
+
 You need to upgrade your virtual machine or physical machine CPU to support x86-64-v2 and above, ensuring that the x86 CPU instruction set supports SSE4.2. For details on how to upgrade, you should consult your virtual machine platform provider or your physical machine provider.
 
 For more information, see: https://github.com/keycloak/keycloak/issues/17290

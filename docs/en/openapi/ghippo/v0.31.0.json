@@ -3124,9 +3124,9 @@
             "required": false,
             "type": "string",
             "enum": [
-              "wechatwork"
+              "WeCom"
             ],
-            "default": "wechatwork"
+            "default": "WeCom"
           }
         ],
         "tags": [
@@ -11382,9 +11382,9 @@
     "v1alpha1oauthProviderType": {
       "type": "string",
       "enum": [
-        "wechatwork"
+        "WeCom"
       ],
-      "default": "wechatwork"
+      "default": "WeCom"
     },
     "v1alpha1roleGProduct": {
       "type": "object",

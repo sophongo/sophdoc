@@ -15,8 +15,6 @@ The OEM OUT integration involves 5 steps:
 4. [Customize appearance](#customizie-appearance)
 5. [Permission system integration (optional)](#permission-system-integration-optional)
 
-For detailed instructions, refer to the [OEM OUT Best Practices video tutorial](../../../videos/use-cases.md#integrating-dce-50-into-customer-systems-oem-out).
-
 ## Unify Domain Name
 
 1. Deploy AI platform (Assuming the access address after deployment is `https://10.6.8.2:30343/`).
@@ -67,7 +65,7 @@ For detailed instructions, refer to the [OEM OUT Best Practices video tutorial](
 Integrate the customer system with AI platform using protocols like OIDC/OAUTH,
 allowing users to access AI platform without logging in again after logging into
 the customer system. Fill in the OIDC information of the customer system in
- __Global Management__ -> __Access Control__ -> __Identity Provider__ .
+__Global Management__ -> __Access Control__ -> __Identity Provider__ .
 
 After integration, the AI platform login page will display the OIDC (custom) option.
 When accessing AI platform from the customer system for the first time,

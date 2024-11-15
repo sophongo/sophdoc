@@ -7,7 +7,7 @@ hide:
 
 # AI Lab Permissions
 
-[AI Lab](../../baize/intro/index.md) supports four user roles:
+AI Lab supports four user roles:
 
 - Admin / Baize Owner: Has full permissions (create, read, update, delete) for all features in the `Developer` and `Operator`.
 - Workspace Admin: Has full permissions (create, read, update, delete) for all features in the authorized workspace's `Developer`.
@@ -21,7 +21,7 @@ Use `&check;` for permission granted, and `&cross;` for permission denied.
 -->
 
 | Menu Object | Operation | Admin / Baize Owner | Workspace Admin | Workspace Editor | Workspace Viewer |
-|---------------|-------------|-----------------------|-------------------|--------------------|--------------------|
+|------------|-----------|---------------------|-----------------|------------------|-------------------|
 | **Developer** | | | | | |
 | Overview | View Overview | &check; | &check; | &check; | &check; |
 | Notebooks | View Notebooks | &check; | &check; | &check; | &check; |

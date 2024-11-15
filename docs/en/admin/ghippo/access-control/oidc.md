@@ -16,11 +16,11 @@ The specific operation steps are as follows.
 
 1. Log in to AI platform as a user with __admin__ role. Click __Global Management__ -> __Access Control__ at the bottom of the left navigation bar.
 
-    ![access control](../../images/ws01.png)
+    ![access control](../images/ws01.png)
 
 2. On the left nav bar select __Identity Provider__ , click __OIDC__ -> __Create an Identity Provider__
 
-    ![click create](../../images/oidc-button.png)
+    ![click create](../images/oidc-button.png)
 
 3. After completing the form fields and establishing a trust relationship with the identity provider, click __Save__ .
 
@@ -49,7 +49,7 @@ The specific operation steps are as follows.
 
 The interactive process of user authentication is as follows:
 
-![oidc](../../images/oidc01.png)
+![oidc](../images/oidc01.png)
 
 1. Use a browser to initiate a single sign-on request for AI platform.
 1. According to the information carried in the login link, AI platform searches for the proper configuration information

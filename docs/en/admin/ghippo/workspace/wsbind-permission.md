@@ -17,13 +17,13 @@ but also the permissions of [Cluster Admin](../../../kpanda/permissions/permissi
 1. Using the [Platform Admin Role](../access-control/role.md#workspace-role-authorization-methods),
    grant John the role of Workspace Admin on the **Workspace** -> **Authorization** page.
 
-    ![Resource Binding](../../images/wsbind1.png)
+    ![Resource Binding](../images/wsbind1.png)
 
 1. Then, on the **Container Management** -> **Permissions** page, authorize John as a Cluster Admin by **Add Permission**.
 
-    ![Cluster Permissions1](../../images/wsbind2.png)
+    ![Cluster Permissions1](../images/wsbind2.png)
 
-    ![Cluster Permissions2](../../images/wsbind3.png)
+    ![Cluster Permissions2](../images/wsbind3.png)
 
 ## Binding to Workspace
 
@@ -34,8 +34,8 @@ Using John's account to log in to AI platform, on the **Container Management** -
 
     John can only bind clusters or namespaces to a specific workspace in the [Container Management module](../../../kpanda/intro/index.md), and cannot perform this operation in the Global Management module.
 
-![cluster banding](../../images/wsbind4.png)
+![cluster banding](../images/wsbind4.png)
 
 To bind a namespace to a workspace, you must have at least Workspace Admin and Cluster Admin permissions.
 
-![cluster banding](../../images/wsbind5.png)
+![cluster banding](../images/wsbind5.png)

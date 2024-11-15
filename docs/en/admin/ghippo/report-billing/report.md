@@ -35,9 +35,7 @@ Currently, the following reports are supported:
 ## Steps
 
 1. Log in to AI platform as a user with the __Admin__ role. Click __Global Management__ -> __Operations Management__ at the bottom of the left sidebar.
-
-    ![Report Management](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/ghippo/images/gmagpiereport.png)
    
 2. After entering Operations Management, switch between different menus to view reports on clusters, nodes, and pods.
 
-    ![Report](../../images/report01.png)
+    ![Report](../images/report01.png)
