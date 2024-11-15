@@ -794,7 +794,7 @@ which will be used to construct the complete access address of the proper servic
 <li>common-es (logging service)</li>
 <li>insight-opentelemetry-collector (tracing service)</li>
 </ul>
-<p>After obtaining the corresponding port information for the services in the above two scenarios, make the following settings:</p>
+<p>After obtaining the proper port information for the services in the above two scenarios, make the following settings:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>--set<span class="w"> </span>global.exporters.logging.host<span class="o">=</span><span class="w">  </span><span class="c1"># (1)!</span>
 <a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>--set<span class="w"> </span>global.exporters.logging.port<span class="o">=</span><span class="w">  </span><span class="c1"># (2)!</span>
 <a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>--set<span class="w"> </span>global.exporters.metric.host<span class="o">=</span><span class="w">   </span><span class="c1"># (3)!</span>

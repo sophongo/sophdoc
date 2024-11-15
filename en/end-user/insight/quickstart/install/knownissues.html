@@ -314,7 +314,7 @@
 it checks whether <code>MutationConfiguration</code> exists and reuses the CA cert bound in
 MutationConfiguration. However, since <code>helm uninstall</code> has uninstalled <code>MutationConfiguration</code>,
 it results in a null value.</p>
-<p>Therefore, please manually delete the corresponding <code>secret</code> using one of the following methods:</p>
+<p>Therefore, please manually delete the proper <code>secret</code> using one of the following methods:</p>
 <ul>
 <li>
 <p><strong>Delete via command line</strong>: Log in to the console of the target cluster and run the following command:</p>
@@ -340,7 +340,7 @@ to Elasticsearch, the changes do not take effect and the agent continues to use 
 <li>
 <p>In this version, there is a defect in <strong>PodMonitor/insight-kubernetes-pod</strong>: it will incorrectly
    create Jobs to collect metrics for all containers in Pods that are marked with
-   <code>insight.opentelemetry.io/metric-scrape=true</code>, instead of only the containers corresponding
+   <code>insight.opentelemetry.io/metric-scrape=true</code>, instead of only the containers proper
    to <code>insight.opentelemetry.io/metric-port</code>.</p>
 </li>
 <li>

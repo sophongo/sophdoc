@@ -738,7 +738,7 @@
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ol>
 <li>Before installation, confirm the supported NPU models. For details, refer to the <a href="../gpu_matrix.html">Ascend NPU Matrix</a>.</li>
-<li>Ensure that the kernel version required for the corresponding NPU model is compatible. For more details, 
+<li>Ensure that the kernel version required for the proper NPU model is compatible. For more details, 
    refer to the <a href="../gpu_matrix.html">Ascend NPU Matrix</a>.</li>
 <li>Prepare the basic Kubernetes environment.</li>
 </ol>
@@ -748,7 +748,7 @@ Docker Runtime installation, user creation, log directory creation, and NPU Devi
 Refer to the following steps for details.</p>
 <h3 id="install-firmware">Install Firmware<a class="headerlink" href="#install-firmware" title="Permanent link">¶</a></h3>
 <ol>
-<li>Confirm that the kernel version is within the range corresponding to the "binary installation" method, 
+<li>Confirm that the kernel version is within the range proper to the "binary installation" method, 
    and then you can directly install the NPU driver firmware.</li>
 <li>For firmware and driver downloads, refer to: <a href="https://www.hiascend.com/zh/hardware/firmware-drivers/community?product=2&amp;model=15&amp;cann=6.3.RC2.alpha005&amp;driver=1.0.20.alpha">Firmware Download Link</a></li>
 <li>For firmware installation, refer to: <a href="https://www.hiascend.com/document/detail/zh/quick-installation/23.0.RC2/quickinstg/800_3000/quickinstg_800_3000_0001.html">Install NPU Driver Firmware</a></li>
@@ -812,7 +812,7 @@ Refer to the following steps for details.</p>
 <a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>HwHiAiUser<span class="w"> </span>hwMindX
 </code></pre></div>
 <h3 id="create-log-directory">Create Log Directory<a class="headerlink" href="#create-log-directory" title="Permanent link">¶</a></h3>
-<p>Create the parent directory for component logs and the log directories for each component on the corresponding node, 
+<p>Create the parent directory for component logs and the log directories for each component on the proper node, 
 and set the appropriate owner and permissions for the directories. Execute the following command to create 
 the parent directory for component logs.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>mkdir<span class="w"> </span>-m<span class="w"> </span><span class="m">755</span><span class="w"> </span>/var/log/mindx-dl
@@ -824,11 +824,11 @@ the parent directory for component logs.</p>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Please create the corresponding log directory for each required component. In this example, only the Device Plugin component is needed.
+<p>Please create the proper log directory for each required component. In this example, only the Device Plugin component is needed.
 For other component requirements, refer to the <a href="https://www.hiascend.com/document/detail/zh/mindx-dl/50rc3/clusterscheduling/clusterschedulingig/dlug_installation_016.html">official documentation</a></p>
 </div>
 <h3 id="create-node-labels">Create Node Labels<a class="headerlink" href="#create-node-labels" title="Permanent link">¶</a></h3>
-<p>Refer to the following commands to create labels on the corresponding nodes:</p>
+<p>Refer to the following commands to create labels on the proper nodes:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c1"># Create this label on computing nodes where the driver is installed</span>
 <a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>kubectl<span class="w"> </span>label<span class="w"> </span>node<span class="w"> </span><span class="o">{</span>nodename<span class="o">}</span><span class="w"> </span>huawei.com.ascend/Driver<span class="o">=</span>installed
 <a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a>kubectl<span class="w"> </span>label<span class="w"> </span>node<span class="w"> </span><span class="o">{</span>nodename<span class="o">}</span><span class="w"> </span>node-role.kubernetes.io/worker<span class="o">=</span>worker
@@ -848,11 +848,11 @@ For other component requirements, refer to the <a href="https://www.hiascend.com
 <li><strong>ServiceMonitor</strong>: Disabled by default. If enabled, you can view NPU-related monitoring in the observability module. To enable, ensure that the insight-agent is installed and running, otherwise, the ascend-mindxdl installation will fail.</li>
 <li><strong>isVirtualMachine</strong>: Disabled by default. If the NPU node is a virtual machine scenario, enable the isVirtualMachine parameter.</li>
 </ul>
-<p>After a successful installation, two components will appear under the corresponding namespace, as shown below:</p>
+<p>After a successful installation, two components will appear under the proper namespace, as shown below:</p>
 <p><img alt="List of ascend-mindxdl" src="../images/list-ascend-mindxdl.png"/></p>
-<p>At the same time, the corresponding NPU information will also appear on the node information:</p>
+<p>At the same time, the proper NPU information will also appear on the node information:</p>
 <p><img alt="Node labels" src="../images/label-ascend-mindxdl.png"/></p>
-<p>Once everything is ready, you can select the corresponding NPU device when creating a workload through the page, as shown below:</p>
+<p>Once everything is ready, you can select the proper NPU device when creating a workload through the page, as shown below:</p>
 <!-- add screenshot later -->
 <div class="admonition note">
 <p class="admonition-title">Note</p>

@@ -671,7 +671,7 @@ and make sure the following three items are ready:</p>
 <ul>
 <li>Enable trace functionality for insight-agent</li>
 <li>Check if the address and port for trace data are correctly filled</li>
-<li>Ensure that the Pods corresponding to deployment/insight-agent-opentelemetry-operator and
+<li>Ensure that the Pods proper to deployment/insight-agent-opentelemetry-operator and
   deployment/insight-agent-opentelemetry-collector are ready</li>
 </ul>
 <h2 id="install-instrumentation-cr">Install Instrumentation CR<a class="headerlink" href="#install-instrumentation-cr" title="Permanent link">¶</a></h2>
@@ -968,7 +968,7 @@ is the name of the CR.</p>
 </li>
 <li>
 <p>Automatic probe injection and environment variable injection annotations</p>
-<p>There are currently 4 such annotations, corresponding to 4 different programming languages: java, nodejs, 
+<p>There are currently 4 such annotations, proper to 4 different programming languages: java, nodejs, 
 python, dotnet. After using it, automatic probes and otel default environment variables will be 
 injected into the first container under spec.pod:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><input id="__tabbed_2_4" name="__tabbed_2" type="radio"><input id="__tabbed_2_5" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Java application</label><label for="__tabbed_2_2">NodeJs application</label><label for="__tabbed_2_3">Python application</label><label for="__tabbed_2_4">Dotnet application</label><label for="__tabbed_2_5">Golang application</label></div>

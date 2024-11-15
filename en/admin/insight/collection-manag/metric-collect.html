@@ -674,7 +674,7 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="metrics-retrieval-methods">Metrics Retrieval Methods<a class="headerlink" href="#metrics-retrieval-methods" title="Permanent link">¶</a></h1>
-<p>Prometheus primarily uses the Pull approach to retrieve monitoring metrics from target services' exposed endpoints. Therefore, it requires configuring corresponding scraping jobs to request monitoring data and write it into the storage provided by Prometheus. Currently, Prometheus offers several configurations for these jobs:</p>
+<p>Prometheus primarily uses the Pull approach to retrieve monitoring metrics from target services' exposed endpoints. Therefore, it requires configuring proper scraping jobs to request monitoring data and write it into the storage provided by Prometheus. Currently, Prometheus offers several configurations for these jobs:</p>
 <ul>
 <li>Native Job Configuration: This provides native Prometheus job configuration for scraping.</li>
 <li>Pod Monitor: In the Kubernetes ecosystem, it allows scraping of monitoring data from Pods using Prometheus Operator.</li>
@@ -685,7 +685,7 @@
 <p><code>[ ]</code> indicates optional configmaps.</p>
 </div>
 <h2 id="native-job-configuration">Native Job Configuration<a class="headerlink" href="#native-job-configuration" title="Permanent link">¶</a></h2>
-<p>The corresponding configmaps are explained as follows:</p>
+<p>The proper configmaps are explained as follows:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Name of the scraping job, also adds a label (job=job_name) to the scraped metrics</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;job_name&gt;</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>
@@ -727,7 +727,7 @@
 <a href="#__codelineno-0-39" id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="c1"># Set the value of the `Authorization` header in the scrape request through bearer token authentication. bearer_token/bearer_token_file are mutually exclusive, with bearer_token taking precedence.</span>
 <a href="#__codelineno-0-40" id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">bearer_token_file</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">&lt;filename&gt;</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-0-41" id="__codelineno-0-41" name="__codelineno-0-41"></a>
-<a href="#__codelineno-0-42" id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="c1"># Whether the scrape connection should use a TLS secure channel, configure the corresponding TLS parameters</span>
+<a href="#__codelineno-0-42" id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="c1"># Whether the scrape connection should use a TLS secure channel, configure the proper TLS parameters</span>
 <a href="#__codelineno-0-43" id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="nt">tls_config</span><span class="p">:</span>
 <a href="#__codelineno-0-44" id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">&lt;tls_config&gt;</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-0-45" id="__codelineno-0-45" name="__codelineno-0-45"></a>
@@ -742,7 +742,7 @@
 <a href="#__codelineno-0-54" id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="nt">cvm_sd_configs</span><span class="p">:</span>
 <a href="#__codelineno-0-55" id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">- &lt;cvm_sd_config&gt; ...</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-0-56" id="__codelineno-0-56" name="__codelineno-0-56"></a>
-<a href="#__codelineno-0-57" id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="c1"># After scraping the data, rewrite the labels of the corresponding target using the relabel mechanism. Executes multiple relabel rules in order.</span>
+<a href="#__codelineno-0-57" id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="c1"># After scraping the data, rewrite the labels of the proper target using the relabel mechanism. Executes multiple relabel rules in order.</span>
 <a href="#__codelineno-0-58" id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="c1"># See explanation below for relabel_config.</span>
 <a href="#__codelineno-0-59" id="__codelineno-0-59" name="__codelineno-0-59"></a><span class="nt">relabel_configs</span><span class="p">:</span>
 <a href="#__codelineno-0-60" id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">- &lt;relabel_config&gt; ...</span><span class="w"> </span><span class="p p-Indicator">]</span>
@@ -759,12 +759,12 @@
 <a href="#__codelineno-0-71" id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">target_limit</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">&lt;int&gt; | default = 0</span><span class="w"> </span><span class="p p-Indicator">]</span>
 </code></pre></div>
 <h2 id="pod-monitor">Pod Monitor<a class="headerlink" href="#pod-monitor" title="Permanent link">¶</a></h2>
-<p>The explanation for the corresponding configmaps is as follows:</p>
+<p>The explanation for the proper configmaps is as follows:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># Prometheus Operator CRD version</span>
 <a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">monitoring.coreos.com/v1</span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># Corresponding Kubernetes resource type, here it is PodMonitor</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># proper Kubernetes resource type, here it is PodMonitor</span>
 <a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PodMonitor</span>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1"># Corresponding Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be &lt;namespace&gt;/&lt;name&gt;</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1"># proper Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be &lt;namespace&gt;/&lt;name&gt;</span>
 <a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nt">metadata</span><span class="p">:</span>
 <a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis-exporter</span><span class="w"> </span><span class="c1"># Specify a unique name</span>
 <a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cm-prometheus</span><span class="w">  </span><span class="c1"># Fixed namespace, no need to modify</span>
@@ -772,11 +772,11 @@
 <a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
 <a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="nt">operator.insight.io/managed-by</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">insight</span><span class="w"> </span><span class="c1"># Label indicating managed by Insight</span>
 <a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="nt">spec</span><span class="p">:</span>
-<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">  </span><span class="c1"># Specify the label of the corresponding Pod, pod monitor will use this value as the job label value.</span>
+<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">  </span><span class="c1"># Specify the label of the proper Pod, pod monitor will use this value as the job label value.</span>
 <a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">  </span><span class="c1"># If viewing the Pod YAML, use the values in pod.metadata.labels.</span>
 <a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="c1"># If viewing Deployment/Daemonset/Statefulset, use spec.template.metadata.labels.</span>
 <a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">jobLabel</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="p p-Indicator">]</span>
-<a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">  </span><span class="c1"># Adds the corresponding Pod's Labels to the Target's Labels</span>
+<a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">  </span><span class="c1"># Adds the proper Pod's Labels to the Target's Labels</span>
 <a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">podTargetLabels</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="nv">string</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">  </span><span class="c1"># Limit the number of data points per scrape, 0: no limit, default is 0</span>
 <a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">sampleLimit</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">uint64</span><span class="w"> </span><span class="p p-Indicator">]</span>
@@ -809,21 +809,21 @@
 <a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="nt">spec</span><span class="p">:</span>
 <a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">  </span><span class="nt">podMetricsEndpoints</span><span class="p">:</span>
 <a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
-<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">      </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">metric-port</span><span class="w"> </span><span class="c1"># Specify the Port Name corresponding to Prometheus Exporter in the pod YAML</span>
-<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/metrics</span><span class="w"> </span><span class="c1"># Specify the value of the Path corresponding to Prometheus Exporter, if not specified, default is /metrics</span>
+<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">      </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">metric-port</span><span class="w"> </span><span class="c1"># Specify the Port Name proper to Prometheus Exporter in the pod YAML</span>
+<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/metrics</span><span class="w"> </span><span class="c1"># Specify the value of the Path proper to Prometheus Exporter, if not specified, default is /metrics</span>
 <a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">      </span><span class="nt">relabelings</span><span class="p">:</span>
 <a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replace</span>
 <a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">          </span><span class="nt">sourceLabels</span><span class="p">:</span>
 <a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">instance</span>
 <a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">          </span><span class="nt">regex</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">(.*)</span>
 <a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">          </span><span class="nt">targetLabel</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">instance</span>
-<a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">          </span><span class="nt">replacement</span><span class="p">:</span><span class="w"> </span><span class="s">"crs-xxxxxx"</span><span class="w"> </span><span class="c1"># Adjust to the corresponding Redis instance ID</span>
+<a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">          </span><span class="nt">replacement</span><span class="p">:</span><span class="w"> </span><span class="s">"crs-xxxxxx"</span><span class="w"> </span><span class="c1"># Adjust to the proper Redis instance ID</span>
 <a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replace</span>
 <a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">          </span><span class="nt">sourceLabels</span><span class="p">:</span>
 <a href="#__codelineno-2-22" id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">instance</span>
 <a href="#__codelineno-2-23" id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">          </span><span class="nt">regex</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">(.*)</span>
 <a href="#__codelineno-2-24" id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">          </span><span class="nt">targetLabel</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ip</span>
-<a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">          </span><span class="nt">replacement</span><span class="p">:</span><span class="w"> </span><span class="s">"1.x.x.x"</span><span class="w"> </span><span class="c1"># Adjust to the corresponding Redis instance IP</span>
+<a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">          </span><span class="nt">replacement</span><span class="p">:</span><span class="w"> </span><span class="s">"1.x.x.x"</span><span class="w"> </span><span class="c1"># Adjust to the proper Redis instance IP</span>
 <a href="#__codelineno-2-26" id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">  </span><span class="nt">namespaceSelector</span><span class="p">:</span><span class="w"> </span><span class="c1"># Select the namespaces where the monitored Pods are located</span>
 <a href="#__codelineno-2-27" id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">    </span><span class="nt">matchNames</span><span class="p">:</span>
 <a href="#__codelineno-2-28" id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis-test</span>
@@ -839,12 +839,12 @@
 <a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">127.0.0.1:9090</span>
 </code></pre></div>
 <h2 id="service-monitor">Service Monitor<a class="headerlink" href="#service-monitor" title="Permanent link">¶</a></h2>
-<p>The explanation for the corresponding configmaps is as follows:</p>
+<p>The explanation for the proper configmaps is as follows:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># Prometheus Operator CRD version</span>
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">monitoring.coreos.com/v1</span>
-<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="c1"># Corresponding Kubernetes resource type, here it is ServiceMonitor</span>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="c1"># proper Kubernetes resource type, here it is ServiceMonitor</span>
 <a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ServiceMonitor</span>
-<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1"># Corresponding Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be the name of the Service.</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1"># proper Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be the name of the Service.</span>
 <a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="nt">metadata</span><span class="p">:</span>
 <a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis-exporter</span><span class="w"> </span><span class="c1"># Specify a unique name</span>
 <a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cm-prometheus</span><span class="w">  </span><span class="c1"># Fixed namespace, no need to modify</span>
@@ -852,11 +852,11 @@
 <a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
 <a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">    </span><span class="nt">operator.insight.io/managed-by</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">insight</span><span class="w"> </span><span class="c1"># Label indicating managed by Insight, required.</span>
 <a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="nt">spec</span><span class="p">:</span>
-<a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">  </span><span class="c1"># Specify the label(metadata/labels) of the corresponding Pod, service monitor will use this value as the job label value.</span>
+<a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">  </span><span class="c1"># Specify the label(metadata/labels) of the proper Pod, service monitor will use this value as the job label value.</span>
 <a href="#__codelineno-4-14" id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">jobLabel</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="p p-Indicator">]</span>
-<a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">  </span><span class="c1"># Adds the Labels of the corresponding service to the Target's Labels</span>
+<a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">  </span><span class="c1"># Adds the Labels of the proper service to the Target's Labels</span>
 <a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">targetLabels</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="nv">string</span><span class="w"> </span><span class="p p-Indicator">]</span>
-<a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">  </span><span class="c1"># Adds the Labels of the corresponding Pod to the Target's Labels</span>
+<a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">  </span><span class="c1"># Adds the Labels of the proper Pod to the Target's Labels</span>
 <a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">podTargetLabels</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="nv">string</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="w">  </span><span class="c1"># Limit the number of data points per scrape, 0: no limit, default is 0</span>
 <a href="#__codelineno-4-20" id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="w">  </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">sampleLimit</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">uint64</span><span class="w"> </span><span class="p p-Indicator">]</span>
@@ -889,9 +889,9 @@
 <a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="nt">spec</span><span class="p">:</span>
 <a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">  </span><span class="nt">endpoints</span><span class="p">:</span>
 <a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
-<a href="#__codelineno-5-11" id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">      </span><span class="c1"># Specify the Port Name corresponding to Prometheus Exporter in the service YAML</span>
+<a href="#__codelineno-5-11" id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">      </span><span class="c1"># Specify the Port Name proper to Prometheus Exporter in the service YAML</span>
 <a href="#__codelineno-5-12" id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="w">      </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080-8080-tcp</span>
-<a href="#__codelineno-5-13" id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="w">      </span><span class="c1"># Specify the value of the Path corresponding to Prometheus Exporter, if not specified, default is /metrics</span>
+<a href="#__codelineno-5-13" id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="w">      </span><span class="c1"># Specify the value of the Path proper to Prometheus Exporter, if not specified, default is /metrics</span>
 <a href="#__codelineno-5-14" id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/metrics</span>
 <a href="#__codelineno-5-15" id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="w">      </span><span class="nt">relabelings</span><span class="p">:</span>
 <a href="#__codelineno-5-16" id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="w">        </span><span class="c1"># ** There must be a label named 'application', assuming there is a label named 'app' in k8s,</span>
@@ -909,8 +909,8 @@
 <a href="#__codelineno-5-28" id="__codelineno-5-28" name="__codelineno-5-28"></a><span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">golang-app-demo</span>
 </code></pre></div>
 <h3 id="endpoint_config">endpoint_config<a class="headerlink" href="#endpoint_config" title="Permanent link">¶</a></h3>
-<p>The explanation for the corresponding configmaps is as follows:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1"># The name of the corresponding port. Please note that it's not the actual port number.</span>
+<p>The explanation for the proper configmaps is as follows:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1"># The name of the proper port. Please note that it's not the actual port number.</span>
 <a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="c1"># Default: 80. Possible values are as follows:</span>
 <a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="c1"># ServiceMonitor: corresponds to Service&gt;spec/ports/name;</span>
 <a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="c1"># PodMonitor: explained as follows:</span>
@@ -941,7 +941,7 @@
 <a href="#__codelineno-6-29" id="__codelineno-6-29" name="__codelineno-6-29"></a><span class="c1"># true: Use the timestamp on the target if available.</span>
 <a href="#__codelineno-6-30" id="__codelineno-6-30" name="__codelineno-6-30"></a><span class="c1"># false: Ignore the timestamp on the target.</span>
 <a href="#__codelineno-6-31" id="__codelineno-6-31" name="__codelineno-6-31"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">honorTimestamps</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">bool | default = true</span><span class="w"> </span><span class="p p-Indicator">]</span>
-<a href="#__codelineno-6-32" id="__codelineno-6-32" name="__codelineno-6-32"></a><span class="c1"># Basic authentication credentials. Fill in the values of username/password from the corresponding K8S secret key. Note that the secret namespace must match the PodMonitor/ServiceMonitor.</span>
+<a href="#__codelineno-6-32" id="__codelineno-6-32" name="__codelineno-6-32"></a><span class="c1"># Basic authentication credentials. Fill in the values of username/password from the proper K8S secret key. Note that the secret namespace must match the PodMonitor/ServiceMonitor.</span>
 <a href="#__codelineno-6-33" id="__codelineno-6-33" name="__codelineno-6-33"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">basicAuth</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">BasicAuth</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-6-34" id="__codelineno-6-34" name="__codelineno-6-34"></a><span class="c1"># Scrape the metrics from the target through a proxy server. Specify the address of the proxy server.</span>
 <a href="#__codelineno-6-35" id="__codelineno-6-35" name="__codelineno-6-35"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">proxyUrl</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="p p-Indicator">]</span>
@@ -949,21 +949,21 @@
 <a href="#__codelineno-6-37" id="__codelineno-6-37" name="__codelineno-6-37"></a><span class="c1"># See explanation below for relabel_config</span>
 <a href="#__codelineno-6-38" id="__codelineno-6-38" name="__codelineno-6-38"></a><span class="nt">relabelings</span><span class="p">:</span>
 <a href="#__codelineno-6-39" id="__codelineno-6-39" name="__codelineno-6-39"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">- &lt;relabel_config&gt; ...</span><span class="p p-Indicator">]</span>
-<a href="#__codelineno-6-40" id="__codelineno-6-40" name="__codelineno-6-40"></a><span class="c1"># Before writing the scraped data, rewrite the values of the corresponding labels on the target using the relabeling mechanism. Multiple relabel rules are executed in order.</span>
+<a href="#__codelineno-6-40" id="__codelineno-6-40" name="__codelineno-6-40"></a><span class="c1"># Before writing the scraped data, rewrite the values of the proper labels on the target using the relabeling mechanism. Multiple relabel rules are executed in order.</span>
 <a href="#__codelineno-6-41" id="__codelineno-6-41" name="__codelineno-6-41"></a><span class="c1"># See explanation below for relabel_config</span>
 <a href="#__codelineno-6-42" id="__codelineno-6-42" name="__codelineno-6-42"></a><span class="nt">metricRelabelings</span><span class="p">:</span>
 <a href="#__codelineno-6-43" id="__codelineno-6-43" name="__codelineno-6-43"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">- &lt;relabel_config&gt; ...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 <h3 id="relabel_config">relabel_config<a class="headerlink" href="#relabel_config" title="Permanent link">¶</a></h3>
-<p>The explanation for the corresponding configmaps is as follows:</p>
+<p>The explanation for the proper configmaps is as follows:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># Specifies which labels to take from the original labels for relabeling. The values taken are concatenated using the separator defined in the configuration.</span>
-<a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="c1"># For PodMonitor/ServiceMonitor, the corresponding configmap is sourceLabels.</span>
+<a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="c1"># For PodMonitor/ServiceMonitor, the proper configmap is sourceLabels.</span>
 <a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">source_labels</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">'['</span><span class="w"> </span><span class="nv">&lt;labelname&gt;</span><span class="w"> </span><span class="p p-Indicator">[,</span><span class="w"> </span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"> </span><span class="s">']'</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="c1"># Defines the character used to concatenate the values of the labels to be relabeled. Default is ';'.</span>
 <a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">separator</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">&lt;string&gt; | default = ;</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a>
-<a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1"># When the action is replace/hashmod, target_label is used to specify the corresponding label name.</span>
-<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="c1"># For PodMonitor/ServiceMonitor, the corresponding configmap is targetLabel.</span>
+<a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1"># When the action is replace/hashmod, target_label is used to specify the proper label name.</span>
+<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="c1"># For PodMonitor/ServiceMonitor, the proper configmap is targetLabel.</span>
 <a href="#__codelineno-7-9" id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">target_label</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">&lt;labelname&gt;</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-7-10" id="__codelineno-7-10" name="__codelineno-7-10"></a>
 <a href="#__codelineno-7-11" id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="c1"># Regular expression used to match the values of the source labels.</span>
@@ -976,14 +976,14 @@
 <a href="#__codelineno-7-18" id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">replacement</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">&lt;string&gt; | default = $1</span><span class="w"> </span><span class="p p-Indicator">]</span>
 <a href="#__codelineno-7-19" id="__codelineno-7-19" name="__codelineno-7-19"></a>
 <a href="#__codelineno-7-20" id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="c1"># Actions performed based on the matched values of regex. The available actions are as follows, with replace being the default:</span>
-<a href="#__codelineno-7-21" id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="c1"># replace: If the regex matches, replace the corresponding value with the value defined in replacement. Set the value using target_label and add the corresponding label.</span>
+<a href="#__codelineno-7-21" id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="c1"># replace: If the regex matches, replace the proper value with the value defined in replacement. Set the value using target_label and add the proper label.</span>
 <a href="#__codelineno-7-22" id="__codelineno-7-22" name="__codelineno-7-22"></a><span class="c1"># keep: If the regex doesn't match, discard the value.</span>
 <a href="#__codelineno-7-23" id="__codelineno-7-23" name="__codelineno-7-23"></a><span class="c1"># drop: If the regex matches, discard the value.</span>
 <a href="#__codelineno-7-24" id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="c1"># hashmod: Take the modulus of the MD5 hash of the source label's value based on the value specified in modulus.</span>
 <a href="#__codelineno-7-25" id="__codelineno-7-25" name="__codelineno-7-25"></a><span class="c1"># Add a new label with a label name specified by target_label.</span>
-<a href="#__codelineno-7-26" id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="c1"># labelmap: If the regex matches, replace the corresponding label name with the value specified in replacement.</span>
-<a href="#__codelineno-7-27" id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="c1"># labeldrop: If the regex matches, delete the corresponding label.</span>
-<a href="#__codelineno-7-28" id="__codelineno-7-28" name="__codelineno-7-28"></a><span class="c1"># labelkeep: If the regex doesn't match, delete the corresponding label.</span>
+<a href="#__codelineno-7-26" id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="c1"># labelmap: If the regex matches, replace the proper label name with the value specified in replacement.</span>
+<a href="#__codelineno-7-27" id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="c1"># labeldrop: If the regex matches, delete the proper label.</span>
+<a href="#__codelineno-7-28" id="__codelineno-7-28" name="__codelineno-7-28"></a><span class="c1"># labelkeep: If the regex doesn't match, delete the proper label.</span>
 <a href="#__codelineno-7-29" id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">action</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">&lt;relabel_action&gt; | default = replace</span><span class="w"> </span><span class="p p-Indicator">]</span>
 </code></pre></div>
 </article>

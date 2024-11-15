@@ -294,7 +294,7 @@
 <p>This section explains how to use the vGPU capability in the AI platform platform.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ul>
-<li>The nodes in the cluster have GPUs of the corresponding models.</li>
+<li>The nodes in the cluster have GPUs of the proper models.</li>
 <li>vGPU Addon has been successfully installed. Refer to <a href="vgpu_addon.html">Installing GPU Addon</a> for details.</li>
 <li>GPU Operator is installed, and the <strong>Nvidia.DevicePlugin</strong> capability is <strong>disabled</strong>. Refer to <a href="../install_nvidia_driver_of_operator.html">Offline Installation of GPU Operator</a> for details.</li>
 </ul>
@@ -302,7 +302,7 @@
 <h3 id="using-vgpu-through-the-ui">Using vGPU through the UI<a class="headerlink" href="#using-vgpu-through-the-ui" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>Confirm if the cluster has detected GPUs. Click the <strong>Clusters</strong> -&gt; <strong>Cluster Settings</strong> -&gt; <strong>Addon Plugins</strong> and check if the GPU plugin has been automatically enabled and the corresponding GPU type has been detected. Currently, the cluster will automatically enable the <strong>GPU</strong> addon and set the <strong>GPU Type</strong> as <strong>Nvidia vGPU</strong> .</p>
+<p>Confirm if the cluster has detected GPUs. Click the <strong>Clusters</strong> -&gt; <strong>Cluster Settings</strong> -&gt; <strong>Addon Plugins</strong> and check if the GPU plugin has been automatically enabled and the proper GPU type has been detected. Currently, the cluster will automatically enable the <strong>GPU</strong> addon and set the <strong>GPU Type</strong> as <strong>Nvidia vGPU</strong> .</p>
 </li>
 <li>
 <p>Deploy a workload by clicking <strong>Clusters</strong> -&gt; <strong>Workloads</strong> . When deploying a workload using an image, select the type <strong>Nvidia vGPU</strong> , and you will be prompted with the following parameters:</p>

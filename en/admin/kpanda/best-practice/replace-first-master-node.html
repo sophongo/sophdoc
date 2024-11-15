@@ -687,7 +687,7 @@ which will be used when modifying related configurations.</p>
 <ol>
 <li>
 <p>Get the cluster name</p>
-<p>Run the following command to find the <code>clusters.kubean.io</code> resource corresponding to the cluster:</p>
+<p>Run the following command to find the <code>clusters.kubean.io</code> resource proper to the cluster:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># For example, if the resource name of clusters.kubean.io is cluster-mini-1</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1"># Get the name of the cluster</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nv">CLUSTER_NAME</span><span class="o">=</span><span class="k">$(</span>kubectl<span class="w"> </span>get<span class="w"> </span>clusters.kubean.io<span class="w"> </span>cluster-mini-1<span class="w"> </span>-o<span class="o">=</span><span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.metadata.name}{'\n'}"</span><span class="k">)</span>

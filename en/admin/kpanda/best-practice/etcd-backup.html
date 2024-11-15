@@ -874,7 +874,7 @@ cat /tmp/etcd.yaml | grep initial-
 <p>First, move the manifest file of etcd static Pod to the <strong>/etc/kubernetes/manifests</strong> directory, and kubelet will restart etcd:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>mv<span class="w"> </span>/tmp/etcd.yaml<span class="w"> </span>/etc/kubernetes/manifests/etcd.yaml
 </code></pre></div>
-<p>Then wait for the etcd service to finish starting, and check the status of etcd. The default directory of etcd-related certificates is: <strong>/etc/kubernetes/ssl</strong> . If the cluster certificate is stored in another location, specify the corresponding path.</p>
+<p>Then wait for the etcd service to finish starting, and check the status of etcd. The default directory of etcd-related certificates is: <strong>/etc/kubernetes/ssl</strong> . If the cluster certificate is stored in another location, specify the proper path.</p>
 <ul>
 <li>
 <p>Check the etcd cluster list:</p>

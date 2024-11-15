@@ -686,7 +686,7 @@
 <p><img alt="Delete vmstorage" src="https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/insight/quickstart/images/vmdisk14.png"/></p>
 </li>
 <li>
-<p>Wait for a moment until the volume claim is bound to the cloned data volume, then run the following command to import the exported data from step 3 into the corresponding container, and then start the previously paused <strong>vmstorage</strong> .</p>
+<p>Wait for a moment until the volume claim is bound to the cloned data volume, then run the following command to import the exported data from step 3 into the proper container, and then start the previously paused <strong>vmstorage</strong> .</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>kubectl<span class="w"> </span>cp<span class="w"> </span>-n<span class="w"> </span>insight-system<span class="w"> </span>./vm-data<span class="w"> </span>vmstorage-insight-victoria-metrics-k8s-stack-1:vm-data
 </code></pre></div>
 </li>

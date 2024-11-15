@@ -650,13 +650,13 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="container-management-permissions">Container Management Permissions<a class="headerlink" href="#container-management-permissions" title="Permanent link">¶</a></h1>
-<p>Container management permissions are based on a multi-dimensional permission management system created by global permission management and Kubernetes RBAC permission management. It supports cluster-level and namespace-level permission control, helping users to conveniently and flexibly set different operation permissions for IAM users and user groups (collections of users) under a tenant.</p>
+<p>Container management permissions are based on a multi-dimensional permission management system created by global permission management and Kubernetes RBAC permission management. It supports cluster-level and namespace-level permission control, helping users to conveniently and flexibly set different operation permissions for IAM users and groups (collections of users) under a tenant.</p>
 <h2 id="cluster-permissions">Cluster Permissions<a class="headerlink" href="#cluster-permissions" title="Permanent link">¶</a></h2>
-<p>Cluster permissions are authorized based on Kubernetes RBAC's ClusterRoleBinding, allowing users/user groups to have cluster-related permissions. The current default cluster role is <strong>Cluster Admin</strong> (does not have the permission to create or delete clusters).</p>
+<p>Cluster permissions are authorized based on Kubernetes RBAC's ClusterRoleBinding, allowing users/groups to have cluster-related permissions. The current default cluster role is <strong>Cluster Admin</strong> (does not have the permission to create or delete clusters).</p>
 <h3 id="cluster-admin"><strong>Cluster Admin</strong><a class="headerlink" href="#cluster-admin" title="Permanent link">¶</a></h3>
 <p><strong>Cluster Admin</strong> has the following permissions:</p>
 <ul>
-<li>Can manage, edit, and view the corresponding cluster</li>
+<li>Can manage, edit, and view the proper cluster</li>
 <li>Manage, edit, and view all workloads and all resources within the namespace</li>
 <li>Can authorize users for roles within the cluster (Cluster Admin, NS Admin, NS Editor, NS Viewer)</li>
 </ul>
@@ -685,13 +685,13 @@
 <a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">'*'</span>
 </code></pre></div>
 <h2 id="namespace-permissions">Namespace Permissions<a class="headerlink" href="#namespace-permissions" title="Permanent link">¶</a></h2>
-<p>Namespace permissions are authorized based on Kubernetes RBAC capabilities, allowing different users/user groups to have different operation permissions on resources under a namespace (including Kubernetes API permissions). For details, refer to: <a href="https://kubernetes.io/docs/reference/access-authn-authz/rbac/">Kubernetes RBAC</a>. Currently, the default roles for container management are: NS Admin, NS Editor, NS Viewer.</p>
+<p>Namespace permissions are authorized based on Kubernetes RBAC capabilities, allowing different users/groups to have different operation permissions on resources under a namespace (including Kubernetes API permissions). For details, refer to: <a href="https://kubernetes.io/docs/reference/access-authn-authz/rbac/">Kubernetes RBAC</a>. Currently, the default roles for container management are: NS Admin, NS Editor, NS Viewer.</p>
 <h3 id="ns-admin"><strong>NS Admin</strong><a class="headerlink" href="#ns-admin" title="Permanent link">¶</a></h3>
 <p><strong>NS Admin</strong> has the following permissions:</p>
 <ul>
-<li>Can view the corresponding namespace</li>
+<li>Can view the proper namespace</li>
 <li>Manage, edit, and view all workloads and custom resources within the namespace</li>
-<li>Can authorize users for corresponding namespace roles (NS Editor, NS Viewer)</li>
+<li>Can authorize users for proper namespace roles (NS Editor, NS Viewer)</li>
 </ul>
 <p>The YAML example for this cluster role is as follows:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rbac.authorization.k8s.io/v1</span>
@@ -720,7 +720,7 @@
 <h3 id="ns-editor"><strong>NS Editor</strong><a class="headerlink" href="#ns-editor" title="Permanent link">¶</a></h3>
 <p><strong>NS Editor</strong> has the following permissions:</p>
 <ul>
-<li>Can view corresponding namespaces where permissions are granted</li>
+<li>Can view proper namespaces where permissions are granted</li>
 <li>Manage, edit, and view all workloads within the namespace</li>
 </ul>
 <details class="note">
@@ -842,8 +842,8 @@
 <h3 id="ns-viewer"><strong>NS Viewer</strong><a class="headerlink" href="#ns-viewer" title="Permanent link">¶</a></h3>
 <p><strong>NS Viewer</strong> has the following permissions:</p>
 <ul>
-<li>Can view the corresponding namespace</li>
-<li>Can view all workloads and custom resources within the corresponding namespace</li>
+<li>Can view the proper namespace</li>
+<li>Can view all workloads and custom resources within the proper namespace</li>
 </ul>
 <details class="note">
 <summary>Click to view the YAML example of the cluster role</summary>

@@ -724,7 +724,7 @@ the baize-notebook image to better understand how to build a custom image.</p>
 <p>Note that this must be done by the platform administrator. Be cautious with changes.</p>
 </div>
 <p>Currently, the image selector needs to be modified by updating the <code>Helm</code> parameters of <code>baize</code>. The specific steps are as follows:</p>
-<p>In the <code>Helm Applications</code> list of the kpanda-global-cluster global management cluster,
+<p>In the <code>Helm Apps</code> list of the kpanda-global-cluster global management cluster,
 find baize, enter the update page, and modify the Notebook image in the <code>YAML</code> parameters:</p>
 <p><img alt="Update Baize" src="../images/update-baize.png"/></p>
 <p>Note the parameter modification path <code>global.config.notebook_images</code>:</p>
@@ -737,7 +737,7 @@ find baize, enter the update page, and modify the Notebook image in the <code>YA
 <a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">names</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">release.daocloud.io/baize/baize-notebook:v0.5.0</span>
 <a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">      </span><span class="c1"># Add your image information here</span>
 </code></pre></div>
-<p>After the update is completed and the Helm application restarts successfully,
+<p>After the update is completed and the Helm App restarts successfully,
 you can see the new image in the Notebook creation interface image selection.</p>
 </article>
 </div>

@@ -8880,7 +8880,7 @@
           },
           {
             "name": "stable",
-            "description": "If stable is true, the v2 version under the corresponding package will be returned.",
+            "description": "If stable is true, the v2 version under the proper package will be returned.",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -11672,7 +11672,7 @@
           },
           {
             "name": "stable",
-            "description": "If stable is true, the v2 version under the corresponding package will be returned.",
+            "description": "If stable is true, the v2 version under the proper package will be returned.",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -12100,7 +12100,7 @@
           },
           {
             "name": "stable",
-            "description": "If stable is true, the v1 version under the corresponding package will be returned.",
+            "description": "If stable is true, the v1 version under the proper package will be returned.",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -13191,7 +13191,7 @@
           },
           {
             "name": "stable",
-            "description": "If stable is true, the v1 version under the corresponding package will be returned.",
+            "description": "If stable is true, the v1 version under the proper package will be returned.",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -17245,7 +17245,7 @@
           },
           {
             "name": "stable",
-            "description": "If stable is true, the v2 version under the corresponding package will be returned.",
+            "description": "If stable is true, the v2 version under the proper package will be returned.",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -17692,7 +17692,7 @@
           },
           {
             "name": "stable",
-            "description": "If stable is true, the v1 version under the corresponding package will be returned.",
+            "description": "If stable is true, the v1 version under the proper package will be returned.",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -24040,7 +24040,7 @@
         },
         "cleanup": {
           "type": "boolean",
-          "description": "cleanup specified whether to delete cloudshell resources when\ncorresponding job status is completed."
+          "description": "cleanup specified whether to delete cloudshell resources when\nproper job status is completed."
         }
       },
       "description": "CloudShellSpec defines the desired state of CloudShell."
@@ -30228,7 +30228,7 @@
           "items": {
             "$ref": "#/definitions/v1alpha1PreferredSchedulingTerm"
           },
-          "title": "The scheduler will prefer to schedule pods to nodes that satisfy\nthe affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node matches the corresponding matchExpressions;\nthe node(s) with the highest sum are the most preferred. +optional"
+          "title": "The scheduler will prefer to schedule pods to nodes that satisfy\nthe affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node matches the proper matchExpressions;\nthe node(s) with the highest sum are the most preferred. +optional"
         }
       },
       "description": "Node affinity is a group of node affinity scheduling rules."
@@ -31218,14 +31218,14 @@
           "items": {
             "$ref": "#/definitions/v1alpha1PodAffinityTerm"
           },
-          "title": "If the affinity requirements specified by this field are not met at\nscheduling time, the pod will not be scheduled onto the node.\nIf the affinity requirements specified by this field cease to be met\nat some point during pod execution (e.g. due to a pod label update), the\nsystem may or may not try to eventually evict the pod from its node.\nWhen there are multiple elements, the lists of nodes corresponding to each\npodAffinityTerm are intersected, i.e. all terms must be satisfied.\n+optional"
+          "title": "If the affinity requirements specified by this field are not met at\nscheduling time, the pod will not be scheduled onto the node.\nIf the affinity requirements specified by this field cease to be met\nat some point during pod execution (e.g. due to a pod label update), the\nsystem may or may not try to eventually evict the pod from its node.\nWhen there are multiple elements, the lists of nodes proper to each\npodAffinityTerm are intersected, i.e. all terms must be satisfied.\n+optional"
         },
         "preferredDuringSchedulingIgnoredDuringExecution": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/v1alpha1WeightedPodAffinityTerm"
           },
-          "title": "The scheduler will prefer to schedule pods to nodes that satisfy\nthe affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node has pods which matches the corresponding\npodAffinityTerm; the node(s) with the highest sum are the most preferred.\n+optional"
+          "title": "The scheduler will prefer to schedule pods to nodes that satisfy\nthe affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node has pods which matches the proper\npodAffinityTerm; the node(s) with the highest sum are the most preferred.\n+optional"
         }
       },
       "description": "Pod affinity is a group of inter pod affinity scheduling rules."
@@ -31687,11 +31687,11 @@
         "weight": {
           "type": "integer",
           "format": "int32",
-          "description": "Weight associated with matching the corresponding nodeSelectorTerm, in the\nrange 1-100."
+          "description": "Weight associated with matching the proper nodeSelectorTerm, in the\nrange 1-100."
         },
         "preference": {
           "$ref": "#/definitions/v1alpha1NodeSelectorTerm",
-          "description": "A node selector term, associated with the corresponding weight."
+          "description": "A node selector term, associated with the proper weight."
         }
       },
       "description": "An empty preferred scheduling term matches all objects with implicit weight 0\n(i.e. it's a no-op). A null preferred scheduling term matches no objects\n(i.e. is also a no-op)."
@@ -33305,7 +33305,7 @@
         },
         "value": {
           "type": "string",
-          "description": "The taint value corresponding to the taint key."
+          "description": "The taint value proper to the taint key."
         },
         "effect": {
           "$ref": "#/definitions/v1alpha1TaintEffect",
@@ -34125,11 +34125,11 @@
         "weight": {
           "type": "integer",
           "format": "int32",
-          "description": "weight associated with matching the corresponding podAffinityTerm,\nin the range 1-100."
+          "description": "weight associated with matching the proper podAffinityTerm,\nin the range 1-100."
         },
         "podAffinityTerm": {
           "$ref": "#/definitions/v1alpha1PodAffinityTerm",
-          "description": "Required. A pod affinity term, associated with the corresponding weight."
+          "description": "Required. A pod affinity term, associated with the proper weight."
         }
       },
       "title": "The weights of all of the matched WeightedPodAffinityTerm fields are added\nper-node to find the most preferred node(s)"

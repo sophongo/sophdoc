@@ -614,8 +614,8 @@
 </li>
 <li>
 <p>On the installation screen, fill in the required installation parameters.</p>
-<p>In the screen as above, fill in <code>application name</code>, <code>namespace</code>, <code>version</code>, etc.</p>
-<p>In the screen as above, fill in the following parameters:</p>
+<p>Fill in <code>application name</code>, <code>namespace</code>, <code>version</code>, etc.</p>
+<p>Fill in the following parameters:</p>
 <ul>
 <li>
 <p><code>Falco Prometheus Exporter</code> -&gt; <code>Image Settings</code> -&gt; <code>Registry</code>: set the repository address of the falco-exporter image, which is already filled with the available online repositories by default. If it is a private environment, you can change it to a private repository address.</p>
@@ -633,15 +633,19 @@
 <p><code>Falco Prometheus Exporter</code> -&gt; <code>Prometheus ServiceMonitor Settings</code> -&gt; <code>Scrape Timeout</code>: user-defined scrape timeout; if not specified, the Prometheus default scrape timeout is used.</p>
 </li>
 </ul>
-</li>
-</ol>
 <p>In the screen as above, fill in the following parameters:</p>
-<div class="highlight"><pre><span></span><code>- `Falco Prometheus Exporter` -&gt; `Prometheus prometheusRules` -&gt; `Install prometheusRules`: create PrometheusRules to alert on priority events. It is enabled by default.
-
-- `Falco Prometheus Exporter` -&gt; `Prometheus prometheusRules` -&gt; `Alerts settings`: set whether alerts are enabled for different levels of log events, the interval between alerts, and the threshold for alerts.
-</code></pre></div>
-<ol>
-<li>Click the <code>OK</code> button at the bottom right corner to complete the installation.</li>
+<ul>
+<li>
+<p><code>Falco Prometheus Exporter</code> -&gt; <code>Prometheus prometheusRules</code> -&gt; <code>Install prometheusRules</code>: create PrometheusRules to alert on priority events. It is enabled by default.</p>
+</li>
+<li>
+<p><code>Falco Prometheus Exporter</code> -&gt; <code>Prometheus prometheusRules</code> -&gt; <code>Alerts settings</code>: set whether alerts are enabled for different levels of log events, the interval between alerts, and the threshold for alerts.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click the <code>OK</code> button at the bottom right corner to complete the installation.</p>
+</li>
 </ol>
 </article>
 </div>

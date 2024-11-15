@@ -572,30 +572,41 @@
 </li>
 <li>
 <p>On the installation page, fill in the required installation parameters.</p>
-<p>In the screen as above, fill in the <code>application name</code>, <code>namespace</code>, <code>version</code>, etc.</p>
+<p>Fill in the <code>application name</code>, <code>namespace</code>, <code>version</code>, etc.</p>
+<p>Fill in the following parameters:</p>
+<ul>
+<li>
+<p><code>Falco</code> -&gt; <code>Image Settings</code> -&gt; <code>Registry</code>: set the repository address of the Falco image, which is already filled with the available online repositories by default. If it is a private environment, you can change it to a private repository address.</p>
 </li>
-</ol>
-<p>In the screen as above, fill in the following parameters:</p>
-<div class="highlight"><pre><span></span><code>- `Falco` -&gt; `Image Settings` -&gt; `Registry`: set the repository address of the Falco image, which is already filled with the available online repositories by default. If it is a private environment, you can change it to a private repository address.
-
-- `Falco` -&gt; `Image Settings` -&gt; `Repository`: set the Falco image name.
-
-- `Falco` -&gt; `Falco Driver` -&gt; `Image Settings` -&gt; `Registry`: set the repository address of the Falco Driver image, which is already filled with available online repositories by default. If it is a private environment, you can change it to a private repository address.
-
-- `Falco` -&gt; `Falco Driver` -&gt; `Image Settings` -&gt; `Repository`: set the Falco Driver image name.
-
-- `Falco` -&gt; `Falco Driver` -&gt; `Image Settings` -&gt; `Driver Kind`: set the Driver Kind, providing the following two options.
-
-    (1) ebpf: use ebpf to detect events, which requires the Linux kernel to support ebpf and enable CONFIG_BPF_JIT and sysctl net.core.bpf_jit_enable=1.
-
-    (2) module: use kernel module detection with limited OS version support. Refer to module support [system version](https://download.falco.org/?prefix=driver).
-
-- `Falco` -&gt; `Falco Driver` -&gt; `Image Settings` -&gt; `Log Level`: the minimum log level to be included in the log.
-
-    Optional values include: `emergency`, `alert`, `critical`, `error`, `warning`, `notice`, `info`, `debug`.
-</code></pre></div>
-<ol>
-<li>Click the <code>OK</code> button in the bottom right corner to complete the installation.</li>
+<li>
+<p><code>Falco</code> -&gt; <code>Image Settings</code> -&gt; <code>Repository</code>: set the Falco image name.</p>
+</li>
+<li>
+<p><code>Falco</code> -&gt; <code>Falco Driver</code> -&gt; <code>Image Settings</code> -&gt; <code>Registry</code>: set the repository address of the Falco Driver image, which is already filled with available online repositories by default. If it is a private environment, you can change it to a private repository address.</p>
+</li>
+<li>
+<p><code>Falco</code> -&gt; <code>Falco Driver</code> -&gt; <code>Image Settings</code> -&gt; <code>Repository</code>: set the Falco Driver image name.</p>
+</li>
+<li>
+<p><code>Falco</code> -&gt; <code>Falco Driver</code> -&gt; <code>Image Settings</code> -&gt; <code>Driver Kind</code>: set the Driver Kind, providing the following two options.</p>
+<ul>
+<li>
+<p>ebpf: use ebpf to detect events, which requires the Linux kernel to support ebpf and enable CONFIG_BPF_JIT and sysctl net.core.bpf_jit_enable=1.</p>
+</li>
+<li>
+<p>module: use kernel module detection with limited OS version support. Refer to module support <a href="https://download.falco.org/?prefix=driver">system version</a>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Falco</code> -&gt; <code>Falco Driver</code> -&gt; <code>Image Settings</code> -&gt; <code>Log Level</code>: the minimum log level to be included in the log.</p>
+<p>Optional values include: <code>emergency</code>, <code>alert</code>, <code>critical</code>, <code>error</code>, <code>warning</code>, <code>notice</code>, <code>info</code>, <code>debug</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click the <code>OK</code> button in the bottom right corner to complete the installation.</p>
+</li>
 </ol>
 </article>
 </div>

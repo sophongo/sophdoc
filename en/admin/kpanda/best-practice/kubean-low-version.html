@@ -695,7 +695,7 @@ Refer to the <a href="./cluster-version.md">AI platform Cluster Version Support 
 <li>
 <p>Go to <a href="https://github.com/kubean-io/kubean">kubean</a> to view the released
   <a href="https://kubean-io.github.io/kubean/en/releases/artifacts/">artifacts</a>, and choose the specific artifact
-  version based on the actual situation. The currently supported artifact versions and their corresponding
+  version based on the actual situation. The currently supported artifact versions and their proper
   cluster version ranges are as follows:</p>
 <table>
 <thead>
@@ -771,7 +771,7 @@ offline upgrade of a K8s cluster from version 1.23.0 to 1.24.0, so we choose the
 </ol>
 </li>
 <li>
-<p>Import the offline images and binary packages for the corresponding K8s version.</p>
+<p>Import the offline images and binary packages for the proper K8s version.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># Import the binaries from the data directory to the minio in the bootstrap node</span>
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>./data/amd64/files/
 <a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nv">MINIO_ADDR</span><span class="o">=</span><span class="s2">"http://172.30.41.200:9000"</span><span class="w"> </span><span class="c1"># Replace IP with the actual repository url</span>
@@ -788,10 +788,10 @@ offline upgrade of a K8s cluster from version 1.23.0 to 1.24.0, so we choose the
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nb">cd</span><span class="w"> </span>./data
 <a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>data/localartifactset.cr.yaml
 <a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>
-<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1"># Download the manifest resources corresponding to release-2.21</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1"># Download the manifest resources proper to release-2.21</span>
 <a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a>wget<span class="w"> </span>https://raw.githubusercontent.com/kubean-io/kubean-manifest/main/manifests/manifest-2.21-d6f688f.yml
 <a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a>
-<a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1"># Deploy the manifest resources corresponding to release-2.21</span>
+<a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1"># Deploy the manifest resources proper to release-2.21</span>
 <a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>manifest-2.21-d6f688f.yml
 </code></pre></div>
 </li>

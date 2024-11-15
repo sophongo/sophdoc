@@ -629,7 +629,7 @@
 <p>There are fewer steps and more efficient creation through YAML, but the threshold requirement is high, and you need to be familiar with the YAML file configuration of the StorageClass.</p>
 </li>
 <li>
-<p>It is more intuitive and easier to create through the form, just fill in the corresponding values ​​according to the prompts, but the steps are more cumbersome.</p>
+<p>It is more intuitive and easier to create through the form, just fill in the proper values ​​according to the prompts, but the steps are more cumbersome.</p>
 </li>
 </ul>
 <h3 id="yaml-creation">YAML creation<a class="headerlink" href="#yaml-creation" title="Permanent link">¶</a></h3>
@@ -670,8 +670,8 @@
 <li>The StorageClass name, driver, and reclamation policy cannot be modified after creation.</li>
 <li>Storage system: HwameiStor storage system.</li>
 <li>Storage type: support LVM, raw disk type<ul>
-<li><strong>LVM type</strong> : HwameiStor recommended usage method, which can use highly available data volumes, and the corresponding CSI storage driver is <code>lvm.hwameistor.io</code> .</li>
-<li><strong>Raw disk data volume</strong> : suitable for high availability cases, without high availability capability, the corresponding CSI driver is <code>hdd.hwameistor.io</code> .</li>
+<li><strong>LVM type</strong> : HwameiStor recommended usage method, which can use highly available data volumes, and the proper CSI storage driver is <code>lvm.hwameistor.io</code> .</li>
+<li><strong>Raw disk data volume</strong> : suitable for high availability cases, without high availability capability, the proper CSI driver is <code>hdd.hwameistor.io</code> .</li>
 </ul>
 </li>
 <li>High Availability Mode: Before using the high availability capability, please make sure <strong>DRBD component</strong> has been installed. After the high availability mode is turned on, the number of data volume copies can be set to 1 and 2. Convert data volume copy from 1 to 1 if needed.</li>

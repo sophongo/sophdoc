@@ -586,7 +586,7 @@
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">BUNDLE_IMG</span><span class="o">=</span><span class="m">10</span>.5.14.200/quay.m.daocloud.io/operatorhubio/minio-operator:v5.0.3<span class="w"> </span>
 </code></pre></div>
 <p>How to get the above image addresses:</p>
-<p>Go to <strong>Container Management</strong> -&gt; Select the current cluster -&gt; <strong>Helm Applications</strong> -&gt; View the <strong>olm</strong> component -&gt; <strong>Plugin Settings</strong> , and find the images needed for the opm, minio, minio bundle, and minio operator in the subsequent steps.</p>
+<p>Go to <strong>Container Management</strong> -&gt; Select the current cluster -&gt; <strong>Helm Apps</strong> -&gt; View the <strong>olm</strong> component -&gt; <strong>Plugin Settings</strong> , and find the images needed for the opm, minio, minio bundle, and minio operator in the subsequent steps.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>Using<span class="w"> </span>the<span class="w"> </span>screenshot<span class="w"> </span>as<span class="w"> </span>an<span class="w"> </span>example,<span class="w"> </span>the<span class="w"> </span>four<span class="w"> </span>image<span class="w"> </span>addresses<span class="w"> </span>are<span class="w"> </span>as<span class="w"> </span>follows:
 <a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
 <a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># opm image</span>
@@ -703,7 +703,7 @@
 </code></pre></div>
 </li>
 <li>
-<p>Go to Container Management and update the built-in catsrc image for the helm application <strong>olm</strong> (enter the catalog image specified in the construction of the catalog image, <strong>${catalog-image}</strong> ).</p>
+<p>Go to Container Management and update the built-in catsrc image for the Helm App <strong>olm</strong> (enter the catalog image specified in the construction of the catalog image, <strong>${catalog-image}</strong> ).</p>
 </li>
 <li>
 <p>After the update is successful, the <strong>minio-operator</strong> component will appear in the Operator Hub.</p>

@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#dynamic-resource-overprovision-in-the-cluster">
           Skip to content
         </a>
 </div>
@@ -410,23 +410,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#enable-cluster-overprovision">
 <span class="md-ellipsis">
-      开启集群超卖
+      Enable Cluster Overprovision
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#using-cluster-overprovision">
 <span class="md-ellipsis">
-      使用集群超卖
+      Using Cluster Overprovision
     </span>
 </a>
 </li>
@@ -557,23 +557,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#prerequisites">
 <span class="md-ellipsis">
-      前提条件
+      Prerequisites
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#enable-cluster-overprovision">
 <span class="md-ellipsis">
-      开启集群超卖
+      Enable Cluster Overprovision
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#using-cluster-overprovision">
 <span class="md-ellipsis">
-      使用集群超卖
+      Using Cluster Overprovision
     </span>
 </a>
 </li>
@@ -584,52 +584,49 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">集群动态资源超卖<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>目前，许多业务存在峰值和低谷的现象。为了确保服务的性能和稳定性，在部署服务时，通常会根据峰值需求来申请资源。
-然而，峰值期可能非常短暂，导致在非峰值期时资源被浪费。
-<strong>集群资源超卖</strong> 就是将这些申请了而未使用的资源（即申请量与使用量的差值）利用起来，从而提升集群资源利用率，减少资源浪费。</p>
-<p>本文主要介绍如何使用集群动态资源超卖功能。</p>
-<h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<h1 id="dynamic-resource-overprovision-in-the-cluster">Dynamic Resource Overprovision in the Cluster<a class="headerlink" href="#dynamic-resource-overprovision-in-the-cluster" title="Permanent link">¶</a></h1>
+<p>Currently, many businesses experience peaks and valleys in demand. To ensure service performance and stability, resources are typically allocated based on peak demand when deploying services. However, peak periods may be very short, resulting in resource waste during off-peak times. <strong>Cluster resource overprovision</strong> utilizes these allocated but unused resources (i.e., the difference between allocation and usage) to enhance cluster resource utilization and reduce waste.</p>
+<p>This article mainly introduces how to use the cluster dynamic resource overprovision feature.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ul>
-<li>容器管理模块已<a href="../clusters/integrate-cluster.html">接入 Kubernetes 集群</a>或者已<a href="../clusters/create-cluster.html">创建 Kubernetes 集群</a>，且能够访问集群的 UI 界面。</li>
-<li>已完成一个<a href="../namespaces/createns.html">命名空间的创建</a>，并为用户授予 <a href="../permissions/permission-brief.html">Cluster Admin</a> ，
-  详情可参考<a href="../permissions/cluster-ns-auth.html">集群授权</a>。</li>
+<li>The container management module has been <a href="../clusters/integrate-cluster.html">integrated with a Kubernetes cluster</a> or a <a href="../clusters/create-cluster.html">Kubernetes cluster has been created</a>, and access to the cluster's UI interface is available.</li>
+<li>A <a href="../namespaces/createns.html">namespace has been created</a>, and the user has been granted <a href="../permissions/permission-brief.html">Cluster Admin</a> permissions. For details, refer to <a href="../permissions/cluster-ns-auth.html">Cluster Authorization</a>.</li>
 </ul>
-<h2 id="_3">开启集群超卖<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h2 id="enable-cluster-overprovision">Enable Cluster Overprovision<a class="headerlink" href="#enable-cluster-overprovision" title="Permanent link">¶</a></h2>
 <ol>
 <li>
-<p>点击左侧导航栏上的 <strong>集群列表</strong> ，然后点击目标集群的名称，进入 <strong>集群详情</strong> 页面</p>
-<p><img alt="集群列表" src="../../../../admin/kpanda/images/cluster-oversold-01.png"/></p>
+<p>click <strong>Clusters</strong> in the left navigation bar, then clickthe name of the target cluster to enter the <strong>Cluster Details</strong> page.</p>
+<p><img alt="Clusters" src="../../../../admin/kpanda/images/cluster-oversold-01.png"/></p>
 </li>
 <li>
-<p>在集群详情页面，点击左侧导航栏的 <strong>集群运维</strong> -&gt; <strong>集群设置</strong> ，然后选择 <strong>高级配置</strong> 页签</p>
-<p><img alt="高级设置" src="../../../../admin/kpanda/images/cluster-oversold-02.png"/></p>
+<p>On the cluster details page, click <strong>Cluster Operations</strong> -&gt; <strong>Cluster Settings</strong> in the left navigation bar, then select the <strong>Advanced Configuration</strong> tab.</p>
+<p><img alt="Advanced Settings" src="../../../../admin/kpanda/images/cluster-oversold-02.png"/></p>
 </li>
 <li>
-<p>打开集群超卖，设置超卖比</p>
+<p>Enable cluster overprovision and set the overprovision ratio.</p>
 <ul>
-<li>若未安装 cro-operator 插件，点击 <strong>立即安装</strong> 按钮，安装流程参考<a href="../helm/helm-app.html">管理 Helm 应用</a> </li>
-<li>若已安装 cro-operator 插件，打开集群超卖开关，则可以开始使用集群超卖功能。</li>
+<li>If the cro-operator plugin is not installed, click the <strong>Install Now</strong> button and follow the installation process as per <a href="../helm/helm-app.html">Managing Helm Apps</a>.</li>
+<li>If the cro-operator plugin is already installed, enable the cluster overprovision switch to start using the cluster overprovision feature.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>需要在集群下对应的 namespace 打上如下标签，集群超卖策略才能生效。</p>
+<p>The proper namespace in the cluster must have the following label applied for the cluster overprovision policy to take effect.</p>
 </div>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>clusterresourceoverrides.admission.autoscaling.openshift.io/enabled:<span class="w"> </span><span class="s2">"true"</span>
 </code></pre></div>
-<p><img alt="集群超卖" src="../../../../admin/kpanda/images/cluster-oversold-03.png"/></p>
+<p><img alt="Cluster Overprovision" src="../../../../admin/kpanda/images/cluster-oversold-03.png"/></p>
 </li>
 </ol>
-<h2 id="_4">使用集群超卖<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<p>设置好集群动态资源超卖比后，会在工作负载运行时生效。下文以 niginx 为例，验证使用资源超卖能力。</p>
+<h2 id="using-cluster-overprovision">Using Cluster Overprovision<a class="headerlink" href="#using-cluster-overprovision" title="Permanent link">¶</a></h2>
+<p>Once the cluster dynamic resource overprovision ratio is set, it will take effect while workloads are running. The following example uses nginx to validate the use of resource overprovision capabilities.</p>
 <ol>
 <li>
-<p>创建工作负载 nginx 并设置对应的资源限制值，创建流程参考<a href="../workloads/create-deployment.html">创建无状态负载（Deployment）</a></p>
-<p><img alt="创建工作负载" src="../../../../admin/kpanda/images/cluster-oversold-04.png"/></p>
+<p>Create a workload (nginx) and set the proper resource limits. For the creation process, refer to <a href="../workloads/create-deployment.html">Creating Stateless Workloads (Deployment)</a>.</p>
+<p><img alt="Create Workload" src="../../../../admin/kpanda/images/cluster-oversold-04.png"/></p>
 </li>
 <li>
-<p>查看工作负载的 Pod 资源申请值与限制值的比值是否符合超售比</p>
-<p><img alt="查看 Pod 资源" src="../../../../admin/kpanda/images/cluster-oversold-05.png"/></p>
+<p>Check whether the ratio of the Pod's resource requests to limits meets the overprovision ratio.</p>
+<p><img alt="View Pod Resources" src="../../../../admin/kpanda/images/cluster-oversold-05.png"/></p>
 </li>
 </ol>
 </article>
