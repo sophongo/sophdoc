@@ -10,7 +10,7 @@ This chapter provides installation guidance for Ascend NPU drivers, Device Plugi
 ## Prerequisites
 
 1. Before installation, confirm the supported NPU models. For details, refer to the [Ascend NPU Matrix](../gpu_matrix.md).
-2. Ensure that the kernel version required for the corresponding NPU model is compatible. For more details, 
+2. Ensure that the kernel version required for the proper NPU model is compatible. For more details, 
    refer to the [Ascend NPU Matrix](../gpu_matrix.md).
 3. Prepare the basic Kubernetes environment.
 
@@ -22,7 +22,7 @@ Refer to the following steps for details.
 
 ### Install Firmware
 
-1. Confirm that the kernel version is within the range corresponding to the "binary installation" method, 
+1. Confirm that the kernel version is within the range proper to the "binary installation" method, 
    and then you can directly install the NPU driver firmware.
 2. For firmware and driver downloads, refer to: [Firmware Download Link](https://www.hiascend.com/zh/hardware/firmware-drivers/community?product=2&model=15&cann=6.3.RC2.alpha005&driver=1.0.20.alpha)
 3. For firmware installation, refer to: [Install NPU Driver Firmware](https://www.hiascend.com/document/detail/zh/quick-installation/23.0.RC2/quickinstg/800_3000/quickinstg_800_3000_0001.html)
@@ -107,7 +107,7 @@ usermod -a -G HwHiAiUser hwMindX
 
 ### Create Log Directory
 
-Create the parent directory for component logs and the log directories for each component on the corresponding node, 
+Create the parent directory for component logs and the log directories for each component on the proper node, 
 and set the appropriate owner and permissions for the directories. Execute the following command to create 
 the parent directory for component logs.
 
@@ -125,12 +125,12 @@ chown root:root /var/log/mindx-dl/devicePlugin
 
 !!! note
 
-    Please create the corresponding log directory for each required component. In this example, only the Device Plugin component is needed.
+    Please create the proper log directory for each required component. In this example, only the Device Plugin component is needed.
     For other component requirements, refer to the [official documentation](https://www.hiascend.com/document/detail/zh/mindx-dl/50rc3/clusterscheduling/clusterschedulingig/dlug_installation_016.html)
 
 ### Create Node Labels
 
-Refer to the following commands to create labels on the corresponding nodes:
+Refer to the following commands to create labels on the proper nodes:
 
 ```shell
 # Create this label on computing nodes where the driver is installed
@@ -156,15 +156,15 @@ Functional module path: __Container Management__ -> __Cluster__, click the name 
 -  __ServiceMonitor__: Disabled by default. If enabled, you can view NPU-related monitoring in the observability module. To enable, ensure that the insight-agent is installed and running, otherwise, the ascend-mindxdl installation will fail.
 -  __isVirtualMachine__: Disabled by default. If the NPU node is a virtual machine scenario, enable the isVirtualMachine parameter.
 
-After a successful installation, two components will appear under the corresponding namespace, as shown below:
+After a successful installation, two components will appear under the proper namespace, as shown below:
 
 ![List of ascend-mindxdl](../images/list-ascend-mindxdl.png)
 
-At the same time, the corresponding NPU information will also appear on the node information:
+At the same time, the proper NPU information will also appear on the node information:
 
 ![Node labels](../images/label-ascend-mindxdl.png)
 
-Once everything is ready, you can select the corresponding NPU device when creating a workload through the page, as shown below:
+Once everything is ready, you can select the proper NPU device when creating a workload through the page, as shown below:
 
 <!-- add screenshot later -->
 

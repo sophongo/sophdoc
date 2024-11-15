@@ -94,7 +94,7 @@ Fill in the image-related information according to the table below, then click _
 2. GPU Configuration: Enabling GPU functionality requires meeting certain prerequisites. For details, refer 
    to [Configuring GPU for Virtual Machines (Nvidia)](../gpu/vm-gpu.md).
    Virtual machines support two types of Nvidia GPUs: Nvidia-GPU and Nvidia-vGPU. After selecting the desired type, 
-   you will need to choose the corresponding GPU model and the number of cards.
+   you will need to choose the proper GPU model and the number of cards.
 
 ### Storage and Network
 
@@ -108,7 +108,7 @@ Fill in the image-related information according to the table below, then click _
 
     - Data Disk: The data disk is a storage device in the virtual machine used to store user data, application data, or other non-operating system related files. Compared with the system disk, the data disk is optional and can be dynamically added or removed as needed. The capacity of the data disk can also be flexibly configured according to demand.
     
-    - Block storage is used by default. If you need to use the clone and snapshot functions, make sure that your storage pool has created the corresponding VolumeSnapshotClass, which you can refer to the following example. If you need to use the live migration function, make sure your storage supports and selects the ReadWriteMany access mode.
+    - Block storage is used by default. If you need to use the clone and snapshot functions, make sure that your storage pool has created the proper VolumeSnapshotClass, which you can refer to the following example. If you need to use the live migration function, make sure your storage supports and selects the ReadWriteMany access mode.
 
         In most cases, the storage will not automatically create such a VolumeSnapshotClass during the installation process, so you need to manually create a VolumeSnapshotClass.
         The following is an example of HwameiStor creating a VolumeSnapshotClass:

@@ -5,7 +5,7 @@ Date: 2024-02-29
 
 # Manage Helm Repository
 
-The Helm repository is a repository for storing and publishing Charts. The Helm application module supports HTTP(s) protocol to access Chart packages in the repository. By default, the system has 4 built-in helm repos as shown in the table below to meet common needs in the production process of enterprises.
+The Helm repository is a repository for storing and publishing Charts. The Helm App module supports HTTP(s) protocol to access Chart packages in the repository. By default, the system has 4 built-in helm repos as shown in the table below to meet common needs in the production process of enterprises.
 
 | Repository | Description | Example |
 | --------- | ------------ | ------- |

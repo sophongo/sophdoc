@@ -4,7 +4,7 @@ This section explains how to use the vGPU capability in the AI platform platform
 
 ## Prerequisites
 
-- The nodes in the cluster have GPUs of the corresponding models.
+- The nodes in the cluster have GPUs of the proper models.
 - vGPU Addon has been successfully installed. Refer to [Installing GPU Addon](vgpu_addon.md) for details.
 - GPU Operator is installed, and the __Nvidia.DevicePlugin__ capability is **disabled**. Refer to [Offline Installation of GPU Operator](../install_nvidia_driver_of_operator.md) for details.
 
@@ -12,7 +12,7 @@ This section explains how to use the vGPU capability in the AI platform platform
 
 ### Using vGPU through the UI
 
-1. Confirm if the cluster has detected GPUs. Click the __Clusters__ -> __Cluster Settings__ -> __Addon Plugins__ and check if the GPU plugin has been automatically enabled and the corresponding GPU type has been detected. Currently, the cluster will automatically enable the __GPU__ addon and set the __GPU Type__ as __Nvidia vGPU__ .
+1. Confirm if the cluster has detected GPUs. Click the __Clusters__ -> __Cluster Settings__ -> __Addon Plugins__ and check if the GPU plugin has been automatically enabled and the proper GPU type has been detected. Currently, the cluster will automatically enable the __GPU__ addon and set the __GPU Type__ as __Nvidia vGPU__ .
 
     
 

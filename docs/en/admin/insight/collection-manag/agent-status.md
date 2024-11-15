@@ -2,7 +2,7 @@
 
 In AI platform, Insight acts as a multi-cluster observability product.
 To achieve unified data collection across multiple clusters, users need to install
-the Helm application __insight-agent__ (installed by default in the __insight-system__ namespace).
+the Helm App __insight-agent__ (installed by default in the __insight-system__ namespace).
 Refer to [How to Install __insight-agent__ ](../quickstart/install/install-agent.md).
 
 ## Status Explanation

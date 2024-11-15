@@ -25,15 +25,15 @@ Cambricon GPUs have the following modes:
 
 Here, we take the Dynamic SMLU mode as an example:
 
-1. After correctly installing the DevicePlugin and other components, click the corresponding **Cluster** -> **Cluster Maintenance** -> **Cluster Settings** -> **Addon Plugins** to check whether the corresponding GPU type has been automatically enabled and detected.
+1. After correctly installing the DevicePlugin and other components, click the proper **Cluster** -> **Cluster Maintenance** -> **Cluster Settings** -> **Addon Plugins** to check whether the proper GPU type has been automatically enabled and detected.
   
    
 
-2. Click the node management page to check if the nodes have correctly recognized the corresponding GPU type.
+2. Click the node management page to check if the nodes have correctly recognized the proper GPU type.
   
    
 
-3. Deploy workloads. Click the corresponding **Cluster** -> **Workloads**, and deploy workloads using images. After selecting the type (MLU VGPU), you need to configure the GPU resources used by the App:
+3. Deploy workloads. Click the proper **Cluster** -> **Workloads**, and deploy workloads using images. After selecting the type (MLU VGPU), you need to configure the GPU resources used by the App:
 
     - GPU Computing Power (cambricon.com/mlu.smlu.vcore): Indicates the percentage of cores the current Pod needs to use. 
     - GPU Memory (cambricon.com/mlu.smlu.vmemory): Indicates the size of memory the current Pod needs to use, in MB.

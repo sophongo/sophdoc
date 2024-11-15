@@ -10,7 +10,7 @@ Currently, there are two methods available for creating network policies: YAML a
 
 YAML creation requires fewer steps and is more efficient, but it has a higher learning curve as it requires familiarity with configuring network policy YAML files.
 
-Form-based creation is more intuitive and straightforward. Users can simply fill in the corresponding values based on the prompts. However, this method involves more steps.
+Form-based creation is more intuitive and straightforward. Users can simply fill in the proper values based on the prompts. However, this method involves more steps.
 
 ### YAML Creation
 

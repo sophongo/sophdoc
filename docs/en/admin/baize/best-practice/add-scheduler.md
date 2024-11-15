@@ -73,7 +73,7 @@ you can easily deploy scheduler plugins in the cluster.
 <!-- add screenshot later -->
 
 Then, click **Install** in the top right corner.
-(If the `baize-agent` has already been deployed, you can update it in the Helm Application list.)
+(If the `baize-agent` has already been deployed, you can update it in the Helm App list.)
 Add the scheduler.
 
 <!-- add screenshot later -->
@@ -84,8 +84,8 @@ Note the parameter hierarchy of the scheduler. After adding, click **OK** .
 
 ## Specify Scheduler When Creating a Job
 
-Once you have successfully deployed the corresponding scheduler plugin in the cluster and
-correctly added the corresponding scheduler configuration in the `baize-agent`,
+Once you have successfully deployed the proper scheduler plugin in the cluster and
+correctly added the proper scheduler configuration in the `baize-agent`,
 you can specify the scheduler when creating a job.
 
 If everything is set up correctly, you will see the scheduler plugin you deployed in the scheduler dropdown menu.

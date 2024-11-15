@@ -107,7 +107,7 @@ You can use the JupyterLab Notebook provided by AI Lab for the ChatGLM3 fine-tun
 
 <!-- add image later -->
 
-In the Notebook list, you can create a Notebook according to the page operation guide. Note that you need to configure the corresponding Notebook resource parameters according to the resource requirements mentioned earlier to avoid resource issues affecting the fine-tuning process.
+In the Notebook list, you can create a Notebook according to the page operation guide. Note that you need to configure the proper Notebook resource parameters according to the resource requirements mentioned earlier to avoid resource issues affecting the fine-tuning process.
 
 <!-- add image later -->
 

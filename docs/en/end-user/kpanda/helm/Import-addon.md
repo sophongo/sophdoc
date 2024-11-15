@@ -83,7 +83,7 @@ An offline environment refers to an environment that cannot connect to the inter
         Done moving /var/folders/vm/08vw0t3j68z9z_4lcqyhg8nm0000gn/T/charts-syncer869598676/dao-2048-1.4.1.tgz
         ```
 
-1. Once the previous step is completed, go to __Container Management__ -> __Helm Apps__ -> __Helm Repositories__ , find the corresponding addon,
+1. Once the previous step is completed, go to __Container Management__ -> __Helm Apps__ -> __Helm Repositories__ , find the proper addon,
    click __Sync Repository__ in the action column, and you will see the uploaded Helm apps in the Helm template.
 
 1. You can then proceed with normal installation, upgrade, and uninstallation.

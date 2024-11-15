@@ -11,7 +11,7 @@ AI platform platform provides three levels of roles, which effectively solve you
 
 ## Platform Roles
 
-Platform roles are coarse-grained permissions that grant corresponding permissions to
+Platform roles are coarse-grained permissions that grant proper permissions to
 all relevant resources on the platform. By assigning platform roles, users can have
 permissions to create, delete, modify, and view all clusters and workspaces, but not
 specifically to a particular cluster or workspace. AI platform provides 5 pre-defined
@@ -49,7 +49,7 @@ There are three ways to authorize platform roles:
 
     ![Add permissions](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/ghippo/images/newrole04.png)
 
-- In the __Global Management__ -> __Access Control__ -> __Roles__ section, find the corresponding platform role
+- In the __Global Management__ -> __Access Control__ -> __Roles__ section, find the proper platform role
   in the role list, click the role name to access details, click the __Related Members__ button, select the user or group, and click __OK__ .
 
     ![Related Members Button](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/ghippo/images/newrole05.png)
@@ -95,7 +95,7 @@ as well as all workspaces within that folder. Folder roles are commonly used in 
 in enterprises. For example, User B is a leader of a first-level department and usually has management
 permissions over the first-level department, all second-level departments under it, and projects within
 those departments. In this scenario, User B is granted admin permissions for the first-level folder,
-which also grants corresponding permissions for the second-level folders and workspaces below them.
+which also grants proper permissions for the second-level folders and workspaces below them.
 AI platform provides 3 pre-defined folder roles that users can directly use:
 
 - Folder Admin

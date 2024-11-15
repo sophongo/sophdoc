@@ -5,7 +5,7 @@ Users can use ServiceMonitor to define the scope of the Namespace discovered by 
 
 ## Prerequisites
 
-The cluster has the Helm application __insight-agent__ installed and in the __running__ state.
+The cluster has the Helm App __insight-agent__ installed and in the __running__ state.
 
 ## Steps
 

@@ -90,7 +90,7 @@ For more details, you can refer to the [official documentation](http://mastermin
 
 #### toClusterName
 
-The __toClusterName__ function retrieves the "cluster name" based on the "cluster unique identifier (ID)". If there is no corresponding cluster found, it will directly return the passed-in cluster's unique identifier.
+The __toClusterName__ function retrieves the "cluster name" based on the "cluster unique identifier (ID)". If there is no proper cluster found, it will directly return the passed-in cluster's unique identifier.
 
 ```go
 func toClusterName(id string) (string, error)
@@ -105,7 +105,7 @@ func toClusterName(id string) (string, error)
 
 #### toClusterId
 
-The __toClusterId__ function retrieves the "cluster unique identifier (ID)" based on the "cluster name". If there is no corresponding cluster found, it will directly return the passed-in cluster name.
+The __toClusterId__ function retrieves the "cluster unique identifier (ID)" based on the "cluster name". If there is no proper cluster found, it will directly return the passed-in cluster name.
 
 ```go
 func toClusterId(name string) (string, error)
@@ -145,7 +145,7 @@ This will return __2022-08-15T13:59:08__. Additionally, you can achieve the same
 
 ## Threshold Template Description
 
-The built-in webhook alert template in Insight is as follows. Other contents such as email and WeCom are the same, only corresponding adjustments are made for line breaks.
+The built-in webhook alert template in Insight is as follows. Other contents such as email and WeCom are the same, only proper adjustments are made for line breaks.
 
 ```text
 Rule Name: {{ .Labels.alertname }} \n

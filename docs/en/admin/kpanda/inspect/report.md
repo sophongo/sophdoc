@@ -16,7 +16,7 @@ After the [inspection execution](inspect.md) is completed, you can view the insp
 
 1. Go to the Cluster Inspection page and click the name of the target inspection cluster.
 
-   ![start](../images/inspection-report-01.png)
+    ![start](../images/inspection-report-01.png)
 
 2. Click the name of the inspection record you want to view.
 

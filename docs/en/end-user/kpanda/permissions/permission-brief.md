@@ -15,7 +15,7 @@ Cluster permissions are authorized based on Kubernetes RBAC's ClusterRoleBinding
 
 __Cluster Admin__ has the following permissions:
 
-- Can manage, edit, and view the corresponding cluster
+- Can manage, edit, and view the proper cluster
 - Manage, edit, and view all workloads and all resources within the namespace
 - Can authorize users for roles within the cluster (Cluster Admin, NS Admin, NS Editor, NS Viewer)
 
@@ -54,9 +54,9 @@ Namespace permissions are authorized based on Kubernetes RBAC capabilities, allo
 
 __NS Admin__ has the following permissions:
 
-- Can view the corresponding namespace
+- Can view the proper namespace
 - Manage, edit, and view all workloads and custom resources within the namespace
-- Can authorize users for corresponding namespace roles (NS Editor, NS Viewer)
+- Can authorize users for proper namespace roles (NS Editor, NS Viewer)
 
 The YAML example for this cluster role is as follows:
 
@@ -89,7 +89,7 @@ rules:
 
 __NS Editor__ has the following permissions:
 
-- Can view corresponding namespaces where permissions are granted
+- Can view proper namespaces where permissions are granted
 - Manage, edit, and view all workloads within the namespace
 
 ??? note "Click to view the YAML example of the cluster role"
@@ -213,8 +213,8 @@ __NS Editor__ has the following permissions:
 
 __NS Viewer__ has the following permissions:
 
-- Can view the corresponding namespace
-- Can view all workloads and custom resources within the corresponding namespace
+- Can view the proper namespace
+- Can view all workloads and custom resources within the proper namespace
 
 ??? note "Click to view the YAML example of the cluster role"
 

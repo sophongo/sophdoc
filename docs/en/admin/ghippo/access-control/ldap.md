@@ -41,7 +41,7 @@ In Global Management, the operation steps are as follows:
     | User Object Classes | All values of the LDAP objectClass attribute for users in LDAP, separated by commas. For example: “inetOrgPerson,organizationalPerson”. New Keycloak users will be written to LDAP with all of these object classes, and existing LDAP user records will be found if they contain all of these object classes.|
     | Enable StartTLS | Encrypts the connection between AI platform and LDAP when enabled |
     | Default Permission | Users/groups have no permissions by default after synchronization |
-    | Full name mapping | Corresponding First name and Last Name |
+    | Full name mapping | proper First name and Last Name |
     | User Name Mapping | The unique username for the user |
     | Mailbox Mapping | User email |
 

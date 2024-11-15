@@ -140,4 +140,4 @@ Please perform the following steps to install the __metrics-server__ plugin for 
 
 !!! note
 
-    When deleting the __metrics-server__ plugin, the plugin can only be completely deleted on the __Helm Applications__ list page. If you only delete __metrics-server__ on the workload page, this only deletes the workload copy of the application, the application itself is still not deleted, and an error will be prompted when you reinstall the plugin later.
+    When deleting the __metrics-server__ plugin, the plugin can only be completely deleted on the __Helm Apps__ list page. If you only delete __metrics-server__ on the workload page, this only deletes the workload copy of the application, the application itself is still not deleted, and an error will be prompted when you reinstall the plugin later.

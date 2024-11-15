@@ -182,10 +182,10 @@ The collection of K8s audit logs is disabled by default. To enable it, follow th
 
     ![Select Cluster](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/worker04.png)
 
-2. Go to the Helm application management page and update the insight-agent configuration (if insight-agent is not installed, 
+2. Go to the Helm App management page and update the insight-agent configuration (if insight-agent is not installed, 
    you can [install it](../../insight/quickstart/install/install-agent.md)).
 
-    ![Go to Helm Applications](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/worker05.png)
+    ![Go to Helm Apps](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/worker05.png)
 
 3. Enable/Disable the collection of K8s audit logs switch.
 

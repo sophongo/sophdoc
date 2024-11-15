@@ -27,11 +27,11 @@ Follow the steps below to backup the deployment __dao-2048__ .
 
 1. Enter the Container Management module, click __Backup Recovery__ -> __Application Backup__ on the left navigation bar, and enter the __Application Backup__ list page.
 
-    ![Clusters](../../images/backupd20481.png)
+    ![Clusters](../images/backupd20481.png)
 
 2. On the __Application Backup__ list page, select the cluster where the velero and __dao-2048__ applications have been installed. Click __Backup Plan__ in the upper right corner to create a new backup cluster.
 
-    ![Application Backup](../../images/backupd20482.png)
+    ![Application Backup](../images/backupd20482.png)
 
 3. Refer to the instructions below to fill in the backup configuration.
 
@@ -41,7 +41,7 @@ Follow the steps below to backup the deployment __dao-2048__ .
     - Namespace: The namespaces that need to be backed up, multiple selections are supported.
     - Advanced Configuration: Back up specific resources in the namespace based on resource labels, such as an application, or do not back up specific resources in the namespace based on resource labels during backup.
 
-    ![Backup Resource](../../images/backupd20483.png)
+    ![Backup Resource](../images/backupd20483.png)
 
 4. Refer to the instructions below to set the backup execution frequency, and then click __Next__ .
 
@@ -51,12 +51,12 @@ Follow the steps below to backup the deployment __dao-2048__ .
         - Direct Replication: directly copy the data in the data volume (PV) for backup;
         - Use CSI snapshots: Use CSI snapshots to back up data volumes (PVs). Requires a CSI snapshot type available for backup in the cluster.
 
-        ![Backup Policy](../../images/backupd20484.png)
+        ![Backup Policy](../images/backupd20484.png)
 
 5. Click __OK__ , the page will automatically return to the application backup plan list, find the newly created __dao-2048__ backup plan, and perform the __Immediate Execution__ operation.
 
-    ![Immediate Execution](../../images/backupd20485.png)
+    ![Immediate Execution](../images/backupd20485.png)
 
 6. At this point, the __Last Execution State__ of the cluster will change to __in progress__ . After the backup is complete, you can click the name of the backup plan to view the details of the backup plan.
 
-    ![Backup Details](../../images/backupd20486.png)
+    ![Backup Details](../images/backupd20486.png)

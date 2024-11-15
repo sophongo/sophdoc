@@ -14,15 +14,14 @@ Notebook typically refers to Jupyter Notebook or similar interactive computing e
 1. Log in to the AI platform as an **Administrator**.
 2. Navigate to **AI Lab** -> **Queue Management**, and click the **Create** button on the right.
 
-    ![create queue](../images/notebook01.png)
+ 
 
 3. After entering a name, selecting a cluster, workspace, and quota, click **OK**.
 
-    ![ok](../images/notebook02.png)
+  
 
 4. Log in to the AI platform as a **User**, navigate to **AI Lab** -> **Notebook**, and click the **Create** button on the right.
 
-    ![create notebook](../images/notebook03.png)
 
 5. After configuring the parameters, click **OK**.
 
@@ -30,27 +29,26 @@ Notebook typically refers to Jupyter Notebook or similar interactive computing e
 
         Enter a name, select a cluster, namespace, choose the newly created queue, and click **One-click Initialization**.
 
-        ![basic](../images/notebook04.png)
+     
 
     === "Resource Configuration"
 
         Select Notebook type, configure memory and CPU, enable GPU, create and configure PVC:
 
-        ![resource](../images/notebook05.png)
+       
 
     === "Advanced Configuration"
 
         Enable SSH external access:
 
-        ![advanced](../images/notebook06.png)
+       
 
 6. You will be automatically redirected to the Notebook instance list; click the instance name.
 
-    ![click name](../images/notebook07.png)
 
 7. Enter the Notebook instance details page and click the **Open** button in the upper right corner.
 
-    ![open](../images/notebook08.png)
+  
 
 8. You will enter the Notebook development environment, where a persistent volume is mounted in the `/home/jovyan` directory. You can clone code using git and upload data after connecting via SSH, etc.
 
@@ -70,11 +68,11 @@ Notebook typically refers to Jupyter Notebook or similar interactive computing e
 
 3. Log in to the AI platform as a user, click **Personal Center** in the upper right corner -> **SSH Public Key** -> **Import SSH Public Key**.
 
-    ![import](../images/ssh03.png)
+
 
 4. Go to the details page of the Notebook instance and copy the SSH link.
 
-    ![copy link](../images/ssh04.png)
+
 
 5. Use SSH to access the Notebook instance from the client.
 

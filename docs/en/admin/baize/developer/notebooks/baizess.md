@@ -37,7 +37,7 @@ The basic format of the `baizess` command is as follows:
 baizess [command] [package-manager]
 ```
 
-Here,`[command]` refers to the specific operation command, and `[package-manager]` is used to specify the corresponding package manager for the operation.
+Here,`[command]` refers to the specific operation command, and `[package-manager]` is used to specify the proper package manager for the operation.
 
 #### Command
 

@@ -25,11 +25,11 @@ Please confirm that your cluster has successfully connected to the `Container Ma
 
     
 
-    In the screen as above, fill in the `application name`, `namespace`, `version`, etc.
+    Fill in the `application name`, `namespace`, `version`, etc.
 
     
 
-   In the screen as above, fill in the following parameters:
+    Fill in the following parameters:
 
     - `Falco` -> `Image Settings` -> `Registry`: set the repository address of the Falco image, which is already filled with the available online repositories by default. If it is a private environment, you can change it to a private repository address.
 
@@ -41,9 +41,9 @@ Please confirm that your cluster has successfully connected to the `Container Ma
 
     - `Falco` -> `Falco Driver` -> `Image Settings` -> `Driver Kind`: set the Driver Kind, providing the following two options.
 
-        (1) ebpf: use ebpf to detect events, which requires the Linux kernel to support ebpf and enable CONFIG_BPF_JIT and sysctl net.core.bpf_jit_enable=1.
+        - ebpf: use ebpf to detect events, which requires the Linux kernel to support ebpf and enable CONFIG_BPF_JIT and sysctl net.core.bpf_jit_enable=1.
 
-        (2) module: use kernel module detection with limited OS version support. Refer to module support [system version](https://download.falco.org/?prefix=driver).
+        - module: use kernel module detection with limited OS version support. Refer to module support [system version](https://download.falco.org/?prefix=driver).
 
     - `Falco` -> `Falco Driver` -> `Image Settings` -> `Log Level`: the minimum log level to be included in the log.
 

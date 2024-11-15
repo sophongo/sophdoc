@@ -1,6 +1,6 @@
 # Metrics Retrieval Methods
 
-Prometheus primarily uses the Pull approach to retrieve monitoring metrics from target services' exposed endpoints. Therefore, it requires configuring corresponding scraping jobs to request monitoring data and write it into the storage provided by Prometheus. Currently, Prometheus offers several configurations for these jobs:
+Prometheus primarily uses the Pull approach to retrieve monitoring metrics from target services' exposed endpoints. Therefore, it requires configuring proper scraping jobs to request monitoring data and write it into the storage provided by Prometheus. Currently, Prometheus offers several configurations for these jobs:
 
 - Native Job Configuration: This provides native Prometheus job configuration for scraping.
 - Pod Monitor: In the Kubernetes ecosystem, it allows scraping of monitoring data from Pods using Prometheus Operator.
@@ -12,7 +12,7 @@ Prometheus primarily uses the Pull approach to retrieve monitoring metrics from 
 
 ## Native Job Configuration
 
-The corresponding configmaps are explained as follows:
+The proper configmaps are explained as follows:
 
 ```yaml
 # Name of the scraping job, also adds a label (job=job_name) to the scraped metrics
@@ -56,7 +56,7 @@ basic_auth:
 # Set the value of the `Authorization` header in the scrape request through bearer token authentication. bearer_token/bearer_token_file are mutually exclusive, with bearer_token taking precedence.
 [ bearer_token_file: <filename> ]
 
-# Whether the scrape connection should use a TLS secure channel, configure the corresponding TLS parameters
+# Whether the scrape connection should use a TLS secure channel, configure the proper TLS parameters
 tls_config:
   [ <tls_config> ]
 
@@ -71,7 +71,7 @@ static_configs:
 cvm_sd_configs:
   [ - <cvm_sd_config> ... ]
 
-# After scraping the data, rewrite the labels of the corresponding target using the relabel mechanism. Executes multiple relabel rules in order.
+# After scraping the data, rewrite the labels of the proper target using the relabel mechanism. Executes multiple relabel rules in order.
 # See explanation below for relabel_config.
 relabel_configs:
   [ - <relabel_config> ... ]
@@ -90,14 +90,14 @@ metric_relabel_configs:
 
 ## Pod Monitor
 
-The explanation for the corresponding configmaps is as follows:
+The explanation for the proper configmaps is as follows:
 
 ```yaml
 # Prometheus Operator CRD version
 apiVersion: monitoring.coreos.com/v1
-# Corresponding Kubernetes resource type, here it is PodMonitor
+# proper Kubernetes resource type, here it is PodMonitor
 kind: PodMonitor
-# Corresponding Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be <namespace>/<name>
+# proper Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be <namespace>/<name>
 metadata:
   name: redis-exporter # Specify a unique name
   namespace: cm-prometheus  # Fixed namespace, no need to modify
@@ -105,11 +105,11 @@ metadata:
   labels:
     operator.insight.io/managed-by: insight # Label indicating managed by Insight
 spec:
-  # Specify the label of the corresponding Pod, pod monitor will use this value as the job label value.
+  # Specify the label of the proper Pod, pod monitor will use this value as the job label value.
   # If viewing the Pod YAML, use the values in pod.metadata.labels.
   # If viewing Deployment/Daemonset/Statefulset, use spec.template.metadata.labels.
   [ jobLabel: string ]
-  # Adds the corresponding Pod's Labels to the Target's Labels
+  # Adds the proper Pod's Labels to the Target's Labels
   [ podTargetLabels: []string ]
   # Limit the number of data points per scrape, 0: no limit, default is 0
   [ sampleLimit: uint64 ]
@@ -145,21 +145,21 @@ metadata:
 spec:
   podMetricsEndpoints:
     - interval: 30s
-      port: metric-port # Specify the Port Name corresponding to Prometheus Exporter in the pod YAML
-      path: /metrics # Specify the value of the Path corresponding to Prometheus Exporter, if not specified, default is /metrics
+      port: metric-port # Specify the Port Name proper to Prometheus Exporter in the pod YAML
+      path: /metrics # Specify the value of the Path proper to Prometheus Exporter, if not specified, default is /metrics
       relabelings:
         - action: replace
           sourceLabels:
             - instance
           regex: (.*)
           targetLabel: instance
-          replacement: "crs-xxxxxx" # Adjust to the corresponding Redis instance ID
+          replacement: "crs-xxxxxx" # Adjust to the proper Redis instance ID
         - action: replace
           sourceLabels:
             - instance
           regex: (.*)
           targetLabel: ip
-          replacement: "1.x.x.x" # Adjust to the corresponding Redis instance IP
+          replacement: "1.x.x.x" # Adjust to the proper Redis instance IP
   namespaceSelector: # Select the namespaces where the monitored Pods are located
     matchNames:
       - redis-test
@@ -180,14 +180,14 @@ static_configs:
 
 ## Service Monitor
 
-The explanation for the corresponding configmaps is as follows:
+The explanation for the proper configmaps is as follows:
 
 ```yaml
 # Prometheus Operator CRD version
 apiVersion: monitoring.coreos.com/v1
-# Corresponding Kubernetes resource type, here it is ServiceMonitor
+# proper Kubernetes resource type, here it is ServiceMonitor
 kind: ServiceMonitor
-# Corresponding Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be the name of the Service.
+# proper Kubernetes Metadata, only the name needs to be concerned. If jobLabel is not specified, the value of the job label in the scraped metrics will be the name of the Service.
 metadata:
   name: redis-exporter # Specify a unique name
   namespace: cm-prometheus  # Fixed namespace, no need to modify
@@ -195,11 +195,11 @@ metadata:
   labels:
     operator.insight.io/managed-by: insight # Label indicating managed by Insight, required.
 spec:
-  # Specify the label(metadata/labels) of the corresponding Pod, service monitor will use this value as the job label value.
+  # Specify the label(metadata/labels) of the proper Pod, service monitor will use this value as the job label value.
   [ jobLabel: string ]
-  # Adds the Labels of the corresponding service to the Target's Labels
+  # Adds the Labels of the proper service to the Target's Labels
   [ targetLabels: []string ]
-  # Adds the Labels of the corresponding Pod to the Target's Labels
+  # Adds the Labels of the proper Pod to the Target's Labels
   [ podTargetLabels: []string ]
   # Limit the number of data points per scrape, 0: no limit, default is 0
   [ sampleLimit: uint64 ]
@@ -235,9 +235,9 @@ metadata:
 spec:
   endpoints:
     - interval: 30s
-      # Specify the Port Name corresponding to Prometheus Exporter in the service YAML
+      # Specify the Port Name proper to Prometheus Exporter in the service YAML
       port: 8080-8080-tcp
-      # Specify the value of the Path corresponding to Prometheus Exporter, if not specified, default is /metrics
+      # Specify the value of the Path proper to Prometheus Exporter, if not specified, default is /metrics
       path: /metrics
       relabelings:
         # ** There must be a label named 'application', assuming there is a label named 'app' in k8s,
@@ -257,10 +257,10 @@ spec:
 
 ### endpoint_config
 
-The explanation for the corresponding configmaps is as follows:
+The explanation for the proper configmaps is as follows:
 
 ```yaml
-# The name of the corresponding port. Please note that it's not the actual port number.
+# The name of the proper port. Please note that it's not the actual port number.
 # Default: 80. Possible values are as follows:
 # ServiceMonitor: corresponds to Service>spec/ports/name;
 # PodMonitor: explained as follows:
@@ -291,7 +291,7 @@ The explanation for the corresponding configmaps is as follows:
 # true: Use the timestamp on the target if available.
 # false: Ignore the timestamp on the target.
 [ honorTimestamps: bool | default = true ]
-# Basic authentication credentials. Fill in the values of username/password from the corresponding K8S secret key. Note that the secret namespace must match the PodMonitor/ServiceMonitor.
+# Basic authentication credentials. Fill in the values of username/password from the proper K8S secret key. Note that the secret namespace must match the PodMonitor/ServiceMonitor.
 [ basicAuth: BasicAuth ]
 # Scrape the metrics from the target through a proxy server. Specify the address of the proxy server.
 [ proxyUrl: string ]
@@ -299,7 +299,7 @@ The explanation for the corresponding configmaps is as follows:
 # See explanation below for relabel_config
 relabelings:
 [ - <relabel_config> ...]
-# Before writing the scraped data, rewrite the values of the corresponding labels on the target using the relabeling mechanism. Multiple relabel rules are executed in order.
+# Before writing the scraped data, rewrite the values of the proper labels on the target using the relabeling mechanism. Multiple relabel rules are executed in order.
 # See explanation below for relabel_config
 metricRelabelings:
 [ - <relabel_config> ...]
@@ -307,17 +307,17 @@ metricRelabelings:
 
 ### relabel_config
 
-The explanation for the corresponding configmaps is as follows:
+The explanation for the proper configmaps is as follows:
 
 ```yaml
 # Specifies which labels to take from the original labels for relabeling. The values taken are concatenated using the separator defined in the configuration.
-# For PodMonitor/ServiceMonitor, the corresponding configmap is sourceLabels.
+# For PodMonitor/ServiceMonitor, the proper configmap is sourceLabels.
 [ source_labels: '[' <labelname> [, ...] ']' ]
 # Defines the character used to concatenate the values of the labels to be relabeled. Default is ';'.
 [ separator: <string> | default = ; ]
 
-# When the action is replace/hashmod, target_label is used to specify the corresponding label name.
-# For PodMonitor/ServiceMonitor, the corresponding configmap is targetLabel.
+# When the action is replace/hashmod, target_label is used to specify the proper label name.
+# For PodMonitor/ServiceMonitor, the proper configmap is targetLabel.
 [ target_label: <labelname> ]
 
 # Regular expression used to match the values of the source labels.
@@ -330,13 +330,13 @@ The explanation for the corresponding configmaps is as follows:
 [ replacement: <string> | default = $1 ]
 
 # Actions performed based on the matched values of regex. The available actions are as follows, with replace being the default:
-# replace: If the regex matches, replace the corresponding value with the value defined in replacement. Set the value using target_label and add the corresponding label.
+# replace: If the regex matches, replace the proper value with the value defined in replacement. Set the value using target_label and add the proper label.
 # keep: If the regex doesn't match, discard the value.
 # drop: If the regex matches, discard the value.
 # hashmod: Take the modulus of the MD5 hash of the source label's value based on the value specified in modulus.
 # Add a new label with a label name specified by target_label.
-# labelmap: If the regex matches, replace the corresponding label name with the value specified in replacement.
-# labeldrop: If the regex matches, delete the corresponding label.
-# labelkeep: If the regex doesn't match, delete the corresponding label.
+# labelmap: If the regex matches, replace the proper label name with the value specified in replacement.
+# labeldrop: If the regex matches, delete the proper label.
+# labelkeep: If the regex doesn't match, delete the proper label.
 [ action: <relabel_action> | default = replace ]
 ```

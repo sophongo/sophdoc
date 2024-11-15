@@ -14,7 +14,7 @@ IAM (Identity and Access Management) is an important module of global management
 
 - Enterprise-grade access control
 
-    When you want your company's employees to use the company's internal authentication system to log in to the AI platform without creating corresponding users on the AI platform, you can use the identity provider feature of access control to establish a trust relationship between your company and Suanova, Through joint authentication, employees can directly log in to the AI platform with the existing account of the enterprise, realizing single sign-on.
+    When you want your company's employees to use the company's internal authentication system to log in to the AI platform without creating proper users on the AI platform, you can use the identity provider feature of access control to establish a trust relationship between your company and Suanova, Through joint authentication, employees can directly log in to the AI platform with the existing account of the enterprise, realizing single sign-on.
 
 ## Usage Process
 

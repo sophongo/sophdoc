@@ -237,7 +237,7 @@ kubectl apply -f join-node-ops.yaml -n kubean-system
 kubectl -n kubean-system get pod | grep add-worker-node
 ```
 
-To check the progress of the scaling task, you can view the logs of the corresponding pod.
+To check the progress of the scaling task, you can view the logs of the proper pod.
 
 ### Verify in UI
 

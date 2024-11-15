@@ -23,7 +23,7 @@ hide:
     - 每执行一次巡检，就会生成一条巡检记录。
     - 当巡检记录超过[巡检配置](config.md)中设置的最大保留条数时，从执行时间最早的记录开始删除。
 
-        ![start](../images/inspection-report-02.png)
+    ![start](../images/inspection-report-02.png)
 
 3. 查看巡检的详细信息，根据巡检配置可能包括集群资源概览、系统组件的运行情况等。
   

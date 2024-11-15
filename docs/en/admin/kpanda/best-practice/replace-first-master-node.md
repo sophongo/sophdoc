@@ -29,7 +29,7 @@ which will be used when modifying related configurations.
 
 1. Get the cluster name
 
-    Run the following command to find the `clusters.kubean.io` resource corresponding to the cluster:
+    Run the following command to find the `clusters.kubean.io` resource proper to the cluster:
 
     ```shell
     # For example, if the resource name of clusters.kubean.io is cluster-mini-1

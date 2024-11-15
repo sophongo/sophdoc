@@ -36,11 +36,11 @@ Please confirm that your cluster has successfully connected to the `Container Ma
 
     
 
-    In the screen as above, fill in `application name`, `namespace`, `version`, etc.
+    Fill in `application name`, `namespace`, `version`, etc.
 
     
 
-    In the screen as above, fill in the following parameters:
+    Fill in the following parameters:
 
     - `Falco Prometheus Exporter` -> `Image Settings` -> `Registry`: set the repository address of the falco-exporter image, which is already filled with the available online repositories by default. If it is a private environment, you can change it to a private repository address.
 
@@ -56,7 +56,7 @@ Please confirm that your cluster has successfully connected to the `Container Ma
 
     
 
-   In the screen as above, fill in the following parameters:
+    In the screen as above, fill in the following parameters:
 
     - `Falco Prometheus Exporter` -> `Prometheus prometheusRules` -> `Install prometheusRules`: create PrometheusRules to alert on priority events. It is enabled by default.
 

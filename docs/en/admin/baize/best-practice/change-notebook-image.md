@@ -179,7 +179,7 @@ USER ${NB_UID}
 
 Currently, the image selector needs to be modified by updating the `Helm` parameters of `baize`. The specific steps are as follows:
 
-In the `Helm Applications` list of the kpanda-global-cluster global management cluster,
+In the `Helm Apps` list of the kpanda-global-cluster global management cluster,
 find baize, enter the update page, and modify the Notebook image in the `YAML` parameters:
 
 ![Update Baize](../images/update-baize.png)
@@ -197,5 +197,5 @@ global:
       # Add your image information here
 ```
 
-After the update is completed and the Helm application restarts successfully,
+After the update is completed and the Helm App restarts successfully,
 you can see the new image in the Notebook creation interface image selection.

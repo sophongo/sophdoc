@@ -12,7 +12,7 @@ Before using cold migration, the following prerequisites must be met:
 
 ## Cold Migration
 
-1. Click on __Container Management__ in the left navigation bar, then click on __Cloud Hosts__ to enter the list page. Click on the __┇__ on the right side of the list to initiate the migration action for the cloud host that is in a powered-off state. The current node of the cloud host cannot be viewed while it is powered off, so prior planning or checking while powered on is required.
+1. Click__Container Management__ in the left navigation bar, then click__Cloud Hosts__ to enter the list page. Clickthe __┇__ on the right side of the list to initiate the migration action for the cloud host that is in a powered-off state. The current node of the cloud host cannot be viewed while it is powered off, so prior planning or checking while powered on is required.
 
 
     !!! note

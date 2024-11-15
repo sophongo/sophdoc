@@ -1,6 +1,6 @@
 # Insight-agent component status
 
-Insight is a multicluster observation product in AI platform. In order to realize the unified collection of multicluster observation data, users need to install the Helm application __insight-agent__ 
+Insight is a multicluster observation product in AI platform. In order to realize the unified collection of multicluster observation data, users need to install the Helm App __insight-agent__ 
 (Installed in insight-system namespace by default). See [How to install __insight-agent__ ](install/install-agent.md).
 
 ## Status description

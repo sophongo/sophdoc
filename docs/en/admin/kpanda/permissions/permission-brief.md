@@ -5,17 +5,17 @@ date: 2024-05-13
 
 # Container Management Permissions
 
-Container management permissions are based on a multi-dimensional permission management system created by global permission management and Kubernetes RBAC permission management. It supports cluster-level and namespace-level permission control, helping users to conveniently and flexibly set different operation permissions for IAM users and user groups (collections of users) under a tenant.
+Container management permissions are based on a multi-dimensional permission management system created by global permission management and Kubernetes RBAC permission management. It supports cluster-level and namespace-level permission control, helping users to conveniently and flexibly set different operation permissions for IAM users and groups (collections of users) under a tenant.
 
 ## Cluster Permissions
 
-Cluster permissions are authorized based on Kubernetes RBAC's ClusterRoleBinding, allowing users/user groups to have cluster-related permissions. The current default cluster role is __Cluster Admin__ (does not have the permission to create or delete clusters).
+Cluster permissions are authorized based on Kubernetes RBAC's ClusterRoleBinding, allowing users/groups to have cluster-related permissions. The current default cluster role is __Cluster Admin__ (does not have the permission to create or delete clusters).
 
 ### __Cluster Admin__
 
 __Cluster Admin__ has the following permissions:
 
-- Can manage, edit, and view the corresponding cluster
+- Can manage, edit, and view the proper cluster
 - Manage, edit, and view all workloads and all resources within the namespace
 - Can authorize users for roles within the cluster (Cluster Admin, NS Admin, NS Editor, NS Viewer)
 
@@ -48,15 +48,15 @@ rules:
 
 ## Namespace Permissions
 
-Namespace permissions are authorized based on Kubernetes RBAC capabilities, allowing different users/user groups to have different operation permissions on resources under a namespace (including Kubernetes API permissions). For details, refer to: [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/). Currently, the default roles for container management are: NS Admin, NS Editor, NS Viewer.
+Namespace permissions are authorized based on Kubernetes RBAC capabilities, allowing different users/groups to have different operation permissions on resources under a namespace (including Kubernetes API permissions). For details, refer to: [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/). Currently, the default roles for container management are: NS Admin, NS Editor, NS Viewer.
 
 ### __NS Admin__ 
 
 __NS Admin__ has the following permissions:
 
-- Can view the corresponding namespace
+- Can view the proper namespace
 - Manage, edit, and view all workloads and custom resources within the namespace
-- Can authorize users for corresponding namespace roles (NS Editor, NS Viewer)
+- Can authorize users for proper namespace roles (NS Editor, NS Viewer)
 
 The YAML example for this cluster role is as follows:
 
@@ -89,7 +89,7 @@ rules:
 
 __NS Editor__ has the following permissions:
 
-- Can view corresponding namespaces where permissions are granted
+- Can view proper namespaces where permissions are granted
 - Manage, edit, and view all workloads within the namespace
 
 ??? note "Click to view the YAML example of the cluster role"
@@ -213,8 +213,8 @@ __NS Editor__ has the following permissions:
 
 __NS Viewer__ has the following permissions:
 
-- Can view the corresponding namespace
-- Can view all workloads and custom resources within the corresponding namespace
+- Can view the proper namespace
+- Can view all workloads and custom resources within the proper namespace
 
 ??? note "Click to view the YAML example of the cluster role"
 

@@ -4,7 +4,7 @@ This section describes how to use vGPU capabilities on the AI platform platform.
 
 ## Prerequisites
 
-The corresponding GPU driver (NVIDIA GPU, NVIDIA MIG, Iluvatar, Ascend) has been deployed on the current cluster either through an Operator or manually.
+The proper GPU driver (NVIDIA GPU, NVIDIA MIG, Iluvatar, Ascend) has been deployed on the current cluster either through an Operator or manually.
 
 ## Procedure
 
