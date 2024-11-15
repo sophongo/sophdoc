@@ -32,7 +32,7 @@ Using John's account to log in to AI platform, on the **Container Management** -
 
 !!! note
 
-    John can only bind clusters or namespaces to a specific workspace in the [Container Management module](../../../kpanda/intro/index.md), and cannot perform this operation in the Global Management module.
+    John can only bind clusters or namespaces to a specific workspace in the Container Management module, and cannot perform this operation in the Global Management module.
 
 ![cluster banding](../images/wsbind4.png)
 

@@ -55,7 +55,7 @@ If you do need to enable namespace exclusive nodes on the Global cluster, please
         ......
         - --default-not-ready-toleration-seconds=300
         - --default-unreachable-toleration-seconds=300
-        - --enable-admission-plugins=NodeRestriction   #List of enabled admission controllers
+        - --enable-admission-plugins=NodeRestriction   # List of enabled admission controllers
         - --enable-aggregator-routing=False
         - --enable-bootstrap-token-auth=true
         - --endpoint-reconciler-type=lease
@@ -115,21 +115,21 @@ If you do need to enable namespace exclusive nodes on the Global cluster, please
 
     1. Click the cluster name in the cluster list page, then click __Namespace__ in the left navigation bar.
 
-        ![Namespace](../../images/exclusive01.png)
+        ![Namespace](../images/exclusive01.png)
 
     2. Click the namespace name, then click the __Exclusive Node__ tab, and click __Add Node__ on the bottom right.
 
-        ![Add Node](../../images/exclusive02.png)
+        ![Add Node](../images/exclusive02.png)
 
     3. Select which nodes you want to be exclusive to this namespace on the left side of the page. On the right side, you can clear or delete a selected node. Finally, click __OK__ at the bottom.
 
-        ![Confirm](../../images/exclusive03.png)
+        ![Confirm](../images/exclusive03.png)
 
     4. You can view the current exclusive nodes for this namespace in the list. You can choose to __Stop Exclusivity__ on the right side of the node.
 
         > After cancelling exclusivity, Pods from other namespaces can also be scheduled to this node.
 
-        ![Cancel Exclusivity](../../images/exclusive04.png)
+        ![Cancel Exclusivity](../images/exclusive04.png)
 
 ## Enable Namespace Exclusive Nodes on Non-Global Clusters
 
@@ -179,21 +179,21 @@ To enable namespace exclusive nodes on non-Global clusters, please follow the st
 
     1. Click the cluster name in the cluster list page, then click __Namespace__ in the left navigation bar.
 
-        ![Namespace](../../images/exclusive05.png)
+        ![Namespace](../images/exclusive05.png)
 
     2. Click the namespace name, then click the __Exclusive Node__ tab, and click __Add Node__ on the bottom right.
 
-        ![Add Node](../../images/exclusive02.png)
+        ![Add Node](../images/exclusive02.png)
 
     3. Select which nodes you want to be exclusive to this namespace on the left side of the page. On the right side, you can clear or delete a selected node. Finally, click __OK__ at the bottom.
 
-        ![Confirm](../../images/exclusive07.png)
+        ![Confirm](../images/exclusive07.png)
 
     4. You can view the current exclusive nodes for this namespace in the list. You can choose to __Stop Exclusivity__ on the right side of the node.
 
         > After cancelling exclusivity, Pods from other namespaces can also be scheduled to this node.
 
-        ![Cancel Exclusivity](../../images/exclusive08.png)
+        ![Cancel Exclusivity](../images/exclusive08.png)
 
 3. Add toleration annotations to the namespace where the components that need high availability are located (optional)
 

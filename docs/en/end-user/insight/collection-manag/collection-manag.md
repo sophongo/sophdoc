@@ -5,7 +5,7 @@ hide:
 
 # Data Collection
 
- __Data Collection__ is mainly to centrally manage and display the entrance of the
+__Data Collection__ is mainly to centrally manage and display the entrance of the
 cluster installation collection plug-in __insight-agent__ , which helps users quickly
 view the health status of the cluster collection plug-in, and provides a quick entry
 to configure collection rules.

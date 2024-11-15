@@ -47,25 +47,15 @@
 
 ## 工作空间对 AI 算力中心各模块的作用
 
-1. 模块名称：[应用工作台](../../amamba/intro/index.md)、[微服务引擎](../../skoala/intro/index.md)、[中间件](../../middleware/index.md)、[镜像仓库](../../kangaroo/intro/index.md)、[云边协同](../../kant/intro/index.md)
+模块名称：容器管理
 
-    进入上述几个模块的前提是拥有某个工作空间的权限，因此在使用模块功能前必须具有 Admin 角色或者拥有某个工作空间的一定角色权限。
+由于功能模块的特殊性，在容器管理模块创建的资源不会自动被绑定到某个工作空间。
 
-    - 工作空间的角色会自动应用到工作空间包含的资源上。比如当您拥有工作空间 A 的 Workspace Admin 角色，那么对于该工作空间中的所有资源您都是 Admin 角色；
-    - 如果您是 Workspace Edit，那么对于工作空间中的所有资源您都是 Edit 角色；
-    - 如果您是 Workspace View，那么对于工作空间中的所有资源您都是 View 角色。
+如果您需要通过工作空间对人和资源进行统一授权管理，可以手动将需要的资源绑定到某个工作空间中，从而将用户在该工作空间的角色应用到资源上（这里的资源是可以跨集群的）。
 
-    另外，您在这些模块创建的资源也将自动被绑定到对应的工作空间中，而不需要其他额外的操作。
+另外，在资源的绑定入口上容器管理与服务网格稍有差异，工作空间提供了容器管理中的 Cluster 、 Cluster-Namesapce 和服务网格中的 Mesh、Mesh-Namespace 资源的绑定入口，但尚未开放对服务网格的 kairship 和 Kairship-Namespace 资源的绑定。
 
-2. 模块名称：[容器管理](../../kpanda/intro/index.md)、[服务网格](../../mspider/intro/index.md)、[多云编排](../../kairship/intro/index.md)
-
-    由于功能模块的特殊性，在容器管理模块创建的资源不会自动被绑定到某个工作空间。
-
-    如果您需要通过工作空间对人和资源进行统一授权管理，可以手动将需要的资源绑定到某个工作空间中，从而将用户在该工作空间的角色应用到资源上（这里的资源是可以跨集群的）。
-
-    另外，在资源的绑定入口上容器管理与服务网格稍有差异，工作空间提供了容器管理中的 Cluster 、 Cluster-Namesapce 和服务网格中的 Mesh、Mesh-Namespace 资源的绑定入口，但尚未开放对服务网格的 kairship 和 Kairship-Namespace 资源的绑定。
-
-    对于 kairship 和 Kairship-Namespace 资源，可以在服务网格的资源列表进行手动绑定。
+对于 kairship 和 Kairship-Namespace 资源，可以在服务网格的资源列表进行手动绑定。
 
 ## 工作空间的使用场景
 

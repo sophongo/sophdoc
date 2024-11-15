@@ -22,60 +22,22 @@ Deploying a Kubernetes cluster is aimed at supporting efficient AI computing res
 3. Navigate to **Container Management** -> **Clusters**, and click the **Create Cluster** button on the right.
 4. Follow the wizard to configure various parameters of the cluster.
 
-    === "Basic Information"
-
-        ![basic](../images/k8s01.png)
-
-    === "Node Configuration"
-
-        After configuring the node information, click **Start Check**.
-
-        ![node](../images/k8s02.png)
-
-        ![node](../images/k8s03.png)
-
-    === "Network Configuration"
-
-        ![network](../images/k8s04.png)
-
-    === "Addon Configuration"
-
-        ![addon](../images/k8s05.png)
-
-    === "Advanced Configuration"
-
-        Each node can run 110 Pods (container groups) by default. If the node configuration is higher, it can be adjusted to 200 or 300 Pods.
-
-        ![basic](../images/k8s06.png)
 
 5. Wait for the cluster creation to complete.
 
-    ![done](../images/k8s08.png)
 
-6. In the cluster list, find the newly created cluster, click on the cluster name, navigate to **Helm Apps** -> **Helm Charts**, and search for metax-gpu-extensions in the search box, then click the card.
 
-    ![cluster](../images/k8s09.png)
+6. In the cluster list, find the newly created cluster, click the cluster name, navigate to **Helm Apps** -> **Helm Charts**, and search for metax-gpu-extensions in the search box, then click the card.
 
-    ![helm](../images/k8s10.png)
 
 7. Click the **Install** button on the right to start installing the GPU plugin.
 
-    === "Application Settings"
 
-        Enter a name, select a namespace, and modify the image address in the YAML:
-
-        ![app settings](../images/k8s11.png)
-
-    === "Kubernetes Orchestration Confirmation"
-
-        ![confirm](../images/k8s12.png)
 
 8. Automatically return to the Helm application list and wait for the status of metax-gpu-extensions to change to **Deployed**.
 
-    ![deployed](../images/k8s13.png)
 
 9. At this point, the cluster has been successfully created. You can check the nodes included in the cluster. You can now [create AI workloads and use GPUs](../share/workload.md).
 
-    ![nodes](../images/k8s14.png)
 
 Next step: [Create AI Workloads](../share/workload.md)

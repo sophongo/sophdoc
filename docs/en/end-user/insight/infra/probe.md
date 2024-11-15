@@ -52,7 +52,7 @@ The __insight-agent__ has been successfully deployed in the target cluster and i
 
 ## View Monitoring Dashboards
 
-Click __ ...__ in the operations column and click __View Monitoring Dashboard__ .
+Click __┇__ in the operations column and click __View Monitoring Dashboard__ .
 
 | Metric Name | Description |
 | -- | -- |
@@ -65,9 +65,9 @@ Click __ ...__ in the operations column and click __View Monitoring Dashboard__ 
 
 ## Edit a Probe
 
-Click __ ...__ in the operations column and click __Edit__ .
+Click __┇__ in the operations column and click __Edit__ .
 
 
 ## Delete a Probe
 
-Click __ ...__ in the operations column and click __Delete__ .
+Click __┇__ in the operations column and click __Delete__ .

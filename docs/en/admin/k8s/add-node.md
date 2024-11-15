@@ -12,7 +12,7 @@ If there are not enough nodes, you can add more nodes to the cluster.
 ## Steps to Add Nodes
 
 1. Log in to the AI platform as an **administrator**.
-2. Navigate to **Container Management** -> **Clusters**, and click on the name of the target cluster.
+2. Navigate to **Container Management** -> **Clusters**, and click the name of the target cluster.
 
     ![clusters](../images/remove01.png)
 

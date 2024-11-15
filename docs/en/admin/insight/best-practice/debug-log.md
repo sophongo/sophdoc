@@ -55,6 +55,6 @@ Here are some plugins for __Fluent Bit__ .
 
 | Output Plugin | Plugin Description |
 | ------------- | ------------------ |
-| es.kube.kubeevent.syslog | Write Kubernetes audit logs, event logs, and syslog logs to [ElasticSearch cluster](../../middleware/elasticsearch/intro/index.md) |
+| es.kube.kubeevent.syslog | Write Kubernetes audit logs, event logs, and syslog logs to ElasticSearch cluster |
 | forward.audit_log | Send Kubernetes audit logs and [global management audit logs](../../ghippo/audit/audit-log.md) to __Global Management__ |
-| es.skoala | Write [request logs](../../skoala/gateway/logs/reqlog.md) and [instance logs](../../skoala/gateway/logs/inslog.md) of microservice gateway to ElasticSearch cluster  |
+| es.skoala | Write request logs and instance logs of microservice gateway to ElasticSearch cluster  |

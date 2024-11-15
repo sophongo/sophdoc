@@ -5,7 +5,7 @@ hide:
 
 # Delete/Remove Clusters
 
-Clusters created in AI platform [Container Management](../../intro/index.md) can be either deleted or removed. Clusters integrated into AI platform can only be removed.
+Clusters created in AI platform Container Management can be either deleted or removed. Clusters integrated into AI platform can only be removed.
 
 !!! Info
 

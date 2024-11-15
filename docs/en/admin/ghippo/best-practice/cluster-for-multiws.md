@@ -44,8 +44,6 @@ class modifyns,createns k8s
 click preparews "https://docs.daocloud.io/en/ghippo/workspace/cluster-for-multiws/#prepare-a-workspace"
 click preparecs "https://docs.daocloud.io/en/ghippo/workspace/cluster-for-multiws/#prepare-a-cluster"
 click share "https://docs.daocloud.io/en/ghippo/workspace/cluster-for-multiws/#add-a-cluster-to-the-workspace"
-click createns "https://docs.daocloud.io/en/amamba/user-guide/namespace/namespace/#create-a-namespace"
-click modifyns "https://docs.daocloud.io/en/amamba/user-guide/namespace/namespace/#namespace-quotas"
 ```
 
 ## Prepare a Workspace
@@ -90,5 +88,3 @@ Return to __Global Management__ to add clusters to the workspace.
 
     ![Add Resource](../images/addcluster02.png)
 
-Next Step: After allocating cluster resources to multiple workspaces, users can go to __Workbench__ to
-[create namespaces and deploy applications](../../amamba/user-guide/namespace/namespace.md) in these workspaces.

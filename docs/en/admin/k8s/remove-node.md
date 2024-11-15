@@ -11,7 +11,7 @@ The cost of GPU resources is relatively high. If you temporarily do not need a G
 ## Removal Steps
 
 1. Log in to the AI platform as an **administrator**.
-2. Navigate to **Container Management** -> **Clusters**, and click on the name of the target cluster.
+2. Navigate to **Container Management** -> **Clusters**, and click the name of the target cluster.
 
     ![clusters](../images/remove01.png)
 

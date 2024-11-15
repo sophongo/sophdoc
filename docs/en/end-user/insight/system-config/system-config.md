@@ -5,7 +5,7 @@ hide:
 
 # System Configuration
 
- __System Configuration__ displays the default storage time of metrics, logs, traces and the default Apdex threshold.
+__System Configuration__ displays the default storage time of metrics, logs, traces and the default Apdex threshold.
 
 1. Click the right navigation bar and select __System Configuration__ .
 

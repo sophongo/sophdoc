@@ -7,9 +7,9 @@ service-to-service calls during the queried time period.
 
 ## Prerequisites
 
-1. Insight Agent is [installed](../../quickstart/install/install-agent.md) in the cluster and the applications are in the __Running__ state.
+1. Insight Agent is [installed](../quickstart/install/install-agent.md) in the cluster and the applications are in the __Running__ state.
 2. Services have been instrumented for distributed tracing using
-   [Operator](../../quickstart/otel/operator.md) or [OpenTelemetry SDK](../../quickstart/otel/golang/golang.md).
+   [Operator](../quickstart/otel/operator.md) or [OpenTelemetry SDK](../quickstart/otel/golang/golang.md).
 
 ## Steps
 
@@ -25,7 +25,7 @@ service-to-service calls during the queried time period.
     - Hover over the connections to view the traffic metrics between the two services.
     - Click __Display Settings__ , you can configure the display elements in the service map.
 
-    ![Servicemap](../../images/servicemap.png)
+    ![Servicemap](../images/servicemap.png)
 
 ### Other Nodes
 
@@ -46,6 +46,6 @@ In the Service Map, there can be nodes that are not part of the cluster. These e
 
 1. Update the `insight-server` chart values, locate the parameter shown in the image below, and change `false` to `true`.
 
-   ![change-parameters](../../image/servicemap.png)
+   ![change-parameters](../images/servicemap.png)
 
 2. In the display settings of the service map, check the `Virtual Services` option to enable it.

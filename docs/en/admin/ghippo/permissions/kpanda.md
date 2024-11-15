@@ -27,7 +27,7 @@ Use `&check;`for permissions granted and `&cross;`for permissions not granted.
 
 | Primary Function | Secondary Function | Permission | Cluster Admin | Ns Admin | Ns Editor | NS Viewer |
 | ------------ | -------------------- | ------------ | ------------- | -------- | --------- | --------- |
-| Cluster | Cluster List | View Cluster List | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
+| Cluster | Clusters | View Clusters | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
 | | | Access Cluster | &#x2718; | &#x2718; | &#x2718; | &#x2718; |
 | | | Create Cluster | &#x2718; | &#x2718; | &#x2718; | &#x2718; |
 | | Cluster Operations | Enter Console | &#x2714; | &#x2714; (only in the list) | &#x2714; | &#x2718; |

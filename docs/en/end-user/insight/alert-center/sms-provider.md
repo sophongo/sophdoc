@@ -14,7 +14,7 @@ Insight supports SMS notifications and currently sends alert messages using inte
 
     - Configure Alibaba Cloud server.
 
-        > To apply for Alibaba Cloud SMS service, please refer to [Alibaba Cloud SMS Service](https://help.aliyun.com/document_detail/108062.html?spm=a2c4g.57535.0.0.2cec637ffna8ye).
+        > To apply for Alibaba Cloud SMS service, refer to [Alibaba Cloud SMS Service](https://help.aliyun.com/document_detail/108062.html?spm=a2c4g.57535.0.0.2cec637ffna8ye).
 
         Field descriptions:
 

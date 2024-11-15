@@ -35,7 +35,7 @@ meeting different usage requirements in various scenarios.
 1. On the __Clusters__ page, select the cluster for which you want to adjust the Binpack and Spread scheduling
    policies. Click the __┇__ icon on the right and select __GPU Scheduling Configuration__ from the dropdown list.
 
-    ![Cluster List](images/gpu-scheduler-clusterlist.png)
+    ![Clusters](images/gpu-scheduler-clusterlist.png)
 
 2. Adjust the GPU scheduling configuration according to your business scenario, and click __OK__ to save.
 
@@ -54,7 +54,7 @@ scheduling policies within the workload.
 1. Click __Clusters__ in the left navigation bar, then click the name of the target cluster to
    enter the __Cluster Details__ page.
 
-    ![Cluster List](images/clusterlist1.png)
+    ![Clusters](images/clusterlist1.png)
 
 2. On the Cluster Details page, click __Workloads__ -> __Deployments__ in the left navigation bar,
    then click the __Create by Image__ button in the upper right corner of the page.

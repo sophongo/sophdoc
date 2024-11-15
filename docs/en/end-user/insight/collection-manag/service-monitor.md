@@ -71,4 +71,4 @@ The cluster has the Helm application __insight-agent__ installed and in the __ru
             ```
 
     5. The namespace where the application that needs to expose metrics is located
-    5. Used to select the Service
+    6. Used to select the Service

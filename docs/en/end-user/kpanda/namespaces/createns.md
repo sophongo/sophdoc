@@ -40,7 +40,7 @@ Supports easy creation of namespaces through forms, and quick creation of namesp
 
 ### Create from YAML
 
-1. On the __Cluster List__ page, click the name of the target cluster.
+1. On the __Clusters__ page, click the name of the target cluster.
 
     ![Cluster Details](../images/crd01.png)
 

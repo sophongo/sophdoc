@@ -70,8 +70,8 @@ If you find that there is no trace data after completing the application trace e
 
     !!! note
 
-        The __opentelemetry collector__ in the __Global Management Cluster__ is also responsible for sending audit logs of all worker clusters' [global management module](../../ghippo/intro/index.md) and Kubernetes audit logs (not collected by default) to the __audit server__ component of the global management module.
+        The __opentelemetry collector__ in the __Global Management Cluster__ is also responsible for sending audit logs of all worker clusters' global management module and Kubernetes audit logs (not collected by default) to the __audit server__ component of the global management module.
 
 3. **global jaeger collector**
 
-    Display the __jaeger collector__ in the __Global Management Cluster__ receiving data from the __otel collector__ in the __Global Management Cluster__ and sending trace data to the [ElasticSearch cluster](../../middleware/elasticsearch/intro/index.md).
+    Display the __jaeger collector__ in the __Global Management Cluster__ receiving data from the __otel collector__ in the __Global Management Cluster__ and sending trace data to the ElasticSearch cluster.

@@ -16,21 +16,21 @@ training jobs.
 1. Click **Job Center** -> **Jobs** in the left navigation bar to enter the job list. Click the **Create** button 
    on the right.
 
-    ![Create a Job](../../images/job01.png)
+    ![Create a Job](../images/job01.png)
 
 2. The system will pre-fill basic configuration data, including the cluster, namespace, type, queue, and priority. 
    Adjust these parameters and click **Next**.
 
-    ![Bacis Info](../../images/job02.png)
+    ![Bacis Info](../images/job02.png)
 
 3. Configure the URL, runtime parameters, and associated datasets, then click **Next**.
 
-    ![Resource config](../../images/job03.png)
+    ![Resource config](../images/job03.png)
 
 4. Optionally add labels, annotations, runtime env variables, and other job parameters. Select a scheduling policy 
    and click **Confirm**.
 
-    ![Advanced settings](../../images/job04.png)
+    ![Advanced settings](../images/job04.png)
 
 5. After the job is successfully created, it will have several running statuses:
 

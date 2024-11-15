@@ -35,7 +35,7 @@ After the administrator allocates resource quotas for the workspace, users can c
 
         Service configuration and advanced settings can use default configurations.
 
-4. Automatically return to the stateless workload list and click on the workload name.
+4. Automatically return to the stateless workload list and click the workload name.
 
     ![click name](../images/workload04.png)
 

@@ -15,9 +15,9 @@ Through the container management module of AI platform, workloads on multicloud 
 
 Before using image to create deployments, the following prerequisites need to be met:
 
-- In the [Container Management](../../intro/index.md) module [Access Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
+- In the Container Management module [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
 
-- Create a [namespace](../namespaces/createns.md) and a [user](../../../ghippo/access-control/user.md).
+- Create a [namespace](../namespaces/createns.md) and a [user](../../ghippo/access-control/user.md).
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 
@@ -71,8 +71,6 @@ Container setting is divided into six parts: basic information, life cycle, heal
     - Image:
         - Image: Select an appropriate image from the list. When entering the image name, the default is to pull the image 
          from the official [DockerHub](https://hub.docker.com/).
-          After integrating the [Image Repository](../../../kangaroo/intro/index.md) module of AI platform, 
-          you can click the __Choose an image__ button on the right to choose an image.
         - Image Version: Select an appropriate version from the dropdown list.
         - Image Pull Policy: By checking __Always pull the image__, the image will be pulled from the repository each time 
           the workload restarts/upgrades.

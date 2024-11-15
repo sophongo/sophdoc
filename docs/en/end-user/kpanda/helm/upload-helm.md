@@ -47,7 +47,7 @@ This article explains how to upload Helm charts. See the steps below.
 
         2. Go to the relevant project, select the __Helm Charts__ tab, click the __Upload__ button on the page to upload the Helm Chart.
 
-            ![upload Helm Chart](../../images/upload-helm-01.png)
+            ![upload Helm Chart](../images/upload-helm-01.png)
 
 3. Sync Remote Repository Data
 
@@ -57,10 +57,11 @@ This article explains how to upload Helm charts. See the steps below.
 
         Go to **Helm Applications** -> **Helm Repositories**, click the **┇** button on the right side of the repository list, and select **Sync Repository** to complete the repository data synchronization.
 
-        ![Upload Helm Chart](../../images/upload-helm-02.png)
+        ![Upload Helm Chart](../images/upload-helm-02.png)
 
     === "Auto Sync"
     
-        If you need to enable the Helm repository auto-sync feature, you can go to **Cluster Maintenance** -> **Cluster Settings** -> **Advanced Settings** and turn on the Helm repository auto-refresh switch.
+        If you need to enable the Helm repository auto-sync feature, you can go to
+        **Cluster Maintenance** -> **Cluster Settings** -> **Advanced Settings** and turn on the Helm repository auto-refresh switch.
 
         <!-- add image later -->

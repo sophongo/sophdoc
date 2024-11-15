@@ -120,7 +120,7 @@ skopeo copy ${SKOPEO_PARAMS} docker-archive:spray-job-2.21.tar docker://${REGIST
 
 #### Deploy
 
-1. Go to __Container Management__ and click the __Create Cluster__ button on the __Cluster List__ page.
+1. Go to __Container Management__ and click the __Create Cluster__ button on the __Clusters__ page.
 
 2. Choose the `manifest` and `localartifactset.cr.yaml` custom resources deployed cluster as the `Managed` parameter. In this example, we use the Global cluster.
 

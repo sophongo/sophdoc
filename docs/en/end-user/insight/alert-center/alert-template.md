@@ -14,13 +14,13 @@ Alert thresholds based on actual environment conditions.
 
 1. In the navigation bar, select **Alert** -> **Alert Policy**, and click **Alert Template** at the top.
 
-    ![Alert Template](../../images/template01.png){ width=1000px}
+    ![Alert Template](../images/template01.png){ width=1000px}
 
 2. Click **Create Alert Template**, and set the name, description, and other information for the Alert template.
 
-    ![Basic Information](../../images/template02.png){ width=1000px}
+    ![Basic Information](../images/template02.png){ width=1000px}
 
-    ![Alert Rule](../../images/template03.png){ width=1000px}
+    ![Alert Rule](../images/template03.png){ width=1000px}
 
     | Parameter | Description |
     | ---- | ---- |
@@ -36,11 +36,11 @@ Alert thresholds based on actual environment conditions.
 
 Click **┇** next to the target rule, then click **Edit** to enter the editing page for the suppression rule.
 
-    ![Edit](../../images/template04.png){ width=1000px}
+    ![Edit](../images/template04.png){ width=1000px}
 
 ## Delete Alert Template
 
 Click **┇** next to the target template, then click **Delete**. Enter the name of the Alert template 
 in the input box to confirm deletion.
 
-    ![Delete](../../images/template05.png){ width=1000px}
+    ![Delete](../images/template05.png){ width=1000px}

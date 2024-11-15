@@ -10,7 +10,7 @@ When used, the container can use it as an environment variable, a command-line a
 
 ## scenes to be used
 
-You can use ConfigMaps in Pods. There are many  use cases, mainly including:
+You can use ConfigMaps in Pods. There are many use cases, mainly including:
 
 - Use ConfigMaps to set the environment variables of the container
 

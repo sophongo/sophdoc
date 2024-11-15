@@ -19,9 +19,9 @@ This page describes how to configure VPA for deployment.
 
 Before configuring a vertical scaling policy for deployment, the following prerequisites must be met:
 
-- In the [Container Management](../../intro/index.md) module [Access Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
+- In the Container Management module [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
 
-- Create a [namespace](../namespaces/createns.md), [user](../../../ghippo/access-control/user.md), [Deployments](../workloads/create-deployment.md) or [Statefulsets](../workloads/create-statefulset.md).
+- Create a [namespace](../namespaces/createns.md), [user](../../ghippo/access-control/user.md), [Deployments](../workloads/create-deployment.md) or [Statefulsets](../workloads/create-statefulset.md).
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 

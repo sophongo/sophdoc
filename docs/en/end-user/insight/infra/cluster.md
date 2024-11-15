@@ -10,7 +10,7 @@ and the trend of resource consumption over a period of time.
 
 ## Prerequisites
 
-The cluster has [insight-agent installed](../../quickstart/install/install-agent.md) and the application 
+The cluster has [insight-agent installed](../quickstart/install/install-agent.md) and the application 
 is in __running__ state.
 
 ## Steps
@@ -25,7 +25,7 @@ is in __running__ state.
     - **Resource Consumption**: Shows the actual usage and total capacity of CPU, memory, and disk for the selected cluster.
     - **Metric Explanations**: Describes the trends in CPU, memory, disk I/O, and network bandwidth.
 
-    ![Monitor](../../image/cluster.png){ width="1000"}
+    ![Monitor](../images/cluster.png){ width="1000"}
 
 3. Click __Resource Level Monitor__, you can view more metrics of the current cluster.
 

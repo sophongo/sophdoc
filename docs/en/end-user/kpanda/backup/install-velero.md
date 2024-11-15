@@ -27,11 +27,11 @@ Please perform the following steps to install the __velero__ plugin for your clu
 
 1. On the cluster list page, find the target cluster that needs to install the __velero__ plugin, click the name of the cluster, click __Helm Apps__ -> __Helm chart__ in the left navigation bar, and enter __velero__ in the search bar to search .
 
-    ![Find velero](../../images/backup1.png)
+    ![Find velero](../images/backup1.png)
 
 2. Read the introduction of the __velero__ plugin, select the version and click the __Install__ button. This page will take __5.2.0__ version as an example to install, and it is recommended that you install __5.2.0__ and later versions.
 
-    ![Install velero](../../images/backup2.png)
+    ![Install velero](../images/backup2.png)
 
 3. Configure __basic info__ .
 
@@ -42,7 +42,7 @@ Please perform the following steps to install the __velero__ plugin for your clu
      - Deletion Failed: After it is enabled, the synchronization will be enabled by default and ready to wait. If the installation fails, the installation-related resources will be removed.
      - Detailed Logs: Turn on the verbose output of the installation process log.
 
-    ![Basic Info](../../images/backup3.png)
+    ![Basic Info](../images/backup3.png)
 
      !!! note
 
@@ -78,6 +78,6 @@ Please perform the following steps to install the __velero__ plugin for your clu
         - __S3 force path style__: Keep the default configuration __true__.
         - __S3 server URL__: The console access address of object storage (minio). Minio generally provides two services, UI access and console access. Please use the console access address here.
 
-        ![Parameter Settings](../../images/backup4.png)
+        ![Parameter Settings](../images/backup4.png)
 
 5. Click the __OK__ button to complete the installation of the __Velero__ plugin. The system will automatically jump to the __Helm Apps__ list page. After waiting for a few minutes, refresh the page, and you can see the application just installed.
