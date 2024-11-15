@@ -45,9 +45,9 @@ nav:
                   - 网络策略: end-user/kpanda/network/network-policy.md
               - 自定义资源: end-user/kpanda/custom-resources/create.md
               - 容器存储:
-                  - 数据卷声明 PVC: end-user/kpanda/storage/pvc.md
-                  - 数据卷 PV: end-user/kpanda/storage/pv.md
-                  - 存储池 SC: end-user/kpanda/storage/sc.md
+                  - 数据卷声明PVC: end-user/kpanda/storage/pvc.md
+                  - 数据卷PV: end-user/kpanda/storage/pv.md
+                  - 存储池SC: end-user/kpanda/storage/sc.md
                   - 共享存储池: end-user/kpanda/storage/sc-share.md
               - 配置与密钥:
                   - 创建配置项: end-user/kpanda/configmaps-secrets/create-configmap.md
@@ -267,7 +267,7 @@ nav:
                   - 介绍: admin/kpanda/backup/index.md
                   - 安装 Velero 插件: admin/kpanda/backup/install-velero.md
                   - 应用备份: admin/kpanda/backup/deployment.md
-                  - etcd 备份: admin/kpanda/backup/etcd-backup.md
+                  - ETCD 备份: admin/kpanda/backup/etcd-backup.md
               - 安全管理:
                   - 安全扫描类型: admin/kpanda/security/index.md
                   - 合规性扫描:
@@ -383,8 +383,7 @@ nav:
                       - 大规模日志部署调整: admin/insight/best-practice/insight-kafka.md
                       - 定制Insight组件调度策略: admin/insight/quickstart/install/component-scheduling.md
                       - 开启大日志和大链路模式: admin/insight/quickstart/install/big-log-and-trace.md
-                  - 其他发行版安装insight-agent:
-                      - OpenShift 4.x: admin/insight/quickstart/other/install-agent-on-ocp.md
+                  - 在OpenShift 4.x上安装insight-agent: admin/insight/quickstart/other/install-agent-on-ocp.md
               - 开始观测:
                   - OpenTelemetry 观测:
                       - 使用OTel赋予应用可观测: admin/insight/quickstart/otel/otel.md
@@ -748,7 +747,7 @@ plugins:
                 Knative 实践: Knative Practices
                 多架构 Helm 应用: Multi-architecture Helm Apps
                 自定义Helm应用导入Addon: Import Custom Helm App Addon
-                NVIDIA GPU 管理: NVIDIA GPU Management
+                NVIDIA GPU 管理: NVIDIA GPUs
                 NVIDIA GPU模式说明: Explanation of NVIDIA GPU Modes
                 GPU Operator: GPU Operator
                 离线安装GPU Operator: Offline Install GPU Operator
@@ -780,7 +779,7 @@ plugins:
                 使用 Volcano DRF 策略: Use Volcano DRF Policy
                 使用 Volcano NUMA 亲和性调度: Scheduling with Volcano NUMA Affinity
                 GPU 调度配置: GPU Scheduling Configuration
-                昇腾 NPU 管理: Ascend NPU Management
+                昇腾 NPU 管理: Ascend NPUs
                 昇腾 NPU 组件安装: Install Ascend NPU Components
                 使用昇腾 NPU: Use Ascend NPU
                 启用昇腾 VNPU: Enable Ascend VNPU
@@ -831,3 +830,137 @@ plugins:
                 容器管理 OpenAPI 文档: Container Management OpenAPI Docs
                 可观测性 OpenAPI 文档: Insight OpenAPI Docs
                 全局管理 OpenAPI 文档: Global Management OpenAPI Docs
+                安装 Velero 插件: Install Velero Plugin
+                应用备份: Backup Apps
+                ETCD 备份: ETCD Backup
+                创建 Pytorch 任务: Create Pytorch Job
+                创建 Tensorflow 任务: Create Tensorflow Job
+                创建 MPI 任务: Create MPI Job
+                创建 MXNet 任务: Create MXNet Job
+                创建 PaddlePaddle 任务: Create PaddlePaddle Job
+                链路查询: Tracing
+                集群内冷迁移: Cold Migration in Cluster
+                如何选择运行时: How to Choose Runtime
+                集群版本支持范围: Supported Cluster Versions
+                接入 Rancher 集群: Integrate Rancher Cluster
+                集群中部署第二调度器: Deploy 2nd Scheduler in Cluster
+                集群证书更新: Update Cluster Certificate
+                数据卷声明PVC: PVC
+                数据卷PV: PV
+                存储池SC: StorageClass
+                集群动态资源超卖: Dynamic Resource Overprovision
+                集成 Falco 安全工具: Integrate Falco
+                GPU 管理: Manage GPUs
+                GPU 支持矩阵: GPU Support Matrix
+                部署资源规划: Resource Planning
+                Prometheus 资源规划: Prometheus Resource Planning
+                vmstorage 磁盘规划: vmstorage Disk Planning
+                调整 vmstorage 磁盘: Adjust vmstorage Disk
+                安装与升级: Install and Upgrade
+                在线安装 insight-agent: Online Install insight-agent
+                获取全局服务集群的数据存储地址: Get Storage Address in Global Service Cluster
+                升级注意事项: Upgrade Notes
+                已知问题: Known Issues
+                大规模日志部署调整: Adjust Large Scale Log
+                定制Insight组件调度策略: Customize Insight Scheduling Policy
+                开启大日志和大链路模式: Enable Large Log and Large Trace Mode
+                在OpenShift 4.x上安装insight-agent: Install insight-agent on OpenShift 4.x
+                开始观测: Start Observing
+                OpenTelemetry 观测: OpenTelemetry Observation
+                使用OTel赋予应用可观测: Use OTel to Enhance Observability
+                Operator无侵入增强应用: Non-Intrusive Enhancement with Opeartor
+                向Insight发送链路数据: Send Traces to Insight
+                链路数据尾部采样方案: Tail Trace Sampling Plan
+                Java 应用观测: Java App Observation
+                通过 OTel SDK 增强 Go 应用: Enhance Go App via OTel SDK
+                使用OTel接收SkyWalking链路数据: Use OTel to Receive SkyWalking Traces
+                调用链: Call Chain
+                数据采集: Data Collection
+                系统配置: System Settings
+                系统组件: System Components
+                修改配置: Modify Settings
+                网络监控之集成 DeepFlow: Network Monitoring with DeepFlow
+                参考文档: Reference
+                可观性参考指标说明: Insight Reference Metrics
+                Insight Grafana 持久化到数据库: Insight Grafana Persistence to Database
+                自定义探测方式: Custom Probe Method
+                指标抓取说明: Collect Metrics
+                告警通知流程说明: Alert Notification Process
+                通知模板使用说明: Use Notification Template
+                Lucene 语法使用方法: Lucene Syntax
+                通过 Sidecar 采集容器日志: Collect Container Logs via Sidecar
+                兼容性测试: Compatibility Test
+                Kubernetes 兼容性测试: Kubernetes Compatibility Test
+                Rancher 兼容性测试: Rancher Compatibility Test
+                Openshift 兼容性测试: Openshift Compatibility Test
+                常见问题: FAQs
+                链路数据的时钟偏移: Clock Offset of Traces
+                日志采集排障指南: Log Collection Troubleshooting
+                链路采集排障指南: Trace Collection Troubleshooting
+                使用Insight定位异常: Use Insight to Locate Errors
+                ES 数据塞满时如何操作: How to Operate When ES Data is Full
+                容器日志黑名单: Container Log Blacklist
+                安装、登录和升级: Install, Login, and Upgrade
+                离线升级全局管理: Offline Upgrade Global Management
+                自定义反向代理服务器地址: Custom Reverse Proxy Address
+                开启Folder/WS的隔离模式: Enable Isolation Mode for Folder/WS
+                国密网关: National Secret Gateway
+                登录: Login
+                用户与访问控制: Access Control
+                什么是用户与访问控制: What is Access Control
+                用户: User
+                用户组: Group
+                角色: Role
+                系统角色: System Role
+                自定义角色: Custom Role
+                身份提供商: Identity Provider
+                OAuth 2.0 之企业微信: OAuth 2.0 for WeWork
+                接入管理: Docking Portal
+                工作空间与层级: Workspace and Folder
+                绑定工作空间: Bind Workspace
+                为工作空间分配资源: Allocate Resources to Workspace
+                创建和删除工作空间: Create and Delete Workspace
+                工作空间权限: Workspace Permissions
+                创建和删除文件夹: Create and Delete Folder
+                文件夹权限: Folder Permissions
+                资源配额: Resource Quotas
+                资源组与共享资源的区别: Resource Groups and Shared Resources
+                资源绑定权限说明: Permissons to Bind Resource
+                审计日志: Audit Logs
+                采集 K8s 审计日志: Collect K8s Audit Logs
+                生成 K8s 审计日志: Generate K8s Audit Logs
+                下载和导出审计日志: Download and Export Audit Logs
+                获取审计日志源IP: Get Source IP of Audit Logs
+                审计项汇总: Summary of Audit Items
+                容器管理审计项: Container Management Audit Items
+                云主机审计项: Cloud Host Audit Items
+                可观测性审计项: Insight Audit Items
+                全球管理审计项: Global Management Audit Items
+                运营管理: Operations Management
+                报表管理: Reports
+                计费计量: Billing and Accounting
+                平台设置: Platform Settings
+                安全策略: Security Policy
+                邮箱服务器设置: Email Settings
+                外观定制: Appearance
+                关于平台: About
+                密码重置: Reset Password
+                工作空间最佳实践: Workspace Best Practices
+                工作空间绑定命名空间: Bind Namespace to Workspace
+                单集群分配给多个工作空间: Single Cluster Allocated to Workspaces
+                文件夹最佳实践: Folder Best Practices
+                普通用户授权规划: Regular User Authorization
+                超大型企业的架构管理: Architecture for Large Enterprises
+                GProduct 对接全局管理: GProduct Integration with Global Management
+                接入导航栏: Docking Navigation Bar
+                接入路由和登录认证: Docking Ingress and Login Authentication
+                集成与被集成(OEM IN/OUT): OEM IN/OUT)
+                定制对接 IdP: Custom Integration with IdP
+                Keycloak 自定义 IdP: Keycloak Custom IdP
+                定制导航栏: Custom Navigation Bar
+                基于权限显示/隐藏导航栏菜单: Show/Hide Navigation Menu
+                故障排查: Troubleshooting
+                ingressgateway 无法启动: ingressgateway Fails to Start
+                登录报错 401 或 403: Login Error 401 or 403
+                keycloak 无法启动: Keycloak Fails to Start
+                单独升级全局管理时失败: Failure When Upgrading Global Management
