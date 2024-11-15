@@ -11,14 +11,13 @@ to an AMD architecture worker cluster with CentOS 7.9 operating system.
 !!! note
 
     This page is only applicable to adding heterogeneous nodes to a worker cluster created
-    using the AI platform platform in offline mode, excluding connected clusters.
+    using the AI platform in offline mode, excluding connected clusters.
 
 ## Prerequisites
 
 - A AI platform Full Mode deployment has been successfully completed, and the bootstrap node is still alive.
-  Refer to the documentation [Offline Installation of AI platform Enterprise](../../install/commercial/start-install.md) for the deployment process.
 - A worker cluster with AMD architecture and CentOS 7.9 operating system has been created through the
-  AI platform platform. Refer to the documentation
+  AI platform. Refer to the documentation
   [Creating a Worker Cluster](../clusters/create-cluster.md) for the creation process.
 
 ## Procedure

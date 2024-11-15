@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "全局管理",
+    "title": "Global Management",
     "version": "v0.31.0"
   },
   "tags": [

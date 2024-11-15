@@ -9,14 +9,14 @@ This page explains how to create an Ubuntu worker cluster on an existing CentOS.
 
 !!! note
 
-    This page is specifically for the offline mode, using the AI platform platform to create a worker cluster,
+    This page is specifically for the offline mode, using the AI platform to create a worker cluster,
     where both the CentOS platform and the worker cluster to be created are based on AMD architecture. 
     Heterogeneous (mixed AMD and ARM) deployments are not supported during cluster creation; however,
     after the cluster is created, you can manage a mixed deployment by adding heterogeneous nodes.
 
 ## Prerequisite
 
-- A fully deployed AI platform system, with the bootstrap node still active. For deployment reference, see the documentation [Offline Install AI platform Enterprise](../../install/commercial/start-install.md).
+- A fully deployed AI platform system, with the bootstrap node still active.
 
 ## Download and Import Ubuntu Offline Packages
 

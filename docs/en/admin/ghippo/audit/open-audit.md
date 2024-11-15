@@ -10,7 +10,7 @@
 
 - For AI Community installations, the Kubernetes audit log switch was not operated during the management cluster
   installation process.
-- For AI platform Enterprise installations, the Kubernetes audit log switch is enabled by default.
+- For AI platform installations, the Kubernetes audit log switch is enabled by default.
     - To set it to default off, you can modify the installer's __clusterConfig.yaml__ file 
       (set __logPath__ to empty "").
 - The collection of Kubernetes audit logs switch is disabled by default for the management cluster.
@@ -18,7 +18,7 @@
 
 ## Management Cluster Collection of Kubernetes Audit Logs Switch
 
-### AI platform Enterprise Installation Environment
+### AI platform Installation Environment
 
 #### Confirm Enabling Kubernetes Audit Logs
 

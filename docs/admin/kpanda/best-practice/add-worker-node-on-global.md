@@ -9,7 +9,7 @@
 
 ## 前提条件
 
-- 已经通过[火种节点](../../install/commercial/deploy-arch.md)完成 AI 算力中心平台的部署，并且火种节点上的 kind 集群运行正常。
+- 已经完成 AI 算力中心平台的部署，并且火种节点上的 kind 集群运行正常。
 - 必须使用平台 Admin 权限的用户登录。
 
 ## 获取火种节点上 kind 集群的 kubeconfig

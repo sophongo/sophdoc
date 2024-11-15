@@ -8,7 +8,7 @@
 
 ## 前提条件
 
-- 已经部署好一个 AI 算力中心全模式，并且火种节点还存活，部署参考文档[离线安装 AI 算力中心商业版](../../install/commercial/start-install.md)
+- 已经部署好一个 AI 算力中心全模式，并且火种节点还存活
 - 已经通过 AI 算力中心平台创建好一个 AMD 架构，操作系统为 CentOS 7.9 的工作集群，创建参考文档[创建工作集群](../clusters/create-cluster.md)
 
 ## 操作步骤

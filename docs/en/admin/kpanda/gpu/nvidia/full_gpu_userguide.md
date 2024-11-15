@@ -1,6 +1,6 @@
 # Using the Whole NVIDIA GPU for an Application
 
-This section describes how to allocate the entire NVIDIA GPU to a single application on the AI platform platform.
+This section describes how to allocate the entire NVIDIA GPU to a single application on the AI platform.
 
 ## Prerequisites
 

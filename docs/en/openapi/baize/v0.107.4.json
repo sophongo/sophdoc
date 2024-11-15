@@ -10,7 +10,7 @@
   ],
   "swagger": "2.0",
   "info": {
-    "title": "Baize swagger api docs",
+    "title": "AI Lab swagger api docs",
     "version": "v1alpha1"
   },
   "host": "demo-dev.daocloud.io",
@@ -2960,7 +2960,7 @@
                 },
                 "priorityClass": {
                   "type": "string",
-                  "title": "notebook Pod 的优先级，Baize 会内建三个优先级：\nbaize-high-priority\nbaize-medium-priority\nbaize-low-priority\n目前只支持这三个，后续可能会支持系统其他优先级。"
+                  "title": "notebook Pod 的优先级，AI Lab 会内建三个优先级：\nbaize-high-priority\nbaize-medium-priority\nbaize-low-priority\n目前只支持这三个，后续可能会支持系统其他优先级。"
                 },
                 "queueName": {
                   "type": "string"
@@ -3092,7 +3092,7 @@
                 },
                 "priorityClass": {
                   "type": "string",
-                  "title": "notebook Pod 的优先级，Baize 会内建三个优先级：\nbaize-high-priority\nbaize-medium-priority\nbaize-low-priority\n目前只支持这三个，后续可能会支持系统其他优先级。"
+                  "title": "notebook Pod 的优先级，AI Lab 会内建三个优先级：\nbaize-high-priority\nbaize-medium-priority\nbaize-low-priority\n目前只支持这三个，后续可能会支持系统其他优先级。"
                 },
                 "queueName": {
                   "type": "string"
@@ -6385,7 +6385,7 @@
       "properties": {
         "isBaizeOwner": {
           "type": "boolean",
-          "title": "string name =1;\n是否是 Baize 平台管理员"
+          "title": "string name =1;\n是否是 AI Lab 平台管理员"
         }
       }
     },

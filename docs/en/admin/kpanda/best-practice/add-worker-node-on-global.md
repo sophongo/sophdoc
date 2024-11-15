@@ -10,7 +10,7 @@ Please ensure proper resource planning before deploying AI platform.
 
 ## Prerequisites
 
-- The AI platform deployment has been completed through [bootstrap node](../../install/commercial/deploy-arch.md),
+- The AI platform deployment has been completed through bootstrap node,
   and the kind cluster on the bootstrap node is running normally.
 - You must log in with a user account that has admin privileges on the platform.
 

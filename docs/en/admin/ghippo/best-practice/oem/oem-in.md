@@ -146,8 +146,8 @@ For specific operational demonstrations, refer to the [OEM IN Best Practices Vid
 
 ## Integrate User Systems
 
-Integrate the customer system with the AI platform platform through protocols like OIDC/OAUTH,
-allowing users to enter the customer system without logging in again after logging into the AI platform platform.
+Integrate the customer system with the AI platform through protocols like OIDC/OAUTH,
+allowing users to enter the customer system without logging in again after logging into the AI platform.
 
 1. In the scenario of two AI platform, you can create SSO access through __Global Management__ -> __Access Control__ -> __Docking Portal__.
 
@@ -162,7 +162,7 @@ allowing users to enter the customer system without logging in again after loggi
     <!-- add image later -->
 
 3. After integration, the customer system login page will display the OIDC (Custom) option.
-   Select to log in via OIDC the first time entering the customer system from the AI platform platform,
+   Select to log in via OIDC the first time entering the customer system from the AI platform,
    and subsequently, you will directly enter the customer system without selecting again.
 
     <!-- add image later -->

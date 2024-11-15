@@ -1,6 +1,6 @@
 # GPU Quota Management
 
-This section describes how to use vGPU capabilities on the AI platform platform.
+This section describes how to use vGPU capabilities on the AI platform.
 
 ## Prerequisites
 

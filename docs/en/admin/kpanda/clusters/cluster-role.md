@@ -27,11 +27,6 @@ It generally does not carry business workloads.
 
 This cluster is used to manage worker clusters and generally does not carry business workloads.
 
-- [Classic Mode](../../../install/commercial/deploy-requirements.md) deploys the global service cluster
-  and management cluster in different clusters, suitable for multi-data center, multi-architecture enterprise scenarios.
-- [Simple Mode](../../../install/commercial/deploy-requirements.md) deploys the management cluster and
-  global service cluster in the same cluster.
-
 | Supported Features | Description |
 | ------------------ | ----------- |
 | K8s Version | 1.22+ |

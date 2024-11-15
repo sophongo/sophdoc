@@ -5,7 +5,7 @@ DATE: 2024-07-19
 
 # Start Observing
 
-AI platform platform enables the management and creation of multicloud and multiple clusters.
+AI platform enables the management and creation of multicloud and multiple clusters.
 Building upon this capability, Insight serves as a unified observability solution for
 multiple clusters. It collects observability data from multiple clusters by deploying the insight-agent
 plugin and allows querying of metrics, logs, and trace data through the AI platform Insight.
@@ -26,7 +26,7 @@ When installing insight-agent, it is necessary to adjust the resources of the pr
    according to the size of the cluster created or integrated. Please refer to
    [Prometheus resource planning](../res-plan/prometheus-res.md).
 
-2. As the metric data from multiple clusters is stored centrally, AI platform platform administrators
+2. As the metric data from multiple clusters is stored centrally, AI platform administrators
    need to adjust the disk space of __vmstorage__ based on the cluster size.
    Please refer to [vmstorage disk capacity planning](../res-plan/vms-res-plan.md).
 

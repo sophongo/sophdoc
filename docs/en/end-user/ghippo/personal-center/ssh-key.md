@@ -92,7 +92,7 @@ In addition to manually copying the generated public key information printed on 
     xclip -sel clip < ~/.ssh/id_ed25519.pub
     ```
 
-## Step 4. Set the Public Key on AI platform Platform
+## Step 4. Set the Public Key on AI platform
 
 1. Log in to the AI platform UI page and select **Profile** -> **SSH Public Key** in the upper right corner of the page.
 
