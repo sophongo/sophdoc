@@ -31,10 +31,6 @@ __clusterConfig.yaml__ file used during the AI platform deployment is available.
 
 #### Offline Image Package
 
-!!! note
-
-    The latest version can be downloaded from the [Download Center](https://docs.daocloud.io/download/dce5/).
-
 | CPU Architecture | Version | Download Link |
 | :--------------- | :------ | :------------ |
 | AMD64 | v0.18.0 | <https://qiniu-download-public.daocloud.io/DaoCloud_Enterprise/dce5/offline-v0.18.0-amd64.tar> |
