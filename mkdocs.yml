@@ -16,7 +16,7 @@ copyright: Copyright &copy; 2016 - 2024 Suanova
 repo_name: sophongo/sophongo-docs
 
 repo_url: https://github.com/sophongo/sophdoc
-edit_uri: edit/main/docs/zh/docs/
+edit_uri: edit/main/docs/
 
 use_directory_urls: false # disable https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
 strict: false # enable strict mode, https://www.mkdocs.org/user-guide/configuration/#strict
@@ -30,6 +30,8 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tooltips
+    - content.action.edit
+    - content.action.view
     - navigation.indexes
     - navigation.tabs
     - navigation.instant
@@ -43,6 +45,7 @@ theme:
     - search.share
     - toc.follow
     - navigation.path
+    - navigation.footer
     # - toc.integrate
 
   palette:
@@ -84,6 +87,13 @@ plugins:
       en
   
   swagger-ui-tag: # enable swagger-ui-tag plugin
+
+  git-revision-date-localized:
+    enable_creation_date: false
+
+  git-committers:
+    repository: sophongo/sophdoc
+    branch: main
 
 # Customization Javascript
 extra_javascript:
