@@ -562,12 +562,12 @@ plugins:
                 创建云主机: Create Cloud Host
                 使用云主机: Use Cloud Host
                 容器管理: Container Management
-                云上 K8s 集群: Cloud K8s Cluster
+                云上 K8s 集群: K8s Cluster on Cloud
                 接入集群: Integrate Cluster
                 访问集群: Access Cluster
                 集群角色: Cluster Roles
                 集群状态: Cluster Status
-                卸载/解除接入集群: Uninstall/Detach Cluster
+                卸载/解除接入集群: Uninstall/Remove Cluster
                 节点管理: Nodes
                 节点调度: Node Scheduling
                 标签与注解: Labels and Annotations
@@ -591,17 +591,17 @@ plugins:
                 上传 Helm 模板: Upload Helm Chart
                 管理 Helm 应用: Manage Helm Apps
                 管理 Helm 仓库: Manage Helm Repositories
-                Operator 应用: Operator Applications
+                Operator 应用: Operator Apps
                 容器网络: Container Networking
                 创建服务: Create Services
                 创建路由: Create Ingress
                 网络策略: Network Policies
                 自定义资源: Custom Resources
                 容器存储: Container Storage
-                数据卷声明 PVC: Persistent Volume Claim
-                数据卷 PV: Persistent Volume
-                存储池 SC: Storage Class
-                共享存储池: Shared Storage Pool
+                数据卷声明 PVC: PersistentVolumeClaim
+                数据卷 PV: PersistentVolume
+                存储池 SC: StorageClass
+                共享存储池: Shared StorageClass
                 配置与密钥: ConfigMaps and Secrets
                 创建配置项: Create ConfigMap
                 使用配置项: Use ConfigMap
@@ -618,20 +618,20 @@ plugins:
                 集群巡检: Cluster Inspection
                 介绍: Introduction
                 创建巡检配置: Configure Inspection
-                执行巡检: Execute Inspection
+                执行巡检: Run Inspection
                 查看巡检报告: View Inspection Report
                 备份恢复: Backup and Recovery
                 安全管理: Security Management
-                安全扫描类型: Security Scan Types
+                安全扫描类型: Scanning Types
                 合规性扫描: Compliance Scanning
-                扫描配置: Scan Configuration
-                扫描策略: Scan Policy
-                扫描报告: Scan Report
+                扫描配置: Scanning Settings
+                扫描策略: Scanning Policy
+                扫描报告: Scanning Report
                 权限扫描: Permission Scanning
                 漏洞扫描: Vulnerability Scanning
-                权限管理: Permission Management
-                权限体系介绍: Introduction to Permission
-                集群和命名空间授权: Cluster and Namespace Authorization
+                权限管理: Permissions
+                权限体系介绍: Introduction
+                集群和命名空间授权: Authorize Cluster and Namespace
                 增加容器管理内置权限点: Add Built-in Permission
                 算法开发: AI Lab
                 创建 AI 工作负载: Create AI Workload
