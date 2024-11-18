@@ -1,6 +1,6 @@
 ---
-name: "\U0001F7E1 Request a feature in the DaoCloud Enterprise Documents"
-about: If you have feature idea for DaoCloud Enterprise Documents
+name: "\U0001F7E1 Request a feature in the Documents"
+about: If you have feature idea for Documents
 title: ''
 labels: enhancement
 assignees: ''
