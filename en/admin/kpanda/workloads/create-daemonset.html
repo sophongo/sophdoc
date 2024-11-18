@@ -319,7 +319,7 @@
 </a>
 <h1 id="create-daemonset">Create DaemonSet<a class="headerlink" href="#create-daemonset" title="Permanent link">¶</a></h1>
 <p>This page introduces how to create a daemonSet through image and YAML files.</p>
-<p>DaemonSet is connected to <a href="https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes-using-node-affinity/">taint</a> through <a href="://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/">node affinity</a> feature ensures that a replica of a Pod is running on all or some of the nodes. For nodes that newly joined the cluster, DaemonSet automatically deploys the proper Pod on the new node and tracks the running status of the Pod. When a node is removed, the DaemonSet deletes all Pods it created.</p>
+<p>DaemonSet is connected to <a href="https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes-using-node-affinity/">taint</a> through <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/">node affinity</a> feature ensures that a replica of a Pod is running on all or some of the nodes. For nodes that newly joined the cluster, DaemonSet automatically deploys the proper Pod on the new node and tracks the running status of the Pod. When a node is removed, the DaemonSet deletes all Pods it created.</p>
 <p>Common cases for daemons include:</p>
 <ul>
 <li>Run cluster daemons on each node.</li>
