@@ -23,7 +23,7 @@ Before creating a DaemonSet, the following prerequisites need to be met:
 
 - In the Container Management module [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
 
-- Create a [namespace](../namespaces/createns.md) and a [user](../../ghippo/access-control/user.md).
+- Create a [namespace](../namespaces/createns.md) and a user.
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 
@@ -41,7 +41,7 @@ Refer to the following steps to create a daemon using the image.
 
     ![DaemonSet](../images/daemon01.png)
 
-3. Fill in [Basic Information](create-DaemonSet.md#basic-information), [Container Settings](create-DaemonSet.md#container-settings), [Service Settings](create-DaemonSet.md#service-settings), [Advanced Settings](create-DaemonSet.md#advanced-settings), click __OK__ in the lower right corner of the page to complete the creation.
+3. Fill in [Basic Information](#basic-information), [Container Settings](#container-settings), [Service Settings](#service-settings), [Advanced Settings](#advanced-settings), click __OK__ in the lower right corner of the page to complete the creation.
 
     The system will automatically return the list of __DaemonSets__ . Click __┇__ on the right side of the list to perform operations such as updating, deleting, and restarting the DaemonSet.
 

@@ -13,7 +13,7 @@ Before backing up a deployment, the following prerequisites must be met:
 
 - [Integrate a Kubernetes cluster](../clusters/integrate-cluster.md) or [create a Kubernetes cluster](../clusters/create-cluster.md) in the Container Management module, and be able to access the UI interface of the cluster.
 
-- Create a [Namespace](../namespaces/createns.md) and a [user](../../ghippo/access-control/user.md).
+- Create a [Namespace](../namespaces/createns.md) and a user.
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 

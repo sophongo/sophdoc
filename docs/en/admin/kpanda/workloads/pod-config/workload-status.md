@@ -55,4 +55,4 @@ Because different workload types (such as Deployment and Jobs) have inconsistent
 | Stopped | The CronJob is in this status when the stop task operation is performed. |
 | Deleting | The deletion operation is triggered, and the CronJob is in this status. |
 
-When the workload is in an abnormal or unready status, you can move the mouse over the status value of the load, and the system will display more detailed error information through a prompt box. You can also view the [log](../../../../insight/data-query/log.md) or events to obtain related running information of the workload.
+When the workload is in an abnormal or unready status, you can move the mouse over the status value of the load, and the system will display more detailed error information through a prompt box. You can also view the [log](../../../insight/data-query/log.md) or events to obtain related running information of the workload.

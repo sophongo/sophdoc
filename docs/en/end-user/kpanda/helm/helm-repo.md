@@ -22,8 +22,7 @@ In addition to the above preset repositories, you can also add third-party Helm 
   [created the Kubernetes cluster](../clusters/create-cluster.md),
   and you can access the UI interface of the cluster.
 
-- Created a [namespace](../namespaces/createns.md),
-  [user](../../ghippo/access-control/user.md),
+- Created a [namespace](../namespaces/createns.md), user,
   and granted [`NS Admin`](../permissions/permission-brief.md#ns-admin) or higher permissions to the user.
   For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 

@@ -65,9 +65,6 @@ Certain prerequisites must be met before creating a cluster:
 5. Fill in the network configuration and click __Next__ .
 
     - CNI: Provide network services for Pods in the cluster. CNI cannot be changed after the cluster is created. Supports cilium and calico. Set __none__ means not installing CNI when creating the cluster. You may install a CNI later.
-
-        > For CNI configuration details, see [Cilium Installation Parameters](../../../network/modules/cilium/install.md) or [Calico Installation Parameters](../../../network/modules/calico/install.md).
-
     - Container IP Range: Set an IP range for allocating IPs for containers in the cluster. IP range determines the max number of containers allowed in the cluster. Cannot be modified after creation.
     - Service IP Range: Set an IP range for allocating IPs for container Services in the cluster. This range determines the max number of container Services that can be created in the cluster. Cannot be modified after creation.
 

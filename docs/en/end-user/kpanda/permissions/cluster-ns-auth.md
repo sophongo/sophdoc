@@ -1,16 +1,16 @@
 # Cluster and Namespace Authorization
 
-Container management implements authorization based on global authority management and global user/group management. If you need to grant users the highest authority for container management (can create, manage, and delete all clusters), refer to [What are Access Control](../../../ghippo/access-control/iam.md).
+Container management implements authorization based on global authority management and global user/group management. If you need to grant users the highest authority for container management (can create, manage, and delete all clusters).
 
 ## Prerequisites
 
 Before authorizing users/groups, complete the following preparations:
 
-- The user/group to be authorized has been created in the global management, refer to [user](../../ghippo/access-control/user.md).
+- The user/group to be authorized has been created in the global management.
 
-- Only [ __Kpanda Owner__ ](../../ghippo/access-control/global.md) and [`Cluster Admin`](permission-brief.md) of the current cluster have Cluster authorization capability. For details, refer to [Permission Description](permission-brief.md).
+- Only `Kpanda Owner` and [`Cluster Admin`](permission-brief.md) of the current cluster have Cluster authorization capability. For details, refer to [Permission Description](permission-brief.md).
 
-- only [ __Kpanda Owner__ ](../../ghippo/access-control/global.md), [`Cluster Admin`](permission-brief.md) for the current cluster, [`NS Admin`](permission-brief.md) of the current namespace has namespace authorization capability.
+- Only `Kpanda Owner`, [`Cluster Admin`](permission-brief.md) for the current cluster, [`NS Admin`](permission-brief.md) of the current namespace has namespace authorization capability.
 
 ## Cluster Authorization
 

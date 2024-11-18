@@ -17,7 +17,7 @@ Before using image to create StatefulSets, the following prerequisites need to b
 
 - In the Container Management module [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
 
-- Create a [namespace](../namespaces/createns.md) and a [user](../../ghippo/access-control/user.md).
+- Create a [namespace](../namespaces/createns.md) and a user.
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 
@@ -123,7 +123,7 @@ Advanced setting includes four parts: load network settings, upgrade policy, sch
 
 === "Network Configuration"
 
-    1. For container NIC settings, refer to [Workload Usage IP Pool](../../../network/config/use-ippool/usage.md)
+    1. For container NIC settings, refer to [Workload Usage IP Pool](https://docs.daocloud.io/network/config/use-ippool/usage/)
     2. DNS settings
 
     In some cases, the application will have redundant DNS queries. Kubernetes provides DNS-related settings options for applications, which can effectively reduce redundant DNS queries and increase business concurrency in certain cases.

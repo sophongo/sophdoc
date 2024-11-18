@@ -140,7 +140,7 @@ Advanced setting includes four parts: Network Settings, Upgrade Policy, Scheduli
 
 === "Network Settings"
 
-    1. For container NIC setting, refer to [Workload Usage IP Pool](../../../network/config/use-ippool/usage.md)
+    1. For container NIC setting, refer to [Workload Usage IP Pool](https://docs.daocloud.io/network/config/use-ippool/usage/)
     2. DNS setting
 
     In some cases, the application will have redundant DNS queries. Kubernetes provides DNS-related setting options for applications, which can effectively reduce redundant DNS queries and increase business concurrency in certain cases.

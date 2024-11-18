@@ -15,7 +15,7 @@ Before creating a CronJob, the following prerequisites need to be met:
 
 - In the Container Management module [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
 
-- Create a [namespace](../namespaces/createns.md) and a [user](../../ghippo/access-control/user.md).
+- Create a [namespace](../namespaces/createns.md) and a user.
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 

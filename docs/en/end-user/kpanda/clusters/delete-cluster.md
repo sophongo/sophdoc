@@ -18,8 +18,8 @@ In AI platform, the difference between __Delete__ and __Remove__ is:
 
 !!! note
 
-    - You should have [Admin](../../../ghippo/access-control/role.md)
-      or [Kpanda Owner](../../../ghippo/access-control/global.md) permissions
+    - You should have Admin
+      or Kpanda Owner permissions
       to perform delete or remove operations.
     - Before deleting a cluster, you should turn off __Cluster Deletion Protection__ in
       __Cluster Settings__ -> __Advanced Settings__ , otherwise the __Delete Cluster__ option will not be displayed.
