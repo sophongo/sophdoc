@@ -657,8 +657,8 @@ Traffic ingress is controlled by rules defined on the Ingress resource. Here's a
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ul>
 <li>Container management module <a href="../clusters/integrate-cluster.html">connected to Kubernetes cluster</a> or <a href="../clusters/create-cluster.html">created Kubernetes</a>, and can access the cluster UI interface.</li>
-<li>Completed a <a href="../namespaces/createns.html">namespace creation</a>, <a href="../../ghippo/access-control/user.md">user creation</a>, and authorize the user as <a href="../permissions/permission-brief.html#ns-editor">NS Editor</a> role, for details, refer to <a href="../permissions/cluster-ns-auth.html">Namespace Authorization</a>.</li>
-<li>Completed <a href="../../../network/modules/ingress-nginx/install.md">Create Ingress Instance</a>, <a href="../workloads/create-deployment.html">Deploy Application Workload</a>, and have <a href="create-services.html">created the proper Service</a></li>
+<li>Completed a <a href="../namespaces/createns.html">namespace creation</a>, user creation, and authorize the user as <a href="../permissions/permission-brief.html#ns-editor">NS Editor</a> role, for details, refer to <a href="../permissions/cluster-ns-auth.html">Namespace Authorization</a>.</li>
+<li>Completed Create Ingress Instance, <a href="../workloads/create-deployment.html">Deploy Application Workload</a>, and have <a href="create-services.html">created the proper Service</a></li>
 <li>When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.</li>
 </ul>
 <h2 id="create-ingress">Create ingress<a class="headerlink" href="#create-ingress" title="Permanent link">¶</a></h2>
@@ -711,12 +711,12 @@ Traffic ingress is controlled by rules defined on the Ingress resource. Here's a
 </tr>
 <tr>
 <td>LB Type</td>
-<td>[Type] Required<br/> [Meaning] The usage range of the Ingress instance. <a href="../../../network/modules/ingress-nginx/scope.md">Scope of use of Ingress</a><br/> <strong>Platform-level load balancer</strong> : In the same cluster, share the same Ingress instance, where all Pods can receive requests distributed by the load balancer. <br/> <strong>Tenant-level load balancer</strong> : Tenant load balancer, the Ingress instance belongs exclusively to the current namespace, or belongs to a certain workspace, and the set workspace includes the current namespace, and all Pods can receive it Requests distributed by this load balancer.</td>
+<td>[Type] Required<br/> [Meaning] The usage range of the Ingress instance. <br/> <strong>Platform-level load balancer</strong> : In the same cluster, share the same Ingress instance, where all Pods can receive requests distributed by the load balancer. <br/> <strong>Tenant-level load balancer</strong> : Tenant load balancer, the Ingress instance belongs exclusively to the current namespace, or belongs to a certain workspace, and the set workspace includes the current namespace, and all Pods can receive it Requests distributed by this load balancer.</td>
 <td>Platform Level Load Balancer</td>
 </tr>
 <tr>
 <td>Ingress Class</td>
-<td>[Type] Optional<br/>[Meaning] Select the proper Ingress instance, and import traffic to the specified Ingress instance after selection. When it is None, the default DefaultClass is used. Please set the DefaultClass when creating an Ingress instance. For more information, refer to <a href="../../../network/modules/ingress-nginx/ingressclass.md">Ingress Class</a>&lt; br /&gt;</td>
+<td>[Type] Optional<br/>[Meaning] Select the proper Ingress instance, and import traffic to the specified Ingress instance after selection. When it is None, the default DefaultClass is used. Please set the DefaultClass when creating an Ingress instance.</td>
 <td>Ngnix</td>
 </tr>
 <tr>
@@ -798,7 +798,7 @@ Traffic ingress is controlled by rules defined on the Ingress resource. Here's a
 </tr>
 <tr>
 <td>Ingress Class</td>
-<td>[Type] Optional<br/>[Meaning] Select the proper Ingress instance, and import traffic to the specified Ingress instance after selection. When it is None, the default DefaultClass is used. Please set the DefaultClass when creating an Ingress instance. For more information, refer to <a href="../../../network/modules/ingress-nginx/ingressclass.md">Ingress Class</a>&lt; br /&gt;</td>
+<td>[Type] Optional<br/>[Meaning] Select the proper Ingress instance, and import traffic to the specified Ingress instance after selection. When it is None, the default DefaultClass is used. Please set the DefaultClass when creating an Ingress instance.</td>
 <td>None</td>
 </tr>
 <tr>

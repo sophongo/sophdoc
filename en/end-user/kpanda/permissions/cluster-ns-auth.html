@@ -614,18 +614,18 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="cluster-and-namespace-authorization">Cluster and Namespace Authorization<a class="headerlink" href="#cluster-and-namespace-authorization" title="Permanent link">¶</a></h1>
-<p>Container management implements authorization based on global authority management and global user/group management. If you need to grant users the highest authority for container management (can create, manage, and delete all clusters), refer to <a href="../../../ghippo/access-control/iam.md">What are Access Control</a>.</p>
+<p>Container management implements authorization based on global authority management and global user/group management. If you need to grant users the highest authority for container management (can create, manage, and delete all clusters).</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>Before authorizing users/groups, complete the following preparations:</p>
 <ul>
 <li>
-<p>The user/group to be authorized has been created in the global management, refer to <a href="../../ghippo/access-control/user.md">user</a>.</p>
+<p>The user/group to be authorized has been created in the global management.</p>
 </li>
 <li>
-<p>Only <a href="../../ghippo/access-control/global.md"> <strong>Kpanda Owner</strong> </a> and <a href="permission-brief.html"><code>Cluster Admin</code></a> of the current cluster have Cluster authorization capability. For details, refer to <a href="permission-brief.html">Permission Description</a>.</p>
+<p>Only <code>Kpanda Owner</code> and <a href="permission-brief.html"><code>Cluster Admin</code></a> of the current cluster have Cluster authorization capability. For details, refer to <a href="permission-brief.html">Permission Description</a>.</p>
 </li>
 <li>
-<p>only <a href="../../ghippo/access-control/global.md"> <strong>Kpanda Owner</strong> </a>, <a href="permission-brief.html"><code>Cluster Admin</code></a> for the current cluster, <a href="permission-brief.html"><code>NS Admin</code></a> of the current namespace has namespace authorization capability.</p>
+<p>Only <code>Kpanda Owner</code>, <a href="permission-brief.html"><code>Cluster Admin</code></a> for the current cluster, <a href="permission-brief.html"><code>NS Admin</code></a> of the current namespace has namespace authorization capability.</p>
 </li>
 </ul>
 <h2 id="cluster-authorization">Cluster Authorization<a class="headerlink" href="#cluster-authorization" title="Permanent link">¶</a></h2>

@@ -338,15 +338,8 @@ An integrated cluster can only be integrated from third-party vendors (see <a hr
 <li>
 <p>Fill in the network configuration and click <strong>Next</strong> .</p>
 <ul>
-<li>
-<p>CNI: Provide network services for Pods in the cluster. CNI cannot be changed after the cluster is created. Supports cilium and calico. Set <strong>none</strong> means not installing CNI when creating the cluster. You may install a CNI later.</p>
-<blockquote>
-<p>For CNI configuration details, see <a href="../../../network/modules/cilium/install.md">Cilium Installation Parameters</a> or <a href="../../../network/modules/calico/install.md">Calico Installation Parameters</a>.</p>
-</blockquote>
-</li>
-<li>
-<p>Container IP Range: Set an IP range for allocating IPs for containers in the cluster. IP range determines the max number of containers allowed in the cluster. Cannot be modified after creation.</p>
-</li>
+<li>CNI: Provide network services for Pods in the cluster. CNI cannot be changed after the cluster is created. Supports cilium and calico. Set <strong>none</strong> means not installing CNI when creating the cluster. You may install a CNI later.</li>
+<li>Container IP Range: Set an IP range for allocating IPs for containers in the cluster. IP range determines the max number of containers allowed in the cluster. Cannot be modified after creation.</li>
 <li>Service IP Range: Set an IP range for allocating IPs for container Services in the cluster. This range determines the max number of container Services that can be created in the cluster. Cannot be modified after creation.</li>
 </ul>
 </li>
