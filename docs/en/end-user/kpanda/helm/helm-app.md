@@ -11,7 +11,7 @@ This section will take [cert-manager](https://cert-manager.io/docs/) as an examp
   and you can access the UI interface of the cluster.
 
 - Created a [namespace](../namespaces/createns.md),
-  [user](../../ghippo/access-control/user.md),
+  user,
   and granted [`NS Admin`](../permissions/permission-brief.md#ns-admin) or higher permissions to the user.
   For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 

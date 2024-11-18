@@ -25,7 +25,7 @@ You can create ConfigMaps with two methods:
   and you can access the UI interface of the cluster.
 
 - Created a [namespace](../namespaces/createns.md),
-  [user](../../ghippo/access-control/user.md),
+  user,
   and authorized the user as [NS Editor](../permissions/permission-brief.md#ns-editor).
   For details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 

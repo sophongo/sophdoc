@@ -41,12 +41,6 @@ classDef cluster fill:#fff,stroke:#bbb,stroke-width:1px,color:#326ce5;
 
 class preparews,preparens,createns,nstows,wsperm cluster;
 class judge plain
-
-click preparews "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_3"
-click preparens "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_4"
-click nstows "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_5"
-click wsperm "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_6"
-click createns "https://docs.daocloud.io/ghippo/user-guide/workspace/ws-to-ns/#_4"
 ```
 
 !!! tip

@@ -32,11 +32,4 @@ graph TD
  classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
  classDef cluster fill:#fff,stroke:#bbb,stroke-width:1px,color:#326ce5;
  class login,user,auth,group,role,id cluster;
-
-click login "https://docs.daocloud.io/en/ghippo/install/login.html"
-click user "https://docs.daocloud.io/en/ghippo/access-control/user.html"
-click auth "https://docs.daocloud.io/en/ghippo/access-control/role.html"
-click group "https://docs.daocloud.io/en/ghippo/access-control/group.html"
-click role "https://docs.daocloud.io/en/ghippo/access-control/custom-role.html"
-click id "https://docs.daocloud.io/en/ghippo/access-control/idprovider.html"
 ```

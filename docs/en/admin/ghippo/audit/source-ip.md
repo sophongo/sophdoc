@@ -55,4 +55,3 @@ The steps to enable it are as follows:
 ## MetalLB Installation Mode
 
 In this mode, the source IP in audit logs is gotten by default after the installation.
-For more information, refer to [MetalLB Source IP](../../../network/modules/metallb/source_ip.md).
