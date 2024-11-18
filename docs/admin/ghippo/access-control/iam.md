@@ -35,7 +35,7 @@ graph TD
  classDef cluster fill:#fff,stroke:#bbb,stroke-width:1px,color:#326ce5;
  class login,user,auth,group,role,id cluster;
 
-click login "https://docs.daocloud.io/ghippo/install/login.html"
+click login "/ghippo/install/login.html"
 click user "https://docs.daocloud.io/ghippo/access-control/user.html"
 click auth "https://docs.daocloud.io/ghippo/access-control/role.html"
 click group "https://docs.daocloud.io/ghippo/access-control/group.html"
