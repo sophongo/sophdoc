@@ -80,8 +80,6 @@ theme:
 # Plugins
 plugins:
   search:
-    jieba_dict: dict.txt.small
-    jieba_dict_user: dict.txt.daocloud
     lang:
       zh
       en

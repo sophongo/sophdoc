@@ -5,7 +5,7 @@ In most cases, this will meet the developers' needs.
 
 ![Creating notebook interface](../images/notebook-images.png)
 
-DaoCloud provides a default Notebook image that contains all necessary development tools and resources.
+This AI platform provides a default Notebook image that contains all necessary development tools and resources.
 
 ```markdown
 baize/baize-notebook
@@ -21,7 +21,7 @@ This Notebook includes basic development tools. Taking `baize-notebook:v0.5.0` (
 | conda(mamba)  | 23.3.1   |                                                           |
 | jupyterlab    | 3.6.6    | JupyterLab image, providing a complete Notebook experience |
 | codeserver    | v4.89.1  | Mainstream Code development tool for a familiar experience |
-| *baizectl     | v0.5.0   | DaoCloud built-in CLI task management tool                |
+| *baizectl     | v0.5.0   | A built-in CLI task management tool                |
 | *SSH          | -        | Supports local SSH direct access to the Notebook container |
 | *kubectl      | v1.27    | Kubernetes CLI for managing container resources within Notebook |
 

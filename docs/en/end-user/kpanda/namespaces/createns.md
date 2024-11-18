@@ -27,7 +27,7 @@ Supports easy creation of namespaces through forms, and quick creation of namesp
 
     !!! info
 
-        - After binding a namespace to a workspace, the resources of that namespace will be shared with the bound workspace. For a detailed explanation of workspaces, refer to [Workspaces and Hierarchies](../../../ghippo/workspace/workspace.md).
+        - After binding a namespace to a workspace, the resources of that namespace will be shared with the bound workspace. For a detailed explanation of workspaces, refer to [Workspaces and Folders](../../ghippo/workspace/workspace.md).
 
         - After the namespace is created, you can still bind/unbind the workspace.
 
