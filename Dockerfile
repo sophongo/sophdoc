@@ -3,17 +3,11 @@ FROM python:3.12-slim AS builder
 
 WORKDIR /docs
 
-# 安装 mkdocs 和依赖
-RUN pip install --no-cache-dir \
-    mkdocs \
-    mkdocs-material \
-    mkdocs-minify-plugin \
-    pymdown-extensions \
-    mkdocs-swagger-ui-tag \
-    mkdocs-static-i18n
-
 # 复制项目文件
 COPY . /docs
+
+# 安装 mkdocs 和依赖
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 构建静态文件
 RUN mkdocs build -f mkdocs.yml
