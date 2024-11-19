@@ -93,7 +93,7 @@ plugins:
     repository: sophongo/sophdoc
     branch: main
     enable: true
-    token: ${{ secrets.GITHUB_TOKEN }}
+    token: !ENV ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   
   redirects:
     redirect_maps:
