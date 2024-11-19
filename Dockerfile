@@ -6,6 +6,10 @@ WORKDIR /docs
 # 复制项目文件
 COPY . /docs
 
+# 更新包管理器并安装 Git
+RUN apt-get update && apt-get install -y git \
+    && rm -rf /var/lib/apt/lists/*
+
 # 安装 mkdocs 和依赖
 RUN pip install --no-cache-dir -r requirements.txt
 
