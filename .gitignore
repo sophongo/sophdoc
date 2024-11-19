@@ -15,3 +15,4 @@ docs/en/site/
 ufile.log
 .env
 .obsidian/
+.cache/

@@ -92,6 +92,12 @@ plugins:
   git-committers:
     repository: sophongo/sophdoc
     branch: main
+    enable: true
+    token: ${{ secrets.GITHUB_TOKEN }}
+  
+  redirects:
+    redirect_maps:
+      dce/what/index.md: index.md
 
 # Customization Javascript
 extra_javascript:
