@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+name: deploy-for-main
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Clone the repository     
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+          cache: 'pip'
+
+      # Install dependencies
+      - run: pip install -r requirements.txt --no-cache-dir
+
+      # Build docs
+      - run: pwd
+      - run: mkdocs gh-deploy -c --force
