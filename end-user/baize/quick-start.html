@@ -590,7 +590,7 @@
 <li>如果是中国境内的用户，可以使用 Gitee 加速：<a href="https://gitee.com/samzong_lu/training-sample-code.git">https://gitee.com/samzong_lu/training-sample-code.git</a></li>
 <li>代码路径为 <code>tensorflow/tf-fashion-mnist-sample</code></li>
 </ul>
-<p><img alt="训练代码的数据集" src="../images/baize-01.png"/></p>
+<p><img alt="训练代码的数据集" src="images/baize-01.png"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>目前仅支持读写模式为 <code>ReadWriteMany</code> 的 <code>StorageClass</code>，请使用 NFS 或者推荐的 <a href="https://juicefs.com/zh-cn/">JuiceFS</a>。</p>
@@ -599,14 +599,14 @@
 <p>本次训练使用的数据为 <a href="https://github.com/zalandoresearch/fashion-mnist.git">https://github.com/zalandoresearch/fashion-mnist.git</a>，
 这是 Fashion-MNIST 数据集。</p>
 <p>如果是中国境内的用户，可以使用 Gitee 加速：<a href="https://gitee.com/samzong_lu/fashion-mnist.git">https://gitee.com/samzong_lu/fashion-mnist.git</a></p>
-<p><img alt="训练数据的数据集" src="../images/baize-02.png"/></p>
+<p><img alt="训练数据的数据集" src="images/baize-02.png"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>如果未创建训练数据的数据集，通过训练脚本也会自动下载；提前准备训练数据可以提高训练速度。</p>
 </div>
 <h3 id="_5">数据集：空数据集<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
 <p>AI Lab 支持将 <code>PVC</code> 作为数据集的数据源类型，所以创建一个空 PVC 绑定到数据集后，可将空数据集作为存放后续训练任务的输出数据集，存放模型和日志。</p>
-<p><img alt="空数据集" src="../images/baize-03.png"/></p>
+<p><img alt="空数据集" src="images/baize-03.png"/></p>
 <h2 id="tensorflow">环境依赖: tensorflow<a class="headerlink" href="#tensorflow" title="Permanent link">¶</a></h2>
 <p>脚本在运行时，需要依赖 <code>Tensorflow</code> 的 Python 库，可以使用 AI Lab 的环境依赖管理功能，提前将需要的 Python 库下载和准备完成，无需依赖镜像构建</p>
 <blockquote>
@@ -621,7 +621,7 @@
 <a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tensorflow</span>
 <a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nt">prefix</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/conda/envs/tensorflow</span>
 </code></pre></div>
-<p><img alt="创建环境依赖" src="../images/baize-08.png"/></p>
+<p><img alt="创建环境依赖" src="images/baize-08.png"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>等待环境预热成功后，只需要将此环境挂载到 Notebook、训练任务中，使用 AI Lab 提供的基础镜像就可以</p>
@@ -631,12 +631,12 @@
 <ul>
 <li>
 <p>将<a href="#_2">准备好的三个数据集</a>进行关联，挂载路径请参照下图填写，注意将需要使用的空数据集在 输出数据集位置配置</p>
-<p><img alt="挂载路径" src="../images/baize-06.png"/></p>
+<p><img alt="挂载路径" src="images/baize-06.png"/></p>
 </li>
 <li>
 <p>选择并绑定<a href="#tensorflow">环境依赖包</a></p>
 <p>等待 Notebook 创建成功，点击列表中的访问地址，进入 Notebook。并在 Notebook 的终端中执行以下命令进行任务训练。</p>
-<p><img alt="进入 notebook" src="../images/baize-05.png"/></p>
+<p><img alt="进入 notebook" src="images/baize-05.png"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>脚本使用 Tensorflow，如果忘记关联依赖库，也可以临时用 <code>pip install tensorflow</code> 安装。</p>
@@ -667,15 +667,15 @@
 <p class="admonition-title">Note</p>
 <p>日志所在位置为输出数据集的 <code>/home/jovyan/model/train/logs/</code></p>
 </div>
-<p><img alt="高级配置" src="../images/enable-analy.png"/></p>
+<p><img alt="高级配置" src="images/enable-analy.png"/></p>
 </li>
 <li>
 <p>返回训练任务列表，等到状态变为 <strong>成功</strong> 。点击列表右侧的 <strong>┇</strong> ，可以查看详情、克隆任务、更新优先级、查看日志和删除等操作。</p>
-<p><img alt="提交训练任务" src="../images/othera.png"/></p>
+<p><img alt="提交训练任务" src="images/othera.png"/></p>
 </li>
 <li>
 <p>成功创建任务后，在左侧导航栏点击 <strong>任务分析</strong> ，可以查看任务状态并对任务训练进行调优。</p>
-<p><img alt="查看任务" src="../images/baize-07.png"/></p>
+<p><img alt="查看任务" src="images/baize-07.png"/></p>
 </li>
 </ol>
 <aside class="md-source-file">
