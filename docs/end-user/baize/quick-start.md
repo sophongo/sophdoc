@@ -12,7 +12,7 @@
 - 如果是中国境内的用户，可以使用 Gitee 加速：[https://gitee.com/samzong_lu/training-sample-code.git](https://gitee.com/samzong_lu/training-sample-code.git)
 - 代码路径为 `tensorflow/tf-fashion-mnist-sample`
 
-![训练代码的数据集](../images/baize-01.png)
+![训练代码的数据集](./images/baize-01.png)
 
 !!! note
 
@@ -25,7 +25,7 @@
 
 如果是中国境内的用户，可以使用 Gitee 加速：[https://gitee.com/samzong_lu/fashion-mnist.git](https://gitee.com/samzong_lu/fashion-mnist.git)
 
-![训练数据的数据集](../images/baize-02.png)
+![训练数据的数据集](./images/baize-02.png)
 
 !!! note
 
@@ -35,7 +35,7 @@
 
 AI Lab 支持将 `PVC` 作为数据集的数据源类型，所以创建一个空 PVC 绑定到数据集后，可将空数据集作为存放后续训练任务的输出数据集，存放模型和日志。
 
-![空数据集](../images/baize-03.png)
+![空数据集](./images/baize-03.png)
 
 ## 环境依赖: tensorflow
 
@@ -54,7 +54,7 @@ dependencies:
 prefix: /opt/conda/envs/tensorflow
 ```
 
-![创建环境依赖](../images/baize-08.png)
+![创建环境依赖](./images/baize-08.png)
 
 !!! note
 
@@ -66,13 +66,13 @@ prefix: /opt/conda/envs/tensorflow
 
 - 将[准备好的三个数据集](#_2)进行关联，挂载路径请参照下图填写，注意将需要使用的空数据集在 输出数据集位置配置
 
-    ![挂载路径](../images/baize-06.png)
+    ![挂载路径](./images/baize-06.png)
 
 - 选择并绑定[环境依赖包](#tensorflow)
 
     等待 Notebook 创建成功，点击列表中的访问地址，进入 Notebook。并在 Notebook 的终端中执行以下命令进行任务训练。
 
-    ![进入 notebook](../images/baize-05.png)
+    ![进入 notebook](./images/baize-05.png)
 
     !!! note
 
@@ -102,12 +102,12 @@ prefix: /opt/conda/envs/tensorflow
 
         日志所在位置为输出数据集的 `/home/jovyan/model/train/logs/`
 
-    ![高级配置](../images/enable-analy.png)
+    ![高级配置](./images/enable-analy.png)
 
 1.  返回训练任务列表，等到状态变为 **成功** 。点击列表右侧的 **┇** ，可以查看详情、克隆任务、更新优先级、查看日志和删除等操作。
 
-    ![提交训练任务](../images/othera.png)
+    ![提交训练任务](./images/othera.png)
 
 1.  成功创建任务后，在左侧导航栏点击 **任务分析** ，可以查看任务状态并对任务训练进行调优。
 
-    ![查看任务](../images/baize-07.png)
+    ![查看任务](./images/baize-07.png)

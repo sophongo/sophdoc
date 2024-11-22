@@ -65,7 +65,7 @@ Prepare your development environment by clicking on **Notebooks** in the navigat
 
     Wait for the Notebook to be successfully created, then click the access link in the list to enter the Notebook. In the Notebook terminal, run the following command to start the training job:
 
-    ![Enter Notebook](../images/baize-05.png)
+    ![Enter Notebook](./images/baize-05.png)
 
     !!! note
 
@@ -100,4 +100,4 @@ Prepare your development environment by clicking on **Notebooks** in the navigat
 
 6. Once the job is successfully created, click on **Job Analysis** in the left navigation bar to check the job status and fine-tune your training.
 
-    ![View Job](../images/baize-07.png)
+    ![View Job](./images/baize-07.png)
