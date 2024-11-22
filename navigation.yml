@@ -507,6 +507,9 @@ nav:
                   - 访问密钥: admin/ghippo/personal-center/accesstoken.md
                   - SSH 公钥: admin/ghippo/personal-center/ssh-key.md
                   - 语言设置: admin/ghippo/personal-center/language.md
+              - 权限说明:
+                  - 容器管理权限说明: admin/ghippo/permissions/kpanda.md
+                  - AI Lab 权限说明: admin/ghippo/permissions/baize.md
               - 最佳实践:
                   - 工作空间最佳实践: admin/ghippo/best-practice/ws-best-practice.md
                   - 工作空间绑定命名空间: admin/ghippo/best-practice/ws-to-ns.md
@@ -959,3 +962,6 @@ plugins:
                 登录报错 401 或 403: Login Error 401 or 403
                 keycloak 无法启动: Keycloak Fails to Start
                 单独升级全局管理时失败: Failure When Upgrading Global Management
+                权限说明: Permissions
+                容器管理权限说明: Container Management Permissions
+                AI Lab 权限说明: AI Lab Permissions
