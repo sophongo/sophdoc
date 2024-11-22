@@ -74,4 +74,3 @@ In Global Management, the operation steps are as follows:
        user management system to AI platform at one time through auto/manual synchronization.
     1. After synchronization, the administrator can authorize groups/groups in batches, and users
        can log in to AI platform through the account/password in the enterprise user management system.
-    1. See the [LDAP Operations Demo Video](../../../videos/ghippo.md#integration-with-ldap-users-and-user-groups) for a hands-on tutorial.
