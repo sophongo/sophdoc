@@ -5,10 +5,6 @@ Date: 2024-08-05
 
 # Deploy Label Studio
 
-!!! note
-
-    Refer to the video tutorial: [Data Labeling and Dataset Usage Instructions](../../videos/baize.md#data-label-and-dataset)
-
 [Label Studio](https://labelstud.io/) is an open-source data labeling tool used for various
 machine learning and artificial intelligence jobs. Here is a brief introduction to Label Studio:
 

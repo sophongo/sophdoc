@@ -21,17 +21,3 @@ GProduct 是 AI 算力中心中除全局管理外的所有其他模块的统称�
 
     登录统一使用全局管理 (Keycloak) 登录页，API authn token 验证使用 Istio Gateway。
     GProduct 对接全局管理后不需要关注如何实现登录和认证。
-
-## 视频演示和 PDF
-
-将 AI 算力中心集成到客户系统（OEM OUT），参阅 [OEM OUT 文档](../oem/oem-out.md)。
-
-<div class="responsive-video-container">
-<video controls src="https://harbor-test2.cn-sh2.ufileos.com/docs/videos/oem-out.mp4" preload="metadata" poster="../../../videos/images/oem-out.png"></video>
-</div>
-
-将客户系统集成到 AI 算力中心（OEM IN），参阅 [OEM IN 文档](../oem/oem-in.md)。
-
-<div class="responsive-video-container">
-<video controls src="https://harbor-test2.cn-sh2.ufileos.com/docs/videos/oemin-istio.mp4" preload="metadata" poster="../../../videos/images/oem-in.png"></video>
-</div>
