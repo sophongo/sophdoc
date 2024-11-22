@@ -85,7 +85,7 @@ nav:
                   - 集群和命名空间授权: end-user/kpanda/permissions/cluster-ns-auth.md
                   - 增加容器管理内置权限点: end-user/kpanda/permissions/custom-kpanda-role.md
           - 算法开发:
-              - 快速入门: end-user/quick-start.md
+              - 快速入门: end-user/baize/quick-start.md
               - 创建 AI 工作负载: end-user/share/workload.md
               - 使用 Notebook: end-user/share/notebook.md
               - 创建训练任务:
