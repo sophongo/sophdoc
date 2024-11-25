@@ -99,7 +99,7 @@ plugins:
     redirect_maps:
       dce/what/index.md: index.md
       ghippo/user-guide/audit/gproduct-audit/amamba.md: admin/ghippo/audit/gproduct-audit/kpanda.md
-      ghippo/user-guide/personal-center/ssh-key.md: end-user/ghippo/personal-center/ssh-key.md
+      ghippo/user-guide/personal-center/ssh-key/index.md: end-user/ghippo/personal-center/ssh-key.md
       ghippo/user-guide/audit/open-audit.md: admin/ghippo/audit/open-audit.md
       ghippo/permissions/kpanda.md: admin/ghippo/permissions/kpanda.md
       kpanda/user-guide/scale/hpa-cronhpa-compatibility-rules.md: admin/kpanda/scale/hpa-cronhpa-compatibility-rules.md
