@@ -101,13 +101,24 @@ plugins:
       ghippo/user-guide/audit/gproduct-audit/amamba/index.md: admin/ghippo/audit/gproduct-audit/kpanda.md
       ghippo/user-guide/personal-center/ssh-key/index.md: end-user/ghippo/personal-center/ssh-key.md
       ghippo/user-guide/audit/open-audit/index.md: admin/ghippo/audit/open-audit.md
-      ghippo/permissions/kpanda/index.md: admin/ghippo/permissions/kpanda.md
-      kpanda/user-guide/scale/hpa-cronhpa-compatibility-rules/index.md: admin/kpanda/scale/hpa-cronhpa-compatibility-rules.md
+      ghippo/permissions/kpanda.md: admin/ghippo/permissions/kpanda.md
+      kpanda/user-guide/scale/hpa-cronhpa-compatibility-rules.md: admin/kpanda/scale/hpa-cronhpa-compatibility-rules.md
       kpanda/user-guide/namespaces/exclusive/index.md: admin/kpanda/namespaces/exclusive.md
       insight/user-guide/quickstart/otel/operator/index.md: admin/insight/quickstart/otel/operator.md
       insight/user-guide/quickstart/jvm-monitor/otel-java-agent/index.md: admin/insight/quickstart/otel/java/jvm-monitor/otel-java-agent.md
       insight/user-guide/quickstart/jvm-monitor/legacy-jvm/index.md: admin/insight/quickstart/otel/java/jvm-monitor/legacy-jvm.md
       insight/user-guide/quickstart/otel/golang/index.md: admin/insight/quickstart/otel/golang/golang.md
+      en/dce/what/index.md: en/index.md
+      en/ghippo/user-guide/audit/gproduct-audit/amamba/index.md: en/admin/ghippo/audit/gproduct-audit/kpanda.md
+      en/ghippo/user-guide/personal-center/ssh-key/index.md: en/end-user/ghippo/personal-center/ssh-key.md
+      en/ghippo/user-guide/audit/open-audit/index.md: en/admin/ghippo/audit/open-audit.md
+      en/ghippo/permissions/kpanda.md: en/admin/ghippo/permissions/kpanda.md
+      en/kpanda/user-guide/scale/hpa-cronhpa-compatibility-rules.md: en/admin/kpanda/scale/hpa-cronhpa-compatibility-rules.md
+      en/kpanda/user-guide/namespaces/exclusive/index.md: en/admin/kpanda/namespaces/exclusive.md
+      en/insight/user-guide/quickstart/otel/operator/index.md: en/admin/insight/quickstart/otel/operator.md
+      en/insight/user-guide/quickstart/jvm-monitor/otel-java-agent/index.md: en/admin/insight/quickstart/otel/java/jvm-monitor/otel-java-agent.md
+      en/insight/user-guide/quickstart/jvm-monitor/legacy-jvm/index.md: en/admin/insight/quickstart/otel/java/jvm-monitor/legacy-jvm.md
+      en/insight/user-guide/quickstart/otel/golang/index.md: en/admin/insight/quickstart/otel/golang/golang.md
 
 # Customization Javascript
 extra_javascript:
