@@ -98,16 +98,16 @@ plugins:
   redirects:
     redirect_maps:
       dce/what/index.md: index.md
-      ghippo/user-guide/audit/gproduct-audit/amamba.md: admin/ghippo/audit/gproduct-audit/kpanda.md
+      ghippo/user-guide/audit/gproduct-audit/amamba/index.md: admin/ghippo/audit/gproduct-audit/kpanda.md
       ghippo/user-guide/personal-center/ssh-key/index.md: end-user/ghippo/personal-center/ssh-key.md
-      ghippo/user-guide/audit/open-audit.md: admin/ghippo/audit/open-audit.md
-      ghippo/permissions/kpanda.md: admin/ghippo/permissions/kpanda.md
-      kpanda/user-guide/scale/hpa-cronhpa-compatibility-rules.md: admin/kpanda/scale/hpa-cronhpa-compatibility-rules.md
-      kpanda/user-guide/namespaces/exclusive.md: admin/kpanda/namespaces/exclusive.md
-      insight/user-guide/quickstart/otel/operator.md: admin/insight/quickstart/otel/operator.md
-      insight/user-guide/quickstart/jvm-monitor/otel-java-agent.md: admin/insight/quickstart/otel/java/jvm-monitor/otel-java-agent.md
-      insight/user-guide/quickstart/jvm-monitor/legacy-jvm.md: admin/insight/quickstart/otel/java/jvm-monitor/legacy-jvm.md
-      insight/user-guide/quickstart/otel/golang.md: admin/insight/quickstart/otel/golang/golang.md
+      ghippo/user-guide/audit/open-audit/index.md: admin/ghippo/audit/open-audit.md
+      ghippo/permissions/kpanda/index.md: admin/ghippo/permissions/kpanda.md
+      kpanda/user-guide/scale/hpa-cronhpa-compatibility-rules/index.md: admin/kpanda/scale/hpa-cronhpa-compatibility-rules.md
+      kpanda/user-guide/namespaces/exclusive/index.md: admin/kpanda/namespaces/exclusive.md
+      insight/user-guide/quickstart/otel/operator/index.md: admin/insight/quickstart/otel/operator.md
+      insight/user-guide/quickstart/jvm-monitor/otel-java-agent/index.md: admin/insight/quickstart/otel/java/jvm-monitor/otel-java-agent.md
+      insight/user-guide/quickstart/jvm-monitor/legacy-jvm/index.md: admin/insight/quickstart/otel/java/jvm-monitor/legacy-jvm.md
+      insight/user-guide/quickstart/otel/golang/index.md: admin/insight/quickstart/otel/golang/golang.md
 
 # Customization Javascript
 extra_javascript:
