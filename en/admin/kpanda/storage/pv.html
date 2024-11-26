@@ -12,7 +12,7 @@
 <link href="sc.html" rel="next"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.46" name="generator"/>
-<title>数据卷 - 豐收二號檔案站</title>
+<title>PersistentVolume - 豐收二號檔案站</title>
 <link href="../../../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#data-volume-pv">
+<a class="md-skip" href="#volume-pv">
           Skip to content
         </a>
 </div>
@@ -50,7 +50,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              数据卷
+              PersistentVolume
             
           </span>
 </div>
@@ -349,7 +349,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="pvc.html">
 <span class="md-ellipsis">
-    数据卷声明
+    PersistentVolumeClaim
   </span>
 </a>
 </li>
@@ -357,13 +357,13 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    数据卷
+    PersistentVolume
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="pv.html">
 <span class="md-ellipsis">
-    数据卷
+    PersistentVolume
   </span>
 </a>
 <nav aria-label="导航" class="md-nav md-nav--secondary">
@@ -373,12 +373,12 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-data-volume">
+<a class="md-nav__link" href="#create-volume">
 <span class="md-ellipsis">
-      Create data volume
+      Create volume
     </span>
 </a>
-<nav aria-label="Create data volume" class="md-nav">
+<nav aria-label="Create volume" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#yaml-creation">
@@ -398,30 +398,30 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#view-data-volume">
+<a class="md-nav__link" href="#view-volume">
 <span class="md-ellipsis">
-      View data volume
+      View volume
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#clone-data-volume">
+<a class="md-nav__link" href="#clone-volume">
 <span class="md-ellipsis">
-      Clone data volume
+      Clone volume
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#update-data-volume">
+<a class="md-nav__link" href="#update-volume">
 <span class="md-ellipsis">
-      Update data volume
+      Update volume
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#delete-data-volume">
+<a class="md-nav__link" href="#delete-volume">
 <span class="md-ellipsis">
-      Delete data volume
+      Delete volume
     </span>
 </a>
 </li>
@@ -431,7 +431,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="sc.html">
 <span class="md-ellipsis">
-    存储池
+    StorageClass
   </span>
 </a>
 </li>
@@ -589,12 +589,12 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-data-volume">
+<a class="md-nav__link" href="#create-volume">
 <span class="md-ellipsis">
-      Create data volume
+      Create volume
     </span>
 </a>
-<nav aria-label="Create data volume" class="md-nav">
+<nav aria-label="Create volume" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#yaml-creation">
@@ -614,30 +614,30 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#view-data-volume">
+<a class="md-nav__link" href="#view-volume">
 <span class="md-ellipsis">
-      View data volume
+      View volume
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#clone-data-volume">
+<a class="md-nav__link" href="#clone-volume">
 <span class="md-ellipsis">
-      Clone data volume
+      Clone volume
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#update-data-volume">
+<a class="md-nav__link" href="#update-volume">
 <span class="md-ellipsis">
-      Update data volume
+      Update volume
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#delete-data-volume">
+<a class="md-nav__link" href="#delete-volume">
 <span class="md-ellipsis">
-      Delete data volume
+      Delete volume
     </span>
 </a>
 </li>
@@ -654,13 +654,13 @@
 <a class="md-content__button md-icon" href="https://github.com/sophongo/sophdoc/raw/main/docs/en/admin/kpanda/storage/pv.md" title="View source of this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
 </a>
-<h1 id="data-volume-pv">data volume (PV)<a class="headerlink" href="#data-volume-pv" title="Permanent link">¶</a></h1>
-<p>A data volume (PersistentVolume, PV) is a piece of storage in the cluster, which can be prepared in advance by the administrator, or dynamically prepared using a storage class (Storage Class). PV is a cluster resource, but it has an independent life cycle and will not be deleted when the Pod process ends. Mounting PVs to workloads can achieve data persistence for workloads. The PV holds the data directory that can be accessed by the containers in the Pod.</p>
-<h2 id="create-data-volume">Create data volume<a class="headerlink" href="#create-data-volume" title="Permanent link">¶</a></h2>
-<p>Currently, there are two ways to create data volumes: YAML and form. These two ways have their own advantages and disadvantages, and can meet the needs of different users.</p>
+<h1 id="volume-pv">volume (PV)<a class="headerlink" href="#volume-pv" title="Permanent link">¶</a></h1>
+<p>A volume (PersistentVolume, PV) is a piece of storage in the cluster, which can be prepared in advance by the administrator, or dynamically prepared using a storage class (Storage Class). PV is a cluster resource, but it has an independent life cycle and will not be deleted when the Pod process ends. Mounting PVs to workloads can achieve data persistence for workloads. The PV holds the data directory that can be accessed by the containers in the Pod.</p>
+<h2 id="create-volume">Create volume<a class="headerlink" href="#create-volume" title="Permanent link">¶</a></h2>
+<p>Currently, there are two ways to create volumes: YAML and form. These two ways have their own advantages and disadvantages, and can meet the needs of different users.</p>
 <ul>
 <li>
-<p>There are fewer steps and more efficient creation through YAML, but the threshold requirement is high, and you need to be familiar with the YAML file configuration of the data volume.</p>
+<p>There are fewer steps and more efficient creation through YAML, but the threshold requirement is high, and you need to be familiar with the YAML file configuration of the volume.</p>
 </li>
 <li>
 <p>It is more intuitive and easier to create through the form, just fill in the proper values ​​according to the prompts, but the steps are more cumbersome.</p>
@@ -669,7 +669,7 @@
 <h3 id="yaml-creation">YAML creation<a class="headerlink" href="#yaml-creation" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>Click the name of the target cluster in the cluster list, and then click <strong>Container Storage</strong> -&gt; <strong>Data Volume (PV)</strong> -&gt; <strong>Create with YAML</strong> in the left navigation bar.</p>
+<p>Click the name of the target cluster in the cluster list, and then click <strong>Container Storage</strong> -&gt; <strong>Volume (PV)</strong> -&gt; <strong>Create with YAML</strong> in the left navigation bar.</p>
 </li>
 <li>
 <p>Enter or paste the prepared YAML file in the pop-up box, and click <strong>OK</strong> at the bottom of the pop-up box.</p>
@@ -681,31 +681,31 @@
 <h3 id="form-creation">Form Creation<a class="headerlink" href="#form-creation" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>Click the name of the target cluster in the cluster list, and then click <strong>Container Storage</strong> -&gt; <strong>Data Volume (PV)</strong> -&gt; <strong>Create Data Volume (PV)</strong> in the left navigation bar.</p>
+<p>Click the name of the target cluster in the cluster list, and then click <strong>Container Storage</strong> -&gt; <strong>Volume (PV)</strong> -&gt; <strong>Create Volume (PV)</strong> in the left navigation bar.</p>
 </li>
 <li>
 <p>Fill in the basic information.</p>
 <ul>
-<li>The data volume name, data volume type, mount path, volume mode, and node affinity cannot be changed after creation.</li>
+<li>The volume name, volume type, mount path, volume mode, and node affinity cannot be changed after creation.</li>
 <li>
-<p>Data volume type: For a detailed introduction to volume types, refer to the official Kubernetes document <a href="https://kubernetes.io/docs/concepts/storage/volumes/">Volumes</a>.</p>
+<p>Volume type: For a detailed introduction to volume types, refer to the official Kubernetes document <a href="https://kubernetes.io/docs/concepts/storage/volumes/">Volumes</a>.</p>
 </li>
 <li>
-<p>Local: The local storage of the Node node is packaged into a PVC interface, and the container directly uses the PVC without paying attention to the underlying storage type. Local volumes do not support dynamic configuration of data volumes, but support configuration of node affinity, which can limit which nodes can access the data volume.</p>
+<p>Local: The local storage of the Node node is packaged into a PVC interface, and the container directly uses the PVC without paying attention to the underlying storage type. Local volumes do not support dynamic configuration of volumes, but support configuration of node affinity, which can limit which nodes can access the volume.</p>
 </li>
 <li>
-<p>HostPath: Use files or directories on the file system of Node nodes as data volumes, and do not support Pod scheduling based on node affinity.</p>
+<p>HostPath: Use files or directories on the file system of Node nodes as volumes, and do not support Pod scheduling based on node affinity.</p>
 </li>
 <li>
-<p>Mount path: mount the data volume to a specific directory in the container.</p>
+<p>Mount path: mount the volume to a specific directory in the container.</p>
 </li>
 <li>
 <p>access mode:</p>
 <ul>
-<li>ReadWriteOnce: The data volume can be mounted by a node in read-write mode.</li>
-<li>ReadWriteMany: The data volume can be mounted by multiple nodes in read-write mode.</li>
-<li>ReadOnlyMany: The data volume can be mounted read-only by multiple nodes.</li>
-<li>ReadWriteOncePod: The data volume can be mounted read-write by a single Pod.</li>
+<li>ReadWriteOnce: The volume can be mounted by a node in read-write mode.</li>
+<li>ReadWriteMany: The volume can be mounted by multiple nodes in read-write mode.</li>
+<li>ReadOnlyMany: The volume can be mounted read-only by multiple nodes.</li>
+<li>ReadWriteOncePod: The volume can be mounted read-write by a single Pod.</li>
 </ul>
 </li>
 <li>
@@ -719,8 +719,8 @@
 <li>
 <p>Volume mode:</p>
 <ul>
-<li>File system: The data volume will be mounted to a certain directory by the Pod. If the data volume is stored from a device and the device is currently empty, a file system is created on the device before the volume is mounted for the first time.</li>
-<li>Block: Use the data volume as a raw block device. This type of volume is given to the Pod as a block device without any file system on it, allowing the Pod to access the data volume faster.</li>
+<li>File system: The volume will be mounted to a certain directory by the Pod. If the volume is stored from a device and the device is currently empty, a file system is created on the device before the volume is mounted for the first time.</li>
+<li>Block: Use the volume as a raw block device. This type of volume is given to the Pod as a block device without any file system on it, allowing the Pod to access the volume faster.</li>
 </ul>
 </li>
 <li>
@@ -729,29 +729,29 @@
 </ul>
 </li>
 </ol>
-<h2 id="view-data-volume">View data volume<a class="headerlink" href="#view-data-volume" title="Permanent link">¶</a></h2>
-<p>Click the name of the target cluster in the cluster list, and then click <strong>Container Storage</strong> -&gt; <strong>Data Volume (PV)</strong> in the left navigation bar.</p>
+<h2 id="view-volume">View volume<a class="headerlink" href="#view-volume" title="Permanent link">¶</a></h2>
+<p>Click the name of the target cluster in the cluster list, and then click <strong>Container Storage</strong> -&gt; <strong>Volume (PV)</strong> in the left navigation bar.</p>
 <ul>
 <li>
-<p>On this page, you can view all data volumes in the current cluster, as well as information such as the status, capacity, and namespace of each data volume.</p>
+<p>On this page, you can view all volumes in the current cluster, as well as information such as the status, capacity, and namespace of each volume.</p>
 </li>
 <li>
-<p>Supports sequential or reverse sorting according to the name, status, namespace, and creation time of data volumes.</p>
+<p>Supports sequential or reverse sorting according to the name, status, namespace, and creation time of volumes.</p>
 </li>
 <li>
-<p>Click the name of a data volume to view the basic configuration, StorageClass information, labels, comments, etc. of the data volume.</p>
+<p>Click the name of a volume to view the basic configuration, StorageClass information, labels, comments, etc. of the volume.</p>
 </li>
 </ul>
-<h2 id="clone-data-volume">Clone data volume<a class="headerlink" href="#clone-data-volume" title="Permanent link">¶</a></h2>
-<p>By cloning a data volume, a new data volume can be recreated based on the configuration of the cloned data volume.</p>
+<h2 id="clone-volume">Clone volume<a class="headerlink" href="#clone-volume" title="Permanent link">¶</a></h2>
+<p>By cloning a volume, a new volume can be recreated based on the configuration of the cloned volume.</p>
 <ol>
 <li>
 <p>Enter the clone page</p>
 <ul>
 <li>
-<p>On the data volume list page, find the data volume to be cloned, and select <strong>Clone</strong> under the operation bar on the right.</p>
+<p>On the volume list page, find the volume to be cloned, and select <strong>Clone</strong> under the operation bar on the right.</p>
 <blockquote>
-<p>You can also click the name of the data volume, click the operation button in the upper right corner of the details page and select <strong>Clone</strong> .</p>
+<p>You can also click the name of the volume, click the operation button in the upper right corner of the details page and select <strong>Clone</strong> .</p>
 </blockquote>
 </li>
 </ul>
@@ -760,31 +760,31 @@
 <p>Use the original configuration directly, or modify it as needed, and click <strong>OK</strong> at the bottom of the page.</p>
 </li>
 </ol>
-<h2 id="update-data-volume">Update data volume<a class="headerlink" href="#update-data-volume" title="Permanent link">¶</a></h2>
-<p>There are two ways to update data volumes. Support for updating data volumes via forms or YAML files.</p>
+<h2 id="update-volume">Update volume<a class="headerlink" href="#update-volume" title="Permanent link">¶</a></h2>
+<p>There are two ways to update volumes. Support for updating volumes via forms or YAML files.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only updating the alias, capacity, access mode, reclamation policy, label, and comment of the data volume is supported.</p>
+<p>Only updating the alias, capacity, access mode, reclamation policy, label, and comment of the volume is supported.</p>
 </div>
 <ul>
 <li>
-<p>On the data volume list page, find the data volume that needs to be updated, select <strong>Update</strong> under the operation bar on the right to update through the form, select <strong>Edit YAML</strong> to update through YAML.</p>
+<p>On the volume list page, find the volume that needs to be updated, select <strong>Update</strong> under the operation bar on the right to update through the form, select <strong>Edit YAML</strong> to update through YAML.</p>
 </li>
 <li>
-<p>Click the name of the data volume to enter the details page of the data volume, select <strong>Update</strong> in the upper right corner of the page to update through the form, select <strong>Edit YAML</strong> to update through YAML.</p>
+<p>Click the name of the volume to enter the details page of the volume, select <strong>Update</strong> in the upper right corner of the page to update through the form, select <strong>Edit YAML</strong> to update through YAML.</p>
 </li>
 </ul>
-<h2 id="delete-data-volume">Delete data volume<a class="headerlink" href="#delete-data-volume" title="Permanent link">¶</a></h2>
-<p>On the data volume list page, find the data to be deleted, and select Delete in the operation column on the right.</p>
+<h2 id="delete-volume">Delete volume<a class="headerlink" href="#delete-volume" title="Permanent link">¶</a></h2>
+<p>On the volume list page, find the data to be deleted, and select Delete in the operation column on the right.</p>
 <blockquote>
-<p>You can also click the name of the data volume, click the operation button in the upper right corner of the details page and select <strong>Delete</strong> .</p>
+<p>You can also click the name of the volume, click the operation button in the upper right corner of the details page and select <strong>Delete</strong> .</p>
 </blockquote>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 15, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 26, 2024</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">
@@ -845,7 +845,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: 数据卷声明" class="md-footer__link md-footer__link--prev" href="pvc.html">
+<a aria-label="Previous: PersistentVolumeClaim" class="md-footer__link md-footer__link--prev" href="pvc.html">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -854,17 +854,17 @@
                 Previous
               </span>
 <div class="md-ellipsis">
-                数据卷声明
+                PersistentVolumeClaim
               </div>
 </div>
 </a>
-<a aria-label="Next: 存储池" class="md-footer__link md-footer__link--next" href="sc.html">
+<a aria-label="Next: StorageClass" class="md-footer__link md-footer__link--next" href="sc.html">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                存储池
+                StorageClass
               </div>
 </div>
 <div class="md-footer__button md-icon">

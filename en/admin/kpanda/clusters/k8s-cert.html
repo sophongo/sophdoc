@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#kubernetes">
+<a class="md-skip" href="#update-kubernetes-cluster-certificate">
           Skip to content
         </a>
 </div>
@@ -322,7 +322,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="delete-cluster.html">
 <span class="md-ellipsis">
-    Uninstall/Remove Cluster
+    Delete/Remove Cluster
   </span>
 </a>
 </li>
@@ -343,14 +343,14 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="runtime.html">
 <span class="md-ellipsis">
-    How to Choose Runtime
+    Choose a Runtime
   </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="cluster-version.html">
 <span class="md-ellipsis">
-    Supported Cluster Versions
+    Supported K8s Versions
   </span>
 </a>
 </li>
@@ -388,44 +388,44 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#check-if-the-certificates-are-expired">
 <span class="md-ellipsis">
-      检查证书是否过期
+      Check if the Certificates are Expired
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#manually-update-certificates">
 <span class="md-ellipsis">
-      手动更新证书
+      Manually Update Certificates
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#restart-services">
 <span class="md-ellipsis">
-      重启服务
+      Restart Services
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#kubeconfig">
+<a class="md-nav__link" href="#update-kubeconfig">
 <span class="md-ellipsis">
-      更新 KubeConfig
+      Update KubeConfig
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#kubelet">
+<a class="md-nav__link" href="#configure-certificate-rotation-for-kubelet">
 <span class="md-ellipsis">
-      为 kubelet 配置证书轮换
+      Configure Certificate Rotation for Kubelet
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#automatically-update-certificates">
 <span class="md-ellipsis">
-      自动更新证书
+      Automatically Update Certificates
     </span>
 </a>
 </li>
@@ -634,44 +634,44 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#check-if-the-certificates-are-expired">
 <span class="md-ellipsis">
-      检查证书是否过期
+      Check if the Certificates are Expired
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#manually-update-certificates">
 <span class="md-ellipsis">
-      手动更新证书
+      Manually Update Certificates
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#restart-services">
 <span class="md-ellipsis">
-      重启服务
+      Restart Services
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#kubeconfig">
+<a class="md-nav__link" href="#update-kubeconfig">
 <span class="md-ellipsis">
-      更新 KubeConfig
+      Update KubeConfig
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#kubelet">
+<a class="md-nav__link" href="#configure-certificate-rotation-for-kubelet">
 <span class="md-ellipsis">
-      为 kubelet 配置证书轮换
+      Configure Certificate Rotation for Kubelet
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#automatically-update-certificates">
 <span class="md-ellipsis">
-      自动更新证书
+      Automatically Update Certificates
     </span>
 </a>
 </li>
@@ -682,21 +682,21 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/sophongo/sophdoc/edit/main/docs/admin/kpanda/clusters/k8s-cert.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/sophongo/sophdoc/edit/main/docs/en/admin/kpanda/clusters/k8s-cert.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
 </a>
-<a class="md-content__button md-icon" href="https://github.com/sophongo/sophdoc/raw/main/docs/admin/kpanda/clusters/k8s-cert.md" title="View source of this page">
+<a class="md-content__button md-icon" href="https://github.com/sophongo/sophdoc/raw/main/docs/en/admin/kpanda/clusters/k8s-cert.md" title="View source of this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
 </a>
-<h1 id="kubernetes">Kubernetes 集群证书更新<a class="headerlink" href="#kubernetes" title="Permanent link">¶</a></h1>
-<p>为保证 Kubernetes 各组件之间的通信安全，组件之间的调用会进行 TLS 身份验证，执行验证操作需要配置集群 PKI 证书。</p>
-<p>集群证书有效期为1年，为避免证书过期导致业务无法使用，请及时更新证书。</p>
-<p>本文介绍如何手动进行证书更新。</p>
-<h2 id="_1">检查证书是否过期<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>您可以执行以下命令查看证书是否过期：</p>
+<h1 id="update-kubernetes-cluster-certificate">Update Kubernetes Cluster Certificate<a class="headerlink" href="#update-kubernetes-cluster-certificate" title="Permanent link">¶</a></h1>
+<p>To ensure secure communication between various components of Kubernetes, TLS authentication is performed during calls between components, which requires configuring the cluster PKI certificates.</p>
+<p>The validity period of cluster certificates is 1 year. To avoid service interruptions due to certificate expiration, please update the certificates in a timely manner.</p>
+<p>This article explains how to manually update the certificates.</p>
+<h2 id="check-if-the-certificates-are-expired">Check if the Certificates are Expired<a class="headerlink" href="#check-if-the-certificates-are-expired" title="Permanent link">¶</a></h2>
+<p>You can execute the following command to check if the certificates are expired:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>kubeadm<span class="w"> </span>certs<span class="w"> </span>check-expiration
 </code></pre></div>
-<p>输出类似于以下内容：</p>
+<p>The output will be similar to the following:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="go">CERTIFICATE                EXPIRES                  RESIDUAL TIME   CERTIFICATE AUTHORITY   EXTERNALLY MANAGED</span>
 <a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="go">admin.conf                 Dec 14, 2024 07:26 UTC   204d                                    no      </span>
 <a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="go">apiserver                  Dec 14, 2024 07:26 UTC   204d            ca                      no      </span>
@@ -714,16 +714,15 @@
 <a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="go">etcd-ca                 Dec 12, 2033 07:26 UTC   9y              no      </span>
 <a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="go">front-proxy-ca          Dec 12, 2033 07:26 UTC   9y              no      </span>
 </code></pre></div>
-<h2 id="_2">手动更新证书<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>您可以通过以下命令手动更新证书，只需带上合适的命令行选项。更新证书前请先备份当前证书。</p>
-<p>更新指定证书：</p>
+<h2 id="manually-update-certificates">Manually Update Certificates<a class="headerlink" href="#manually-update-certificates" title="Permanent link">¶</a></h2>
+<p>You can manually update the certificates using the following command with appropriate command-line options. Please back up the current certificates before updating.</p>
+<p>To update a specific certificate:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>kubeadm<span class="w"> </span>certs<span class="w"> </span>renew
 </code></pre></div>
-<p>更新全部证书：</p>
+<p>To update all certificates:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>kubeadm<span class="w"> </span>certs<span class="w"> </span>renew<span class="w"> </span>all
 </code></pre></div>
-<p>更新后的证书可以在 <code>/etc/kubernetes/pki</code> 目录下查看，有效期延续 1 年。
-以下对应的几个配置文件也会同步更新：</p>
+<p>The updated certificates can be viewed in the <code>/etc/kubernetes/pki</code> directory, with a validity period extended by 1 year. The following corresponding configuration files will also be updated:</p>
 <ul>
 <li>/etc/kubernetes/admin.conf</li>
 <li>/etc/kubernetes/controller-manager.conf</li>
@@ -732,58 +731,54 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
-<li>如果您部署的是一个高可用集群，这个命令需要在所有控制节点上执行。</li>
-<li>此命令用 CA（或者 front-proxy-CA ）证书和存储在 <code>/etc/kubernetes/pki</code> 中的密钥执行更新。</li>
+<li>If you are deploying a high-availability cluster, this command needs to be executed on all control nodes.</li>
+<li>This command updates using the CA (or front-proxy-CA) certificate and the keys stored in <code>/etc/kubernetes/pki</code>.</li>
 </ul>
 </div>
-<h2 id="_3">重启服务<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p>执行更新操作之后，你需要重启控制面 Pod。因为动态证书重载目前还不被所有组件和证书支持，所有这项操作是必须的。</p>
-<p>静态 Pod 是被本地 kubelet 而不是 API 服务器管理，所以 kubectl 不能用来删除或重启他们。</p>
-<p>要重启静态 Pod，你可以临时将清单文件从 <code>/etc/kubernetes/manifests/</code> 移除并等待 20 秒。
-参考 <a href="https://kubernetes.io/zh-cn/docs/reference/config-api/kubelet-config.v1beta1/">KubeletConfiguration 结构</a>中的 fileCheckFrequency 值。</p>
-<p>如果 Pod 不在清单目录里，kubelet 将会终止它。
-在另一个 fileCheckFrequency 周期之后你可以将文件移回去，kubelet 可以完成 Pod 的重建，而组件的证书更新操作也得以完成。</p>
+<h2 id="restart-services">Restart Services<a class="headerlink" href="#restart-services" title="Permanent link">¶</a></h2>
+<p>After executing the update operation, you need to restart the control plane Pods. Since dynamic certificate reloading is currently not supported by all components and certificates, this operation is necessary.</p>
+<p>Static Pods are managed by the local kubelet rather than the API server, so kubectl cannot be used to delete or restart them.</p>
+<p>To restart static Pods, you can temporarily remove the manifest files from <code>/etc/kubernetes/manifests/</code> and wait for 20 seconds. Refer to the <code>fileCheckFrequency</code> value in the <a href="https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/">KubeletConfiguration structure</a>.</p>
+<p>If the Pods are not in the manifest directory, the kubelet will terminate them. After another <code>fileCheckFrequency</code> cycle, you can move the files back, and the kubelet will recreate the Pods, completing the certificate update operation.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>mv<span class="w"> </span>./manifests/*<span class="w"> </span>./temp/
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>mv<span class="w"> </span>./temp/*<span class="w"> </span>./manifests/
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>如果容器服务使用的是 Docker，为了让证书生效，可以使用以下命令对涉及到证书使用的几个服务进行重启：</p>
+<p>If the container service uses Docker, to make the certificates take effect, you can use the following command to restart the services involved with the certificates:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>docker<span class="w"> </span>ps<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">'k8s_kube-apiserver|k8s_kube-controller-manager|k8s_kube-scheduler|k8s_etcd_etcd'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span>-F<span class="w"> </span><span class="s1">' '</span><span class="w"> </span><span class="s1">'{print $1}'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>docker<span class="w"> </span>restart
 </code></pre></div>
 </div>
-<h2 id="kubeconfig">更新 KubeConfig<a class="headerlink" href="#kubeconfig" title="Permanent link">¶</a></h2>
-<p>构建集群时通常会将 <strong>admin.conf</strong> 证书复制到 <strong>$HOME/.kube/config</strong> 中，为了在更新 admin.conf 后更新 $HOME/.kube/config 的内容， 必须运行以下命令：</p>
+<h2 id="update-kubeconfig">Update KubeConfig<a class="headerlink" href="#update-kubeconfig" title="Permanent link">¶</a></h2>
+<p>During cluster setup, the <strong>admin.conf</strong> certificate is usually copied to <strong>$HOME/.kube/config</strong>. To update the contents of $HOME/.kube/config after updating admin.conf, you must run the following commands:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>-i<span class="w"> </span>/etc/kubernetes/admin.conf<span class="w"> </span><span class="nv">$HOME</span>/.kube/config
 <a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span><span class="k">$(</span>id<span class="w"> </span>-u<span class="k">)</span>:<span class="k">$(</span>id<span class="w"> </span>-g<span class="k">)</span><span class="w"> </span><span class="nv">$HOME</span>/.kube/config
 </code></pre></div>
-<h2 id="kubelet">为 kubelet 配置证书轮换<a class="headerlink" href="#kubelet" title="Permanent link">¶</a></h2>
-<p>完成以上操作后，基本完成了集群所有证书的更新，但不包括 kubelet。</p>
-<p>因为 kubernetes 包含特性 kubelet 证书轮换， 在当前证书即将过期时， 将自动生成新的秘钥，并从 Kubernetes API 申请新的证书。 一旦新的证书可用，它将被用于与 Kubernetes API 间的连接认证。</p>
+<h2 id="configure-certificate-rotation-for-kubelet">Configure Certificate Rotation for Kubelet<a class="headerlink" href="#configure-certificate-rotation-for-kubelet" title="Permanent link">¶</a></h2>
+<p>After completing the above operations, the update for all cluster certificates is basically complete, except for kubelet.</p>
+<p>Kubernetes includes a feature for kubelet certificate rotation that automatically generates new keys and requests new certificates from the Kubernetes API when the current certificates are about to expire. Once the new certificates are available, they will be used for connection authentication with the Kubernetes API.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>此特性适用于 Kubernetes 1.8.0 或更高的版本。</p>
+<p>This feature is available in Kubernetes version 1.8.0 or higher.</p>
 </div>
-<p>启用客户端证书轮换，配置参数如下：</p>
+<p>To enable client certificate rotation, configure the following parameters:</p>
 <ul>
 <li>
-<p>kubelet 进程接收 --rotate-certificates 参数，该参数决定 kubelet 在当前使用的 证书即将到期时，是否会自动申请新的证书。</p>
+<p>The kubelet process receives the <code>--rotate-certificates</code> parameter, which determines whether kubelet will automatically request new certificates when the currently used certificates are about to expire.</p>
 </li>
 <li>
-<p>kube-controller-manager 进程接收 --cluster-signing-duration 参数
-  （在 1.19 版本之前为 --experimental-cluster-signing-duration），用来控制签发证书的有效期限。</p>
+<p>The kube-controller-manager process receives the <code>--cluster-signing-duration</code> parameter (previously <code>--experimental-cluster-signing-duration</code> before version 1.19) to control the validity period of issued certificates.</p>
 </li>
 </ul>
-<p>更多详情参考<a href="https://kubernetes.io/zh-cn/docs/tasks/tls/certificate-rotation/">为 kubelet 配置证书轮换</a>。</p>
-<h2 id="_4">自动更新证书<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<p>为了更高效便捷处理已过期或者即将过期的 kubernetes 集群证书，可参考
-<a href="https://github.com/yuyicai/update-kube-cert/blob/master/README-zh_CN.md">k8s 版本集群证书更新</a>。</p>
+<p>For more details, refer to <a href="https://kubernetes.io/docs/tasks/tls/certificate-rotation/">Configure Certificate Rotation for Kubelet</a>.</p>
+<h2 id="automatically-update-certificates">Automatically Update Certificates<a class="headerlink" href="#automatically-update-certificates" title="Permanent link">¶</a></h2>
+<p>For more efficient and convenient handling of expired or soon-to-expire Kubernetes cluster certificates, you can refer to the <a href="https://github.com/yuyicai/update-kube-cert/blob/master/README.md">K8s Version Cluster Certificate Update</a>.</p>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年5月23日</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 26, 2024</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">
@@ -791,8 +786,8 @@
 </span>
 <span>GitHub</span>
 <nav>
-<a class="md-author" href="https://github.com/samzong" title="@samzong">
-<img alt="samzong" src="https://avatars.githubusercontent.com/u/13782141?v=4&amp;size=72"/>
+<a class="md-author" href="https://github.com/windsonsea" title="@windsonsea">
+<img alt="windsonsea" src="https://avatars.githubusercontent.com/u/79828097?v=4&amp;size=72"/>
 </a>
 </nav>
 </span>
