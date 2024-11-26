@@ -45,9 +45,9 @@ nav:
                   - 网络策略: end-user/kpanda/network/network-policy.md
               - 自定义资源: end-user/kpanda/custom-resources/create.md
               - 容器存储:
-                  - 数据卷声明PVC: end-user/kpanda/storage/pvc.md
-                  - 数据卷PV: end-user/kpanda/storage/pv.md
-                  - 存储池SC: end-user/kpanda/storage/sc.md
+                  - 数据卷声明: end-user/kpanda/storage/pvc.md
+                  - 数据卷: end-user/kpanda/storage/pv.md
+                  - 存储池: end-user/kpanda/storage/sc.md
                   - 共享存储池: end-user/kpanda/storage/sc-share.md
               - 配置与密钥:
                   - 创建配置项: end-user/kpanda/configmaps-secrets/create-configmap.md
@@ -571,11 +571,11 @@ plugins:
                 访问集群: Access Cluster
                 集群角色: Cluster Roles
                 集群状态: Cluster Status
-                卸载/解除接入集群: Uninstall/Remove Cluster
+                卸载/解除接入集群: Delete/Remove Cluster
                 节点管理: Nodes
                 节点调度: Node Scheduling
                 标签与注解: Labels and Annotations
-                污点管理: Taints
+                污点管理: Node Taints
                 节点详情: Node Details
                 工作负载: Workloads
                 创建 Deployment: Create Deployment
@@ -594,7 +594,7 @@ plugins:
                 Helm 模板: Helm Charts
                 上传 Helm 模板: Upload Helm Chart
                 管理 Helm 应用: Manage Helm Apps
-                管理 Helm 仓库: Manage Helm Repositories
+                管理 Helm 仓库: Manage Helm Repo
                 Operator 应用: Operator Apps
                 容器网络: Container Networking
                 创建服务: Create Services
@@ -602,9 +602,9 @@ plugins:
                 网络策略: Network Policies
                 自定义资源: Custom Resources
                 容器存储: Container Storage
-                数据卷声明 PVC: PersistentVolumeClaim
-                数据卷 PV: PersistentVolume
-                存储池 SC: StorageClass
+                数据卷声明: PersistentVolumeClaim
+                数据卷: PersistentVolume
+                存储池: StorageClass
                 共享存储池: Shared StorageClass
                 配置与密钥: ConfigMaps and Secrets
                 创建配置项: Create ConfigMap
@@ -743,7 +743,7 @@ plugins:
                 安装 Knative: Install Knative
                 Kantive 场景: Knative Scenarios
                 Knative 实践: Knative Practices
-                多架构 Helm 应用: Multi-architecture Helm Apps
+                多架构 Helm 应用: Multi-archi Helm Apps
                 自定义Helm应用导入Addon: Import Custom Helm App Addon
                 NVIDIA GPU 管理: NVIDIA GPUs
                 NVIDIA GPU模式说明: Explanation of NVIDIA GPU Modes
@@ -838,14 +838,11 @@ plugins:
                 创建 PaddlePaddle 任务: Create PaddlePaddle Job
                 链路查询: Tracing
                 集群内冷迁移: Cold Migration in Cluster
-                如何选择运行时: How to Choose Runtime
-                集群版本支持范围: Supported Cluster Versions
+                如何选择运行时: Choose a Runtime
+                集群版本支持范围: Supported K8s Versions
                 接入 Rancher 集群: Integrate Rancher Cluster
                 集群中部署第二调度器: Deploy 2nd Scheduler in Cluster
                 集群证书更新: Update Cluster Certificate
-                数据卷声明PVC: PVC
-                数据卷PV: PV
-                存储池SC: StorageClass
                 集群动态资源超卖: Dynamic Resource Overprovision
                 集成 Falco 安全工具: Integrate Falco
                 GPU 管理: Manage GPUs

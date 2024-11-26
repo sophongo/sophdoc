@@ -1,6 +1,6 @@
 # StorageClass (SC)
 
-A StorageClass refers to a large storage resource pool composed of many physical disks. This platform supports the creation of block StorageClass, local StorageClass, and custom StorageClass after accessing various storage vendors, and then dynamically configures data volumes for workloads.
+A StorageClass refers to a large storage resource pool composed of many physical disks. This platform supports the creation of block StorageClass, local StorageClass, and custom StorageClass after accessing various storage vendors, and then dynamically configures volumes for workloads.
 
 ## Create StorageClass (SC)
 
@@ -36,19 +36,19 @@ Currently, it supports creating StorageClass through YAML and forms. These two m
     - CSI storage driver: A standard Kubernetes-based container storage interface plug-in, which must comply with the format specified by the storage manufacturer, such as __rancher.io/local-path__ .
 
         - For how to fill in the CSI drivers provided by different vendors, refer to the official Kubernetes document [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/#provisioner).
-    - Recycling policy: When deleting a data volume, keep the data in the data volume or delete the data in it.
-    - Snapshot/Expansion: After it is enabled, the data volume/data volume declaration based on the StorageClass can support the expansion and snapshot features, but **the premise is that the underlying storage driver supports the snapshot and expansion features**.
+    - Recycling policy: When deleting a volume, keep the data in the volume or delete the data in it.
+    - Snapshot/Expansion: After it is enabled, the volume/PersistentVolumeClaim based on the StorageClass can support the expansion and snapshot features, but **the premise is that the underlying storage driver supports the snapshot and expansion features**.
 
     **HwameiStor storage system**
 
     - The StorageClass name, driver, and reclamation policy cannot be modified after creation.
     - Storage system: HwameiStor storage system.
     - Storage type: support LVM, raw disk type
-        - __LVM type__ : HwameiStor recommended usage method, which can use highly available data volumes, and the proper CSI storage driver is `lvm.hwameistor.io` .
-        - __Raw disk data volume__ : suitable for high availability cases, without high availability capability, the proper CSI driver is `hdd.hwameistor.io` .
-    - High Availability Mode: Before using the high availability capability, please make sure __DRBD component__ has been installed. After the high availability mode is turned on, the number of data volume copies can be set to 1 and 2. Convert data volume copy from 1 to 1 if needed.
-    - Recycling policy: When deleting a data volume, keep the data in the data volume or delete the data in it.
-    - Snapshot/Expansion: After it is enabled, the data volume/data volume declaration based on the StorageClass can support the expansion and snapshot features, but **the premise is that the underlying storage driver supports the snapshot and expansion features**.
+        - __LVM type__ : HwameiStor recommended usage method, which can use highly available volumes, and the proper CSI storage driver is `lvm.hwameistor.io` .
+        - __Raw disk volume__ : suitable for high availability cases, without high availability capability, the proper CSI driver is `hdd.hwameistor.io` .
+    - High Availability Mode: Before using the high availability capability, please make sure __DRBD component__ has been installed. After the high availability mode is turned on, the number of volume copies can be set to 1 and 2. Convert volume copy from 1 to 1 if needed.
+    - Recycling policy: When deleting a volume, keep the data in the volume or delete the data in it.
+    - Snapshot/Expansion: After it is enabled, the volume/PersistentVolumeClaim based on the StorageClass can support the expansion and snapshot features, but **the premise is that the underlying storage driver supports the snapshot and expansion features**.
 
     
 

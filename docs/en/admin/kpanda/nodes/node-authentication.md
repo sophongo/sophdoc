@@ -1,6 +1,9 @@
-# Node Authentication
+---
+hide:
+  - toc
+---
 
-## Authenticate Nodes Using SSH Keys
+# Node Authentication
 
 If you choose to authenticate the nodes of the cluster-to-be-created using SSH keys, you need to configure the public and private keys according to the following instructions.
 

@@ -93,7 +93,7 @@ Container setting is divided into six parts: basic information, life cycle, heal
 
 === "Data Storage (optional)"
 
-    Configure the settings for container mounting data volumes and data persistence. For details, refer to [Container Data Storage Configuration](pod-config/env-variables.md).
+    Configure the settings for container mounting volumes and data persistence. For details, refer to [Container Data Storage Configuration](pod-config/env-variables.md).
     
     ![Data Storage](../images/state09.png)
 

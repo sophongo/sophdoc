@@ -22,9 +22,9 @@ This requires creating a service through which you get a fixed IP address, decou
 
      
 
-     !!! tip
+    !!! tip
 
-         It is also possible to create a service via __YAML__ .
+        It is also possible to create a service via __YAML__ .
 
 3. Open the __Create Service__ page, select an access type, and refer to the following three parameter tables for configuration.
 

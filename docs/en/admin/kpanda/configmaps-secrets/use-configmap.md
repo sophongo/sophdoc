@@ -16,7 +16,7 @@ You can use ConfigMaps in Pods. There are many  use cases, mainly including:
 
 - Use ConfigMaps to set the command line parameters of the container
 
-- Use ConfigMaps as container data volumes
+- Use ConfigMaps as container volumes
 
 ## Set the environment variables of the container
 
@@ -101,13 +101,13 @@ After the Pod runs, the output is as follows.
 Hello Kpanda
 ```
 
-## Used as container data volume
+## Used as container volume
 
 You can use the ConfigMap as the environment variable of the container through the graphical interface or the terminal command line.
 
 ### Graphical operation
 
-When creating a workload through an image, you can use the ConfigMap as the data volume of the container by selecting the storage type as "ConfigMap" on the "Data Storage" interface.
+When creating a workload through an image, you can use the ConfigMap as the volume of the container by selecting the storage type as "ConfigMap" on the "Data Storage" interface.
 
 1. Go to the [Image Creation Workload](../workloads/create-deployment.md) page, in the __Container Configuration__ step, select the __Data Storage__ configuration, and click __Add in the __ Node Path Mapping __ list __ button.
 
@@ -144,4 +144,4 @@ If there are multiple containers in a Pod, each container needs its own __volume
 
 !!! note
 
-     When a ConfigMap is used as a data volume mounted on a container, the ConfigMap can only be read as a read-only file.
+     When a ConfigMap is used as a volume mounted on a container, the ConfigMap can only be read as a read-only file.

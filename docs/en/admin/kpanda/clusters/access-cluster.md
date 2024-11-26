@@ -40,7 +40,7 @@ If everything is in place, follow these steps to access a cloud cluster from you
 
 2. Set the Kubeconfig period and click __Download__ .
 
-    ![Download certificates](../../images/access-download-cert.png)
+    ![Download certificates](../images/access-download-cert.png)
 
 3. Open the downloaded certificate and copy its content to the __config__ file of the local node.
 
