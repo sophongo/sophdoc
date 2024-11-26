@@ -47,9 +47,9 @@ Follow the steps below to backup the deployment __dao-2048__ .
 
     - Backup Frequency: Set the time period for task execution based on minutes, hours, days, weeks, and months. Support custom Cron expressions with numbers and `*` , **after inputting the expression, the meaning of the current expression will be prompted**. For detailed expression syntax rules, refer to [Cron Schedule Syntax](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#cron-schedule-syntax).
     - Retention Time (days): Set the storage time of backup resources, the default is 30 days, and will be deleted after expiration.
-    - Backup Data Volume (PV): Whether to back up the data in the data volume (PV), support direct copy and use CSI snapshot.
-        - Direct Replication: directly copy the data in the data volume (PV) for backup;
-        - Use CSI snapshots: Use CSI snapshots to back up data volumes (PVs). Requires a CSI snapshot type available for backup in the cluster.
+    - Backup Volume (PV): Whether to back up the data in the volume (PV), support direct copy and use CSI snapshot.
+        - Direct Replication: directly copy the data in the volume (PV) for backup;
+        - Use CSI snapshots: Use CSI snapshots to back up volumes (PVs). Requires a CSI snapshot type available for backup in the cluster.
 
         ![Backup Policy](../images/backupd20484.png)
 

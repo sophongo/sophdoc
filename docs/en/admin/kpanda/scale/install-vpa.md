@@ -54,9 +54,9 @@ Refer to the following steps to install the __vpa__ plugin for the cluster.
 
     !!! warning
 
-    If you need to delete the __vpa__ plugin, you should go to the __Helm Apps__ list page to delete it completely.
+        If you need to delete the __vpa__ plugin, you should go to the __Helm Apps__ list page to delete it completely.
 
-    If you delete the plug-in under the __Auto Scaling__ tab of the workload, this only deletes the workload copy of the plug-in, and the plug-in itself is still not deleted, and an error will be prompted when the plug-in is reinstalled later.
+        If you delete the plug-in under the __Auto Scaling__ tab of the workload, this only deletes the workload copy of the plug-in, and the plug-in itself is still not deleted, and an error will be prompted when the plug-in is reinstalled later.
 
 6. Go back to the __Auto Scaling__ tab under the workload details page, and you can see that the interface displays __Plug-in installed__ . Now you can start [Create VPA](create-vpa.md) policy.
 

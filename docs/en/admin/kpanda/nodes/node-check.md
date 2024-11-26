@@ -1,4 +1,9 @@
-# Create a cluster node availability check
+---
+hide:
+  - toc
+---
+
+# Create a node availability check
 
 When creating a cluster or adding nodes to an existing cluster, refer to the table below to check the node configuration to avoid cluster creation or expansion failure due to wrong node configuration.
 

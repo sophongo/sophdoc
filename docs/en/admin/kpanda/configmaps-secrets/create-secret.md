@@ -8,7 +8,7 @@ Secrets can be used in some cases:
 
 - Used as an environment variable of the container to provide some necessary information
   required during the running of the container.
-- Use secrets as pod data volumes.
+- Use secrets as pod volumes.
 - As the identity authentication credential for the container registry
   when the kubelet pulls the container image.
 

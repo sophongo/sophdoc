@@ -7,7 +7,7 @@ A secret is a resource object used to store and manage sensitive information suc
 You can use keys in Pods in a variety of  use cases, mainly including:
 
 - Used as an environment variable of the container to provide some necessary information required during the running of the container.
-- Use secrets as pod data volumes.
+- Use secrets as pod volumes.
 - Used as the identity authentication credential for the container registry when the kubelet pulls the container image.
 
 ## Use the key to set the environment variable of the container
@@ -70,11 +70,11 @@ spec:
 1. This value is the default; means "mysecret", which must exist and contain a primary key named "username"
 2. This value is the default; means "mysecret", which must exist and contain a primary key named "password"
 
-## Use the key as the pod's data volume
+## Use the key as the pod's volume
 
 ### Graphical interface operation
 
-When creating a workload through an image, you can use the key as the data volume of the container by selecting the storage type as "key" on the "data storage" interface.
+When creating a workload through an image, you can use the key as the volume of the container by selecting the storage type as "key" on the "data storage" interface.
 
 1. Go to the [Image Creation Workload](../workloads/create-deployment.md) page.
 
@@ -88,7 +88,7 @@ When creating a workload through an image, you can use the key as the data volum
 
 ### Command line operation
 
-The following is an example of a Pod that mounts a Secret named __mysecret__ via a data volume:
+The following is an example of a Pod that mounts a Secret named __mysecret__ via a volume:
 
 ```yaml
 apiVersion: v1
@@ -120,7 +120,7 @@ You can use the key as the identity authentication credential for the Container 
 
 ### Graphical operation
 
-When creating a workload through an image, you can use the key as the data volume of the container by selecting the storage type as "key" on the "data storage" interface.
+When creating a workload through an image, you can use the key as the volume of the container by selecting the storage type as "key" on the "data storage" interface.
 
 1. Go to the [Image Creation Workload](../workloads/create-deployment.md) page.
 

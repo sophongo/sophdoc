@@ -26,7 +26,7 @@ In AI platform, the difference between __Delete__ and __Remove__ is:
     - The __global service cluster__ cannot be deleted or removed.
 
 1. Enter the Container Management module, find your target cluster, click __ ...__ on the right,
-   and select __Delete cluster__ / __Remove__ in the drop-down list.
+   and select __Remove__ in the drop-down list.
 
     ![screen](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/kpanda/images/cluster-delete01.png)
 
