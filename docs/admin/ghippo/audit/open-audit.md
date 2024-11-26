@@ -113,7 +113,7 @@ ls /var/log/kubernetes/audit
     ![选中集群](../../../images/worker04.png)
 
 2. 进入 helm 应用管理页面，更新 insight-agent 配置
-   （若未安装 insight-agent，可以[安装 insight-agent](../../../insight/quickstart/install/install-agent.md)）
+   （若未安装 insight-agent，可以[安装 insight-agent](../../insight/quickstart/install/install-agent.md)）
 
     ![进入 Helm 应用页面](../../../images/worker05.png)
 

@@ -12,11 +12,11 @@ hide:
 
 1. 使用具有 **Admin** 角色的用户登录 AI 算力平台。点击左侧导航栏底部的 **全局管理** -> **用户与访问控制** 。
 
-    ![用户与访问控制](../../images/access.png)
+    ![用户与访问控制](../images/access.png)
 
 2. 在左侧导航栏选择 **身份提供商** ，点击 **OAuth2.0** 页签。填写表单字段，建立与企业微信的信任关系后，点击 **保存** 。
 
-    ![Oauth2.0](../../images/oauth2.png)
+    ![Oauth2.0](../images/oauth2.png)
 
 ## 企业微信中对应的字段
 
@@ -32,8 +32,8 @@ hide:
 
 企业微信 ID：
 
-![Oauth2.0](../../images/mybusiness.png)
+![Oauth2.0](../images/mybusiness.png)
 
 Agent ID 和 ClientSecret：
 
-![agent](../../images/selfapplication.png)
+![agent](../images/selfapplication.png)

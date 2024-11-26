@@ -117,5 +117,3 @@ class judge plain
     ![添加授权](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/wsauth01.png)
 
 1. 选择要授权的 __用户/用户组__ 、 __角色__ 后，点击 __确定__ 完成授权。
-
-    ![确定](../../images/wsauth02.png)

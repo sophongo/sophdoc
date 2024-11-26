@@ -4,7 +4,7 @@ This section describes how to allocate the entire NVIDIA GPU to a single applica
 
 ## Prerequisites
 
-- AI platform container management platform has been [deployed](https://docs.daocloud.io/install/index.html) and is running properly.
+- AI platform container management platform has been deployed and is running properly.
 - The container management module has been [connected to a Kubernetes cluster](../../clusters/integrate-cluster.md) or a Kubernetes cluster has been [created](../../clusters/create-cluster.md), and you can access the UI interface of the cluster.
 - GPU Operator has been offline installed and NVIDIA DevicePlugin has been enabled on the current cluster. Refer to [Offline Installation of GPU Operator](install_nvidia_driver_of_operator.md) for instructions.
 - The GPU in the current cluster has not undergone any virtualization operations or been occupied by other applications.

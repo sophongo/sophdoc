@@ -72,5 +72,3 @@ class modifyns,createns k8s
 1. 选择集群，填写资源限额后，点击 __确定__ 。
 
     ![新增资源](https://docs.daocloud.io/daocloud-docs-images/docs/ghippo/images/addcluster02.png)
-
-下一步：将集群资源分配给多个工作空间后，用户可以前往 __应用工作台__ 在这些工作空间下[创建命名空间并部署应用](../../amamba/namespace/namespace.md)。

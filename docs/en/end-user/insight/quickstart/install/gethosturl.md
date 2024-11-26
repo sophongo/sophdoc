@@ -16,9 +16,9 @@ installing the collection component insight-agent.
 If installing insight-agent in the global service cluster, it is recommended to access the cluster via domain name:
 
 ```shell
-export vminsert_host="vminsert-insight-victoria-metrics-k8s-stack.insight-system.svc.cluster.local" # (1)!
-export es_host="insight-es-master.insight-system.svc.cluster.local" # (2)!
-export otel_col_host="insight-opentelemetry-collector.insight-system.svc.cluster.local" # (3)!
+export vminsert_host="vminsert-insight-victoria-metrics-k8s-stack.insight-system.svc.cluster.local"
+export es_host="insight-es-master.insight-system.svc.cluster.local"
+export otel_col_host="insight-opentelemetry-collector.insight-system.svc.cluster.local"
 ```
 
 ## Install insight-agent in Other Clusters

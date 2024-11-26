@@ -31,7 +31,7 @@ hide:
 
 ## 参考文档
 
-- [对工作集群的控制节点扩容](../../best-practice/add-master-node.md)
-- [为工作集群添加异构节点](../../best-practice/multi-arch.md)
-- [为全局服务集群的工作节点扩容](../../best-practice/add-worker-node-on-global.md)
-- [替换工作集群的首个控制节点](../../best-practice/replace-first-master-node.md)
+- [对工作集群的控制节点扩容](../best-practice/add-master-node.md)
+- [为工作集群添加异构节点](../best-practice/multi-arch.md)
+- [为全局服务集群的工作节点扩容](../best-practice/add-worker-node-on-global.md)
+- [替换工作集群的首个控制节点](../best-practice/replace-first-master-node.md)

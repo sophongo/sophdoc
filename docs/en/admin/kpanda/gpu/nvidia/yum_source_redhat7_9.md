@@ -41,8 +41,6 @@ This page explains how to build an offline yum repository for Red Hat 7.9 based 
 
 3. Import offline resources using the installer.
 
-    Refer to the [Import Offline Resources document](../../../../install/import.md).
-
 ### 2. Download Offline Driver Image for Red Hat 7.9 OS
 
 [Click here to view the download url](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/driver/tags).

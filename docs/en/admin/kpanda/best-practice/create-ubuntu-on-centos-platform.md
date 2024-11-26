@@ -32,11 +32,6 @@ Download the required Ubuntu OS packages and ISO offline packages:
 | os-pkgs-ubuntu2204-v0.18.2.tar.gz | Ubuntu 20.04 OS package | https://github.com/kubean-io/kubean/releases/download/v0.18.2/os-pkgs-ubuntu2204-v0.18.2.tar.gz |
 | ISO Offline Package | ISO Package | http://mirrors.melbourne.co.uk/ubuntu-releases/ |
 
-### Import OS and ISO Packages into MinIO on the Bootstrap Node
-
-Refer to the documentation [Importing Offline Resources](../../install/import.md#introduction-to-import-commands)
-to import offline resources into MinIO on the bootstrap node.
-
 ## Create Cluster on UI
 
 Refer to the documentation [Creating a Worker Cluster](../clusters/create-cluster.md)

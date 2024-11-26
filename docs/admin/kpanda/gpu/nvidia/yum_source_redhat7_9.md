@@ -34,8 +34,6 @@
 
 3. 通过安装器导入离线资源
 
-    参考[导入离线资源文档](../../../../install/import.md)。
-
 ### 2. 下载 Red Hat 7.9 OS 的离线驱动镜像
 
 [点击查看下载地址](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/driver/tags)。

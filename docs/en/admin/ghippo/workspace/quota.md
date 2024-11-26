@@ -29,7 +29,7 @@ Cluster resources in both shared resources and resource groups are derived from 
 
     Users/User groups in the workspace will have full management and usage permissions for the cluster.
     Workspace Admin will be mapped as Cluster Admin.
-    Workspace Admin can access the [Container Management module](../../../kpanda/permissions/permission-brief.md)
+    Workspace Admin can access the [Container Management module](../../kpanda/permissions/permission-brief.md)
     to manage the cluster.
 
     ![Resource Group](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/ghippo/images/quota01.png)

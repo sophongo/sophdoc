@@ -4,15 +4,15 @@ Insight 默认采集节点日志、容器日志以及 kubernetes 审计日志。
 
 ## 操作步骤
 
-1. 点击一级导航栏进入 __可观测性__ 。
-2. 左侧导航栏中，选择 __日志__ 。
+1. 点击一级导航栏进入 __可观测性__
+2. 左侧导航栏中，选择 __日志__
 
     - 默认查询最近 24 小时；
     - 第一次进入时，默认根据登录账号权限查询有权限的集群或命名空间的容器日志；
   
     ![log](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/insight/images/log00.png)
 
-3. 顶部 Tab 默认进入 __普通查询__ 。
+3. 顶部 Tab 默认进入 __普通查询__
 
     1. 点击 __筛选__ 展开过滤面板，可切换日志搜索条件和类型。
     2. 日志类型：
@@ -24,7 +24,7 @@ Insight 默认采集节点日志、容器日志以及 kubernetes 审计日志。
 
         ![log](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/insight/images/log03.png)
 
-4. 顶部切换 Tab 选择 __Lucene 语法查询__ 。
+4. 顶部切换 Tab 选择 __Lucene 语法查询__
 
     第一次进入时，默认选择登录账号权限查询有权限的集群或命名空间的容器日志。
 
@@ -36,7 +36,7 @@ Insight 默认采集节点日志、容器日志以及 kubernetes 审计日志。
     2. 使用波浪号 (~) 实现模糊查询，在 "~" 后可指定可选的参数，用于控制模糊查询的相似度，不指定则默认使用 0.5。例如：error~。
     3. 使用通配符 (*、?) 用作单字符通配符，表示匹配任意一个字符。
     4. 使用方括号 [ ] 或花括号 { } 来查询范围，方括号 [ ] 表示闭区间，包含边界值。花括号 { } 表示开区间，排除边界值。范围查询只适用于能够进行排序的字段类型，如数字、日期等。例如：timestamp:[2022-01-01 TO 2022-01-31]。
-    5. 更多用法请查看：[Lucene 语法说明](../../reference/lucene.md)。
+    5. 更多用法请查看：[Lucene 语法说明](../reference/lucene.md)。
 
 ### 其他操作
 
@@ -54,7 +54,3 @@ Insight 默认采集节点日志、容器日志以及 kubernetes 审计日志。
 - 支持将日志查询结果导出为 **.txt** 或 **.csv** 格式。
 
 ![log](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/insight/images/logexport.png){ width="500"}
-
-!!! note
-
-    若需指定不采集某一些容器组的日志，可参考：[容器日志黑名单](../../faq/ignore-pod-log-collect.md)。

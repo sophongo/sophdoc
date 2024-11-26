@@ -24,10 +24,6 @@
 | os-pkgs-ubuntu2204-v0.18.2.tar.gz | Ubuntu1804 OS-package 包 | https://github.com/kubean-io/kubean/releases/download/v0.18.2/os-pkgs-ubuntu2204-v0.18.2.tar.gz |
 | ISO 离线包 | ISO 包 | http://mirrors.melbourne.co.uk/ubuntu-releases/ |
 
-### 导入 OS Package 和 ISO 离线包至火种节点的 MinIO
-
-参考文档[离线资源导入](../../install/import.md#_5)，导入离线资源至火种节点的 MinIO。
-
 ## 前往 UI 界面创建集群
 
 参考文档[创建工作集群](../clusters/create-cluster.md)，创建 Ubuntu 集群。

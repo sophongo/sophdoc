@@ -88,5 +88,5 @@ Webhook 的工作原理如下：
 
 ## 参考文档
 
-- [OEM OUT 文档](../../best-practice/oem/oem-out.md)
-- [OEM IN 文档](../../best-practice/oem/oem-in.md)
+- [OEM OUT 文档](../best-practice/oem/oem-out.md)
+- [OEM IN 文档](../best-practice/oem/oem-in.md)
