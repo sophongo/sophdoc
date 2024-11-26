@@ -21,7 +21,7 @@ keyword: 兼容版本,向下兼容,部署和升级 Kubernetes,部署和升级 K8
 ## 前提条件
 
 - 准备一个 Kubean 所在的管理集群，并且当前环境已经部署支持 `podman` 、`skopeo`、`minio client` 命令。
-  如果不支持，可通过脚本进行安装依赖组件，[安装前置依赖](../../install/install-tools.md)。
+  如果不支持，可通过脚本进行安装依赖组件。
 
 - 前往 [kubean](https://github.com/kubean-io/kubean) 查看发布的[制品](https://kubean-io.github.io/kubean/zh/releases/artifacts/)，
   并根据实际情况选择具体的制品版本。目前支持的制品版本及对应的集群版本范围如下：
@@ -38,7 +38,6 @@ keyword: 兼容版本,向下兼容,部署和升级 Kubernetes,部署和升级 K8
 
     在选择制品版本时，不仅需要参考集群版本范围，还需判断该制品 manifest 资源中相应组件(如 calico、containerd)版本范围是否覆盖当前集群该组件版本！
 
-    
 本文演示离线部署 K8s 集群到 1.23.0 版本及离线升级 K8s 集群从 1.23.0 版本到 1.24.0 版本，所以选择 `release-2.21` 的制品。
 
 ## 操作步骤
@@ -138,7 +137,7 @@ skopeo copy ${SKOPEO_PARAMS} docker-archive:spray-job-2.21.tar docker://${REGIST
 
 1. 选择新创建的集群，进去详情界面。
 
-2. 然后在左侧导航栏点击 __集群运维__ -> __集群升级__ ，在页面右上角点击 __版本升级__ 。
+2. 然后在左侧导航栏点击 __集群运维__ -> __集群升级__ ，在页面右上角点击 __版本升级__
 
     ![cluster03](../images/cluster03.png)
 

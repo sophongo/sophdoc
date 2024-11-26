@@ -10,7 +10,7 @@ the [Workspace Admin role](../access-control/role.md#workspace-role-authorizatio
 which includes the [Workspace's "Resource Binding" Permissions](./ws-permission.md#description-of-workspace-permissions), and wants to bind a specific cluster or namespace to the workspace.
 
 To bind cluster/namespace resources to a workspace, not only the [workspace's "Resource Binding" permissions](./ws-permission.md#description-of-workspace-permissions) are required,
-but also the permissions of [Cluster Admin](../../../kpanda/permissions/permission-brief.md#cluster-admin).
+but also the permissions of [Cluster Admin](../../kpanda/permissions/permission-brief.md#cluster-admin).
 
 ## Granting Authorization to John
 

@@ -5,7 +5,7 @@
 同时自定义角色中包含[工作空间的“资源绑定”权限](./ws-permission.md#_3)，希望将某个集群或者某个命名空间绑定到其所在的工作空间中。
 
 要将集群/命名空间资源绑定到工作空间，不仅需要该[工作空间的“资源绑定”权限](./ws-permission.md#_3)，还需要
-[Cluster Admin](../../../kpanda/permissions/permission-brief.md#cluster-admin) 的资源权限。
+[Cluster Admin](../../kpanda/permissions/permission-brief.md#cluster-admin) 的资源权限。
 
 ## 给小明授权
 

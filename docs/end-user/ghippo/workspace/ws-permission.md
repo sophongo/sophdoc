@@ -48,8 +48,4 @@
     授权用户可前往应用工作台、微服务引擎、中间件、多云编排、服务网格等模块使用工作空间中的资源。
     有关 Workspace Admin、Workspace Editor、Workspace Viewer 角色在各产品模块的操作范围，请查阅各模块的权限说明：
 
-    - [应用工作台权限说明](../../permissions/amamba.md)
-    - [服务网格权限说明](../../permissions/mspider.md)
-    - [中间件权限说明](../../permissions/mcamel.md)
-    - [微服务引擎权限说明](../../permissions/skoala.md)
-    - [容器管理权限说明](../../../kpanda/permissions/permission-brief.md)
+    - [容器管理权限说明](../../kpanda/permissions/permission-brief.md)

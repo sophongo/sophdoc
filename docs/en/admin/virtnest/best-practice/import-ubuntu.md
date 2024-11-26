@@ -62,7 +62,7 @@ Different information needs to be configured based on the chosen network mode. I
 you should select the Bridge network mode.
 
 - Create a Multus CR of the ovs type. Refer to [Creating a Multus CR](https://spidernet-io.github.io/spiderpool/v0.9/usage/install/underlay/get-started-ovs/).
-- Create subnets and IP pools. Refer to [Creating Subnets and IP Pools](../../network/config/ippool/createpool.md).
+- Create subnets and IP pools.
 
     ```yaml
     apiVersion: spiderpool.spidernet.io/v2beta1

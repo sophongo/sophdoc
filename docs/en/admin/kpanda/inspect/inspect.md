@@ -13,7 +13,7 @@ This page explains how to manually perform a cluster inspection.
 
 - [Integrate](../clusters/integrate-cluster.md) or [create](../clusters/create-cluster.md) a cluster in the Container Management module.
 - Create an [inspection configuration](config.md).
-- The selected cluster is in the __Running__ state and the insight component has been [installed in the cluster](../../../insight/quickstart/install/install-agent.md).
+- The selected cluster is in the __Running__ state and the insight component has been [installed in the cluster](../../insight/quickstart/install/install-agent.md).
 
 ## Steps
 

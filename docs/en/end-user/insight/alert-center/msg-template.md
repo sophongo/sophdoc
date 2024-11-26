@@ -16,7 +16,7 @@ The message template feature supports customizing the content of message templat
 
 !!! info
 
-    Observability comes with predefined message templates. If you need to define the content of the templates, refer to [Configure Notification Templates](../../reference/notify-helper.md).
+    Observability comes with predefined message templates. If you need to define the content of the templates, refer to [Configure Notification Templates](../reference/notify-helper.md).
 
 ## Message Template Details
 

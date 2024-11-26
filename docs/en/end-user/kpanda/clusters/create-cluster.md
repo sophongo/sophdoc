@@ -10,9 +10,8 @@ In AI platform Container Management, clusters can have four [roles](./cluster-ro
 global service cluster, management cluster, worker cluster, and integrated cluster.
 An integrated cluster can only be integrated from third-party vendors (see [Integrate Cluster](./integrate-cluster.md)).
 
-This page explains how to create a Worker Cluster. By default, when creating a new Worker Cluster, the operating system type and CPU architecture of the worker nodes should be consistent with the Global Service Cluster. If you want to create a cluster with a different operating system or architecture than the Global Management Cluster, refer to [Creating an Ubuntu Worker Cluster on a CentOS Management Platform](../best-practice/create-ubuntu-on-centos-platform.md) for instructions.
-
-It is recommended to use the supported operating systems in AI platform to create the cluster. If your local nodes are not within the supported range, you can refer to [Creating a Cluster on Non-Mainstream Operating Systems](../best-practice/use-otherlinux-create-custer.md) for instructions.
+This page explains how to create a Worker Cluster. By default, when creating a new Worker Cluster, the operating system type and CPU architecture of the worker nodes should be consistent with the Global Service Cluster.
+It is recommended to use the supported operating systems in AI platform to create the cluster.
 
 ## Prerequisites
 
@@ -45,7 +44,7 @@ Certain prerequisites must be met before creating a cluster:
 
     ![basic info](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/kpanda/images/cluster-create02.png)
 
-3. Fill in the node configuration information and click __Node Check__ .
+3. Fill in the node configuration information and click __Node Check__
 
     - High Availability: When enabled, at least 3 controller nodes are required. When disabled, only 1 controller node is needed.
 
