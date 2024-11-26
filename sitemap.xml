@@ -64,181 +64,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/best-practice/train-with-deepspeed.html"/>
     </url>
     <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/index.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/index.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/quick-start.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/quick-start.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/quick-start.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/dataset/create-use-delete.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/dataset/create-use-delete.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/dataset/create-use-delete.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/dataset/environments.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/dataset/environments.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/dataset/environments.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/inference/models.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/inference/models.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/inference/models.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/inference/triton-inference.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/inference/triton-inference.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/inference/triton-inference.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/inference/vllm-inference.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/inference/vllm-inference.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/inference/vllm-inference.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/create.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/create.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/create.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/delete.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/delete.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/delete.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/mpi.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/mpi.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/mpi.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/mxnet.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/mxnet.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/mxnet.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/paddle.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/paddle.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/paddle.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/pytorch.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/pytorch.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/pytorch.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/tensorboard.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/tensorboard.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/tensorboard.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/tensorflow.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/tensorflow.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/tensorflow.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/jobs/view.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/view.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/view.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/baizectl.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/baizectl.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/baizectl.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/baizess.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/baizess.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/baizess.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/create.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/create.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/create.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/delete.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/delete.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/delete.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-auto-close.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-auto-close.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-auto-close.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-with-envs.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-with-envs.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-with-envs.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-with-ssh.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-with-ssh.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-with-ssh.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/start-pause.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/start-pause.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/start-pause.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/admin/baize/developer/notebooks/view.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/view.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/view.html"/>
-    </url>
-    <url>
         <loc>https://sophdoc.github.io/admin/baize/oam/index.html</loc>
         <lastmod>2024-11-26</lastmod>
         <changefreq>daily</changefreq>
@@ -4152,181 +3977,6 @@
         <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/best-practice/train-with-deepspeed.html"/>
     </url>
     <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/index.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/index.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/index.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/quick-start.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/quick-start.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/quick-start.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/dataset/create-use-delete.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/dataset/create-use-delete.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/dataset/create-use-delete.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/dataset/environments.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/dataset/environments.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/dataset/environments.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/inference/models.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/inference/models.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/inference/models.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/inference/triton-inference.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/inference/triton-inference.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/inference/triton-inference.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/inference/vllm-inference.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/inference/vllm-inference.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/inference/vllm-inference.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/create.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/create.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/create.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/delete.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/delete.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/delete.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/mpi.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/mpi.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/mpi.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/mxnet.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/mxnet.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/mxnet.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/paddle.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/paddle.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/paddle.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/pytorch.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/pytorch.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/pytorch.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/tensorboard.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/tensorboard.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/tensorboard.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/tensorflow.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/tensorflow.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/tensorflow.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/jobs/view.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/jobs/view.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/jobs/view.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/baizectl.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/baizectl.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/baizectl.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/baizess.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/baizess.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/baizess.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/create.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/create.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/create.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/delete.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/delete.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/delete.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-auto-close.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-auto-close.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-auto-close.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-with-envs.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-with-envs.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-with-envs.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-with-ssh.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/notebook-with-ssh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/notebook-with-ssh.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/start-pause.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/start-pause.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/start-pause.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/admin/baize/developer/notebooks/view.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/admin/baize/developer/notebooks/view.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/admin/baize/developer/notebooks/view.html"/>
-    </url>
-    <url>
         <loc>https://sophdoc.github.io/en/admin/baize/oam/index.html</loc>
         <lastmod>2024-11-26</lastmod>
         <changefreq>daily</changefreq>
@@ -6786,6 +6436,27 @@
         <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/end-user/baize/jobs/delete.html"/>
     </url>
     <url>
+        <loc>https://sophdoc.github.io/en/end-user/baize/jobs/mpi.html</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/end-user/baize/jobs/mpi.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/end-user/baize/jobs/mpi.html"/>
+    </url>
+    <url>
+        <loc>https://sophdoc.github.io/en/end-user/baize/jobs/mxnet.html</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/end-user/baize/jobs/mxnet.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/end-user/baize/jobs/mxnet.html"/>
+    </url>
+    <url>
+        <loc>https://sophdoc.github.io/en/end-user/baize/jobs/paddle.html</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/end-user/baize/jobs/paddle.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/end-user/baize/jobs/paddle.html"/>
+    </url>
+    <url>
         <loc>https://sophdoc.github.io/en/end-user/baize/jobs/pytorch.html</loc>
         <lastmod>2024-11-26</lastmod>
         <changefreq>daily</changefreq>
@@ -8181,27 +7852,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/stylesheets/tags.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/stylesheets/tags.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/end-user/baize/jobs/mpi.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/end-user/baize/jobs/mpi.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/end-user/baize/jobs/mpi.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/end-user/baize/jobs/mxnet.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/end-user/baize/jobs/mxnet.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/end-user/baize/jobs/mxnet.html"/>
-    </url>
-    <url>
-        <loc>https://sophdoc.github.io/en/end-user/baize/jobs/paddle.html</loc>
-        <lastmod>2024-11-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://sophdoc.github.io/en/end-user/baize/jobs/paddle.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://sophdoc.github.io/end-user/baize/jobs/paddle.html"/>
     </url>
     <url>
         <loc>https://sophdoc.github.io/en/end-user/insight/quickstart/install/helm-installagent.html</loc>

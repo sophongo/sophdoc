@@ -950,7 +950,7 @@ Demo 程序来自 <a href="https://github.com/THUDM/ChatGLM3/blob/main/finetune_
 <a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">    </span>--restart-policy<span class="w"> </span>on-failure<span class="w"> </span><span class="se">\</span>
 <a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">    </span>--<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">"cd /home/jovyan/ChatGLM3/finetune_demo &amp;&amp; CUDA_VISIBLE_DEVICES=0 NCCL_P2P_DISABLE="</span><span class="m">1</span><span class="s2">" NCCL_IB_DISABLE="</span><span class="m">1</span><span class="s2">" python finetune_hf.py  data/AdvertiseGen_fix  ./chatglm3-6b  configs/lora.yaml"</span>
 </code></pre></div>
-<p>如果希望了解更多 <code>baizectl</code> 的使用说明，可以查看 <a href="../developer/notebooks/baizectl.html">baizectl 使用文档</a>。</p>
+<p>如果希望了解更多 <code>baizectl</code> 的使用说明，可以查看 <a href="../developer/notebooks/baizectl.md">baizectl 使用文档</a>。</p>
 <h2 id="_11">模型推理<a class="headerlink" href="#_11" title="Permanent link">¶</a></h2>
 <p>在微调任务完成后，您可以使用微调的模型进行推理任务，这里您可以使用AI Lab 提供的推理服务，将输出后的模型创建为推理服务。</p>
 <p><img alt="推理任务" src="images/fine-tunel-chatglm3-22.png"/></p>
