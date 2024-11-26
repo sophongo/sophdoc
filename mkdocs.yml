@@ -4,10 +4,10 @@ INHERIT: navigation.yml
 
 # Project information
 site_name: 豐收二號檔案站
-site_url: https://sophdoc.github.io/
+site_url: https://aidocs.isuanova.com/
 site_author: Suanova
 site_description: >-
-  Suanova documentation website.
+  Suanova AI documentation website.
 
 # copyright
 copyright: Copyright &copy; 2016 - 2024 Suanova
@@ -24,7 +24,7 @@ strict: false # enable strict mode, https://www.mkdocs.org/user-guide/configurat
 # Configuration
 theme:
   name: material
-  language: zh
+  language: en
 
   features:
     - content.code.annotate
