@@ -12,9 +12,7 @@ When the peak business period is over, in order to save resource costs, you can 
 ## Precautions
 
 1. When cluster nodes scales down, they can only be uninstalled one by one, not in batches.
-
 2. If you need to uninstall cluster controller nodes, you need to ensure that the final number of controller nodes is an **odd number**.
-
 3. The **first controller** node cannot be offline when the cluster node scales down. If it is necessary to perform this operation, please contact the after-sales engineer.
 
 ## Steps

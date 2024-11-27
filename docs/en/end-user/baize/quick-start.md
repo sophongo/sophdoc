@@ -77,7 +77,7 @@ Prepare your development environment by clicking on **Notebooks** in the navigat
 
 ## Creating a Training Job
 
-1. Click on **Job Center** -> **Training Jobs** in the navigation bar to create a standalone `TensorFlow` job.
+1. Click **Job Center** -> **Training Jobs** in the navigation bar to create a standalone `TensorFlow` job.
 2. Fill in the basic parameters and click **Next**.
 3. In the job resource configuration, correctly set up the job resources and click **Next**.
 
@@ -96,8 +96,8 @@ Prepare your development environment by clicking on **Notebooks** in the navigat
         Logs will be saved in the output dataset at `/home/jovyan/model/train/logs/`.
 
 
-5. Return to the training job list and wait for the status to change to **Success**. Click on the **┇** icon on the right side of the list to view details, clone jobs, update priority, view logs, and delete jobs, among other options.
+5. Return to the training job list and wait for the status to change to **Success**. Click the **┇** icon on the right side of the list to view details, clone jobs, update priority, view logs, and delete jobs, among other options.
 
-6. Once the job is successfully created, click on **Job Analysis** in the left navigation bar to check the job status and fine-tune your training.
+6. Once the job is successfully created, click **Job Analysis** in the left navigation bar to check the job status and fine-tune your training.
 
     ![View Job](./images/baize-07.png)

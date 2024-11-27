@@ -21,13 +21,13 @@ For simplicity, a DaemonSet can be started on each node for each type of daemon.
 
 Before creating a DaemonSet, the following prerequisites need to be met:
 
-- In the Container Management module [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
+- You have integrated a Kubernetes Cluster in the Container Management module as described in [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and you can access the cluster's UI interface.
 
 - Create a [namespace](../namespaces/createns.md) and a user.
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 
-- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
+- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the DaemonSet will fail.
 
 ## Create by image
 

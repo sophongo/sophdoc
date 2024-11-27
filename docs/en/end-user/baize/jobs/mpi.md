@@ -20,7 +20,7 @@ Here we will use the `baize-notebook` base image and the **associated environmen
 
 ### Steps to Create an MPI Job
 
-1. **Log in to the Platform** : Log in to the AI Lab platform and click on **Job Center** in the left navigation bar to enter the **Training Jobs** page.
+1. **Log in to the Platform** : Log in to the AI Lab platform and click **Job Center** in the left navigation bar to enter the **Training Jobs** page.
 2. **Create Job** : Click the **Create** button in the upper right corner to enter the job creation page.
 3. **Select Job Type** : In the pop-up window, select the job type as `MPI`, then click **Next**.
 4. **Fill in Job Information** : Fill in the job name and description, for example, “benchmarks-mpi”, then click **Next**.

@@ -16,7 +16,7 @@
 
 - 当前操作用户应具有 [NS Editor](../permissions/permission-brief.md#ns-editor) 或更高权限，详情可参考[命名空间授权](../namespaces/createns.md)。
 
-- 单个实例中有多个容器时，请确保容器使用的端口不冲突，否则部署会失效。
+- 单个实例中有多个容器时，请确保容器使用的端口不冲突，否则 StatefulSet 会失效。
 
 ## 镜像创建
 
