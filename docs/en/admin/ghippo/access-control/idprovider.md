@@ -14,11 +14,11 @@ Global management supports single sign-on based on LDPA and OIDC protocols. If y
 
 - LDAP
 
-    LDAP refers to Lightweight Directory Access Protocol (Lightweight Directory Access Protocol), which is often used for single sign-on, that is, users can log in with one account password in multiple services. Global management supports LDAP for identity authentication, so the enterprise IdP that establishes identity authentication with AI platform through the LDAP protocol must support the LDAP protocol. For a detailed description of LDAP, please refer to: [Welcome to LDAP](ldap.md).
+    LDAP refers to Lightweight Directory Access Protocol (Lightweight Directory Access Protocol), which is often used for single sign-on, that is, users can log in with one account password in multiple services. Global management supports LDAP for identity authentication, so the enterprise IdP that establishes identity authentication with AI platform through the LDAP protocol must support the LDAP protocol. For a detailed description of LDAP, refer to: [Welcome to LDAP](ldap.md).
 
 - OIDC
 
-    OIDC, short for OpenID Connect, is an identity authentication standard protocol based on the OAuth 2.0 protocol. Global management supports the OIDC protocol for identity authentication, so the enterprise IdP that establishes identity authentication with AI platform through the OIDC protocol must support the OIDC protocol. For a detailed description of OIDC, please refer to: [Welcome to OpenID Connect](https://openid.net/connect/).
+    OIDC, short for OpenID Connect, is an identity authentication standard protocol based on the OAuth 2.0 protocol. Global management supports the OIDC protocol for identity authentication, so the enterprise IdP that establishes identity authentication with AI platform through the OIDC protocol must support the OIDC protocol. For a detailed description of OIDC, refer to: [Welcome to OpenID Connect](https://openid.net/connect/).
 
 - OAuth 2.0
 

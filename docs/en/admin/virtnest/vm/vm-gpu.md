@@ -20,7 +20,7 @@ Working nodes can run GPU-accelerated containers, virtual machines with direct G
 
 ## Enable IOMMU
 
-To enable the GPU direct pass-through feature, the cluster nodes need to enable IOMMU. Please refer to [How to Enable IOMMU](https://www.server-world.info/en/note?os=CentOS_7&p=kvm&f=10).
+To enable the GPU direct pass-through feature, the cluster nodes need to enable IOMMU. Refer to [How to Enable IOMMU](https://www.server-world.info/en/note?os=CentOS_7&p=kvm&f=10).
 If your cluster is running on a virtual machine, consult your virtual machine platform provider.
 
 ## Build vGPU Manager Image

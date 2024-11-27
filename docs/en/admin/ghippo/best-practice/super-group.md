@@ -11,7 +11,7 @@ The specific operational steps are as follows:
 
 1. Enable Isolation Mode between Folder/WS
 
-    Please refer to [Enable Isolation Mode between Folder/WS](../install/user-isolation.md).
+    Refer to [Enable Isolation Mode between Folder/WS](../install/user-isolation.md).
 
 2. Plan Enterprise Architecture according to the Actual Situation
 

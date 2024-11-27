@@ -217,7 +217,7 @@ This indicates that the PaddlePaddle distributed job has run successfully, and t
 
 ## Summary
 
-Through this tutorial, you have learned how to create and run both single-node and distributed PaddlePaddle jobs on the AI Lab platform. We provided detailed information on configuring the PaddleJob and how to specify running commands and resource requirements in the job. We hope this tutorial is helpful to you; if you have any questions, please refer to other documents provided by the platform or contact technical support.
+Through this tutorial, you have learned how to create and run both single-node and distributed PaddlePaddle jobs on the AI Lab platform. We provided detailed information on configuring the PaddleJob and how to specify running commands and resource requirements in the job. We hope this tutorial is helpful to you; if you have any questions, refer to other documents provided by the platform or contact technical support.
 
 ---
 

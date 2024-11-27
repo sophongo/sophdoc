@@ -10,7 +10,7 @@ IAM (Identity and Access Management) is an important module of global management
 
 - Appropriate role
 
-    Access control pre-defines an administrator role for each sub-module, without user maintenance, you can directly authorize the predefined system roles of the platform to users to realize the modular management of the platform. For fine-grained permissions, please refer to [Permission Management](role.md).
+    Access control pre-defines an administrator role for each sub-module, without user maintenance, you can directly authorize the predefined system roles of the platform to users to realize the modular management of the platform. For fine-grained permissions, refer to [Permission Management](role.md).
 
 - Enterprise-grade access control
 

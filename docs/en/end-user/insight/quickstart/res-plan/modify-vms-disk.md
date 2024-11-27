@@ -1,6 +1,6 @@
 # vmstorage Disk Expansion
 
-This article describes the method for expanding the vmstorage disk. Please refer to the [vmstorage disk capacity planning](../res-plan/vms-res-plan.md) for the specifications of the vmstorage disk.
+This article describes the method for expanding the vmstorage disk. Refer to the [vmstorage disk capacity planning](../res-plan/vms-res-plan.md) for the specifications of the vmstorage disk.
 
 ## Procedure
 

@@ -13,7 +13,7 @@ OpenTelemetry, also known simply as OTel, is an open-source observability framew
 
 ### Install related dependencies
 
-Dependencies related to the OpenTelemetry exporter and SDK must be installed first. If you are using another request router, please refer to [request routing](#request-routing).
+Dependencies related to the OpenTelemetry exporter and SDK must be installed first. If you are using another request router, refer to [request routing](#request-routing).
 After switching/going into the application source folder run the following command:
 
 ```golang
@@ -157,7 +157,7 @@ func main() {
 
 - Running in a production environment 
 
-    Please refer to the introduction of __Only injecting environment variable annotations__ in [Achieving non-intrusive enhancement of applications through Operators](../operator.md) to add annotations to deployment yaml:
+    Refer to the introduction of __Only injecting environment variable annotations__ in [Achieving non-intrusive enhancement of applications through Operators](../operator.md) to add annotations to deployment yaml:
 
     ```console
     instrumentation.opentelemetry.io/inject-sdk: "insight-system/insight-opentelemetry-autoinstrumentation"
@@ -357,7 +357,7 @@ span.SetStatus(codes.Error, "internal error")
 
 ## References
 
-For the Demo presentation, please refer to:
+For the Demo presentation, refer to:
 
 - [otel-grpc-examples](https://github.com/openinsight-proj/otel-grpc-examples/tree/no-metadata-grpcgateway-v1.11.1)
 - [opentelemetry-demo/productcatalogservice](https://github.com/open-telemetry/opentelemetry-demo/tree/main/src/productcatalogservice)

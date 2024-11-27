@@ -87,7 +87,7 @@ Follow the steps below to prepare a namespace that is not yet bound to any works
 
     !!! info
 
-        Workspaces are primarily used to divide groups of resources and grant users (groups of users) different access rights to that resource. For a detailed description of the workspace, please refer to [Workspace and Folder](../workspace/workspace.md).
+        Workspaces are primarily used to divide groups of resources and grant users (groups of users) different access rights to that resource. For a detailed description of the workspace, refer to [Workspace and Folder](../workspace/workspace.md).
 
     
 1. Click __OK__ to complete the creation of the namespace. On the right side of the namespace list, click __┇__ , and you can select __Bind Workspace__ from the pop-up menu.

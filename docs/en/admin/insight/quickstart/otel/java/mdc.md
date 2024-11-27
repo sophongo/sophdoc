@@ -9,7 +9,7 @@ This article explains how to automatically write TraceId and SpanId into Java ap
 
 ## Supported Logging Libraries
 
-For more information, please refer to the [Logger MDC auto-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/logger-mdc-instrumentation.md).
+For more information, refer to the [Logger MDC auto-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/logger-mdc-instrumentation.md).
 
 | Logging Framework | Supported Automatic Instrumentation Versions | Dependencies Required for Manual Instrumentation |
 | ------------------ | ----------------------------------------- | ----------------------------------------------- |

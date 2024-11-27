@@ -29,7 +29,7 @@ If they exist, it means that Kubernetes audit logs are successfully enabled.
 ls /var/log/kubernetes/audit
 ```
 
-If they are not enabled, please refer to the [documentation on enabling/disabling Kubernetes audit logs](open-k8s-audit.md).
+If they are not enabled, refer to the [documentation on enabling/disabling Kubernetes audit logs](open-k8s-audit.md).
 
 #### Enable Collection of Kubernetes Audit Logs Process
 
@@ -95,7 +95,7 @@ If they exist, it means that Kubernetes audit logs are successfully enabled.
 ls /var/log/kubernetes/audit
 ```
 
-If they are not enabled, please refer to the [documentation on enabling/disabling Kubernetes audit logs](open-k8s-audit.md).
+If they are not enabled, refer to the [documentation on enabling/disabling Kubernetes audit logs](open-k8s-audit.md).
 
 #### Enable Collection of Kubernetes Audit Logs Process
 
@@ -172,7 +172,7 @@ If they exist, it means that K8s audit logs are successfully enabled.
 ls /var/log/kubernetes/audit
 ```
 
-If they are not enabled, please refer to the [documentation on enabling/disabling K8s audit logs](open-k8s-audit.md).
+If they are not enabled, refer to the [documentation on enabling/disabling K8s audit logs](open-k8s-audit.md).
 
 #### Enable Collection of K8s Audit Logs
 

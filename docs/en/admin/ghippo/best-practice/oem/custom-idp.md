@@ -8,7 +8,7 @@ as the Identity Provider for AI platform.
 
 If there is a high customization requirement for the Ghippo login IdP, such as
 supporting WeCom, WeChat, or other social organization login requirements,
-please refer to this document for implementation.
+refer to this document for implementation.
 
 ## Supported Versions
 

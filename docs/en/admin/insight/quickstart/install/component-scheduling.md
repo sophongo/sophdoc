@@ -272,7 +272,7 @@ Restart the components under the insight-system namespace to allow normal schedu
     2. preferredDuringSchedulingIgnoredDuringExecution: The scheduler will try to find nodes that
        meet the rules. If no matching nodes are found, the scheduler will still schedule the Pod.
 
-    For more details, please refer to the [Kubernetes official documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity).
+    For more details, refer to the [Kubernetes official documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity).
 
 To meet different user needs for scheduling Insight components, Insight provides fine-grained labels for
 different components' scheduling policies. Below is a description of the labels and their associated components:

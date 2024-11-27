@@ -15,7 +15,7 @@ see the number of active alerts and the trend of resource consumption such as CP
 
 - The cluster has insight-agent installed, and all pods are in the __Running__ state.
 
-- To install insight-agent, please refer to: [Installing insight-agent online](../quickstart/install/install-agent.md) or [Offline upgrade of insight-agent](../quickstart/install/offline-install.md).
+- To install insight-agent, refer to: [Installing insight-agent online](../quickstart/install/install-agent.md) or [Offline upgrade of insight-agent](../quickstart/install/offline-install.md).
 
 ## Steps
 

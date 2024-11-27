@@ -5,7 +5,7 @@ hide:
 
 # Access Native Grafana
 
-Please make sure that the Helm App __Insight__ in your global management cluster is in __Running__ state.
+Make sure that the Helm App __Insight__ in your global management cluster is in __Running__ state.
 
 The specific operation steps are as follows:
 

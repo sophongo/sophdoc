@@ -20,7 +20,7 @@ The worker nodes can run GPU-accelerated containers, virtual machines with GPU p
 
 ## Enable IOMMU
 
-To enable GPU passthrough, the cluster nodes need to have IOMMU enabled. Please refer to [How to Enable IOMMU](https://www.server-world.info/en/note?os=CentOS_7&p=kvm&f=10). If your cluster is running on a virtual machine, please consult your virtual machine platform provider.
+To enable GPU passthrough, the cluster nodes need to have IOMMU enabled. Refer to [How to Enable IOMMU](https://www.server-world.info/en/note?os=CentOS_7&p=kvm&f=10). If your cluster is running on a virtual machine, please consult your virtual machine platform provider.
 
 ## Build vGPU Manager Image
 

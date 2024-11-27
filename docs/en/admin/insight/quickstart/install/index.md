@@ -23,26 +23,26 @@ is closely related to the data of cluster creation and the number of integrated 
 When installing insight-agent, it is necessary to adjust the resources of the proper components based on the cluster size.
 
 1. Adjust the CPU and memory resources of the __Prometheus__ collection component in insight-agent
-   according to the size of the cluster created or integrated. Please refer to
+   according to the size of the cluster created or integrated. Refer to
    [Prometheus resource planning](../res-plan/prometheus-res.md).
 
 2. As the metric data from multiple clusters is stored centrally, AI platform administrators
    need to adjust the disk space of __vmstorage__ based on the cluster size.
-   Please refer to [vmstorage disk capacity planning](../res-plan/vms-res-plan.md).
+   Refer to [vmstorage disk capacity planning](../res-plan/vms-res-plan.md).
 
-- For instructions on adjusting the disk space of vmstorage, please refer to
+- For instructions on adjusting the disk space of vmstorage, refer to
   [Expanding vmstorage disk](../res-plan/modify-vms-disk.md).
 
 Since AI platform supports the management of multicloud and multiple clusters,
 insight-agent has undergone partial verification. However, there are known conflicts
 with monitoring components when installing insight-agent in Suanova 4.0 clusters and
-Openshift 4.x clusters. If you encounter similar issues, please refer to the following documents:
+Openshift 4.x clusters. If you encounter similar issues, refer to the following documents:
 
 - [Install insight-agent in Suanova 4.0.x](../other/install-agentindce.md)
 - [Install insight-agent in Openshift 4.x](../other/install-agent-on-ocp.md)
 
 Currently, the insight-agent collection component has undergone functional testing
-for popular versions of Kubernetes. Please refer to:
+for popular versions of Kubernetes. Refer to:
 
 - [Kubernetes cluster compatibility testing](../../compati-test/k8s-compatibility.md)
 - [Openshift 4.x cluster compatibility testing](../../compati-test/ocp-compatibility.md)

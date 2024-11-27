@@ -6,11 +6,11 @@ This requires creating a service through which you get a fixed IP address, decou
 
 ## Prerequisites
 
-- Container management module [connected to Kubernetes cluster](../clusters/integrate-cluster.md) or [created Kubernetes](../clusters/create-cluster.md), and can access the cluster UI interface.
+- You have integrated a Kubernetes Cluster in the Container Management module as described in [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and you can access the cluster's UI interface.
 
 - Completed a [namespace creation](../namespaces/createns.md), [user creation](../../ghippo/access-control/user.md), and authorize the user as [NS Editor](../permissions/permission-brief.md#ns-editor) role, for details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 
-- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
+- When there are multiple containers in a single instance, make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
 
 ## Create service
 
@@ -18,7 +18,7 @@ This requires creating a service through which you get a fixed IP address, decou
 
      
 
-2. In the left navigation bar, click __Container Network__ -> __Service__ to enter the service list, and click the __Create Service__ button in the upper right corner.
+2. In the left navigation bar, click __Container Network__ -> __Services__ to enter the service list, and click the __Create Service__ button in the upper right corner.
 
      
 

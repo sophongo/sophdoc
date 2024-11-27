@@ -255,7 +255,7 @@ and clicking it will allow users to enter the customer system.
     appearance customization in actual applications needs to be handled according to the actual situation.
 
 Log in to the customer system, and through __Global Management__ -> __Settings__ -> __Appearance__,
-you can customize platform background colors, logos, and names. For specific operations, please refer to
+you can customize platform background colors, logos, and names. For specific operations, refer to
 [Appearance Customization](../../platform-setting/appearance.md).
 
 ## Integrate Permission System (Optional)

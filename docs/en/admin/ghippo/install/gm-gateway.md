@@ -104,7 +104,7 @@ In the end, we will get the following files:
 
 The Guomi gateway used in this article supports SM2 and RSA TLS certificates. The advantage of dual certificates is that when the browser does not support SM2 TLS certificates, it automatically switches to RSA TLS certificates.
 
-For more detailed configurations, please refer to the [Tongsuo official documentation](https://www.yuque.com/tsdoc/ts).
+For more detailed configurations, refer to the [Tongsuo official documentation](https://www.yuque.com/tsdoc/ts).
 
 We enter the Tengine container:
 

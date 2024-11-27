@@ -21,7 +21,7 @@ Before using image to create StatefulSets, the following prerequisites need to b
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 
-- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the StatefulSet will fail.
+- When there are multiple containers in a single instance, make sure that the ports used by the containers do not conflict, otherwise the StatefulSet will fail.
 
 ## Create by image
 

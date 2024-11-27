@@ -46,7 +46,7 @@ Currently, it supports creating StorageClass through YAML and forms. These two m
     - Storage type: support LVM, raw disk type
         - __LVM type__ : HwameiStor recommended usage method, which can use highly available volumes, and the proper CSI storage driver is `lvm.hwameistor.io` .
         - __Raw disk volume__ : suitable for high availability cases, without high availability capability, the proper CSI driver is `hdd.hwameistor.io` .
-    - High Availability Mode: Before using the high availability capability, please make sure __DRBD component__ has been installed. After the high availability mode is turned on, the number of volume copies can be set to 1 and 2. Convert volume copy from 1 to 1 if needed.
+    - High Availability Mode: Before using the high availability capability, make sure __DRBD component__ has been installed. After the high availability mode is turned on, the number of volume copies can be set to 1 and 2. Convert volume copy from 1 to 1 if needed.
     - Recycling policy: When deleting a volume, keep the data in the volume or delete the data in it.
     - Snapshot/Expansion: After it is enabled, the volume/PersistentVolumeClaim based on the StorageClass can support the expansion and snapshot features, but **the premise is that the underlying storage driver supports the snapshot and expansion features**.
 
