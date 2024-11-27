@@ -1,4 +1,6 @@
 ---
+hide:
+  - toc
 MTPE: windsonsea
 Date: 2024-10-15
 ---

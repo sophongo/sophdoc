@@ -3,204 +3,191 @@ MTPE: FanLin
 Date: 2024-02-27
 ---
 
-# Create Deployment
+# Creating a Deployment
 
-This page describes how to create deployments through images and YAML files.
+This page outlines how to create deployments using images and YAML files.
 
-[Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) is a common resource in Kubernetes, mainly [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) provide declarative updates, support elastic scaling, rolling upgrades, and version rollbacks features. Declare the desired Pod state in the Deployment, and the Deployment Controller will modify the current state through the ReplicaSet to make it reach the pre-declared desired state. Deployment is stateless and does not support data persistence. It is suitable for deploying stateless applications that do not need to save data and can be restarted and rolled back at any time.
+A [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) is a widely used resource in Kubernetes. It primarily relies on [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) and [ReplicaSets](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) to provide declarative updates, support for elastic scaling, rolling upgrades, and version rollbacks. You specify the desired state of your Pods in the Deployment, and the Deployment Controller adjusts the current state through the ReplicaSet to achieve the desired outcome. Deployments are stateless and do not support data persistence, making them ideal for deploying stateless applications that don't need to retain data and can be restarted or rolled back at any time.
 
-Through the container management module of AI platform, workloads on multicloud and multiclusters can be easily managed based on proper role permissions, including the creation of deployments, Full life cycle management such as update, deletion, elastic scaling, restart, and version rollback.
+With the container management module of the AI platform, workloads across multiple clouds and clusters can be easily managed based on appropriate role permissions. This includes creating deployments and managing their full lifecycle, such as updating, deleting, scaling, restarting, and rolling back versions.
 
 ## Prerequisites
 
-Before using image to create deployments, the following prerequisites need to be met:
+Before using an image to create deployments, ensure the following prerequisites are met:
 
-- In the Container Management module [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and can access the cluster UI interface.
+- You have integrated a Kubernetes Cluster in the Container Management module as described in [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and you can access the cluster's UI interface.
 
-- Create a [namespace](../namespaces/createns.md) and a user.
+- Create a [namespace](../namespaces/createns.md) and [a user](../../register/index.md).
 
-- The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
+- The current user must have [NS Editor](../permissions/permission-brief.md#ns-editor) permissions or higher. For more details, refer to [Namespace Authorization](../namespaces/createns.md).
 
-- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
+- If there are multiple containers in a single instance, ensure that the ports used by the containers do not conflict; otherwise, the deployment will fail.
 
-## Create by image
+## Creating a Deployment from an Image
 
-Follow the steps below to create a deployment by image.
+Follow these steps to create a deployment using an image:
 
-1. Click __Clusters__ on the left navigation bar, and then click the name of the target cluster to enter the Cluster Details page.
+1. Click __Clusters__ in the left navigation bar, then select the target cluster to go to the Cluster Details page.
 
     ![Clusters](../images/deploy01.png)
 
-2. On the cluster details page, click __Workloads__ -> __Deployments__ in the left navigation bar, and then click the __Create by Image__ button in the upper right corner of the page.
+2. On the Cluster Details page, click __Workloads__ -> __Deployments__ in the left navigation bar, then click the __Create by Image__ button in the upper right corner.
 
     ![Deployment](../images/deploy02.png)
 
-3. Fill in [Basic Information](create-deployment.md#basic-information), [Container Setting](create-deployment.md#container-settings), [Service Setting](create-deployment.md#service-settings), [Advanced Setting](create-deployment.md#advanced-settings) in turn, click __OK__ in the lower right corner of the page to complete the creation.
+3. Fill in the [Basic Information](create-deployment.md#basic-information), [Container Settings](create-deployment.md#container-settings), [Service Settings](create-deployment.md#service-settings), and [Advanced Settings](create-deployment.md#advanced-settings) in order. Click __OK__ in the lower right corner to complete the creation.
 
-    The system will automatically return the list of __Deployments__ . Click __┇__ on the right side of the list to perform operations such as update, delete, elastic scaling, restart, and version rollback on the load. If the workload status is abnormal, please check the specific abnormal information, refer to [Workload Status](../workloads/pod-config/workload-status.md).
+    The system will automatically return to the list of __Deployments__. Click __┇__ on the right side of the list to perform operations such as updating, deleting, scaling, restarting, and rolling back the workload. If the workload status is abnormal, please check the specific error information and refer to [Workload Status](../workloads/pod-config/workload-status.md).
 
     ![Menu](../images/deploy18.png)
 
-### Basic information
+### Basic Information
 
-- Workload Name: can contain up to 63 characters, can only contain lowercase letters, numbers, and a separator ("-"), and must start and end with a lowercase letter or number, such as deployment-01. The name of the same type of workload in the same namespace cannot be repeated, and the name of the workload cannot be changed after the workload is created.
-- Namespace: Select the namespace where the newly created payload will be deployed. The default namespace is used by default. If you can't find the desired namespace, you can go to [Create a new namespace](../namespaces/createns.md) according to the prompt on the page.
-- Pods: Enter the number of Pod instances for the load, and one Pod instance is created by default.
-- Description: Enter the description information of the payload and customize the content. The number of characters cannot exceed 512.
+- **Workload Name:** Can be up to 63 characters long, can only contain lowercase letters, numbers, and the separator ("-"), and must start and end with a lowercase letter or number, such as deployment-01. Names of the same type of workload within the same namespace cannot be duplicated, and once created, the workload name cannot be changed.
+- **Namespace:** Select the namespace for the new workload. By default, the default namespace is used. If you can't find the desired namespace, you can create a new one by following the prompt on the page.
+- **Pods:** Specify the number of Pod instances for the workload; one Pod instance is created by default.
+- **Description:** Enter a description for the workload, with a maximum of 512 characters.
 
 ![Basic Information](../images/deploy04.png)
 
-### Container settings
+### Container Settings
 
-Container setting is divided into six parts: basic information, life cycle, health check, environment variables, data storage, and security settings. Click the tab below to view the requirements of each part.
+Container settings are divided into six sections: Basic Information, Lifecycle, Health Check, Environment Variables, Data Storage, and Security Settings. Click the tabs below to view the requirements for each section.
 
-> Container setting is only configured for a single container. To add multiple containers to a pod, click __+__ on the right to add multiple containers.
+> Container settings are configured for a single container. To add multiple containers to a Pod, click __+__ on the right to add more containers.
 
 === "Basic Information (Required)"
 
-    When configuring container-related parameters, it is essential to correctly fill in the container name and image parameters; 
-    otherwise, you will not be able to proceed to the next step. 
-    After filling in the configuration according to the following requirements, click __OK__.
+    When configuring container parameters, it is crucial to correctly fill in the container name and image parameters; otherwise, you won't be able to proceed to the next step. After completing the configuration according to the following requirements, click __OK__.
 
     ![Basic Info](../images/deploy05.png)
     
-    - Container Type: The default is `Work Container`. For information on init containers, see the [K8s Official Documentation]
-     (https://kubernetes.io/docs/concepts/workloads/pods/init-containers/).
-    - Container Name: No more than 63 characters, supporting lowercase letters, numbers, and separators ("-"). 
-      It must start and end with a lowercase letter or number, for example, nginx-01.
-    - Image:
-        - Image: Select an appropriate image from the list. When entering the image name, the default is to pull the image 
-         from the official [DockerHub](https://hub.docker.com/).
-        - Image Version: Select an appropriate version from the dropdown list.
-        - Image Pull Policy: By checking __Always pull the image__, the image will be pulled from the repository each time 
-          the workload restarts/upgrades.
-          If unchecked, it will only pull the local image, and will pull from the repository only if the image does not exist locally.
-          For more details, refer to [Image Pull Policy](https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy).
-        - Registry Secret: Optional. If the target repository requires a Secret to access, you need to [create secret](../configmaps-secrets/create-secret.md) first.
-    - Privileged Container: By default, the container cannot access any device on the host. After enabling the privileged container, 
-      the container can access all devices on the host and has all the privileges of running processes on the host.
-    - CPU/Memory Request: The request value (the minimum resource needed) and the limit value (the maximum resource allowed) 
-      for CPU/memory resources. Configure resources for the container as needed to avoid resource waste and system failures 
-      caused by container resource overages. Default values are shown in the figure.
-    - GPU Configuration: Configure GPU usage for the container, supporting only positive integers. 
-      The GPU quota setting supports configuring the container to exclusively use an entire GPU or part of a vGPU.
-      For example, for a GPU with 8 cores, entering the number __8__ means the container exclusively uses the entire card, 
-      and entering the number __1__ means configuring 1 core of the vGPU for the container.
+    - **Container Type:** The default is `Work Container`. For information on init containers, see the [K8s Official Documentation](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/).
+    - **Container Name:** Must be no more than 63 characters and can include lowercase letters, numbers, and the separator ("-"). It must start and end with a lowercase letter or number, e.g., nginx-01.
+    - **Image:**
+        - **Image:** Select an appropriate image from the list. By default, the image is pulled from the official [DockerHub](https://hub.docker.com/).
+        - **Image Version:** Choose the desired version from the dropdown list.
+        - **Image Pull Policy:** Checking __Always pull the image__ ensures the image is pulled from the repository each time the workload restarts/upgrades. If unchecked, it will pull the local image and only pull from the repository if the local image does not exist. For more information, refer to [Image Pull Policy](https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy).
+        - **Registry Secret:** This is optional. If the target repository requires a secret for access, you need to [create a secret](../configmaps-secrets/create-secret.md) first.
+    - **Privileged Container:** By default, containers cannot access any devices on the host. Enabling the privileged container allows access to all devices on the host and grants all privileges of running processes on the host.
+    - **CPU/Memory Request:** Specify the request value (minimum resource needed) and limit value (maximum resource allowed) for CPU/memory resources. Configure resources as needed to avoid waste and system failures due to resource overages. Default values are displayed in the figure.
+    - **GPU Configuration:** Configure GPU usage for the container, supporting only positive integers. The GPU quota setting allows configuring the container to use an entire GPU or part of a vGPU. For instance, entering __8__ for a GPU with 8 cores means the container uses the entire GPU, while entering __1__ configures 1 core of the vGPU for the container.
     
-    > Before setting the GPU, the administrator needs to pre-install the GPU and driver plugin on the cluster node 
-      and enable the GPU feature in the [Cluster Settings](../clusterops/cluster-settings.md).
+    > Before configuring the GPU, the administrator must pre-install the GPU and driver plugin on the cluster node and enable the GPU feature in the [Cluster Settings](../clusterops/cluster-settings.md).
 
 === "Lifecycle (optional)"
 
-    Set the commands that need to be executed when the container starts, after starting, and before stopping. For details, refer to [Container Lifecycle Setting](pod-config/lifecycle.md).
+    Set the commands to execute when the container starts, after it starts, and before it stops. For details, refer to [Container Lifecycle Setting](pod-config/lifecycle.md).
 
     ![Lifecycle](../images/deploy06.png)
 
 === "Health Check (optional)"
 
-    It is used to judge the health status of containers and applications, which helps to improve the availability of applications. For details, refer to [Container Health Check Setting](pod-config/health-check.md).
+    This is used to assess the health status of containers and applications, which helps improve application availability. For details, refer to [Container Health Check Setting](pod-config/health-check.md).
     
     ![Health Check](../images/deploy07.png)    
 
-=== "Environment variables (optional)"
+=== "Environment Variables (optional)"
 
-    Configure container parameters within the Pod, add environment variables or pass setting to the Pod, etc. For details, refer to [Container environment variable setting](pod-config/env-variables.md).
+    Configure container parameters within the Pod, add environment variables, or pass settings to the Pod, etc. For details, refer to [Container Environment Variable Setting](pod-config/env-variables.md).
 
-    ![Environment variables](../images/deploy08.png)
+    ![Environment Variables](../images/deploy08.png)
 
-=== "Data storage (optional)"
+=== "Data Storage (optional)"
 
-    Configure the settings for container mounting data volumes and data persistence. For details, refer to [Container Data Storage Setting](pod-config/env-variables.md).
+    Configure settings for mounting data volumes and ensuring data persistence. For details, refer to [Container Data Storage Setting](pod-config/env-variables.md).
 
-    ![Data storage](../images/deploy09.png)
+    ![Data Storage](../images/deploy09.png)
 
-=== "Security settings (optional)"
+=== "Security Settings (optional)"
 
-    Containers are securely isolated through Linux's built-in account authority isolation mechanism. You can limit container permissions by using account UIDs (digital identity tokens) with different permissions. For example, enter __0__ to use the privileges of the root account.
+    Containers are securely isolated using Linux's built-in account authority isolation mechanism. You can limit container permissions by using account UIDs (digital identity tokens) with different permissions. For example, entering __0__ gives the container the privileges of the root account.
     
-    ![Security settings](../images/deploy10.png)
+    ![Security Settings](../images/deploy10.png)
 
-### Service settings
+### Service Settings
 
-Configure [Service](../network/create-services.md) for the deployment, so that the deployment can be accessed externally.
+Configure a [Service](../network/create-services.md) for the deployment to allow external access.
 
 1. Click the __Create Service__ button.
 
     ![Create Service](../images/deploy12.png)
 
-2. Refer to [Create Service](../network/create-services.md) to configure service parameters.
+2. Refer to [Create Service](../network/create-services.md) to configure the service parameters.
 
     ![Service Settings](../images/deploy13.png)
 
-3. Click __OK__ and click __Next__ .
+3. Click __OK__ and then click __Next__.
 
-### Advanced settings
+### Advanced Settings
 
-Advanced setting includes four parts: Network Settings, Upgrade Policy, Scheduling Policies, Labels and Annotations. You can click the tabs below to view the setting requirements of each part.
+Advanced settings include four sections: Network Settings, Upgrade Policy, Scheduling Policies, and Labels and Annotations. Click the tabs below to view the setting requirements for each section.
 
 === "Network Settings"
 
-    1. For container NIC setting, refer to [Workload Usage IP Pool](https://docs.daocloud.io/network/config/use-ippool/usage/)
-    2. DNS setting
+    1. For container NIC settings, refer to [Workload Usage IP Pool](https://docs.daocloud.io/network/config/use-ippool/usage/)
+    2. DNS Settings
 
-    In some cases, the application will have redundant DNS queries. Kubernetes provides DNS-related setting options for applications, which can effectively reduce redundant DNS queries and increase business concurrency in certain cases.
+    In some cases, applications may generate redundant DNS queries. Kubernetes offers DNS-related setting options to help reduce these queries and increase application concurrency when applicable.
     
-    - DNS Policy
+    - **DNS Policy**
     
-        - Default: Make container use kubelet's __-The domain name resolution file pointed to by the -resolv-conf__ parameter. This setting can only resolve external domain names registered on the Internet, but cannot resolve cluster internal domain names, and there is no invalid DNS query.
-        - ClusterFirstWithHostNet: The domain name file of the host to which the application is connected.
-        - ClusterFirst: application docking with Kube-DNS/CoreDNS.
-        - None: New option value introduced in Kubernetes v1.9 (Beta in v1.10). After setting to None, dnsConfig must be set. At this time, the domain name resolution file of the container will be completely generated through the setting of dnsConfig.
+        - **Default:** Makes the container use the kubelet's __-resolv-conf__ parameter for domain name resolution. This setting can resolve external domain names registered on the Internet but not internal cluster domain names, and it does not generate invalid DNS queries.
+        - **ClusterFirstWithHostNet:** Uses the domain name file of the host to which the application is connected.
+        - **ClusterFirst:** Connects the application with Kube-DNS/CoreDNS.
+        - **None:** A new option introduced in Kubernetes v1.9 (Beta in v1.10). When set to None, dnsConfig must be set. The container's domain name resolution file will be entirely generated based on the dnsConfig settings.
     
-    - Nameservers: fill in the address of the domain name server, such as __10.6.175.20__ .
-    - Search domains: DNS search domain list for domain name query. When specified, the provided search domain list will be merged into the search field of the domain name resolution file generated based on dnsPolicy, and duplicate domain names will be deleted. Kubernetes allows up to 6 search domains.
-    - Options: Setting options for DNS, where each object can have a name attribute (required) and a value attribute (optional). The content in this field will be merged into the options field of the domain name resolution file generated based on dnsPolicy. If some options of dnsConfig options conflict with the options of the domain name resolution file generated based on dnsPolicy, they will be overwritten by dnsConfig.
-    - Host Alias: the alias set for the host.
+    - **Nameservers:** Enter the address of the domain name server, e.g., __10.6.175.20__.
+    - **Search Domains:** List of DNS search domains for domain name queries. Specifying this will merge the provided search domain list into the search field of the domain name resolution file generated based on dnsPolicy, removing any duplicate domains. Kubernetes allows up to 6 search domains.
+    - **Options:** Set options for DNS, where each object can have a name attribute (required) and a value attribute (optional). The content in this field will be merged into the options field of the domain name resolution file generated based on dnsPolicy. If any options from dnsConfig conflict with those in the resolution file, they will be overridden by dnsConfig.
+    - **Host Alias:** Set the alias for the host.
 
     ![DNS](../images/deploy17.png)
 
 === "Upgrade Policy"
 
-    - Upgrade Mode: __Rolling upgrade__ refers to gradually replacing instances of the old version with instances of the new version. During the upgrade process, business traffic will be load-balanced to the old and new instances at the same time, so the business will not be interrupted. __Rebuild and upgrade__ refers to deleting the workload instance of the old version first, and then installing the specified new version. During the upgrade process, the business will be interrupted.
-    - Max Unavailable: Specify the maximum value or ratio of unavailable pods during the workload update process, the default is 25%. If it is equal to the number of instances, there is a risk of service interruption.
-    - Max Surge: The maximum or ratio of the total number of Pods exceeding the desired replica count of Pods during a Pod update. Default is 25%.
-    - Revision History Limit: Set the number of old versions retained when the version is rolled back. The default is 10.
-    - Minimum Ready: The minimum time for a Pod to be ready. Only after this time is the Pod considered available. The default is 0 seconds.
-    - Upgrade Max Duration: If the deployment is not successful after the set time, the workload will be marked as failed. Default is 600 seconds.
-    - Graceful Period: The execution period (0-9,999 seconds) of the command before the workload stops, the default is 30 seconds.
+    - **Upgrade Mode:**
+        - __Rolling upgrade__ means gradually replacing instances of the old version with instances of the new version. During this process, business traffic will be load-balanced between the old and new instances, ensuring uninterrupted service.
+        - __Rebuild and upgrade__ means deleting the old version's workload instance first, followed by installing the specified new version, which will interrupt service during the upgrade.
+    - **Max Unavailable:** Specify the maximum number or ratio of unavailable Pods during the workload update process, with a default of 25%. If this equals the total number of instances, there is a risk of service interruption.
+    - **Max Surge:** The maximum number or ratio of Pods exceeding the desired replica count during a Pod update. Default is 25%.
+    - **Revision History Limit:** Set the number of old versions retained when rolling back a version. The default is 10.
+    - **Minimum Ready:** Minimum time for a Pod to be ready. Only after this time is the Pod considered available. The default is 0 seconds.
+    - **Upgrade Max Duration:** If the deployment fails after the specified time, the workload will be marked as failed. The default is 600 seconds.
+    - **Graceful Period:** The time (0-9,999 seconds) to execute commands before stopping the workload, with a default of 30 seconds.
 
     ![Upgrade Policy](../images/deploy14.png)
 
 === "Scheduling Policies"
 
-    - Toleration time: When the node where the workload instance is located is unavailable, the time for rescheduling the workload instance to other available nodes, the default is 300 seconds.
-    - Node Affinity: According to the label on the node, constrain which nodes the Pod can be scheduled on.
-    - Workload Affinity: Constrains which nodes a Pod can be scheduled to based on the labels of the Pods already running on the node.
-    - Workload Anti-affinity: Constrains which nodes a Pod cannot be scheduled to based on the labels of Pods already running on the node.
+    - **Toleration Time:** The time allowed to reschedule the workload instance to other available nodes when the original node becomes unavailable. Default is 300 seconds.
+    - **Node Affinity:** Constraints on which nodes the Pod can be scheduled based on node labels.
+    - **Workload Affinity:** Constraints on which nodes a Pod can be scheduled based on the labels of Pods already running on those nodes.
+    - **Workload Anti-affinity:** Constraints on which nodes a Pod cannot be scheduled based on the labels of Pods already running on those nodes.
     
-    > For details, refer to [Scheduling Policy](pod-config/scheduling-policy.md).
+    > For more details, refer to [Scheduling Policy](pod-config/scheduling-policy.md).
 
     ![Scheduling Policy](../images/deploy15.png)
 
 === "Labels and Annotations"
 
-    You can click the __Add__ button to add tags and annotations to workloads and pods.
+    You can click the __Add__ button to add labels and annotations to workloads and Pods.
     
     ![Labels and Annotations](../images/deploy16.png)
 
-## Create from YAML
+## Creating a Deployment from YAML
 
-In addition to image, you can also create deployments more quickly through YAML files.
+In addition to using an image, you can also create deployments quickly through YAML files.
 
-1. Click __Clusters__ on the left navigation bar, and then click the name of the target cluster to enter the Cluster Details page.
+1. Click __Clusters__ in the left navigation bar, then select the target cluster to go to the Cluster Details page.
 
     ![Clusters](../images/deploy01.png)
 
-2. On the cluster details page, click __Workloads__ -> __Deployments__ in the left navigation bar, and then click the __Create from YAML__ button in the upper right corner of the page.
+2. On the Cluster Details page, click __Workloads__ -> __Deployments__ in the left navigation bar, then click the __Create from YAML__ button in the upper right corner.
 
     ![Deployments](../images/deploy02Yaml.png)
 
-3. Enter or paste the YAML file prepared in advance, click __OK__ to complete the creation.
+3. Enter or paste the pre-prepared YAML file and click __OK__ to complete the creation.
 
     ![Confirm](../images/deploy03Yaml.png)
 
@@ -222,10 +209,10 @@ In addition to image, you can also create deployments more quickly through YAML 
              app: nginx
          spec:
            containers:
-           -name: nginx
+           - name: nginx
              image: nginx:1.14.2
              ports:
              - containerPort: 80
     ```
 
-    1. Tell the Deployment to run 2 Pods that match this template
+    1. This Deployment instructs Kubernetes to run 2 Pods that match the specified template.
