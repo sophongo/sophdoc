@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#create-deployment">
+<a class="md-skip" href="#creating-a-deployment">
           Skip to content
         </a>
 </div>
@@ -323,38 +323,38 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-by-image">
+<a class="md-nav__link" href="#creating-a-deployment-from-an-image">
 <span class="md-ellipsis">
-      Create by image
+      Creating a Deployment from an Image
     </span>
 </a>
-<nav aria-label="Create by image" class="md-nav">
+<nav aria-label="Creating a Deployment from an Image" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#basic-information">
 <span class="md-ellipsis">
-      Basic information
+      Basic Information
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#container-settings">
 <span class="md-ellipsis">
-      Container settings
+      Container Settings
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#service-settings">
 <span class="md-ellipsis">
-      Service settings
+      Service Settings
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#advanced-settings">
 <span class="md-ellipsis">
-      Advanced settings
+      Advanced Settings
     </span>
 </a>
 </li>
@@ -362,9 +362,9 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-from-yaml">
+<a class="md-nav__link" href="#creating-a-deployment-from-yaml">
 <span class="md-ellipsis">
-      Create from YAML
+      Creating a Deployment from YAML
     </span>
 </a>
 </li>
@@ -629,38 +629,38 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-by-image">
+<a class="md-nav__link" href="#creating-a-deployment-from-an-image">
 <span class="md-ellipsis">
-      Create by image
+      Creating a Deployment from an Image
     </span>
 </a>
-<nav aria-label="Create by image" class="md-nav">
+<nav aria-label="Creating a Deployment from an Image" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#basic-information">
 <span class="md-ellipsis">
-      Basic information
+      Basic Information
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#container-settings">
 <span class="md-ellipsis">
-      Container settings
+      Container Settings
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#service-settings">
 <span class="md-ellipsis">
-      Service settings
+      Service Settings
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#advanced-settings">
 <span class="md-ellipsis">
-      Advanced settings
+      Advanced Settings
     </span>
 </a>
 </li>
@@ -668,9 +668,9 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-from-yaml">
+<a class="md-nav__link" href="#creating-a-deployment-from-yaml">
 <span class="md-ellipsis">
-      Create from YAML
+      Creating a Deployment from YAML
     </span>
 </a>
 </li>
@@ -687,203 +687,192 @@
 <a class="md-content__button md-icon" href="https://github.com/sophongo/sophdoc/raw/main/docs/en/end-user/kpanda/workloads/create-deployment.md" title="View source of this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
 </a>
-<h1 id="create-deployment">Create Deployment<a class="headerlink" href="#create-deployment" title="Permanent link">¶</a></h1>
-<p>This page describes how to create deployments through images and YAML files.</p>
-<p><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/">Deployment</a> is a common resource in Kubernetes, mainly <a href="https://kubernetes.io/docs/concepts/workloads/pods/">Pod</a> and <a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/">ReplicaSet</a> provide declarative updates, support elastic scaling, rolling upgrades, and version rollbacks features. Declare the desired Pod state in the Deployment, and the Deployment Controller will modify the current state through the ReplicaSet to make it reach the pre-declared desired state. Deployment is stateless and does not support data persistence. It is suitable for deploying stateless applications that do not need to save data and can be restarted and rolled back at any time.</p>
-<p>Through the container management module of AI platform, workloads on multicloud and multiclusters can be easily managed based on proper role permissions, including the creation of deployments, Full life cycle management such as update, deletion, elastic scaling, restart, and version rollback.</p>
+<h1 id="creating-a-deployment">Creating a Deployment<a class="headerlink" href="#creating-a-deployment" title="Permanent link">¶</a></h1>
+<p>This page outlines how to create deployments using images and YAML files.</p>
+<p>A <a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/">Deployment</a> is a widely used resource in Kubernetes. It primarily relies on <a href="https://kubernetes.io/docs/concepts/workloads/pods/">Pods</a> and <a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/">ReplicaSets</a> to provide declarative updates, support for elastic scaling, rolling upgrades, and version rollbacks. You specify the desired state of your Pods in the Deployment, and the Deployment Controller adjusts the current state through the ReplicaSet to achieve the desired outcome. Deployments are stateless and do not support data persistence, making them ideal for deploying stateless applications that don't need to retain data and can be restarted or rolled back at any time.</p>
+<p>With the container management module of the AI platform, workloads across multiple clouds and clusters can be easily managed based on appropriate role permissions. This includes creating deployments and managing their full lifecycle, such as updating, deleting, scaling, restarting, and rolling back versions.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
-<p>Before using image to create deployments, the following prerequisites need to be met:</p>
+<p>Before using an image to create deployments, ensure the following prerequisites are met:</p>
 <ul>
 <li>
-<p>In the Container Management module <a href="../clusters/integrate-cluster.html">Integrate Kubernetes Cluster</a> or <a href="../clusters/create-cluster.html">Create Kubernetes Cluster</a>, and can access the cluster UI interface.</p>
+<p>You have integrated a Kubernetes Cluster in the Container Management module as described in <a href="../clusters/integrate-cluster.html">Integrate Kubernetes Cluster</a> or <a href="../clusters/create-cluster.html">Create Kubernetes Cluster</a>, and you can access the cluster's UI interface.</p>
 </li>
 <li>
-<p>Create a <a href="../namespaces/createns.html">namespace</a> and a user.</p>
+<p>Create a <a href="../namespaces/createns.html">namespace</a> and <a href="../../register/index.html">a user</a>.</p>
 </li>
 <li>
-<p>The current operating user should have <a href="../permissions/permission-brief.html#ns-editor">NS Editor</a> or higher permissions, for details, refer to <a href="../namespaces/createns.html">Namespace Authorization</a>.</p>
+<p>The current user must have <a href="../permissions/permission-brief.html#ns-editor">NS Editor</a> permissions or higher. For more details, refer to <a href="../namespaces/createns.html">Namespace Authorization</a>.</p>
 </li>
 <li>
-<p>When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.</p>
+<p>If there are multiple containers in a single instance, ensure that the ports used by the containers do not conflict; otherwise, the deployment will fail.</p>
 </li>
 </ul>
-<h2 id="create-by-image">Create by image<a class="headerlink" href="#create-by-image" title="Permanent link">¶</a></h2>
-<p>Follow the steps below to create a deployment by image.</p>
+<h2 id="creating-a-deployment-from-an-image">Creating a Deployment from an Image<a class="headerlink" href="#creating-a-deployment-from-an-image" title="Permanent link">¶</a></h2>
+<p>Follow these steps to create a deployment using an image:</p>
 <ol>
 <li>
-<p>Click <strong>Clusters</strong> on the left navigation bar, and then click the name of the target cluster to enter the Cluster Details page.</p>
+<p>Click <strong>Clusters</strong> in the left navigation bar, then select the target cluster to go to the Cluster Details page.</p>
 <p><img alt="Clusters" src="../images/deploy01.png"/></p>
 </li>
 <li>
-<p>On the cluster details page, click <strong>Workloads</strong> -&gt; <strong>Deployments</strong> in the left navigation bar, and then click the <strong>Create by Image</strong> button in the upper right corner of the page.</p>
+<p>On the Cluster Details page, click <strong>Workloads</strong> -&gt; <strong>Deployments</strong> in the left navigation bar, then click the <strong>Create by Image</strong> button in the upper right corner.</p>
 <p><img alt="Deployment" src="../images/deploy02.png"/></p>
 </li>
 <li>
-<p>Fill in <a href="create-deployment.html#basic-information">Basic Information</a>, <a href="create-deployment.html#container-settings">Container Setting</a>, <a href="create-deployment.html#service-settings">Service Setting</a>, <a href="create-deployment.html#advanced-settings">Advanced Setting</a> in turn, click <strong>OK</strong> in the lower right corner of the page to complete the creation.</p>
-<p>The system will automatically return the list of <strong>Deployments</strong> . Click <strong>┇</strong> on the right side of the list to perform operations such as update, delete, elastic scaling, restart, and version rollback on the load. If the workload status is abnormal, please check the specific abnormal information, refer to <a href="pod-config/workload-status.html">Workload Status</a>.</p>
+<p>Fill in the <a href="create-deployment.html#basic-information">Basic Information</a>, <a href="create-deployment.html#container-settings">Container Settings</a>, <a href="create-deployment.html#service-settings">Service Settings</a>, and <a href="create-deployment.html#advanced-settings">Advanced Settings</a> in order. Click <strong>OK</strong> in the lower right corner to complete the creation.</p>
+<p>The system will automatically return to the list of <strong>Deployments</strong>. Click <strong>┇</strong> on the right side of the list to perform operations such as updating, deleting, scaling, restarting, and rolling back the workload. If the workload status is abnormal, please check the specific error information and refer to <a href="pod-config/workload-status.html">Workload Status</a>.</p>
 <p><img alt="Menu" src="../images/deploy18.png"/></p>
 </li>
 </ol>
-<h3 id="basic-information">Basic information<a class="headerlink" href="#basic-information" title="Permanent link">¶</a></h3>
+<h3 id="basic-information">Basic Information<a class="headerlink" href="#basic-information" title="Permanent link">¶</a></h3>
 <ul>
-<li>Workload Name: can contain up to 63 characters, can only contain lowercase letters, numbers, and a separator ("-"), and must start and end with a lowercase letter or number, such as deployment-01. The name of the same type of workload in the same namespace cannot be repeated, and the name of the workload cannot be changed after the workload is created.</li>
-<li>Namespace: Select the namespace where the newly created payload will be deployed. The default namespace is used by default. If you can't find the desired namespace, you can go to <a href="../namespaces/createns.html">Create a new namespace</a> according to the prompt on the page.</li>
-<li>Pods: Enter the number of Pod instances for the load, and one Pod instance is created by default.</li>
-<li>Description: Enter the description information of the payload and customize the content. The number of characters cannot exceed 512.</li>
+<li><strong>Workload Name:</strong> Can be up to 63 characters long, can only contain lowercase letters, numbers, and the separator ("-"), and must start and end with a lowercase letter or number, such as deployment-01. Names of the same type of workload within the same namespace cannot be duplicated, and once created, the workload name cannot be changed.</li>
+<li><strong>Namespace:</strong> Select the namespace for the new workload. By default, the default namespace is used. If you can't find the desired namespace, you can create a new one by following the prompt on the page.</li>
+<li><strong>Pods:</strong> Specify the number of Pod instances for the workload; one Pod instance is created by default.</li>
+<li><strong>Description:</strong> Enter a description for the workload, with a maximum of 512 characters.</li>
 </ul>
 <p><img alt="Basic Information" src="../images/deploy04.png"/></p>
-<h3 id="container-settings">Container settings<a class="headerlink" href="#container-settings" title="Permanent link">¶</a></h3>
-<p>Container setting is divided into six parts: basic information, life cycle, health check, environment variables, data storage, and security settings. Click the tab below to view the requirements of each part.</p>
+<h3 id="container-settings">Container Settings<a class="headerlink" href="#container-settings" title="Permanent link">¶</a></h3>
+<p>Container settings are divided into six sections: Basic Information, Lifecycle, Health Check, Environment Variables, Data Storage, and Security Settings. Click the tabs below to view the requirements for each section.</p>
 <blockquote>
-<p>Container setting is only configured for a single container. To add multiple containers to a pod, click <strong>+</strong> on the right to add multiple containers.</p>
+<p>Container settings are configured for a single container. To add multiple containers to a Pod, click <strong>+</strong> on the right to add more containers.</p>
 </blockquote>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><input id="__tabbed_1_5" name="__tabbed_1" type="radio"><input id="__tabbed_1_6" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Basic Information (Required)</label><label for="__tabbed_1_2">Lifecycle (optional)</label><label for="__tabbed_1_3">Health Check (optional)</label><label for="__tabbed_1_4">Environment variables (optional)</label><label for="__tabbed_1_5">Data storage (optional)</label><label for="__tabbed_1_6">Security settings (optional)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><input id="__tabbed_1_5" name="__tabbed_1" type="radio"><input id="__tabbed_1_6" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Basic Information (Required)</label><label for="__tabbed_1_2">Lifecycle (optional)</label><label for="__tabbed_1_3">Health Check (optional)</label><label for="__tabbed_1_4">Environment Variables (optional)</label><label for="__tabbed_1_5">Data Storage (optional)</label><label for="__tabbed_1_6">Security Settings (optional)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>When configuring container-related parameters, it is essential to correctly fill in the container name and image parameters; 
-otherwise, you will not be able to proceed to the next step. 
-After filling in the configuration according to the following requirements, click <strong>OK</strong>.</p>
+<p>When configuring container parameters, it is crucial to correctly fill in the container name and image parameters; otherwise, you won't be able to proceed to the next step. After completing the configuration according to the following requirements, click <strong>OK</strong>.</p>
 <p><img alt="Basic Info" src="../images/deploy05.png"/></p>
 <ul>
-<li>Container Type: The default is <code>Work Container</code>. For information on init containers, see the [K8s Official Documentation]
- (<a href="https://kubernetes.io/docs/concepts/workloads/pods/init-containers/">https://kubernetes.io/docs/concepts/workloads/pods/init-containers/</a>).</li>
-<li>Container Name: No more than 63 characters, supporting lowercase letters, numbers, and separators ("-"). 
-  It must start and end with a lowercase letter or number, for example, nginx-01.</li>
-<li>Image:<ul>
-<li>Image: Select an appropriate image from the list. When entering the image name, the default is to pull the image 
- from the official <a href="https://hub.docker.com/">DockerHub</a>.</li>
-<li>Image Version: Select an appropriate version from the dropdown list.</li>
-<li>Image Pull Policy: By checking <strong>Always pull the image</strong>, the image will be pulled from the repository each time 
-  the workload restarts/upgrades.
-  If unchecked, it will only pull the local image, and will pull from the repository only if the image does not exist locally.
-  For more details, refer to <a href="https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy">Image Pull Policy</a>.</li>
-<li>Registry Secret: Optional. If the target repository requires a Secret to access, you need to <a href="../configmaps-secrets/create-secret.html">create secret</a> first.</li>
+<li><strong>Container Type:</strong> The default is <code>Work Container</code>. For information on init containers, see the <a href="https://kubernetes.io/docs/concepts/workloads/pods/init-containers/">K8s Official Documentation</a>.</li>
+<li><strong>Container Name:</strong> Must be no more than 63 characters and can include lowercase letters, numbers, and the separator ("-"). It must start and end with a lowercase letter or number, e.g., nginx-01.</li>
+<li><strong>Image:</strong><ul>
+<li><strong>Image:</strong> Select an appropriate image from the list. By default, the image is pulled from the official <a href="https://hub.docker.com/">DockerHub</a>.</li>
+<li><strong>Image Version:</strong> Choose the desired version from the dropdown list.</li>
+<li><strong>Image Pull Policy:</strong> Checking <strong>Always pull the image</strong> ensures the image is pulled from the repository each time the workload restarts/upgrades. If unchecked, it will pull the local image and only pull from the repository if the local image does not exist. For more information, refer to <a href="https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy">Image Pull Policy</a>.</li>
+<li><strong>Registry Secret:</strong> This is optional. If the target repository requires a secret for access, you need to <a href="../configmaps-secrets/create-secret.html">create a secret</a> first.</li>
 </ul>
 </li>
-<li>Privileged Container: By default, the container cannot access any device on the host. After enabling the privileged container, 
-  the container can access all devices on the host and has all the privileges of running processes on the host.</li>
-<li>CPU/Memory Request: The request value (the minimum resource needed) and the limit value (the maximum resource allowed) 
-  for CPU/memory resources. Configure resources for the container as needed to avoid resource waste and system failures 
-  caused by container resource overages. Default values are shown in the figure.</li>
-<li>GPU Configuration: Configure GPU usage for the container, supporting only positive integers. 
-  The GPU quota setting supports configuring the container to exclusively use an entire GPU or part of a vGPU.
-  For example, for a GPU with 8 cores, entering the number <strong>8</strong> means the container exclusively uses the entire card, 
-  and entering the number <strong>1</strong> means configuring 1 core of the vGPU for the container.</li>
+<li><strong>Privileged Container:</strong> By default, containers cannot access any devices on the host. Enabling the privileged container allows access to all devices on the host and grants all privileges of running processes on the host.</li>
+<li><strong>CPU/Memory Request:</strong> Specify the request value (minimum resource needed) and limit value (maximum resource allowed) for CPU/memory resources. Configure resources as needed to avoid waste and system failures due to resource overages. Default values are displayed in the figure.</li>
+<li><strong>GPU Configuration:</strong> Configure GPU usage for the container, supporting only positive integers. The GPU quota setting allows configuring the container to use an entire GPU or part of a vGPU. For instance, entering <strong>8</strong> for a GPU with 8 cores means the container uses the entire GPU, while entering <strong>1</strong> configures 1 core of the vGPU for the container.</li>
 </ul>
 <blockquote>
-<p>Before setting the GPU, the administrator needs to pre-install the GPU and driver plugin on the cluster node 
-  and enable the GPU feature in the <a href="../clusterops/cluster-settings.html">Cluster Settings</a>.</p>
+<p>Before configuring the GPU, the administrator must pre-install the GPU and driver plugin on the cluster node and enable the GPU feature in the <a href="../clusterops/cluster-settings.html">Cluster Settings</a>.</p>
 </blockquote>
 </div>
 <div class="tabbed-block">
-<p>Set the commands that need to be executed when the container starts, after starting, and before stopping. For details, refer to <a href="pod-config/lifecycle.html">Container Lifecycle Setting</a>.</p>
+<p>Set the commands to execute when the container starts, after it starts, and before it stops. For details, refer to <a href="pod-config/lifecycle.html">Container Lifecycle Setting</a>.</p>
 <p><img alt="Lifecycle" src="../images/deploy06.png"/></p>
 </div>
 <div class="tabbed-block">
-<p>It is used to judge the health status of containers and applications, which helps to improve the availability of applications. For details, refer to <a href="pod-config/health-check.html">Container Health Check Setting</a>.</p>
+<p>This is used to assess the health status of containers and applications, which helps improve application availability. For details, refer to <a href="pod-config/health-check.html">Container Health Check Setting</a>.</p>
 <p><img alt="Health Check" src="../images/deploy07.png"/> </p>
 </div>
 <div class="tabbed-block">
-<p>Configure container parameters within the Pod, add environment variables or pass setting to the Pod, etc. For details, refer to <a href="pod-config/env-variables.html">Container environment variable setting</a>.</p>
-<p><img alt="Environment variables" src="../images/deploy08.png"/></p>
+<p>Configure container parameters within the Pod, add environment variables, or pass settings to the Pod, etc. For details, refer to <a href="pod-config/env-variables.html">Container Environment Variable Setting</a>.</p>
+<p><img alt="Environment Variables" src="../images/deploy08.png"/></p>
 </div>
 <div class="tabbed-block">
-<p>Configure the settings for container mounting data volumes and data persistence. For details, refer to <a href="pod-config/env-variables.html">Container Data Storage Setting</a>.</p>
-<p><img alt="Data storage" src="../images/deploy09.png"/></p>
+<p>Configure settings for mounting data volumes and ensuring data persistence. For details, refer to <a href="pod-config/env-variables.html">Container Data Storage Setting</a>.</p>
+<p><img alt="Data Storage" src="../images/deploy09.png"/></p>
 </div>
 <div class="tabbed-block">
-<p>Containers are securely isolated through Linux's built-in account authority isolation mechanism. You can limit container permissions by using account UIDs (digital identity tokens) with different permissions. For example, enter <strong>0</strong> to use the privileges of the root account.</p>
-<p><img alt="Security settings" src="../images/deploy10.png"/></p>
+<p>Containers are securely isolated using Linux's built-in account authority isolation mechanism. You can limit container permissions by using account UIDs (digital identity tokens) with different permissions. For example, entering <strong>0</strong> gives the container the privileges of the root account.</p>
+<p><img alt="Security Settings" src="../images/deploy10.png"/></p>
 </div>
 </div>
 </input></input></input></input></input></input></div>
-<h3 id="service-settings">Service settings<a class="headerlink" href="#service-settings" title="Permanent link">¶</a></h3>
-<p>Configure <a href="../network/create-services.html">Service</a> for the deployment, so that the deployment can be accessed externally.</p>
+<h3 id="service-settings">Service Settings<a class="headerlink" href="#service-settings" title="Permanent link">¶</a></h3>
+<p>Configure a <a href="../network/create-services.html">Service</a> for the deployment to allow external access.</p>
 <ol>
 <li>
 <p>Click the <strong>Create Service</strong> button.</p>
 <p><img alt="Create Service" src="../images/deploy12.png"/></p>
 </li>
 <li>
-<p>Refer to <a href="../network/create-services.html">Create Service</a> to configure service parameters.</p>
+<p>Refer to <a href="../network/create-services.html">Create Service</a> to configure the service parameters.</p>
 <p><img alt="Service Settings" src="../images/deploy13.png"/></p>
 </li>
 <li>
-<p>Click <strong>OK</strong> and click <strong>Next</strong> .</p>
+<p>Click <strong>OK</strong> and then click <strong>Next</strong>.</p>
 </li>
 </ol>
-<h3 id="advanced-settings">Advanced settings<a class="headerlink" href="#advanced-settings" title="Permanent link">¶</a></h3>
-<p>Advanced setting includes four parts: Network Settings, Upgrade Policy, Scheduling Policies, Labels and Annotations. You can click the tabs below to view the setting requirements of each part.</p>
+<h3 id="advanced-settings">Advanced Settings<a class="headerlink" href="#advanced-settings" title="Permanent link">¶</a></h3>
+<p>Advanced settings include four sections: Network Settings, Upgrade Policy, Scheduling Policies, and Labels and Annotations. Click the tabs below to view the setting requirements for each section.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><input id="__tabbed_2_4" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Network Settings</label><label for="__tabbed_2_2">Upgrade Policy</label><label for="__tabbed_2_3">Scheduling Policies</label><label for="__tabbed_2_4">Labels and Annotations</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ol>
-<li>For container NIC setting, refer to <a href="https://docs.daocloud.io/network/config/use-ippool/usage/">Workload Usage IP Pool</a></li>
-<li>DNS setting</li>
+<li>For container NIC settings, refer to <a href="https://docs.daocloud.io/network/config/use-ippool/usage/">Workload Usage IP Pool</a></li>
+<li>DNS Settings</li>
 </ol>
-<p>In some cases, the application will have redundant DNS queries. Kubernetes provides DNS-related setting options for applications, which can effectively reduce redundant DNS queries and increase business concurrency in certain cases.</p>
+<p>In some cases, applications may generate redundant DNS queries. Kubernetes offers DNS-related setting options to help reduce these queries and increase application concurrency when applicable.</p>
 <ul>
 <li>
-<p>DNS Policy</p>
+<p><strong>DNS Policy</strong></p>
 <ul>
-<li>Default: Make container use kubelet's <strong>-The domain name resolution file pointed to by the -resolv-conf</strong> parameter. This setting can only resolve external domain names registered on the Internet, but cannot resolve cluster internal domain names, and there is no invalid DNS query.</li>
-<li>ClusterFirstWithHostNet: The domain name file of the host to which the application is connected.</li>
-<li>ClusterFirst: application docking with Kube-DNS/CoreDNS.</li>
-<li>None: New option value introduced in Kubernetes v1.9 (Beta in v1.10). After setting to None, dnsConfig must be set. At this time, the domain name resolution file of the container will be completely generated through the setting of dnsConfig.</li>
+<li><strong>Default:</strong> Makes the container use the kubelet's <strong>-resolv-conf</strong> parameter for domain name resolution. This setting can resolve external domain names registered on the Internet but not internal cluster domain names, and it does not generate invalid DNS queries.</li>
+<li><strong>ClusterFirstWithHostNet:</strong> Uses the domain name file of the host to which the application is connected.</li>
+<li><strong>ClusterFirst:</strong> Connects the application with Kube-DNS/CoreDNS.</li>
+<li><strong>None:</strong> A new option introduced in Kubernetes v1.9 (Beta in v1.10). When set to None, dnsConfig must be set. The container's domain name resolution file will be entirely generated based on the dnsConfig settings.</li>
 </ul>
 </li>
 <li>
-<p>Nameservers: fill in the address of the domain name server, such as <strong>10.6.175.20</strong> .</p>
+<p><strong>Nameservers:</strong> Enter the address of the domain name server, e.g., <strong>10.6.175.20</strong>.</p>
 </li>
-<li>Search domains: DNS search domain list for domain name query. When specified, the provided search domain list will be merged into the search field of the domain name resolution file generated based on dnsPolicy, and duplicate domain names will be deleted. Kubernetes allows up to 6 search domains.</li>
-<li>Options: Setting options for DNS, where each object can have a name attribute (required) and a value attribute (optional). The content in this field will be merged into the options field of the domain name resolution file generated based on dnsPolicy. If some options of dnsConfig options conflict with the options of the domain name resolution file generated based on dnsPolicy, they will be overwritten by dnsConfig.</li>
-<li>Host Alias: the alias set for the host.</li>
+<li><strong>Search Domains:</strong> List of DNS search domains for domain name queries. Specifying this will merge the provided search domain list into the search field of the domain name resolution file generated based on dnsPolicy, removing any duplicate domains. Kubernetes allows up to 6 search domains.</li>
+<li><strong>Options:</strong> Set options for DNS, where each object can have a name attribute (required) and a value attribute (optional). The content in this field will be merged into the options field of the domain name resolution file generated based on dnsPolicy. If any options from dnsConfig conflict with those in the resolution file, they will be overridden by dnsConfig.</li>
+<li><strong>Host Alias:</strong> Set the alias for the host.</li>
 </ul>
 <p><img alt="DNS" src="../images/deploy17.png"/></p>
 </div>
 <div class="tabbed-block">
 <ul>
-<li>Upgrade Mode: <strong>Rolling upgrade</strong> refers to gradually replacing instances of the old version with instances of the new version. During the upgrade process, business traffic will be load-balanced to the old and new instances at the same time, so the business will not be interrupted. <strong>Rebuild and upgrade</strong> refers to deleting the workload instance of the old version first, and then installing the specified new version. During the upgrade process, the business will be interrupted.</li>
-<li>Max Unavailable: Specify the maximum value or ratio of unavailable pods during the workload update process, the default is 25%. If it is equal to the number of instances, there is a risk of service interruption.</li>
-<li>Max Surge: The maximum or ratio of the total number of Pods exceeding the desired replica count of Pods during a Pod update. Default is 25%.</li>
-<li>Revision History Limit: Set the number of old versions retained when the version is rolled back. The default is 10.</li>
-<li>Minimum Ready: The minimum time for a Pod to be ready. Only after this time is the Pod considered available. The default is 0 seconds.</li>
-<li>Upgrade Max Duration: If the deployment is not successful after the set time, the workload will be marked as failed. Default is 600 seconds.</li>
-<li>Graceful Period: The execution period (0-9,999 seconds) of the command before the workload stops, the default is 30 seconds.</li>
+<li><strong>Upgrade Mode:</strong><ul>
+<li><strong>Rolling upgrade</strong> means gradually replacing instances of the old version with instances of the new version. During this process, business traffic will be load-balanced between the old and new instances, ensuring uninterrupted service.</li>
+<li><strong>Rebuild and upgrade</strong> means deleting the old version's workload instance first, followed by installing the specified new version, which will interrupt service during the upgrade.</li>
+</ul>
+</li>
+<li><strong>Max Unavailable:</strong> Specify the maximum number or ratio of unavailable Pods during the workload update process, with a default of 25%. If this equals the total number of instances, there is a risk of service interruption.</li>
+<li><strong>Max Surge:</strong> The maximum number or ratio of Pods exceeding the desired replica count during a Pod update. Default is 25%.</li>
+<li><strong>Revision History Limit:</strong> Set the number of old versions retained when rolling back a version. The default is 10.</li>
+<li><strong>Minimum Ready:</strong> Minimum time for a Pod to be ready. Only after this time is the Pod considered available. The default is 0 seconds.</li>
+<li><strong>Upgrade Max Duration:</strong> If the deployment fails after the specified time, the workload will be marked as failed. The default is 600 seconds.</li>
+<li><strong>Graceful Period:</strong> The time (0-9,999 seconds) to execute commands before stopping the workload, with a default of 30 seconds.</li>
 </ul>
 <p><img alt="Upgrade Policy" src="../images/deploy14.png"/></p>
 </div>
 <div class="tabbed-block">
 <ul>
-<li>Toleration time: When the node where the workload instance is located is unavailable, the time for rescheduling the workload instance to other available nodes, the default is 300 seconds.</li>
-<li>Node Affinity: According to the label on the node, constrain which nodes the Pod can be scheduled on.</li>
-<li>Workload Affinity: Constrains which nodes a Pod can be scheduled to based on the labels of the Pods already running on the node.</li>
-<li>Workload Anti-affinity: Constrains which nodes a Pod cannot be scheduled to based on the labels of Pods already running on the node.</li>
+<li><strong>Toleration Time:</strong> The time allowed to reschedule the workload instance to other available nodes when the original node becomes unavailable. Default is 300 seconds.</li>
+<li><strong>Node Affinity:</strong> Constraints on which nodes the Pod can be scheduled based on node labels.</li>
+<li><strong>Workload Affinity:</strong> Constraints on which nodes a Pod can be scheduled based on the labels of Pods already running on those nodes.</li>
+<li><strong>Workload Anti-affinity:</strong> Constraints on which nodes a Pod cannot be scheduled based on the labels of Pods already running on those nodes.</li>
 </ul>
 <blockquote>
-<p>For details, refer to <a href="pod-config/scheduling-policy.html">Scheduling Policy</a>.</p>
+<p>For more details, refer to <a href="pod-config/scheduling-policy.html">Scheduling Policy</a>.</p>
 </blockquote>
 <p><img alt="Scheduling Policy" src="../images/deploy15.png"/></p>
 </div>
 <div class="tabbed-block">
-<p>You can click the <strong>Add</strong> button to add tags and annotations to workloads and pods.</p>
+<p>You can click the <strong>Add</strong> button to add labels and annotations to workloads and Pods.</p>
 <p><img alt="Labels and Annotations" src="../images/deploy16.png"/></p>
 </div>
 </div>
 </input></input></input></input></div>
-<h2 id="create-from-yaml">Create from YAML<a class="headerlink" href="#create-from-yaml" title="Permanent link">¶</a></h2>
-<p>In addition to image, you can also create deployments more quickly through YAML files.</p>
+<h2 id="creating-a-deployment-from-yaml">Creating a Deployment from YAML<a class="headerlink" href="#creating-a-deployment-from-yaml" title="Permanent link">¶</a></h2>
+<p>In addition to using an image, you can also create deployments quickly through YAML files.</p>
 <ol>
 <li>
-<p>Click <strong>Clusters</strong> on the left navigation bar, and then click the name of the target cluster to enter the Cluster Details page.</p>
+<p>Click <strong>Clusters</strong> in the left navigation bar, then select the target cluster to go to the Cluster Details page.</p>
 <p><img alt="Clusters" src="../images/deploy01.png"/></p>
 </li>
 <li>
-<p>On the cluster details page, click <strong>Workloads</strong> -&gt; <strong>Deployments</strong> in the left navigation bar, and then click the <strong>Create from YAML</strong> button in the upper right corner of the page.</p>
+<p>On the Cluster Details page, click <strong>Workloads</strong> -&gt; <strong>Deployments</strong> in the left navigation bar, then click the <strong>Create from YAML</strong> button in the upper right corner.</p>
 <p><img alt="Deployments" src="../images/deploy02Yaml.png"/></p>
 </li>
 <li>
-<p>Enter or paste the YAML file prepared in advance, click <strong>OK</strong> to complete the creation.</p>
+<p>Enter or paste the pre-prepared YAML file and click <strong>OK</strong> to complete the creation.</p>
 <p><img alt="Confirm" src="../images/deploy03Yaml.png"/></p>
 </li>
 </ol>
@@ -904,13 +893,13 @@ After filling in the configuration according to the following requirements, clic
 <a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">         </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx</span>
 <a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">     </span><span class="nt">spec</span><span class="p">:</span>
 <a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">       </span><span class="nt">containers</span><span class="p">:</span>
-<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">       </span><span class="nt">-name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx</span>
-<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">         </span><span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx:1.14.2</span>
-<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">         </span><span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">         </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx:1.14.2</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">         </span><span class="nt">ports</span><span class="p">:</span>
 <a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span>
 </code></pre></div>
 <ol>
-<li>Tell the Deployment to run 2 Pods that match this template</li>
+<li>This Deployment instructs Kubernetes to run 2 Pods that match the specified template.</li>
 </ol>
 </details>
 <aside class="md-source-file">
@@ -918,7 +907,7 @@ After filling in the configuration according to the following requirements, clic
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2024</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">

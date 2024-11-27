@@ -735,12 +735,12 @@
 </thead>
 <tbody>
 <tr>
-<td>路径（ Path）</td>
-<td>访问的请求路径。如： 示例中的 /healthz  路径</td>
+<td>路径（Path）</td>
+<td>访问的请求路径。如示例中的 /healthz 路径</td>
 </tr>
 <tr>
-<td>端口(Port)</td>
-<td>服务监听端口。 如： 示例中的 8080 端口</td>
+<td>端口（Port）</td>
+<td>服务监听端口。 如示例中的 8080 端口</td>
 </tr>
 <tr>
 <td>协议</td>
@@ -868,7 +868,11 @@
 <a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">      </span><span class="nt">initialDelaySeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"> </span><span class="c1"># kubelet 在执行第一次探测前等待 5 秒</span>
 <a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">      </span><span class="nt">periodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w">  </span><span class="c1">#kubelet 每 5 秒执行一次存活探测</span>
 </code></pre></div>
-<p><strong>periodSeconds</strong> 字段指定了 kubelet 每 5 秒执行一次存活探测， <strong>initialDelaySeconds</strong> 字段指定 kubelet 在执行第一次探测前等待 5 秒。按照设定规则，集群周期性的通过 kubelet 在容器内执行命令 <strong>cat /tmp/healthy</strong> 来进行探测。 如果命令执行成功并且返回值为 0，kubelet 就会认为这个容器是健康存活的。 如果这个命令返回非 0 值，kubelet 会杀死这个容器并重新启动它。</p>
+<p><code>periodSeconds</code> 字段指定了 kubelet 每 5 秒执行一次存活探测，
+<code>initialDelaySeconds</code> 字段指定 kubelet 在执行第一次探测前等待 5 秒。
+按照设定规则，集群周期性的通过 kubelet 在容器内执行命令 <strong>cat /tmp/healthy</strong> 来进行探测。
+如果命令执行成功并且返回值为 0，kubelet 就会认为这个容器是健康存活的。
+如果这个命令返回非 0 值，kubelet 会杀死这个容器并重新启动它。</p>
 <h3 id="_4">使用启动前检查保护慢启动容器<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <p>有些应用在启动时需要较长的初始化时间，需要使用相同的命令来设置启动探测，针对 HTTP 或 TCP 检测，可以通过将 <strong>failureThreshold * periodSeconds</strong> 参数设置为足够长的时间来应对启动需要较长时间的场景。</p>
 <p><strong>YAML 示例：</strong></p>
@@ -891,13 +895,13 @@
 <a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">  </span><span class="nt">failureThreshold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span>
 <a href="#__codelineno-3-18" id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">  </span><span class="nt">periodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
 </code></pre></div>
-<p>如上设置，应用将有最多 5 分钟（30 * 10 = 300s）的时间来完成启动过程， 一旦启动探测成功，存活探测任务就会接管对容器的探测，对容器死锁作出快速响应。 如果启动探测一直没有成功，容器会在 300 秒后被杀死，并且根据 <strong>restartPolicy</strong> 来 执行进一步处置。</p>
+<p>如上设置，应用将有最多 5 分钟（<code>30 * 10 = 300s</code>）的时间来完成启动过程， 一旦启动探测成功，存活探测任务就会接管对容器的探测，对容器死锁作出快速响应。 如果启动探测一直没有成功，容器会在 300 秒后被杀死，并且根据 <strong>restartPolicy</strong> 来 执行进一步处置。</p>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="最后更新">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年11月12日</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年11月27日</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="贡献者">
@@ -905,6 +909,9 @@
 </span>
 <span>GitHub</span>
 <nav>
+<a class="md-author" href="https://github.com/windsonsea" title="@windsonsea">
+<img alt="windsonsea" src="https://avatars.githubusercontent.com/u/79828097?v=4&amp;size=72"/>
+</a>
 <a class="md-author" href="https://github.com/samzong" title="@samzong">
 <img alt="samzong" src="https://avatars.githubusercontent.com/u/13782141?v=4&amp;size=72"/>
 </a>
