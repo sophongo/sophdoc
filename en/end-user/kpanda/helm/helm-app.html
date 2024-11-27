@@ -356,9 +356,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#view-helm-operation-records">
+<a class="md-nav__link" href="#view-helm-records">
 <span class="md-ellipsis">
-      View Helm operation records
+      View Helm records
     </span>
 </a>
 </li>
@@ -607,9 +607,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#view-helm-operation-records">
+<a class="md-nav__link" href="#view-helm-records">
 <span class="md-ellipsis">
-      View Helm operation records
+      View Helm records
     </span>
 </a>
 </li>
@@ -655,20 +655,24 @@
 <ol>
 <li>
 <p>Click a cluster name to enter <strong>Cluster Details</strong> .</p>
+<p><img alt="name" src="../images/install-helm01.png"/></p>
 </li>
 <li>
-<p>In the left navigation bar, click <strong>Helm Apps</strong> -&gt; <strong>Helm Chart</strong> to enter the Helm chart page.</p>
+<p>In the left navigation bar, click <strong>Helm Apps</strong> -&gt; <strong>Helm Charts</strong> to enter the Helm chart page.</p>
 <p>On the Helm chart page, select the <a href="helm-repo.html">Helm repository</a> named <strong>addon</strong> , and all the Helm chart templates under the <strong>addon</strong> repository will be displayed on the interface.
- Click the Chart named <strong>cert-manager</strong> .</p>
+ For instance, click the Chart named <strong>cert-manager</strong> .</p>
+<p><img alt="card" src="../images/install-helm02.png"/></p>
 </li>
 <li>
 <p>On the installation page, you can see the relevant detailed information of the Chart, select the version to be installed in the upper right corner of the interface, and click the <strong>Install</strong> button. Here select v1.9.1 version for installation.</p>
+<p><img alt="install" src="../images/install-helm03.png"/></p>
 </li>
 <li>
 <p>Configure <strong>Name</strong> , <strong>Namespace</strong> and <strong>Version Information</strong> . You can also customize arguments by modifying YAML in the <strong>argument Configuration</strong> area below. Click <strong>OK</strong> .</p>
+<p><img alt="configure" src="../images/install-helm04.png"/></p>
 </li>
 <li>
-<p>The system will automatically return to the list of Helm apps, and the status of the newly created Helm app is <strong>Installing</strong> , and the status will change to <strong>Running</strong> after a period of time.</p>
+<p>The system will automatically return to the list of Helm apps, and the status of the newly created Helm app is <strong>Installing</strong> , and the status will change to <strong>Running</strong> after a period.</p>
 </li>
 </ol>
 <h2 id="update-the-helm-app">Update the Helm app<a class="headerlink" href="#update-the-helm-app" title="Permanent link">¶</a></h2>
@@ -676,33 +680,40 @@
 <p>Follow the steps below to update the Helm app.</p>
 <ol>
 <li>
-<p>Click a cluster name to enter <strong>Cluster Details</strong> .</p>
+<p>Click a cluster name to enter <strong>Cluster Details</strong></p>
+<p><img alt="name" src="../images/install-helm01.png"/></p>
 </li>
 <li>
 <p>In the left navigation bar, click <strong>Helm Apps</strong> to enter the Helm app list page.</p>
-<p>On the Helm app list page, select the Helm app that needs to be updated, click the <strong>...</strong> operation button on the right side of the list, and select the <strong>Update</strong> operation in the drop-down selection.</p>
+<p>On the Helm app list page, select the Helm app that needs to be updated, click the <strong>┇</strong> operation button on the right side of the list, and select the <strong>Update</strong> operation in the drop-down selection.</p>
+<p><img alt="details" src="../images/update-helm01.png"/></p>
 </li>
 <li>
 <p>After clicking the <strong>Update</strong> button, the system will jump to the update interface, where you can update the Helm app as needed. Here we take updating the http port of the <strong>dao-2048</strong> application as an example.</p>
+<p><img alt="update" src="../images/update-helm02.png"/></p>
 </li>
 <li>
 <p>After modifying the proper arguments. You can click the <strong>Change</strong> button under the argument configuration to compare the files before and after the modification. After confirming that there is no error, click the <strong>OK</strong> button at the bottom to complete the update of the Helm app.</p>
+<p><img alt="change" src="../images/update-helm03.png"/></p>
 </li>
 <li>
-<p>The system will automatically return to the Helm app list, and a pop-up window in the upper right corner will prompt <strong>update successful</strong> .</p>
+<p>The system will automatically return to the Helm app list, and a pop-up message in the upper right corner will prompt <strong>update successful</strong> .</p>
 </li>
 </ol>
-<h2 id="view-helm-operation-records">View Helm operation records<a class="headerlink" href="#view-helm-operation-records" title="Permanent link">¶</a></h2>
+<h2 id="view-helm-records">View Helm records<a class="headerlink" href="#view-helm-records" title="Permanent link">¶</a></h2>
 <p>Every installation, update, and deletion of Helm apps has detailed operation records and logs for viewing.</p>
 <ol>
 <li>
-<p>In the left navigation bar, click <strong>Cluster Operations</strong> -&gt; <strong>Recent Operations</strong> , and then select the <strong>Helm Operations</strong> tab at the top of the page. Each record corresponds to an install/update/delete operation.</p>
+<p>In the left navigation bar, click <strong>Operations and Maintenance</strong> -&gt; <strong>Latest Operations</strong> , and then select the <strong>Helm Operations</strong> tab at the top of the page. Each record corresponds to an install/update/delete operation.</p>
+<p><img alt="latest operations" src="../images/view-helm01.png"/></p>
 </li>
 <li>
-<p>To view the detailed log of each operation: Click <strong>┇</strong> on the right side of the list, and select <strong>Log</strong> from the pop-up menu.</p>
+<p>To view the detailed log of each operation: Click <strong>┇</strong> on the right side of the list, and select <strong>Logs</strong> from the pop-up menu.</p>
+<p><img alt="logs" src="../images/view-helm02.png"/></p>
 </li>
 <li>
 <p>At this point, the detailed operation log will be displayed in the form of console at the bottom of the page.</p>
+<p><img alt="detailed logs" src="../images/view-helm03.png"/></p>
 </li>
 </ol>
 <h2 id="delete-the-helm-app">Delete the Helm app<a class="headerlink" href="#delete-the-helm-app" title="Permanent link">¶</a></h2>
@@ -710,13 +721,16 @@
 <ol>
 <li>
 <p>Find the cluster where the Helm app to be deleted resides, click the cluster name, and enter <strong>Cluster Details</strong> .</p>
+<p><img alt="name" src="../images/install-helm01.png"/></p>
 </li>
 <li>
 <p>In the left navigation bar, click <strong>Helm Apps</strong> to enter the Helm app list page.</p>
-<p>On the Helm app list page, select the Helm app you want to delete, click the <strong>...</strong> operation button on the right side of the list, and select <strong>Delete</strong> from the drop-down selection.</p>
+<p>On the Helm app list page, select the Helm app you want to delete, click the <strong>┇</strong> operation button on the right side of the list, and select <strong>Delete</strong> from the drop-down selection.</p>
+<p><img alt="delete" src="../images/delete-helm01.png"/></p>
 </li>
 <li>
 <p>Enter the name of the Helm app in the pop-up window to confirm, and then click the <strong>Delete</strong> button.</p>
+<p><img alt="confirm" src="../images/delete-helm02.png"/></p>
 </li>
 </ol>
 <aside class="md-source-file">
