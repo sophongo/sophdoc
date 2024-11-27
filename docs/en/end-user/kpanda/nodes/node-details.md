@@ -1,4 +1,6 @@
 ---
+hide:
+  - toc
 MTPE: FanLin
 Date: 2024-02-27
 ---
@@ -8,8 +10,6 @@ Date: 2024-02-27
 After accessing or creating a cluster, you can view the information of each node in the cluster, including node status, labels, resource usage, Pod, monitoring information, etc.
 
 1. On the __Clusters__ page, click the name of the target cluster.
-
-    ![Clusters](../images/schedule01.png)
 
 2. Click __Nodes__ on the left navigation bar to view the node status, role, label, CPU/memory usage, IP address, and creation time.
 
