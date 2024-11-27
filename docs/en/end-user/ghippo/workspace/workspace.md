@@ -8,7 +8,7 @@ hide:
 A workspace is a resource category that represents a hierarchical relationship of resources.
 A workspace can contain resources such as clusters, namespaces, and registries. Typically,
 each workspace corresponds to a project and different resources can be allocated, and
-different users and user groups can be assigned to each workspace.
+different users and groups can be assigned to each workspace.
 
 Follow the steps below to create a workspace:
 
