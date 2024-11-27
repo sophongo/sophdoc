@@ -30,7 +30,7 @@ import java.io.IOException;
 /*
 Here, we inherit some of the functionalities from OIDC,
 it can be written like this.
-Keycloak does not have inheritance capabilities, please refer to how the OIDCIdentityProvider code is written.
+Keycloak does not have inheritance capabilities, refer to how the OIDCIdentityProvider code is written.
 public class OAuthIdentityProvider extends OIDCIdentityProvider {
 }
  */

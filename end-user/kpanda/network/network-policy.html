@@ -661,7 +661,7 @@
 <h3 id="yaml">YAML 创建<a class="headerlink" href="#yaml" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>在集群列表中点击目标集群的名称，然后在左侧导航栏点击 <strong>容器网络</strong> -&gt; <strong>网络策略</strong> -&gt; <strong>YAML 创建</strong> 。</p>
+<p>在集群列表中点击目标集群的名称，然后在左侧导航栏点击 <strong>容器网络</strong> -&gt; <strong>网络策略</strong> ，然后点击 <strong>YAML 创建</strong> 按钮</p>
 <p><img alt="路径" src="../../../images/networkpolicy01.png"/></p>
 </li>
 <li>
@@ -669,10 +669,38 @@
 <p><img alt="yaml" src="../../../images/networkpolicy02.png"/></p>
 </li>
 </ol>
+<p>以下是一个 YAMl 示例：</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NetworkPolicy</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networking.k8s.io/v1</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">allow-apiserver</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">calico-apiserver</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">  </span><span class="nt">uid</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1162d1c9-4225-4271-a302-062b9f06ec2c</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nt">resourceVersion</span><span class="p">:</span><span class="w"> </span><span class="s">'9960'</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="nt">generation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">  </span><span class="nt">creationTimestamp</span><span class="p">:</span><span class="w"> </span><span class="s">'2024-04-18T05:49:46Z'</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="nt">ownerReferences</span><span class="p">:</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">operator.tigera.io/v1</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">      </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">APIServer</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">      </span><span class="nt">uid</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2cc89f7b-e52b-4bf7-b47e-56efc8407f9a</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">      </span><span class="nt">controller</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">      </span><span class="nt">blockOwnerDeletion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="nt">spec</span><span class="p">:</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">  </span><span class="nt">podSelector</span><span class="p">:</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">      </span><span class="nt">apiserver</span><span class="p">:</span><span class="w"> </span><span class="s">'true'</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">  </span><span class="nt">ingress</span><span class="p">:</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">          </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5443</span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">  </span><span class="nt">policyTypes</span><span class="p">:</span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Ingress</span>
+</code></pre></div>
 <h3 id="_3">表单创建<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>在集群列表中点击目标集群的名称，然后在左侧导航栏点击 <strong>容器网络</strong> -&gt; <strong>网络策略</strong> -&gt; <strong>创建策略</strong> 。</p>
+<p>在集群列表中点击目标集群的名称，然后在左侧导航栏点击 <strong>容器网络</strong> -&gt; <strong>网络策略</strong> ，点击右侧的 <strong>创建策略</strong> 按钮。</p>
 <p><img alt="路径" src="../../../images/networkpolicy03.png"/></p>
 </li>
 <li>
@@ -724,14 +752,14 @@
 </li>
 </ul>
 <h2 id="_6">删除网络策略<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
-<p>有两种途径可以删除网络策略。支持通过表单或 YAML 文件更新网络策略。</p>
+<p>有两种途径可以删除网络策略。</p>
 <ul>
 <li>
-<p>在网络策略列表页面，找到需要更新的策略，在右侧的操作栏下选择 <strong>更新</strong> 即可通过表单更新，选择 <strong>编辑 YAML</strong> 即可通过 YAML 删除。</p>
+<p>在网络策略列表页面，找到需要删除的策略，在右侧的操作栏下选择 <strong>删除</strong></p>
 <p><img alt="删除" src="../../../images/networkpolicy12.png"/></p>
 </li>
 <li>
-<p>点击网络策略的名称，进入网络策略的详情页面后，在页面右上角选择 <strong>更新</strong> 即可通过表单更新，选择 <strong>编辑 YAML</strong> 即可通过 YAML 删除。</p>
+<p>点击网络策略的名称，进入网络策略的详情页面后，在页面右上角选择 <strong>删除</strong></p>
 <p><img alt="删除" src="../../../images/networkpolicy13.png"/></p>
 </li>
 </ul>
@@ -740,7 +768,7 @@
 <span class="md-icon" title="最后更新">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年10月31日</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年11月27日</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="贡献者">
@@ -748,6 +776,9 @@
 </span>
 <span>GitHub</span>
 <nav>
+<a class="md-author" href="https://github.com/windsonsea" title="@windsonsea">
+<img alt="windsonsea" src="https://avatars.githubusercontent.com/u/79828097?v=4&amp;size=72"/>
+</a>
 <a class="md-author" href="https://github.com/samzong" title="@samzong">
 <img alt="samzong" src="https://avatars.githubusercontent.com/u/13782141?v=4&amp;size=72"/>
 </a>

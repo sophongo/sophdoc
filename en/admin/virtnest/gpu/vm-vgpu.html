@@ -313,7 +313,7 @@
 <li>The GPU Operator does not automatically install GPU drivers in the virtual machine.</li>
 </ol>
 <h2 id="enable-iommu">Enable IOMMU<a class="headerlink" href="#enable-iommu" title="Permanent link">¶</a></h2>
-<p>To enable GPU passthrough, the cluster nodes need to have IOMMU enabled. Please refer to <a href="https://www.server-world.info/en/note?os=CentOS_7&amp;p=kvm&amp;f=10">How to Enable IOMMU</a>. If your cluster is running on a virtual machine, please consult your virtual machine platform provider.</p>
+<p>To enable GPU passthrough, the cluster nodes need to have IOMMU enabled. Refer to <a href="https://www.server-world.info/en/note?os=CentOS_7&amp;p=kvm&amp;f=10">How to Enable IOMMU</a>. If your cluster is running on a virtual machine, please consult your virtual machine platform provider.</p>
 <h2 id="build-vgpu-manager-image">Build vGPU Manager Image<a class="headerlink" href="#build-vgpu-manager-image" title="Permanent link">¶</a></h2>
 <p>Note: This step is only required when using NVIDIA vGPU. If you plan to use GPU passthrough only, skip this section.</p>
 <p>Follow these steps to build the vGPU Manager image and push it to the container registry:</p>

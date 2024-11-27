@@ -361,16 +361,16 @@
 <nav aria-label="Creating Network Policies" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#yaml-creation">
+<a class="md-nav__link" href="#create-from-yaml">
 <span class="md-ellipsis">
-      YAML Creation
+      Create from YAML
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#form-based-creation">
+<a class="md-nav__link" href="#create-from-wizard">
 <span class="md-ellipsis">
-      Form-Based Creation
+      Create from Wizard
     </span>
 </a>
 </li>
@@ -601,16 +601,16 @@
 <nav aria-label="Creating Network Policies" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#yaml-creation">
+<a class="md-nav__link" href="#create-from-yaml">
 <span class="md-ellipsis">
-      YAML Creation
+      Create from YAML
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#form-based-creation">
+<a class="md-nav__link" href="#create-from-wizard">
 <span class="md-ellipsis">
-      Form-Based Creation
+      Create from Wizard
     </span>
 </a>
 </li>
@@ -658,68 +658,98 @@
 <p>Currently, there are two methods available for creating network policies: YAML and form-based creation. Each method has its advantages and disadvantages, catering to different user needs.</p>
 <p>YAML creation requires fewer steps and is more efficient, but it has a higher learning curve as it requires familiarity with configuring network policy YAML files.</p>
 <p>Form-based creation is more intuitive and straightforward. Users can simply fill in the proper values based on the prompts. However, this method involves more steps.</p>
-<h3 id="yaml-creation">YAML Creation<a class="headerlink" href="#yaml-creation" title="Permanent link">¶</a></h3>
+<h3 id="create-from-yaml">Create from YAML<a class="headerlink" href="#create-from-yaml" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>In the cluster list, click the name of the target cluster, then navigate to <strong>Container Network</strong> -&gt; <strong>Network Policies</strong> -&gt; <strong>Create with YAML</strong> in the left navigation bar.</p>
+<p>In the cluster list, click the name of the target cluster, then navigate to <strong>Container Network</strong> -&gt; <strong>Network Policies</strong> , and click the <strong>Create from YAML</strong> button.</p>
+<p><img alt="button" src="../images/network-policy01.png"/></p>
 </li>
 <li>
 <p>In the pop-up dialog, enter or paste the pre-prepared YAML file, then click <strong>OK</strong> at the bottom of the dialog.</p>
 </li>
 </ol>
-<h3 id="form-based-creation">Form-Based Creation<a class="headerlink" href="#form-based-creation" title="Permanent link">¶</a></h3>
+<p>Here is a YAML example for NetworkPolicy.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NetworkPolicy</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networking.k8s.io/v1</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">allow-apiserver</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">calico-apiserver</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">  </span><span class="nt">uid</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1162d1c9-4225-4271-a302-062b9f06ec2c</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nt">resourceVersion</span><span class="p">:</span><span class="w"> </span><span class="s">'9960'</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="nt">generation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">  </span><span class="nt">creationTimestamp</span><span class="p">:</span><span class="w"> </span><span class="s">'2024-04-18T05:49:46Z'</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="nt">ownerReferences</span><span class="p">:</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">operator.tigera.io/v1</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">      </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">APIServer</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">      </span><span class="nt">uid</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2cc89f7b-e52b-4bf7-b47e-56efc8407f9a</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">      </span><span class="nt">controller</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">      </span><span class="nt">blockOwnerDeletion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="nt">spec</span><span class="p">:</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">  </span><span class="nt">podSelector</span><span class="p">:</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">      </span><span class="nt">apiserver</span><span class="p">:</span><span class="w"> </span><span class="s">'true'</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">  </span><span class="nt">ingress</span><span class="p">:</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">          </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5443</span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">  </span><span class="nt">policyTypes</span><span class="p">:</span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Ingress</span>
+</code></pre></div>
+<h3 id="create-from-wizard">Create from Wizard<a class="headerlink" href="#create-from-wizard" title="Permanent link">¶</a></h3>
 <ol>
 <li>
-<p>In the cluster list, click the name of the target cluster, then navigate to <strong>Container Network</strong> -&gt; <strong>Network Policies</strong> -&gt; <strong>Create Policy</strong> in the left navigation bar.</p>
+<p>In the cluster list, click the name of the target cluster, then navigate to <strong>Container Network</strong> -&gt; <strong>Network Policies</strong> , and click the <strong>Create Policy</strong> button.</p>
+<p><img alt="button" src="../images/network-policy01.png"/></p>
 </li>
 <li>
 <p>Fill in the basic information.</p>
 <p>The name and namespace cannot be changed after creation.</p>
+<p><img alt="basic" src="../images/network-policy02.png"/></p>
 </li>
 <li>
 <p>Fill in the policy configuration.</p>
 <p>The policy configuration includes ingress and egress policies. To establish a successful connection from a source Pod to a target Pod, both the egress policy of the source Pod and the ingress policy of the target Pod need to allow the connection. If either side does not allow the connection, the connection will fail.</p>
-<ul>
-<li>
-<p>Ingress Policy: Click <strong>➕</strong> to begin configuring the policy. Multiple policies can be configured. The effects of multiple network policies are cumulative. Only when all network policies are satisfied simultaneously can a connection be successfully established.</p>
-</li>
-<li>
-<p>Egress Policy</p>
-</li>
-</ul>
+<p><img alt="policy" src="../images/network-policy03.png"/></p>
 </li>
 </ol>
 <h2 id="viewing-network-policies">Viewing Network Policies<a class="headerlink" href="#viewing-network-policies" title="Permanent link">¶</a></h2>
 <ol>
 <li>
 <p>In the cluster list, click the name of the target cluster, then navigate to <strong>Container Network</strong> -&gt; <strong>Network Policies</strong> . Click the name of the network policy.</p>
+<p><img alt="name" src="../images/view-network01.png"/></p>
 </li>
 <li>
-<p>View the basic configuration, associated instances, ingress policies, and egress policies of the policy.</p>
+<p>View the basic configuration, instances, ingress policies, and egress policies of the policy.</p>
+<p><img alt="details" src="../images/view-network02.png"/></p>
 </li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Under the "Associated Instances" tab, you can view instance monitoring, logs, container lists, YAML files, events, and more.</p>
+<p>Under <strong>the Related Instances</strong> tab, you can view instances, logs, containers, YAML files, events, and more.</p>
 </div>
 <h2 id="updating-network-policies">Updating Network Policies<a class="headerlink" href="#updating-network-policies" title="Permanent link">¶</a></h2>
 <p>There are two ways to update network policies. You can either update them through the form or by using a YAML file.</p>
 <ul>
 <li>
 <p>On the network policy list page, find the policy you want to update, and choose <strong>Update</strong> in the action column on the right to update it via the form. Choose <strong>Edit YAML</strong> to update it using a YAML file.</p>
+<p><img alt="update" src="../images/update-network01.png"/></p>
 </li>
 <li>
 <p>Click the name of the network policy, then choose <strong>Update</strong> in the top right corner of the policy details page to update it via the form. Choose <strong>Edit YAML</strong> to update it using a YAML file.</p>
+<p><img alt="edit" src="../images/update-network02.png"/></p>
 </li>
 </ul>
 <h2 id="deleting-network-policies">Deleting Network Policies<a class="headerlink" href="#deleting-network-policies" title="Permanent link">¶</a></h2>
 <p>There are two ways to delete network policies. You can delete network policies either through the form or by using a YAML file.</p>
 <ul>
 <li>
-<p>On the network policy list page, find the policy you want to delete, and choose <strong>Delete</strong> in the action column on the right to delete it via the form. Choose <strong>Edit YAML</strong> to delete it using a YAML file.</p>
+<p>On the network policy list page, find the policy you want to delete, and choose <strong>Delete</strong> in the action column on the right to delete it. </p>
+<p><img alt="delete" src="../images/delete-network01.png"/></p>
 </li>
 <li>
-<p>Click the name of the network policy, then choose <strong>Delete</strong> in the top right corner of the policy details page to delete it via the form. Choose <strong>Edit YAML</strong> to delete it using a YAML file.</p>
+<p>Click the name of the network policy, then choose <strong>Delete</strong> in the top right corner of the policy details page to delete it.</p>
+<p><img alt="delete" src="../images/delete-network02.png"/></p>
 </li>
 </ul>
 <aside class="md-source-file">
@@ -727,7 +757,7 @@
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 15, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2024</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">
