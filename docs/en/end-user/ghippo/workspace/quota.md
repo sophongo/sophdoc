@@ -27,7 +27,7 @@ Cluster resources in both shared resources and resource groups are derived from 
 
 1. Binding Resources
 
-    Users/User groups in the workspace will have full management and usage permissions for the cluster.
+    Users/Groups in the workspace will have full management and usage permissions for the cluster.
     Workspace Admin will be mapped as Cluster Admin.
     Workspace Admin can access the [Container Management module](../../kpanda/permissions/permission-brief.md)
     to manage the cluster.
@@ -41,7 +41,7 @@ Cluster resources in both shared resources and resource groups are derived from 
 
 2. Adding Shared Resources
 
-    Users/User groups in the workspace will have usage permissions for the cluster resources.
+    Users/Groups in the workspace will have usage permissions for the cluster resources.
 
     ![Shared Resources](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/ghippo/images/quota02.png)
 

@@ -210,7 +210,7 @@ plugins:
                 管理 Helm 应用: Manage Helm Apps
                 管理 Helm 仓库: Manage Helm Repo
                 Operator 应用: Operator Apps
-                容器网络: Container Networking
+                容器网络: Container Network
                 创建服务: Create Services
                 创建路由: Create Ingress
                 网络策略: Network Policies
@@ -230,8 +230,8 @@ plugins:
                 创建命名空间: Create Namespace
                 命名空间独享节点: Nodes Exclusive to a Namespace
                 容器组安全策略: Pod Security Policies
-                集群运维: Cluster Operations
-                最近操作: Recent Operations
+                集群运维: Operations and Maintenance
+                最近操作: Latest Operations
                 集群设置: Cluster Settings
                 集群巡检: Cluster Inspection
                 介绍: Introduction
@@ -250,7 +250,7 @@ plugins:
                 权限管理: Permissions
                 权限体系介绍: Introduction
                 集群和命名空间授权: Authorize Cluster and Namespace
-                增加容器管理内置权限点: Add Built-in Permission
+                增加容器管理内置权限点: Add Built-in Permissions
                 算法开发: AI Lab
                 创建 AI 工作负载: Create AI Workload
                 使用 Notebook: Use Notebook
@@ -306,7 +306,7 @@ plugins:
                 什么是 AI 算力平台: What is AI Platform
                 安装: Installation
                 安装云主机: Install VM
-                安装依赖及前提条件: Install Dependencies and Prerequisites
+                安装依赖及前提条件: Install Dependencies
                 离线升级: Offline Upgrade
                 安装 virtnest-agent: Install virtnest-agent
                 快速入门: Quick Start
@@ -332,8 +332,8 @@ plugins:
                 通过模板创建云主机: Create VM with Template
                 云主机镜像: VM Images
                 最佳实践: Best Practices
-                从 VMware 导入传统 Linux 云主机: Import Traditional Linux VM from VMware
-                从 VMware 导入传统 Windows 云主机: Import Traditional Windows VM from VMware
+                从 VMware 导入传统 Linux 云主机: Import Legacy Linux VM from VMware
+                从 VMware 导入传统 Windows 云主机: Import Legacy Windows VM from VMware
                 创建 Windows 云主机: Create Windows VM
                 集群管理: Manage Clusters
                 创建集群: Create Cluster
@@ -345,11 +345,11 @@ plugins:
                 添加工作节点: Add Worker Node
                 移除 GPU 工作节点: Remove GPU Worker Node
                 弹性伸缩: Autoscaling
-                安装 metrics-server 插件: Install Metrics Server Plugin
-                安装 kubernetes-cronhpa-controller: Install Kubernetes CronHPA Controller
+                安装 metrics-server 插件: Install metrics-server
+                安装 kubernetes-cronhpa-controller: Install kubernetes-cronhpa-controller
                 安装 VPA 插件: Install VPA Plugin
-                基于内置指标创建 HPA: Create HPA Based on Built-in Metrics
-                基于自定义指标创建 HPA: Create HPA Based on Custom Metrics
+                基于内置指标创建 HPA: Create HPA from Built-in Metrics
+                基于自定义指标创建 HPA: Create HPA from Custom Metrics
                 创建 VPA 策略: Create VPA Policy
                 HPA和CronHPA兼容规则: HPA and CronHPA Compatibility Rules
                 其他方案: Other Solutions
@@ -403,10 +403,10 @@ plugins:
                 跨集群备份恢复MySQL: Cross-cluster Backup and Recovery for MySQL
                 工作集群相关实践: Practices Related to Worker Clusters
                 加固自建工作集群: Harden Self-built Worker Cluster
-                离线部署/升级工作集群: Offline Deployment/Upgrade of Worker Cluster
+                离线部署/升级工作集群: Offline Deployment/Upgrade Worker Cluster
                 工作集群添加异构节点: Add Heterogeneous Nodes to Worker Cluster
-                工作集群的控制节点扩容: Expand Control Nodes of Worker Cluster
-                替换工作集群首个控制节点: Replace First Control Node of Worker Cluster
+                工作集群的控制节点扩容: Expand Controller Nodes
+                替换工作集群首个控制节点: Replace First Controller Node
                 全局集群工作节点扩容: Global Cluster Worker Node Expansion
                 CentOS上创建Ubuntu工作集群: Create Ubuntu Worker Cluster on CentOS
                 CentOS上创建Red Hat工作集群: Create Red Hat Worker Cluster on CentOS
