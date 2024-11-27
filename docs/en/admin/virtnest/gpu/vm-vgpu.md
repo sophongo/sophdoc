@@ -90,7 +90,7 @@ You can assign the following values to the labels: container, vm-passthrough, an
 
 ## Install Nvidia Operator 
 
-1. Go to __Container Management__, select your worker cluster, click __Helm Apps__ -> __Helm Chart__, and choose and install gpu-operator. Modify the relevant fields in the yaml.
+1. Go to __Container Management__, select your worker cluster, click __Helm Apps__ -> __Helm Charts__, and choose and install gpu-operator. Modify the relevant fields in the yaml.
 
     ```yaml
     gpu-operator.sandboxWorkloads.enabled=true

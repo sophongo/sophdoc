@@ -25,7 +25,7 @@ Before installing the __velero__ plugin, the following prerequisites need to be 
 
 Please perform the following steps to install the __velero__ plugin for your cluster.
 
-1. On the cluster list page, find the target cluster that needs to install the __velero__ plugin, click the name of the cluster, click __Helm Apps__ -> __Helm chart__ in the left navigation bar, and enter __velero__ in the search bar to search .
+1. On the cluster list page, find the target cluster that needs to install the __velero__ plugin, click the name of the cluster, click __Helm Apps__ -> __Helm Charts__ in the left navigation bar, and enter __velero__ in the search bar to search .
 
     ![Find velero](../images/backup1.png)
 

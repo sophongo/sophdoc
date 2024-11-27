@@ -42,19 +42,17 @@ The following takes the public container repository of Kubevela as an example to
 
 3. Click the __Create Repository__ button on the helm repo page to enter the Create repository page, and configure relevant arguments according to the table below.
 
-    - Repository Name: Set the repository name. It can be up to 63 characters long and may only include lowercase letters,
-      numbers, and separators __-__. It must start and end with a lowercase letter or number, for example, kubevela.
-    - Repository URL: The HTTP(S) address pointing to the target Helm repository. For example, <https://charts.kubevela.net/core>.
-    - Skip TLS Verification: If the added Helm repository uses an HTTPS address and requires skipping TLS verification,
-      you can check this option. The default is unchecked.
-    - Authentication Method: The method used for identity verification after connecting to the repository URL.
-      For public repositories, you can select __None__. For private repositories, you need to enter a
-      username/password for identity verification.
-    - Labels: Add labels to this Helm repository. For example, key: repo4; value: Kubevela.
-    - Annotations: Add annotations to this Helm repository. For example, key: repo4; value: Kubevela.
-    - Description: Add a description for this Helm repository. For example: This is a Kubevela public Helm repository.
-
     ![Config](../images/helmrepo02.png)
+
+    | Parameters | Description | Example |
+    |------------|-------------|---------|
+    | Repository Name | Set the repository name. Maximum 63 characters, can only include lowercase letters, numbers, and the separator -, must start and end with a lowercase letter or number | kubevela |
+    | Repository URL | The HTTP(S) address pointing to the target Helm repository | `https://charts.kubevela.net/core` |
+    | Skip TLS Verification| If the added Helm repository is an HTTPS address and you need to skip TLS verification, you can check this option, default is unchecked | Yes/No |
+    | Authentication Method| The method used for identity verification when connecting to the repository address. For public repositories, you can select None; private repositories require a username/password for authentication | None / Username:Password |
+    | Labels | Add labels to the Helm repository | key: repo4; value: Kubevela |
+    | Annotations | Add annotations to the Helm repository | key: repo4; value: Kubevela |
+    | Description | Add a description for the Helm repository | This is a public Helm repository for Kubevela |
 
 4. Click __OK__ to complete the creation of the Helm repository. The page will automatically jump to the list of Helm repositories.
 
@@ -64,7 +62,7 @@ The following takes the public container repository of Kubevela as an example to
 
 When the address information of the helm repo changes, the address, authentication method, label, annotation, and description information of the helm repo can be updated.
 
-1. Find the cluster where the repository to be updated is located, click the cluster name, and enter cluster details .
+1. Find the cluster where the repository to be updated is located, click the cluster name, and enter cluster details page.
 
     ![Clusters](../images/crd01.png)
 
@@ -86,7 +84,7 @@ When the address information of the helm repo changes, the address, authenticati
 
 In addition to importing and updating repositorys, you can also delete unnecessary repositories, including system preset repositories and third-party repositories.
 
-1. Find the cluster where the repository to be deleted is located, click the cluster name, and enter cluster details .
+1. Find the cluster where the repository to be deleted is located, click the cluster name, and enter cluster details page.
 
     ![Clusters](../images/crd01.png)
 
@@ -98,7 +96,7 @@ In addition to importing and updating repositorys, you can also delete unnecessa
 
     ![Delete](../images/helmrepo07.png)
 
-4. Enter the repository name to confirm, and click __Delete__ .
+4. Enter the repository name to confirm, and click __Delete__
 
     ![Confirm](../images/helmrepo08.png)
 
