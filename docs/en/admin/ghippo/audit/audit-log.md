@@ -76,6 +76,6 @@ You can manually clean up the logs, but it is recommended to export and save the
 
     The audit logs related to Kubernetes in the auditing module are provided by the Insight module.
     To reduce the storage pressure of the audit logs, Global Management by default does not collect Kubernetes-related logs.
-    If you need to record them, please refer to [Enabling K8s Audit Logs](./open-k8s-audit.md).
+    If you need to record them, refer to [Enabling K8s Audit Logs](./open-k8s-audit.md).
     Once enabled, the cleanup function is consistent with the Global Management cleanup function,
     but they do not affect each other.

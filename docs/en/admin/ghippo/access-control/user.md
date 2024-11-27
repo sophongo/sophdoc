@@ -90,7 +90,7 @@ Premise: User mailboxes need to be set. There are two ways to set user mailboxes
 
     ![User center](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/ghippo/images/mailbox.png)
 
-If the user forgets the password when logging in, please refer to [Reset Password](../password.md).
+If the user forgets the password when logging in, refer to [Reset Password](../password.md).
 
 ## Delete users
 

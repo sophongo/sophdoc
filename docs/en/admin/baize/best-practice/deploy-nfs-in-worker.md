@@ -23,7 +23,7 @@ This article mainly introduces how to quickly deploy an NFS service and add it a
 
 * NFS by default uses the node's storage as a data caching point,
   so it is necessary to ensure that the disk itself has enough disk space.
-* The installation method uses `Helm` and `Kubectl`, please make sure they are already installed.
+* The installation method uses `Helm` and `Kubectl`, make sure they are already installed.
 
 ## Deployment Steps
 

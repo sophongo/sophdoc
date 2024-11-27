@@ -14,10 +14,10 @@ Ingress is an API object that manages external access to services in the cluster
 
 ## Prerequisites
 
-- Container management module [connected to Kubernetes cluster](../clusters/integrate-cluster.md) or [created Kubernetes](../clusters/create-cluster.md), and can access the cluster UI interface.
+- You have integrated a Kubernetes Cluster in the Container Management module as described in [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and you can access the cluster's UI interface.
 - Completed a [namespace creation](../namespaces/createns.md), user creation, and authorize the user as [NS Editor](../permissions/permission-brief.md#ns-editor) role, for details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 - Completed Create Ingress Instance, [Deploy Application Workload](../workloads/create-deployment.md), and have [created the proper Service](create-services.md)
-- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
+- When there are multiple containers in a single instance, make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
 
 ## Create ingress
 
@@ -37,8 +37,8 @@ Ingress is an API object that manages external access to services in the cluster
 
 ### Create HTTP protocol ingress
 
-| Parameter | Description | Example value |
-| --------- | ----------- | ------------- |
+| Parameter | Description | Example |
+| --------- | ----------- | ------- |
 | Ingress name | [Type] Required<br />[Meaning] Enter the name of the new ingress. <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter, lowercase English letters or numbers. | Ing-01 |
 | Namespace | [Type] Required<br />[Meaning] Select the namespace where the new service is located. For more information about namespaces, refer to [Namespace Overview](../namespaces/createns.md). <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | default |
 | Protocol | [Type] Required<br /> [Meaning] Refers to the protocol that authorizes inbound access to the cluster service, and supports HTTP (no identity authentication required) or HTTPS (identity authentication needs to be configured) protocol. Here select the ingress of HTTP protocol. | HTTP |
@@ -54,8 +54,8 @@ Ingress is an API object that manages external access to services in the cluster
 
 ### Create HTTPS protocol ingress
 
-| Parameter | Description | Example value |
-| --------- | ----------- | ------------- |
+| Parameter | Description | Example |
+| --------- | ----------- | ------- |
 | Ingress name | [Type] Required<br />[Meaning] Enter the name of the new ingress. <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter, lowercase English letters or numbers. | Ing-01 |
 | Namespace | [Type] Required<br />[Meaning] Select the namespace where the new service is located. For more information about namespaces, refer to [Namespace Overview](../namespaces/createns.md). <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | default |
 | Protocol | [Type] Required<br /> [Meaning] Refers to the protocol that authorizes inbound access to the cluster service, and supports HTTP (no identity authentication required) or HTTPS (identity authentication needs to be configured) protocol. Here select the ingress of HTTPS protocol. | HTTPS |

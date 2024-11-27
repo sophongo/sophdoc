@@ -107,7 +107,7 @@ If you do need to enable namespace exclusive nodes on the Global cluster, please
     kubectl annotate ns <namespace-name> scheduler.alpha.kubernetes.io/defaultTolerations: '[{"operator": "Exists", "effect": 
     "NoSchedule", "key": "ExclusiveNamespace"}]'
     ```
-    Please make sure to replace `<namespace-name>` with the name of the platform namespace you want to add the annotation to.
+    Make sure to replace `<namespace-name>` with the name of the platform namespace you want to add the annotation to.
 
 3. Use the interface to set exclusive nodes for the namespace
 
@@ -205,4 +205,4 @@ To enable namespace exclusive nodes on non-Global clusters, please follow the st
     "NoSchedule", "key": "ExclusiveNamespace"}]'
     ```
 
-    Please make sure to replace `<namespace-name>` with the name of the platform namespace you want to add the annotation to.
+    Make sure to replace `<namespace-name>` with the name of the platform namespace you want to add the annotation to.

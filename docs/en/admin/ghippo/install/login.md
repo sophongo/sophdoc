@@ -33,4 +33,4 @@ class judge plain
 class success,fail k8s
 ```
 
-The user login screen is as shown in the figure below. For the specific login screen, please refer to the actual product.
+The user login screen is as shown in the figure below. For the specific login screen, refer to the actual product.

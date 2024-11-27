@@ -14,7 +14,7 @@ In AI Lab, we provide support for MPI jobs, allowing you to quickly create MPI j
 
 Here we will use the `baize-notebook` base image and the **associated environment** method as the foundational running environment for the job. Ensure that the running environment includes MPI and related libraries, such as OpenMPI and `mpi4py`.
 
-> **Note** : For information on how to create an environment, please refer to the [Environment List](../dataset/environments.md).
+> **Note** : For information on how to create an environment, refer to the [Environment List](../dataset/environments.md).
 
 ## Creating an MPI Job
 
@@ -206,7 +206,7 @@ This indicates that the MPI job has successfully run, and the TensorFlow benchma
 
 ## Summary
 
-Through this tutorial, you have learned how to create and run an MPI job on the AI Lab platform. We detailed the configuration methods for MPIJob and how to specify the running commands and resource requirements in the job. We hope this tutorial is helpful to you; if you have any questions, please refer to other documents provided by the platform or contact technical support.
+Through this tutorial, you have learned how to create and run an MPI job on the AI Lab platform. We detailed the configuration methods for MPIJob and how to specify the running commands and resource requirements in the job. We hope this tutorial is helpful to you; if you have any questions, refer to other documents provided by the platform or contact technical support.
 
 ---
 

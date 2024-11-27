@@ -9,7 +9,7 @@ In __Insight__ , a service refers to a group of workloads that provide the same 
 Service insight helps observe the performance and status of applications during the operation process by 
 using the OpenTelemetry SDK.
 
-For how to use OpenTelemetry, please refer to: [Using OTel to give your application insight](../../quickstart/otel/otel.md).
+For how to use OpenTelemetry, refer to: [Using OTel to give your application insight](../../quickstart/otel/otel.md).
 
 ## Glossary
 

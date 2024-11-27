@@ -6,7 +6,7 @@ This article introduces how to use Cambricon GPU in the Suanova AI computing pla
 
 - The Suanova AI computing platform's container management platform has been deployed and is running normally.
 - The container management module has either [integrated with a Kubernetes cluster](../../clusters/integrate-cluster.md) or [created a Kubernetes cluster](../../clusters/create-cluster.md), and is able to access the cluster's UI interface.
-- The current cluster has installed the Cambricon firmware, drivers, and DevicePlugin components. For installation details, please refer to the official documentation:
+- The current cluster has installed the Cambricon firmware, drivers, and DevicePlugin components. For installation details, refer to the official documentation:
     - [Driver Firmware Installation](https://www.cambricon.com/docs/sdk_1.15.0/driver_5.10.22/user_guide/index.html)
     - [DevicePlugin Installation](https://github.com/Cambricon/cambricon-k8s-device-plugin/blob/master/device-plugin/README.md)
     

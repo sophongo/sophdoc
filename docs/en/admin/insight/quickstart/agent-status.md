@@ -32,7 +32,7 @@ Can be checked by:
 
 1. The resource consumption of the metric collection component Prometheus in __insight-agent__ is directly proportional
    to the number of pods running in the cluster. Adjust Prometheus resources according to the cluster size,
-   please refer to [Prometheus Resource Planning](./res-plan/prometheus-res.md).
+   refer to [Prometheus Resource Planning](./res-plan/prometheus-res.md).
 
 2. Since the storage capacity of the metric storage component vmstorage in the global service cluster
    is directly proportional to the sum of the number of pods in each cluster.

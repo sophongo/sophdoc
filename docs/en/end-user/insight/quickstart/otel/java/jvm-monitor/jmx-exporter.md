@@ -33,7 +33,7 @@ rules:
 
 !!! note
 
-    For more configuration options, please refer to the introduction at the bottom or [Prometheus official documentation](https://github.com/prometheus/jmx_exporter#configuration).
+    For more configuration options, refer to the introduction at the bottom or [Prometheus official documentation](https://github.com/prometheus/jmx_exporter#configuration).
 
 Next, prepare the jar file. You can find the latest jar download link on the [jmx_exporter](https://github.com/prometheus/jmx_exporter) GitHub page and refer to the following Dockerfile:
 

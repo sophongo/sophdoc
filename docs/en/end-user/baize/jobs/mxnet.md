@@ -17,7 +17,7 @@ This tutorial will guide you on how to create and run both single-node and distr
 
 We will use the `release-ci.daocloud.io/baize/kubeflow/mxnet-gpu:latest` image as the base running environment for the job. This image comes pre-installed with MXNet and its related dependencies, supporting GPU acceleration.
 
-> **Note** : For information on how to create and manage environments, please refer to the [Environment List](../dataset/environments.md).
+> **Note** : For information on how to create and manage environments, refer to the [Environment List](../dataset/environments.md).
 
 ## Creating an MXNet Job
 
@@ -316,7 +316,7 @@ This indicates that the MXNet distributed job has run successfully, and the mode
 
 ## Summary
 
-Through this tutorial, you have learned how to create and run both single-node and distributed MXNet jobs on the AI Lab platform. We provided detailed information on configuring the MXJob and how to specify running commands and resource requirements in the job. We hope this tutorial is helpful to you; if you have any questions, please refer to other documents provided by the platform or contact technical support.
+Through this tutorial, you have learned how to create and run both single-node and distributed MXNet jobs on the AI Lab platform. We provided detailed information on configuring the MXJob and how to specify running commands and resource requirements in the job. We hope this tutorial is helpful to you; if you have any questions, refer to other documents provided by the platform or contact technical support.
 
 ---
 

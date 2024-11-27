@@ -137,7 +137,7 @@ OTEL_METRICS_EXPORTER=prometheus
 
 You can then check your metrics at `http://localhost:8888/metrics`.
 
-Next, combine it with a Prometheus `ServiceMonitor` to complete the metrics integration. If you want to expose custom metrics, please refer to [opentelemetry-java-docs/prometheus](https://github.com/open-telemetry/opentelemetry-java-docs/blob/main/prometheus/README.md).
+Next, combine it with a Prometheus `ServiceMonitor` to complete the metrics integration. If you want to expose custom metrics, refer to [opentelemetry-java-docs/prometheus](https://github.com/open-telemetry/opentelemetry-java-docs/blob/main/prometheus/README.md).
 
 The process is mainly divided into two steps:
 

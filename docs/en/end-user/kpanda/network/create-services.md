@@ -6,36 +6,36 @@ This requires creating a service through which you get a fixed IP address, decou
 
 ## Prerequisites
 
-- Container management module [connected to Kubernetes cluster](../clusters/integrate-cluster.md) or [created Kubernetes](../clusters/create-cluster.md), and can access the cluster UI interface.
+- You have integrated a Kubernetes Cluster in the Container Management module as described in [Integrate Kubernetes Cluster](../clusters/integrate-cluster.md) or [Create Kubernetes Cluster](../clusters/create-cluster.md), and you can access the cluster's UI interface.
 
 - Completed a [namespace creation](../namespaces/createns.md), user creation, and authorize the user as [NS Editor](../permissions/permission-brief.md#ns-editor) role, for details, refer to [Namespace Authorization](../permissions/cluster-ns-auth.md).
 
-- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
+- When there are multiple containers in a single instance, make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
 
 ## Create service
 
 1. After successfully logging in as the __NS Editor__ user, click __Clusters__ in the upper left corner to enter the __Clusters__ page. In the list of clusters, click a cluster name.
 
-     
+    ![name](../images/install-helm01.png)
 
-2. In the left navigation bar, click __Container Network__ -> __Service__ to enter the service list, and click the __Create Service__ button in the upper right corner.
+2. In the left navigation bar, click __Container Network__ -> __Services__ to enter the service list, and click the __Create Service__ button in the upper right corner.
 
-     
+    ![create service](../images/service02.png)
 
-     !!! tip
+    !!! tip
 
-         It is also possible to create a service via __YAML__ .
+        It is also possible to create a service from __YAML__
 
 3. Open the __Create Service__ page, select an access type, and refer to the following three parameter tables for configuration.
 
-     
+    ![service arguments](../images/service03.png)
 
 ### Create ClusterIP service
 
 Click __Intra-Cluster Access (ClusterIP)__ , which refers to exposing services through the internal IP of the cluster. The services selected for this option can only be accessed within the cluster. This is the default service type. Refer to the configuration parameters in the table below.
 
-| Parameter | Description | Example value |
-| --------- | ----------- | ------------- |
+| Parameter | Description | Example |
+| --------- | ----------- | ------- |
 | Access type | [Type] Required<br />[Meaning] Specify the method of Pod service discovery, here select intra-cluster access (ClusterIP). | ClusterIP |
 | Service Name | [Type] Required<br />[Meaning] Enter the name of the new service. <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | Svc-01 |
 | Namespace | [Type] Required<br />[Meaning] Select the namespace where the new service is located. For more information about namespaces, refer to [Namespace Overview](../namespaces/createns.md). <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | default |
@@ -49,8 +49,8 @@ Click __Intra-Cluster Access (ClusterIP)__ , which refers to exposing services t
 
 Click __NodePort__ , which means exposing the service via IP and static port ( __NodePort__ ) on each node. The __NodePort__ service is routed to the automatically created __ClusterIP__ service. You can access a __NodePort__ service from outside the cluster by requesting __<Node IP>:<Node Port>__ . Refer to the configuration parameters in the table below.
 
-| Parameter | Description | Example value |
-| --------- | ----------- | ------------- |
+| Parameter | Description | Example |
+| --------- | ----------- | ------- |
 | Access type | [Type] Required<br />[Meaning] Specify the method of Pod service discovery, here select node access (NodePort). | NodePort |
 | Service Name | [Type] Required<br />[Meaning] Enter the name of the new service. <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | Svc-01 |
 | Namespace | [Type] Required<br />[Meaning] Select the namespace where the new service is located. For more information about namespaces, refer to [Namespace Overview](../namespaces/createns.md). <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | default |
@@ -64,8 +64,8 @@ Click __NodePort__ , which means exposing the service via IP and static port ( _
 
 Click __Load Balancer__ , which refers to using the cloud provider's load balancer to expose services to the outside. External load balancers can route traffic to automatically created __NodePort__ services and __ClusterIP__ services. Refer to the configuration parameters in the table below.
 
-| Parameter | Description | Example value |
-| --------- | ----------- | ------------- |
+| Parameter | Description | Example |
+| --------- | ----------- | ------- |
 | Access type | [Type] Required<br />[Meaning] Specify the method of Pod service discovery, here select node access (NodePort). | NodePort | |
 | Service Name | [Type] Required<br />[Meaning] Enter the name of the new service. <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | Svc-01 | |
 | Namespace | [Type] Required<br />[Meaning] Select the namespace where the new service is located. For more information about namespaces, refer to [Namespace Overview](../namespaces/createns.md). <br />[Note] Please enter a string of 4 to 63 characters, which can contain lowercase English letters, numbers and dashes (-), and start with a lowercase English letter and end with a lowercase English letter or number. | default | |
@@ -80,3 +80,5 @@ Click __Load Balancer__ , which refers to using the cloud provider's load balanc
 ### Complete service creation
 
 After configuring all parameters, click the __OK__ button to return to the service list automatically. On the right side of the list, click __┇__ to modify or delete the selected service.
+
+![service list](../images/service04.png)

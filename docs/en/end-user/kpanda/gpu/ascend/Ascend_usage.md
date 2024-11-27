@@ -148,7 +148,7 @@ This document uses the [AscentCL Image Classification Application](https://gitee
     After the Pod runs successfully, check the log results. The key prompt information on the screen is shown in
     the figure below. The Label indicates the category identifier, Conf indicates the maximum confidence of
     the classification, and Class indicates the belonging category. These values may vary depending on the
-    version and environment, so please refer to the actual situation:
+    version and environment, so refer to the actual situation:
 
     ![Ascend demo running result](https://docs.daocloud.io/daocloud-docs-images/docs/zh/docs/kpanda/gpu/images/ascend-demo-pod-result.png)
 

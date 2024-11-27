@@ -9,7 +9,7 @@ Currently, only Java, Node.js, Python, .NET, and Golang support non-intrusive in
 
 ## Prerequisites
 
-Please ensure that the insight-agent is ready. If not, please refer to
+Please ensure that the insight-agent is ready. If not, refer to
 [Install insight-agent for data collection](../install/install-agent.md)
 and make sure the following three items are ready:
 

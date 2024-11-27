@@ -3,7 +3,7 @@
 vmstorage is responsible for storing multicluster metrics for observability.
 In order to ensure the stability of vmstorage, it is necessary to adjust the disk capacity
 of vmstorage according to the number of clusters and the size of the cluster.
-For more information, please refer to [vmstorage retention period and disk space](https://docs.victoriametrics.com/guides/understand-your-setup-size.html?highlight=datapoint#retention-perioddisk-space).
+For more information, refer to [vmstorage retention period and disk space](https://docs.victoriametrics.com/guides/understand-your-setup-size.html?highlight=datapoint#retention-perioddisk-space).
 
 ## Test Results
 
@@ -25,7 +25,7 @@ amount of metrics it stored and the disk usage of individual data points.
 2. __Storage duration (days) x 60 x 24__ converts time (days) into minutes to calculate disk usage.
 3. The default collection time of Prometheus in Insight Agent is 30s, so twice the amount of metrics
     will be generated within 1 minute.
-4. The default storage duration in vmstorage is 1 month, please refer to
+4. The default storage duration in vmstorage is 1 month, refer to
     [Modify System Configuration](../../system-config/modify-config.md) to modify the configuration.
 
 !!! warning
@@ -80,4 +80,4 @@ Then the current vmstorage disk usage should be set to (784000+80000)x2x0.9x60x2
 !!! note
 
     For the relationship between the number of metrics and the number of Pods in the cluster,
-    please refer to [Prometheus Resource Planning](./prometheus-res.md).
+    refer to [Prometheus Resource Planning](./prometheus-res.md).

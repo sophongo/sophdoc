@@ -70,7 +70,7 @@ To install the gpu-operator plugin for your cluster, follow these steps:
 
     !!! note
 
-        When using the built-in operating system version, there is no need to modify the image version. For other operating system versions, please refer to [Uploading Images to the Bootstrap Node Repository](./push_image_to_repo.md).
+        When using the built-in operating system version, there is no need to modify the image version. For other operating system versions, refer to [Uploading Images to the Bootstrap Node Repository](./push_image_to_repo.md).
         note that there is no need to include the operating system name such as Ubuntu, CentOS, or Red Hat in the version number. If the official image contains an operating system suffix, please manually remove it.
 
         - For Red Hat systems, for example, `525.105.17`

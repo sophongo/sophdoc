@@ -5,7 +5,7 @@ Date: 2024-10-16
 
 # Start Monitoring Java Applications
 
-1. For accessing and monitoring Java application links, please refer to the document [Implementing Non-Intrusive Enhancements for Applications via Operator](../operator.md), which explains how to automatically integrate links through annotations.
+1. For accessing and monitoring Java application links, refer to the document [Implementing Non-Intrusive Enhancements for Applications via Operator](../operator.md), which explains how to automatically integrate links through annotations.
 
 2. Monitoring the JVM of Java applications: How Java applications that have already exposed JVM metrics and those that have not yet exposed JVM metrics can connect with observability Insight.
 

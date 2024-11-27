@@ -14,7 +14,7 @@
 
 ### YAML 创建
 
-1. 在集群列表中点击目标集群的名称，然后在左侧导航栏点击 __容器网络__ -> __网络策略__ -> __YAML 创建__ 。
+1. 在集群列表中点击目标集群的名称，然后在左侧导航栏点击 __容器网络__ -> __网络策略__ ，然后点击 __YAML 创建__ 按钮
 
     ![路径](../../../images/networkpolicy01.png)
 
@@ -22,9 +22,40 @@
 
     ![yaml](../../../images/networkpolicy02.png)
 
+以下是一个 YAMl 示例：
+
+```yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-apiserver
+  namespace: calico-apiserver
+  uid: 1162d1c9-4225-4271-a302-062b9f06ec2c
+  resourceVersion: '9960'
+  generation: 1
+  creationTimestamp: '2024-04-18T05:49:46Z'
+  ownerReferences:
+    - apiVersion: operator.tigera.io/v1
+      kind: APIServer
+      name: default
+      uid: 2cc89f7b-e52b-4bf7-b47e-56efc8407f9a
+      controller: true
+      blockOwnerDeletion: true
+spec:
+  podSelector:
+    matchLabels:
+      apiserver: 'true'
+  ingress:
+    - ports:
+        - protocol: TCP
+          port: 5443
+  policyTypes:
+    - Ingress
+```
+
 ### 表单创建
 
-1. 在集群列表中点击目标集群的名称，然后在左侧导航栏点击 __容器网络__ -> __网络策略__ -> __创建策略__ 。
+1. 在集群列表中点击目标集群的名称，然后在左侧导航栏点击 __容器网络__ -> __网络策略__ ，点击右侧的 __创建策略__ 按钮。
 
     ![路径](../../../images/networkpolicy03.png)
 
@@ -76,12 +107,12 @@
 
 ## 删除网络策略
 
-有两种途径可以删除网络策略。支持通过表单或 YAML 文件更新网络策略。
+有两种途径可以删除网络策略。
 
-- 在网络策略列表页面，找到需要更新的策略，在右侧的操作栏下选择 __更新__ 即可通过表单更新，选择 __编辑 YAML__ 即可通过 YAML 删除。
+- 在网络策略列表页面，找到需要删除的策略，在右侧的操作栏下选择 __删除__
 
     ![删除](../../../images/networkpolicy12.png)
 
-- 点击网络策略的名称，进入网络策略的详情页面后，在页面右上角选择 __更新__ 即可通过表单更新，选择 __编辑 YAML__ 即可通过 YAML 删除。
+- 点击网络策略的名称，进入网络策略的详情页面后，在页面右上角选择 __删除__
 
     ![删除](../../../images/networkpolicy13.png)

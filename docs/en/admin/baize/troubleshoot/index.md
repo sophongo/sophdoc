@@ -14,7 +14,7 @@ solutions for certain errors encountered during use.
 !!! warning
 
     This documentation is only applicable to version AI platform. If you encounter issues with
-    the use of AI Lab, please refer to this troubleshooting guide first.
+    the use of AI Lab, refer to this troubleshooting guide first.
 
 In AI platform, the module name for AI Lab is `baize`,
 which offers one-stop solutions for model training, inference, model management, and more.

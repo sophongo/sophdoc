@@ -21,7 +21,7 @@ Before using image to create deployments, the following prerequisites need to be
 
 - The current operating user should have [NS Editor](../permissions/permission-brief.md#ns-editor) or higher permissions, for details, refer to [Namespace Authorization](../namespaces/createns.md).
 
-- When there are multiple containers in a single instance, please make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
+- When there are multiple containers in a single instance, make sure that the ports used by the containers do not conflict, otherwise the deployment will fail.
 
 ## Create by image
 

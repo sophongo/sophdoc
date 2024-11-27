@@ -44,6 +44,6 @@ Generally applicable to the following two use cases:
 | - | Using Shared Resources [^1] | &check; | &cross; | &cross; |
 
 [^1]:
-     For the operation scope of the roles of Workspace Admin, Workspace Editor, and Workspace Viewer in each module, please refer to the permission description:
+     For the operation scope of the roles of Workspace Admin, Workspace Editor, and Workspace Viewer in each module, refer to the permission description:
 
      - [Container Management Permissions](../../kpanda/permissions/permission-brief.md)
