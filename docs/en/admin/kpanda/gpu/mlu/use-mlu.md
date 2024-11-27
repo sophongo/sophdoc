@@ -25,7 +25,7 @@ Cambricon GPUs have the following modes:
 
 Here, we take the Dynamic SMLU mode as an example:
 
-1. After correctly installing the DevicePlugin and other components, click the proper **Cluster** -> **Cluster Maintenance** -> **Cluster Settings** -> **Addon Plugins** to check whether the proper GPU type has been automatically enabled and detected.
+1. After correctly installing the DevicePlugin and other components, click the proper **Cluster** -> **Operations and Maintenance** -> **Cluster Settings** -> **Addon Plugins** to check whether the proper GPU type has been automatically enabled and detected.
   
    
 

@@ -59,9 +59,9 @@ This article explains how to upload Helm charts. See the steps below.
 
         ![Upload Helm Chart](../images/upload-helm-02.png)
 
-    === "Auto Sync"
+    === "Auto Update"
     
-        If you need to enable the Helm repository auto-sync feature, you can go to
-        **Cluster Maintenance** -> **Cluster Settings** -> **Advanced Settings** and turn on the Helm repository auto-refresh switch.
+        If you need to enable the Helm repository auto-update feature, you can go to
+        **Operations and Maintenance** -> **Cluster Settings** -> **Advanced Settings** and turn on the Helm repository auto-refresh switch.
 
-        <!-- add image later -->
+        ![Auto update](../images/auto-helm.png)

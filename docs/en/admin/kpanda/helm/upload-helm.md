@@ -59,6 +59,6 @@ This article explains how to upload Helm charts. See the steps below.
 
     === "Auto Sync"
     
-        If you need to enable the Helm repository auto-sync feature, you can go to **Cluster Maintenance** -> **Cluster Settings** -> **Advanced Settings** and turn on the Helm repository auto-refresh switch.
+        If you need to enable the Helm repository auto-sync feature, you can go to **Operations and Maintenance** -> **Cluster Settings** -> **Advanced Settings** and turn on the Helm repository auto-refresh switch.
 
         <!-- add image later -->

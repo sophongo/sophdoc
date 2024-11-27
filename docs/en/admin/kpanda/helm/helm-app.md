@@ -23,7 +23,7 @@ Follow the steps below to install the Helm app.
 
      
 
-2. In the left navigation bar, click __Helm Apps__ -> __Helm Chart__ to enter the Helm chart page.
+2. In the left navigation bar, click __Helm Apps__ -> __Helm Charts__ to enter the Helm chart page.
 
      On the Helm chart page, select the [Helm repository](helm-repo.md) named __addon__ , and all the Helm chart templates under the __addon__ repository will be displayed on the interface.
      Click the Chart named __cert-manager__ .
@@ -54,7 +54,7 @@ Follow the steps below to update the Helm app.
 
 2. In the left navigation bar, click __Helm Apps__ to enter the Helm app list page.
 
-     On the Helm app list page, select the Helm app that needs to be updated, click the __...__ operation button on the right side of the list, and select the __Update__ operation in the drop-down selection.
+     On the Helm app list page, select the Helm app that needs to be updated, click the __┇__ operation button on the right side of the list, and select the __Update__ operation in the drop-down selection.
 
      
 
@@ -78,7 +78,7 @@ Every installation, update, and deletion of Helm apps has detailed operation rec
 
      
 
-2. To view the detailed log of each operation: Click __┇__ on the right side of the list, and select __Log__ from the pop-up menu.
+2. To view the detailed log of each operation: Click __┇__ on the right side of the list, and select __Logs__ from the pop-up menu.
 
      
 
@@ -96,7 +96,7 @@ Follow the steps below to delete the Helm app.
 
 2. In the left navigation bar, click __Helm Apps__ to enter the Helm app list page.
 
-     On the Helm app list page, select the Helm app you want to delete, click the __...__ operation button on the right side of the list, and select __Delete__ from the drop-down selection.
+     On the Helm app list page, select the Helm app you want to delete, click the __┇__ operation button on the right side of the list, and select __Delete__ from the drop-down selection.
 
      
 

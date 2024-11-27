@@ -21,7 +21,7 @@
 2. 在左侧导航栏，依次点击 __Helm 应用__ -> __Helm 模板__ ，进入 Helm 模板页面。
 
     在 Helm 模板页面选择名为 __addon__ 的 [Helm 仓库](helm-repo.md)，此时界面上将呈现 __addon__ 仓库下所有的 Helm chart 模板。
-    点击名称为 __cert-manager__ 的 Chart。
+    比如点击名称为 __cert-manager__ 的 Chart。
 
     ![找到 chart](../../../images/helm01.png)
 
@@ -61,7 +61,7 @@
 
     ![对比变化](../../../images/helm10.png)
 
-5. 系统将自动返回 Helm 应用列表，右上角弹窗提示 __更新成功__ 。
+5. 系统将自动返回 Helm 应用列表，右上角弹出消息提示 __更新成功__ 。
 
     ![更新成功](../../../images/helm11.png)
 

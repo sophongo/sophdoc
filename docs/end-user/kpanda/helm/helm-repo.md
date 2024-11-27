@@ -33,15 +33,17 @@ Helm 仓库是用来存储和发布 Chart 的存储库。Helm 应用模块支持
 
 3. 在 Helm 仓库页面点击 __创建仓库__ 按钮，进入创建仓库页面，按照下表配置相关参数。
 
-    - 仓库名称：设置仓库名称。最长 63 个字符，只能包含小写字母、数字及分隔符 __-__ ，且必须以小写字母或数字开头并结尾，例如 kubevela
-    - 仓库地址：用来指向目标 Helm 仓库的 http（s）地址。例如 <https://charts.kubevela.net/core>
-    - 跳过 TLS 验证: 如果添加的 Helm 仓库为 https 地址且需跳过 TLS 验证，可以勾选此选项，默认为不勾选
-    - 认证方式：连接仓库地址后用来进行身份校验的方式。对于公开仓库，可以选择 __None__ ，私有的仓库需要输入用户名/密码以进行身份校验
-    - 标签：为该 Helm 仓库添加标签。例如 key: repo4；value: Kubevela
-    - 注解：为该 Helm 仓库添加注解。例如 key: repo4；value: Kubevela
-    - 描述：为该 Helm 仓库添加描述。例如：这是一个 Kubevela 公开 Helm 仓库
-
     ![填写参数](../images/helmrepo02.png)
+
+    | 参数 | 说明 | 示例值 |
+    |-------|-----|-------|
+    | 仓库名称 | 设置仓库名称。最长 63 个字符，只能包含小写字母、数字及分隔符 - ，且必须以小写字母或数字开头并结尾 | kubevela |
+    | 仓库地址 | 用来指向目标 Helm 仓库的 http（s）地址 | `https://charts.kubevela.net/core` |
+    | 跳过 TLS 验证 | 如果添加的 Helm 仓库为 https 地址且需跳过 TLS 验证，可以勾选此选项，默认为不勾选 | 是/否 |
+    | 认证方式 | 连接仓库地址后用来进行身份校验的方式。对于公开仓库，可以选择 None，私有的仓库需要输入用户名/密码以进行身份校验 | None / 用户名:密码 |
+    | 标签 | 为该 Helm 仓库添加标签 | key: repo4；value: Kubevela |
+    | 注解 | 为该 Helm 仓库添加注解 | key: repo4；value: Kubevela |
+    | 描述 | 为该 Helm 仓库添加描述 | 这是一个 Kubevela 公开 Helm 仓库 |
 
 4. 点击 __确定__ ，完成 Helm 仓库的创建。页面会自动跳转至 Helm 仓库列表。
 
