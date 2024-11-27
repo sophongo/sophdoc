@@ -1,4 +1,6 @@
 ---
+hide:
+  - toc
 MTPE: FanLin
 Date: 2024-02-27
 ---
@@ -12,7 +14,7 @@ Annotations can be used to add arbitrary metadata to nodes.
 Annotation keys usually use the format __prefix(optional)/name(required)__ , for example __nfd.node.kubernetes.io/extended-resources__ .
 If the prefix is ​​omitted, it means that the annotation key is private to the user.
 
-For more information about labels and annotations, refer to the official Kubernetes documentation [labels and selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) Or [Annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/).
+For more information about labels and annotations, refer to the official Kubernetes documentation [labels and selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) or [Annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/).
 
 The steps to add/delete tags and annotations are as follows:
 

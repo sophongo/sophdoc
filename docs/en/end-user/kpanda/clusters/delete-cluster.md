@@ -18,15 +18,14 @@ In AI platform, the difference between __Delete__ and __Remove__ is:
 
 !!! note
 
-    - You should have Admin
-      or Kpanda Owner permissions
+    - You should have Admin or Kpanda Owner permissions
       to perform delete or remove operations.
     - Before deleting a cluster, you should turn off __Cluster Deletion Protection__ in
       __Cluster Settings__ -> __Advanced Settings__ , otherwise the __Delete Cluster__ option will not be displayed.
     - The __global service cluster__ cannot be deleted or removed.
 
-1. Enter the Container Management module, find your target cluster, click __ ...__ on the right,
-   and select __Delete cluster__ / __Remove__ in the drop-down list.
+1. Enter the Container Management module, find your target cluster, click __...__ on the right,
+   and select __Remove__ in the drop-down list.
 
     ![screen](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/kpanda/images/cluster-delete01.png)
 
@@ -34,4 +33,4 @@ In AI platform, the difference between __Delete__ and __Remove__ is:
 
     ![screen](https://docs.daocloud.io/daocloud-docs-images/docs/en/docs/kpanda/images/cluster-delete02.png)
 
-3. You will be auto directed to cluster lists. The status of this cluster will changed to __Deleting__ . It may take a while to delete/remove a cluster.
+3. You will be auto directed to cluster lists. The status of this cluster will be changed to __Deleting__ . It may take a while to delete/remove a cluster.

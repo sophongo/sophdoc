@@ -12,12 +12,15 @@ After creating and starting the cloud host, the user can begin using the cloud h
 1. Log into the AI platform as an administrator.
 2. Navigate to **Container Management** -> **Container Network** -> **Services**, click the service name to enter the service details page, and click **Update** in the upper right corner.
 
+    ![service](../images/usehost01.png)
 
 3. Change the port range to 30900-30999, ensuring there are no conflicts.
 
+    ![port](../images/usehost02.png)
 
 4. Log into the AI platform as an end user, navigate to the proper service, and check the access ports.
 
+    ![port](../images/usehost03.png)
 
 5. Use an SSH client to log into the cloud host from the external network.
 
