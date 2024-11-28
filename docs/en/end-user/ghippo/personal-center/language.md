@@ -14,18 +14,14 @@ The platform provides three ways to switch languages: Chinese, English-English, 
 
 The operation steps are as follows.
 
-1. Log in to the AI platform with your username/password. Click __Global Management__ at the bottom of the left navigation bar.
-
-    
+1. Log in to the AI platform with your username/password. 
 
 2. Click the username in the upper right corner and select __Personal Center__ .
 
-    
+    ![personal center](../images/personal-center.png)
 
 3. Click the __Language Settings__ tab.
 
-    
+    ![language](../images/language.png)
 
 4. Toggle the language option.
-
-    

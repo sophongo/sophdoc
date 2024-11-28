@@ -96,11 +96,8 @@ In addition to manually copying the generated public key information printed on 
 
 1. Log in to the AI platform UI page and select **Profile** -> **SSH Public Key** in the upper right corner of the page.
 
-2. Add the generated SSH public key information.
+    ![ssh](../images/ssh-key01.png)
 
-    1. SSH public key content.
-    
-    2. Public key title: Supports customizing the public key name for management differentiation.
-    
-    3. Expiration: Set the expiration period for the public key. After it expires,
-       the public key will be automatically invalidated and cannot be used. If not set, it will be permanently valid.
+2. Import the generated SSH public key.
+
+    ![import](../images/ssh-key02.png)
