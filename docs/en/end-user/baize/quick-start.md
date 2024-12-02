@@ -12,10 +12,12 @@ Start by clicking on **Data Management** -> **Datasets**, and then select the **
 - If you're located in China, you can access it more quickly via Gitee: [https://gitee.com/samzong_lu/training-sample-code.git](https://gitee.com/samzong_lu/training-sample-code.git)
 - The code can be found at: `tensorflow/tf-fashion-mnist-sample`
 
+![dataset for training](./images/baize-01.png)
 
 !!! note
 
-    Currently, only the `StorageClass` with read-write mode `ReadWriteMany` is supported. Please use NFS or the recommended [JuiceFS](https://juicefs.com/en/).
+    Currently, only the `StorageClass` with read-write mode `ReadWriteMany` is supported.
+    Please use NFS or the recommended [JuiceFS](https://juicefs.com/en/).
 
 ### Dataset: Training Data
 
@@ -23,6 +25,7 @@ For this training session, we will use the Fashion-MNIST dataset, which can be f
 
 If you're in China, you can use Gitee for a quicker download: [https://gitee.com/samzong_lu/fashion-mnist.git](https://gitee.com/samzong_lu/fashion-mnist.git)
 
+![dataset for china](./images/baize-02.png)
 
 !!! note
 
@@ -32,6 +35,7 @@ If you're in China, you can use Gitee for a quicker download: [https://gitee.com
 
 AI Lab allows you to use `PVC` as the data source type for datasets. After creating an empty PVC bound to the dataset, you can utilize this empty dataset to store the output datasets from future training jobs, including models and logs.
 
+![empty dataset](./images/baize-03.png)
 
 ## Environment Dependency: TensorFlow
 
@@ -50,6 +54,8 @@ dependencies:
 prefix: /opt/conda/envs/tensorflow
 ```
 
+![create env](./images/baize-08.png)
+
 !!! note
 
     After the environment is successfully set up, you only need to mount this environment to the Notebook or training jobs, using the base image provided by AI Lab.
@@ -59,6 +65,7 @@ prefix: /opt/conda/envs/tensorflow
 Prepare your development environment by clicking on **Notebooks** in the navigation bar, then hit **Create**.
 
 - Associate the [three datasets](#preparing-your-dataset) you prepared earlier, filling in the mount paths as shown in the image below. Make sure to configure the empty dataset in the output dataset location.
+
 
 
 - Select and bind the [environment dependency package](#tensorflow).
